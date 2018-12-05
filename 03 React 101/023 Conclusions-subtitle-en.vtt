@@ -1,0 +1,97 @@
+WEBVTT
+
+00:00.160 --> 00:03.780
+Guys so let's recap the things we covered so far.
+
+00:03.780 --> 00:08.780
+We used create re-act app to create a new voice or platform from react.
+
+00:09.010 --> 00:12.870
+And most of the people I know the developers I know they use this.
+
+00:12.870 --> 00:17.940
+They just start an application with create app including myself of course.
+
+00:18.030 --> 00:24.920
+So we've learned the importance about the imports in REACT to get re-act going.
+
+00:25.050 --> 00:31.650
+We created different types of component the components the class component and the function functional
+
+00:31.650 --> 00:35.850
+components we learned inside the class components.
+
+00:35.850 --> 00:40.610
+Some methods just like the Render to render some information on the screen.
+
+00:40.710 --> 00:47.340
+We used GSX And we've learned about some something about GSX that it's kind of a the team will look
+
+00:47.340 --> 00:53.210
+like we need to talk about events for example right here.
+
+00:53.430 --> 00:58.240
+The synthetic events the unclick and onchange events inside react.
+
+00:58.290 --> 01:06.210
+We used state with the constructor and super to use state to handle whatever's happening on the application
+
+01:06.270 --> 01:10.520
+to check to modify how the application behaves.
+
+01:10.530 --> 01:15.120
+We learned about prop's again constructor super and everything else.
+
+01:15.120 --> 01:16.670
+So we what else.
+
+01:16.680 --> 01:21.560
+We used some a lot of ESX features like destructuring right here.
+
+01:21.570 --> 01:22.910
+This is destructuring.
+
+01:23.130 --> 01:27.900
+We used to Filcher and we used that a lot of fire that Aro functions.
+
+01:28.110 --> 01:30.290
+So you know we did a lot of things.
+
+01:30.360 --> 01:37.470
+And right now if you want with this knowledge this basic knowledge you can just start creating an app
+
+01:37.500 --> 01:38.210
+on your own.
+
+01:38.400 --> 01:40.790
+Yeah course you can start now.
+
+01:40.820 --> 01:43.360
+There is a lot of more.
+
+01:43.860 --> 01:46.320
+There's a lot more of react.
+
+01:46.350 --> 01:48.850
+So we're going to be this is going to be a long course.
+
+01:48.850 --> 01:50.130
+This is just the basics.
+
+01:50.220 --> 01:54.600
+Now on the next section we can start with re-act router and Daury.
+
+01:54.670 --> 02:01.650
+We're going to cover pretty much the all the functionalities from Briac writer this section this basic
+
+02:01.770 --> 02:08.620
+part of the Course is going to be available this exact code is going to be available on get have.
+
+02:08.640 --> 02:11.320
+So you can download the basics for this.
+
+02:11.340 --> 02:11.770
+All right.
+
+02:11.860 --> 02:16.050
+OK so let's go to the next section and start with re-act router.

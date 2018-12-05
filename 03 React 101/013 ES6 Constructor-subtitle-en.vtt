@@ -1,0 +1,319 @@
+WEBVTT
+
+00:01.700 --> 00:07.770
+OK so I'm going to talk about something else outside the re-act world right now.
+
+00:07.880 --> 00:12.840
+I'm going to talk about your six classes if you know about super and constructor.
+
+00:12.920 --> 00:16.930
+You can just move forward to the next lecture.
+
+00:16.960 --> 00:24.410
+I created a new Javascript can be called classes dodgiest and I've included this inside the team so
+
+00:24.500 --> 00:27.980
+I'm not going to react I'm going to show you this.
+
+00:27.980 --> 00:29.720
+And there's no need for you to copy.
+
+00:29.750 --> 00:37.220
+If you if you like to copy whenever you take to you to look at occurs the course the section just don't
+
+00:37.220 --> 00:38.430
+do it just pay attention.
+
+00:38.450 --> 00:39.700
+OK.
+
+00:40.460 --> 00:47.750
+I choose to show you this because if I go to the next section and call the in to the next topic which
+
+00:47.750 --> 00:53.810
+is going to be re-act state are going to be talking about constructor and super and you're not going
+
+00:53.810 --> 00:55.000
+to understand why.
+
+00:55.180 --> 01:00.300
+OK so let me just start writing some code and I'm going to explain you what we can do.
+
+01:00.620 --> 01:03.000
+I'm going to create a class of car.
+
+01:03.050 --> 01:05.050
+It's going to be class car.
+
+01:05.180 --> 01:06.040
+OK.
+
+01:06.470 --> 01:08.860
+And then just open and close.
+
+01:09.020 --> 01:15.320
+Inside this class we can have a function who's going to be called whatever function just a simple function
+
+01:16.040 --> 01:21.260
+and this function what it's going to do is go into console lock something that's going to be console
+
+01:21.260 --> 01:21.780
+log.
+
+01:21.920 --> 01:27.010
+Hey just something real simple and right here at the bottom are going to create a variable.
+
+01:27.080 --> 01:33.760
+It's going to be Konst car and it's going to be I'm going to create a new instance of this car.
+
+01:34.150 --> 01:34.690
+OK.
+
+01:34.910 --> 01:43.890
+So then if I called this instance of car and do dot and call that whatever function inside the console
+
+01:43.910 --> 01:49.250
+log we're going to get hey we are just triggering this so we create a new instance of this class and
+
+01:49.250 --> 01:52.290
+we are accessing the function inside this class.
+
+01:52.310 --> 01:59.090
+So this it's like working with constructor functions in iOS 5 and accessing maybe the prototype and
+
+01:59.090 --> 01:59.700
+whatever.
+
+01:59.720 --> 02:01.130
+So this is the main idea.
+
+02:01.130 --> 02:09.380
+What we need to do is to really to reproduce reproduce this and how to access the prototype in react
+
+02:09.470 --> 02:12.760
+with ESX to this is the main idea of deception.
+
+02:12.890 --> 02:16.250
+So in react we're not going to use Prototype anymore.
+
+02:16.430 --> 02:18.630
+We use the keyboard constructor.
+
+02:18.790 --> 02:21.500
+OK so I'm going to go right here at the top.
+
+02:21.500 --> 02:26.300
+And if you don't know what I'm talking about don't worry you're going to get it in a few seconds.
+
+02:26.510 --> 02:31.070
+I'm going to call to a method that's going to be called constructor.
+
+02:31.070 --> 02:39.650
+This constructor is going to have some settings inside and the settings it's going to be just some settings
+
+02:39.710 --> 02:40.870
+about a car.
+
+02:41.150 --> 02:50.990
+So this car is going to have some wheels so I'm going to say this wheels equal and has four wheels and
+
+02:50.990 --> 02:57.090
+we can say this and are going to make the type of the car is going to be a hatchback.
+
+02:57.140 --> 03:03.140
+Whenever you get a big car fan get the time.
+
+03:03.140 --> 03:08.180
+So I have a class I have a constructor and inside the constructor.
+
+03:08.180 --> 03:17.550
+I have some default settings so whenever I create an instance of car I have access to this settings.
+
+03:18.090 --> 03:26.210
+Now if I wanted to create a new class outside the car class I can go right here and create a class of
+
+03:26.280 --> 03:30.850
+for it just a brand and inside for it.
+
+03:30.920 --> 03:35.970
+What I want to do I want to bring all the settings of a car.
+
+03:36.430 --> 03:41.440
+OK I want to create this class create an instance of this like this.
+
+03:41.690 --> 03:45.130
+This class is for class going to do right here for it.
+
+03:45.560 --> 03:49.830
+And I'm going to create a new fort that's fine.
+
+03:50.790 --> 03:55.860
+So it's going to be for OK.
+
+03:56.270 --> 03:57.960
+So I just did the same thing.
+
+03:57.980 --> 04:02.990
+I created a Ford and I'm creating an instance of this Ford class.
+
+04:03.020 --> 04:13.160
+Now what I want to do whenever I use the Ford class I went to import all the default settings from car
+
+04:13.880 --> 04:14.710
+so car.
+
+04:14.750 --> 04:18.710
+It's going to be like a parent class for Ford.
+
+04:18.890 --> 04:19.340
+OK.
+
+04:19.550 --> 04:27.280
+So to make a connection between them I can say right here that Ford it's a child of car.
+
+04:27.500 --> 04:32.520
+And then what I'm when I use this class they want to bring all the information of cart.
+
+04:32.660 --> 04:33.890
+So what are we going to do.
+
+04:33.890 --> 04:42.750
+Again just like we did with that component it stands and we're going to bring car and so now forward
+
+04:43.120 --> 04:44.580
+it's the child of course.
+
+04:44.590 --> 04:46.450
+It's connected to car.
+
+04:46.840 --> 04:54.550
+Now inside here if I want to bring all the default settings right here that we have inside card but
+
+04:54.550 --> 04:59.110
+we need to bring it inside Ford what you can do I can call the constructor.
+
+04:59.140 --> 05:04.230
+So I'm going to say constructor and again right here.
+
+05:04.260 --> 05:10.140
+So the thing is that they should be working but it's not going to get a neural it can say must call
+
+05:10.140 --> 05:14.910
+super constructor interpret class before accessing this.
+
+05:14.910 --> 05:21.000
+The thing is that whenever we extend an element and we call the constructor we need to do something
+
+05:21.000 --> 05:23.270
+else which we call super.
+
+05:23.580 --> 05:29.650
+So if I go inside the constructor and do Super just like that I get no error.
+
+05:29.870 --> 05:30.550
+OK.
+
+05:30.990 --> 05:39.060
+Now if I go right here and do console log and I access the forward instance I have right here and I
+
+05:39.060 --> 05:46.020
+call the wheels since we are importing all the default settings from car we should be able to access
+
+05:46.110 --> 05:47.120
+the wheels.
+
+05:47.160 --> 05:53.090
+So I'm going to say Ford wheels if we reload the page I get for it.
+
+05:53.250 --> 05:53.780
+OK.
+
+05:54.150 --> 06:02.160
+So we can see with the extents the constructor and the Super we can bring default settings from a parent
+
+06:02.190 --> 06:03.560
+class.
+
+06:03.630 --> 06:06.310
+So this is pretty much what we can do would react.
+
+06:06.360 --> 06:12.670
+This is going to be like react for example and right here we can create an instance of react whenever
+
+06:12.670 --> 06:19.810
+we use react and it triggers the first instance of the application is going to kind of create a default
+
+06:19.810 --> 06:22.990
+class with a bunch of settings right here.
+
+06:23.110 --> 06:25.500
+And this is going to be called prompts.
+
+06:25.540 --> 06:28.320
+So this prompts I'm going to just put forth.
+
+06:28.750 --> 06:31.300
+It's going to be a lot of options we have for react.
+
+06:31.570 --> 06:38.780
+And this is provided by react and inside prompts we can have a lot of default settings for react.
+
+06:39.070 --> 06:46.700
+So whenever we create an X for example a header and we extend component it's going to be re-act component.
+
+06:46.870 --> 06:53.710
+So we can bring all the default settings from react to this component to our new components.
+
+06:53.740 --> 07:00.160
+So right here it's going to be better extents react and right here of course I need to do something
+
+07:00.160 --> 07:01.560
+else.
+
+07:01.780 --> 07:07.780
+It's going to be the cards can be of course Hetter and I'm going to just change everything too so it
+
+07:07.780 --> 07:10.390
+can make sense.
+
+07:10.390 --> 07:20.830
+So if we call Hetter react whatever function I think of AG There go react and then hetter instead of
+
+07:20.830 --> 07:21.850
+forward.
+
+07:22.210 --> 07:30.070
+We're going to get pretty much two valleys if I called the Petar that prompts I'm accessing this class
+
+07:30.640 --> 07:35.760
+and I'm calling the prompts but the prompts we're bringing all the prompts from super.
+
+07:35.770 --> 07:42.430
+From the parent class which is react this it's going to bring all the default settings from the re-act
+
+07:42.430 --> 07:43.320
+components.
+
+07:43.570 --> 07:46.400
+So this is the main idea.
+
+07:46.470 --> 07:51.820
+The main idea of state whenever we use re-act stayed and we're going to talk about re-act state.
+
+07:51.850 --> 07:53.230
+What are you going to do right here.
+
+07:53.230 --> 08:01.870
+We can call the constructor we can call the super and right here we're going to call the prompts and
+
+08:01.900 --> 08:07.860
+inside prompts we have access to all the default settings for react.
+
+08:07.860 --> 08:08.340
+All right.
+
+08:08.410 --> 08:10.810
+We're going to do that on the next section.
+
+08:10.840 --> 08:14.710
+Let's move forward to the next one and start using state.

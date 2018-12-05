@@ -1,0 +1,274 @@
+WEBVTT
+
+00:00.220 --> 00:06.720
+OK so we have our main app components class based components and whenever the application loads it's
+
+00:06.720 --> 00:11.940
+going to just start from this one you're going to render the header just like what you are right now.
+
+00:12.120 --> 00:17.710
+And inside here just after the header we are going to bring a child component just like Hetter.
+
+00:17.900 --> 00:19.510
+And it's going to be the news list.
+
+00:19.830 --> 00:26.070
+Now to this we're going to pass to this Newsless components all the information we're getting on the
+
+00:26.070 --> 00:26.640
+state.
+
+00:26.640 --> 00:32.280
+The news is going to be the Jason file of your fetching and we can get from the useless components.
+
+00:32.290 --> 00:33.880
+We're going to grab this Jason.
+
+00:34.020 --> 00:36.960
+We're going to lose the Jason and show all the news.
+
+00:37.050 --> 00:39.180
+That's what we can do right now.
+
+00:39.180 --> 00:45.150
+So if I go to news list and this is one of the most important questions that you should ask yourself
+
+00:45.390 --> 00:52.650
+whenever you create a component it it's do I need a functional stateless component or a class based
+
+00:52.680 --> 00:54.000
+components.
+
+00:54.130 --> 01:02.170
+Now it's considered bad coding in re-act creating a class based component and not using state.
+
+01:02.430 --> 01:07.260
+If you're not going to use this state there's no need to use a class based component.
+
+01:07.280 --> 01:10.160
+You just use a functional just to function.
+
+01:10.170 --> 01:14.970
+The thing is that the news that we're going to receive adjacent file on the newscast and we're going
+
+01:14.970 --> 01:16.550
+to loop that and showed that use.
+
+01:16.590 --> 01:19.770
+So we don't need class based components.
+
+01:19.770 --> 01:26.190
+Now if we use a class based component and not using the state we're going to make this component more
+
+01:26.190 --> 01:33.000
+heavier and it's going to of course take it's going to consume much more memory.
+
+01:33.000 --> 01:35.890
+So yeah we're going to make it functional components.
+
+01:36.220 --> 01:36.560
+OK.
+
+01:36.570 --> 01:39.550
+So the first thing we need to do to create a component.
+
+01:39.570 --> 01:41.360
+Just let me say this.
+
+01:41.510 --> 01:44.840
+It's import react because we can use GSX.
+
+01:44.910 --> 01:50.500
+So I'm going to say import re-act from react.
+
+01:50.500 --> 01:51.010
+Right.
+
+01:51.060 --> 01:53.430
+So that's that's the first step.
+
+01:53.430 --> 01:55.870
+So first we need to create a component.
+
+01:55.920 --> 02:01.080
+And since it's a functional I'm going to create Kunst and mine is going to be called it's going to be
+
+02:01.080 --> 02:02.740
+called newsiest.
+
+02:03.030 --> 02:03.470
+That's fine.
+
+02:03.540 --> 02:05.430
+So this makes sense.
+
+02:05.610 --> 02:07.140
+This is going to be equal.
+
+02:07.280 --> 02:08.740
+We're going to have an empty.
+
+02:09.150 --> 02:11.690
+And then just right pointing arrow.
+
+02:12.120 --> 02:12.690
+OK.
+
+02:12.930 --> 02:14.530
+So it's a fun hour of function.
+
+02:14.530 --> 02:15.270
+That's good.
+
+02:15.480 --> 02:19.730
+So this news list is going to return some GSX.
+
+02:19.740 --> 02:24.340
+So what we're going to say we're going to retune return the new list.
+
+02:24.450 --> 02:25.250
+That's good.
+
+02:25.740 --> 02:32.400
+Now since we have our functional components we need to export this useless component so it can be available
+
+02:32.490 --> 02:33.800
+on the index dodgiest.
+
+02:33.940 --> 02:45.720
+So we're going to go right here miss a sport default and then just newsiest right now this component
+
+02:45.780 --> 02:47.150
+it's exported.
+
+02:47.310 --> 02:50.010
+So in the index so we can use that component.
+
+02:50.010 --> 02:52.230
+We need to import that newsiest.
+
+02:52.290 --> 02:58.480
+So I'm going to say import this list let's make it right.
+
+03:00.810 --> 03:01.150
+Right.
+
+03:01.170 --> 03:05.400
+That's right and didn't make capital make more sense.
+
+03:05.400 --> 03:06.630
+So it's going to be from.
+
+03:06.780 --> 03:12.810
+And again d'arte for Slash components for Slash and it's inside and useless.
+
+03:12.930 --> 03:13.510
+Let's get.
+
+03:13.510 --> 03:16.950
+So this component its ready to be used.
+
+03:16.950 --> 03:22.920
+So going to copy this component is going to go right here at the header and again to say Newsless going
+
+03:22.920 --> 03:25.080
+to just open close.
+
+03:25.080 --> 03:25.530
+All right.
+
+03:25.710 --> 03:32.900
+So if the application loads we are getting news lists so this component is just kind of ready.
+
+03:33.120 --> 03:41.480
+Now what we need to do we need to kind of a pass whatever we are getting the news that Jason from news
+
+03:41.490 --> 03:42.380
+that Jason.
+
+03:42.540 --> 03:47.310
+So inside re-act there is something that calls prompts prompts.
+
+03:47.310 --> 03:53.670
+We can use prompts to pass information to child components or to different components.
+
+03:53.670 --> 03:59.070
+So inside here what I want to do is to pass the state news.
+
+03:59.280 --> 04:05.160
+So I'm going to go right here inside the news list and what I'm going to say it's going to be news and
+
+04:05.160 --> 04:12.660
+this news is going to be equal to something so right here we need to pass the state of news.
+
+04:12.750 --> 04:20.430
+So I'm going to make reference to this dot state DOT use.
+
+04:20.590 --> 04:27.400
+Ok so I'm going to go again to Newsless component and we need to receive whenever we create this component
+
+04:27.720 --> 04:30.200
+we need to receive this data.
+
+04:30.220 --> 04:31.390
+This prompts.
+
+04:31.630 --> 04:32.140
+OK.
+
+04:32.290 --> 04:38.040
+So is I here just in a sense this is just a function we can get arguments.
+
+04:38.040 --> 04:44.740
+So I'm going to say prompts So whenever this component it's rendered on the screen is going to have
+
+04:44.740 --> 04:47.260
+some default arguments.
+
+04:47.260 --> 04:56.260
+So if we go right here and say console log and then just prop's book props that's good.
+
+04:57.920 --> 04:59.550
+We're going to get an object.
+
+04:59.550 --> 04:59.910
+All right.
+
+04:59.920 --> 05:07.030
+We are just canceling the props that we are getting whenever these components render on the screen from
+
+05:07.160 --> 05:07.880
+newscast.
+
+05:08.110 --> 05:08.520
+OK.
+
+05:08.710 --> 05:09.600
+So we get the news.
+
+05:09.600 --> 05:11.280
+It's going to be an array of four.
+
+05:11.380 --> 05:14.970
+We have all information right here object.
+
+05:15.020 --> 05:15.330
+OK.
+
+05:15.370 --> 05:17.380
+We have all the news.
+
+05:17.410 --> 05:18.840
+So now what we need to do.
+
+05:19.960 --> 05:22.570
+We need to grab this props.
+
+05:22.630 --> 05:27.830
+We need to loop this array and render everything inside the return.
+
+05:28.050 --> 05:29.110
+OK that's fine.
+
+05:29.110 --> 05:30.920
+Let's do that on the next section.

@@ -1,0 +1,346 @@
+WEBVTT
+
+00:00.270 --> 00:02.860
+OK so we have our list ready to go.
+
+00:03.030 --> 00:07.470
+But you know we made a file that should be hosting this item.
+
+00:07.470 --> 00:14.370
+Each item on the list and if we go to the planning we had right here we have a news component and inside
+
+00:14.430 --> 00:18.730
+we have a component that it's handling the item itself.
+
+00:18.810 --> 00:22.180
+So we need to just really factor a little bit.
+
+00:22.410 --> 00:25.880
+It's going to go right here just back to the project.
+
+00:26.070 --> 00:26.690
+OK.
+
+00:26.910 --> 00:28.450
+So I'm going to go to the news list.
+
+00:28.500 --> 00:32.640
+And again we just need to create a component for this.
+
+00:32.640 --> 00:45.960
+So again we're going to say import re-act from re-act now in real life when coding when using react.
+
+00:46.200 --> 00:52.690
+I just have snippets for this so I can just type two or three letters and I'm going to get the import
+
+00:52.750 --> 00:55.330
+back from Briac just have a template for this.
+
+00:55.500 --> 01:00.240
+I'm just typing on right now because I need you to do the same thing.
+
+01:00.240 --> 01:03.800
+Just type it all and then you just can create snippets for this.
+
+01:03.990 --> 01:05.510
+So I'm going to create a news item.
+
+01:05.520 --> 01:10.960
+It's going to be just a stateless function and we can create news item.
+
+01:11.010 --> 01:18.930
+Let's get it's going to be equal then we get it to fat are a function and right here we need to return
+
+01:18.930 --> 01:19.540
+something.
+
+01:19.680 --> 01:25.130
+So I'm going to say return and for now which is going to return a dip.
+
+01:25.710 --> 01:26.090
+OK.
+
+01:26.100 --> 01:32.730
+We need to export this news item and I'm going to I'm getting nervous just lemme see why.
+
+01:32.730 --> 01:35.420
+Because he's Konst go.
+
+01:35.760 --> 01:40.530
+I need to export this component so he can be available inside Newsless.
+
+01:40.640 --> 01:42.280
+So OK great here.
+
+01:42.440 --> 01:48.700
+Sport default default and then just a news item.
+
+01:48.750 --> 01:49.910
+So this is ready.
+
+01:50.340 --> 01:53.270
+So now inside here what are we going to do.
+
+01:53.280 --> 01:58.950
+Just like we did with the news list we're going to make a reference to this component to this news component
+
+01:59.340 --> 02:01.550
+and we're going to pass a props.
+
+02:01.590 --> 02:03.320
+The item we are looking.
+
+02:03.390 --> 02:08.660
+So this is going to save time right here and say props OK.
+
+02:08.850 --> 02:09.750
+That is good.
+
+02:09.750 --> 02:15.710
+Now since this component is available I need to go right here and import this component.
+
+02:15.900 --> 02:22.500
+So I'm going to say import and then just a news item from.
+
+02:22.560 --> 02:29.080
+And again since we're on the same directory right here we are inside the components directory because
+
+02:29.080 --> 02:34.770
+they don't force lasht and then just use this item or get to this component.
+
+02:34.770 --> 02:37.000
+It's ready to be used.
+
+02:37.380 --> 02:45.420
+So I'm going to copy all of this and go to a news list item and instead of just having a day of just
+
+02:45.420 --> 02:47.020
+going to paste it right here.
+
+02:47.070 --> 02:47.300
+OK.
+
+02:47.310 --> 02:49.780
+I'm getting a message that's why we are here.
+
+02:49.800 --> 02:50.320
+OK.
+
+02:50.430 --> 02:51.330
+So this is good.
+
+02:51.330 --> 02:53.520
+This should be working.
+
+02:53.520 --> 02:54.860
+It's not going to work.
+
+02:54.960 --> 02:58.630
+I'm going to tell you in a second why it's not working right here.
+
+02:58.650 --> 03:06.300
+Since we have a reference to a new news item we need to delete all of this and just like we did with
+
+03:06.300 --> 03:12.750
+the other components just right here we can include the component directly from here and I'm going to
+
+03:12.750 --> 03:14.590
+just open it close.
+
+03:14.790 --> 03:15.740
+That is good.
+
+03:16.200 --> 03:18.240
+Now what do we need to do.
+
+03:18.490 --> 03:22.760
+We need to pass this child component which is going to be this one.
+
+03:22.770 --> 03:25.890
+All the information that we are getting from them.
+
+03:26.050 --> 03:26.640
+OK.
+
+03:26.910 --> 03:31.160
+So we use actually do we do that pretty much the same thing.
+
+03:31.380 --> 03:40.860
+I'm going to say item is going to be equal to and we passed the item item is going to get this one and
+
+03:40.860 --> 03:44.420
+this is going to be the object of that news.
+
+03:44.670 --> 03:45.200
+Okay.
+
+03:45.510 --> 03:48.180
+Right here are going to need a key.
+
+03:48.180 --> 03:52.440
+Remember that we need to provide a key to each item.
+
+03:52.440 --> 03:59.970
+So I'm going to say again just item that ID and I get and that's going to work.
+
+03:59.970 --> 04:02.910
+Now we're having a lot of messages right here.
+
+04:02.940 --> 04:09.210
+I'm going to go back to the news list and the thing is that whenever we pass something to a child component
+
+04:09.510 --> 04:14.730
+it's going to be it's going to receive the the the data as props.
+
+04:14.730 --> 04:23.070
+So if I go right here just going to comment on this just to make sure I'm right here just going to return
+
+04:23.070 --> 04:24.500
+some time today.
+
+04:25.230 --> 04:31.930
+It's going to work but I'm just going to cancel log prompts.
+
+04:32.510 --> 04:36.050
+So let me make this bigger.
+
+04:36.050 --> 04:36.880
+There we go.
+
+04:37.130 --> 04:37.890
+So.
+
+04:38.050 --> 04:38.390
+OK.
+
+04:38.390 --> 04:45.600
+So whenever this component is loading we're getting the props and inside props.
+
+04:45.710 --> 04:52.220
+We have an object that's called it's called item and the item contains the information about each news
+
+04:52.800 --> 04:53.630
+now.
+
+04:53.720 --> 04:57.360
+So since we're using props we cannot use item.
+
+04:57.380 --> 05:00.960
+What we need to use it's props Dant item.
+
+05:01.160 --> 05:03.020
+And then just the information inside.
+
+05:03.080 --> 05:12.350
+So just let me go back right here going to say prompts Dant and the same thing right here prompts darts
+
+05:12.950 --> 05:16.830
+and props that it's going to work.
+
+05:16.910 --> 05:23.780
+It's working just fine now with E6 there there's something and B Actually we've been doing this right
+
+05:23.780 --> 05:25.210
+here inside component.
+
+05:25.250 --> 05:31.960
+We can make use of destructuring whenever we pass something an object as an argument.
+
+05:32.030 --> 05:36.580
+We can access the information inside directly from the arguments.
+
+05:36.740 --> 05:42.950
+Right here we are receiving prompts and prompts is just an object just like this is going to be prompts
+
+05:43.340 --> 05:48.770
+equals and then we have a child component that it can be item and it's going to have some information
+
+05:48.770 --> 05:49.810
+inside.
+
+05:49.820 --> 05:58.750
+So what we can do we can do this and make a reference make a reference to item.
+
+05:58.780 --> 06:06.640
+So whenever we are receiving this object we are just catching the item instead of prompts.
+
+06:06.730 --> 06:12.510
+The I'm sorry the item inside prompts and right here instead of making a reference to prompts which
+
+06:12.510 --> 06:22.310
+just make a reference to item is just to save code wrote oh I'm in mistake right here.
+
+06:22.590 --> 06:25.910
+If you read the application it's still going to work.
+
+06:25.920 --> 06:32.160
+So this is just destructuring it's real simple if you want that you can use props and then make reference
+
+06:32.160 --> 06:36.170
+to props not items that ID is actually up to you.
+
+06:36.480 --> 06:40.080
+So let's add some styling to this because it's really ugly.
+
+06:40.080 --> 06:43.290
+You're going to do something something real simple going to go to style.
+
+06:43.410 --> 06:45.000
+Going to go right here at the bottom.
+
+06:45.000 --> 06:55.020
+And I got to say news underscore item and then just to add I don't know maybe a painting of tiny pixels
+
+06:56.370 --> 06:58.940
+begin to do box sizing.
+
+06:59.850 --> 07:00.270
+There you go.
+
+07:00.270 --> 07:02.770
+Books I'm seeing bore the blanks.
+
+07:03.640 --> 07:04.290
+OK.
+
+07:04.320 --> 07:13.050
+And then just a just a line at the bottom border bottom and then a bottom and then it's going to be
+
+07:13.110 --> 07:15.610
+one pixel solid gray.
+
+07:15.660 --> 07:17.400
+Just something simple.
+
+07:17.400 --> 07:20.790
+Now we have this class we need to give.
+
+07:20.890 --> 07:23.590
+We need to use this class inside the components.
+
+07:23.880 --> 07:29.550
+So I'm going to go inside use list item and right here is inside each component.
+
+07:29.600 --> 07:31.860
+I can assign a class.
+
+07:32.160 --> 07:34.840
+So I'm going to delete the key because we don't need it.
+
+07:34.860 --> 07:40.480
+We already have it inside here and I'm going to just add a class name.
+
+07:40.830 --> 07:46.250
+So we say class name call to use item.
+
+07:46.300 --> 07:46.600
+OK.
+
+07:46.690 --> 07:47.560
+And that's better.
+
+07:48.520 --> 07:50.000
+But that's fine.
+
+07:50.000 --> 07:52.170
+So let's go to the next section.

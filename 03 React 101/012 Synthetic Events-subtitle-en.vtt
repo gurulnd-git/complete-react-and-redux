@@ -1,0 +1,424 @@
+WEBVTT
+
+00:00.330 --> 00:07.080
+OK so before I forget I've added some styles to the input I forgot to do it on the Preuss Lechter I've
+
+00:07.080 --> 00:11.950
+added to just the font size and then just a margin of 20 something real simple.
+
+00:12.170 --> 00:12.570
+OK.
+
+00:12.600 --> 00:16.060
+So we're going to talk about events whenever we work with applications.
+
+00:16.080 --> 00:23.850
+Events are really important you know events to how to get whenever we get whenever the user clicks or
+
+00:23.850 --> 00:28.330
+whatever the user types some information we want to get that event.
+
+00:28.620 --> 00:33.120
+So whenever the user clicks the logo I want to do something.
+
+00:33.480 --> 00:33.740
+OK.
+
+00:33.780 --> 00:36.430
+So this is just like vanilla jazz.
+
+00:36.480 --> 00:42.050
+And for those who don't know what jazz is it's raw javascript it's S-5.
+
+00:42.060 --> 00:43.950
+We're using iOS 6 right here.
+
+00:44.160 --> 00:44.660
+Vanilla.
+
+00:44.700 --> 00:46.000
+It's going to be fine.
+
+00:46.260 --> 00:46.700
+OK.
+
+00:46.890 --> 00:53.920
+So just like iOS 5 what do we do we need to get the on click handler back in.
+
+00:53.970 --> 00:54.670
+Yes 5.
+
+00:54.690 --> 00:55.320
+What do we do.
+
+00:55.320 --> 00:57.980
+It's unclick just like this.
+
+00:58.080 --> 01:01.740
+And then inside here we just write a function and that's it.
+
+01:01.770 --> 01:08.640
+And then maybe in a different file we use function and then click and then we just trigger the function
+
+01:08.970 --> 01:13.310
+right just like we used to do it there.
+
+01:13.440 --> 01:15.280
+The thing is that we are using react.
+
+01:15.450 --> 01:18.830
+So we are not going to be able to do it this way.
+
+01:18.870 --> 01:20.130
+We need to do something else.
+
+01:20.310 --> 01:25.350
+So I'm going to let this go back and really want to get the On Click event.
+
+01:25.500 --> 01:31.860
+So I'm going to say on end in camel case I'm going to say click and this is equal and it's equal to
+
+01:31.860 --> 01:32.680
+a function.
+
+01:32.760 --> 01:34.760
+So we need to use curly braces.
+
+01:35.100 --> 01:36.270
+I'm going to show you two ways.
+
+01:36.270 --> 01:40.090
+Kind of an inline method and then an import let's say import.
+
+01:40.340 --> 01:46.900
+OK so I want to cancel Lague whenever the user clicks on the on the logo.
+
+01:47.190 --> 01:48.960
+So I want to trigger a function.
+
+01:48.960 --> 01:53.760
+And since we're using iOS 6 I'm going to make use of fat functions.
+
+01:54.030 --> 01:54.770
+I'm going to do.
+
+01:54.870 --> 02:00.210
+I'm going to write here inside the braces I'm going to open and close parenthesis and then going to
+
+02:00.210 --> 02:03.190
+say equal and then right pointing arrow.
+
+02:03.450 --> 02:07.220
+And since I want to trigger a function I'm going to do curly braces.
+
+02:07.600 --> 02:08.240
+That's good.
+
+02:08.430 --> 02:13.340
+So I want to do cancell log and then and when she is just Consolo click click.
+
+02:13.410 --> 02:17.010
+Let's get to something simple right.
+
+02:17.130 --> 02:19.750
+If I just reload the page and click the logo.
+
+02:19.830 --> 02:20.760
+OK that's working.
+
+02:20.760 --> 02:22.120
+We get clicked.
+
+02:22.290 --> 02:28.970
+So pretty much right here we are just saying I wanted to just trigger this function and if with ESX
+
+02:29.010 --> 02:35.910
+whenever you have a single expression you can get rid of the curly braces right here.
+
+02:35.910 --> 02:38.720
+If you have the click works ok.
+
+02:38.790 --> 02:45.210
+If you have more expressions like maybe a two virals or two consulate's or something like that it's
+
+02:45.210 --> 02:47.970
+not going to work because you have more expressions.
+
+02:47.970 --> 02:50.960
+Whenever you have one you can use it like this.
+
+02:51.540 --> 02:52.560
+And this is going to work.
+
+02:52.620 --> 02:53.570
+You're going to do.
+
+02:53.570 --> 02:57.770
+You're going to call the On Click event and then you just trigger the function.
+
+02:57.990 --> 02:58.570
+Right.
+
+02:58.950 --> 03:02.300
+So I want to show you a different way what I want to do.
+
+03:02.520 --> 03:08.530
+I want to get what the user it's typing right here whenever they just type.
+
+03:08.610 --> 03:09.190
+OK.
+
+03:09.300 --> 03:12.570
+And that's asking if we're going to use the onchange handler.
+
+03:12.870 --> 03:23.000
+Now back in iOS 5 we will we do it on a different way we call to a different method is going to be an
+
+03:23.040 --> 03:23.610
+event listener.
+
+03:23.610 --> 03:29.640
+We create create an event listener that's going to have the onchange listener the onchange event and
+
+03:29.640 --> 03:33.920
+then we pass the event to get what the user is typing.
+
+03:33.960 --> 03:36.700
+That is what we used to do back in the S-5.
+
+03:37.080 --> 03:40.900
+Now right here with react we do it on a different way.
+
+03:40.920 --> 03:42.620
+We need to change everything.
+
+03:42.630 --> 03:48.650
+So again I need to call to get the event and we want to get the On Change event.
+
+03:48.810 --> 03:54.540
+So I'm going to say on am I going to say change right.
+
+03:54.930 --> 04:02.880
+And since you want to trigger function going to use curly braces I wanted to call to a function to trigger
+
+04:02.880 --> 04:11.310
+a function that is going to call input change to something like that the name makes sense.
+
+04:11.610 --> 04:14.620
+And whenever the user change changes the impot.
+
+04:14.750 --> 04:16.210
+I went to council log.
+
+04:16.410 --> 04:22.830
+Hey now I'm going to get an error message because this is empty.
+
+04:22.860 --> 04:27.180
+So what I want to do I want to call this function whenever they change it.
+
+04:27.250 --> 04:27.560
+Get.
+
+04:27.600 --> 04:33.120
+So if I copy this and paste it right here it should be working but its not.
+
+04:33.150 --> 04:35.040
+We cannot use it this way.
+
+04:35.040 --> 04:36.530
+It says interchange.
+
+04:36.570 --> 04:39.050
+Its not defined so we act.
+
+04:39.090 --> 04:47.430
+Its not finding this function and this is because we need to put a reference to tell re-act where to
+
+04:47.430 --> 04:52.230
+find this function so we can use this keyword.
+
+04:52.940 --> 04:58.460
+So if we use this it works and if I just click something OK.
+
+04:58.980 --> 04:59.590
+We're going to get.
+
+04:59.620 --> 05:02.670
+Hey the thing is that we're going to get just one time.
+
+05:02.710 --> 05:04.090
+So would react.
+
+05:04.240 --> 05:06.050
+We just did this.
+
+05:06.310 --> 05:13.050
+And if I just reload the page and type we're going to get it many times so this is working.
+
+05:13.080 --> 05:20.880
+Now this keyboard it's really important whenever we use this we are telling react to look for this function
+
+05:21.250 --> 05:29.980
+inside this class so that this keyboard means OK I'm inside this component so find just find a function
+
+05:29.980 --> 05:37.020
+that calls impot change inside this class whatever the component is.
+
+05:37.030 --> 05:42.220
+So it's going to enter the class Hetter is going to find the impot change and then it's going to trigger.
+
+05:42.300 --> 05:42.920
+That's good.
+
+05:42.940 --> 05:44.200
+So it's going to work.
+
+05:44.410 --> 05:52.180
+Now back in again back in the is yes five Rigol way we with things we call the event listener and we
+
+05:52.180 --> 05:53.400
+pass an event.
+
+05:53.560 --> 06:01.420
+So just here we pass an event and inside here since I want to get what the users type is typing I'm
+
+06:01.420 --> 06:02.850
+going to call that event.
+
+06:02.970 --> 06:09.100
+I'm going to say Dot I'm going to get the target and dot the valley just like we used to do it back
+
+06:09.100 --> 06:09.830
+and he is fine.
+
+06:09.980 --> 06:14.880
+And if I just type g g h t y whatever.
+
+06:15.280 --> 06:16.570
+So that's good.
+
+06:16.600 --> 06:24.250
+Now this is working but there's something else with this whenever we called this event back in iOS 5
+
+06:24.610 --> 06:31.930
+we're calling the event of the window object we are AXS in the window and then getting the events directly
+
+06:31.930 --> 06:35.420
+from the browser directly from the DOM.
+
+06:35.650 --> 06:44.830
+One of the features or things about react is that you're not allowed to interact with the DOM directly.
+
+06:44.980 --> 06:52.270
+You need to do it through we act we act is going to grab this event handler is going to go to the Dom
+
+06:52.360 --> 06:54.690
+and then just make the associations.
+
+06:54.700 --> 07:02.780
+So if I just delete this and just check the event just type G begin to get this.
+
+07:03.360 --> 07:08.120
+And it's kind of a different this can save re-act don't the component.
+
+07:08.350 --> 07:14.740
+And we can get all the handlers to target and whatever Allaf information and this keyword synthetic
+
+07:14.830 --> 07:17.100
+event it's what we are getting.
+
+07:17.140 --> 07:23.380
+We are not working with the Dom and the events directly with the window directly.
+
+07:23.500 --> 07:26.500
+We are working with react and then react.
+
+07:26.540 --> 07:30.760
+It's connecting with the Dom and doing what we want.
+
+07:30.790 --> 07:32.850
+So we have a I have a link right here.
+
+07:32.860 --> 07:34.390
+You can check this out.
+
+07:34.600 --> 07:40.960
+Just let me go right here and I'm going to go to the re-act docs.
+
+07:41.390 --> 07:41.910
+You can have.
+
+07:41.910 --> 07:49.660
+You can have a section with synthetic vents it can have all the examples right here and right here.
+
+07:49.740 --> 07:51.330
+You to support advance.
+
+07:51.400 --> 07:54.260
+You can have all the events around.
+
+07:54.430 --> 07:57.380
+So we were using the unclick and the onchange events.
+
+07:57.400 --> 08:01.890
+So that's the two of these events so you can you can check the docs.
+
+08:01.900 --> 08:02.410
+OK.
+
+08:02.480 --> 08:04.560
+So there's a lot a lot of information.
+
+08:04.840 --> 08:09.750
+So pretty much in a nutshell again we are just triggering a function.
+
+08:09.880 --> 08:15.070
+It's accessing the synthetic events of react and then react is connecting with the Dom and it's going
+
+08:15.070 --> 08:21.400
+to give us the information of what we are typing inside the the input.
+
+08:21.400 --> 08:25.130
+So again it's even that target that value
+
+08:28.520 --> 08:29.460
+OK.
+
+08:29.780 --> 08:30.130
+Right.
+
+08:30.200 --> 08:31.110
+That's working.
+
+08:31.550 --> 08:34.290
+OK so let's go to the next section.
+
+08:34.340 --> 08:40.600
+Begin to talk about something really really important for yakked.
+
+08:40.910 --> 08:48.020
+First I'm going to add a section that it's going to begin to talk about constructors begin to talk about
+
+08:48.020 --> 08:57.860
+classes if you know ESX if you know how to work with classes inside ESX you can skip the next lecture
+
+08:57.950 --> 08:59.670
+and go to the next one.
+
+08:59.670 --> 09:00.280
+All right.
+
+09:00.290 --> 09:04.690
+If you don't know anything about classes just stay.
+
+09:04.730 --> 09:07.010
+Just take a look of funding to the next section.
+
+09:07.100 --> 09:13.850
+We're going to talk about the classes because if I go to the next topic which is going to be the re-act
+
+09:13.880 --> 09:18.070
+state you're not going to get it that easily.
+
+09:18.320 --> 09:19.490
+Let's go to the next section.

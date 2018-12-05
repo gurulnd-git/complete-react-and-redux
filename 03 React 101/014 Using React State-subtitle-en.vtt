@@ -1,0 +1,181 @@
+WEBVTT
+
+00:00.800 --> 00:06.200
+OK so now we're going to talk about one of the most important features of react.
+
+00:06.230 --> 00:10.660
+We're just going to be state this is not that easy to understand.
+
+00:10.670 --> 00:13.540
+So if you don't get it completely Don't worry.
+
+00:13.580 --> 00:17.750
+It's one of those things we are going to be using quite a lot.
+
+00:17.750 --> 00:19.670
+So you will have a lot of practice.
+
+00:19.700 --> 00:20.540
+Don't worry.
+
+00:20.900 --> 00:29.270
+So the state it's kind of an object that serves us just like a database so we can store values check
+
+00:29.270 --> 00:30.240
+for events.
+
+00:30.260 --> 00:36.190
+So pretty much through the state we can control how the component behaves.
+
+00:36.560 --> 00:41.320
+So remember we talked about functional components and class based components.
+
+00:41.600 --> 00:47.790
+Well every time we create a class for react we get a default state.
+
+00:47.930 --> 00:49.070
+It's going to be empty.
+
+00:49.100 --> 00:55.760
+Start of course and with the functional components since they are not classes we don't get an estate
+
+00:56.090 --> 01:00.250
+and they are going to be stateless and you're going to use that you're going to hurt here.
+
+01:00.480 --> 01:02.940
+The term alaap stateless.
+
+01:03.410 --> 01:06.650
+But the class component it's not stateless.
+
+01:07.010 --> 01:13.310
+So with the class component if the state changes for whatever reason the application is going to read
+
+01:13.310 --> 01:16.560
+render the component let's say that we have a state right here.
+
+01:16.580 --> 01:21.920
+We can create it create a state in a few seconds and something happens right here with the input for
+
+01:21.920 --> 01:25.920
+example and we change the state reacting.
+
+01:26.090 --> 01:29.280
+It's listening for these state change.
+
+01:29.300 --> 01:34.240
+And whenever there is a change and the state is going to grab this render method and he's going to re
+
+01:34.270 --> 01:36.540
+render whatever we have right here.
+
+01:37.080 --> 01:38.370
+OK that is good.
+
+01:38.660 --> 01:47.240
+So I'm if you don't know about constructor and super inside ESX you should be you should go back one
+
+01:47.240 --> 01:48.200
+lecture.
+
+01:48.310 --> 01:54.500
+So OK I'm going to start building this and then we're going to talk about what's happening first when
+
+01:54.500 --> 01:58.250
+we create a component we need to call the constructor.
+
+01:58.250 --> 02:05.630
+So I'm going to say constructor right here and I'm going to call the constructor since we want to bring
+
+02:05.660 --> 02:10.040
+all the settings from react and the components we need to call the super.
+
+02:10.880 --> 02:12.150
+And what we want to get.
+
+02:12.200 --> 02:18.460
+It's going to be the props that every all the configuration from re-act some going to say prompts.
+
+02:18.470 --> 02:22.520
+And again you're going to hear about prop's a lot.
+
+02:22.610 --> 02:30.260
+So I started this class called the constructor and passed the the main argument which is going to be
+
+02:30.260 --> 02:36.660
+the Propst get now to create a state inside re-act inside the constructor.
+
+02:36.680 --> 02:43.940
+What we need to do is we need to call the this keyword and whenever we call this we use dot and then
+
+02:44.030 --> 02:45.480
+state.
+
+02:45.500 --> 02:48.060
+Now the state is going to be just an object.
+
+02:48.220 --> 02:50.300
+OK so we do equal.
+
+02:50.510 --> 02:52.590
+And then just curly braces.
+
+02:52.700 --> 02:58.200
+Now since this is just an object we can just write all the information we want right here.
+
+02:58.250 --> 03:01.820
+All the data we want just like a regular object.
+
+03:01.820 --> 03:09.470
+So what I'm going to do I'm going to say keyboards and keyboards is going to be whatever the user types
+
+03:09.530 --> 03:10.160
+right here.
+
+03:10.310 --> 03:16.250
+So if the user types something begin to change the state and begin to put the values right here.
+
+03:16.250 --> 03:24.250
+So if I type John right here re-act is going to ground the values and store the name John.
+
+03:24.260 --> 03:31.140
+Inside the state and since the state is going to be changing it's going to re render every time it changes.
+
+03:31.220 --> 03:32.330
+So that's good.
+
+03:32.330 --> 03:38.270
+So the way to create a state it's just like this inside the constructor.
+
+03:38.270 --> 03:43.130
+After the Super be called this dot state and so we have a stake.
+
+03:43.280 --> 03:47.690
+Now if I just delete super and reload the application begin to get an error.
+
+03:47.720 --> 03:50.540
+It says this is not allowed before Super.
+
+03:50.540 --> 03:52.920
+So we need to use this super.
+
+03:53.210 --> 03:53.960
+All right.
+
+03:54.320 --> 03:54.830
+OK.
+
+03:54.980 --> 03:56.010
+That is fine.
+
+03:56.020 --> 03:58.170
+This is enough for the first part.
+
+03:58.340 --> 03:59.800
+Let's go to the next section.
+
+03:59.870 --> 04:02.480
+And of course we're going to talk a lot a lot about.
+
+04:02.840 --> 04:04.730
+We're going to talk more about state.

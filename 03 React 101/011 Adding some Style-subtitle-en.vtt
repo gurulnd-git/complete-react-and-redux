@@ -1,0 +1,391 @@
+WEBVTT
+
+00:00.600 --> 00:03.330
+OK so we are going to add some styles to this.
+
+00:03.330 --> 00:05.040
+This is really ugly.
+
+00:05.040 --> 00:07.150
+So we are going to be working with styles.
+
+00:07.320 --> 00:13.890
+Now there are a few libraries available in the re-act world that you can give to your components to
+
+00:13.890 --> 00:15.630
+style the components.
+
+00:15.630 --> 00:19.260
+So we will just stick to the classics ways to the classic way.
+
+00:19.440 --> 00:21.110
+I'm going to show you two methods.
+
+00:21.120 --> 00:25.770
+We have the Line method and the import method the inline method.
+
+00:25.800 --> 00:27.510
+It's really pretty simple.
+
+00:27.510 --> 00:33.390
+We can use an object to fit the styles the inline styles to our elements.
+
+00:33.390 --> 00:38.160
+So I'm going to go right here inside the render and I just cannot create a variable.
+
+00:38.190 --> 00:44.870
+It's going to be let us use Konst concert and it's going to be styles to something really simple then
+
+00:44.870 --> 00:45.800
+it's going to be equal.
+
+00:45.840 --> 00:52.160
+And this is going to be equal to an object but so we need to style the yet Hetter for now.
+
+00:52.410 --> 00:59.220
+So I you need to make reference to the header is going to be better than calling and then inside here
+
+00:59.290 --> 01:06.150
+I will just enter new objects and new values since I want to change the background color the same background
+
+01:08.450 --> 01:12.360
+and the background is going to be the hash tag.
+
+01:12.600 --> 01:18.160
+0 3 a 9 for something like that.
+
+01:18.490 --> 01:19.070
+OK.
+
+01:19.560 --> 01:27.870
+So if I wanted to add it more styles to this not just the header style going into coma and then enter
+
+01:27.990 --> 01:30.110
+a new key and inside the logo.
+
+01:30.180 --> 01:35.820
+I couldn't just get to do pretty much the same thing when I want to do I want to add a color to the
+
+01:35.820 --> 01:36.280
+logo.
+
+01:36.300 --> 01:41.660
+So it's going to be color and then inside here it's going to be white that coma.
+
+01:41.720 --> 01:47.580
+And if I want to add new styles Let's see let's say I want to change the font family for the logo.
+
+01:47.580 --> 01:52.720
+So in says what we do it's font dash and then family.
+
+01:52.740 --> 01:54.640
+But this is not VSS.
+
+01:54.660 --> 01:57.550
+This is javascript so we can use this way.
+
+01:57.810 --> 02:01.220
+We need to do it in camel case just like this.
+
+02:01.320 --> 02:04.950
+If I say phone family I want to use the Anton.
+
+02:06.240 --> 02:09.600
+And if you're asked you're asking yourself what the facts are.
+
+02:09.870 --> 02:17.480
+I've added just to Ivory's the phone finally Loraine's the Anton and the Rebozo.
+
+02:17.690 --> 02:22.650
+Now you can go to the the Google fonts and get them but they are not really important.
+
+02:22.730 --> 02:23.050
+No.
+
+02:23.050 --> 02:24.160
+Can Get this.
+
+02:24.540 --> 02:31.160
+So after this I want to make a trip to add a text line to make it aligned to the center.
+
+02:31.170 --> 02:36.460
+So I'm going to say text a line and then just Center it.
+
+02:36.510 --> 02:41.930
+Now I have the devival styles and right here it says styles.
+
+02:41.980 --> 02:45.180
+It's a sign but never used again.
+
+02:45.210 --> 02:52.150
+Reactor's just giving us a warning saying that you need to use all the variables that you declare.
+
+02:52.320 --> 02:59.110
+So right here what I want to do inside the header I want to pass the styles the inline styles of Hetter.
+
+02:59.250 --> 03:06.650
+So since this is an object we can access real easy to say style just like standard h g mail.
+
+03:06.780 --> 03:13.560
+And since we need to pass an object I'm going to use the curly braces going to say styles which is the
+
+03:14.160 --> 03:16.600
+main object right here.
+
+03:16.830 --> 03:18.340
+And I want to access the header.
+
+03:18.360 --> 03:25.330
+So I going to say Dot Hetter And if you load the page up we are not getting the color.
+
+03:25.350 --> 03:27.370
+Let me see why.
+
+03:30.000 --> 03:33.430
+When they just reload the page.
+
+03:33.680 --> 03:36.400
+And this is why background.
+
+03:36.980 --> 03:38.700
+All right so get we get the background.
+
+03:38.710 --> 03:39.630
+Let's get.
+
+03:39.680 --> 03:47.450
+So if I wanted to add right here a reference to the logo styles we just repeat the same process style
+
+03:47.570 --> 03:52.030
+equal to styles down logo.
+
+03:52.710 --> 03:53.100
+OK.
+
+03:53.150 --> 03:55.400
+And we got the styles for the logo.
+
+03:55.400 --> 03:58.380
+Let's get now you know this is good.
+
+03:58.400 --> 03:59.930
+This works.
+
+04:00.110 --> 04:05.210
+Maybe you can have a lot of styles and this could get really really messy.
+
+04:05.210 --> 04:10.870
+So you know if you want to work with less or sace Yeah you're not going to be able to do this.
+
+04:10.910 --> 04:12.480
+You just need to do something else.
+
+04:12.620 --> 04:15.120
+You need to use an outside library.
+
+04:15.410 --> 04:15.950
+So that's why.
+
+04:16.000 --> 04:19.430
+So I'm going to just delete this for now.
+
+04:19.430 --> 04:20.550
+Just going to delete it.
+
+04:20.750 --> 04:22.190
+And notice though one more thing.
+
+04:22.190 --> 04:27.170
+Notice that everything right here the styles are inside the render method.
+
+04:27.200 --> 04:28.940
+If I put them outside
+
+04:31.910 --> 04:36.070
+the page it's not it'll work because this is not accessible from here.
+
+04:36.170 --> 04:38.930
+So we need to put them inside the render.
+
+04:39.390 --> 04:39.670
+OK.
+
+04:39.740 --> 04:48.490
+That's one thing I'm just going to delete it and just go back one second and is do does get now what
+
+04:48.490 --> 04:49.200
+are we going to do.
+
+04:49.210 --> 04:51.210
+We're going to use the regular method.
+
+04:51.250 --> 04:54.820
+You can use the styles just to see an import.
+
+04:54.820 --> 05:00.010
+So I'm going to say link and I'm going to be inside the index the main index h d m l and again just
+
+05:00.100 --> 05:10.430
+a half equals and then just I don't know C Ss and then style Dunciad says this is going to be rel style
+
+05:10.540 --> 05:11.150
+sheets.
+
+05:11.160 --> 05:18.340
+I'm going to just copy because I'm lazy and then close it and go to the project right here inside the
+
+05:18.340 --> 05:18.920
+pub..
+
+05:18.970 --> 05:20.410
+Nick create a new folder.
+
+05:20.410 --> 05:22.230
+It's going to be a success.
+
+05:22.570 --> 05:30.110
+And right here you file and it's going to be style that CSSA right.
+
+05:30.140 --> 05:31.670
+So we can use it this way.
+
+05:31.760 --> 05:33.040
+It's right here in the index.
+
+05:33.060 --> 05:37.730
+So it's going to load the styles and then it's going to pass the styles to the application just like
+
+05:39.030 --> 05:41.090
+we always do.
+
+05:41.330 --> 05:46.790
+So what I want to do I want to start with the body I'm going to use a Margene zero so we can get rid
+
+05:46.790 --> 05:54.920
+of that panning OK I'm going to say farm family and the farm family for this is going to be Rebozo.
+
+05:55.100 --> 05:55.770
+All right.
+
+05:56.020 --> 05:56.350
+OK.
+
+05:56.390 --> 05:56.790
+That's good.
+
+05:56.790 --> 05:57.780
+That's working.
+
+05:57.800 --> 06:01.620
+We're going to make reference to the header and I get to say background.
+
+06:01.690 --> 06:02.100
+OK.
+
+06:02.120 --> 06:06.710
+I know that this is nothing nothing new for you but don't worry I'm going somewhere.
+
+06:06.710 --> 06:12.150
+It's going to be 0 3 a 9 f EF 4.
+
+06:12.540 --> 06:20.900
+And just again the text line is going to be center now and this is going to be something you want to
+
+06:20.900 --> 06:22.340
+make reference to the logo.
+
+06:22.340 --> 06:23.980
+I went to style the logo.
+
+06:24.080 --> 06:25.090
+So I going to go right here.
+
+06:25.100 --> 06:26.820
+Say dot logo.
+
+06:26.850 --> 06:29.510
+I'm going to make reference to a class.
+
+06:30.020 --> 06:30.250
+OK.
+
+06:30.260 --> 06:33.550
+I'm going to say that the color is going to be white.
+
+06:33.740 --> 06:41.970
+The font size right here font size is going to be 40 pixels and the font family is going to be on time.
+
+06:42.060 --> 06:42.460
+Let's go.
+
+06:42.530 --> 06:44.410
+That's going to work.
+
+06:44.450 --> 06:46.820
+Now the thing is five below the page nothing happens.
+
+06:46.820 --> 06:49.660
+Of course we need to make a reference to this element.
+
+06:49.760 --> 06:58.430
+So if I go to Hetter and I go right here and assign a class to it it calls and and it says logo I reload
+
+06:58.430 --> 07:06.200
+the page and it's going to fail since say known dorm property class at it given it's giving you right
+
+07:06.200 --> 07:07.070
+here a tip.
+
+07:07.070 --> 07:08.640
+Did you mean class name.
+
+07:08.900 --> 07:18.280
+Well the thing is that we cannot use class whenever this is actually nuch h h h t m l m l is GSX as
+
+07:18.290 --> 07:19.150
+Javascript.
+
+07:19.220 --> 07:25.920
+So we can it use class because class is served keyboard right here where we are using class.
+
+07:26.060 --> 07:27.750
+So we cannot use it this way.
+
+07:27.770 --> 07:32.680
+We need to do something else N-G in GSX instead of using class.
+
+07:32.710 --> 07:35.820
+What are we going to do we use class name.
+
+07:35.970 --> 07:37.730
+And I know this is.
+
+07:37.820 --> 07:39.000
+And now it's working.
+
+07:39.200 --> 07:48.140
+So I know this is kind of weird because you you you're used to write just class and pass the class but
+
+07:48.200 --> 07:51.470
+not anymore with GSX you need to use class name.
+
+07:51.590 --> 07:57.840
+But don't worry it's going to hurt at the beginning that you're going to get used to it don't worry.
+
+07:57.860 --> 08:04.910
+So again inside GSX no more class now it's class name to use class name right.
+
+08:04.920 --> 08:05.320
+That's it.
+
+08:05.330 --> 08:06.930
+So this is up to you.
+
+08:06.950 --> 08:10.290
+You can use the inline method or the import method.
+
+08:10.400 --> 08:11.140
+All right.
+
+08:11.480 --> 08:13.850
+OK let's go to the next section.

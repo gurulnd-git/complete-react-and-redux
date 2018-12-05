@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00.830 --> 00:08.180
+All right so whenever you build this kind of apps it's very common to break everything into small components.
+
+00:08.340 --> 00:13.800
+So if you know Wordpress or any HP framework for example it's the same idea.
+
+00:13.850 --> 00:18.050
+We need to break everything into small pieces and then tie them together.
+
+00:18.180 --> 00:20.440
+This is very common for PH frameworks.
+
+00:20.640 --> 00:23.590
+It's same thing for react and other frameworks.
+
+00:23.790 --> 00:26.850
+So I'm going to give you I'm going to bring a chart right here.
+
+00:27.450 --> 00:32.450
+So this is when we were going to be creating at first just to learn the basics.
+
+00:32.700 --> 00:38.040
+We're going to have a parent component right on top of the chain and then we're going to add some things
+
+00:38.040 --> 00:41.670
+and begin to build kind of a news app.
+
+00:41.720 --> 00:45.290
+So on top and inside of the parent component.
+
+00:45.390 --> 00:46.970
+We can have a header.
+
+00:47.000 --> 00:47.510
+All right.
+
+00:47.550 --> 00:51.320
+And this is going to be a different component and that's the main idea of react.
+
+00:51.330 --> 00:57.390
+We have one component on top of the chain and inside we can have lots of components.
+
+00:57.390 --> 00:59.880
+So the first one is going to be the header.
+
+01:00.030 --> 01:03.420
+Let's get then besides the header.
+
+01:03.440 --> 01:10.380
+We're going to have the component that contains the news so we can have one big component for the news.
+
+01:10.620 --> 01:16.140
+And inside the news component you can have all the items inside the news component which is going to
+
+01:16.140 --> 01:17.930
+be each news.
+
+01:17.940 --> 01:18.400
+All right.
+
+01:18.450 --> 01:21.720
+So we have a punt component inside the parent component.
+
+01:21.720 --> 01:28.410
+We have two components one with Hetter and then the other one with the content of the news and inside
+
+01:28.410 --> 01:29.470
+the content of the news.
+
+01:29.520 --> 01:34.050
+We can have each news one component for each news.
+
+01:34.050 --> 01:34.400
+All right.
+
+01:34.460 --> 01:35.250
+That's good.
+
+01:35.550 --> 01:37.880
+So you know this is this is fine.
+
+01:37.890 --> 01:43.900
+This is just a simple structure but this is kind of a small but we're going to start small at the beginning
+
+01:43.960 --> 01:45.890
+just you know baby steps.
+
+01:45.980 --> 01:49.790
+And in real life this is going to get really confusing.
+
+01:49.830 --> 01:52.560
+You can have a lot of components going around.
+
+01:52.560 --> 01:55.410
+So it's going to be kind of messy but that's fine.
+
+01:55.440 --> 01:57.840
+That is just until you get used to it.
+
+01:57.930 --> 01:58.270
+OK.
+
+01:58.290 --> 01:59.260
+Don't worry.
+
+01:59.250 --> 02:02.630
+So I'm going to go back to our project right here.
+
+02:02.640 --> 02:04.280
+Let me just bring the color world.
+
+02:04.320 --> 02:04.940
+OK.
+
+02:05.170 --> 02:10.250
+And inside the project structure I'm going to start doing some things now.
+
+02:10.290 --> 02:15.860
+The first thing we need to do is to create a folder called components.
+
+02:16.080 --> 02:24.340
+And some people call it buse or includes or templates components imbues are the most popular ones.
+
+02:24.360 --> 02:32.160
+So we're going to use components inside source folder I'm going to create a new folder that called components
+
+02:33.880 --> 02:42.360
+right inside the components folder and it create all the components that we can use to build the application.
+
+02:42.360 --> 02:45.330
+So OK so first we begin in the header.
+
+02:45.450 --> 02:50.480
+So I'm going to say Hetter that day as well.
+
+02:50.500 --> 02:54.360
+JS The old thing is going to be the news component.
+
+02:54.480 --> 03:00.630
+So I'm going to create a new file and this one is going to be called news underscore list.
+
+03:00.670 --> 03:01.770
+Yes.
+
+03:02.400 --> 03:06.860
+And then inside the news list we're going to have one component for each news.
+
+03:06.870 --> 03:18.470
+So again just can it create new file and say news the underscore list on score item that has that site.
+
+03:18.480 --> 03:25.980
+So this is what we're going to be begin to do at first in the index where we have the me go back where
+
+03:25.980 --> 03:27.820
+we have the app inside here.
+
+03:27.930 --> 03:32.550
+It's going to be kind of the parent component and inside the parent component we can have the header
+
+03:32.820 --> 03:37.530
+and then use list and then inside the useless begin can have each item.
+
+03:37.530 --> 03:38.560
+All right that's fine.
+
+03:38.700 --> 03:41.460
+So let's go to the next section and start building this.

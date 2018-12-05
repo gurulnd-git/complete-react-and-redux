@@ -1,0 +1,310 @@
+WEBVTT
+
+00:00.420 --> 00:05.300
+OK so the first component that we are going to create it's going to be beheader component.
+
+00:05.550 --> 00:10.740
+So we will pretty much follow the same steps we did with the index non-jazz.
+
+00:11.040 --> 00:15.930
+So we're going to use we can create a component that contains GSX.
+
+00:15.930 --> 00:21.680
+So to use it we need to import re-act from react so we can use GSX on this component.
+
+00:21.780 --> 00:29.100
+OK so I'm going to say import and I can say react from react.
+
+00:29.100 --> 00:30.820
+That's the first step.
+
+00:31.730 --> 00:36.790
+Then we need to create the component and just like with it personally I'm going to say Konst and this
+
+00:36.800 --> 00:41.490
+is since this is going to be a header component I'm going to say Hetter.
+
+00:41.720 --> 00:42.230
+OK.
+
+00:42.590 --> 00:49.400
+Then you get to say equal open and close equal and right pointing arrow and open and close call the
+
+00:49.400 --> 00:51.860
+braces are going to return.
+
+00:51.860 --> 00:55.410
+We always need to return something and I'm going to say dev.
+
+00:55.510 --> 01:00.340
+And inside here I'm just going to say Hetter to something simple.
+
+01:00.340 --> 01:00.800
+That's right.
+
+01:00.800 --> 01:08.350
+So we have the file we created a component and we are importing re-act from react.
+
+01:08.390 --> 01:11.820
+So we can use GSX on this on this component.
+
+01:12.110 --> 01:20.150
+So right now we need to graph this letter and show it on the screen whenever the application loads word.
+
+01:20.210 --> 01:28.590
+We have one problem this component it's going to be on a different file than the main index that jackass.
+
+01:28.850 --> 01:31.840
+So whenever you work would react.
+
+01:31.880 --> 01:34.300
+All the components are not connected.
+
+01:34.460 --> 01:37.870
+Unless you make we make a connection between them.
+
+01:37.910 --> 01:38.440
+OK.
+
+01:38.750 --> 01:41.820
+So we need to do kind of two steps.
+
+01:41.870 --> 01:50.750
+First we need to tell the application that this Hetter that yes it's accessible from other components.
+
+01:50.910 --> 01:53.540
+So we need to say something right here.
+
+01:53.720 --> 01:59.690
+So the way we do it is going to be calling an export going to say that we're going to use the keyboard
+
+01:59.720 --> 02:07.780
+export and then default an after the field begin to use the name of the components.
+
+02:08.010 --> 02:09.610
+So it's going to be better.
+
+02:10.200 --> 02:18.090
+So doing this we're telling the application that this Hetter can be used inside other components.
+
+02:18.210 --> 02:24.780
+So inside the index since we want to render the header component right here we need to bring the file.
+
+02:24.840 --> 02:31.110
+So I'm going to say right here components right here just like with that we react and we act dumb.
+
+02:31.200 --> 02:33.920
+We need to import the header components.
+
+02:33.960 --> 02:41.370
+So I'm going to say import and I'm going to make reference to the components we want to include which
+
+02:41.370 --> 02:42.540
+is going to be the header.
+
+02:42.810 --> 02:50.100
+And we can say from just like with it since this Hetter component is going to be inside a folder that
+
+02:50.100 --> 02:54.290
+calls component and not on the root directory of source.
+
+02:54.360 --> 02:55.360
+We need to make her.
+
+02:55.380 --> 02:58.350
+We need to actually build the path.
+
+02:58.350 --> 03:04.260
+So I'm going to say Dot for Slash and this is going to be inside components and it's going to be called
+
+03:04.560 --> 03:10.160
+Hetter that Jats whenever you call you call a component on a different file.
+
+03:10.170 --> 03:12.800
+Notice that I'm not putting jast right here.
+
+03:12.960 --> 03:19.470
+If you put just the name of the file without the Dangi Yes re-act already knows that you want to bring
+
+03:19.560 --> 03:20.800
+header non-jazz.
+
+03:20.850 --> 03:23.660
+So there's no need to put down the Jazz.
+
+03:24.050 --> 03:25.450
+OK that's good.
+
+03:25.680 --> 03:31.710
+So if I rewrote the page and getting an error message but what I'm getting it's going to be a warning
+
+03:31.830 --> 03:35.060
+we have right here the icon of warning it says header.
+
+03:35.100 --> 03:37.280
+It's defined but never used.
+
+03:37.470 --> 03:45.600
+So whenever you react it's it's considered bad bad coding bringing compliments importing components
+
+03:45.900 --> 03:49.540
+that components that are not used on the application.
+
+03:49.830 --> 03:50.380
+OK.
+
+03:50.610 --> 03:52.430
+That's the first thing.
+
+03:52.430 --> 03:59.520
+Now I'm going to show you something else before we include this component right here we are returning
+
+03:59.670 --> 04:01.540
+just in one tech.
+
+04:01.770 --> 04:08.760
+If I go right here and put the H one below the return going to really lower the application and it's
+
+04:08.760 --> 04:11.020
+going to fail you can have an error message.
+
+04:11.250 --> 04:18.930
+Whenever you use return like this you need to make sure that whatever it is after return has to be on
+
+04:18.930 --> 04:20.070
+a single line.
+
+04:20.070 --> 04:23.310
+So this works if you have a tiny element.
+
+04:23.520 --> 04:30.570
+All right but if you have a multi multi element just like I don't know maybe a div right here just two
+
+04:30.630 --> 04:32.180
+different elements.
+
+04:32.280 --> 04:33.170
+It's not going to work.
+
+04:33.210 --> 04:35.120
+So you need to do something else.
+
+04:35.130 --> 04:36.070
+What we can do.
+
+04:36.120 --> 04:40.850
+We can to open and close parenthesis going to make a space.
+
+04:41.050 --> 04:41.910
+I'm going to delete this.
+
+04:41.910 --> 04:50.890
+Just grab the H one caught and then right here I'm going to put it inside the parenthesis.
+
+04:50.970 --> 04:53.020
+And this is going to work.
+
+04:53.140 --> 04:55.380
+That's the first thing.
+
+04:55.380 --> 04:57.160
+Now there is one more thing.
+
+04:57.390 --> 05:05.550
+Whenever you are returning something some GSX inside a component you need to wrap everything inside
+
+05:05.550 --> 05:07.230
+one single element.
+
+05:07.530 --> 05:14.140
+If you pass two different elements just like to a div and maybe age 1 you can have an error message.
+
+05:14.150 --> 05:14.600
+Right.
+
+05:14.610 --> 05:16.050
+Doesn't like this.
+
+05:16.230 --> 05:23.910
+Re-act once for you to pass a single element and then inside this single element have everything else.
+
+05:23.910 --> 05:29.010
+So what we need to do we need to put everything inside one element.
+
+05:29.100 --> 05:36.720
+So I'm going to put everything inside a death inside as if we are passing one element and right here
+
+05:36.780 --> 05:38.330
+inside we have the h one.
+
+05:38.460 --> 05:39.510
+So this is working.
+
+05:39.510 --> 05:40.610
+It's going to work.
+
+05:41.010 --> 05:48.250
+Right now what we need to do on top of this one we need to import the head or we need to put the head
+
+05:48.300 --> 05:49.410
+right here.
+
+05:49.410 --> 05:54.950
+So it just like we did with app on the on the on the route ID.
+
+05:55.010 --> 06:01.790
+What I'm going to do going to call Hetter and then close just like that just like a tack.
+
+06:02.490 --> 06:08.910
+And since we imported the header components and we are specifying here that we want to use that component
+
+06:09.220 --> 06:11.230
+is going to render right here on the screen.
+
+06:11.340 --> 06:12.510
+So we have to Hetter.
+
+06:12.730 --> 06:19.580
+And I just make something else so we can make sure that that's the header we want OK.
+
+06:19.600 --> 06:20.530
+We get better.
+
+06:20.710 --> 06:22.460
+And then the H-1.
+
+06:22.900 --> 06:23.400
+All right.
+
+06:23.440 --> 06:24.250
+So this is working.
+
+06:24.250 --> 06:27.430
+So let's recap everything.
+
+06:27.670 --> 06:28.880
+We made a new file.
+
+06:28.920 --> 06:30.760
+It's called heterogeneous.
+
+06:30.790 --> 06:34.900
+We imported react so we can use GSX on this component.
+
+06:34.900 --> 06:40.960
+We created the components and then we made the component available for other components inside.
+
+06:40.960 --> 06:50.710
+We kept then on the main components and I'm using component a lot of imported the header inside the
+
+06:50.910 --> 06:56.700
+app components including everything inside a single elements inside the ring.
+
+06:56.700 --> 06:58.600
+The return of the render.
+
+06:59.030 --> 07:00.400
+OK that's good.
+
+07:00.670 --> 07:04.560
+So let's go to the next section and just move forward with this.

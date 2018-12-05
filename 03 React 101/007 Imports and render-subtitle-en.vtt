@@ -1,0 +1,268 @@
+WEBVTT
+
+00:00.290 --> 00:07.860
+OK in order for re-act compile our component and show it on the browser we need to do something else.
+
+00:07.860 --> 00:11.480
+We need to let the script know that we want to use.
+
+00:11.550 --> 00:11.920
+Right.
+
+00:11.970 --> 00:14.180
+And that's why we get this error message.
+
+00:14.370 --> 00:16.840
+So I'm going to go right here at the top.
+
+00:16.840 --> 00:22.210
+And now what we need to do we need to import react to the equation.
+
+00:22.230 --> 00:23.100
+So when I'm going to do.
+
+00:23.100 --> 00:26.790
+I'm going to say import and we can use import a lot.
+
+00:26.790 --> 00:32.850
+First are going to say react and we are pretty much saying that I want to import something that calls
+
+00:32.850 --> 00:33.990
+react.
+
+00:34.080 --> 00:43.250
+And the second thing when you specify it from is going to say from Am I going to say re-act react and
+
+00:43.250 --> 00:48.150
+this what it's going to do it's going to go to the node modules we have right here.
+
+00:48.320 --> 00:53.460
+He's going to look for a folder that calls react and bring this function so we can use it.
+
+00:53.480 --> 00:57.840
+Inside this file that's pretty much what's happening in a nutshell so.
+
+00:57.860 --> 00:58.170
+OK.
+
+00:58.230 --> 01:01.120
+We were going to get a different message app.
+
+01:01.280 --> 01:02.520
+It's signed but never used.
+
+01:02.540 --> 01:03.580
+That's good.
+
+01:03.590 --> 01:10.310
+Now in order to render this component inside to do show this component inside the screen we need to
+
+01:10.340 --> 01:12.750
+import and use something else.
+
+01:12.770 --> 01:20.660
+The first thing I'm going to do is to import and going to say re-act dumb and I can save from and then
+
+01:20.690 --> 01:25.930
+react Zong symbols that up.
+
+01:26.470 --> 01:30.410
+It's everything in lower in upper case re-act dong.
+
+01:30.550 --> 01:31.510
+That's good.
+
+01:31.520 --> 01:34.670
+So we have the component and we have the dependencies.
+
+01:34.730 --> 01:40.100
+Now we to show it on the screen and we can use this re-act done to show things on the screen.
+
+01:40.280 --> 01:44.380
+So I'm going to call this re-act arm.
+
+01:45.650 --> 01:49.790
+And now when we need to use a method that's called that calls render.
+
+01:49.820 --> 01:55.230
+So I'm going to say Dot and say render and then just open and close.
+
+01:55.400 --> 01:55.770
+Right.
+
+01:55.790 --> 02:02.260
+So we want to use this renderer to show something on the screen but we get an error message right here.
+
+02:02.270 --> 02:07.550
+This render method is going to it's going to need two different arguments.
+
+02:07.610 --> 02:10.970
+The first one is what we want to render.
+
+02:11.060 --> 02:14.820
+We want to render the component we need to pass the components.
+
+02:14.920 --> 02:15.840
+OK that's good.
+
+02:16.010 --> 02:17.960
+So let me just do that.
+
+02:18.070 --> 02:25.250
+I'm not going to say OK we want to pass to render something that calls app going to say app.
+
+02:25.410 --> 02:27.560
+Ok so we get a new message.
+
+02:27.600 --> 02:28.290
+And that is good.
+
+02:28.290 --> 02:33.150
+Whenever you get different error messages it means that you're kind of advancing.
+
+02:33.210 --> 02:39.990
+So we get invalid component element instead of passing a class like food pass our react create element.
+
+02:40.070 --> 02:41.250
+OK that's good.
+
+02:41.250 --> 02:51.650
+So whenever we do this we are just telling the react on Brender that we want to output a component class
+
+02:52.290 --> 02:58.190
+and what we have here it's a component element or instance we don't have a component class.
+
+02:58.440 --> 03:06.630
+So in order to convert this to the let's add the react route Don no we want to show this what we need
+
+03:06.630 --> 03:13.900
+to do is kind of a we need to convert like a like kind of a using an HDMI tag just like this.
+
+03:14.190 --> 03:19.380
+And this is what again it's going to do is going to grab whatever you have inside here and not the actual
+
+03:19.590 --> 03:19.970
+class.
+
+03:19.980 --> 03:24.290
+It's like putting up a name of a function.
+
+03:24.450 --> 03:28.860
+And of course whenever you pass the name of that function you're passing the function and that what
+
+03:28.920 --> 03:30.330
+it's inside the function.
+
+03:30.330 --> 03:34.830
+So this is the same thing we want to render whatever it's inside app.
+
+03:34.830 --> 03:35.750
+All right that's good.
+
+03:35.790 --> 03:40.580
+If I saved this is going to reload the page and we get target container.
+
+03:40.590 --> 03:42.680
+It's not a DOM elements.
+
+03:42.910 --> 03:43.690
+OK that's good.
+
+03:43.700 --> 03:45.250
+That's a different error message.
+
+03:45.480 --> 03:52.860
+So the second argument is going to be the where we are passing the what we want to render but not where
+
+03:52.920 --> 03:54.290
+we want to render.
+
+03:54.540 --> 04:00.380
+So whenever we work with reactant just like I told before we are going to Gravatt just one single HVM
+
+04:00.390 --> 04:05.230
+L and we get to display everything inside that index HMO.
+
+04:05.430 --> 04:12.780
+So if I go to the index that each team how are going to see right here that I have a div that it's called
+
+04:12.880 --> 04:20.080
+root so re-act is going to graph all the components you have and it's going to put them right here.
+
+04:20.280 --> 04:24.240
+It's going to put all the other components right here inside the root.
+
+04:24.360 --> 04:25.420
+That's what we need to do.
+
+04:25.530 --> 04:30.670
+So we need to pass as a second argument to do it right here inside the root.
+
+04:30.720 --> 04:32.280
+You can call this whatever you want.
+
+04:32.310 --> 04:33.250
+It doesn't matter.
+
+04:33.450 --> 04:39.160
+So let's go to the index right here I'm going to say coma and we can begin to type document
+
+04:41.730 --> 04:44.340
+then dot and we can to use the Crace selector.
+
+04:44.430 --> 04:49.250
+And this is standard javascript Bennell javascript Kreiss selector.
+
+04:49.440 --> 04:52.910
+And then I'm going to pass the ID of root.
+
+04:52.950 --> 04:53.860
+We need to do that.
+
+04:54.090 --> 04:57.880
+It's called root.
+
+04:57.900 --> 04:59.740
+So if I just read the page OK.
+
+04:59.760 --> 05:00.320
+We get.
+
+05:00.370 --> 05:02.000
+Hello world.
+
+05:02.010 --> 05:05.530
+So again let's go back and just recap what's happening.
+
+05:05.560 --> 05:09.910
+We created a component that is going to be called app and this component.
+
+05:10.020 --> 05:13.140
+It returns just an H1 tag.
+
+05:13.140 --> 05:17.730
+Then we need to import some libraries or dependencies from react.
+
+05:17.760 --> 05:18.980
+And we are done.
+
+05:19.410 --> 05:22.020
+And at the end we are driving we are dumb.
+
+05:22.140 --> 05:26.120
+We are calling a render method that takes two arguments.
+
+05:26.140 --> 05:31.510
+What we want to output and the where we want to output that.
+
+05:32.020 --> 05:33.220
+OK that's fine.
+
+05:33.480 --> 05:34.360
+This is enough now.
+
+05:34.380 --> 05:38.810
+This is kind of the the beginning of re-act kind of simple.
+
+05:38.820 --> 05:42.510
+So that's why let's go to the next lecture and check something else.

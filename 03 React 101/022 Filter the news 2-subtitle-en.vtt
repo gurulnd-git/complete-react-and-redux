@@ -1,0 +1,334 @@
+WEBVTT
+
+00:00.930 --> 00:08.760
+OK so now what we need do we need to call this function of filter news from the the child component
+
+00:08.840 --> 00:09.620
+the header.
+
+00:09.960 --> 00:10.400
+OK.
+
+00:10.500 --> 00:15.900
+So in the previous lecture we made this function available through prompts.
+
+00:15.990 --> 00:22.350
+So what we can do right here we can call this function directly since we have it inside prompts we just
+
+00:22.350 --> 00:23.420
+can call it.
+
+00:23.590 --> 00:23.920
+OK.
+
+00:23.940 --> 00:25.230
+So how do we call.
+
+00:25.290 --> 00:27.070
+We hope we do this.
+
+00:27.270 --> 00:32.020
+And we called prompts and we're entering inside prompts right here.
+
+00:32.250 --> 00:39.360
+And the function is going to be called whenever we passed as yet as a prop. And here is going to be
+
+00:39.360 --> 00:43.800
+news search such as going to competence and paste it here.
+
+00:44.030 --> 00:44.450
+OK.
+
+00:44.640 --> 00:47.610
+So we're going to call you're calling this function right now.
+
+00:47.610 --> 00:54.840
+Now this new search takes a negative argument here it takes to keywords whatever we are typing right
+
+00:54.840 --> 00:56.610
+here as an argument.
+
+00:56.670 --> 00:56.930
+OK.
+
+00:57.030 --> 01:01.840
+So we have the event target that value inside this function.
+
+01:01.980 --> 01:04.960
+So we are going to pass whatever we are typing right here.
+
+01:04.980 --> 01:08.360
+We can do it with the state but I'm just going to pass the target.
+
+01:08.600 --> 01:09.110
+OK.
+
+01:09.420 --> 01:15.710
+So if I just reload the application again and go to the console and type iOS 6 for example.
+
+01:15.930 --> 01:16.890
+OK that's fine.
+
+01:16.890 --> 01:18.640
+I'm getting ESX.
+
+01:18.800 --> 01:23.690
+I'm just canceling lock the keyboards inside the function so we're good.
+
+01:23.700 --> 01:24.590
+We are on the good track.
+
+01:24.600 --> 01:27.660
+We are calling the new search and passing the arguments.
+
+01:27.720 --> 01:31.540
+Let's get some now inside the filtered news.
+
+01:31.560 --> 01:33.800
+We need to start filtering the news.
+
+01:33.880 --> 01:36.800
+I'm just going to delete this one second.
+
+01:36.930 --> 01:37.560
+OK.
+
+01:37.980 --> 01:42.480
+So I'm going to create a viable and we using iOS 6.
+
+01:42.870 --> 01:47.220
+I'm going to use Isak's filter the filter helper.
+
+01:47.550 --> 01:50.330
+So I'm going to say I'm going to create a viral that's going to be filtered.
+
+01:50.520 --> 01:52.940
+Just just something simple filter.
+
+01:53.120 --> 01:53.930
+OK.
+
+01:54.330 --> 02:03.900
+So we need to grab the state of news the state of news contains all the all the entrances all the news
+
+02:04.320 --> 02:05.410
+of the application.
+
+02:05.550 --> 02:08.050
+So I need to loop this.
+
+02:08.080 --> 02:11.230
+This state didn't use state and not the filcher of course.
+
+02:11.580 --> 02:19.330
+So I'm going to say this that state does news and then just call the helper Filcher.
+
+02:19.600 --> 02:20.620
+OK.
+
+02:21.330 --> 02:29.220
+This filter is going to take an item as an argument it's going to be each item on the loop on each loop
+
+02:29.700 --> 02:33.020
+and then it's just going to run a function.
+
+02:33.090 --> 02:41.310
+Now the filtered helper it's a helper that we can use to filter arrays or collections of data.
+
+02:41.520 --> 02:46.410
+So it needs to always return something always returned.
+
+02:46.440 --> 02:50.430
+We never use Filcher you just remember to use return.
+
+02:50.700 --> 02:52.230
+And this is not react.
+
+02:52.230 --> 02:53.870
+This is iOS 6 of course.
+
+02:54.240 --> 02:54.760
+OK.
+
+02:54.840 --> 03:01.110
+So what we need to do is we need to access each item OK on each loop.
+
+03:01.110 --> 03:09.120
+So we need to check the title which is going to be its title on each news and we are going to do something
+
+03:09.120 --> 03:11.130
+simple and nothing fancy.
+
+03:11.130 --> 03:18.640
+I'm going to say in the case of just the index off we know this is vanilla dance.
+
+03:18.840 --> 03:27.750
+So the index of is going to check if on the title on this all this string contains a wart like keyboards.
+
+03:27.930 --> 03:28.420
+OK.
+
+03:28.530 --> 03:32.100
+So I'm going to pass key keywords as an argument.
+
+03:32.480 --> 03:39.510
+And if it's greater than mine as one which is which means that it's true we're going to just return
+
+03:39.510 --> 03:46.910
+that cell and just cancel Lague the filter so we can make sure that it's filtering correctly it's going
+
+03:46.920 --> 03:48.280
+to reload the page.
+
+03:48.300 --> 03:49.940
+All right.
+
+03:49.980 --> 03:50.990
+One second.
+
+03:52.410 --> 03:55.030
+So I'm going to type E as 6.
+
+03:55.380 --> 03:56.940
+Ok that's fine.
+
+03:57.210 --> 04:04.030
+So we get first all the objects with the letter E as in the title and then just some.
+
+04:04.050 --> 04:07.180
+And the final result is going to be just one entry.
+
+04:07.200 --> 04:08.900
+So we are filtering correctly.
+
+04:09.030 --> 04:11.500
+We have six upgrade available.
+
+04:11.610 --> 04:12.850
+So it's working.
+
+04:12.960 --> 04:20.580
+Now what we need to do now that just close is we need to since we have our filtered list we need to
+
+04:20.670 --> 04:24.970
+pass this filtered to the state.
+
+04:24.990 --> 04:31.680
+We do have this filtered and set it as a state instead of Jason we can set this filter which is one
+
+04:31.680 --> 04:33.920
+entry to the Filcher state.
+
+04:33.960 --> 04:36.340
+How do we set state to remember.
+
+04:36.780 --> 04:44.090
+We can do this in reference to this component and then we set set state.
+
+04:44.100 --> 04:44.940
+All right.
+
+04:45.410 --> 04:46.660
+And then just open close.
+
+04:46.710 --> 04:47.560
+That's good.
+
+04:47.990 --> 04:48.260
+OK.
+
+04:48.270 --> 04:56.070
+Right here instead of I'm going to show you one thing first we're going to call the filtered state filter
+
+04:56.130 --> 04:56.650
+red.
+
+04:56.870 --> 04:57.620
+OK.
+
+04:58.120 --> 05:00.560
+Cut and paste just to avoid mistakes.
+
+05:00.750 --> 05:07.070
+And this filtered state is going to be equal to this version of all this filter.
+
+05:07.780 --> 05:08.370
+OK.
+
+05:08.520 --> 05:12.800
+And let me just reload the page a co-op.
+
+05:12.840 --> 05:21.390
+So if I type E6 is going to go right here to this function is going to Filcher and find inside the news
+
+05:21.390 --> 05:26.440
+stayed with all the news is going to find the ones in-house and have iOS 6.
+
+05:26.670 --> 05:35.930
+And then it's going to set the stage for Filcher which is the results just going to type in iOS 6.
+
+05:36.080 --> 05:39.060
+It's filtering is just showing one result.
+
+05:39.060 --> 05:44.790
+Remember right here we're just choosing to show the filtered instead of all the news.
+
+05:44.790 --> 05:46.420
+So it's working.
+
+05:46.500 --> 05:47.530
+I'm going to show you some.
+
+05:47.530 --> 05:48.840
+Some yes it's magic.
+
+05:48.990 --> 05:54.120
+Whenever you have an object and you have a key value pair with the same name.
+
+05:54.320 --> 05:54.760
+OK.
+
+05:54.780 --> 05:58.780
+In this case is key filtered and value filter.
+
+05:58.830 --> 06:00.760
+You just can delete the second one.
+
+06:01.920 --> 06:09.070
+And just leave one in six is going to know that the key is this has the same name for the value.
+
+06:09.390 --> 06:09.820
+OK.
+
+06:09.980 --> 06:19.740
+This is still going to work if I type ESX ESX it's going to find the first entry right here if I type
+
+06:19.740 --> 06:22.440
+iOS 6 in capitals is going to work.
+
+06:22.440 --> 06:25.980
+But if I do it in lower case it's not going to work.
+
+06:25.980 --> 06:30.520
+We didn't create a rule here to convert everything to lowercase.
+
+06:30.520 --> 06:33.650
+The Jason and the and whatever we are typing right here.
+
+06:33.660 --> 06:36.620
+So now just to save time.
+
+06:36.640 --> 06:37.130
+So OK.
+
+06:37.170 --> 06:37.910
+So it's working.
+
+06:38.010 --> 06:39.180
+Let's go to the next section.
+
+06:39.200 --> 06:46.260
+We're going to do a tiny conclusion of these very basic part of react and then we're just going to move
+
+06:46.260 --> 06:46.800
+forward.

@@ -1,0 +1,352 @@
+WEBVTT
+
+00:00.120 --> 00:04.000
+It so now what we you are going to do beginning work on the filter.
+
+00:04.050 --> 00:11.250
+So what we want to do we want to type something right here let's just like E6 and this is going to trigger
+
+00:11.340 --> 00:18.660
+a function that is going to search the whole Jasen all the news and just filter the news.
+
+00:18.660 --> 00:26.070
+And if it's finding a media title that has ESX is going to just hide just maybe delete all the other
+
+00:26.070 --> 00:29.040
+entrances and just show the one with the match.
+
+00:29.110 --> 00:33.120
+That's what we need to do just to filter the news.
+
+00:33.150 --> 00:34.970
+So this could get confusing.
+
+00:35.160 --> 00:40.600
+And I'm just going to do the coding and I'm going to explain what's going on as we advance.
+
+00:40.830 --> 00:41.330
+OK.
+
+00:41.520 --> 00:49.320
+So now right here in the header header component right here we have a function that it's getting the
+
+00:49.560 --> 00:51.500
+keywords we are typing right here.
+
+00:51.750 --> 00:58.350
+And we are setting a state of keywords with the value which is in this case is going to be is six.
+
+00:58.350 --> 01:06.760
+So now what we need to do to filter the news is to call to a function that is going to do all this logic.
+
+01:07.140 --> 01:08.390
+OK that's fine.
+
+01:08.390 --> 01:10.200
+Just let me go right here.
+
+01:10.230 --> 01:13.310
+This function is going to be inside the index.
+
+01:13.560 --> 01:14.140
+OK.
+
+01:14.400 --> 01:21.340
+So this function is going to grab some state with all the news and it's going to filter the news.
+
+01:21.370 --> 01:26.060
+So I'm going to create a function and it's going to be called filtered news.
+
+01:26.180 --> 01:29.740
+Just simple is that just a function that does something.
+
+01:29.790 --> 01:37.350
+Now this filter filter news function is going to receive some data some arguments the arguments it's
+
+01:37.350 --> 01:40.410
+going to be whatever the user is typing right here.
+
+01:40.470 --> 01:47.870
+So we're going to call that argument keyboard's to something simple keyboards.
+
+01:48.290 --> 01:48.840
+OK.
+
+01:49.140 --> 01:55.530
+Now for now I'm just going to cancel Lague the keywords just to make sure that we're getting the arguments
+
+01:55.530 --> 01:56.430
+correctly.
+
+01:57.730 --> 01:59.650
+All right that's fine.
+
+01:59.650 --> 02:04.480
+So now this filtered news function it's inside the index.
+
+02:04.480 --> 02:11.210
+But what we need to do is to pass this data from the child component which is the header.
+
+02:11.470 --> 02:17.530
+So we need a way to just kind of share this function with the hetter components.
+
+02:17.530 --> 02:23.470
+How do we share things with the palm print component or between components.
+
+02:23.620 --> 02:24.570
+We use props.
+
+02:24.580 --> 02:31.650
+We use props for example on news list to feed the news this components with the least of news.
+
+02:31.720 --> 02:33.880
+So we just used props.
+
+02:34.170 --> 02:35.870
+Prematch do the same right here.
+
+02:35.950 --> 02:37.050
+Going to go right here.
+
+02:37.210 --> 02:46.360
+And my function it's going to be called for example new search just news and then just search something
+
+02:46.360 --> 02:47.590
+that makes sense.
+
+02:47.710 --> 02:49.700
+And this is going to be equal to a function.
+
+02:50.010 --> 02:50.520
+OK.
+
+02:50.680 --> 02:55.990
+So what we need to do is we need to pass this function as props.
+
+02:56.020 --> 02:56.410
+OK.
+
+02:56.440 --> 03:03.540
+So first this function is going to receive some key warts and it's going to be a fat are a function.
+
+03:03.550 --> 03:07.450
+So what we need to trigger right here is going to be the filter news.
+
+03:07.450 --> 03:14.050
+So we're going to say this to make reference to this class to this class and we're going to use the
+
+03:14.050 --> 03:20.110
+name of the function filtered news and this filter news takes some arguments.
+
+03:20.200 --> 03:21.410
+It's going to be key warts
+
+03:24.190 --> 03:25.200
+that's good.
+
+03:25.630 --> 03:35.230
+So now if I go to Cantor and we go right here the bottom line is say just cancel log and say prompts.
+
+03:35.560 --> 03:40.800
+And the thing is that we are passing to the child component This prompts.
+
+03:40.810 --> 03:46.750
+So if I just cancel the prompts right here in the child component I should be getting a function inside
+
+03:46.750 --> 03:47.420
+prompts.
+
+03:47.620 --> 03:47.970
+OK.
+
+03:47.980 --> 03:49.140
+So let's check in.
+
+03:49.200 --> 03:49.470
+OK.
+
+03:49.510 --> 03:50.160
+That's fine.
+
+03:50.350 --> 03:56.370
+So I'm getting a prop that it's new search and this new search equals to a function.
+
+03:56.380 --> 04:03.040
+So what we can do right Rainha we can call this new search function function inside prompts what we
+
+04:03.040 --> 04:05.330
+can do is just call the function.
+
+04:05.330 --> 04:11.610
+Maybe this does props and the name of the function we're going to do it in a couple minutes.
+
+04:11.680 --> 04:15.430
+The thing is that we need to just take care of something else first.
+
+04:15.940 --> 04:19.720
+Let me just tell you the logic of how this is going to work.
+
+04:19.970 --> 04:27.320
+Now when the application starts we get a state a just a default state with all the news all the news
+
+04:28.130 --> 04:34.460
+and we are passing this state with all news to components to render all news.
+
+04:34.850 --> 04:36.470
+Now after the user types.
+
+04:36.470 --> 04:41.860
+For example ESX we're going to send this quartz to the filching news.
+
+04:42.080 --> 04:46.940
+He's going to grab this news that Jason and it's going to filter everything.
+
+04:46.940 --> 04:50.150
+And he's just going to return whatever it's filtering.
+
+04:50.300 --> 04:59.210
+In this case if we do it six it's just going to return one entry which is this one used new iOS 6 upgrade
+
+04:59.360 --> 05:00.130
+available.
+
+05:00.340 --> 05:00.750
+OK.
+
+05:00.860 --> 05:07.200
+So after it's filtering it's returning the state to news which just one entry.
+
+05:07.220 --> 05:07.570
+OK.
+
+05:07.610 --> 05:09.680
+Just going to be one.
+
+05:10.310 --> 05:10.940
+All right.
+
+05:10.940 --> 05:13.310
+So what happens now it's going to fail of course.
+
+05:13.310 --> 05:17.400
+What happens if the user types for example react right here.
+
+05:17.390 --> 05:18.260
+Let me just go back
+
+05:21.560 --> 05:26.970
+there the user types react after they search for ESX.
+
+05:27.020 --> 05:34.400
+The application is going to go back to filter news is going to grab the news the state to find react
+
+05:34.490 --> 05:35.560
+in all news.
+
+05:35.570 --> 05:42.410
+But the problem is that we already mutated this in news that Jason this new state contains only one
+
+05:42.500 --> 05:50.270
+entry which is new upgrade available so we cannot use this as it is what do we need to do is to leave
+
+05:50.270 --> 05:53.150
+this news state with all the news.
+
+05:53.210 --> 05:54.720
+This is going to be an immutable.
+
+05:54.910 --> 05:55.450
+OK.
+
+05:55.460 --> 06:00.590
+This is going to be just like it is and when are the application loads is going to put the all the news
+
+06:00.650 --> 06:01.830
+inside the news.
+
+06:02.150 --> 06:02.640
+OK.
+
+06:02.870 --> 06:08.150
+So now what we need to do is we need to create something that is going to be just changed the whole
+
+06:08.150 --> 06:09.090
+time.
+
+06:09.110 --> 06:16.410
+Can you create a new state that is going to be filtered just filter so it can make sense.
+
+06:16.430 --> 06:21.530
+So this filtered when the application starts it's going to be equal to all the news.
+
+06:21.530 --> 06:26.490
+So the application is going to start and it's going to render the filtered with all the news.
+
+06:26.600 --> 06:26.840
+OK.
+
+06:26.900 --> 06:31.480
+So I'm going to grab this one the filter and I'm going to put it inside here.
+
+06:31.490 --> 06:39.770
+So now the child component the news list is going to render from this state filter which it's all news
+
+06:39.830 --> 06:41.670
+whenever the application starts.
+
+06:41.810 --> 06:43.060
+Then I'm going to go right here.
+
+06:43.100 --> 06:44.580
+I'm going to type ESX.
+
+06:44.690 --> 06:47.870
+The application is going to go to the function filter news.
+
+06:48.200 --> 06:54.380
+And this time it's going to look inside the news that Jason that has all the news and he's going to
+
+06:54.380 --> 06:56.230
+return the results.
+
+06:56.360 --> 07:01.000
+But he's going to return to filtered so filtered is going to be equal.
+
+07:01.220 --> 07:07.160
+Equal to one entry then the user is going to go and type react for example and the application is going
+
+07:07.160 --> 07:13.520
+to go back to filter news and he's going to look inside the news that Jason that has all the news and
+
+07:13.520 --> 07:19.990
+it's going to just find one entry which is the second one and it's going to return the results to filtered
+
+07:19.990 --> 07:20.570
+news.
+
+07:20.570 --> 07:24.470
+So now filtered is going to just show the second entry.
+
+07:24.530 --> 07:31.450
+So pretty much we have one state that has all the news in a different state that half has the mutating
+
+07:32.230 --> 07:32.950
+and treats.
+
+07:32.960 --> 07:37.270
+For example all the different news after we just filter it.
+
+07:37.550 --> 07:40.740
+So that's pretty much the logic behind this.
+
+07:41.120 --> 07:41.510
+OK.
+
+07:41.570 --> 07:43.370
+So we have ours.
+
+07:43.400 --> 07:49.340
+Our function that it's doing something through prompts and we have our filtered state.
+
+07:49.340 --> 07:51.910
+Let's go to the next section and make this work.

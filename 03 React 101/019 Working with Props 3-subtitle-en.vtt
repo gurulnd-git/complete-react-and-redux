@@ -1,0 +1,376 @@
+WEBVTT
+
+00:00.650 --> 00:08.510
+OK since we have our props data with all the news array what we need to do is to grab this props and
+
+00:08.570 --> 00:09.880
+access to news.
+
+00:10.220 --> 00:14.240
+And with the news we can a loop that array and show all news.
+
+00:14.240 --> 00:16.990
+So I'm just going to delete the consulate probs.
+
+00:17.240 --> 00:18.650
+They're going to go right here.
+
+00:18.740 --> 00:23.180
+Now what we want to do we want to create a variable that is going to loop this.
+
+00:23.510 --> 00:30.440
+So we're going to go right here and going to see a concert and this concert is going to be items you
+
+00:30.440 --> 00:32.710
+can put whatever name you want.
+
+00:32.750 --> 00:39.230
+Now since we're using iOS 6 We're going to make use of the map help her if you know what I'm talking
+
+00:39.230 --> 00:40.160
+about.
+
+00:40.730 --> 00:46.190
+If you know the map Well it's going to be easier for you if you just stick around.
+
+00:46.190 --> 00:47.820
+I'm going to explain what is happening.
+
+00:47.960 --> 00:51.270
+So first we have the prompts with all the information.
+
+00:51.380 --> 00:53.270
+So we need to access the prompts.
+
+00:53.270 --> 01:00.530
+Just like an object we need to access the news and then we can a map over it with the map.
+
+01:00.530 --> 01:07.370
+Of course we're going to use an item and we're going to make use of your sex and I'm going to say OK
+
+01:07.460 --> 01:15.320
+we want to loop each this array and create an item for each one and it's going to be equal and right
+
+01:15.320 --> 01:18.700
+pointing arrow because it's going to be a fat a function.
+
+01:18.800 --> 01:21.190
+And inside here we're going to do all the logic.
+
+01:21.560 --> 01:28.500
+So since we want to return some GSX going to say return and everything is going to be inside a parenthesis.
+
+01:28.940 --> 01:32.950
+Ok now I'm going to do div an inside here.
+
+01:32.960 --> 01:37.860
+You can have return all the the the elements inside a container.
+
+01:38.210 --> 01:44.930
+So I'm going to say first I'm going to grab an H-3 tack and I going to make reference to the item and
+
+01:44.930 --> 01:46.370
+just let me check the date.
+
+01:46.640 --> 01:50.360
+Jason you can have an ID a title and a field.
+
+01:50.360 --> 01:53.190
+So I get to make reference first to the title.
+
+01:53.300 --> 01:56.570
+So I'm going to go right here and use curly braces.
+
+01:56.720 --> 02:02.720
+I'm going to graph this item DOD and make reference to the title and.
+
+02:02.750 --> 02:03.920
+OK that's good.
+
+02:03.950 --> 02:04.990
+So I'm going to go right here.
+
+02:05.000 --> 02:10.030
+Karelian you did and this is going to be the field which is going to be text.
+
+02:10.130 --> 02:10.490
+OK.
+
+02:10.630 --> 02:11.710
+I'm going to go right here.
+
+02:11.990 --> 02:16.260
+Curly braces item don't feed.
+
+02:16.870 --> 02:17.410
+OK.
+
+02:17.600 --> 02:25.410
+So this function is going to loop over the news the news with the map function map helper.
+
+02:25.730 --> 02:30.060
+And we will create this markup for each use.
+
+02:30.100 --> 02:32.140
+You can have just four news.
+
+02:32.530 --> 02:32.960
+OK.
+
+02:33.050 --> 02:36.230
+So how can I just render this.
+
+02:36.620 --> 02:38.030
+This elements.
+
+02:38.060 --> 02:47.660
+So inside here we need to I'm going to delete newsiest and remember that re-act needs for us to return
+
+02:47.780 --> 02:49.170
+just a single element.
+
+02:49.350 --> 02:57.170
+If I do this and just do a curly braces and make a reference to this viable I'm going to show you just
+
+02:57.170 --> 02:57.790
+now.
+
+02:59.090 --> 03:03.430
+Begin to get an error message about that element must be returned.
+
+03:03.560 --> 03:10.160
+This is because whenever we call this novel this comes out items it's going to loop through this and
+
+03:10.160 --> 03:15.050
+it's going to give us back just three elements just like this.
+
+03:15.050 --> 03:20.490
+And remember re-act wants us to pass a single element just a wrapper just in a container.
+
+03:20.690 --> 03:24.580
+So I'm going to go right here I'm going to say make it.
+
+03:24.650 --> 03:26.930
+I'm going to create a container.
+
+03:27.820 --> 03:34.970
+And inside the container we can have all our items and we are getting them just a title and feed and
+
+03:35.160 --> 03:36.670
+we get all four that's.
+
+03:36.710 --> 03:40.880
+So it's working if you know how map works.
+
+03:40.880 --> 03:42.540
+Just go to the next section.
+
+03:42.740 --> 03:45.170
+If you don't know what's happening right here.
+
+03:45.170 --> 03:45.900
+Just stick around.
+
+03:45.920 --> 03:48.830
+I'm going to I'm going to tell you right now what is happening.
+
+03:49.220 --> 03:49.840
+OK.
+
+03:50.240 --> 03:58.910
+So with iOS 6 and the later version versions of iOS 5 we already have access to map map.
+
+03:58.910 --> 04:02.160
+It's just kind of a loop this map.
+
+04:02.180 --> 04:06.470
+It's going to be equal to do a for loop for example.
+
+04:07.200 --> 04:07.630
+What happened.
+
+04:07.650 --> 04:07.850
+OK.
+
+04:07.880 --> 04:13.940
+For an inside for create a viral and it's called I it's going to be equal to zero.
+
+04:14.270 --> 04:16.590
+And then we just call until I.
+
+04:16.610 --> 04:22.380
+It's less than a ray ray dot that length.
+
+04:22.540 --> 04:23.530
+Length.
+
+04:23.930 --> 04:25.010
+We get it.
+
+04:25.240 --> 04:28.960
+I plus plus an inside here for each iteration.
+
+04:28.970 --> 04:33.470
+And that every You're going to return the of course the elements.
+
+04:33.740 --> 04:37.980
+So this is the same as doing this just can come in this.
+
+04:38.010 --> 04:38.630
+OK.
+
+04:38.870 --> 04:45.190
+So again we have the props and inside the props we have something that calls prompt news.
+
+04:45.380 --> 04:50.390
+It's an array so we access proper use and then we use a helper.
+
+04:50.390 --> 04:54.110
+It's going to be map then for each iteration.
+
+04:54.170 --> 04:57.480
+On this loop we pass an item.
+
+04:57.820 --> 04:58.170
+OK.
+
+04:58.220 --> 05:02.110
+So first one is going to be the first and use and that it's item.
+
+05:02.120 --> 05:05.330
+So we're going to go right here and we will return some code.
+
+05:05.390 --> 05:10.520
+So it's going to go on the first iteration is going to access the item which is the first element on
+
+05:10.520 --> 05:16.990
+the array and it's going to give us the title of this first and the first item and then the feed.
+
+05:17.040 --> 05:18.270
+And then it's going to go here.
+
+05:18.290 --> 05:19.560
+It is going to start again.
+
+05:19.610 --> 05:21.260
+It's going to go to the second round.
+
+05:21.320 --> 05:22.820
+It's going to grab the item.
+
+05:22.880 --> 05:27.900
+The second item and it's going again pass the title and the feed.
+
+05:28.070 --> 05:30.910
+It's going to do it four times with the four news.
+
+05:30.950 --> 05:38.410
+And then at the end of course it's going to return all the four news just like this.
+
+05:38.450 --> 05:42.550
+Re-act is grandis and it's just putting the items right here.
+
+05:42.800 --> 05:43.090
+OK.
+
+05:43.130 --> 05:46.740
+Let me just go back.
+
+05:46.910 --> 05:48.160
+So this is happening again.
+
+05:48.170 --> 05:55.830
+Map it just like doing this but in ESX going in the did this picture site it's kind of a ballroom see
+
+05:56.260 --> 05:57.120
+this.
+
+05:57.520 --> 06:01.600
+This right here pretty much item just like this.
+
+06:01.730 --> 06:03.340
+And then a fat function.
+
+06:03.470 --> 06:08.820
+It's like doing props that I believed was news.
+
+06:09.170 --> 06:16.330
+Use that map and then when we do this it's like doing function and then just returning the function.
+
+06:16.340 --> 06:19.700
+This is the same syntax but in the A-6.
+
+06:20.120 --> 06:21.210
+OK that's fine.
+
+06:21.230 --> 06:26.110
+That's a little bit of information about the map and right here.
+
+06:26.180 --> 06:34.340
+It's working but we are getting an error message you're getting each child in an array or iterator should
+
+06:34.430 --> 06:36.450
+have any unique key.
+
+06:36.470 --> 06:38.910
+Now whenever we worked we'd react.
+
+06:38.990 --> 06:41.750
+And we do and we loop items.
+
+06:41.960 --> 06:45.940
+Each item that we are returning needs to have a key.
+
+06:46.130 --> 06:47.840
+And this is just for react.
+
+06:47.960 --> 06:48.620
+OK.
+
+06:48.620 --> 06:53.160
+You're not going to see this key inside the inside Saddam.
+
+06:53.180 --> 06:54.520
+Maybe if you inspect it.
+
+06:54.710 --> 07:02.200
+So if I go right here he's going to say OK we need to add a key prop props are this the same thing we're
+
+07:02.240 --> 07:04.100
+passing right here on the index.
+
+07:04.100 --> 07:05.480
+This is a prop.
+
+07:05.630 --> 07:13.170
+So what we need to do whenever we do a loop we need to have a prop that has the name of key.
+
+07:13.390 --> 07:17.060
+So going to say key and just return something.
+
+07:17.240 --> 07:21.340
+Since on our database each item has an ID.
+
+07:21.440 --> 07:22.850
+I'm just going to pass the ID.
+
+07:22.880 --> 07:29.060
+It's going to be item dot I.D. and we're going to get rid of that error message.
+
+07:29.230 --> 07:30.090
+Let's get.
+
+07:30.140 --> 07:37.330
+So everything is working for me just make this a little bit smaller we said to default.
+
+07:37.390 --> 07:37.720
+OK.
+
+07:37.730 --> 07:39.820
+And we had we have all the news.
+
+07:40.220 --> 07:40.460
+Right.
+
+07:40.460 --> 07:45.350
+So let's go to the next section and talk about something else that prompts.

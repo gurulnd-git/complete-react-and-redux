@@ -1,0 +1,184 @@
+WEBVTT
+
+00:00.360 --> 00:07.200
+All right so finally what I want to do is to type something on the input and change the state.
+
+00:07.230 --> 00:11.940
+Now we already have a function to grab the event right here.
+
+00:11.940 --> 00:17.250
+We have an event that triggers a function whenever we change something on the input.
+
+00:17.250 --> 00:19.010
+All right that's that's it.
+
+00:19.020 --> 00:25.860
+So inside this function what we're going to do we're going to grab an instance of this state the state
+
+00:25.860 --> 00:30.020
+of the component and change the values inside keyboards.
+
+00:30.020 --> 00:35.180
+So OK I'm going to just delete this and right here to change this state.
+
+00:35.220 --> 00:44.030
+What we need to do is we need to do this we need to call the Diski ward and say Dot and do set state
+
+00:45.370 --> 00:52.970
+inside the same state we are going to open close the parenthesis and right here inside an object.
+
+00:53.030 --> 00:55.480
+What I'm going to do is say keywords.
+
+00:55.570 --> 00:59.610
+It's the same thing we have right here and now inside keywords.
+
+00:59.640 --> 01:05.700
+I'm going to just set the new state of keywords and see if we can't we have the event right here.
+
+01:05.770 --> 01:10.410
+We're just going to call event that target just like we did before.
+
+01:10.540 --> 01:12.090
+And then just the value.
+
+01:12.500 --> 01:14.250
+OK that's good.
+
+01:14.260 --> 01:21.520
+Now I get to reload the application and if I type something right here I'm going to get an error message
+
+01:21.790 --> 01:26.700
+cannot read properly set state of undefined and this is good.
+
+01:26.980 --> 01:30.760
+Now the thing is that you're calling this input function.
+
+01:30.760 --> 01:38.360
+And whenever we go right here input from interchange we're calling this and this means this function
+
+01:38.890 --> 01:41.470
+and we didn't have a state on this function.
+
+01:41.470 --> 01:46.840
+The state it's going to be inside the constructor of this class so we can use it this way we need to
+
+01:46.840 --> 01:51.130
+do something else and there's pretty much two ways to do this.
+
+01:51.280 --> 01:56.340
+I can assure you one way and maybe later on the application I can show you a different way of doing
+
+01:56.350 --> 01:57.120
+this.
+
+01:57.130 --> 02:05.070
+Now we need to create a relation right here with the this function and the actual class.
+
+02:05.320 --> 02:10.000
+So the way to do it we're going to go right here on the impot change and what I'm going to do I'm going
+
+02:10.000 --> 02:15.290
+to say Dot and I'm going to call the bind method and say bind.
+
+02:15.790 --> 02:20.610
+And inside the bind I'm going to say that OK.
+
+02:20.890 --> 02:28.960
+So this is what this is doing it's saying OK if I trigger the call this function I need to whenever
+
+02:28.990 --> 02:36.640
+inside this function if they say does this mean this class and not this function.
+
+02:36.670 --> 02:38.630
+That's why we do define this.
+
+02:38.670 --> 02:42.010
+You're kind of changing the behavior of this function.
+
+02:42.010 --> 02:44.680
+There's a different way to do this in six.
+
+02:44.800 --> 02:49.930
+But for now we're going to do it like this because maybe in the future you can use someone else's code
+
+02:50.230 --> 02:55.480
+and you're going to say that maybe they are doing this and you're not going to know why they're doing
+
+02:55.510 --> 02:56.140
+this.
+
+02:56.170 --> 03:00.840
+We're just making a relationship between the function and the actual class.
+
+03:00.890 --> 03:06.710
+So OK so if I go right here on the input I'm going to type I don't know John.
+
+03:06.880 --> 03:07.440
+OK.
+
+03:07.480 --> 03:08.260
+That's fine.
+
+03:08.540 --> 03:10.450
+We're not getting an error message.
+
+03:10.480 --> 03:13.960
+So this means that the said State it's working.
+
+03:13.960 --> 03:17.080
+We are changing the state the default state.
+
+03:17.080 --> 03:21.610
+So now keyboard's it's not empty anymore and it's going to be John.
+
+03:21.970 --> 03:30.580
+Now when when when you need to to change the default state to change state inside react you need to
+
+03:30.580 --> 03:33.340
+do it through set state.
+
+03:33.340 --> 03:40.790
+Now if you come from javascript to S-5 so maybe you have you have a different object right here and
+
+03:40.800 --> 03:41.740
+really have an array.
+
+03:41.740 --> 03:46.150
+For example you can do this movie DOD called the state.
+
+03:46.240 --> 03:53.610
+You can say this state for example then darte and you're going to do push and you push some values.
+
+03:53.700 --> 03:56.910
+Well in re-act this it's not allowed.
+
+03:57.100 --> 04:00.250
+It's going to work but you shouldn't do it this way.
+
+04:00.250 --> 04:02.480
+So this is a big big mistake.
+
+04:02.500 --> 04:06.610
+You shouldn't do it like this if you want to change a state.
+
+04:06.700 --> 04:09.750
+You always need to do it through set state.
+
+04:09.760 --> 04:15.240
+This is the method that re-act provides us to change to change a state.
+
+04:15.490 --> 04:15.920
+OK.
+
+04:16.000 --> 04:19.870
+That is get weird successfully changing the state.
+
+04:19.870 --> 04:23.070
+The thing is that I have no way to prove it right now.
+
+04:23.140 --> 04:29.590
+So we're going to go to the next lecture and we can to add some things so we can bew the we can check
+
+04:29.590 --> 04:30.910
+the estate changing.

@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.780 --> 00:03.350
+OK so let's see the state in action.
+
+00:03.540 --> 00:10.400
+Now whenever we use state we start the component and you declare a state.
+
+00:10.560 --> 00:13.940
+You can you can have some options right here some default options.
+
+00:14.100 --> 00:20.550
+So what I'm going to do could go right here at the bottom I'm going to say title to something title
+
+00:21.330 --> 00:22.540
+An inside the title.
+
+00:22.560 --> 00:26.570
+I can have a default value it's going to be the keywords.
+
+00:26.850 --> 00:31.160
+For example the keyboards are just done.
+
+00:31.290 --> 00:37.350
+And since this is an object are going to come in right here on our application I'm just going to create
+
+00:37.350 --> 00:45.060
+two different apps and say DIVX and then are going to say Divx at the bottom to something real simple.
+
+00:45.210 --> 00:52.230
+Now since whenever the application loads of react is going to check whatever you have on the state.
+
+00:52.230 --> 00:57.720
+So after you have it checks what you have on the state is going to go to the render and it's going to
+
+00:57.720 --> 00:59.190
+render the information.
+
+00:59.340 --> 01:05.790
+And right here if you make of reference says some values that you have on the states some default values
+
+01:06.050 --> 01:08.290
+is going to render this values.
+
+01:08.430 --> 01:14.310
+So inside the first div I'm going to do curly braces and I'm going to say OK.
+
+01:14.700 --> 01:15.130
+React.
+
+01:15.150 --> 01:20.050
+I want you to show whatever I have on the title state.
+
+01:20.130 --> 01:26.100
+So I'm going to make reference to this because is this component this class going can say Dot going
+
+01:26.100 --> 01:29.520
+to make I'm going to call the state and I want to get the title.
+
+01:29.550 --> 01:35.120
+So just like a regular object I'm going to say title and whenever the application loads going to get
+
+01:35.220 --> 01:36.570
+I can have the text.
+
+01:36.580 --> 01:38.370
+It's going to be the key words are.
+
+01:38.430 --> 01:44.990
+So you can have a lot of default values and then you could be changing the state of this Ballis no problem.
+
+01:45.000 --> 01:52.770
+So what I want to do right here below the key words are I want to output whatever information we have
+
+01:52.770 --> 01:53.720
+in keywords.
+
+01:53.910 --> 02:00.480
+So again I'm going to say does Dant state DOT key words.
+
+02:01.500 --> 02:06.050
+Now whenever the application loads the key words it's going to be empty of course.
+
+02:06.150 --> 02:07.960
+So nothing is going to happen.
+
+02:08.130 --> 02:14.780
+But if I go right here and type J is going to show us the state of Quartz.
+
+02:15.060 --> 02:21.050
+And again if we just add more information it's going to just display the keyboards.
+
+02:21.060 --> 02:23.510
+So what is happening let's go back.
+
+02:23.510 --> 02:25.330
+Let me just reload the application.
+
+02:25.560 --> 02:34.410
+So the up the component loads is going to wrap the constructor create a state and set some default settings.
+
+02:34.410 --> 02:41.430
+So then it's going to go right here and it's going to render the components and it start on the title
+
+02:41.610 --> 02:46.650
+it's going to put the default value and keywords is going to be empty because that's what we have in
+
+02:46.650 --> 02:48.060
+the state.
+
+02:48.060 --> 02:52.560
+Now if I go right here and the user types in F..
+
+02:52.770 --> 02:53.400
+OK.
+
+02:53.520 --> 02:59.820
+It's going to be type and Neph is going to go to impeach or to onchange is going to trigger the change
+
+03:00.130 --> 03:02.900
+and it's going to set a new state for the keywords.
+
+03:03.000 --> 03:03.900
+So keywords.
+
+03:03.930 --> 03:05.790
+It's not going to be empty anymore.
+
+03:05.880 --> 03:07.680
+It's going to have an F..
+
+03:07.960 --> 03:09.650
+OK let's get now.
+
+03:09.660 --> 03:16.740
+Whenever whenever this is happening re-act knows and it's listening for changes on the state.
+
+03:16.890 --> 03:23.190
+So whenever we change the state put whatever value re-act is going to check the state again is going
+
+03:23.190 --> 03:29.100
+to go right here again on the render and it's going to render all the information again but that this
+
+03:29.100 --> 03:31.550
+state keywords it's not empty anymore.
+
+03:31.590 --> 03:32.620
+It's going to have a net.
+
+03:32.850 --> 03:36.220
+So it's really rendering everything with the values we have.
+
+03:36.600 --> 03:37.060
+OK.
+
+03:37.200 --> 03:45.150
+And again if I type anay is going to repeat the exact same process going to go to the to the function
+
+03:45.410 --> 03:47.750
+is going to set the state of keywords.
+
+03:47.850 --> 03:53.660
+And now it's going to be a it's going to really render everything and this values is going to be tidal
+
+03:53.660 --> 03:59.310
+it's going to be the same and this keyboard is going to be FAA and then again just the same process.
+
+03:59.310 --> 04:02.160
+Whenever we changes change states.
+
+04:02.280 --> 04:08.280
+So this is really important for for react and we're going to use States if we're going to use state
+
+04:08.340 --> 04:09.180
+a lot.
+
+04:09.270 --> 04:10.500
+Would you react.
+
+04:10.950 --> 04:13.630
+OK so let's go to the next section.
+
+04:13.740 --> 04:24.180
+And remember what I told you before not to do this state that keyboards for example equal to events
+
+04:24.240 --> 04:27.870
+target that value not not to change a state like this.
+
+04:27.870 --> 04:32.430
+And again I'm just telling you again because you shouldn't change the state.
+
+04:32.490 --> 04:36.840
+And if I do it do not muted state directly use said state.
+
+04:37.050 --> 04:41.070
+And you know this is going to work because you're getting a warning.
+
+04:41.070 --> 04:43.480
+So this is going to work but you shouldn't use it.
+
+04:43.500 --> 04:45.320
+This is some bad idea.
+
+04:45.390 --> 04:46.040
+OK.
+
+04:46.410 --> 04:50.610
+So again this is enough for state for this part.
+
+04:50.790 --> 04:53.950
+Let's go to the next section and talk about something else.

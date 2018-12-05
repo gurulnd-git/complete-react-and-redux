@@ -1,0 +1,268 @@
+WEBVTT
+
+00:00.590 --> 00:08.420
+OK so I'm going to go to the letter that yes I'm going to delete what we did because we didn't we actually
+
+00:08.580 --> 00:09.430
+needed.
+
+00:09.460 --> 00:15.620
+So I'm going to go and delete the div and just leave the hetter component just as it is.
+
+00:15.680 --> 00:21.580
+We have the onchange and we are setting the state keyboard's just leave it at that.
+
+00:21.590 --> 00:24.750
+Now I see Ossa course resource.
+
+00:25.160 --> 00:31.340
+I've added a file so you can download is going to be adjacent file and we can use this as a database
+
+00:31.430 --> 00:33.240
+to render news.
+
+00:33.260 --> 00:39.230
+Now in the future if you're going to make the API calls real API calls we're not going to use a David
+
+00:39.250 --> 00:41.660
+that Jasen be going to use something else.
+
+00:41.810 --> 00:45.810
+But for now this is just as good as it gets.
+
+00:45.820 --> 00:51.540
+I gave you just download the DVD Jason and put it inside the source folder right here.
+
+00:51.630 --> 00:54.100
+David Jason inside source.
+
+00:54.110 --> 00:56.570
+Now what we need to do and I'm going to go.
+
+00:56.590 --> 01:00.310
+Just going to close this for now and go to the index that is.
+
+01:00.410 --> 01:06.890
+So we need to load the up whenever the application loads we are this is the first component that we
+
+01:06.890 --> 01:08.960
+can load the app component.
+
+01:08.960 --> 01:18.380
+Now what we need to do we need to fetch the news fetch the Jason database and we need to set a state
+
+01:18.470 --> 01:25.940
+with adjacent database and then from the state we need to pass the database to the list that it's going
+
+01:25.940 --> 01:29.280
+to be rendered right here now right here.
+
+01:29.300 --> 01:31.380
+Well we have a tiny problem.
+
+01:31.520 --> 01:37.280
+We need to convert this to to a class based component so we can use the state.
+
+01:37.280 --> 01:40.450
+So are we going to do some refactoring right here.
+
+01:40.520 --> 01:45.890
+I'm going to go first I'm going to import the Jason files so we can use it on the state.
+
+01:45.890 --> 01:49.550
+So I'm going to say import I'm going to give it a name of Jason.
+
+01:49.670 --> 01:56.340
+Now whenever you do an import this name is going to be whatever name you can put whatever right here.
+
+01:56.340 --> 01:57.200
+It doesn't matter.
+
+01:57.410 --> 02:04.210
+And javascript is five is going to create a constant with this value.
+
+02:04.220 --> 02:13.520
+So if I do Jason from and then it's going to be dot for Slash D-B that Jason this is just like doing
+
+02:13.520 --> 02:18.670
+Konst Jason equals to whatever we are fetching.
+
+02:18.680 --> 02:19.810
+All right.
+
+02:19.910 --> 02:24.100
+So OK so we import Jason right here it's giving us an error message.
+
+02:24.110 --> 02:27.470
+It's just a warning actually Jason is defined but never used.
+
+02:27.470 --> 02:32.300
+Remember we cannot have marbles that are not used in react.
+
+02:32.450 --> 02:35.330
+So just to make sure I'm getting the file correctly.
+
+02:35.510 --> 02:39.720
+I'm going to say cancel Don's log and inside the console log.
+
+02:39.740 --> 02:42.710
+I'm just going to output the Jason and whenever.
+
+02:42.800 --> 02:44.570
+OK so I'm getting to Jason.
+
+02:44.600 --> 02:46.850
+Let's get right here.
+
+02:46.850 --> 02:53.120
+So we need to convert this this app component from a statelets component from a functional component
+
+02:53.480 --> 02:55.260
+to a class based components.
+
+02:55.410 --> 02:55.860
+OK.
+
+02:56.090 --> 03:02.970
+So the first thing we need to do whenever we did this we do this we need to bring a component from react.
+
+03:02.990 --> 03:09.470
+So I'm going to go here I'm going to say components just like that component.
+
+03:10.300 --> 03:11.050
+Right.
+
+03:11.540 --> 03:11.780
+OK.
+
+03:11.780 --> 03:17.400
+So I'm going to just delete this and I'm going to just create a class.
+
+03:17.540 --> 03:23.990
+I'm going to say class and it's going to be app and then it's going to be extents just like it did before
+
+03:24.200 --> 03:25.420
+components.
+
+03:25.710 --> 03:26.040
+Right.
+
+03:26.120 --> 03:28.040
+So now we have our class.
+
+03:28.250 --> 03:29.930
+Now we're here to render something.
+
+03:30.110 --> 03:34.910
+So we use the render method it's render then parenthesis.
+
+03:34.910 --> 03:37.930
+And inside the curly braces we want to return something.
+
+03:38.090 --> 03:41.720
+So we're going to say return and inside the returns you want.
+
+03:41.720 --> 03:45.350
+We want to return a multi-line elements.
+
+03:45.560 --> 03:50.860
+We do parenthesis and inside the parenthesis we're going to do all the GSX.
+
+03:50.930 --> 03:51.670
+So OK.
+
+03:51.950 --> 03:55.770
+Now first we need to return the header.
+
+03:55.790 --> 04:01.610
+So I'm going to say Dev because we need to put everything inside just one element and mine it's going
+
+04:01.610 --> 04:02.370
+to be a div.
+
+04:02.510 --> 04:04.320
+You could have a span or whatever.
+
+04:04.520 --> 04:11.930
+And inside here I'm going to just return the header we have right here are header and when ever the
+
+04:11.930 --> 04:14.360
+application loads it's just going to work.
+
+04:14.510 --> 04:16.100
+We still have the Jason.
+
+04:16.340 --> 04:21.840
+So now what do we need to do is we need to create a constructor with a super and the props and set a
+
+04:21.830 --> 04:22.990
+new state.
+
+04:23.020 --> 04:23.350
+OK.
+
+04:23.480 --> 04:25.680
+So I'm going to go over here and we know this.
+
+04:25.780 --> 04:28.820
+Can you say constructor just like we did before.
+
+04:28.850 --> 04:31.510
+Can it create it and pass the prompts.
+
+04:31.520 --> 04:32.570
+All right.
+
+04:32.620 --> 04:36.220
+Inside here I'm going to call the super good.
+
+04:37.650 --> 04:40.680
+Kind of don't need this but that's fine.
+
+04:40.990 --> 04:47.330
+So I'm going to say this that state equals to news.
+
+04:47.390 --> 04:48.810
+My mind is going to be news.
+
+04:48.820 --> 04:51.620
+You can choose whatever name you want for here.
+
+04:51.850 --> 04:57.700
+And this is going to be equal to Jason but so we get no errors.
+
+04:57.700 --> 04:58.620
+So that is good.
+
+04:58.630 --> 05:02.870
+So when the OP starts we going to get this rendered with.
+
+05:02.950 --> 05:07.330
+And then of course he's going to do the Fadge he's going to bring all the files we already have right
+
+05:07.330 --> 05:12.870
+here and the state of news is going to be equal to the Jason we have right here.
+
+05:12.880 --> 05:16.430
+So now what we need to do we need to create.
+
+05:16.750 --> 05:20.120
+We need to import the news list to this.
+
+05:20.200 --> 05:27.970
+This indicates that James and from here we're going to fetch the import and we can pass it just like
+
+05:27.970 --> 05:28.800
+with it we'd better.
+
+05:28.840 --> 05:36.660
+We're going to do something like newsiest an inside news list right here as a prop you can begin to
+
+05:36.910 --> 05:42.440
+pass all the information we have right here in the state we're going to pass to state that is going
+
+05:42.450 --> 05:44.350
+to do something like this.
+
+05:44.380 --> 05:47.930
+So let's go to the next lecture and make this work.

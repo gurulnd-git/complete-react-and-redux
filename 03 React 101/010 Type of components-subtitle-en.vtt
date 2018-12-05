@@ -1,0 +1,283 @@
+WEBVTT
+
+00:00.420 --> 00:04.640
+OK so in fact we have two main types of components.
+
+00:04.680 --> 00:08.280
+We have functional components and class components.
+
+00:08.280 --> 00:10.990
+The difference is what you want to do with this.
+
+00:11.280 --> 00:15.610
+At this point this Hetter component is just a function.
+
+00:15.660 --> 00:23.070
+It's just receiving some data it might receive some data right here as an argument but it's not doing
+
+00:23.070 --> 00:26.150
+anything it's just returning some GSX.
+
+00:26.400 --> 00:29.090
+So this is a functional component.
+
+00:29.280 --> 00:35.520
+Now the functional component doesn't care what happens with the rest of the other components with the
+
+00:35.600 --> 00:38.270
+with the application it's just returned.
+
+00:38.460 --> 00:40.920
+Returning something or doing something.
+
+00:40.950 --> 00:48.390
+So on the other hand we have the class components disk components are a little bit more complex.
+
+00:48.600 --> 00:54.400
+They have the ability to know when it's happening on the rest with the rest of the application.
+
+00:54.600 --> 00:59.210
+So you may have right here in the index some information that it's going on right here.
+
+00:59.430 --> 01:05.910
+And then the hetter if it's a class based component is going to know what's happening inside react.
+
+01:05.910 --> 01:08.900
+That's why we're going to use class a class based components.
+
+01:09.150 --> 01:15.390
+Now inside our application we can have the header component and we can have a logo and we can have an
+
+01:15.480 --> 01:16.210
+input.
+
+01:16.560 --> 01:23.400
+So the user is going to inputs and text and we can grab whatever the user it's entering and we're going
+
+01:23.400 --> 01:30.090
+to pass these keywords to the news component and inside the news component we're going to search for
+
+01:30.090 --> 01:32.130
+a particular news.
+
+01:32.250 --> 01:32.930
+That's fine.
+
+01:33.150 --> 01:38.970
+So what we need to do we need to convert this header to a class based component.
+
+01:39.000 --> 01:41.500
+It could be a class based component.
+
+01:41.520 --> 01:41.890
+OK.
+
+01:42.150 --> 01:46.740
+So I'm going to delete all of this and I'm going to ride a class for this.
+
+01:46.740 --> 01:54.270
+So the first thing we need to do is to ride the keyboard class and the classes are not from do we react.
+
+01:54.270 --> 01:57.300
+This lesson is six some six.
+
+01:57.300 --> 02:02.220
+So first I'm going to assign a name to this class and I'm just going to open and close.
+
+02:02.220 --> 02:04.720
+Right now if you come from.
+
+02:04.740 --> 02:05.490
+Yes five.
+
+02:05.550 --> 02:10.780
+And you you're you're you're used to work with the constructor functions.
+
+02:10.920 --> 02:14.000
+Well this is pretty much the same idea.
+
+02:14.040 --> 02:16.940
+So now we're we have a class right here.
+
+02:17.370 --> 02:25.740
+And the thing is that to use this class we need to have a bind this class to react.
+
+02:25.840 --> 02:33.340
+So we want for this class to contain whatever re-act provides to this application.
+
+02:33.420 --> 02:36.810
+So we need to do something else to bind this to react.
+
+02:36.990 --> 02:38.250
+So what are we going to do.
+
+02:38.250 --> 02:46.020
+We're going to use the keyboard extents I'm going to say extends and since we want to extend extend
+
+02:46.020 --> 02:53.740
+to react I'm going to say react dart and we're going to use the word component OK.
+
+02:54.190 --> 02:55.180
+So very real.
+
+02:55.210 --> 02:57.700
+We get different a different message.
+
+02:57.750 --> 02:59.010
+That's good.
+
+02:59.040 --> 03:04.550
+Now we are creating the class and we are binding this class to react.
+
+03:04.620 --> 03:07.490
+That is get so now to return something.
+
+03:08.010 --> 03:13.420
+We do it in a different way than just the functional component.
+
+03:13.440 --> 03:17.940
+We can all do return and then return some GSX we need to do something else.
+
+03:18.000 --> 03:21.690
+What we need to do is really to use a render function.
+
+03:21.690 --> 03:28.260
+So I'm going to say render method because the render going to open and close the out the parenthesis
+
+03:28.590 --> 03:30.840
+and then curly braces.
+
+03:30.940 --> 03:40.290
+So if you notice this is kind of doing bar header that equals creating an object and having a render
+
+03:40.380 --> 03:43.560
+method that it's a function that returns something.
+
+03:43.560 --> 03:44.250
+If you come from.
+
+03:44.280 --> 03:44.990
+Yes 5.
+
+03:45.090 --> 03:47.300
+This is kind of doing something like this.
+
+03:47.720 --> 03:48.000
+OK.
+
+03:48.030 --> 03:50.250
+So inside are our render.
+
+03:50.370 --> 03:51.900
+We need to return something.
+
+03:52.050 --> 03:59.130
+So what we want to return is going to be the header components OK just like we did with the with the
+
+03:59.370 --> 04:07.380
+with the other returns you're going to say dev are going to create a header sorry head or tack up just
+
+04:08.070 --> 04:09.320
+just the header.
+
+04:09.780 --> 04:14.120
+And inside here we can have two things you can have the logo.
+
+04:14.490 --> 04:18.540
+And then we're going to have an input to simple as that.
+
+04:18.760 --> 04:22.890
+And look at and notice here that it's working in the index.
+
+04:22.920 --> 04:30.430
+It's importing the header and we are exporting this class of these components with some GSX.
+
+04:30.920 --> 04:32.250
+OK that is good.
+
+04:32.580 --> 04:35.490
+So now we get our input and logo.
+
+04:35.490 --> 04:39.200
+And if you come from S-5 notice that it's kind of like this.
+
+04:39.240 --> 04:43.350
+Inside right here we have the depth and the input.
+
+04:43.840 --> 04:45.390
+Okay that's good.
+
+04:45.530 --> 04:46.890
+When they just do this.
+
+04:47.150 --> 04:47.590
+OK.
+
+04:47.790 --> 04:49.080
+So now what we need to do.
+
+04:49.100 --> 04:54.650
+And there's one more thing that we can do to make this more professional right here.
+
+04:55.020 --> 04:59.700
+We are extending this class re-act that component.
+
+04:59.700 --> 05:05.730
+So pretty much we're entering the re-act object right here and getting the component.
+
+05:05.730 --> 05:09.890
+This is kind of something that it's inside the react.
+
+05:10.080 --> 05:17.640
+So what we can do we can just delete this and say components and right here on the import we get to
+
+05:17.640 --> 05:20.510
+make use of 6 destructuring.
+
+05:20.700 --> 05:28.200
+I'm going to say coma and then I'm going to open and close curly braces and then I get to say component's
+
+05:30.130 --> 05:33.930
+and if I reload the page this is still it's still going to work.
+
+05:33.930 --> 05:40.460
+So basically what it's doing right here it's entering react and it's just bringing the component.
+
+05:40.500 --> 05:48.180
+So there's no need to use it twice right here because we are already importing this component right
+
+05:48.180 --> 05:49.300
+here on the importance.
+
+05:49.310 --> 05:50.800
+There is no need to do this.
+
+05:51.240 --> 05:52.960
+And this is up to you.
+
+05:53.220 --> 05:59.920
+This is kind of a better because we are using sex directly some features of VSX but you can do re-act
+
+05:59.930 --> 06:00.710
+that component.
+
+06:00.720 --> 06:02.500
+It's actually up to you.
+
+06:02.910 --> 06:03.170
+OK.
+
+06:03.180 --> 06:05.220
+So everything it's good for now.
+
+06:05.310 --> 06:12.710
+We made this a component to this component a class based component and we are using it inside the app.
+
+06:12.720 --> 06:15.750
+The main app components.
+
+06:15.980 --> 06:23.010
+So let's get let's go to the next section and at some style to this Hetter because it's really really
+
+06:23.130 --> 06:23.460
+ugly.
