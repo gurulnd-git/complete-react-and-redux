@@ -1,0 +1,316 @@
+WEBVTT
+
+00:00.750 --> 00:03.510
+OK so we have a clean project.
+
+00:03.690 --> 00:07.430
+So we need to have an index page which is going to be indexed on jazz.
+
+00:07.620 --> 00:11.860
+And then two different sections a profile page and the Post's page.
+
+00:11.910 --> 00:15.510
+So we're going to start building the template for this.
+
+00:16.190 --> 00:21.090
+I've chosen to start from scratch so we can practice this a little bit.
+
+00:21.090 --> 00:26.880
+So first we need to import re-act from re-act that it's the first always the first thing we need to
+
+00:26.880 --> 00:27.430
+do.
+
+00:27.480 --> 00:29.050
+It's going to be important.
+
+00:29.970 --> 00:31.650
+And then just react.
+
+00:31.920 --> 00:36.130
+And since we are going to use a class we're going to bring components.
+
+00:37.230 --> 00:37.500
+OK.
+
+00:37.530 --> 00:43.740
+We're going to bring the bring it from reactor so it's going to be from re-act the thing we need is
+
+00:43.740 --> 00:44.590
+going to be the react.
+
+00:44.590 --> 00:48.380
+DAUM this is going to be the main JSA inexactly.
+
+00:48.530 --> 00:52.180
+So we're going to render everything through the re-act from Dom.
+
+00:52.200 --> 00:54.900
+So I'm going to say important.
+
+00:55.260 --> 00:56.110
+All right.
+
+00:56.190 --> 00:59.610
+And then just react dumb.
+
+00:59.940 --> 01:01.200
+So it's going to be from.
+
+01:01.530 --> 01:05.090
+And then Bre-X Dom.
+
+01:05.120 --> 01:05.710
+All right.
+
+01:06.060 --> 01:11.760
+So we're going to use a class to use class and this one is the first one so it's going to be called
+
+01:11.820 --> 01:12.630
+apt.
+
+01:12.650 --> 01:20.130
+I'm going to do extents and we can extend component just just like before.
+
+01:20.310 --> 01:23.420
+This is we need to render something so we can do the render.
+
+01:23.940 --> 01:30.430
+And inside the render we can return just a simple Deppe it's going to say home something simple simple
+
+01:33.380 --> 01:33.960
+water.
+
+01:33.980 --> 01:34.730
+OK.
+
+01:35.310 --> 01:40.440
+Now we need to use that react on the render method so we can render this app.
+
+01:40.440 --> 01:49.650
+So we're going to call the re-act dumb dot and then just render this render takes two arguments pretty
+
+01:49.650 --> 01:53.140
+much first is going to be the want and then it's going to be the where.
+
+01:53.160 --> 01:56.070
+So what is going to be app.
+
+01:56.490 --> 01:58.530
+And then just open close.
+
+01:58.530 --> 02:03.840
+And the second argument is going to be the where if we go to the index then yes we need to select a
+
+02:03.840 --> 02:09.510
+div that is going to be the main kind of the wrapper of the whole application.
+
+02:09.620 --> 02:11.940
+And right here by default we have root.
+
+02:12.150 --> 02:24.490
+So I'm going to go back to index just closes and it can say documents don't query selector inside here.
+
+02:24.510 --> 02:28.950
+Just compute an ID of fruit just like before.
+
+02:29.280 --> 02:29.750
+All right.
+
+02:30.030 --> 02:32.660
+So if we redo the application we get help.
+
+02:32.670 --> 02:34.160
+So this is working.
+
+02:34.620 --> 02:38.430
+So inside the same project we can have two different groups.
+
+02:38.520 --> 02:42.260
+The route of profiles and the route of posts.
+
+02:42.340 --> 02:48.020
+So I'm going to go to a source and I have a component's folder right here.
+
+02:48.150 --> 02:51.300
+So we need to add two different files.
+
+02:51.300 --> 02:55.500
+One is going to be the first one is going to be posts and the other one is going to be profile.
+
+02:55.680 --> 03:06.810
+So I'm going to say posts that jazz and then profile that jazz right and just like before I get to go
+
+03:06.810 --> 03:11.480
+to posts and we pretty much repeat the same process.
+
+03:11.670 --> 03:14.920
+Can I just close it and I'm going to bring re-act from react.
+
+03:14.940 --> 03:18.490
+I got a copy from here just to have something simple.
+
+03:18.660 --> 03:20.050
+It's going to be posts.
+
+03:20.280 --> 03:26.490
+So we have a class that is going to be called posts and extents components
+
+03:29.100 --> 03:30.880
+right inside.
+
+03:30.900 --> 03:35.680
+We can have a render and render is going to return.
+
+03:35.970 --> 03:43.980
+It's going to return a div that has posts just so we can make sure that we are on the correct webpage
+
+03:44.190 --> 03:45.570
+or the correct view.
+
+03:45.900 --> 03:52.740
+And of course we can X10 begin to export sorry export default.
+
+03:53.340 --> 03:56.920
+And then just the name of the class which is posts.
+
+03:56.970 --> 03:57.640
+All right.
+
+03:57.850 --> 04:02.930
+I got a copy of this just to save a little bit of time and I'm going to go to profile.
+
+04:03.030 --> 04:05.210
+It's pretty much the same thing.
+
+04:05.220 --> 04:12.810
+The only thing that this class is going to be called profile and we export profiles right here.
+
+04:13.050 --> 04:16.100
+And inside here I can say profile.
+
+04:16.710 --> 04:17.010
+Right.
+
+04:17.040 --> 04:18.150
+So everything is ready.
+
+04:18.180 --> 04:19.860
+We have the two routes.
+
+04:19.920 --> 04:25.390
+Now what we need to do is to bring something else to use re-act router.
+
+04:25.800 --> 04:33.560
+So the thing is that to use re-act router since this is so lively we need to import it right here.
+
+04:33.570 --> 04:34.500
+It's not inside.
+
+04:34.530 --> 04:40.800
+It's not by default inside we act or component or react on we need to import it just like we are importing
+
+04:40.800 --> 04:41.710
+react.
+
+04:41.760 --> 04:48.760
+So I'm going to go right here and I'm going to say import and just going to make an empty collar basis.
+
+04:48.980 --> 04:53.010
+And I'm going to say from and then react.
+
+04:53.010 --> 04:58.030
+It's going to be Dasch router bash Dom.
+
+04:58.210 --> 04:59.160
+That's the first thing.
+
+04:59.260 --> 05:00.170
+OK.
+
+05:00.580 --> 05:04.310
+Now inside here we're going to bring the first thing we're going to bring.
+
+05:04.420 --> 05:08.110
+It's going to be browser and then router.
+
+05:08.320 --> 05:15.160
+That's the first thing we are going we're going to break this a browser router is going to be the object
+
+05:15.220 --> 05:20.630
+that is going to interact with history and knows what is happening with the L.
+
+05:20.680 --> 05:24.160
+If I go back to the chart this is going to be the browser router.
+
+05:24.460 --> 05:25.040
+OK.
+
+05:25.250 --> 05:27.240
+So that's the first thing we need.
+
+05:27.250 --> 05:30.280
+The first one on the list then we're going to use a different one.
+
+05:30.310 --> 05:35.330
+It's going to be called route and it go do a coma and say route.
+
+05:36.010 --> 05:44.180
+This route is going to be the one in charge of receiving the information that it's being sent by browser
+
+05:44.200 --> 05:52.120
+a router and check which route matches that you are l and and it's going to instantly know which components
+
+05:52.150 --> 05:53.110
+we should use.
+
+05:53.170 --> 05:56.920
+And then it's going to go to react and pass that information.
+
+05:57.040 --> 06:01.350
+So this route is going to be this this one right here on the list.
+
+06:01.870 --> 06:02.780
+Let's go back.
+
+06:02.810 --> 06:05.330
+Going to bring to home.
+
+06:05.710 --> 06:06.150
+OK.
+
+06:06.220 --> 06:07.130
+So that's fine.
+
+06:07.150 --> 06:09.900
+So everything is pretty much done.
+
+06:09.970 --> 06:12.560
+We're going to use the re-act router right here.
+
+06:12.700 --> 06:20.660
+So we need to import all the paths all the components that they are going to be inside the routes they're
+
+06:20.680 --> 06:26.310
+going to go right here just like for chrissake components components.
+
+06:26.590 --> 06:33.230
+And of course I'm going to say import and then posts from an insider here.
+
+06:33.260 --> 06:42.190
+Dot for Slash it's inside components for Slash posts and we repeat the same process with profile.
+
+06:42.220 --> 06:53.710
+It's going to be import and then profile up profile from and then just sending components for Slash
+
+06:53.710 --> 06:54.900
+and then profile.
+
+06:55.270 --> 06:55.850
+OK.
+
+06:56.170 --> 06:59.590
+So everything is ready so we can use the re-act router.
+
+06:59.770 --> 07:04.380
+So let's go to the next section and set except the Riak react router up.

@@ -1,0 +1,109 @@
+WEBVTT
+
+00:00.450 --> 00:06.270
+OK so let me just give you a slim idea of what what's going happen with Riak router right now.
+
+00:06.340 --> 00:14.300
+Without outside the world of single page apps what we used to have is just a page within within yourself.
+
+00:14.340 --> 00:14.710
+OK.
+
+00:14.760 --> 00:18.290
+Is that just a simple set just a web page with the euro.
+
+00:18.330 --> 00:25.350
+Now then if the URL changes is getting a call to the server is going to go to the server where the web
+
+00:25.350 --> 00:31.200
+page it's hosted is get a search and find a file that matches this.
+
+00:31.230 --> 00:36.470
+The change of your L and then is going to just return return to the web page.
+
+00:36.480 --> 00:42.140
+It's going to reload the web page and display the file that matches that you're out.
+
+00:42.150 --> 00:47.880
+If we are at for example pages is going to find the folder that calls pages is going to search it find
+
+00:47.880 --> 00:50.470
+it and then just reload the page with that file.
+
+00:50.480 --> 00:55.620
+So that is what's happening outside the world of single page apps.
+
+00:55.620 --> 00:58.970
+Now the single page apps are really really different.
+
+00:58.980 --> 01:02.010
+This process is completely different.
+
+01:02.010 --> 01:03.630
+Let me show you right here.
+
+01:03.930 --> 01:11.370
+We have a web page with with URL and whenever whenever we are just working with a single page apps in
+
+01:11.610 --> 01:15.350
+the case of react first we get a history.
+
+01:15.730 --> 01:16.740
+We have it right here.
+
+01:17.010 --> 01:18.170
+This history.
+
+01:18.270 --> 01:23.630
+It's a module that keeps the history log whenever the URL changes.
+
+01:23.640 --> 01:28.860
+So this history is going to just keep track whenever the world changes.
+
+01:28.890 --> 01:35.730
+And this is just an object Now whenever the oil changes this history is going to be listening for changes
+
+01:35.730 --> 01:36.660
+the whole time.
+
+01:36.810 --> 01:44.240
+So if there is a change on the Ural the history is the to call re-act router inside re-act router.
+
+01:44.400 --> 01:54.860
+We have kind of a list of modules where we specify which your L matches which a component with a component.
+
+01:55.040 --> 01:58.710
+So we prematch we have a list with your L and a component.
+
+01:59.130 --> 02:04.890
+So if the history changes it's going to call rehang router is going to find the match that your L that
+
+02:04.890 --> 02:11.360
+history is passing and it's going to find the module and then Riak router is going to call react is
+
+02:11.370 --> 02:12.600
+going to say OK react.
+
+02:12.630 --> 02:17.610
+I have this your Ural and you should be showing this component right now.
+
+02:17.820 --> 02:21.740
+So re-act is going to grab that component and show it on the screen.
+
+02:21.870 --> 02:25.380
+So everything is just inside a tiny module.
+
+02:25.440 --> 02:26.220
+So it's kind of different.
+
+02:26.220 --> 02:31.570
+We're not going to the server and fetching any kind of information the fetching it's inside the webpage.
+
+02:31.590 --> 02:33.310
+The actual web page.
+
+02:33.340 --> 02:33.700
+OK.
+
+02:33.720 --> 02:38.090
+So let's go to the next section and we can start setting up a route.

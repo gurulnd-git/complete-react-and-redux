@@ -1,0 +1,325 @@
+WEBVTT
+
+00:00.460 --> 00:07.650
+OK so let's talk about perhaps what happens if I am inside a posts right here and I have a list.
+
+00:07.650 --> 00:15.400
+Let's pretend we have a list and if I click on one of these posts it should be taking us to a new component
+
+00:15.700 --> 00:22.680
+which is going to grab the your L graph the ID of the posts and then fetch all the information about
+
+00:23.010 --> 00:24.660
+the posts.
+
+00:25.110 --> 00:28.820
+Well we need to do something else in order to get this.
+
+00:28.830 --> 00:31.470
+And this is called perhaps getting perhaps.
+
+00:31.650 --> 00:38.670
+So for example if I click on one of this and it's going to be the post with ID number five the application
+
+00:38.940 --> 00:44.730
+is going to go to for Slash number five of course we didn't have a route and we don't have a component
+
+00:44.970 --> 00:45.860
+to handle this.
+
+00:45.990 --> 00:49.730
+So it's going to take us back to posts to the one that knows.
+
+00:50.220 --> 00:51.030
+OK that's fine.
+
+00:51.030 --> 00:53.510
+Let's go to our component's view.
+
+00:53.580 --> 01:01.650
+And again it created a new component's is going to be posts on her posts item.
+
+01:01.720 --> 01:02.980
+That sounds good.
+
+01:03.030 --> 01:12.950
+Post item that Jesus ok inside posts items are going to go again to posts just to save some time.
+
+01:13.980 --> 01:15.230
+An inside post item.
+
+01:15.270 --> 01:23.910
+I'm just going to paste all of this and this is going to be item posts item and we can export posts
+
+01:23.970 --> 01:26.090
+item and right here again.
+
+01:26.180 --> 01:29.030
+Are you going to say item whatever.
+
+01:29.310 --> 01:35.040
+OK let's get I'm going to go to this and I'm going to import the posts item.
+
+01:35.190 --> 01:36.900
+OK just like we did before.
+
+01:36.950 --> 01:43.370
+Post item import import posts item from.
+
+01:43.410 --> 01:50.440
+And then it's going to be DOD for Slash components for Slash and then posts item.
+
+01:50.780 --> 01:52.050
+OK that's good.
+
+01:52.170 --> 01:56.540
+So now to get programs to get an R U R L that has.
+
+01:56.540 --> 01:59.590
+Perhaps we need to do something else right here.
+
+01:59.850 --> 02:02.110
+Let me just first do it manually.
+
+02:02.190 --> 02:10.450
+I'm going to go and save route and just need to set a path for this and the path is going to be forced
+
+02:10.510 --> 02:15.730
+slash it's going to be posts and this one is going to be moving the number 5.
+
+02:15.890 --> 02:17.990
+OK so something simple as that.
+
+02:18.490 --> 02:25.710
+And the components in charge of rendering rendering this is going to be the Post's item which is included
+
+02:25.710 --> 02:26.940
+right here.
+
+02:26.940 --> 02:29.290
+Something real simple.
+
+02:29.550 --> 02:35.310
+If I read all the Epica application is going to take us two posts and it's going to take us two item
+
+02:35.550 --> 02:42.150
+and we have the same problem than before with the exact So we need to go to posts and put exact right
+
+02:42.150 --> 02:44.080
+here.
+
+02:44.280 --> 02:51.430
+So testing is taking us is recognizing the route and is taking us to these new posts item.
+
+02:51.480 --> 02:55.090
+Now if I change this to 10 of course.
+
+02:55.320 --> 03:02.280
+Sorry if I change it to 10 right here of course it's not going to show anything because it's going to
+
+03:02.280 --> 03:02.700
+fail.
+
+03:02.700 --> 03:08.460
+There is no route with posts that slash 10.
+
+03:08.670 --> 03:13.440
+So we need to make this feature could of a dynamic.
+
+03:13.590 --> 03:18.650
+So we need to do it to a dynamic to recognize an ID.
+
+03:18.750 --> 03:25.660
+We get to use the common right here to recognize a pram and begin to say ID.
+
+03:25.840 --> 03:33.560
+And if I go to 10 is going to show us item and if I go to whatever 45 it's going to still show item.
+
+03:33.830 --> 03:34.330
+Let's.
+
+03:34.360 --> 03:35.680
+So it's getting work.
+
+03:35.710 --> 03:39.920
+This is the way how we can catch your else with traps.
+
+03:40.100 --> 03:44.320
+Now there's one more thing whenever you you're using this.
+
+03:44.320 --> 03:51.960
+Remember that the main component domain parent of the whole application is going to be browser router.
+
+03:52.180 --> 04:00.180
+So whenever you go to a component in prop's in the prompts of that component the parent components it's
+
+04:00.180 --> 04:00.460
+going to.
+
+04:00.490 --> 04:03.400
+It's going to have the information of the route.
+
+04:03.400 --> 04:07.010
+So let me show you show you what's going on.
+
+04:07.270 --> 04:12.730
+I'm going to go right here and I'm going to create a constructor so I can bring the prompts to something
+
+04:12.730 --> 04:17.700
+simple OK and then Super just like before.
+
+04:18.160 --> 04:20.420
+And then again to bring props.
+
+04:20.470 --> 04:26.550
+We did this Pursley props but it is before it.
+
+04:27.050 --> 04:27.510
+OK.
+
+04:27.580 --> 04:35.560
+So if I go to the render right here and Cancellara the props I'm going to get a lot of information about
+
+04:35.560 --> 04:43.480
+the routes so I'm going to say console log and just see check what I have what I have what we have inside
+
+04:43.480 --> 04:48.830
+the props and the rule of the page.
+
+04:49.100 --> 04:53.390
+So props maybe I met him steak while on second.
+
+04:53.450 --> 04:59.320
+Of course whenever we make reference to props we need to say this that props.
+
+04:59.450 --> 05:01.840
+It's going to do this for this class.
+
+05:01.940 --> 05:04.200
+And the props of this class.
+
+05:04.370 --> 05:05.060
+That's good.
+
+05:05.330 --> 05:10.180
+So if I go to inspect and I go to the council.
+
+05:10.430 --> 05:16.320
+OK let me just because it was all going to go to console and get.
+
+05:16.400 --> 05:19.370
+So we have an object right here going to have a lot of messages.
+
+05:19.490 --> 05:23.920
+We have a useless constructor and that's fine because we're not using it.
+
+05:24.020 --> 05:25.970
+It's just to show you what's happening.
+
+05:26.060 --> 05:28.930
+We have an object and we have a lot of information.
+
+05:28.970 --> 05:34.160
+We have history location and we have match inside match.
+
+05:34.160 --> 05:41.160
+We're going to have all the information about this this route we can have the post ID and the u r l
+
+05:41.330 --> 05:48.950
+and the prams and inside perhaps we can have the ID 45 so we can access prompts access prompts that
+
+05:48.950 --> 05:51.350
+match and get this information.
+
+05:51.500 --> 05:59.170
+So if am if I go right here and make reference to this prompts going to I can do this.
+
+05:59.300 --> 06:08.890
+That prompts dot match dot pro-ams and inside perhaps we can have the ID.
+
+06:09.350 --> 06:16.570
+So when the page reloads I get the ID so we have access to the ID of the page inside posts.
+
+06:16.700 --> 06:24.890
+Since we have the ID we can ground the ID and make a network with requests to fetch the posts with this
+
+06:24.890 --> 06:25.440
+ID.
+
+06:25.460 --> 06:30.320
+Something real simple right here is giving us the message useless constructor.
+
+06:30.320 --> 06:33.970
+So we are using a class but we are using.
+
+06:34.070 --> 06:37.610
+We are using a constructor but we are not really using it.
+
+06:37.610 --> 06:43.820
+So its not a good practice practice to use a constructor an empty constructor.
+
+06:43.820 --> 06:47.690
+So again I'm going to refactor this just for fun too.
+
+06:47.750 --> 06:54.890
+Stateless components we can have a contest and the contest is going to be post item and this is going
+
+06:54.890 --> 07:01.400
+to be a call to something we're going to put it in a minute and we just run a function.
+
+07:01.490 --> 07:06.080
+This is going to return some depth with some information inside.
+
+07:06.110 --> 07:13.100
+Now whenever we we catch everything right here inside prompts we can pass prompts right here.
+
+07:13.370 --> 07:13.980
+OK.
+
+07:14.270 --> 07:15.470
+And this is going to work.
+
+07:15.470 --> 07:22.280
+The thing is that well we need to if we have props right here we only to access the two prompts that
+
+07:22.280 --> 07:24.810
+match that Priam's that ID.
+
+07:25.010 --> 07:29.050
+So what we can do we can directly access to match.
+
+07:29.060 --> 07:36.540
+We can use make use of some destructuring just like we did with component around just some ESX magic.
+
+07:36.800 --> 07:44.410
+And inside here since I have access to match what I can do is just grab the match grab the programs
+
+07:44.750 --> 07:51.080
+and then the ID and the page loads and we get the ID right.
+
+07:51.110 --> 07:51.860
+So that's good.
+
+07:51.910 --> 07:58.190
+Oh right here computing it's defined but never used since we know we have a stateless component we have
+
+07:58.190 --> 08:01.420
+media component so everything should be fine right now.
+
+08:01.500 --> 08:02.480
+OK that's good.
+
+08:02.480 --> 08:03.920
+This is a different message.
+
+08:04.290 --> 08:07.940
+So OK so we have four or five with a status component.
+
+08:08.120 --> 08:13.370
+We know how to get the IDs and how to use dynamic pram.
+
+08:13.370 --> 08:14.850
+Let's go to the next lecture.
+
+08:14.870 --> 08:17.570
+We're going to talk a little bit more about router.

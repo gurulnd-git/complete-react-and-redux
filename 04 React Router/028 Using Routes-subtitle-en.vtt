@@ -1,0 +1,292 @@
+WEBVTT
+
+00:01.110 --> 00:08.010
+OK so when the page loads we need to start using routes right now when the application loads the first
+
+00:08.010 --> 00:13.770
+component that we are showing the main entry point a point of the application is going to be the app
+
+00:13.820 --> 00:14.490
+components.
+
+00:14.500 --> 00:15.650
+It's right here.
+
+00:15.690 --> 00:18.000
+So this is not going to work for us.
+
+00:18.180 --> 00:25.230
+Whenever the application loads browser router is going to decide which component should render on the
+
+00:25.220 --> 00:27.240
+screen giving the Ural.
+
+00:27.270 --> 00:28.240
+We have here.
+
+00:28.500 --> 00:33.120
+So I'm going to delete this just like this and make some space.
+
+00:33.270 --> 00:38.520
+So just like with this app we need to use the browser router and it's going to be everything just like
+
+00:39.020 --> 00:40.440
+in attack mode.
+
+00:40.670 --> 00:41.290
+OK.
+
+00:41.820 --> 00:45.450
+So to say to pass the application is going to load.
+
+00:45.480 --> 00:49.690
+It's going to bring Riak router and we do Jaro.
+
+00:50.010 --> 00:54.330
+And inside here inside the router we need to set up the routes.
+
+00:54.540 --> 00:58.850
+So again this is just a strike is pretty direct straightforward.
+
+00:59.070 --> 01:02.700
+We need to use something that's called route.
+
+01:03.510 --> 01:07.100
+Now the route is going to take some attributes first.
+
+01:07.150 --> 01:10.870
+Going to be the path the path is going to be the URL.
+
+01:10.920 --> 01:14.120
+Pretty much it's going to be the URL that we need to listen.
+
+01:14.280 --> 01:20.520
+So for example if you wanted to go to posts is going to be for Shlash because for us is going to be
+
+01:20.550 --> 01:27.010
+cavity index the main page like home and then posts here.
+
+01:27.210 --> 01:33.930
+OK so if we go to four Shlash posts browse and Rohter is going to notice that this is happening and
+
+01:33.930 --> 01:40.930
+it's going to try to find a route that has forced flash posts so that's good.
+
+01:41.120 --> 01:49.450
+So the second argument the second attribute that we need to past is which component re-act should render.
+
+01:49.740 --> 01:55.190
+So I'm going to say component's proponents tingler.
+
+01:55.440 --> 01:59.280
+This one is going to be kind of a with color braces right here.
+
+01:59.310 --> 02:06.720
+It's not we the quotes and right here we need to pass the name of the components we want to render.
+
+02:06.720 --> 02:11.390
+In this case it's going to be posts and we imported the posts right here.
+
+02:11.520 --> 02:14.720
+So I'm just going to copy this and say posts.
+
+02:15.300 --> 02:17.160
+Ok so this is fine.
+
+02:17.190 --> 02:20.140
+I'm going to repeat the same process with profile.
+
+02:20.160 --> 02:21.780
+Can it go right here at the bottom.
+
+02:21.810 --> 02:23.540
+I'm going to say profile.
+
+02:24.080 --> 02:24.530
+OK.
+
+02:24.800 --> 02:31.440
+So we need to render the profile just copy and paste and just say profile and let's get.
+
+02:31.440 --> 02:33.300
+So this should be working.
+
+02:33.450 --> 02:35.640
+But of course it's not going to work.
+
+02:35.700 --> 02:41.530
+It's going to say a router might have only one child element just like render.
+
+02:41.550 --> 02:45.180
+We need to return only one element.
+
+02:45.270 --> 02:48.420
+Right here we are returning to elements.
+
+02:48.420 --> 02:51.580
+So what we do and this is just kind of a workaround.
+
+02:51.840 --> 02:55.610
+We enclose everything in a container just like render.
+
+02:55.650 --> 03:01.260
+We put everything inside a day for span or whatever and the same idea we apply the same idea right here.
+
+03:01.260 --> 03:04.800
+We put everything inside a DEP wrapper.
+
+03:04.800 --> 03:07.570
+Now notice that I am at home but nothing is happening.
+
+03:07.590 --> 03:12.890
+Nothing happens is because we didn't have a route for that we're going to do that in a couple of minutes.
+
+03:13.080 --> 03:13.450
+OK.
+
+03:13.500 --> 03:20.560
+So if I go to four slash posts it should be rendering the posts component is going to be shared.
+
+03:20.580 --> 03:22.330
+So it should be sane posts.
+
+03:22.480 --> 03:24.770
+Ok so let me try it.
+
+03:24.780 --> 03:26.820
+I'm going to go to posts.
+
+03:27.430 --> 03:33.300
+Ok we get posts let's get let's try the same thing with profile profile.
+
+03:33.880 --> 03:34.370
+OK.
+
+03:34.510 --> 03:36.390
+We get profiles so it's working.
+
+03:36.480 --> 03:38.070
+Let's get right.
+
+03:38.070 --> 03:40.290
+So let's set up the way home.
+
+03:40.320 --> 03:50.040
+For example I can go again and say route open and close the path is going to be just a false flash because
+
+03:50.040 --> 03:53.930
+it's going to be home up for Slash.
+
+03:53.970 --> 03:54.680
+There you go.
+
+03:54.900 --> 04:01.520
+And the component that should render in home is going to be a component and then app.
+
+04:01.530 --> 04:03.150
+All right that's fine.
+
+04:04.640 --> 04:11.820
+This is weird whenever you're just rendering this just like this you're saying OK.
+
+04:11.840 --> 04:18.330
+Whenever you have a force slash inside the crowd just show the app components and it's showing home.
+
+04:18.350 --> 04:20.150
+So that is get is correct.
+
+04:20.270 --> 04:24.690
+But then inside profile for example we have the force in action.
+
+04:24.770 --> 04:30.950
+So the kind of the browser router and the routes get kind of confused and it's showing you the profile
+
+04:30.980 --> 04:32.100
+because profile.
+
+04:32.120 --> 04:33.030
+It's true.
+
+04:33.350 --> 04:37.490
+It has a force slash and it's kind of weird but it's not happening to post.
+
+04:37.640 --> 04:39.940
+But anyways this is not right.
+
+04:40.010 --> 04:45.600
+So re-act is going to it's going to reverse is going to give you two choices.
+
+04:45.740 --> 04:47.300
+Give us two choices.
+
+04:47.360 --> 04:49.820
+One is the exact keyboard.
+
+04:50.030 --> 04:55.240
+And then we have the switch we can use the switch in a couple of lessons a couple lectures.
+
+04:55.340 --> 05:03.770
+So for now we can get used one method react it's ask and so react router is asking you to use the exact
+
+05:04.490 --> 05:05.700
+keyboard right here.
+
+05:05.750 --> 05:07.220
+It's just like a setting.
+
+05:07.250 --> 05:12.970
+So whenever we want to exactly match for Slash we'd use exact.
+
+05:13.010 --> 05:18.980
+And if we have a full profile it's going to show profile but if we are home is just going to show home
+
+05:19.100 --> 05:27.410
+because we have the exact right here and if we go to our no again just posts is just going to show posts.
+
+05:28.380 --> 05:29.860
+All right that's good.
+
+05:29.940 --> 05:30.970
+That's enough for now.
+
+05:31.090 --> 05:37.230
+Oh let me show you one more thing right here inside the router just like we are we in inside the render
+
+05:37.560 --> 05:41.040
+we can we can show pretty much whatever we want if I want to.
+
+05:41.040 --> 05:42.270
+Hetter right here.
+
+05:42.480 --> 05:45.570
+I can just create a div that's going to of.
+
+05:45.600 --> 05:51.630
+This could be a component for example that it's going to be Hetter is going to be the main header of
+
+05:51.630 --> 05:52.620
+the application.
+
+05:52.710 --> 05:58.020
+So whenever the application loads it's just going to show that components if you have a bunch of sea
+
+05:58.020 --> 06:02.410
+of GSX right here is going to still show it on every route.
+
+06:02.430 --> 06:05.490
+If I go to Home posts we get the header.
+
+06:05.670 --> 06:11.610
+If I go to profil right here we are still getting the header.
+
+06:11.760 --> 06:14.140
+And if I go home we get the letter.
+
+06:14.560 --> 06:14.910
+OK.
+
+06:14.970 --> 06:15.770
+That's good for now.
+
+06:15.870 --> 06:18.600
+Let's go to the next section and talk about linking.

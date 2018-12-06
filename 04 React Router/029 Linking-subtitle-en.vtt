@@ -1,0 +1,160 @@
+WEBVTT
+
+00:00.420 --> 00:08.310
+OK so since we don't expect for the user to be changing the L manually We need to set some links.
+
+00:08.310 --> 00:10.850
+We were just right before this.
+
+00:10.940 --> 00:18.120
+We were doing force flash and changing the Eurail manually right here but the user of course is not
+
+00:18.120 --> 00:19.100
+going to do this.
+
+00:19.140 --> 00:21.170
+We need to use links for this.
+
+00:21.440 --> 00:21.780
+OK.
+
+00:21.810 --> 00:28.750
+You should be thinking well we should use an ATAC For example if we have a header right here.
+
+00:28.840 --> 00:35.610
+Header an inside the header we can have an A within a ref and something else and then just the name
+
+00:35.640 --> 00:36.530
+of the route.
+
+00:36.810 --> 00:40.800
+Well no this is not going to work at all.
+
+00:40.800 --> 00:49.170
+Whenever we use the ATAC in the real world and the non single page app world we are telling the window
+
+00:49.440 --> 00:54.760
+that it should be reloading the page and fetch whatever we have right here.
+
+00:55.020 --> 00:59.360
+Well this is a single page app and there is no reloading at all.
+
+00:59.370 --> 01:03.210
+So the good old ATAC it's no more.
+
+01:03.240 --> 01:04.850
+We need to do something else.
+
+01:04.950 --> 01:12.030
+So just like me just does just like the browser or the router and the roud we need to import something
+
+01:12.030 --> 01:18.400
+else to use links and it's going to be coma and then link to simple site like.
+
+01:18.630 --> 01:19.490
+Right.
+
+01:19.530 --> 01:26.070
+So to set up a link it's really really simple I'm going to add a link for all the routes we have right
+
+01:26.070 --> 01:26.620
+now.
+
+01:26.730 --> 01:35.880
+So we just start as a regular task and we say link and then just open and close the link with an ATAC
+
+01:35.910 --> 01:39.490
+we can have an H ref for example with a link.
+
+01:39.570 --> 01:44.830
+We need to have a two and then equals and then the route which is used to.
+
+01:44.940 --> 01:48.590
+That's that's simple says we want to go home for example.
+
+01:48.640 --> 01:50.060
+We're going to do a slash.
+
+01:50.270 --> 01:52.700
+And I'm just going to set up the link for home.
+
+01:53.090 --> 01:53.790
+OK.
+
+01:54.300 --> 02:02.960
+So if you want to a link for the posts same idea posts and then posts right.
+
+02:03.510 --> 02:14.490
+If you want profile again I'm going to say just profile and then profile I'm going to add a break right
+
+02:14.490 --> 02:23.050
+here so they can be in a different line to something simple and do the same thing right here whatever.
+
+02:23.280 --> 02:26.910
+And right here at the bottom we're going to have a ruler.
+
+02:28.820 --> 02:29.210
+OK.
+
+02:29.570 --> 02:30.980
+Something really simple.
+
+02:31.020 --> 02:33.680
+There's no need to do something fancy right now.
+
+02:33.890 --> 02:42.140
+So if I click home is going to take us home if I go to posts is going to change the L reload the Browse
+
+02:42.350 --> 02:49.010
+is going to be always listening it's going to search for the route and show posts posts and the same
+
+02:49.010 --> 02:50.860
+idea with profile.
+
+02:50.870 --> 02:57.200
+So this is kind of a really straightforward and you're going to be using link a lot in your in your
+
+02:57.200 --> 03:00.210
+applications if you're using routes.
+
+03:00.650 --> 03:01.140
+OK.
+
+03:01.310 --> 03:05.090
+So let's go oh I will tell you something else if I just inspect the page.
+
+03:05.090 --> 03:08.760
+Let me just make this bigger just a little bit
+
+03:11.970 --> 03:12.600
+go.
+
+03:12.730 --> 03:13.370
+OK.
+
+03:14.050 --> 03:17.340
+So if I inspect this it's going to be in a simulation.
+
+03:17.440 --> 03:21.930
+If I go to home it's just a regular h tag.
+
+03:22.180 --> 03:25.220
+So what is happening is that they react and router.
+
+03:25.390 --> 03:30.810
+It's converting everything behind the scenes to regular ATAC.
+
+03:31.000 --> 03:36.180
+This is of course it's the ATAC whenever we click and react.
+
+03:36.190 --> 03:44.230
+It's blocking the default behavior of the ATAC and it's just using react to render what we want to render
+
+03:44.320 --> 03:45.020
+of course.
+
+03:45.280 --> 03:46.280
+OK that's fine.
+
+03:46.300 --> 03:49.630
+So let's go to the next section and talk about perhaps.

@@ -1,0 +1,448 @@
+WEBVTT
+
+00:00.420 --> 00:05.700
+OK so I want to talk about some extra features we have with every writer.
+
+00:06.020 --> 00:08.030
+I wouldn't talk about such.
+
+00:08.070 --> 00:12.270
+Remember that we were using exact to fix the problem with the droughts.
+
+00:12.360 --> 00:17.110
+Well we have a different option but this we have something that calls such.
+
+00:17.120 --> 00:18.950
+So I'm going to do a search right here.
+
+00:18.970 --> 00:22.940
+Going to bring switch from re-act rider.
+
+00:23.150 --> 00:23.700
+OK.
+
+00:24.090 --> 00:25.250
+So what do we need to do.
+
+00:25.290 --> 00:29.190
+We need to wrap everything inside switch.
+
+00:29.590 --> 00:31.330
+Just going to do it right now.
+
+00:32.100 --> 00:36.820
+And this is just like a regular switch invented jazz.
+
+00:36.840 --> 00:40.220
+So with the switch is just going to check the or else.
+
+00:40.350 --> 00:44.250
+And if it's there's no match it's going to go to the next one and then in the next one and then the
+
+00:44.250 --> 00:44.790
+next one.
+
+00:44.820 --> 00:52.560
+Of course the problem with this is that if you have on your L that it's really really specific This
+
+00:52.560 --> 00:55.870
+one should go on the top so he can match first.
+
+00:55.890 --> 00:59.280
+So that's something that we need to do.
+
+00:59.280 --> 01:07.560
+I'm going to go right here first one this one is really specific going to go in profile and this one
+
+01:07.560 --> 01:08.360
+right here.
+
+01:08.490 --> 01:10.220
+This one is going to be the index.
+
+01:10.350 --> 01:12.940
+It's the more of a global one.
+
+01:12.960 --> 01:18.840
+So I'm going to leave that one at the ends so if I go to home get home it go to posts.
+
+01:18.840 --> 01:20.080
+We get posts.
+
+01:20.130 --> 01:21.720
+Same thing with profile.
+
+01:21.720 --> 01:27.860
+And if I go to posts for Slash something that's working that's good.
+
+01:28.190 --> 01:28.460
+OK.
+
+01:28.470 --> 01:29.180
+One more thing.
+
+01:29.220 --> 01:35.290
+What happens if you want to use a 4 0 4 kind of a page not found.
+
+01:35.430 --> 01:35.880
+OK.
+
+01:36.090 --> 01:37.230
+So what we can do.
+
+01:37.250 --> 01:43.040
+Oh and I'm going to really the exact I forgot to do that on the show that is still working.
+
+01:43.950 --> 01:46.180
+Post profile and everything else.
+
+01:46.500 --> 01:57.480
+So if you have a four for round up I made a I made a for for component before recording the video just
+
+01:57.480 --> 01:58.350
+to save time.
+
+01:58.560 --> 02:05.210
+So whenever I just that there is no match inside the routes it should be going to this 4 or 4.
+
+02:05.230 --> 02:07.310
+No it's just a page not found.
+
+02:07.590 --> 02:11.790
+So what we can do we can again just set around for this.
+
+02:12.120 --> 02:19.400
+Inside the switch and the path is going to be pretty much all with the asterisks which is pretty much
+
+02:19.410 --> 02:25.170
+we are saying right here that it should match all the analysis should be this should be run running
+
+02:25.440 --> 02:32.930
+on all the rails and the component that should be should the showing is going to be the page not found
+
+02:32.940 --> 02:33.580
+component.
+
+02:33.630 --> 02:35.990
+I just created.
+
+02:36.230 --> 02:37.460
+So I'm going to copy that.
+
+02:37.470 --> 02:39.000
+Not found.
+
+02:39.000 --> 02:40.230
+Go right here.
+
+02:40.620 --> 02:40.810
+OK.
+
+02:40.830 --> 02:50.460
+If I go to home it's going to show home and if I just type any or just a dummy Eurail whatever is going
+
+02:50.460 --> 02:51.420
+to show.
+
+02:51.690 --> 03:00.260
+So the thing I said Riak router the Ivory's we are Roder the Bushin number for just a few months ago
+
+03:00.870 --> 03:08.680
+and we actually we we used to have used the version number three and that one could have worked nicely.
+
+03:08.700 --> 03:14.720
+This one has a lot of books and they are just kind of fixing fixing the books along the way.
+
+03:14.910 --> 03:17.830
+So the switch is going to fix and exact.
+
+03:17.880 --> 03:18.940
+It's kind of a fix.
+
+03:19.020 --> 03:21.880
+So everything works best with some books.
+
+03:22.140 --> 03:25.600
+So if we won this notice that is a switch.
+
+03:25.740 --> 03:33.880
+So when we reach the fourth flash this means it's kind of a global and it matches whatever you're out.
+
+03:34.140 --> 03:35.090
+So what do we need to do.
+
+03:35.100 --> 03:37.020
+Again we use the exact
+
+03:39.680 --> 03:40.680
+Just like we did before.
+
+03:40.700 --> 03:44.420
+But this just for the home and everything else is just working fine.
+
+03:44.420 --> 03:45.570
+We have the four or four.
+
+03:45.770 --> 03:49.520
+If you go to oppose home everything else works fine.
+
+03:49.940 --> 03:50.210
+OK.
+
+03:50.240 --> 03:53.130
+Let's go with something else.
+
+03:53.300 --> 03:58.930
+Right now we are using the pretty much the default format for you or else.
+
+03:59.030 --> 04:05.440
+What happens if you want to use a different one if you come from framework's like angular.
+
+04:05.570 --> 04:07.970
+Or number one for example.
+
+04:08.000 --> 04:12.860
+If you remember you have kind of the you are as kind of a force Slash has a knack for Slash.
+
+04:13.010 --> 04:15.860
+So you're using hashes as well.
+
+04:15.950 --> 04:16.880
+So we can do this.
+
+04:16.880 --> 04:19.990
+We can still do this instead of browser router.
+
+04:20.150 --> 04:22.770
+I'm going to import hash router.
+
+04:23.240 --> 04:29.420
+So if I go to hash router and plays that you are l it's going to be hash.
+
+04:29.450 --> 04:38.780
+I go to profile is profile hash posts hash or not really go back home hash posts profile and everything
+
+04:38.780 --> 04:39.500
+else.
+
+04:39.580 --> 04:41.440
+I think this is going to work with a hash.
+
+04:41.570 --> 04:43.140
+Let's get now.
+
+04:43.160 --> 04:50.900
+What happens if you don't want to have to mutate the state for example of the of the Eurail.
+
+04:50.900 --> 04:52.460
+You can still do that.
+
+04:52.460 --> 04:57.960
+It's we need to import something else that it's called Memory router.
+
+04:58.190 --> 05:02.610
+So the memory router is going to keep everything in memory.
+
+05:02.600 --> 05:07.770
+You know this is not just like a it's not a real Eurail just behind the scenes.
+
+05:07.790 --> 05:12.660
+So instead of just showing it's not showing anything it's doing everything behind the scenes.
+
+05:12.800 --> 05:19.470
+So if you go to posts it's taken me two posts but it's not updating the URL.
+
+05:19.580 --> 05:20.720
+And if you go to profile.
+
+05:20.720 --> 05:22.060
+Same idea.
+
+05:22.070 --> 05:26.750
+All right let's get a different way to do things.
+
+05:26.750 --> 05:27.850
+It's up to you.
+
+05:28.070 --> 05:35.550
+I pretty much I use always the I always use the default one the common one and that's it.
+
+05:35.570 --> 05:39.220
+You know the again this is just up to you.
+
+05:39.260 --> 05:40.160
+We have one more.
+
+05:40.160 --> 05:42.410
+I have one more feature I want to show you.
+
+05:42.440 --> 05:44.000
+We have the map link.
+
+05:44.000 --> 05:47.030
+You can go right here and import Napp link.
+
+05:47.120 --> 05:52.130
+It's going to be not link and I'm going to bring the browser router.
+
+05:52.160 --> 05:54.750
+Again just because I just like that one.
+
+05:55.240 --> 05:55.870
+OK.
+
+05:56.180 --> 05:57.410
+So the Napp link.
+
+05:57.440 --> 06:00.250
+It's really awesome.
+
+06:00.500 --> 06:05.190
+Instead of having the link the nobbling It's like a replacements for link.
+
+06:05.270 --> 06:08.520
+If we have a nap and nap just inside the.
+
+06:08.660 --> 06:15.260
+So instead of using the link I'm going to use link going to go right here and just nothing is going
+
+06:15.260 --> 06:19.960
+to reload the page and everything else is just going to be the same.
+
+06:19.970 --> 06:25.760
+The thing is that with Netlink it's going to give us two different properties we can use for example
+
+06:25.820 --> 06:32.700
+if we are home we can go to the snap link and pass two different options one.
+
+06:32.810 --> 06:35.230
+The first one is going to be active style.
+
+06:35.300 --> 06:42.650
+So if the euro matches with the link is going to change the it's going to add some styles and then we
+
+06:42.650 --> 06:46.060
+have a different option that is going to be active class name.
+
+06:46.310 --> 06:51.650
+Again if it matches it's going to add a class to that element to that link.
+
+06:51.650 --> 07:00.230
+So if I go and say active style it's going to be equal to collaborators and in react to adding classes
+
+07:00.800 --> 07:02.720
+dynamically just in.
+
+07:02.900 --> 07:08.990
+I need to put everything into curly braces so I want to change the color.
+
+07:08.990 --> 07:11.880
+I'm going to say color and the corner is going to be red.
+
+07:12.170 --> 07:16.880
+So when the page loads the home is going to be read to go to posts.
+
+07:18.100 --> 07:21.140
+Of course we need to set all the routes.
+
+07:21.210 --> 07:23.650
+I'm just going to do it right now for fun.
+
+07:26.910 --> 07:32.900
+So it's if it's active.
+
+07:33.010 --> 07:35.060
+OK well there's something happening.
+
+07:35.280 --> 07:40.190
+I believe that this is the exact thing the exact that we are using right now.
+
+07:40.200 --> 07:44.890
+It's one of the books I was telling you I just discovered maybe a bug.
+
+07:45.240 --> 07:46.940
+Well that's fine whatever.
+
+07:47.000 --> 07:50.260
+Then they go back and just use the To.
+
+07:50.430 --> 07:55.440
+Whatever you want whenever you are just there is a match with an Aveling you just it's going to change
+
+07:55.440 --> 07:56.610
+the color whatever.
+
+07:56.730 --> 07:57.230
+OK.
+
+07:57.480 --> 08:03.330
+So the next one is going to be active class name is going to go right here and it says active class
+
+08:03.330 --> 08:03.880
+name.
+
+08:04.080 --> 08:05.700
+And I would use this one.
+
+08:05.730 --> 08:07.650
+The other one is really buggy.
+
+08:07.700 --> 08:11.330
+So like this one is going to be selected.
+
+08:12.110 --> 08:12.390
+OK.
+
+08:12.420 --> 08:19.400
+So if I just reload the page to go to home I go to home and I just inspect everything.
+
+08:21.150 --> 08:24.350
+It's going to go OK.
+
+08:24.780 --> 08:28.370
+It's going to go home and it's going to have a class of selected.
+
+08:28.980 --> 08:30.330
+So again I'm leaving.
+
+08:30.330 --> 08:35.780
+I believe that it's kind of a failing because of the exact and the paths that we have right here.
+
+08:35.790 --> 08:39.500
+Maybe we will need to use to use that workaround.
+
+08:39.860 --> 08:40.300
+OK.
+
+08:40.560 --> 08:42.040
+I want to show you something else.
+
+08:42.120 --> 08:47.900
+I'm going to give you a link of the guides for the Riak router.
+
+08:48.060 --> 08:51.170
+If you have the right here the guides.
+
+08:51.420 --> 08:56.660
+So it's nice to have you have a lot of information and you have a lot of features.
+
+08:56.790 --> 09:03.740
+So if you want to just take a look you can go to react training Riak router and you have the right here
+
+09:03.740 --> 09:04.680
+at the API.
+
+09:04.870 --> 09:05.250
+OK.
+
+09:05.460 --> 09:07.750
+Let's change the subject.
+
+09:07.770 --> 09:13.650
+What's going to talk about something else we're going to talk about something that it's really important
+
+09:13.860 --> 09:14.690
+for react.
+
+09:14.730 --> 09:16.270
+It's going to be in life cycles.

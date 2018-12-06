@@ -1,0 +1,211 @@
+WEBVTT
+
+00:00.390 --> 00:07.680
+What is re-act writer Well maybe in the future you want to build an application that has more than just
+
+00:07.680 --> 00:08.710
+one view.
+
+00:08.850 --> 00:11.790
+For example it's going to give you a dumb dumb example.
+
+00:11.940 --> 00:17.980
+I mean the code that Facebook Dotcom is going to be the kind of Facebook for developers.
+
+00:18.090 --> 00:21.250
+So you have several options right here on the header.
+
+00:21.380 --> 00:23.250
+I'm just going to click I guess.
+
+00:23.520 --> 00:29.320
+And then it's going into road and it's going to take us to a new route which is going to be Iowa.
+
+00:29.370 --> 00:31.330
+And then it's going to show a new view.
+
+00:31.410 --> 00:31.660
+Right.
+
+00:31.680 --> 00:32.680
+Pretty simple.
+
+00:32.760 --> 00:37.850
+So react is just to create a single page single page apps.
+
+00:38.040 --> 00:41.980
+So right out of the box we didn't have the ability to do this.
+
+00:42.090 --> 00:48.660
+We need to install something else just kind of a middleware or extension or library or whatever you
+
+00:48.660 --> 00:51.670
+want to call it so we can change this behavior.
+
+00:51.720 --> 00:53.140
+We need to install something first.
+
+00:53.190 --> 00:55.190
+And this is called re-act router.
+
+00:55.430 --> 00:57.260
+I'm going to just minimize this.
+
+00:57.340 --> 01:01.570
+I'm starting with a new project called re-act router to react router.
+
+01:01.740 --> 01:03.500
+You can call it whatever you want.
+
+01:03.570 --> 01:08.430
+I'm going to go to the view and much we need to always just do the same thing.
+
+01:08.430 --> 01:12.600
+Just go to the terminal and create just bring the boiler.
+
+01:12.660 --> 01:14.880
+The boiler plate for this.
+
+01:14.880 --> 01:23.970
+I'm going to do the same thing before if you remember is going to be create dash re-act dash app and
+
+01:23.970 --> 01:25.020
+then just a space.
+
+01:25.170 --> 01:30.150
+And since I am inside the folder I want I'm just going to do it.
+
+01:30.420 --> 01:31.330
+I'm going to click enter.
+
+01:31.330 --> 01:35.100
+It's going to take a couple of minutes and then I'm just going to pause the video and then just come
+
+01:35.100 --> 01:35.750
+back.
+
+01:40.820 --> 01:42.960
+OK so everything is installed right now.
+
+01:42.980 --> 01:46.830
+We have the the the the module for this.
+
+01:46.940 --> 01:52.310
+I'm sorry the boulder the boulder played for react so we're going to be using re-act router.
+
+01:52.310 --> 01:58.370
+So we need to install this as a node module so we can go again just to the terminal and we're going
+
+01:58.370 --> 02:08.180
+to do and PM install and then begin to do react Dasch router dash and Dom.
+
+02:08.300 --> 02:11.140
+OK that's what we are going to install.
+
+02:11.150 --> 02:15.070
+Begin to be working with the Bush number four so we can do that.
+
+02:15.230 --> 02:18.940
+And then just for Dot zero dot zero.
+
+02:19.120 --> 02:19.470
+OK.
+
+02:19.510 --> 02:21.060
+That's the the fourth release.
+
+02:21.200 --> 02:25.130
+So we can work with the same version maybe in the future they're going to be they're going to update
+
+02:25.130 --> 02:29.190
+you for power forward for point one or four point something.
+
+02:29.270 --> 02:33.310
+And if there's a difference of course I will update the course.
+
+02:33.410 --> 02:36.350
+Now we're going to do is space and minus minus.
+
+02:36.500 --> 02:37.550
+Safe.
+
+02:37.910 --> 02:38.430
+OK.
+
+02:38.510 --> 02:43.060
+This is going to save the re-act router inside the package.
+
+02:43.100 --> 02:49.400
+Jason Richa it's going to be on the whole list for all the dependencies that we have right here.
+
+02:49.400 --> 02:49.650
+So.
+
+02:49.660 --> 02:51.830
+OK I'm going to just click enter.
+
+02:52.070 --> 02:58.090
+It's going to take again just a couple minutes past the video and then just just move forward.
+
+02:58.610 --> 03:00.590
+OK so everything is install right now.
+
+03:00.590 --> 03:01.570
+And just like before.
+
+03:01.610 --> 03:07.170
+I'm going to go to the public and the source file folder and I'm going to delete the Favia can that
+
+03:08.340 --> 03:11.260
+OK and then the manifest Jason.
+
+03:11.790 --> 03:13.640
+OK we're just going to leave the index.
+
+03:13.670 --> 03:14.530
+That's a e-mail.
+
+03:14.580 --> 03:19.880
+Inside the public folder we're going to go to the source and I'm going to read the app.
+
+03:19.890 --> 03:24.530
+The TSA is going to the media that J.S..
+
+03:24.800 --> 03:27.760
+And then app that test.
+
+03:28.000 --> 03:32.410
+We're going to lead the index that says we're going to leave the index that day.
+
+03:32.450 --> 03:39.710
+And then just as Weegee and the service workers are going to go inside that index they're just going
+
+03:39.710 --> 03:42.230
+to select everything and just delete everything.
+
+03:42.230 --> 03:47.830
+We're going to start with a clean clean Spaceward workspace.
+
+03:47.850 --> 03:52.560
+I'm going to do NPM start just right now.
+
+03:52.670 --> 03:58.450
+It's going to take a few seconds just to make sure that everything it's working ok.
+
+03:58.500 --> 04:02.820
+Starting everything should be working fine.
+
+04:03.650 --> 04:06.260
+Of course it's not going to work on the screen on the local host.
+
+04:06.400 --> 04:06.920
+It is working.
+
+04:06.920 --> 04:10.980
+We have these Sibiu inside the local host 3000.
+
+04:11.090 --> 04:12.360
+Let's go to the next section.
+
+04:12.370 --> 04:14.370
+I'm going to start with re-act murder.
