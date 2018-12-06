@@ -1,0 +1,481 @@
+WEBVTT
+
+00:00.740 --> 00:04.910
+OK so the last thing we're going to do is to import the album list.
+
+00:04.920 --> 00:09.600
+We can to create a different component to render this because we need to map overhead.
+
+00:09.650 --> 00:12.510
+So it's kind of a good idea to create a new component.
+
+00:12.710 --> 00:17.570
+So I'm going to go right here to components and I'm going to create a new file and this one is going
+
+00:17.570 --> 00:22.560
+to be called a boom list non-jazz Burguet.
+
+00:22.880 --> 00:27.790
+So I'm going to close it and I'm going to go back to to the artist list to the artist.
+
+00:28.070 --> 00:32.810
+So right here I'm going to create an import we get to get an error message but just a matter of now
+
+00:33.400 --> 00:35.330
+we're going to create an import.
+
+00:35.360 --> 00:43.130
+Are we going to import this component and this one we're going to be calling it album list or something
+
+00:43.130 --> 00:44.510
+like that from.
+
+00:44.810 --> 00:47.530
+And then just dog for Slash of list.
+
+00:47.750 --> 00:48.990
+OK that's good.
+
+00:49.010 --> 00:52.820
+So I'm going to go to all list and create a component for this.
+
+00:53.150 --> 00:53.970
+So right.
+
+00:53.990 --> 01:01.260
+So the first thing we need to do is to import react from react.
+
+01:02.180 --> 01:02.500
+OK.
+
+01:02.630 --> 01:03.490
+And that's good.
+
+01:03.500 --> 01:07.730
+We're going to create just a status component.
+
+01:07.730 --> 01:13.090
+You know this album list is just going to receive props is not going to do anything else.
+
+01:13.100 --> 01:17.180
+So we don't have a state so we can create a stateless components.
+
+01:17.390 --> 01:21.510
+So we say equal and it's going to it's going to receive props.
+
+01:21.590 --> 01:28.480
+So we say props that equal to our function and then we just do the logic right here.
+
+01:28.590 --> 01:28.870
+OK.
+
+01:28.910 --> 01:33.270
+I'm just going to return some stat text so we can make sure that it's working.
+
+01:33.320 --> 01:34.780
+So we're going to say return.
+
+01:35.390 --> 01:37.900
+And we just return an empty dip.
+
+01:38.090 --> 01:40.080
+Can you say all of them.
+
+01:40.160 --> 01:40.800
+Whatever.
+
+01:41.030 --> 01:41.590
+Very good.
+
+01:41.780 --> 01:48.890
+So we're going to export this export default and we export these components.
+
+01:48.970 --> 01:49.670
+Very good.
+
+01:49.670 --> 01:50.940
+There's no need for that.
+
+01:51.340 --> 01:51.690
+OK.
+
+01:51.710 --> 01:57.830
+I'm going to go back to the artist and since we have it right here available inside this component I'm
+
+01:57.830 --> 02:05.240
+going to go right here after the vial and I'm going to just call it on the list of open the list and
+
+02:05.240 --> 02:07.130
+then close it.
+
+02:07.400 --> 02:10.670
+If we remove the page we can see the reward right there.
+
+02:10.670 --> 02:11.860
+So it's working.
+
+02:12.270 --> 02:12.520
+OK.
+
+02:12.530 --> 02:16.480
+So what do we need to do now now to render the list.
+
+02:16.610 --> 02:21.030
+This component needs to receives receive some prompts.
+
+02:21.250 --> 02:21.760
+OK.
+
+02:21.860 --> 02:29.450
+So from artist what we can do we can pass that this state that artist right here and then the album
+
+02:29.600 --> 02:33.000
+if I go to the Jason and file DVD.
+
+02:33.010 --> 02:38.240
+Jason Alban's is going to be an array of elements.
+
+02:38.320 --> 02:44.800
+So OK so I'm going to go go back to schools as in say the artist I'm going to create a problem and it's
+
+02:44.800 --> 02:57.460
+going to be album list and this one it's going to be equal to this dot state DOT artists dot dot and
+
+02:57.550 --> 02:59.930
+albums get.
+
+02:59.950 --> 03:02.150
+So whenever this is rendering it's going to pass.
+
+03:02.150 --> 03:04.920
+This prompts the list of albums.
+
+03:05.270 --> 03:06.700
+OK that's fine.
+
+03:06.700 --> 03:09.360
+This is enough for here for this component.
+
+03:09.550 --> 03:11.890
+Let's go to the to the album list.
+
+03:12.330 --> 03:12.600
+OK.
+
+03:12.610 --> 03:18.310
+So inside the album list what we want to do we want to catch the prompts and then just run a function
+
+03:18.700 --> 03:21.190
+to map over the Omelas.
+
+03:21.310 --> 03:24.460
+So I'm going to go right here to the return.
+
+03:24.520 --> 03:30.480
+Can it just delete the album and I can just add a class name so we can style this later.
+
+03:30.910 --> 03:36.910
+So this component this element is going to be called albums on this score list.
+
+03:36.910 --> 03:37.630
+Very good.
+
+03:37.990 --> 03:44.430
+So now we need to call to a function so we can map over it and my want my function is going to be shouldest
+
+03:45.500 --> 03:50.910
+the show list is going to past the props that it's receiving from the parent component.
+
+03:51.040 --> 03:51.420
+OK.
+
+03:51.550 --> 03:57.560
+Let's get they're going to go right here and create a function to map over the props.
+
+03:57.640 --> 03:59.140
+So I'm going to say shouldest.
+
+03:59.260 --> 04:00.170
+Oh sorry.
+
+04:00.520 --> 04:02.340
+Konst shouldest.
+
+04:02.620 --> 04:06.400
+This one is going to be equal to some arguments.
+
+04:06.400 --> 04:08.770
+And then just trigger function.
+
+04:08.770 --> 04:14.680
+Now whenever we pass prompts we can access the prompts and destructor everything just like with it before
+
+04:15.040 --> 04:16.140
+since.
+
+04:16.210 --> 04:25.800
+Let me just show you right now we're going to save props and we just get going to pass always the prompts.
+
+04:25.820 --> 04:26.580
+So OK.
+
+04:26.730 --> 04:28.000
+OK.
+
+04:28.390 --> 04:29.400
+Just let me show you.
+
+04:29.400 --> 04:33.290
+We have the album list and inside the album list we have an array.
+
+04:33.400 --> 04:35.820
+So what we can do instead of calling props.
+
+04:35.980 --> 04:41.990
+We can enter props you can use destructuring Antrel props and the structure with the album list.
+
+04:42.010 --> 04:48.790
+So I'm going to do curly braces and call of them list.
+
+04:48.790 --> 04:50.480
+There you go.
+
+04:50.620 --> 04:52.060
+Going to delete this.
+
+04:52.200 --> 04:53.920
+And again just like we did before.
+
+04:53.920 --> 04:59.590
+We need to render this we need to map over this other list only if it has data.
+
+04:59.770 --> 05:04.690
+And the first time that this component component renders we didn't have data it's going to be empty
+
+05:04.780 --> 05:06.550
+and it's going to give us an error message.
+
+05:06.550 --> 05:13.360
+So we need to wrap everything inside a conditional that checks if the elements this object has data
+
+05:13.870 --> 05:16.600
+can say if and then just album list.
+
+05:17.120 --> 05:25.750
+Ok so since we want to return some GSX that's inside a map I'm going to say We turn then we grab the
+
+05:25.840 --> 05:29.870
+album list and dots and we map over it.
+
+05:29.920 --> 05:39.100
+So something real simple we can to create an anonymous function and we can pass an item.
+
+05:39.410 --> 05:41.720
+OK it's going to be each album.
+
+05:41.720 --> 05:42.000
+Right.
+
+05:42.010 --> 05:48.160
+So we need to return some jazz acts so we can say return an opening close.
+
+05:48.160 --> 05:49.740
+Now what we can in return.
+
+05:49.750 --> 05:52.220
+It's just an image just an image tag.
+
+05:52.330 --> 05:55.820
+Can you just put this just an image.
+
+05:55.840 --> 06:00.800
+So I'm going to say EMG and I'm just going to close it for now.
+
+06:00.820 --> 06:08.300
+Now whenever we just loop react is going to ask us to put a key whenever we just do a map.
+
+06:08.770 --> 06:09.040
+OK.
+
+06:09.070 --> 06:11.790
+So the thing is that we just have a one.
+
+06:11.800 --> 06:16.320
+We have only one thing one when name the name of the image.
+
+06:16.450 --> 06:24.130
+What we can do whenever we just run a map we can pass as a second argument the index and the index is
+
+06:24.130 --> 06:26.970
+going to be the and the number of the iteration.
+
+06:27.010 --> 06:31.840
+So it's going to be 0 1 2 3 whatever elements you have on the list.
+
+06:31.900 --> 06:39.450
+So as we get it pass I'm going to pass the index I'm going to say just index.
+
+06:39.670 --> 06:40.990
+You can do pretty much where you want.
+
+06:40.990 --> 06:47.360
+You can add that you can put the index and then do template strings and just add the name of image.
+
+06:47.380 --> 06:49.680
+So something something like that.
+
+06:49.720 --> 06:49.960
+OK.
+
+06:49.990 --> 06:57.640
+So I'm going to say I'm not going to just put the all and say Source equals and now we need to put to
+
+06:57.640 --> 06:59.780
+put the source of the image.
+
+07:00.530 --> 07:05.980
+OK so we're going to use template strings and the saw in the image is going to be stored inside for
+
+07:05.990 --> 07:16.670
+Slash images for Slash albums for Slash and the name of the file which is going to be the the one we're
+
+07:16.690 --> 07:24.540
+getting right here on each iteration so we can access doing item d'arte cover that's name.
+
+07:25.100 --> 07:25.760
+OK.
+
+07:26.080 --> 07:28.620
+And we need to add the extension.
+
+07:28.630 --> 07:32.030
+So it's going to be JPT.
+
+07:32.090 --> 07:35.840
+So it's nice to have all the images right here.
+
+07:35.930 --> 07:41.750
+Of course we need to add some styling but everything just looks really nice.
+
+07:41.780 --> 07:44.630
+So let's go to the CSSA and Abda stifle this.
+
+07:44.780 --> 07:46.210
+And that's pretty much it.
+
+07:46.250 --> 07:47.950
+So let's go to styles.
+
+07:48.980 --> 07:56.150
+And let me just put it right here on the same container so we can see going to need to make a reference
+
+07:56.210 --> 07:58.920
+to these to this list.
+
+07:58.950 --> 08:05.150
+So OK so we're going to say all them thought of them underscore list.
+
+08:05.150 --> 08:06.890
+That's the main container.
+
+08:06.890 --> 08:09.090
+And we can add a margin of 20 pixels.
+
+08:09.290 --> 08:17.940
+We can do something with simple that because now we need to kind of float everything.
+
+08:17.990 --> 08:24.520
+So I'm going to say I'm going to make reference to them this again and then just call the after going
+
+08:24.550 --> 08:35.450
+to do the self closing the self-clearing clearing floats and say clear both then display table and then
+
+08:35.450 --> 08:39.230
+just content nothing.
+
+08:39.230 --> 08:41.290
+Now just to clear the floats.
+
+08:41.360 --> 08:41.870
+Right.
+
+08:42.180 --> 08:43.920
+So now I'm going to go right here.
+
+08:44.330 --> 08:52.880
+Make reference to them list then begin to select begin it just select its image and then we're just
+
+08:52.880 --> 09:04.710
+going to float everything to the left and everything is going to have a width of 50 percent no.
+
+09:04.840 --> 09:05.220
+OK.
+
+09:05.270 --> 09:07.640
+It seems like I made a mistake.
+
+09:08.240 --> 09:10.200
+It's not selecting the elements.
+
+09:10.220 --> 09:14.270
+Maybe I didn't put this this inside the album list.
+
+09:14.510 --> 09:22.420
+I'm going to say I did albums list so I'm going to go back to the styles and just put albums list makes
+
+09:22.440 --> 09:23.570
+sense.
+
+09:26.190 --> 09:26.810
+OK.
+
+09:27.090 --> 09:30.530
+Again we are getting the same problem albums list.
+
+09:30.640 --> 09:32.170
+No it's fine.
+
+09:32.470 --> 09:35.280
+OK let's say a diva and see what's going on.
+
+09:36.690 --> 09:40.360
+It is going to grant the elements and we get Alvin's list.
+
+09:40.490 --> 09:45.840
+We are getting the margin than oh I've just made a mistake with that.
+
+09:45.840 --> 09:51.260
+Silly me sorry with their ego OK.
+
+09:51.300 --> 09:52.560
+So it's working.
+
+09:52.770 --> 09:55.160
+Looks nice.
+
+09:55.500 --> 10:00.140
+No it's fine for the first first project for the act.
+
+10:00.330 --> 10:01.850
+You know you're doing a lot of things.
+
+10:01.880 --> 10:04.560
+You're using a lot of other components.
+
+10:04.720 --> 10:11.440
+We're using state we're mapping over over items or containers.
+
+10:11.610 --> 10:14.870
+So you know it's a lot of things now.
+
+10:14.940 --> 10:21.170
+The next sections begin to talk about more specific things about react.
+
+10:21.480 --> 10:28.410
+And after that begin to create a new new project and that one is going to be kind of long because it's
+
+10:28.410 --> 10:31.420
+a real life scenario.
+
+10:31.740 --> 10:35.690
+So OK so let's wrap this up and go to the next section.

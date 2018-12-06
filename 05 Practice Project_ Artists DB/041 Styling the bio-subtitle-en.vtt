@@ -1,0 +1,238 @@
+WEBVTT
+
+00:01.020 --> 00:04.490
+OK so let's add some style of this because it's really really ugly.
+
+00:04.500 --> 00:06.030
+Kind of makes no sense.
+
+00:06.210 --> 00:10.540
+So we're going to style first to Hetter so I'm going to go right here and put the letter.
+
+00:11.050 --> 00:11.800
+OK.
+
+00:12.300 --> 00:13.490
+Now I'm going to make.
+
+00:13.500 --> 00:16.050
+I'm going to just make reference to that tack.
+
+00:16.170 --> 00:17.440
+It's going to be better.
+
+00:17.820 --> 00:20.090
+And then we just have some style.
+
+00:20.190 --> 00:21.500
+I'm going to use a different font.
+
+00:21.500 --> 00:23.700
+So it's going to be font family.
+
+00:23.790 --> 00:29.740
+And then we will add more on it on there are good.
+
+00:30.410 --> 00:30.800
+That's good.
+
+00:30.810 --> 00:36.190
+And remember that you can get the section from could have everything all the section it's about styles.
+
+00:36.250 --> 00:40.060
+So if you want to skip it I probably just copy the code and just paste it.
+
+00:40.080 --> 00:41.340
+No no problem.
+
+00:41.340 --> 00:43.610
+So it's going to be text align.
+
+00:44.190 --> 00:46.900
+And the next line is going to be Center.
+
+00:47.050 --> 00:47.980
+That's good.
+
+00:48.440 --> 00:52.230
+It's going to center and you can add a phone size I'm going to make it bigger.
+
+00:52.330 --> 00:54.390
+So it's going to be font size.
+
+00:54.510 --> 00:57.220
+And then just thirty three pixels.
+
+00:57.830 --> 00:58.470
+OK.
+
+00:58.710 --> 01:00.670
+We want to split everything up.
+
+01:00.720 --> 01:11.320
+So it's going to have a border bottom of one pixel solid and then just that that nice nice blue.
+
+01:11.520 --> 01:15.910
+It's done 1 2 1 9 6 3 go.
+
+01:16.380 --> 01:21.240
+So we want to change the background to the color of the logo.
+
+01:21.360 --> 01:26.640
+So we're going to use something 9 4 9 4 9 4.
+
+01:26.670 --> 01:35.730
+It's kind of a gray color that so up close at 0 0.
+
+01:35.820 --> 01:39.430
+They're going to do that OK.
+
+01:39.450 --> 01:40.710
+So it looks nice.
+
+01:40.710 --> 01:42.350
+I kind of really like it.
+
+01:42.570 --> 01:44.300
+So you're done with it.
+
+01:44.300 --> 01:47.630
+Are you going to add some styles to the artist Viola.
+
+01:47.670 --> 01:50.540
+So I'm going to make a reference right here to this.
+
+01:50.580 --> 01:58.820
+So we're going to make reference to the artist by a class going to go Dot artist then underscore bio.
+
+01:59.370 --> 02:09.030
+And this one is going to have a box sizing of borderer box and that just padding of 10 pixels from the
+
+02:09.030 --> 02:09.680
+sides.
+
+02:09.750 --> 02:16.140
+I'm sorry from the top and bottom and 30 from the sides so we can kind of center everything that looks
+
+02:16.140 --> 02:16.980
+nicer.
+
+02:17.490 --> 02:19.740
+So we're going to style this fan.
+
+02:19.740 --> 02:23.140
+This fan is the one that contains the Avatar.
+
+02:23.160 --> 02:32.770
+It's going to say artist bio dad Avatar Avatar Dadds spam.
+
+02:33.090 --> 02:33.720
+Not spam.
+
+02:33.750 --> 02:36.550
+It's it's a it's an element not a class.
+
+02:36.850 --> 02:38.740
+So get inside the span.
+
+02:38.790 --> 02:43.830
+What we do we're going to add with of 130 pixels something like that.
+
+02:43.830 --> 02:48.680
+And then just the height height of the same thing.
+
+02:48.690 --> 02:54.260
+So we can make an MC round square you know stuttering.
+
+02:54.450 --> 03:02.700
+So we're going to say this play and blog OK let's get going to add.
+
+03:03.440 --> 03:06.080
+Zero zero hour.
+
+03:07.310 --> 03:08.660
+So everything is center.
+
+03:08.660 --> 03:09.310
+That's good.
+
+03:09.380 --> 03:15.110
+And we're going to just set the background something the backroom size so we can content we can make
+
+03:15.110 --> 03:18.150
+it make everything to cover that elements.
+
+03:18.200 --> 03:31.010
+So we're going to say background and then just size and they cover of course we do important Lego looks
+
+03:31.010 --> 03:31.710
+nice.
+
+03:32.090 --> 03:35.450
+So now let's start style the H-3 three.
+
+03:35.660 --> 03:41.740
+It's going to be artist than bio and H-3.
+
+03:41.750 --> 03:42.440
+All right.
+
+03:42.800 --> 03:52.530
+So going to make it a little bit bigger it's going to be fawn's than waif and we're going to make it
+
+03:52.570 --> 03:56.990
+10 and text align center
+
+03:59.830 --> 04:00.630
+and really like it.
+
+04:00.640 --> 04:01.340
+I don't know.
+
+04:01.660 --> 04:07.180
+I feel really confident this size and then we're going to make it a little bit bigger.
+
+04:07.380 --> 04:08.170
+Pixels.
+
+04:08.340 --> 04:15.280
+MARGARET And we're going to add some margin just to split everything up from bottom and top from top
+
+04:15.280 --> 04:18.390
+and bottom and then zero pixels from side.
+
+04:18.940 --> 04:19.850
+Yeah looks nice.
+
+04:19.900 --> 04:20.860
+I really like it.
+
+04:20.860 --> 04:22.760
+It could be a designer you know.
+
+04:23.070 --> 04:23.340
+OK.
+
+04:23.350 --> 04:31.350
+So we say artists video and then just bio.
+
+04:32.230 --> 04:41.900
+Do fonts font white Phong to wait and going to be just really then we're going to do 100.
+
+04:42.730 --> 04:51.130
+And then a fun size Let's make it a little bit bigger font size of 14 pixels.
+
+04:52.280 --> 04:56.140
+You know I really really like it you know.
+
+04:56.230 --> 04:56.540
+OK.
+
+04:56.560 --> 04:57.680
+So it looks nice.
+
+04:57.820 --> 05:03.490
+So let's go to the next section and call to this create the list.
+
+05:03.520 --> 05:08.260
+Just create a component to load the map over the album list.

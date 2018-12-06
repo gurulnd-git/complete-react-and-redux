@@ -1,0 +1,307 @@
+WEBVTT
+
+00:01.360 --> 00:08.590
+OK so now everything is running at mine it's running on local host three thousand one you can be using
+
+00:08.590 --> 00:13.570
+the three thousand but I'm using the 3000 for the final application.
+
+00:13.780 --> 00:15.650
+So this is where it would be going to be building.
+
+00:15.700 --> 00:21.190
+So we can have pretty much one component which is going to be the main entry of the app and whenever
+
+00:21.190 --> 00:28.420
+we click and an artist is going to take us to an index or just an a detailed page of the artist so we
+
+00:28.420 --> 00:30.890
+can have just two views right here.
+
+00:30.910 --> 00:31.560
+We have a route.
+
+00:31.570 --> 00:34.250
+So we need to use re-act Browder.
+
+00:34.510 --> 00:35.330
+OK that's fine.
+
+00:35.350 --> 00:42.140
+Let's start doing the first start doing the set up for this since we can have two components.
+
+00:42.220 --> 00:50.170
+First we're going to create a new folder that is going to be it's going to host all the components components.
+
+00:50.460 --> 00:54.010
+We're going to have a home component and then artist components.
+
+00:54.080 --> 01:00.090
+So I'm going to go right ahead and just create a home components going to go home dungeons then begin
+
+01:00.110 --> 01:06.200
+to have you file and then artist that jazz.
+
+01:06.670 --> 01:10.460
+Now I'm going to go to the index and we need to do a lot of set up right here.
+
+01:10.660 --> 01:20.170
+So we need to import some things are going to import re-act then from react.
+
+01:20.170 --> 01:23.300
+That's the first thing we need to import re-act arms.
+
+01:23.320 --> 01:34.470
+Going to say import re re-act DONG DONG from and then just act dumb.
+
+01:34.770 --> 01:35.740
+It.
+
+01:35.980 --> 01:37.290
+Now we're going to be using routes.
+
+01:37.310 --> 01:40.780
+So we need to import browser router and route.
+
+01:40.810 --> 01:48.490
+So I'm going to say you begin to use and make use of this structuring and we can bring browser and then
+
+01:48.520 --> 01:49.800
+router.
+
+01:50.860 --> 01:53.080
+And then we need to import route.
+
+01:53.860 --> 02:04.630
+But this one is going to be imported from Briac road or Dohm react router dom dom and you know I'm just
+
+02:04.630 --> 02:09.080
+typing all this information because I want to show you how to do it.
+
+02:09.100 --> 02:15.800
+And so you can type it at home but at the end in real life you can have just a snippet to do this.
+
+02:15.820 --> 02:20.620
+Now if you're just going to collect something and it's going to create a component drive for you where
+
+02:20.680 --> 02:21.900
+you're going to have templates.
+
+02:22.210 --> 02:22.700
+So OK.
+
+02:22.720 --> 02:29.570
+So right from the start we need to set the routes with two main components the home and the artists.
+
+02:29.590 --> 02:32.290
+So I'm going to go and just create the components right here.
+
+02:32.360 --> 02:39.360
+I say components and I'm going to I'm going to import home from.
+
+02:39.520 --> 02:44.940
+And then we say Dad for Slash components for Slash home.
+
+02:45.120 --> 02:45.940
+Right.
+
+02:46.040 --> 02:55.810
+I'm going to say then import and then artist from dad for Slash components and same thing artists.
+
+02:56.170 --> 02:56.980
+Right.
+
+02:56.980 --> 03:01.050
+So this application is going to have a main entry point.
+
+03:01.330 --> 03:06.550
+I can do this directly and we're going to do it on the next sections and the next lessons.
+
+03:06.730 --> 03:11.220
+But for now I'm just going to create statelets for component.
+
+03:11.230 --> 03:16.410
+It's going to be Konst app and this one is going to be equal to pretty much nothing.
+
+03:16.450 --> 03:18.550
+And then we just run a function.
+
+03:18.640 --> 03:21.810
+This app is going to return something.
+
+03:22.180 --> 03:26.260
+And what is going to return is going to return the browser router.
+
+03:26.280 --> 03:29.090
+It can contain all the routes right here.
+
+03:29.290 --> 03:34.090
+So I'm going to say browser router and we're going to create a container.
+
+03:34.090 --> 03:40.130
+Remember that Brossel router needs to have only one element inside.
+
+03:40.240 --> 03:43.560
+So I'm going to go right here and create the routes.
+
+03:43.780 --> 03:52.470
+So I'm going to say the first route of not router route and then we'll just self-closing the first route.
+
+03:52.570 --> 03:57.060
+It's going to have a path and the path one for this one is going to be home.
+
+03:57.070 --> 03:58.850
+So it's just for Slash.
+
+03:59.140 --> 04:04.100
+Whenever we load home we get to use our components and the components.
+
+04:04.180 --> 04:06.850
+It's going to be home.
+
+04:06.850 --> 04:07.720
+Right.
+
+04:07.810 --> 04:14.930
+So since we don't want to mess with this route we want to put it to us to set it except.
+
+04:15.150 --> 04:15.580
+Right.
+
+04:15.760 --> 04:21.010
+So the next round is going to be the artist.
+
+04:21.010 --> 04:26.510
+So I'm going to say again path and this one is kind of a little bit special.
+
+04:26.530 --> 04:35.300
+We need to go to artist artist and then whenever we go to artist and I'm going right here to the to
+
+04:35.320 --> 04:40.880
+the finished her application if I click and Jimi Hendrix is going to take us to a new view with artists
+
+04:40.910 --> 04:44.160
+for Slash and the ID of the musician.
+
+04:44.390 --> 04:47.780
+So we need to use programs right here.
+
+04:47.930 --> 04:49.470
+So I'm going to do.
+
+04:49.550 --> 04:54.390
+CONAN And the name for this one is going to be artist ID.
+
+04:54.470 --> 04:55.610
+You can put whatever you want.
+
+04:55.610 --> 04:56.410
+Doesn't matter.
+
+04:56.690 --> 05:02.360
+So whenever we go to this kind of route you want to load a component and the component is going to be
+
+05:02.420 --> 05:09.200
+an artist write art it's component right here right here.
+
+05:09.200 --> 05:12.380
+So now we need to create the surrender for this.
+
+05:12.440 --> 05:19.010
+It's going to fail because this Pats This components are empty so we're going to need to do is to do
+
+05:19.010 --> 05:20.170
+something right here.
+
+05:20.510 --> 05:31.670
+So OK I'm going to go and say re-act Dom datt render and the render method takes two arguments the watts
+
+05:31.760 --> 05:32.690
+and the where.
+
+05:32.900 --> 05:36.540
+So the watch is going to be the app we create around here.
+
+05:36.560 --> 05:38.590
+That's the main entry point.
+
+05:38.660 --> 05:43.550
+So I'm going to say app and then silf close and see where it's going to be rude.
+
+05:43.610 --> 05:46.980
+The root of the H HVM l documents.
+
+05:47.020 --> 05:57.700
+So I'm going to say document and then get elements my ID and just open and close and begin to say root.
+
+05:57.740 --> 05:58.320
+All right.
+
+05:58.490 --> 06:02.950
+If I go to the original application we're going to get a lot of error messages.
+
+06:03.140 --> 06:07.250
+Everything should be tried whenever you type everything by hand.
+
+06:07.280 --> 06:08.750
+You can make a lot of typos.
+
+06:08.810 --> 06:10.520
+So it's good to have templates.
+
+06:10.820 --> 06:11.310
+So OK.
+
+06:11.330 --> 06:18.590
+We begin to go to home and we can create just a simple component just to make sure that everything should
+
+06:18.590 --> 06:20.070
+be working fine.
+
+06:20.180 --> 06:24.720
+MS they react and I go into the structure components.
+
+06:24.820 --> 06:33.470
+I get to go right here at the bottom create a class of home and this home is going to extends and components
+
+06:34.860 --> 06:35.300
+right.
+
+06:35.300 --> 06:39.500
+This one is just going to return some text I'm going to return some dummy text.
+
+06:39.710 --> 06:41.030
+So it's going to be render.
+
+06:41.300 --> 06:50.540
+And then just open and close and we can return some def just a dummy div that's going to say home.
+
+06:51.200 --> 06:52.020
+OK.
+
+06:52.370 --> 06:57.990
+Now we need to export this so it can be available outside this jast.
+
+06:58.040 --> 07:02.660
+So it's going to be support default and then home.
+
+07:03.100 --> 07:03.650
+That's good.
+
+07:03.710 --> 07:05.380
+So we get home.
+
+07:05.510 --> 07:09.860
+If you go to an internal page we are going to get an error message but right now we're not going to
+
+07:09.860 --> 07:10.480
+go there.
+
+07:10.490 --> 07:15.700
+So everything it's working fine you know is going to index is showing the text.
+
+07:15.710 --> 07:21.560
+Let's go to the next lecture and we're going to start with the main banner of the application to build
+
+07:21.650 --> 07:24.110
+this and then fetching the artist's.

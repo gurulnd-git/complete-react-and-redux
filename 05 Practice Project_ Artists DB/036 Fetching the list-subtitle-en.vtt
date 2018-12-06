@@ -1,0 +1,454 @@
+WEBVTT
+
+00:00.450 --> 00:03.610
+OK so let's start building the list of artists.
+
+00:03.690 --> 00:06.860
+Now this list could be a different component.
+
+00:07.080 --> 00:13.110
+And again it's just going to receive some data begin to fetch the list of artists from the API.
+
+00:13.200 --> 00:15.260
+Right here in the home component.
+
+00:15.420 --> 00:19.690
+And we can pass the list of artists to that child components.
+
+00:19.920 --> 00:23.610
+So that component could be a functional component.
+
+00:23.640 --> 00:30.040
+Now whenever we fetched information we want to set it into the state so we can pass it as props.
+
+00:30.270 --> 00:36.270
+So I'm going to go right here at the top and I'm going to start a constructor we're going to say constructor
+
+00:38.590 --> 00:39.360
+constructor.
+
+00:39.370 --> 00:40.260
+There you go.
+
+00:40.660 --> 00:46.960
+And then open and close and begin to use super you know so we can use this state and we're going to
+
+00:46.960 --> 00:48.630
+be passing props.
+
+00:48.790 --> 00:53.750
+Right now we're going to make a request to you Earl.
+
+00:53.840 --> 00:58.770
+We're going to begin to have all the artists if you remember the Ural.
+
+00:58.810 --> 01:01.990
+I'm going to go to you right here to the terminal.
+
+01:01.990 --> 01:08.220
+If you go to the second powerful the list is going to be stored in local host three thousand in my case.
+
+01:08.410 --> 01:09.310
+And then artists.
+
+01:09.400 --> 01:14.260
+So I'm just going to copy all of those close the terminal and I'm going to create a viral that is going
+
+01:14.260 --> 01:16.240
+to host this Eurail.
+
+01:16.490 --> 01:16.880
+OK.
+
+01:16.900 --> 01:18.040
+So I'm going to go right here.
+
+01:18.100 --> 01:21.960
+Say Konst and then you are all artists.
+
+01:23.780 --> 01:24.860
+And to make it plural.
+
+01:24.920 --> 01:26.320
+OK.
+
+01:27.070 --> 01:28.340
+I'm going to paste it right here.
+
+01:28.430 --> 01:33.000
+So whenever we call this viral we're going to make a fetch to this URL.
+
+01:33.130 --> 01:33.640
+OK.
+
+01:33.980 --> 01:34.950
+So now we can.
+
+01:34.980 --> 01:38.470
+After we do the fetch we can store everything in the state.
+
+01:38.480 --> 01:44.010
+So I'm just going to create a state it's going to be this this data state.
+
+01:44.010 --> 01:50.510
+He calls to an object and we're going to create a key right here and it's going to be artists
+
+01:53.220 --> 01:53.830
+there you go.
+
+01:54.040 --> 02:01.330
+And at first when the application LOTES this artist state is going to be empty you can just add information
+
+02:01.750 --> 02:04.720
+after everything renders OK that's fine.
+
+02:05.020 --> 02:06.570
+So everything looks good.
+
+02:06.850 --> 02:09.100
+Let's go to the project to the components.
+
+02:09.180 --> 02:14.290
+I create a Vanner I'm sorry an artist list component for this.
+
+02:14.420 --> 02:16.240
+And to create a new file.
+
+02:16.290 --> 02:24.130
+It's going to be artists list that makes sense right.
+
+02:24.180 --> 02:29.200
+I'm going to go to the artist list and I'm just going to create some component for this one.
+
+02:29.220 --> 02:35.110
+Just meant that Nicklaus's begin to import re-act from Briac just going to copy this and paste it right
+
+02:35.110 --> 02:35.720
+here.
+
+02:35.790 --> 02:37.840
+This is going to be a stateless component.
+
+02:37.870 --> 02:41.970
+We don't need to bring components just like that just bring react.
+
+02:42.400 --> 02:48.820
+And now we're going to start creating Konst and we create an artist list.
+
+02:48.920 --> 02:51.740
+Let's make it plural list.
+
+02:51.750 --> 02:53.880
+This is equal to something.
+
+02:54.220 --> 02:56.660
+And then we just open and close.
+
+02:56.680 --> 02:57.050
+OK.
+
+02:57.110 --> 02:57.850
+That's good.
+
+02:58.030 --> 03:04.190
+So now this list is going to receive some data from home and we're going to do it in a minute.
+
+03:04.300 --> 03:08.820
+I'm going to put the argument right here and we can just pass some prompts.
+
+03:09.010 --> 03:13.100
+Now whenever we receive prompts we're going to render the list.
+
+03:13.100 --> 03:17.730
+So right here just to just we're just saying I'm going to say cancel that log.
+
+03:17.890 --> 03:25.870
+And then prompts right to make sure that are getting the information correctly and I going to make this
+
+03:25.870 --> 03:30.560
+of this component available and other components.
+
+03:30.700 --> 03:39.180
+So I'm going to say export the default default and then artists list.
+
+03:39.220 --> 03:40.150
+There we go.
+
+03:40.690 --> 03:42.940
+I'm going to go right here at the top.
+
+03:42.940 --> 03:45.730
+And what we need to do we need to import that.
+
+03:45.970 --> 03:52.040
+So I'm going to say import and then it's going to be artists list.
+
+03:52.040 --> 03:55.070
+Let me just copy from here.
+
+03:55.090 --> 03:57.210
+There we go and it's going to be from.
+
+03:57.470 --> 04:02.710
+And then it's going to be a dot for Slash and then artists list.
+
+04:02.740 --> 04:09.370
+So this components it's ready to be used right here and I'm going to go right here and just make a reference
+
+04:09.370 --> 04:11.360
+to that component so we can show it.
+
+04:11.650 --> 04:21.110
+It's going to say artist list and pleural artist list and we're just going to open close.
+
+04:21.340 --> 04:25.650
+Now what we need to do and react element or no that's fine.
+
+04:25.810 --> 04:29.240
+The thing is that we're not returning anything which is doing Council lock.
+
+04:29.720 --> 04:37.420
+OK so now what we need to do we need to kind of fetch the information that we're getting right here
+
+04:37.540 --> 04:43.690
+to I'm going to go just go back and return some geas GSX so we can clear that our message because I
+
+04:43.690 --> 04:50.580
+don't really like it going to say list whatever.
+
+04:50.710 --> 04:51.170
+That's fine.
+
+04:51.220 --> 04:52.360
+So we get a list.
+
+04:52.930 --> 04:54.330
+So we're going to go to home.
+
+04:54.850 --> 05:03.070
+And what we need to do we need to fetch from the API the list of artists and whenever we get the lists
+
+05:03.220 --> 05:09.010
+the Jason the data we need to store it on the stage is set in your state for artists and then we can
+
+05:09.010 --> 05:13.440
+have passed this new state as a prop to the child components.
+
+05:13.480 --> 05:19.350
+Now whenever we just render this component the home component is going to go right here.
+
+05:19.360 --> 05:26.390
+It's going to set up the state and then it's going to render these child components these components.
+
+05:26.650 --> 05:31.830
+Then after this is rendered we're going to do the fetch for the API request.
+
+05:32.080 --> 05:37.910
+And once it's done it's going to have the days the state and it's going to render all the information.
+
+05:38.050 --> 05:44.680
+But this time we can have some artists OK let's create the app to fetch requests are going to go right
+
+05:44.680 --> 05:51.950
+here and whenever we want to trigger something after this component it's mounted.
+
+05:52.060 --> 05:55.050
+We use a lifecycle lifecycle method.
+
+05:55.120 --> 05:57.190
+They react lifecycle.
+
+05:57.280 --> 06:04.870
+So we're going to say component did münze you know the component will mount is the one that it's before
+
+06:04.870 --> 06:08.650
+the render and this one is the one that it's after the render.
+
+06:08.810 --> 06:09.980
+So I'm going to go right here.
+
+06:10.050 --> 06:12.260
+We're going to do a fetch right now.
+
+06:12.520 --> 06:15.080
+So what I'm going to do I can do fetch.
+
+06:15.760 --> 06:18.490
+And then we just open and close.
+
+06:18.610 --> 06:22.320
+Now the you are l is going to be stored in your artists.
+
+06:22.390 --> 06:26.070
+So I'm going to go right here and just paste it right there.
+
+06:26.290 --> 06:28.810
+Then we need to specify the method for this.
+
+06:28.810 --> 06:36.250
+So I'm going to say coma and then open and close the race is just going to make one space and then we
+
+06:36.250 --> 06:38.090
+just select the method.
+
+06:38.380 --> 06:41.480
+The method is going to be get right.
+
+06:41.510 --> 06:43.240
+Are not posting anything.
+
+06:43.510 --> 06:50.320
+Now with Fadge whenever you get the information that you're fetching you need to convert everything
+
+06:50.560 --> 06:53.120
+you need to convert the response to Jason.
+
+06:53.120 --> 06:57.010
+You need to graph the Jason from that request from that response.
+
+06:57.160 --> 07:06.190
+So I'm going to say then and then just open and close and grab the response and the response is going
+
+07:06.190 --> 07:14.270
+to be converted to Jason responds Jason and then it's a function.
+
+07:14.290 --> 07:17.650
+So we open it close parenthesis.
+
+07:17.830 --> 07:21.190
+Now after this is done we want access to them Jason.
+
+07:21.340 --> 07:27.250
+So I'm going to say Dot and then I'm going to open and close again and I'm going to grab that Jason
+
+07:27.310 --> 07:29.150
+that we just created.
+
+07:29.170 --> 07:33.190
+Now this one is going to be equal and forward.
+
+07:33.400 --> 07:33.710
+I'm sorry.
+
+07:33.720 --> 07:35.580
+It's right pointing arrow.
+
+07:35.800 --> 07:39.730
+And we can it run a function whenever we get this as a callback.
+
+07:39.730 --> 07:45.170
+So what I'm going to do right now I'm just going to console log the list of the list that we're getting
+
+07:45.200 --> 07:46.350
+the Jason.
+
+07:46.420 --> 07:47.360
+All right.
+
+07:47.380 --> 07:57.000
+So if I just go to the consul and check right here on the on the console log you know the first time
+
+07:57.000 --> 07:59.790
+that the application it's loading we're getting nothing.
+
+07:59.790 --> 08:04.790
+You know it's just doing all of the logic and returning nothing.
+
+08:04.950 --> 08:11.060
+The next time we get the data we get the it becomes a lock of the Jayson.
+
+08:11.100 --> 08:14.050
+So now we have access to that data right here.
+
+08:14.070 --> 08:20.310
+So what we need to do we need to grab this Jason and set the artist's state.
+
+08:20.560 --> 08:26.970
+So we're going to just delete this and I'm going to say this dot and what we do to said state is going
+
+08:26.970 --> 08:29.040
+to be set straight.
+
+08:29.220 --> 08:35.460
+We open it close and we just make reference of what we want to update which state we want to update
+
+08:35.850 --> 08:41.390
+since we want to update artists going to say artists that can and we can get.
+
+08:41.400 --> 08:42.580
+Jason.
+
+08:43.230 --> 08:43.830
+OK.
+
+08:43.980 --> 08:44.690
+That's good.
+
+08:44.970 --> 08:47.810
+So now you get it you're going to be going to get nothing.
+
+08:47.820 --> 08:52.040
+This empty object is going to be from artists list.
+
+08:52.050 --> 08:53.930
+We are cons. A lot of the props.
+
+08:54.000 --> 08:59.970
+The thing is that whenever we call this a component by component we are not passing any props but they're
+
+08:59.970 --> 09:01.170
+going to do it right now.
+
+09:01.320 --> 09:03.940
+I'm going to go right here and create a prop for this.
+
+09:04.010 --> 09:05.030
+Can say all.
+
+09:05.070 --> 09:06.780
+And then artists.
+
+09:07.170 --> 09:07.640
+Right.
+
+09:07.890 --> 09:14.170
+And this one is going to be equal to whatever state we have inside artists.
+
+09:14.280 --> 09:15.920
+The first time is going to be empty.
+
+09:15.990 --> 09:19.750
+But the second time you can have a state with all the artists.
+
+09:20.100 --> 09:27.770
+So going to say this doesn't state dance artists right.
+
+09:28.410 --> 09:32.570
+It's going to take a few second and look at right here inside artists list.
+
+09:32.700 --> 09:36.210
+We are passing props through all artists.
+
+09:36.420 --> 09:42.660
+So right here props when we reach this section the first time the page loads is going to be empty because
+
+09:42.660 --> 09:43.880
+we don't have any data.
+
+09:44.010 --> 09:45.850
+So the data comes empty.
+
+09:46.140 --> 09:51.930
+But the second time we get all artists an array of all the artists right.
+
+09:51.930 --> 09:53.110
+So this is working.
+
+09:53.280 --> 10:01.710
+So now what we need to do is to grab props enter all artists and create a map for this and this array
+
+10:01.830 --> 10:04.450
+so we can display the information on the screen.
+
+10:04.710 --> 10:07.660
+Let's go to the next section and just do that.

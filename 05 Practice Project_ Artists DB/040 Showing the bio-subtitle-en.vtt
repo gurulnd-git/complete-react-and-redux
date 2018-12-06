@@ -1,0 +1,271 @@
+WEBVTT
+
+00:00.900 --> 00:07.140
+OK since we have the information available right now in inside the state what we can do is just grab
+
+00:07.140 --> 00:11.840
+the data directly from the state since we have only one object one.
+
+00:11.900 --> 00:17.230
+When you use one musician one entry we can just loop that.
+
+00:17.370 --> 00:23.430
+I'm sorry we can just display that and not create a map for it because we have only one result then
+
+00:23.430 --> 00:28.440
+with the list it's going to be something else we're going to do a different component because we will
+
+00:28.440 --> 00:32.060
+need to loop overhead to map overhead.
+
+00:32.420 --> 00:32.700
+OK.
+
+00:32.730 --> 00:38.700
+So let's start creating the GSX for this going to go right here at the bottom.
+
+00:38.760 --> 00:42.010
+I'm going to say Dev and just open and close.
+
+00:42.090 --> 00:48.000
+Now this container is going to be is going to have a class name and the class name is going to be artist
+
+00:48.610 --> 00:50.310
+of bio.
+
+00:50.570 --> 00:54.180
+That's good sense right.
+
+00:54.360 --> 00:57.200
+So right from the start we can have an avatar.
+
+00:57.280 --> 01:02.020
+So going to create a div with a class name of Avatar it's.
+
+01:04.190 --> 01:07.210
+It my boss is kind of wearing out.
+
+01:07.850 --> 01:12.440
+I've been recording like for I know five hours maybe more.
+
+01:12.440 --> 01:13.930
+So sorry for that.
+
+01:14.210 --> 01:15.490
+You're almost done with this.
+
+01:15.500 --> 01:17.610
+I didn't want it to stop.
+
+01:17.660 --> 01:18.240
+So OK.
+
+01:18.290 --> 01:24.430
+So inside the Avatar I'm it created just a span to host the image.
+
+01:24.820 --> 01:33.800
+So on a different section on the press section right here in the home I believe it's going to be the
+
+01:33.800 --> 01:36.890
+banner that we have right here now.
+
+01:36.950 --> 01:39.430
+Now the banner just wanted to double check.
+
+01:39.450 --> 01:44.280
+Don't remember right now we have the style right here on the artist list.
+
+01:44.330 --> 01:50.720
+We created a link and then we passed the style as in just a survival.
+
+01:50.720 --> 01:58.260
+We created a construct of our will to host the image as a success and then we passed the viable.
+
+01:58.260 --> 02:01.830
+Now we're going to do a we're going to do it in a different way.
+
+02:02.030 --> 02:05.640
+I did this on purpose so I can show you two different ways.
+
+02:05.660 --> 02:11.030
+Now what we can do we can grab this data and just put this style directly in line.
+
+02:11.270 --> 02:11.550
+Right.
+
+02:11.550 --> 02:12.320
+Right from here.
+
+02:12.350 --> 02:14.800
+And not to use a variable.
+
+02:14.960 --> 02:19.360
+So I'm going to I'm going to go to Pan and I'm going to use style.
+
+02:19.730 --> 02:21.950
+Now the thing is that you might be thinking.
+
+02:21.980 --> 02:23.950
+OK so you need to add the style.
+
+02:23.990 --> 02:27.840
+So what you do is just back to X and you just add the information.
+
+02:27.860 --> 02:35.590
+Well not really we would have sex whenever we want to use CSSA in the SS and type all the properties
+
+02:35.590 --> 02:36.400
+right here.
+
+02:36.500 --> 02:39.980
+We need to use double double curly braces.
+
+02:40.010 --> 02:40.640
+Yeah.
+
+02:40.940 --> 02:49.460
+And then I'm going to do background and con and then what do we need to do then we will use the the
+
+02:49.460 --> 02:54.140
+attempted strings to just add the information about this property.
+
+02:54.160 --> 02:54.600
+OK.
+
+02:54.860 --> 03:01.760
+So this one is going to be you are all going to open and close and we're going to do a quote and it's
+
+03:01.760 --> 03:11.030
+going to be hosted inside images for Slash then covers for Slash and I'm going to just do the word wrap
+
+03:11.570 --> 03:19.900
+cars and we need to call this to this item to the name of the car.
+
+03:20.270 --> 03:24.300
+So the name of the cover is going to be inside the state.
+
+03:24.300 --> 03:24.860
+All right.
+
+03:25.100 --> 03:36.040
+So we're going to do this Dodson's state DOT and then it's going to be artist dot and then cover.
+
+03:36.990 --> 03:37.520
+OK.
+
+03:37.910 --> 03:39.440
+And then we add J.
+
+03:39.440 --> 03:41.230
+P. G.
+
+03:41.360 --> 03:42.170
+Right.
+
+03:42.230 --> 03:44.650
+You can add no repeat at the end.
+
+03:44.660 --> 03:48.410
+No repeats.
+
+03:48.680 --> 03:54.230
+Now what you can do instead of just doing that this state many times I'm just going to do it because
+
+03:54.230 --> 03:58.520
+I'm just showing you what you can do the can you host you can just save this.
+
+03:58.520 --> 04:02.110
+Does that state that artist inside of Barville.
+
+04:02.180 --> 04:03.630
+And then just call devival.
+
+04:03.770 --> 04:04.410
+You can do that.
+
+04:04.430 --> 04:05.240
+No problem.
+
+04:05.780 --> 04:06.840
+But I'm not going to do it right now.
+
+04:06.840 --> 04:10.640
+I'm just going to show you the kind of the raw way.
+
+04:10.730 --> 04:14.430
+So OK so we have this pan with a you're going to go right here.
+
+04:14.540 --> 04:16.000
+Of course we're not going to get anything.
+
+04:16.010 --> 04:17.490
+We need to style this.
+
+04:17.720 --> 04:25.250
+So first before doing this style so we can go to the next section and style this and get it at all the
+
+04:25.250 --> 04:27.110
+information are going to say class name.
+
+04:27.320 --> 04:31.430
+And this one this container is going to be for the bio.
+
+04:32.270 --> 04:32.890
+OK.
+
+04:33.200 --> 04:36.200
+So inside via we're going to have the name of the artist.
+
+04:36.280 --> 04:45.140
+So it's going to be H-3 going to open and close and it's going to be this that state that artist than
+
+04:45.220 --> 04:47.440
+that name.
+
+04:47.500 --> 04:50.510
+OK so save the page we get Jimi Hendrix.
+
+04:50.510 --> 04:51.660
+That's good.
+
+04:51.680 --> 04:56.460
+So I'm going to go right here at the bottom and we can have the violin the actual text.
+
+04:56.660 --> 05:04.400
+So it's some dummy text so it's going to say depth and inside of a get out just out of class so I can
+
+05:04.400 --> 05:07.030
+make a reference and change the font style.
+
+05:07.130 --> 05:10.410
+So it's going to be bio text.
+
+05:10.640 --> 05:12.670
+Let's get we're going to make.
+
+05:12.670 --> 05:22.990
+We're going to call this dot state DOT artist and the name for this is going to be bio.
+
+05:23.000 --> 05:25.880
+Everything is going to be in the side of Jason so you can check that out.
+
+05:25.920 --> 05:26.400
+OK.
+
+05:26.630 --> 05:27.650
+So we have the bio.
+
+05:27.710 --> 05:32.100
+If I go to the application we get all the data.
+
+05:32.180 --> 05:32.710
+That's fine.
+
+05:32.780 --> 05:34.440
+So we should be working fine.
+
+05:34.700 --> 05:41.350
+Now let's go to the next section let's add some styles to the header and the and the advice.
+
+05:41.420 --> 05:43.160
+And then we will add the Alpert's.

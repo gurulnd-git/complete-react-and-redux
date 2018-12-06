@@ -1,0 +1,469 @@
+WEBVTT
+
+00:00.360 --> 00:08.640
+OK so in the previous section we just made a request to an API and get the list to get the list of artists
+
+00:08.970 --> 00:13.260
+and then once we get the list we're passing the list as props.
+
+00:13.380 --> 00:14.420
+We can make this better.
+
+00:14.430 --> 00:20.950
+I'm just going to delete this an ad for Slash right here and right here again to this again and just
+
+00:21.030 --> 00:22.050
+add for Slash.
+
+00:22.070 --> 00:24.080
+You know just to make it better.
+
+00:24.510 --> 00:29.210
+So now we are passing to this child component the artists list.
+
+00:29.210 --> 00:34.620
+We're passing a prop with all the list of the artists with the artists list.
+
+00:34.800 --> 00:41.640
+So inside here inside this component we can grab whatever it's coming right here as prompts and map
+
+00:41.730 --> 00:44.020
+over and so we can show a list.
+
+00:44.170 --> 00:44.430
+Right.
+
+00:44.430 --> 00:47.010
+So we going to do that right now.
+
+00:47.010 --> 00:52.410
+The first thing that we can do whenever we get the list I'm going to go right here to the final project.
+
+00:52.680 --> 00:56.180
+Kind of a broken reset.
+
+00:56.280 --> 01:04.370
+So OK whenever we anyways whenever we get the list and I click inside of an item we go to a new round.
+
+01:04.410 --> 01:07.040
+So pretty much it's pretty much a link.
+
+01:07.260 --> 01:09.850
+So OK we need to use links.
+
+01:09.960 --> 01:13.780
+So to use links we import link from re-act router.
+
+01:13.950 --> 01:19.970
+So I'm going to say import and then just structure and bring a link.
+
+01:20.390 --> 01:30.490
+It's going to be from and then re-act router Dom frigate OK.
+
+01:30.520 --> 01:36.330
+So now what we need to do we need to grab this prompts and trigger a function.
+
+01:36.340 --> 01:42.040
+But first we're going to do some We're going to write some elements so this one is going to be shown
+
+01:42.100 --> 01:50.580
+inside a container and the class name of the container is going to be the artist list of Perl artists.
+
+01:50.830 --> 01:52.830
+And then just list.
+
+01:53.440 --> 02:00.460
+Now we're going to have a title and the title it's going to be an 8 4 8 4 and it's going to be browse
+
+02:02.170 --> 02:05.390
+the artists that I go.
+
+02:05.740 --> 02:09.630
+Now what we want to do right here we want to display the list.
+
+02:09.880 --> 02:10.760
+So what are we going to do.
+
+02:10.780 --> 02:17.080
+Can it trigger a function and we can get past the prompts as an argument so we can grab the list of
+
+02:17.080 --> 02:21.340
+users from there and just remove the console prompts.
+
+02:21.340 --> 02:28.300
+Now I'm going to just open and close curly braces and my function is going to be called list just just
+
+02:28.300 --> 02:29.620
+list.
+
+02:29.620 --> 02:32.640
+You can put whatever name you want and what are we going to do.
+
+02:32.650 --> 02:34.140
+We can pass prompts.
+
+02:34.300 --> 02:39.940
+So whenever we are rendering this list we get a graph of that part of the prompts and pass it right
+
+02:39.940 --> 02:40.900
+here.
+
+02:40.900 --> 02:45.700
+So I'm going to go right here and don't worry about the message we're going to create a function that
+
+02:45.700 --> 02:47.150
+is going to be called List.
+
+02:47.320 --> 02:48.450
+OK.
+
+02:48.700 --> 02:54.770
+Sorry Konst list just of our will and this one is going to host a function.
+
+02:54.840 --> 02:55.190
+OK.
+
+02:55.210 --> 02:59.170
+We just open and close and we create a fat or a function.
+
+02:59.170 --> 03:00.080
+There you go.
+
+03:00.610 --> 03:05.340
+So now whenever we trigger this function we are passing props.
+
+03:05.350 --> 03:13.120
+The thing is that if I go right here and cancel all the prompts when the do is just do it like that.
+
+03:13.120 --> 03:20.350
+If I cancel out the props again and just inspect props and we get an object right here with all the
+
+03:20.350 --> 03:21.100
+artists.
+
+03:21.100 --> 03:28.900
+So now if we want to just map over it we're going to have to do props Dadds all artists.
+
+03:28.900 --> 03:34.190
+So you know we can skip the props we can make use of E-6 destructor.
+
+03:34.360 --> 03:39.540
+So if we do this we are going to directly access to all artists.
+
+03:39.670 --> 03:42.060
+So I'm going to say all.
+
+03:42.070 --> 03:45.460
+And then artists.
+
+03:45.700 --> 03:46.970
+Right.
+
+03:47.050 --> 03:50.800
+So now I'm going to go here and start a map.
+
+03:50.800 --> 03:57.190
+So I'm going to say first I'm going to say we turn now what we want to return is a map it's whatever
+
+03:57.190 --> 04:00.150
+we're getting from the map of all artists.
+
+04:00.150 --> 04:06.320
+So I going to make reference to all artists that map and we're going to open and close.
+
+04:06.580 --> 04:13.600
+This one is going to use a function and then just a fad or a function just open and close.
+
+04:13.610 --> 04:15.030
+Is it an anonymous function.
+
+04:15.430 --> 04:15.770
+OK.
+
+04:15.770 --> 04:21.220
+So on each iteration I'm going to pass an item and now what are you going to do.
+
+04:21.240 --> 04:32.920
+Going to just return some data going to return a different just simple def you know item because I'm
+
+04:32.920 --> 04:36.160
+going somewhere I'm going to show I want to show you something right here.
+
+04:36.400 --> 04:42.500
+Now all artists that map it's not a function we're just triggering this.
+
+04:42.610 --> 04:48.880
+But the thing is that all artists the first time that the application loads it's going to be empty.
+
+04:49.090 --> 04:53.590
+And we can now we cannot map over an empty object.
+
+04:53.620 --> 04:55.580
+We can't do that is going to give you an error.
+
+04:55.810 --> 05:01.510
+So we need to do something else to check if all artists have has some data.
+
+05:01.750 --> 05:08.320
+So what we do is just we create a conditional and we're going to just wrap everything inside a conditional
+
+05:10.340 --> 05:20.760
+it now what we want to check if if is if all artists has data if it has We're going to render some deps
+
+05:20.820 --> 05:25.130
+right here we should be rendering for deps may just remove the console.
+
+05:25.260 --> 05:28.680
+OK we get four items one for each artist.
+
+05:28.710 --> 05:30.040
+So it's working.
+
+05:30.720 --> 05:35.720
+So let me just remove this and start doing the start putting the elements.
+
+05:36.060 --> 05:42.840
+OK so now the thing is that whenever we have an artist we want to get kind of a background image for
+
+05:42.840 --> 05:44.100
+the artist.
+
+05:44.370 --> 05:47.030
+So we want to use background.
+
+05:47.050 --> 05:51.580
+We're going to set a dev and we're going to put a background image for that gap.
+
+05:51.630 --> 05:52.270
+That's fine.
+
+05:52.500 --> 05:58.430
+So let's go back to the our project and right here instead of making our deaf.
+
+05:58.620 --> 06:00.120
+We're going to make a link.
+
+06:00.180 --> 06:02.870
+Just going to create a link for this.
+
+06:02.890 --> 06:12.110
+OK so I'm going to go right here and the link has to have an item key item.
+
+06:12.110 --> 06:16.200
+So on the database on the adjacent database I just gave you.
+
+06:16.460 --> 06:20.760
+Each artist has an ID so we can use that as a key.
+
+06:20.790 --> 06:27.000
+Remember that re-act asks ask you to pood an ID always ID.
+
+06:27.260 --> 06:30.130
+So I'm going to say item that Id Breguet.
+
+06:30.610 --> 06:31.140
+OK.
+
+06:31.280 --> 06:39.560
+So this link is going to just put a link to a place you know whenever we click an artist is going to
+
+06:39.860 --> 06:46.620
+take us to the local hosta for Slash artists for Slash and the ID of the artists.
+
+06:46.700 --> 06:48.130
+So we need to specify too.
+
+06:48.180 --> 06:50.480
+That's why we are getting this error message.
+
+06:50.610 --> 06:53.360
+So going to open and close call basis.
+
+06:53.840 --> 06:58.790
+And what I'm going to do I'm going to use template template strings going to do back text and I'm just
+
+06:58.790 --> 07:02.070
+going to put it all together right here.
+
+07:02.240 --> 07:06.420
+It's going to be for Shlash artists artist.
+
+07:06.440 --> 07:12.400
+It's just Singler for Slash and it's going to be begin to take the item ID.
+
+07:12.470 --> 07:16.940
+So you're going to say item that ID that's good.
+
+07:17.070 --> 07:19.960
+That should be clearly the message get.
+
+07:19.970 --> 07:20.390
+That's right.
+
+07:20.390 --> 07:22.800
+So we are on the good track.
+
+07:23.230 --> 07:28.080
+I'm going to add a class to this to this component to this link.
+
+07:28.310 --> 07:37.650
+So I'm going to say class name and the class name is going to be what you'd be calling artist item.
+
+07:37.680 --> 07:45.320
+There you go now each link it's Dev is going to have a background image.
+
+07:45.480 --> 07:50.670
+If I do it right here right here the tag is going to be kind of long.
+
+07:50.730 --> 07:58.470
+So what I'm going to do inside the upside of that which I'm sorry right here I get it just created a
+
+07:58.470 --> 08:02.900
+viral to host the style of this element.
+
+08:03.210 --> 08:05.100
+So it's going to have a background
+
+08:08.250 --> 08:11.330
+and the background is going to have a u r l.
+
+08:11.610 --> 08:13.730
+So we're going to do again Templer strengths.
+
+08:13.890 --> 08:20.130
+And then you are Elle and this one equals two images.
+
+08:20.910 --> 08:24.050
+Sorry it's for flash images.
+
+08:24.330 --> 08:28.040
+That's the location and the location is going to be covers.
+
+08:28.800 --> 08:29.470
+That's right.
+
+08:29.670 --> 08:30.630
+Then for Slash.
+
+08:30.810 --> 08:37.260
+And what we need to do is to put the name of the image again just right here on the D-B.
+
+08:37.450 --> 08:38.290
+Jason.
+
+08:38.610 --> 08:46.000
+Each artist whoever has a cover right here cover it's just the name of the artist in lowercase and with
+
+08:46.120 --> 08:48.820
+the symbol right there.
+
+08:48.900 --> 08:50.520
+So what we're going to do.
+
+08:50.520 --> 08:51.710
+We're going to go right here.
+
+08:51.960 --> 09:00.030
+We're going to make reference to the item that cover the dollar sign opening close and then item that
+
+09:00.030 --> 09:00.930
+cover.
+
+09:01.380 --> 09:01.950
+OK.
+
+09:02.250 --> 09:06.270
+Since all the images are going to be AJP gee I'm going to say J.
+
+09:06.300 --> 09:07.580
+P. G.
+
+09:07.590 --> 09:08.680
+Right.
+
+09:09.550 --> 09:10.050
+OK.
+
+09:10.080 --> 09:14.270
+So we're going to add one more thing to this.
+
+09:14.730 --> 09:18.000
+I'm going to say no let me make it there.
+
+09:18.060 --> 09:18.880
+No.
+
+09:19.160 --> 09:22.600
+Repeat Raggatt.
+
+09:22.620 --> 09:30.070
+So now we want we want to do we want to grab this background this style and put it inside here.
+
+09:30.130 --> 09:38.790
+So I'm going to say style equals two and then we just make reference to this verbal styles.
+
+09:38.900 --> 09:41.880
+Let's get to just go right here.
+
+09:42.050 --> 09:46.600
+Create a div and begin to put the name of the artist right here.
+
+09:46.880 --> 09:52.700
+So I'm going to say open it close and then item that name.
+
+09:53.000 --> 09:57.540
+And if we reload the page we get the item that name right.
+
+09:57.560 --> 10:00.010
+So we get some styles on the next section.
+
+10:00.140 --> 10:02.710
+And right now everything looks nice.
+
+10:02.720 --> 10:09.320
+We have all the artists and now we need to just add the styles for this so we can just make it look
+
+10:09.380 --> 10:10.390
+like this.
+
+10:10.400 --> 10:11.910
+All right let's go to the next section.
+
+10:12.050 --> 10:18.770
+And remember you can just you can go to the get have and get the CSSA for this.
+
+10:18.770 --> 10:24.020
+There is no need for you to go to the next section and type the whole see SS Just like with it on the
+
+10:24.020 --> 10:25.250
+previous lectures.
+
+10:25.330 --> 10:26.940
+You know just to save time.
+
+10:26.990 --> 10:30.180
+This course is about we react and that's the process.
+
+10:30.290 --> 10:33.460
+But I always like to show you what are going to do.
+
+10:33.740 --> 10:35.280
+Everything is going to be in close.
+
+10:35.320 --> 10:37.990
+I assume with some comments right here.
+
+10:38.150 --> 10:42.870
+So it's going to be I believe it's going to be something like artists lists or something like that.
+
+10:42.920 --> 10:44.420
+So you can just look for it.
+
+10:44.470 --> 10:46.130
+Look for that and just copy it.
+
+10:46.360 --> 10:46.580
+OK.
+
+10:46.580 --> 10:49.240
+Let's go to the next section and style the list.

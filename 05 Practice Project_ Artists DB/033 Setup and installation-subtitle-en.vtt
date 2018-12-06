@@ -1,0 +1,244 @@
+WEBVTT
+
+00:00.180 --> 00:06.050
+Do now you're going to get to do a tiny tiny project so we can practice with react.
+
+00:06.090 --> 00:09.390
+And this is the first project of all the projects that we can do.
+
+00:09.390 --> 00:12.720
+We're going to do three projects this one is going to be real simple.
+
+00:12.720 --> 00:16.830
+The next one is going to hit the real life with react.
+
+00:16.830 --> 00:21.440
+And at the end we get to do one large application with react and redux.
+
+00:21.450 --> 00:23.310
+So that's the plan.
+
+00:23.310 --> 00:25.210
+So I'll get the final result.
+
+00:25.230 --> 00:27.670
+It's going to be this one whatever the page loads.
+
+00:27.670 --> 00:33.030
+We can have just a banner with the logo and you can have a list of artists.
+
+00:33.030 --> 00:38.250
+This list is going to come is going to come from a database from a fake database.
+
+00:38.250 --> 00:41.280
+I got to tell you about that in a minute.
+
+00:41.280 --> 00:45.890
+So we clicked the artist and it's going to take us to a new Pew new component.
+
+00:45.900 --> 00:52.230
+We're going to have the image and the name description and the related Alvin's And of course if we go
+
+00:52.230 --> 00:54.330
+back it's going to go back home.
+
+00:54.330 --> 00:56.280
+So we have to use for now.
+
+00:56.790 --> 00:59.700
+Now we going to make use of Jason's server.
+
+00:59.700 --> 01:05.380
+If you don't know Jason server it's an awesome awesome application.
+
+01:05.400 --> 01:11.080
+What's the application that we can install to make a fake API.
+
+01:11.490 --> 01:14.340
+So I'm going to tell you how to solve it how to use it.
+
+01:14.340 --> 01:21.120
+Don't worry about pretty much the ideas that we install it and it's going to create a rest at API right
+
+01:21.120 --> 01:26.810
+here inside inside of our project and we can make network calls to that.
+
+01:27.090 --> 01:31.140
+And this is fake of course this is just for developing just for testing.
+
+01:31.140 --> 01:35.910
+It's not to use is not for real life use it is not for production.
+
+01:36.220 --> 01:36.540
+OK.
+
+01:36.600 --> 01:43.450
+So the first step is going to be installing making installing a new batch with create re-act app.
+
+01:43.530 --> 01:51.430
+I did that and I've deleted everything and left the index non-jazz and inside the public folder I've
+
+01:52.080 --> 01:54.330
+just left the index that HVM out.
+
+01:54.330 --> 01:58.570
+I'm going to give you a resource image folder with images.
+
+01:58.590 --> 02:01.440
+It's going to be all the albums and the covers and everything else.
+
+02:01.740 --> 02:05.920
+So you just download it and put it inside the images.
+
+02:06.300 --> 02:06.660
+OK.
+
+02:06.680 --> 02:13.350
+So to use the fake API we need to install Jason's server.
+
+02:13.390 --> 02:18.370
+It's going to go to the terminal can it open the terminal window closes.
+
+02:18.450 --> 02:21.940
+So to install it first we need to solve it globally.
+
+02:22.130 --> 02:25.030
+We can we can do it just for this instance.
+
+02:25.080 --> 02:32.040
+It's always good to have it globally because we can use it a lot so I'm going to say NPM install and
+
+02:32.040 --> 02:33.860
+then begin to start we install Google.
+
+02:33.870 --> 02:45.080
+So it's minus D then space and then Jason Jason dash dash server market and we're going to do.
+
+02:45.080 --> 02:47.040
+Mine is mine a safe course.
+
+02:47.380 --> 02:52.020
+I've already having it all the way it's going to take just a minute so I'm going to pass the Tiberio
+
+02:53.240 --> 02:53.670
+OK.
+
+02:53.670 --> 02:54.590
+Everything is done.
+
+02:54.590 --> 02:56.710
+We're going to start to sever in a few seconds.
+
+02:56.770 --> 03:02.470
+But first I want to install the re-act router because you're going to use routes with this.
+
+03:02.470 --> 03:10.420
+So I'm going to go to the Bache again and again to say NPM install and then we will say re-act router
+
+03:11.550 --> 03:17.510
+Dasch Dom and we're going to use the app for that 0 0.
+
+03:17.950 --> 03:25.320
+I'm going to I'm doing this because we have router changed a lot through the years many months.
+
+03:25.540 --> 03:27.310
+So maybe the updated version.
+
+03:27.340 --> 03:33.940
+So if we install the four 00 we're going to be working on the same version if they just release a new
+
+03:34.240 --> 03:36.990
+version with a lot of differences.
+
+03:37.000 --> 03:38.960
+Can to just update the course don't worry.
+
+03:39.220 --> 03:47.190
+So we click enter and it's going to take a few seconds and I'll just be right back OK so now everything
+
+03:47.190 --> 03:47.980
+is ready.
+
+03:48.090 --> 03:54.210
+So I'm going to open a new shell and I'm going to start the Jason server to start it when we need to
+
+03:54.210 --> 04:00.800
+do is we may need to say Jason server and it's going to be minus minus.
+
+04:00.850 --> 04:03.410
+Watch this space.
+
+04:03.570 --> 04:10.050
+And now what we need to do we need to set a reference where this database this Jason database is going
+
+04:10.050 --> 04:14.900
+to be I give you so we source along with the images a DVD that Jason.
+
+04:14.940 --> 04:20.310
+So you need to put this file on the root directory just right there.
+
+04:20.430 --> 04:23.790
+And inside this DVD on Jason we just have adjacent Jason File.
+
+04:23.790 --> 04:24.670
+All right.
+
+04:24.750 --> 04:31.590
+Just that and right here we're going to say Jason's server minus minus watch and we make reference to
+
+04:31.590 --> 04:35.200
+that file so it's going to be divi dot Jaison.
+
+04:36.390 --> 04:41.140
+Right now the next thing is going to be to select the port where it's going to be running.
+
+04:41.250 --> 04:49.710
+So we're going to do minus minus port and then I'm going to use the 3 0 0 4 for this one is the default
+
+04:49.710 --> 04:52.260
+one for the adjacent server.
+
+04:52.290 --> 04:53.820
+So just going to click enter.
+
+04:54.060 --> 04:56.460
+And if we have no problem should be there.
+
+04:56.630 --> 04:56.990
+OK.
+
+04:57.030 --> 05:02.640
+And it's ready now whenever it's done is going to say loading either Jason done and it's going to give
+
+05:02.640 --> 05:04.050
+you resources.
+
+05:04.080 --> 05:11.700
+Now if I copy this and just go to the to a new tab and just paste it right there is going to give you
+
+05:11.790 --> 05:13.490
+the adjacent file we have.
+
+05:13.620 --> 05:20.640
+So we can make a network call to this local host 3.00 for our artist and we can do it we can do operations
+
+05:20.640 --> 05:24.640
+with this database you just like a real API.
+
+05:24.660 --> 05:29.790
+So that's that's the first thing I'm going to go back to the to the to the main show.
+
+05:30.150 --> 05:33.540
+And I'm going to do NPM start.
+
+05:33.840 --> 05:37.070
+Nothing is going to happen because we don't have any files yet.
+
+05:37.110 --> 05:38.820
+I'm just going to started right now.
+
+05:39.100 --> 05:39.390
+OK.
+
+05:39.390 --> 05:45.720
+So let's go to the next section and we will start building the index the main index of this application.

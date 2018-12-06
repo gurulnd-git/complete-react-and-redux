@@ -1,0 +1,460 @@
+WEBVTT
+
+00:00.540 --> 00:04.460
+OK so now we need to create the artist detail component.
+
+00:04.590 --> 00:08.860
+Right here we get an error because we don't have an actual component so we need to create it.
+
+00:08.910 --> 00:14.340
+Now if we go to the file we can have pretty much three different components.
+
+00:14.340 --> 00:16.410
+You can have a tie header on top.
+
+00:16.410 --> 00:21.870
+It's going to be a simple component that we can have the one that it says showing the detail of the
+
+00:21.870 --> 00:27.510
+artist is going to be this component and then we're going to create a new component to render components
+
+00:27.510 --> 00:29.520
+to render the album list.
+
+00:29.820 --> 00:30.240
+OK.
+
+00:30.390 --> 00:32.140
+So first we start simple.
+
+00:32.160 --> 00:35.110
+We need to import re-act from react.
+
+00:35.200 --> 00:42.630
+They're going to say import import and then we import react.
+
+00:42.930 --> 00:48.390
+And since it's going to be a class based component because you need to pass probs and handle state you're
+
+00:48.390 --> 00:50.620
+going to bring components too.
+
+00:51.360 --> 00:51.990
+Right.
+
+00:52.290 --> 00:56.880
+So we went into we went to imported from react.
+
+00:56.880 --> 00:57.610
+Right.
+
+00:58.110 --> 00:58.820
+OK.
+
+00:59.010 --> 01:05.760
+Now I'm going to create a class and this one is going to be artist artists just Singler and this one
+
+01:05.850 --> 01:11.250
+is going to extends and is going to kickstands component.
+
+01:11.250 --> 01:12.540
+Right.
+
+01:12.630 --> 01:14.150
+So we're going to go right here.
+
+01:14.370 --> 01:24.280
+I'm going to say export then default and then artists and make a default Burguet.
+
+01:24.370 --> 01:29.090
+So OK so now we need to render something so we can at least not get an error.
+
+01:29.310 --> 01:30.560
+So I'm going to go right here.
+
+01:30.600 --> 01:38.030
+And I'm going to say render that open and close and then we'll just open and close again and we can
+
+01:38.130 --> 01:48.570
+return just to you know just to clear that error message and they're going to say detail you know just
+
+01:48.570 --> 01:50.390
+to make sure that everything is working right.
+
+01:50.430 --> 01:51.000
+So it's working.
+
+01:51.000 --> 01:52.710
+We get detail get.
+
+01:52.710 --> 01:56.730
+So now we need to create a component for this header.
+
+01:56.970 --> 02:02.910
+So I'm going to go right here to the to the components and I get to create a new file that is going
+
+02:02.910 --> 02:13.350
+to be Hetter that jazz get when to go back to the artist and I'm going to import that components and
+
+02:13.490 --> 02:14.770
+said I'm going to import it.
+
+02:14.830 --> 02:25.710
+So they import then Hetter from and then it's going to be just dot for Slash and hetter because we are
+
+02:25.710 --> 02:27.760
+on the same directory.
+
+02:28.080 --> 02:29.990
+Now let's go to the header.
+
+02:30.100 --> 02:32.370
+Oh look let's do it right now.
+
+02:32.370 --> 02:36.030
+I'm going to just import this header right here.
+
+02:36.030 --> 02:37.340
+So I'm going to say.
+
+02:37.860 --> 02:39.070
+Header.
+
+02:39.660 --> 02:45.700
+And since this component's it's not going to take any kind of state or promp or whatever.
+
+02:45.700 --> 02:48.540
+We just can create a functional component for this.
+
+02:48.780 --> 02:52.610
+So let's go to the header and do pretty much the same thing.
+
+02:52.620 --> 02:58.240
+We need to import re-act from react.
+
+02:58.800 --> 03:00.220
+We're going to do this a lot of times.
+
+03:00.230 --> 03:03.500
+You know I didn't know it by memory so.
+
+03:03.500 --> 03:04.120
+OK.
+
+03:04.350 --> 03:11.250
+So we need to create a functional component so we can say Konst and begin to see whether the center
+
+03:11.550 --> 03:15.570
+is not going to take any any prompts and we just open and close.
+
+03:15.750 --> 03:22.750
+So what we are going to return is some GSX so going to say we turn now what we need to return.
+
+03:22.770 --> 03:27.480
+It's a head attack just like that.
+
+03:29.270 --> 03:29.790
+There we go.
+
+03:29.790 --> 03:30.360
+So OK.
+
+03:30.390 --> 03:34.640
+Now inside here we can have a logo whose music DVH.
+
+03:34.740 --> 03:36.200
+So we're going to use the link.
+
+03:36.330 --> 03:40.930
+So we need to import the link model from Briac router.
+
+03:41.140 --> 03:52.920
+It's going to say use destructor and say link right from and then re-act router and Dom Ferragut going
+
+03:52.920 --> 03:59.040
+to go right here at the bottom and say Link Up Link.
+
+03:59.310 --> 04:03.360
+And this one is going to be two and this one is going to take us back to home.
+
+04:03.390 --> 04:12.020
+So I'm going to say for Slash the text inside the link is going to say music DV Burguet So now we need
+
+04:12.030 --> 04:15.540
+to export this Hetter so it can be available right here.
+
+04:15.780 --> 04:24.060
+So I'm going to say right at the bottom is port default and then Hetter right.
+
+04:24.070 --> 04:29.710
+So if we go right here we get music TV we add some styles but we begin to do it.
+
+04:29.710 --> 04:37.120
+Everything on the next lecture so we can split the CSSA parts and the re-act part right so that we get
+
+04:37.120 --> 04:37.960
+the header.
+
+04:37.960 --> 04:45.280
+Now let's go back to artist and now what we need to do we need to kind of fetch the information from
+
+04:45.280 --> 04:46.710
+the ID we have right here.
+
+04:46.720 --> 04:50.260
+So the artist is going to be the number one in the database.
+
+04:50.260 --> 04:52.750
+Jason the number one is Jimi Hendrix.
+
+04:52.840 --> 05:01.990
+So we need to again grab the information from the Jason server so we can use the state because we need
+
+05:01.990 --> 05:03.300
+to pass prompts.
+
+05:03.580 --> 05:08.950
+So I'm going to go right here and I'm going to start a constructor to bring the constructor and then
+
+05:08.950 --> 05:13.030
+call super just like always and you're going to be using props.
+
+05:13.060 --> 05:16.500
+I'm going to say props right.
+
+05:16.540 --> 05:24.460
+Super props props right we're going to have a state.
+
+05:24.520 --> 05:26.920
+So we're going to say this
+
+05:29.450 --> 05:34.860
+doesn't state because for now just an empty object.
+
+05:34.900 --> 05:36.640
+Now what are we going to use right here.
+
+05:36.640 --> 05:39.140
+It's going to be the data about the artist.
+
+05:39.280 --> 05:45.130
+So we're going to say artist and for now whenever the application loads whenever these component renders
+
+05:45.490 --> 05:52.810
+is going to be empty then we're going to do a fetch to the to the to the API and we can have just update
+
+05:52.900 --> 05:54.970
+the state just like we did before.
+
+05:55.420 --> 05:55.880
+OK.
+
+05:55.930 --> 05:57.810
+So what is next.
+
+05:57.820 --> 06:00.780
+We need to kind of fetch the information.
+
+06:01.000 --> 06:06.400
+So we're going to go right here and just like before we need to graph and we need to do this request
+
+06:06.490 --> 06:16.860
+after the component it's already mounted so we're going to say components did mount frigate.
+
+06:17.010 --> 06:22.160
+So after can put in the mouth that we need to fetch We need to do a fetch.
+
+06:22.180 --> 06:22.610
+Right.
+
+06:22.730 --> 06:23.960
+So they're going to say Fetch.
+
+06:24.260 --> 06:30.100
+Now we need to know that you are able to do the fetch.
+
+06:30.100 --> 06:35.440
+So I'm going to go over here the top and I'm going to create a viable that is going to contain a local
+
+06:35.440 --> 06:38.540
+hose didn't you know the of the Ural of the server.
+
+06:38.680 --> 06:45.090
+So I'm going to say Konst and then our Q4 request and then you are.
+
+06:46.220 --> 06:51.270
+Can you stem strings the back text and it's going to be h t t P.
+
+06:51.370 --> 06:52.680
+I'm just not going to type it.
+
+06:52.690 --> 06:53.980
+I have it right here.
+
+06:54.430 --> 06:58.120
+So it's going to be HTP local host 3 0 0 0.
+
+06:58.120 --> 06:59.310
+Mine is 4.
+
+06:59.530 --> 07:01.400
+And then just artists.
+
+07:01.830 --> 07:03.050
+Okay that's good.
+
+07:03.310 --> 07:06.810
+So now we need to fetch and use this request.
+
+07:06.820 --> 07:13.570
+The thing is that whenever the comput and mounted mounts and it can't just come at this we need a way
+
+07:13.630 --> 07:17.800
+to fetch the ID of the of the artists.
+
+07:17.830 --> 07:25.750
+So whenever we are working with re-act router we have access to this data inside of this that prompts
+
+07:26.050 --> 07:28.220
+match dot Priam's.
+
+07:28.420 --> 07:29.810
+So we have access to that.
+
+07:29.830 --> 07:31.840
+So I'm going into console log.
+
+07:31.840 --> 07:43.780
+And again just deaths that prompts Dadds match that permit AMS and then the ID of the of the of the
+
+07:43.780 --> 07:44.240
+pram.
+
+07:44.260 --> 07:46.130
+We gave it right here on the index.
+
+07:46.150 --> 07:48.180
+It's going to be artist ID.
+
+07:48.230 --> 07:53.060
+It's going to go back to artist and just collide right here.
+
+07:54.470 --> 07:57.860
+And going to go to the council to make sure we're getting that.
+
+07:58.190 --> 08:00.390
+So cancel and OK.
+
+08:00.410 --> 08:01.190
+We get one.
+
+08:01.250 --> 08:07.280
+So it's working but I'm going to just come this and come and fetch because we're going to use it right
+
+08:07.280 --> 08:08.820
+now.
+
+08:08.990 --> 08:11.290
+So what we need to do to fetch.
+
+08:11.310 --> 08:17.390
+We need to make call a network request to this to this location.
+
+08:17.420 --> 08:24.950
+So I'm going to use the request you are all going to go right here and start template saying it do door
+
+08:24.960 --> 08:28.210
+sign and then use the request you are out.
+
+08:28.370 --> 08:30.020
+Let's get that's the first step.
+
+08:30.110 --> 08:34.970
+Then we need to do a forced lash and we put the ID right here.
+
+08:34.970 --> 08:35.870
+It's not going to be one.
+
+08:35.870 --> 08:40.870
+We need to get it from this that prompts that match that perhaps an artist.
+
+08:40.970 --> 08:48.110
+So I'm going to go again do dollar sign up pretty close and bring that.
+
+08:48.320 --> 08:51.300
+Now we need to specify the type of request.
+
+08:51.350 --> 08:53.730
+So it's going to be method.
+
+08:54.620 --> 08:58.620
+And then just get just like we did before.
+
+08:58.670 --> 09:04.760
+And again just like we did for we need to grab the response so it's going to be then when you do it
+
+09:04.760 --> 09:19.850
+right here that then and we're going to grab the response and begin to just get the Jason is pongs that
+
+09:19.850 --> 09:22.490
+Jason just like with it precisely.
+
+09:22.700 --> 09:27.800
+And then whenever we get the response we want to grab this data and do something.
+
+09:27.800 --> 09:31.630
+So I'm going to say Dan and I are going to say Jason.
+
+09:32.720 --> 09:36.560
+And then just run a callback function.
+
+09:36.560 --> 09:37.770
+Right.
+
+09:37.820 --> 09:44.420
+So what we want to do we want to update the state of artists whenever we get this information after
+
+09:44.420 --> 09:46.120
+the component it's mounted.
+
+09:46.340 --> 09:53.390
+We want to have the state of artists and put whatever information we get from the fetch.
+
+09:53.600 --> 10:01.040
+So I'm going to say this dot said state and we open close and then we just use an object.
+
+10:01.220 --> 10:04.860
+And this one is going to be equal to artist.
+
+10:05.060 --> 10:06.200
+CONAN And Jason
+
+10:09.220 --> 10:10.460
+OK that's good.
+
+10:10.840 --> 10:17.200
+So if I go right here and do a consulate just to make sure that we are getting the data if we canceled
+
+10:17.260 --> 10:20.730
+that Jason because like Jason we should be getting it.
+
+10:20.770 --> 10:25.410
+And here we are getting Jimi Hendrix the cover bio and blah blah blah blah.
+
+10:25.480 --> 10:25.800
+OK.
+
+10:25.840 --> 10:26.700
+That's good.
+
+10:27.040 --> 10:34.150
+So now we have the state and since the information of the artist it's inside the state what we can do
+
+10:34.450 --> 10:41.710
+we can just go right here below the header and just add all the information that we need to add to display
+
+10:41.710 --> 10:43.700
+the information of the artist.
+
+10:43.900 --> 10:46.450
+Let's go to the next section and just do that.

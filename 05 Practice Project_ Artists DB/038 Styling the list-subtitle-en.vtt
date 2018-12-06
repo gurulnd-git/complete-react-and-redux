@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.590 --> 00:03.980
+OK so let's add some styles to this list.
+
+00:04.010 --> 00:07.830
+I'm going to go right here and make reference to that that element.
+
+00:07.940 --> 00:14.320
+So it's going to be artist artists that underscore list.
+
+00:14.600 --> 00:15.190
+Right.
+
+00:15.560 --> 00:25.880
+So now this is going to be have a box sizing of borderer box and we get it added padding to it because
+
+00:25.910 --> 00:33.360
+you know we need padding 10 pixels and then 30 pixels right.
+
+00:33.400 --> 00:33.700
+OK.
+
+00:33.730 --> 00:36.050
+We're going to convert kind of a center everything.
+
+00:36.100 --> 00:42.780
+So I'm going to go right here at the bottom and add the at a class for styling for each item.
+
+00:42.790 --> 00:51.420
+So I'm going to say artist list the artist and then item I believe we call that artist item.
+
+00:51.450 --> 00:55.650
+So just that check right here.
+
+00:55.900 --> 00:57.110
+We have artist item.
+
+00:57.130 --> 00:57.990
+There we go.
+
+00:58.420 --> 00:59.080
+So OK.
+
+00:59.110 --> 01:06.040
+So what I'm going to do I'm going to make this play block because it's a link I want to give a fixed
+
+01:06.040 --> 01:13.660
+hide of 290 pixels or some like then I can send a background size and you know it's kind of looking
+
+01:13.660 --> 01:14.640
+right now.
+
+01:15.220 --> 01:15.560
+OK.
+
+01:15.610 --> 01:21.330
+So we want to give a background and then just a size micron size of cover.
+
+01:21.430 --> 01:23.870
+And we're going to make it important.
+
+01:24.420 --> 01:25.070
+Right.
+
+01:25.330 --> 01:36.100
+So we're going to add margin bottom of tiny pixels and then position relative relative.
+
+01:36.100 --> 01:36.980
+Pretty good.
+
+01:37.390 --> 01:42.520
+I'm making it relative because we can float the name of the artist right here.
+
+01:42.850 --> 01:45.000
+So OK so now let's do that.
+
+01:45.010 --> 01:47.100
+Let's float the name of the artist.
+
+01:47.120 --> 01:54.310
+I'm going to make a call again to artist list to make reference to that and then Dev and just open and
+
+01:54.310 --> 01:55.240
+close.
+
+01:55.420 --> 02:03.280
+So the background for this tag is going to be background and it's going to be again just a nice blue
+
+02:03.760 --> 02:11.400
+2 1 9 6 3 Durgo looks nice.
+
+02:11.400 --> 02:13.870
+So OK we're going to have a color and color.
+
+02:13.890 --> 02:18.390
+It's going to be white and we want to make it position.
+
+02:18.390 --> 02:19.700
+Absolute.
+
+02:20.550 --> 02:27.820
+And then we want to put it right at the bottom of the elements so we can say bottom zero.
+
+02:28.590 --> 02:30.760
+And you know that looks better.
+
+02:31.020 --> 02:32.830
+So now we're going to add the padding to it.
+
+02:32.850 --> 02:37.500
+So it's going to be back pedaling 20 pixels too much.
+
+02:37.500 --> 02:39.660
+Let's give it 10.
+
+02:40.910 --> 02:41.760
+OK let's get.
+
+02:41.760 --> 02:49.720
+So the last thing we need to do is to style the brows the artist that won it with once H for Figes.
+
+02:49.910 --> 02:50.150
+OK.
+
+02:50.190 --> 02:51.450
+It's in 8:4.
+
+02:51.510 --> 02:53.990
+So OK I'm going to go right here at the bottom.
+
+02:54.030 --> 03:00.170
+Just make a reference to the item to the artist list and style that for.
+
+03:00.680 --> 03:01.160
+OK.
+
+03:01.350 --> 03:10.620
+So we're going to add some text line that's good text a line and it's going to be center and font size
+
+03:11.700 --> 03:17.000
+font size and font size is going to be 30 pixels than a font weight
+
+03:19.890 --> 03:22.140
+and the font weight is going to be 100.
+
+03:22.170 --> 03:25.950
+So something real slim and then we to add a margin.
+
+03:25.950 --> 03:29.440
+So it looks really really nice.
+
+03:29.460 --> 03:35.050
+I am a developer but sometimes I like to design apps.
+
+03:35.210 --> 03:37.860
+Now it's fun.
+
+03:37.920 --> 03:38.220
+OK.
+
+03:38.220 --> 03:40.180
+So this looks nice.
+
+03:40.320 --> 03:44.610
+So whenever we click on an artist it's going to take us to a new component.
+
+03:44.610 --> 03:47.780
+And of course this component it's not ready yet.
+
+03:47.970 --> 03:52.340
+So we're going to go to the next section and make this component ready.

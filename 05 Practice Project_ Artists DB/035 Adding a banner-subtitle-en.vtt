@@ -1,0 +1,559 @@
+WEBVTT
+
+00:01.600 --> 00:07.510
+OK so we can it we get it and we can start creating the Verum the Vanner and we're going to need to
+
+00:07.540 --> 00:09.260
+add some styles to it.
+
+00:09.310 --> 00:15.340
+So I'm going to go right here to the public folder and I'm going to create a new folder for the CSSA
+
+00:15.670 --> 00:19.860
+so I'm going to say C S S S just like that.
+
+00:20.020 --> 00:28.770
+And it to create insights here assess a new stylesheet is going to be styles dot CSSA and I'm going
+
+00:28.770 --> 00:35.080
+to go to the index that H-2 email and let me just put this down and right here I'm going to use for
+
+00:35.080 --> 00:37.180
+this project to fonts.
+
+00:37.210 --> 00:39.670
+It's going to be monotone or something like that.
+
+00:39.800 --> 00:43.960
+And the famous rebozo are going to use that one are going to give you the link.
+
+00:43.960 --> 00:44.590
+Don't worry.
+
+00:44.590 --> 00:49.030
+If not you can go to Google fonts and get yourself or you can use a different front.
+
+00:49.030 --> 00:50.440
+It doesn't really matter.
+
+00:50.770 --> 00:51.010
+So.
+
+00:51.010 --> 00:51.380
+OK.
+
+00:51.430 --> 00:55.320
+We need to link the stylesheet that we have.
+
+00:55.480 --> 01:03.420
+So I'm going to say link and then Rayle equal equals to stylesheet.
+
+01:03.910 --> 01:04.390
+Right.
+
+01:04.390 --> 01:05.580
+That's the first thing.
+
+01:05.590 --> 01:13.500
+Now we need to add a reference so it's going to be age graph and then it's going to be inside C Ss that
+
+01:13.530 --> 01:15.790
+for Slash styles.
+
+01:16.060 --> 01:17.510
+And then that CSSA.
+
+01:17.890 --> 01:18.430
+Right.
+
+01:18.430 --> 01:20.410
+And then just close it.
+
+01:20.430 --> 01:21.810
+So this should be working fine.
+
+01:21.810 --> 01:22.380
+Looks nice.
+
+01:22.440 --> 01:22.950
+OK.
+
+01:23.190 --> 01:28.420
+So I'm going to go I'm going to just go to Home and right here.
+
+01:28.650 --> 01:35.730
+Now if we take a look to the final project this banner could be just separate a separate component and
+
+01:35.730 --> 01:38.250
+then the list could be a different component.
+
+01:38.250 --> 01:43.670
+So we're going to create two different components one for the banner and different one for the artists.
+
+01:43.730 --> 01:49.940
+I'm going to go right here and I get the inside components are going to create a component for banner
+
+01:50.900 --> 01:53.260
+banner that jazz.
+
+01:53.550 --> 01:54.140
+OK.
+
+01:54.570 --> 01:57.260
+And then one for the artist app we're going to do it later.
+
+01:57.300 --> 01:58.070
+Don't worry.
+
+01:58.440 --> 02:06.240
+So OK now inside home I want to bring this Vanner components so I'm going to go right here at the bottom
+
+02:06.600 --> 02:15.760
+and we can import Vanner from and then components.
+
+02:16.260 --> 02:18.260
+We are in the same directory.
+
+02:18.330 --> 02:29.300
+So it's going to be for Slash dot for Slash dot dot for Slash components sorry for Slash and then Vanner.
+
+02:29.340 --> 02:30.410
+There you go.
+
+02:30.420 --> 02:37.440
+So now it's always when you build and re-act application it's always a good idea to split the components
+
+02:37.770 --> 02:43.530
+if you have kind of a separated idea right here inside the component and top you create creating new
+
+02:43.530 --> 02:45.350
+components and you import it.
+
+02:45.360 --> 02:46.790
+And they use it right here.
+
+02:46.950 --> 02:48.670
+But you split everything up.
+
+02:48.690 --> 02:55.230
+If you if you inspect a different project you're going to see that they split everything up.
+
+02:55.230 --> 02:55.800
+So OK.
+
+02:55.820 --> 02:58.740
+See we want access to this Vanner right here.
+
+02:59.040 --> 03:01.800
+And this one is going to be the parent component the home.
+
+03:02.070 --> 03:08.460
+So right here are going to make reference to components going into the home and go right here the bottom.
+
+03:08.610 --> 03:10.420
+And we're going to call this Vanner.
+
+03:10.620 --> 03:12.160
+We just import it.
+
+03:12.440 --> 03:14.870
+So I'm going to say Vanner.
+
+03:15.820 --> 03:17.110
+OK let's get.
+
+03:17.130 --> 03:21.310
+So I'm going to go to the Vanner and create the same logic for this.
+
+03:21.990 --> 03:24.260
+Import react from react.
+
+03:24.420 --> 03:29.960
+And since the Vanner has no state has passed no state.
+
+03:29.970 --> 03:36.430
+And actually we could use a state list status component and not a class component.
+
+03:36.430 --> 03:39.800
+You know we don't need a state for this.
+
+03:39.990 --> 03:46.520
+So it's always a good idea that if you don't need a state you just create a functional component.
+
+03:46.800 --> 03:51.150
+So we're going to say Konst I'm going to say banner just like that.
+
+03:51.570 --> 03:54.840
+This vendor receives no prompts.
+
+03:54.870 --> 04:02.510
+So we're not going to send information or data to this Vanner So we just return some GSX.
+
+04:03.440 --> 04:04.760
+OK.
+
+04:05.460 --> 04:06.720
+There you go.
+
+04:06.720 --> 04:11.490
+So this is going to be a dev and we're going to add a class name to it.
+
+04:11.610 --> 04:14.480
+It's going to be equal to Vanner.
+
+04:14.910 --> 04:23.220
+I go inside the inventor you're going to have going to have the main cover which is the image of the
+
+04:23.220 --> 04:23.690
+girl.
+
+04:23.800 --> 04:30.210
+They're going to have class name equal to main cover.
+
+04:30.210 --> 04:31.020
+There you go.
+
+04:31.590 --> 04:33.660
+And inside you can have just a logo.
+
+04:34.010 --> 04:35.050
+It's a div.
+
+04:35.370 --> 04:40.660
+And again just class name equal to logo.
+
+04:41.070 --> 04:41.620
+Right.
+
+04:41.730 --> 04:45.470
+And the logo is going to say music DVH.
+
+04:45.810 --> 04:52.770
+Now at the bottom if you see if you see on the original project the finished project you can have like
+
+04:52.770 --> 04:54.160
+a blue line right there.
+
+04:54.360 --> 05:00.370
+So I'm going to go right here at the bottom and add this pan and then we can style that span.
+
+05:00.960 --> 05:01.490
+OK.
+
+05:01.620 --> 05:07.130
+Now since we want this component to be available inside home we need to export it.
+
+05:07.200 --> 05:18.840
+So I'm going to go right here the bottom and say export default asks for default and then Vanner.
+
+05:18.900 --> 05:21.520
+So if I go to the original we get this set.
+
+05:21.540 --> 05:22.210
+This is good.
+
+05:22.230 --> 05:25.920
+It means that they are just linked and they are working.
+
+05:25.920 --> 05:30.040
+So let's go to the styles that see assess and at some styles to this.
+
+05:30.060 --> 05:33.010
+It's not going to be really really hard you know.
+
+05:33.250 --> 05:40.980
+OK so I'm going to go right here and say body and the body we can add a margin zero for the body we're
+
+05:40.980 --> 05:44.430
+going to be using a fun family for the whole project.
+
+05:44.430 --> 05:46.020
+We're going to use robo botto.
+
+05:46.290 --> 05:48.940
+So it's going to see is going to say rowboat.
+
+05:49.930 --> 05:50.320
+OK.
+
+05:50.340 --> 06:00.860
+The background of go the background is going to be a a a a not a sports.
+
+06:01.050 --> 06:01.670
+Yeah.
+
+06:01.990 --> 06:07.860
+And then they begin to add some text for the things it's just global styling.
+
+06:08.070 --> 06:14.350
+You can do text decoration and we can set it to none.
+
+06:14.460 --> 06:19.320
+And then with the color we just inherit.
+
+06:19.320 --> 06:20.010
+There we go.
+
+06:20.280 --> 06:25.730
+So let's add the styles for the for the banner going to go right here.
+
+06:25.850 --> 06:31.390
+Now I'm just going to add some comments right here so we can split everything up.
+
+06:31.440 --> 06:35.700
+I'm going to say OK first we need to make reference to the banner.
+
+06:36.000 --> 06:39.780
+So then we make reference to the main cover.
+
+06:39.780 --> 06:40.510
+There we go.
+
+06:40.890 --> 06:43.600
+So now the main cover is going to have a background.
+
+06:43.980 --> 06:51.030
+So we say background and the background is going to be you are l then open and close and the L is going
+
+06:51.030 --> 06:54.090
+to be indicted for Shlash images.
+
+06:54.450 --> 06:59.870
+And then for Slash and cover that's going to be the main image.
+
+07:00.210 --> 07:00.920
+Right.
+
+07:00.960 --> 07:03.630
+So it's going to be a height of 400 pixels.
+
+07:03.690 --> 07:09.780
+You're not going to be real specific with styles you know just to make it look good.
+
+07:09.810 --> 07:13.970
+So you're going to say background and the background is going to be Macron size.
+
+07:14.190 --> 07:17.540
+And then we get a cover so we can cover that section.
+
+07:18.030 --> 07:25.650
+We're going to say background and then position and the background position it's going to be center
+
+07:27.090 --> 07:29.990
+center and center right.
+
+07:30.210 --> 07:34.420
+The position is going to be relative relative because we need to do something else inside.
+
+07:34.590 --> 07:36.510
+So we're going to say relative.
+
+07:36.810 --> 07:38.460
+And then again now the.
+
+07:38.490 --> 07:39.760
+Now let's change the height.
+
+07:39.810 --> 07:46.410
+Let's do let's do it a little bit bigger 465.
+
+07:46.570 --> 07:48.010
+So far I reload.
+
+07:48.230 --> 07:48.750
+That's fine.
+
+07:50.690 --> 07:51.030
+OK.
+
+07:51.090 --> 07:55.220
+So now what we need to do we need to do something else.
+
+07:55.650 --> 08:00.020
+I'm going to go and specify the Vanner logo.
+
+08:00.120 --> 08:01.280
+Just going to go right here.
+
+08:01.380 --> 08:03.920
+Well you know I'm just not getting anything.
+
+08:04.080 --> 08:05.990
+We should be getting something at least.
+
+08:06.200 --> 08:08.500
+Let me just inspect this just to make sure.
+
+08:09.620 --> 08:24.630
+Get in inspect the music divi logo main cover and just I suspect that I put Van Ness in that Vanner.
+
+08:24.830 --> 08:26.530
+So we get something and that's it.
+
+08:26.930 --> 08:35.890
+Let me grab the council and we can use the simulation of an iPhone.
+
+08:35.950 --> 08:37.000
+Phone sex.
+
+08:37.110 --> 08:42.580
+And just going to put this at the bottom OK.
+
+08:42.690 --> 08:45.420
+Let's get right.
+
+08:45.450 --> 08:46.620
+So we have the banner.
+
+08:46.620 --> 08:50.070
+Now this logo need to center the logo right now.
+
+08:50.070 --> 08:55.580
+So I'm going to go right here to the styles and we get to make reference to the Vanner.
+
+08:56.550 --> 08:59.830
+And then just a dot logo.
+
+09:00.630 --> 09:01.160
+OK.
+
+09:01.440 --> 09:08.510
+So we're going to select the font family for this and the font family is going to be Minot's on.
+
+09:09.850 --> 09:12.700
+OK let's get.
+
+09:12.900 --> 09:16.510
+So we're going to have a position and the position is going to be absolute.
+
+09:16.560 --> 09:22.200
+And that's why we made the container the parent container relative so we can center everything in the
+
+09:22.200 --> 09:23.070
+middle of the screen.
+
+09:23.250 --> 09:24.770
+You're going to say top the top.
+
+09:24.780 --> 09:26.460
+It's going to be 50 percent.
+
+09:26.460 --> 09:34.240
+The left is going to be 50 percent again and then begin to use transform to center everything.
+
+09:34.260 --> 09:46.100
+Trents form right the transform you're going to use translate and then 50 percent and then 50 percent.
+
+09:46.620 --> 09:48.070
+Right.
+
+09:48.110 --> 09:50.400
+Everything is going to be kind of a center.
+
+09:50.520 --> 09:54.020
+We need to that is to specify the width for this.
+
+09:54.360 --> 09:54.620
+OK.
+
+09:54.630 --> 09:58.950
+So we're going to say width and the width is going to be 100 percent.
+
+09:59.460 --> 10:05.370
+And then we can decide to select the height and height it's going to be 62 pixels or whatever we're
+
+10:05.370 --> 10:09.930
+going to select color and the color is going to be white.
+
+10:12.240 --> 10:21.590
+And we're going to have fun size and the fun size is going to be 43 pixels and you can have a text line.
+
+10:21.870 --> 10:23.700
+And this is a line that can be center
+
+10:26.600 --> 10:30.630
+and it could have a Looks nice but there is something missing.
+
+10:30.630 --> 10:36.590
+Let me check why on second with the inspectors.
+
+10:36.740 --> 10:41.780
+So we have the main cover banner cover the logo and the logo.
+
+10:41.780 --> 10:45.380
+It's kind of a going out of Fortran.
+
+10:45.470 --> 10:46.200
+Let's see why.
+
+10:48.330 --> 10:50.910
+Because we have we made a mistake with the translator.
+
+10:51.270 --> 10:54.180
+So it's minus 50 percent.
+
+10:54.240 --> 10:58.940
+That's good a minus coma and then minus 50 percent.
+
+10:59.100 --> 11:00.850
+Let's get.
+
+11:00.880 --> 11:05.710
+So now looks nice actually looks really really nice.
+
+11:05.740 --> 11:09.080
+So let's add the blue line to this pan.
+
+11:09.140 --> 11:21.370
+I'm going to say Vanner and then expand and then we to add a display block and then a height of 20 pixels
+
+11:21.910 --> 11:29.740
+and the background we can add a background for hash tag 2 1 9 6 EF 3.
+
+11:29.770 --> 11:32.430
+It's a nice light blue.
+
+11:33.040 --> 11:33.800
+Right.
+
+11:34.200 --> 11:34.530
+OK.
+
+11:34.570 --> 11:40.310
+So if you you're bored with all this this information right here with the CSSA.
+
+11:40.390 --> 11:41.040
+Well you can do.
+
+11:41.050 --> 11:43.530
+You can go to get have to the project.
+
+11:43.570 --> 11:49.190
+We would all the files are and you just can go and copy the CSSA and skip this part.
+
+11:49.210 --> 11:56.350
+You can go right forward to the next election or when we just do this we do the do the actual react
+
+11:56.410 --> 11:57.410
+and not ss.
+
+11:57.580 --> 12:05.240
+But you know I've chosen to choose just to film those two recorders so you can see the whole process.
+
+12:05.260 --> 12:08.880
+You can go to get have a copy of this and just paste it right here.
+
+12:08.920 --> 12:10.070
+I could do the same thing.
+
+12:10.200 --> 12:12.220
+But you know could be kind of confusing.
+
+12:12.440 --> 12:12.880
+So OK.
+
+12:12.910 --> 12:13.930
+Love that's fine.
+
+12:13.930 --> 12:20.170
+The the the banner it's ready let's go to the next section and do the list the list of artists.
