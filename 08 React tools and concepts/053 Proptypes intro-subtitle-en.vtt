@@ -1,0 +1,121 @@
+WEBVTT
+
+00:01.350 --> 00:03.990
+OK so now we're going to talk about promp types.
+
+00:04.170 --> 00:12.170
+What are Propp types so prep times was a built in ability of re-act for type checking.
+
+00:12.240 --> 00:15.980
+Now it was included by default and previous versions of react.
+
+00:16.110 --> 00:21.630
+Now just like transition's group we will need to install an add on to use prompt type so we will need
+
+00:21.630 --> 00:23.810
+to install a dependency for this.
+
+00:23.820 --> 00:29.820
+So before you start explaining Propp types and to express that you might never use proc type prop types
+
+00:30.330 --> 00:36.780
+if you want to be a good developer but you will need to use Propp types if you don't want to use promp
+
+00:36.780 --> 00:37.400
+types.
+
+00:37.440 --> 00:40.340
+Your application is going to work just fine.
+
+00:40.460 --> 00:41.020
+OK.
+
+00:41.310 --> 00:43.530
+So prop types are for type checking.
+
+00:43.530 --> 00:46.900
+Let me just show you the chart so you can understand this.
+
+00:47.160 --> 00:52.010
+And if you're still interested you can just move forward OK with this section.
+
+00:52.140 --> 00:57.120
+So we're going to have Pearn component for example with the state of name last name and age.
+
+00:57.120 --> 00:58.620
+Just something real simple.
+
+00:58.850 --> 01:03.420
+The Sprint component is going to call to Achaia components.
+
+01:03.540 --> 01:05.440
+It's going to pass all the prompts.
+
+01:05.610 --> 01:06.030
+OK.
+
+01:06.060 --> 01:13.890
+With a name last name and age Propp types is going to be listening inside of this component whatever
+
+01:13.980 --> 01:19.080
+the child component receives the new props with name last name and age types.
+
+01:19.100 --> 01:25.910
+It's going to check if they have the correct values if something is wrong it's going to throw a warning.
+
+01:25.920 --> 01:32.310
+So let's say that name has has a string for example it by default you should be getting a string.
+
+01:32.460 --> 01:34.350
+But instead you get a number name.
+
+01:34.470 --> 01:40.650
+Well Prop types after each set up is going to check if name has the string if it has a number.
+
+01:40.650 --> 01:41.960
+It's going to give you a warning.
+
+01:42.030 --> 01:48.570
+So this is the main essence of prop types is just type checking is going to check if everything is correct.
+
+01:48.660 --> 01:54.840
+If it's not going to let you know day dude you forgot to do this or I'm getting a different value.
+
+01:54.840 --> 02:02.030
+So OK before we start with prop types if you're still interested we need to install this as an add on.
+
+02:02.040 --> 02:07.770
+So I'm going to go right here at the bottom and I'm going to say NPM install and then it's going to
+
+02:07.770 --> 02:16.800
+be called prop up IPN install and then space and promp is going to be Dash and types and is going to
+
+02:16.800 --> 02:18.400
+be mine is mine is safe.
+
+02:18.600 --> 02:20.670
+I'm using a new project.
+
+02:20.670 --> 02:26.730
+Again there's no need for you to type everything or just copy the project is going to be available in
+
+02:26.730 --> 02:27.320
+get have.
+
+02:27.450 --> 02:28.880
+I'm just going to show you what we need to do.
+
+02:28.890 --> 02:29.420
+OK.
+
+02:29.670 --> 02:32.410
+So it's install and being installed Propp types.
+
+02:32.420 --> 02:34.550
+Mannesmann is save is going to install.
+
+02:34.550 --> 02:40.200
+It to take a few seconds and again to stop the video and just move to the next section and start using
+
+02:40.340 --> 02:40.800
+types.

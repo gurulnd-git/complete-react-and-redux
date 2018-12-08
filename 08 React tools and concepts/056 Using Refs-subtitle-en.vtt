@@ -1,0 +1,238 @@
+WEBVTT
+
+00:00.330 --> 00:07.010
+OK so now we're going to talk about drafts and we're not going to spend spend a lot of time with refs.
+
+00:07.200 --> 00:11.060
+And if you ask why it's because you should not use refs.
+
+00:11.400 --> 00:17.910
+Well no because I say it it's because re-act gives you the chance to use them but advised not to do
+
+00:17.910 --> 00:18.480
+it.
+
+00:18.510 --> 00:25.860
+So ref it's kind of a link or reference we can attach to an element and then we can use this link or
+
+00:25.860 --> 00:29.250
+reference to do things in the dorm directly.
+
+00:29.420 --> 00:30.690
+And that is the key word.
+
+00:30.720 --> 00:34.640
+Doing things in the dorm with the dorm directly with ref.
+
+00:34.650 --> 00:38.520
+You can bypass react and interact with them.
+
+00:38.620 --> 00:44.960
+So you're not going to be using the state or whatever react it's providing you just go directly to the
+
+00:44.970 --> 00:46.610
+norm and do it.
+
+00:46.710 --> 00:51.680
+And if you think about it it kind of makes sense why bother in using react.
+
+00:51.720 --> 00:55.020
+If you're going to just interact with the DOM yourself.
+
+00:55.190 --> 00:55.580
+Yeah.
+
+00:55.830 --> 00:56.690
+Makes sense.
+
+00:56.940 --> 00:59.990
+So it's kind of hard to explain with words.
+
+01:00.120 --> 01:03.920
+I'm just going to show you a dumb example so you can get the idea.
+
+01:04.050 --> 01:08.400
+I have a component right here an app component and I have a state.
+
+01:08.430 --> 01:12.370
+This state has a title and a color.
+
+01:12.400 --> 01:19.710
+Now then inside the Render I have a style Barville and the color is going to be this that state that
+
+01:19.710 --> 01:21.730
+color is going to be blue.
+
+01:22.170 --> 01:28.740
+And when the application renders the title it's going to have the style which is blue and the text that
+
+01:28.740 --> 01:32.580
+it's going to be this that state that data change with graphs.
+
+01:32.850 --> 01:33.360
+OK.
+
+01:33.630 --> 01:39.090
+And then I get I could have just dealt with a function that it's going to change the text whenever i
+
+01:39.090 --> 01:45.120
+just click on change color is going to go to this change text function and it's going to change the
+
+01:45.120 --> 01:46.590
+state from red.
+
+01:46.590 --> 01:48.690
+I'm sorry from blue to red.
+
+01:48.690 --> 01:52.920
+So since we are using right here the state is going to change it to red.
+
+01:53.260 --> 01:54.440
+OK that's good.
+
+01:54.480 --> 02:02.610
+That's working so we are changing the color using state we're using react to change the state of this
+
+02:03.090 --> 02:03.710
+style.
+
+02:03.840 --> 02:04.460
+So that's good.
+
+02:04.500 --> 02:07.910
+That's what re-act advise us to do.
+
+02:08.250 --> 02:13.610
+We have a different way to do it and we can use refs are going to go right here to this component right
+
+02:13.640 --> 02:18.170
+here to this 8:04 sorry it's elements not component is going to be rough.
+
+02:18.360 --> 02:25.500
+And that's the way we just create create an instance of a ref going to call and do ref and I need to
+
+02:25.530 --> 02:29.740
+assign a name just like an ID or a class.
+
+02:29.850 --> 02:34.650
+And what I'm gonna do I'm just going to put my title into something simple.
+
+02:34.650 --> 02:35.710
+All right.
+
+02:35.730 --> 02:39.830
+Now what we can do instead of using the state to change the color.
+
+02:39.950 --> 02:47.030
+Going to come in this state and I'm going to go right here right here whenever we have ref we're making
+
+02:47.120 --> 02:49.050
+a reference to this.
+
+02:49.050 --> 02:53.100
+That ref is going to be like this not props with the props.
+
+02:53.280 --> 02:56.710
+But in this case it's going to be this component and ref.
+
+02:56.850 --> 02:59.600
+So I'm going to say this that ref.
+
+02:59.740 --> 03:08.320
+And we have access to this element so we can do things directly then have two refs o refs plural.
+
+03:08.560 --> 03:14.460
+We need to make reference to the name of the ref which is going to be my title and then we can do pretty
+
+03:14.460 --> 03:15.960
+much whatever we want.
+
+03:15.960 --> 03:17.790
+I'm just going to change the style.
+
+03:17.790 --> 03:23.420
+It's going to be style and then color and this one again it's going to be called it's going to be a
+
+03:23.430 --> 03:27.340
+red color and this is just vanilla jazz.
+
+03:27.360 --> 03:29.100
+It's not sex or whatever.
+
+03:29.210 --> 03:32.050
+It's just mutating the color directly.
+
+03:32.070 --> 03:37.680
+So if I just reload the application and click and change color we get the same result.
+
+03:37.710 --> 03:43.710
+So it's working but we are changing the color directly through graphs.
+
+03:43.710 --> 03:48.100
+And again we shouldn't use this as it is.
+
+03:48.300 --> 03:51.250
+Let me just show you the documentation.
+
+03:51.640 --> 03:56.590
+And for here you have a lot of information about graphs and right here you get don't you.
+
+03:56.620 --> 04:03.510
+You know we use refs and right here the top at the very beginning is going to tell you the typical Riak
+
+04:03.510 --> 04:10.820
+dataflow prompts are the only way the only way that parent components interact with children.
+
+04:11.070 --> 04:16.650
+So pretty much saying you ok the way we wanted you to do it for us.
+
+04:16.740 --> 04:21.190
+One you to do it it's going to be using props and not the refs.
+
+04:21.570 --> 04:26.290
+So again at the end is going to say re-act provides an escape hatch.
+
+04:26.500 --> 04:32.880
+So again you know you shouldn't use it but if you really really really need need need to use it you
+
+04:32.880 --> 04:35.270
+need to use this DS refs.
+
+04:35.490 --> 04:45.300
+Well you can and right here is going to give you some options where the use of refs is going to be applicable.
+
+04:45.330 --> 04:52.860
+It's going to be managing focus or tech selection media playback and triggering in imperative animations
+
+04:53.190 --> 04:56.810
+and then just interacting with third party libraries.
+
+04:56.880 --> 05:03.120
+And this is just maybe Jay Querrey if you want to interact with Jay Querrey and mutated Dohm directly
+
+05:03.120 --> 05:03.890
+with Jacqui.
+
+05:03.930 --> 05:05.270
+Well you can do it.
+
+05:05.820 --> 05:06.190
+OK.
+
+05:06.190 --> 05:10.890
+Again you can use it but you're shooting it for all.
+
+05:10.890 --> 05:11.380
+OK.
+
+05:11.430 --> 05:13.440
+You should always use it.
+
+05:14.020 --> 05:15.630
+OK that's enough.
+
+05:15.630 --> 05:17.600
+Let's go to the next topic.
+
+05:17.730 --> 05:24.520
+It's going to be control and uncontrolled and we're going to be talking a little bit about refs again.

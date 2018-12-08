@@ -1,0 +1,265 @@
+WEBVTT
+
+00:00.690 --> 00:06.270
+OK so I want to talk about controlled and uncontrolled components control component.
+
+00:06.280 --> 00:13.260
+It's whenever we use react in 100 percent of that sample we use react 100 percent.
+
+00:13.470 --> 00:14.050
+OK.
+
+00:14.230 --> 00:16.320
+And an uncontrolled component.
+
+00:16.510 --> 00:20.880
+It's whenever we bypass react for example using graphs.
+
+00:21.210 --> 00:28.690
+The best example and this comes directly from re-act playbook it's working with forms.
+
+00:29.190 --> 00:35.640
+So I have a component right here and I'm going to just create just transfer and transform this to a
+
+00:35.640 --> 00:37.820
+control component.
+
+00:37.830 --> 00:45.120
+Now we just have just one form with a name and a last name and we have just one default state.
+
+00:45.270 --> 00:50.430
+And I want to do whenever we type something inside here I want to update the state.
+
+00:50.430 --> 00:50.780
+Right.
+
+00:50.820 --> 00:52.380
+So we know this.
+
+00:52.380 --> 00:56.960
+We did this in the past with the events of the onchange events.
+
+00:57.000 --> 01:00.790
+So it's the same idea going to do on and then change.
+
+01:01.110 --> 01:08.460
+And whenever we call the On Change when we are we are getting that event once call to a function and
+
+01:08.460 --> 01:16.950
+this function is going to be call handle name and then change whether we go right here and cannot just
+
+01:16.980 --> 01:18.660
+create this function.
+
+01:18.660 --> 01:22.580
+This function is going to be fat R-OH function.
+
+01:23.080 --> 01:26.760
+And whenever we call this function we pass on an event.
+
+01:26.880 --> 01:30.410
+So I'm going to put events as in arguments.
+
+01:30.630 --> 01:34.850
+Now since we have this function what we can do we can update the state.
+
+01:34.950 --> 01:36.860
+So I'm going to do this.
+
+01:36.880 --> 01:41.530
+Dodd said state and I'm going to update the state of name.
+
+01:41.550 --> 01:44.120
+It's going to say name that cone.
+
+01:44.220 --> 01:49.400
+And here we have divans say event target dot value.
+
+01:49.440 --> 01:51.750
+We've overdid this before.
+
+01:52.340 --> 01:53.170
+OK.
+
+01:53.250 --> 02:00.030
+Just to save time I'm going to do the same thing the same logic with the last name is going to be handle
+
+02:00.490 --> 02:01.970
+last.
+
+02:02.040 --> 02:04.680
+Last Name the last name.
+
+02:04.680 --> 02:09.820
+Let's go get a copy of this going to copy the function at the bottom.
+
+02:09.830 --> 02:16.470
+Just copy and paste for now going to change the name of the function and instead of updating the state
+
+02:16.470 --> 02:20.880
+of name going to update the last name that will get no errors.
+
+02:20.880 --> 02:23.280
+So it means that this is get.
+
+02:23.430 --> 02:29.570
+Now I want to just check whatever we are getting on the new state whenever we update the state.
+
+02:29.580 --> 02:31.320
+I want to see it.
+
+02:31.530 --> 02:37.500
+So I'm going to use the component will update remember with a component when update we pass the next
+
+02:37.500 --> 02:44.350
+prompts and the next state so we can bew we can just inspect the next state.
+
+02:44.640 --> 02:46.150
+OK that's fine.
+
+02:46.160 --> 02:49.230
+There is no need to lose time with this.
+
+02:49.470 --> 02:56.010
+I'm going to just reload the page and if I enter Francis we are getting it right here on the new state
+
+02:56.020 --> 02:56.830
+then the next date.
+
+02:56.910 --> 02:58.620
+So we get the name of Francis.
+
+02:58.660 --> 03:02.060
+Are Just updating the state successfully.
+
+03:02.190 --> 03:09.510
+And if I do last name of Jones Jones we got name and last name of John.
+
+03:09.510 --> 03:11.130
+So the state is fine.
+
+03:11.130 --> 03:12.900
+We are updating the state.
+
+03:13.420 --> 03:13.750
+OK.
+
+03:13.770 --> 03:17.230
+So this form this component.
+
+03:17.400 --> 03:20.610
+It's still an uncontrolled components.
+
+03:20.980 --> 03:23.620
+We are managing everything through react and the state.
+
+03:23.760 --> 03:30.810
+But the thing is that the whenever we entered a war here just of some characters we're doing it doing
+
+03:30.810 --> 03:34.080
+it directly with Dawn.
+
+03:34.130 --> 03:36.750
+We are just entering the information manually.
+
+03:36.870 --> 03:40.680
+We are we are just interacting with the impot directly.
+
+03:40.890 --> 03:46.380
+And this is under control behavior because we react.
+
+03:46.380 --> 03:52.590
+It's not controlling whatever it's happening inside the input it's just getting what what it's inside
+
+03:52.590 --> 03:55.830
+the input but it's not assigning a body to the input.
+
+03:56.400 --> 04:04.500
+So to make this a control component instead of just just living this set is what we can do and I'm just
+
+04:04.500 --> 04:09.960
+going to riddle the application for now going to go right here and I'm going to just say value and this
+
+04:09.960 --> 04:12.920
+value is going to be empty.
+
+04:12.960 --> 04:14.120
+Let me show something.
+
+04:14.430 --> 04:20.710
+Right now I'm going to just type some letters and notice that nothing is going to happen.
+
+04:22.080 --> 04:29.030
+And right here you can see in the state that for each key I'm hitting is just adding that to the state.
+
+04:29.160 --> 04:30.800
+But it's just one letter.
+
+04:30.840 --> 04:36.840
+The thing is that whenever the application starts it's going to render this components and the value
+
+04:36.840 --> 04:38.090
+is going to be empty.
+
+04:38.510 --> 04:38.910
+OK.
+
+04:39.210 --> 04:40.720
+I'm going to go right here.
+
+04:40.840 --> 04:47.100
+Type eletter reactor is going to grab the letter is going to update the state and it's going to read
+
+04:47.100 --> 04:48.770
+render this form.
+
+04:48.900 --> 04:51.510
+But the banlieue is still going to be empty.
+
+04:51.540 --> 04:55.280
+So we always get an an empty value.
+
+04:55.530 --> 05:02.040
+So what we need to do right here to update the values right here is we have the values on the state.
+
+05:02.190 --> 05:09.030
+What we can do instead of just putting nothing all you can do is just put the state is going to be this
+
+05:09.290 --> 05:17.010
+that state that name and begin to do the same thing for the last name so we can save time to put this
+
+05:17.010 --> 05:18.140
+one right here.
+
+05:19.690 --> 05:26.340
+OK so if i type of f we get an F O on a mistake is not a state of name.
+
+05:26.360 --> 05:32.160
+State of last name and it's reloaded.
+
+05:32.220 --> 05:35.530
+And if I type Francis is going is working.
+
+05:35.550 --> 05:42.130
+We get the update state and everything it's managed through react react.
+
+05:42.160 --> 05:45.610
+It's handling whatever is happening right here on the input.
+
+05:45.730 --> 05:52.930
+So we are not putting the values manually react it's doing this and this is a perfect example of a controlled
+
+05:52.930 --> 05:54.390
+computing component.
+
+05:54.460 --> 05:59.070
+Everything it's managed through re-act is matched by react.
+
+05:59.140 --> 06:00.580
+Let's go to the next section.
+
+06:00.640 --> 06:08.800
+I'm going to convert this to an uncontrolled component using refs and we can see we can check the difference
+
+06:09.100 --> 06:12.410
+between creating a controlled and an uncontrolled component.

@@ -1,0 +1,415 @@
+WEBVTT
+
+00:01.620 --> 00:03.930
+OK so we can check more things with promp types.
+
+00:03.930 --> 00:06.390
+We have some methods available for this.
+
+00:06.480 --> 00:10.280
+I'm going to come in this one the name and I'm going to use it as an example.
+
+00:10.440 --> 00:13.680
+What we can do we can check for an array of values.
+
+00:13.680 --> 00:18.190
+I'm going to use the name and again to say Dot and then just call the prompt types again.
+
+00:18.560 --> 00:21.800
+And the method it's going to be called one off.
+
+00:21.930 --> 00:25.250
+Now inside the one off method begin to pass an array.
+
+00:25.470 --> 00:32.550
+And what we can do we can specify right here which elements which names we are expecting.
+
+00:32.550 --> 00:39.040
+For example I'm going to say Frances and Frances if we see Frances prompts it's going to be good.
+
+00:39.300 --> 00:44.080
+If I received James for example it's going to it's going to be good and it's going to pass.
+
+00:44.160 --> 00:47.020
+But if we receive something else it's going to fail.
+
+00:47.150 --> 00:53.010
+They're going to go to app and I'm going to say Frances so that espousing are going to say James relo
+
+00:53.010 --> 00:55.440
+the app and it's going to pass.
+
+00:55.560 --> 00:59.400
+And if I say Ron of course is going to fail.
+
+00:59.500 --> 01:03.120
+So you know this one it's kind of useful.
+
+01:03.120 --> 01:08.520
+I'm just going to go back and say Francis Francis good.
+
+01:08.820 --> 01:11.600
+So we have some other useful methods.
+
+01:11.820 --> 01:15.730
+Notice that I'm using I'm just commenting the name right here.
+
+01:15.840 --> 01:20.060
+If we use two prompt types with the same name you can get it.
+
+01:20.100 --> 01:21.740
+And again an error message.
+
+01:21.750 --> 01:24.390
+So make sure that you're using one for all.
+
+01:24.460 --> 01:27.990
+They're going to come in both of this going to go right here at the bottom.
+
+01:28.240 --> 01:32.340
+Well what we can do we can we can have a method that it's kind of a switch.
+
+01:32.530 --> 01:36.210
+JSH is going to be called one off type.
+
+01:36.210 --> 01:42.210
+What we can do we can check for several rules inside the same prop type and if at least one of them
+
+01:42.300 --> 01:45.890
+it's passing everything is going to pass just like a switch.
+
+01:46.100 --> 01:51.160
+I'm going to call the name and let me show you a practical example because it's kind of confusing.
+
+01:51.210 --> 01:55.410
+It's going to be one of type is the method.
+
+01:55.410 --> 01:58.070
+And inside here we have an array of values.
+
+01:58.110 --> 02:05.640
+So what we can do right here is we can pass different types going to pass that it should be a string
+
+02:06.030 --> 02:10.160
+and we could receive a number as well to something simple.
+
+02:10.650 --> 02:11.190
+OK.
+
+02:11.670 --> 02:14.840
+So right now is the name you're getting Francis.
+
+02:14.850 --> 02:16.040
+This is string.
+
+02:16.080 --> 02:18.570
+So it matches this rule.
+
+02:18.600 --> 02:19.880
+So it's going to pass.
+
+02:20.100 --> 02:27.300
+If I just go back and change Francis and put the number five it's going to pass of course because we
+
+02:27.300 --> 02:29.030
+have a number as a rule.
+
+02:29.310 --> 02:36.930
+If I go back and use an array it's going to be Frances is not going to pass because we are expecting
+
+02:37.400 --> 02:39.180
+a string or a number.
+
+02:39.240 --> 02:40.100
+OK that's good.
+
+02:40.140 --> 02:42.080
+This one is useful as well.
+
+02:42.100 --> 02:48.610
+I going to go back and just set Francis back again so he can pass.
+
+02:49.320 --> 02:49.780
+OK.
+
+02:49.830 --> 02:51.530
+Now we have one more thing.
+
+02:51.870 --> 02:55.800
+We have the array of right here hand hobbies.
+
+02:55.920 --> 02:58.080
+We have an array of strings.
+
+02:58.080 --> 03:01.320
+What we can do in a beat just come in the Humvee's right here.
+
+03:01.530 --> 03:08.820
+What we can do we can check if an array is an array of numbers or an array of strings.
+
+03:08.850 --> 03:16.680
+So I'm going to say Harvey's of the go back again hobby's if Javier's is going to be a proper time and
+
+03:16.680 --> 03:21.300
+then just check if it's an array of strings or of numbers.
+
+03:21.510 --> 03:26.490
+So the method is going to be called Auray off and it's a method.
+
+03:26.520 --> 03:35.190
+And inside here we can pass whatever rule one is going to be promp types and we want to check if this
+
+03:35.280 --> 03:38.100
+array is an array of strings.
+
+03:38.310 --> 03:47.370
+Since it is going to pass I mean if I say number is not going to pass because we have an array of strings.
+
+03:47.760 --> 03:48.730
+OK that's good.
+
+03:48.930 --> 03:52.040
+Let me just go back so he can it can pass.
+
+03:52.070 --> 03:54.270
+I would think I like the error messages.
+
+03:54.270 --> 03:56.690
+So OK we have a couple more.
+
+03:56.820 --> 04:05.640
+We have the is required let's say that your application is expecting for value and that that prompt
+
+04:05.790 --> 04:08.830
+it's really important for your application.
+
+04:09.060 --> 04:14.680
+So what you can do you can mark that property that prompts as required.
+
+04:14.850 --> 04:23.480
+So I'm going to use the mother example right here for mother to read it and see mother and the mother
+
+04:23.510 --> 04:28.250
+is going to be Martha just a name and I'm going to say mother.
+
+04:28.350 --> 04:30.550
+And then again called to prop types.
+
+04:31.080 --> 04:37.290
+It's going to be promp types and this one is going to be a string of course.
+
+04:37.450 --> 04:40.960
+And what we can do we can mark this one as required.
+
+04:41.230 --> 04:48.280
+So whenever the application loads and we see the props if this mother it's not there it's going to give
+
+04:48.280 --> 04:49.180
+us an error message.
+
+04:49.180 --> 04:51.200
+Since we have it it's going to pass.
+
+04:51.370 --> 04:58.630
+But if I delete it really does is going to give us an error message is going to say that monitor is
+
+04:58.630 --> 05:00.380
+required.
+
+05:00.460 --> 05:01.150
+Let's get to.
+
+05:01.180 --> 05:05.720
+Let me go back so he can pass.
+
+05:05.900 --> 05:06.760
+Right.
+
+05:07.710 --> 05:07.950
+OK.
+
+05:07.970 --> 05:09.020
+We have one more.
+
+05:09.110 --> 05:12.180
+And this one is really really useful.
+
+05:12.290 --> 05:17.930
+So sometimes maybe you want to check for some things and other methods that prompt types is going to
+
+05:17.930 --> 05:20.950
+give you there are just not suitable for that.
+
+05:21.140 --> 05:22.100
+So what you can do.
+
+05:22.100 --> 05:26.650
+You can create a custom prompt type are going to use the mother example again.
+
+05:26.660 --> 05:31.270
+I'm just going to comment this one out and I'm going to use the mother example.
+
+05:31.490 --> 05:34.800
+So with the mother what we can do we can run a function.
+
+05:34.880 --> 05:39.380
+So I'm going to say function is here and she's going to open it close.
+
+05:39.500 --> 05:45.290
+This function is going to receive three different arguments by default.
+
+05:45.410 --> 05:52.490
+The first one is going to be prompts the second one is going to be promp name name.
+
+05:52.490 --> 05:53.410
+There we go.
+
+05:53.420 --> 05:58.960
+And the third one is going to be a component name.
+
+05:59.100 --> 05:59.690
+Right.
+
+05:59.930 --> 06:03.130
+So this one I've never used is one that can put a name.
+
+06:03.170 --> 06:10.130
+So of course the component name but this ones are the one we care prompts is going to be the key of
+
+06:10.130 --> 06:10.960
+the value.
+
+06:11.150 --> 06:16.440
+So since we are checking mother prompts it's going to be this is going to be mother.
+
+06:16.850 --> 06:23.300
+And then just proper name is going to be the whatever you're getting inside the mother as a value.
+
+06:23.630 --> 06:31.130
+So if I went to check for something inside this mother I could check if we are getting a name of that
+
+06:31.140 --> 06:32.300
+I don't know Jane.
+
+06:32.480 --> 06:36.360
+And if we are not getting Jane we should get an error message.
+
+06:36.490 --> 06:36.840
+OK.
+
+06:36.860 --> 06:44.240
+Just like with regular jazz I mean to say if and if something happens we get a return true or a returner
+
+06:44.590 --> 06:48.200
+or if and if it's false it's going to just return false.
+
+06:48.230 --> 06:49.300
+Let's get.
+
+06:49.320 --> 06:57.590
+So I'm going to say if prop's which is the name of the key which is mother and value which is a proper
+
+06:57.590 --> 07:04.630
+name this is going to be equal to whatever we're getting inside mother in this case we get mother and
+
+07:04.630 --> 07:05.510
+Martha.
+
+07:05.510 --> 07:08.660
+So this is equal to Martha right now.
+
+07:08.660 --> 07:15.470
+So if this value that we are saving it's different for us from something else from Jane for example
+
+07:16.820 --> 07:19.650
+we should be throwing an error message.
+
+07:19.760 --> 07:27.310
+Now the way to return an error message it's not going to be just return false just like we always do.
+
+07:27.530 --> 07:28.660
+We need to do something else.
+
+07:28.670 --> 07:33.650
+We're going to return and we can in return a new error.
+
+07:33.650 --> 07:35.510
+We just do it like that.
+
+07:35.510 --> 07:43.150
+And inside the error we're going to have to add in a message for here just new error.
+
+07:43.460 --> 07:47.820
+And for example if I say hey error is going to load the page.
+
+07:48.890 --> 07:50.240
+And we're going to get that message.
+
+07:50.240 --> 07:52.070
+It's going to be a hey error.
+
+07:52.240 --> 07:54.910
+So I got to make something I'm going to put something right here.
+
+07:55.040 --> 07:55.930
+That makes sense.
+
+07:56.060 --> 08:01.230
+I'm going to use the name and then we can use again template strings.
+
+08:01.330 --> 08:09.090
+You can just ESX going to save prompts and the name of the whatever value we are getting which is proper
+
+08:09.090 --> 08:10.370
+name.
+
+08:10.370 --> 08:16.200
+Remember we have right here if the if this value it's not.
+
+08:16.260 --> 08:25.350
+No it's not it's incorrect to say that it's incorrect and then it should be Jane.
+
+08:25.740 --> 08:28.090
+So this message kind of makes sense.
+
+08:28.100 --> 08:29.330
+Let me just.
+
+08:29.880 --> 08:35.520
+So if I just read the application and we get the message because it's not Jane it's going to be Martha.
+
+08:35.750 --> 08:38.490
+We get the name Martha is incorrect.
+
+08:38.570 --> 08:39.490
+Should be Jane.
+
+08:39.680 --> 08:45.710
+So again when they discussed some function you can just create a custom rule and just return whatever
+
+08:45.710 --> 08:47.840
+message you want.
+
+08:47.840 --> 08:53.600
+All right so you have this or this are just some options you got with prompt types.
+
+08:53.600 --> 08:55.480
+You have much more.
+
+08:55.530 --> 09:02.070
+We're going to show you right now I'm going to go right here and the I'm going to pass you on your we're
+
+09:02.090 --> 09:10.060
+all going to be PM J.S. package and promp types and right here you have the API of promp types and you
+
+09:10.060 --> 09:15.870
+can have pretty much the whole list of what you can check and you can have some examples of course.
+
+09:15.880 --> 09:17.610
+Well all right.
+
+09:17.620 --> 09:21.930
+So this is enough for the promp types topic.
+
+09:22.090 --> 09:24.390
+Let's go to the next thing on the list.

@@ -1,0 +1,304 @@
+WEBVTT
+
+00:02.150 --> 00:04.460
+Okay everything is installed and running.
+
+00:04.710 --> 00:10.740
+Let me just tell you what I have right here to tell you something about this component this app I have
+
+00:10.740 --> 00:16.140
+right here I have an app component is going to have a state and inside the state we're going to have
+
+00:16.140 --> 00:18.950
+a name with the string last name with a string.
+
+00:19.110 --> 00:23.220
+You're going to have an H with the number Humvee's with an array.
+
+00:23.250 --> 00:31.110
+Spanish with a boolean value are going to have a function then an object and then just a string again.
+
+00:31.110 --> 00:37.620
+And this component is going to render a child component and right here inside the user community which
+
+00:37.620 --> 00:45.460
+is the child component again to pass all this state right here all the prompts inside the user component.
+
+00:45.960 --> 00:49.580
+I'm just receiving the prompts and rendering the prompts.
+
+00:49.590 --> 00:51.300
+No this that prompts that name.
+
+00:51.320 --> 00:52.970
+Just something real simple.
+
+00:53.440 --> 00:54.570
+OK that's fine.
+
+00:54.750 --> 01:01.490
+So what I want to do I want to start using prompt and want to check all the prompts that this component's
+
+01:01.560 --> 01:02.990
+it's receiving.
+
+01:03.120 --> 01:08.290
+So I'm going to go right here at the top and first since promp types it's it's an add on.
+
+01:08.310 --> 01:14.650
+We will need to import Propp types mislay import and then Propp types.
+
+01:14.850 --> 01:15.550
+Right.
+
+01:15.600 --> 01:17.920
+It's going to be from and then from.
+
+01:17.940 --> 01:22.530
+It's going to be Propp then dash types.
+
+01:23.250 --> 01:24.390
+OK let's get.
+
+01:24.380 --> 01:26.220
+So it's ready now.
+
+01:26.240 --> 01:29.970
+What we never hear of properties is defined but never used.
+
+01:29.970 --> 01:31.960
+It's because we're not using it so far.
+
+01:32.190 --> 01:38.310
+So to use prop types since we're going to be checking all the prompts that this component is receiving
+
+01:38.970 --> 01:44.710
+the first keyword that we need to use is going to be the name of the class.
+
+01:44.760 --> 01:52.470
+So we're going to go right here and say user Aunty's productize beginning to do Propp types.
+
+01:52.470 --> 01:57.220
+Now that way it's going to be prototypes now types.
+
+01:57.230 --> 01:57.900
+All right.
+
+01:58.190 --> 01:59.920
+So it's going to be equal.
+
+01:59.960 --> 02:02.630
+And then it's going to be equal to an object.
+
+02:02.630 --> 02:03.640
+Now what are you going to do.
+
+02:03.650 --> 02:08.160
+We can check the name begin to check the last name and we can check the age.
+
+02:08.180 --> 02:15.350
+So since they want to check the name the proper name they're going to say name and then just can just
+
+02:15.350 --> 02:19.610
+like an object and to check this name with prop types.
+
+02:19.640 --> 02:28.040
+First I need to use the keyboard prop types and then I need to I'm going to do Don and I need to use
+
+02:28.040 --> 02:28.920
+the word.
+
+02:29.120 --> 02:31.710
+And this ward is going to be kind of the.
+
+02:31.830 --> 02:34.290
+The thing that promp types is going to check.
+
+02:34.520 --> 02:42.650
+So if this name is going to receive some text here it's going to receive text string with Frances.
+
+02:42.830 --> 02:46.790
+So since we want to get a string we're going to say string.
+
+02:47.260 --> 02:51.490
+And if I just relo the application the message goes away and everything is good.
+
+02:51.740 --> 02:57.260
+So now that's do the same thing with last name is going to be the last name and last name is going to
+
+02:57.260 --> 03:01.430
+say prototypes and then dot it's going to be strings.
+
+03:01.430 --> 03:03.260
+Well we have a last name right here.
+
+03:03.260 --> 03:07.850
+It's going to be JONES Just string now the third one is going to be the age.
+
+03:07.860 --> 03:12.370
+So I'm going to say age come and I'm going to call again to prop types.
+
+03:12.540 --> 03:18.900
+And since this one is going to be a number I'm going to do something else I'm going to put that number
+
+03:19.670 --> 03:26.550
+all right and everything goes correctly because with age of course we have a number.
+
+03:26.610 --> 03:30.950
+So what happens if I change the number to the age string.
+
+03:31.710 --> 03:35.160
+So we are saying that age should be string and ok we get a warning.
+
+03:35.160 --> 03:37.600
+Let me just show you the warning right here.
+
+03:37.650 --> 03:45.350
+He's going to say failed prom type in ballot Prop H of views type number supplied to user expected string.
+
+03:45.360 --> 03:46.740
+So we are turning right here.
+
+03:46.770 --> 03:53.280
+We're telling prompt types that this age should be a string and not a number but instead we are getting
+
+03:53.280 --> 03:53.920
+a number.
+
+03:54.060 --> 03:56.310
+So prompt types is just giving you a warning.
+
+03:56.430 --> 03:57.650
+Everything is going to just work.
+
+03:57.660 --> 03:59.100
+It's going to work beautifully.
+
+03:59.280 --> 04:05.400
+But you get the warning and the main idea of using prop types is that you're just kind of a body dating
+
+04:05.460 --> 04:06.150
+everything.
+
+04:06.360 --> 04:11.490
+And maybe in the future you're going to create an application and that application is going to go maybe
+
+04:11.490 --> 04:16.770
+to a different developer and do the developers going to start doing things.
+
+04:16.980 --> 04:23.760
+And if you have prompt types the developer is going to instantly know that you should be expecting this
+
+04:23.760 --> 04:26.160
+values and not other values.
+
+04:26.190 --> 04:28.200
+So this is the main idea of promp types.
+
+04:28.410 --> 04:36.360
+So I'm going to go back and say a number of everything is going to just pass so we can check a lot of
+
+04:36.360 --> 04:43.410
+things with this but sometimes the next thing we need to check after the age is going to be hobbies
+
+04:43.740 --> 04:46.100
+and hobbies is going to be an array.
+
+04:46.230 --> 04:48.440
+So again we just follow the same principle.
+
+04:48.550 --> 04:54.040
+It's going to be Harvey's and Heavy's is going to be promp types.
+
+04:54.360 --> 05:00.180
+And since we have an array it's going to be array and it's going to reload and everything is going to
+
+05:00.180 --> 05:00.650
+pass.
+
+05:00.690 --> 05:02.570
+Let's get the next one.
+
+05:02.730 --> 05:03.970
+It's going to be the language.
+
+05:03.990 --> 05:06.140
+Spanish is going to be a boolean.
+
+05:06.180 --> 05:09.330
+So we're going to go right here and say Spanish.
+
+05:09.360 --> 05:17.790
+No I'm sorry it's language or it was Spanish is a Billing's So it's Spanish sorry Spanish is going to
+
+05:17.790 --> 05:18.450
+be a boolean.
+
+05:18.450 --> 05:20.880
+So again we say promp types.
+
+05:21.450 --> 05:28.600
+And since we want to check we want to say that this one is going to be a boolean we use bool b o l of
+
+05:28.620 --> 05:31.390
+boolean and everything is going to pass.
+
+05:31.410 --> 05:34.260
+The next thing is the message for a message.
+
+05:34.260 --> 05:35.290
+We have a function.
+
+05:35.460 --> 05:43.860
+So again same idea in a coma and it's going to be message calling prompt types and prompt type since
+
+05:43.860 --> 05:44.660
+it's a function.
+
+05:44.910 --> 05:48.710
+We say thank you Nic.
+
+05:48.960 --> 05:49.410
+I.
+
+05:49.530 --> 05:50.840
+Everything passes.
+
+05:50.940 --> 05:52.620
+The next one it's going to be car.
+
+05:52.650 --> 05:54.740
+So car is an object.
+
+05:54.750 --> 05:57.290
+So what we can do we can check if we have an object.
+
+05:57.300 --> 06:04.260
+This is is a simple concept car and then just call the promp types dot and it's going to be an object
+
+06:04.260 --> 06:06.310
+so we say object.
+
+06:06.780 --> 06:08.800
+And again everything is going to pass.
+
+06:08.870 --> 06:13.520
+So this is the main idea of proper types is really really simple.
+
+06:13.600 --> 06:17.030
+And again if you want to use it well then just use it.
+
+06:17.040 --> 06:19.910
+It's a good idea to use it if you don't want to use it.
+
+06:19.920 --> 06:21.950
+No problem it's still going to work.
+
+06:21.960 --> 06:22.560
+All right.
+
+06:22.770 --> 06:23.200
+So OK.
+
+06:23.220 --> 06:27.950
+Let's go to the next section and check some other features with prompt types.

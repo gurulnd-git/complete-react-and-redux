@@ -1,0 +1,208 @@
+WEBVTT
+
+00:01.800 --> 00:06.440
+OK so now I'm going to convert this to an uncontrolled component.
+
+00:06.720 --> 00:13.350
+So to start getting the lead all the things we don't need and that is the difference between uncontrolled
+
+00:13.380 --> 00:19.900
+and controlled just going to delete all of this and I get to go right here and get and just delete the
+
+00:19.910 --> 00:23.960
+value and delete of this.
+
+00:23.970 --> 00:24.740
+OK.
+
+00:25.920 --> 00:32.200
+So since we want to create an uncontrolled component and we want to use refs because that that's an
+
+00:32.220 --> 00:39.140
+example going to do just create a ref for this code to say ref This is called and what we can do.
+
+00:39.170 --> 00:40.750
+This is some E-6 magic.
+
+00:40.750 --> 00:43.140
+Does this just just just to save code.
+
+00:43.200 --> 00:46.220
+We can assign to ref the value of this.
+
+00:46.410 --> 00:56.760
+So I'm going to say this input is going to be equal to this name and then école imposed.
+
+00:57.100 --> 01:03.030
+And now instead of making reference whenever we call this to this dog draft's that something and then
+
+01:03.030 --> 01:07.080
+the name of the ref just assigned to this that name.
+
+01:07.640 --> 01:10.500
+OK let's do the same thing for the other one.
+
+01:10.710 --> 01:16.100
+I'm going to say There's that name and instead of name it's going to be last name.
+
+01:17.010 --> 01:17.330
+OK.
+
+01:17.340 --> 01:22.560
+Now what I'm going to creek I'm going to create a listener for this is going to say create a button
+
+01:23.580 --> 01:26.490
+and it's going to be unclick.
+
+01:26.490 --> 01:31.620
+And whenever we cook this button we can submit the form and catch data.
+
+01:31.680 --> 01:33.540
+We have inside this form.
+
+01:33.840 --> 01:41.760
+So I was going to be again just sign up something that makes sense sign up good and this unclick is
+
+01:41.760 --> 01:45.690
+going to trigger a function that's going to be handle.
+
+01:45.830 --> 01:54.440
+So I've met click one or so this function is just going to graph the data we have inside the refs is
+
+01:54.450 --> 01:55.730
+going to be handled submit.
+
+01:55.770 --> 02:03.800
+It's going to be equal to an Fatfat or a function and this fat function is going to graph the data it's
+
+02:04.180 --> 02:05.650
+going to put it inside of our table.
+
+02:05.670 --> 02:08.620
+Because I want to show you what we get from this.
+
+02:08.770 --> 02:12.100
+So I'm going to store everything into an object just like state.
+
+02:12.420 --> 02:18.360
+So this one is going to be Konst name and the name is going to be against these we make this association
+
+02:18.450 --> 02:25.620
+with the A-6 instead of calling this refs dot the name of the ref and then the value what we can do
+
+02:25.710 --> 02:31.830
+is we can call this that name this dot name and then just value.
+
+02:32.370 --> 02:38.400
+Ok then we have the last name and this just to show you the difference between an in control and control
+
+02:38.400 --> 02:40.080
+component with drafts.
+
+02:40.530 --> 02:42.340
+So it's a value.
+
+02:42.480 --> 02:43.180
+OK.
+
+02:43.470 --> 02:49.470
+And at the end whenever it's when everything after everything it's ready I'm just going to cancel log
+
+02:49.890 --> 02:54.250
+the values.
+
+02:54.330 --> 02:55.850
+I made a mistake once.
+
+02:55.890 --> 03:01.900
+Let me check why it's just values is not a value.
+
+03:02.070 --> 03:04.000
+I wanted to choose one values.
+
+03:04.210 --> 03:06.430
+I go OK.
+
+03:06.480 --> 03:13.270
+So if I enter Frances and if I entered Jones is the last name I clicked sign up.
+
+03:13.640 --> 03:18.840
+Oh and the form is going to of course is going to just reload the application.
+
+03:18.840 --> 03:23.230
+It's because I'm using forms to delete the form because we don't need it right now.
+
+03:23.310 --> 03:33.700
+We're using an on click one second I know I know this is because I'm trying to go fast and I made mistakes.
+
+03:33.900 --> 03:34.410
+OK.
+
+03:34.490 --> 03:40.350
+So I'm going to type Frances and then Joan's going to sign up.
+
+03:40.470 --> 03:40.780
+OK.
+
+03:40.820 --> 03:44.130
+We get the name and the last name.
+
+03:44.270 --> 03:50.150
+And you know all these cunning coding is not to show you how to do the coding is to show you the difference
+
+03:50.600 --> 03:52.300
+between a controlled and in control.
+
+03:52.310 --> 03:56.430
+And I'm just going to delete this just to simplify the code.
+
+03:56.510 --> 03:57.340
+Look at this.
+
+03:57.410 --> 04:00.780
+We just did one function with a couple of lines.
+
+04:00.860 --> 04:04.900
+The other way the control component we use three different functions.
+
+04:05.090 --> 04:10.720
+And we did a lot of logic setting up the state and then updating the state Inside Value.
+
+04:10.840 --> 04:17.600
+Well this is the difference making it an uncontrolled component with the forms and refs is really really
+
+04:17.690 --> 04:25.700
+easy and there's not a lot of code involved but the with control component you get all the functionalities
+
+04:25.970 --> 04:31.640
+from react because you're using re-act for everything but you need to do a lot of set up.
+
+04:31.730 --> 04:33.650
+That is the main difference.
+
+04:33.820 --> 04:42.050
+Again react react just advice you to use control components anyways and that's what why you should use
+
+04:42.050 --> 04:42.540
+it.
+
+04:42.710 --> 04:50.330
+And again why bothering using react if at the end it's just going to use refs you know make sense.
+
+04:50.630 --> 04:51.110
+OK.
+
+04:51.200 --> 04:54.400
+So this is enough for this section.
+
+04:54.530 --> 05:01.820
+We're going to start with something new on the next sections and we're going to do a project just put
+
+05:02.150 --> 05:04.190
+a lot of time into that project.
+
+05:04.190 --> 05:07.690
+I try to emulate real live projects.
+
+05:07.730 --> 05:09.560
+So let's go to the next section.
