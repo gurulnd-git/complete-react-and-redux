@@ -1,0 +1,193 @@
+WEBVTT
+
+00:00.390 --> 00:05.640
+OK so with re-act we have a particular way to control the assess transitions and we need to make use
+
+00:05.640 --> 00:07.740
+of CSSA transfusions group.
+
+00:07.830 --> 00:11.420
+This is a separate our own so we need to install it first.
+
+00:11.490 --> 00:12.620
+I'm going to show you what to do.
+
+00:12.630 --> 00:13.730
+You just need to watch.
+
+00:13.730 --> 00:16.020
+There's no need for you to type right now.
+
+00:16.170 --> 00:20.790
+And you can have access to all this and get help at the end of the session.
+
+00:20.790 --> 00:21.630
+Don't worry.
+
+00:21.820 --> 00:27.480
+There is an Ueberlingen of reactor decision but it's not very well documented and there's not much information
+
+00:27.480 --> 00:28.320
+available.
+
+00:28.410 --> 00:32.850
+So we're going to use the one that everyone is using right now.
+
+00:32.850 --> 00:36.590
+So as soon as there is more info available about this new version.
+
+00:36.690 --> 00:38.000
+I will just update the.
+
+00:37.990 --> 00:38.910
+Don't worry.
+
+00:39.000 --> 00:42.600
+So first we need to install the reactor incisions group.
+
+00:42.720 --> 00:47.210
+I'm going to go to bew integrated terminal and I installed right here.
+
+00:47.220 --> 00:49.810
+I'm just I'm going to install it with you again.
+
+00:52.780 --> 00:53.220
+There you go.
+
+00:53.230 --> 00:53.640
+OK.
+
+00:53.650 --> 01:06.000
+It's going to be NPM install and then begin to do react transmission's transmission and then group right.
+
+01:06.240 --> 01:07.680
+You can install a particular version.
+
+01:07.720 --> 01:10.600
+It's going to be the one that acts and that we do.
+
+01:10.600 --> 01:12.170
+Mine is mine is safe.
+
+01:12.320 --> 01:15.320
+And of course it's going to take just a minute.
+
+01:15.430 --> 01:16.160
+Right.
+
+01:16.210 --> 01:19.190
+So after we after it's install.
+
+01:19.330 --> 01:21.860
+Well I've made a project first.
+
+01:21.910 --> 01:27.860
+It's a real simple project we have just three different views a basic and a fade and a slide.
+
+01:28.000 --> 01:33.820
+So basically what we're doing right here whenever we click an element add an element it's going to add
+
+01:33.910 --> 01:36.590
+just new elements with a random number.
+
+01:36.600 --> 01:39.350
+You can have all the code right here it's very simple.
+
+01:39.430 --> 01:42.800
+So we we we move an element of course is going to remove it.
+
+01:42.820 --> 01:48.320
+Now the main point of this is that we are going to be animating this with TSF transitions.
+
+01:48.640 --> 01:58.790
+So I'm going to do NPM start because I'm just rendering from Keshet right now can do NPM start now.
+
+01:59.080 --> 02:06.150
+The main idea of CSSA rescissions group is that everything is going to be animate it through the process.
+
+02:06.160 --> 02:08.860
+It's not a transition at all.
+
+02:08.860 --> 02:15.550
+The only thing that Bre-X react to its handling of this with this system sensation's group is going
+
+02:15.550 --> 02:21.050
+to be the classis is going to know whenever the element appears or disappears.
+
+02:21.160 --> 02:28.180
+So if I add an element re-act is going to handle whenever the is this element appears with classes and
+
+02:28.180 --> 02:29.800
+the same thing backwards.
+
+02:30.070 --> 02:38.290
+So the first thing to use this is we need to import the package we installed so we can say import and
+
+02:38.290 --> 02:46.050
+then begin we begin to use CSSA everything in caps and then transmission's group decision groups.
+
+02:48.060 --> 02:49.860
+All right that's fine.
+
+02:50.190 --> 03:00.030
+Now we need to is we need to bring it from is going to be re-act dash dash and then transition and then
+
+03:00.030 --> 03:04.830
+group right now to use it.
+
+03:04.850 --> 03:06.470
+It's it's kind of confusing.
+
+03:06.480 --> 03:08.640
+It's actually really confusing.
+
+03:08.880 --> 03:10.200
+Just like we did with the.
+
+03:10.350 --> 03:17.810
+With all of the other dependencies like the router and everything else we need to wrap everything we
+
+03:17.860 --> 03:21.090
+need to wrap the element that we want to animate.
+
+03:21.090 --> 03:28.950
+In this case I want to wrap this because whenever an element appears right here we want to animate that
+
+03:28.950 --> 03:29.770
+transition.
+
+03:29.850 --> 03:36.660
+So I'm going to go right here and I'm going to wrap everything inside C Ss transmission's group.
+
+03:36.710 --> 03:38.790
+This actually works like this.
+
+03:38.860 --> 03:41.950
+So I'm just going to wrap everything right here.
+
+03:42.550 --> 03:43.360
+OK.
+
+03:43.980 --> 03:47.020
+Now if I just reload the page.
+
+03:47.580 --> 03:50.180
+Right now nothing is going to happen.
+
+03:51.130 --> 03:56.230
+And of course we're going to get a lot of hers error messages a lot.
+
+03:56.560 --> 04:03.220
+So well we get to have failed prompt type the prompt insertion smart as required in the C SSN where
+
+04:03.340 --> 04:05.170
+we get a lot more.
+
+04:05.170 --> 04:10.600
+The thing is add that to use this to use CSSA transitions group we need to do a lot of setup.
+
+04:10.630 --> 04:15.050
+We need to set to put a lot of settings right here inside the stack.
+
+04:15.250 --> 04:19.870
+So let's go to the next section and start talking about this this setting's.

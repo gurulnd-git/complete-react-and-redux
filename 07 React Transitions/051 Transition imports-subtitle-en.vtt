@@ -1,0 +1,442 @@
+WEBVTT
+
+00:01.330 --> 00:03.660
+OK so we can make this better.
+
+00:03.670 --> 00:08.800
+Now what happens if you have a lot of transitions on the same component or you can have a maybe a lot
+
+00:08.800 --> 00:10.870
+of issues in your application.
+
+00:10.990 --> 00:14.920
+And you know creating the Virals and pasting the Virals right here.
+
+00:15.220 --> 00:17.860
+It's not a damn good idea.
+
+00:17.860 --> 00:22.970
+Notice what happens if I want to add this Faid animation to the fade.
+
+00:23.110 --> 00:27.990
+Yes but I want I want to use it right here on the basic for example.
+
+00:28.030 --> 00:31.160
+You can have to copy and paste everything right here.
+
+00:31.390 --> 00:34.270
+So what we can do we can make something different.
+
+00:34.390 --> 00:41.650
+We can kind of create a configuration file for example going to go right here on the source or create
+
+00:41.740 --> 00:42.880
+a new file.
+
+00:42.880 --> 00:50.430
+And this one is going to call animations whatever it's going to be dodginess Burguet.
+
+00:50.650 --> 00:57.700
+So inside these animations we're going to just copy this Konst viral and go right here and just paste
+
+00:57.700 --> 00:58.220
+it.
+
+00:58.630 --> 01:00.190
+All right let's get.
+
+01:00.250 --> 01:07.310
+So what we can do right now instead of just having having the information right here what we can do.
+
+01:07.480 --> 01:14.710
+We can import that Vrable into this component just like we're doing right here with the with the re-act
+
+01:14.710 --> 01:17.170
+opponent and the CSSA rescissions group.
+
+01:17.170 --> 01:24.340
+So I'm going to say transition's or whatever and I'm going to say import I'm going to just make use
+
+01:24.340 --> 01:28.490
+of destructuring they're going to bring the name of the transmission.
+
+01:28.630 --> 01:32.060
+I want to bring it right here on the Faid that jazz.
+
+01:32.380 --> 01:33.980
+And it's going to be Faid animation.
+
+01:34.390 --> 01:35.910
+And then we're going to do from.
+
+01:36.210 --> 01:40.470
+And then again it's going to be dot and it's going to be animations.
+
+01:40.570 --> 01:40.940
+Right.
+
+01:40.950 --> 01:41.720
+Let's get.
+
+01:42.010 --> 01:47.460
+So we have this faint animation configuration available inside of this component.
+
+01:47.650 --> 01:53.170
+So if I just reload the page and go to fade at and it's not working it will a check.
+
+01:53.200 --> 01:54.630
+Why.
+
+01:54.850 --> 01:56.260
+Why it's not working.
+
+01:56.260 --> 01:59.040
+If I remove and nothing happens.
+
+01:59.470 --> 02:01.120
+It's like not working.
+
+02:01.340 --> 02:06.510
+Well the thing is that we've made a file with some information inside.
+
+02:06.640 --> 02:08.230
+It could be it could be anything.
+
+02:08.230 --> 02:09.470
+In this case it could be anything.
+
+02:09.490 --> 02:16.060
+Right here we just have a viable and just like we're doing class extends component right here at the
+
+02:16.060 --> 02:18.730
+bottom we we're exporting it.
+
+02:18.820 --> 02:25.180
+We are making this class available for other components inside the the same application.
+
+02:25.180 --> 02:26.970
+So we need to do the same thing.
+
+02:27.040 --> 02:31.220
+So I'm going to go right here and say export.
+
+02:31.420 --> 02:31.930
+All right.
+
+02:31.930 --> 02:36.130
+So if I ever load the page do the add elements and notice that it's already working.
+
+02:36.280 --> 02:41.540
+It's fading in and it's working and we move and it's working as well.
+
+02:41.560 --> 02:44.050
+You know this is a better approach.
+
+02:44.500 --> 02:48.530
+Instead of using the other one but again it's just up to you.
+
+02:48.860 --> 02:49.120
+OK.
+
+02:49.130 --> 02:52.300
+We're going to do the slide now just to you to the practice.
+
+02:52.360 --> 02:58.670
+I'm going to go to the slide one and we pretty much repeat the same process.
+
+02:58.810 --> 03:01.510
+We get a copy right here from from the fade.
+
+03:01.750 --> 03:06.190
+The important CSSA rescissions group is right here the bottom.
+
+03:06.190 --> 03:14.130
+We need that configuration file for the animations so important and we don't need the fit animations
+
+03:14.140 --> 03:19.090
+we can create a new one and this one is going to be called just going to copy and paste of all this
+
+03:19.770 --> 03:24.820
+right here at the bottom and we need to change the name for this one instead of Faid is going to be
+
+03:25.230 --> 03:28.670
+slide and the names get a fade.
+
+03:28.900 --> 03:33.080
+It's going to be light and all the other settings just the same.
+
+03:33.610 --> 03:35.860
+So we have our slide animation.
+
+03:36.070 --> 03:40.390
+It's being exported I'm going to go to Slide and select that one.
+
+03:40.530 --> 03:43.880
+So we're going to bring that venerable into this component.
+
+03:44.130 --> 03:44.710
+OK.
+
+03:44.980 --> 03:51.220
+So right here at the bottom we need to make use of the physicians group is going to be assessed and
+
+03:51.220 --> 03:52.580
+then transmission's
+
+03:55.450 --> 04:06.190
+again transitions and open or close in a copy of this just copy paste the name of the physician it's
+
+04:06.190 --> 04:12.790
+going to be slight animation and we just repeat the same process done that dot and the name of the bottle
+
+04:13.570 --> 04:15.230
+rocket that's going to work.
+
+04:15.310 --> 04:16.100
+That's good.
+
+04:16.150 --> 04:17.440
+I go to Slide.
+
+04:17.440 --> 04:20.910
+Nothing happens because we need to do the CSSA for this first.
+
+04:20.920 --> 04:25.970
+So again I'm going to go to OP that says I'm going to do the job.
+
+04:26.010 --> 04:28.600
+This is just the setup for the siestas glasses.
+
+04:28.840 --> 04:36.760
+First we have the slide appear so again don't slide and appear here.
+
+04:36.910 --> 04:38.020
+There you go.
+
+04:38.020 --> 04:42.470
+This one is going to have an A passerby of 0 one.
+
+04:43.750 --> 04:46.630
+And then we're going to have a transform begin to use the transform.
+
+04:46.780 --> 04:52.300
+So whenever the application loads all the elements are going to be kind of up off the screen right here.
+
+04:52.390 --> 05:00.580
+So I'm going to use transform and the transform is going to be translated and then just X and inside
+
+05:00.580 --> 05:04.380
+here I'm going to do a minus 100.
+
+05:05.060 --> 05:05.380
+OK.
+
+05:05.410 --> 05:08.500
+Let's get to the same thing for the active state.
+
+05:08.500 --> 05:20.540
+It's going to be slide dash appear of slide dash appear then it's going to be don't slide appear and
+
+05:20.540 --> 05:23.730
+then dash active after awhile.
+
+05:23.750 --> 05:29.200
+This this one this process right here is kind of simple it's just copy and paste.
+
+05:29.210 --> 05:31.100
+So this one is going to be a passerby.
+
+05:31.130 --> 05:32.280
+It's going to be one.
+
+05:32.300 --> 05:34.460
+Do it again.
+
+05:34.670 --> 05:42.110
+It's going to be one begin to make up beginning to transform into to transform and begin to set this
+
+05:42.110 --> 05:42.780
+one to see.
+
+05:42.790 --> 05:46.890
+So one for this element to go back to its original position.
+
+05:46.910 --> 05:49.100
+So I'm going to copy all of this.
+
+05:49.910 --> 05:52.960
+I'm going to paste it right here instead of minus 100.
+
+05:53.150 --> 05:54.490
+It's going to be zero.
+
+05:54.590 --> 05:55.630
+It's good.
+
+05:55.730 --> 06:03.050
+So the next thing we need to do we need to set up the the transition for the transmission all and the
+
+06:03.530 --> 06:06.760
+the amount of time that it's going to take for this transition.
+
+06:06.960 --> 06:07.210
+OK.
+
+06:07.250 --> 06:09.900
+So it's going to be a transition.
+
+06:10.970 --> 06:14.020
+And then it's going to be all going to do OK.
+
+06:14.330 --> 06:20.000
+Then dad five six and then it's going to be ease in.
+
+06:20.090 --> 06:20.630
+All right.
+
+06:21.170 --> 06:29.030
+So if I read the page ok everything it's just sliding and right.
+
+06:29.250 --> 06:37.320
+Let's do the same thing for the transition Antar So he's going to be dot slide dash Antar and I'm pretty
+
+06:37.320 --> 06:40.880
+sure that you got the idea of what we need to do right now.
+
+06:40.920 --> 06:45.600
+It's going to be Pasotti zero one whatever.
+
+06:46.470 --> 06:47.210
+OK.
+
+06:47.430 --> 06:50.120
+Then the transform is going to be minus 100.
+
+06:50.130 --> 06:51.870
+Just going to copy and paste.
+
+06:51.870 --> 06:53.980
+And now we need to set up the slide.
+
+06:54.260 --> 06:54.860
+Active.
+
+06:54.870 --> 07:04.290
+So it's going to be that slide enter Dorsch active and then just give the prompts could to just keep
+
+07:04.320 --> 07:07.620
+everything in the same format.
+
+07:07.620 --> 07:11.730
+If I do this right here it's still going to work.
+
+07:11.850 --> 07:12.060
+So.
+
+07:12.080 --> 07:12.600
+OK.
+
+07:13.020 --> 07:15.020
+So what do we need to do right now.
+
+07:15.030 --> 07:19.580
+We need to set up a passage of one so it can be admissible.
+
+07:19.830 --> 07:25.140
+We need to set a decision on just going to copy and paste and in real life you're going to do this as
+
+07:25.140 --> 07:26.020
+well.
+
+07:26.100 --> 07:31.130
+And now we need to do the tranced to translate everything so we can hide everything.
+
+07:31.650 --> 07:32.080
+OK.
+
+07:32.930 --> 07:33.720
+Breguet.
+
+07:34.170 --> 07:39.580
+So if I just read the page add an element it's going to work just fine.
+
+07:41.270 --> 07:44.920
+OK so now we need to set up the leave so.
+
+07:44.970 --> 07:46.430
+Same idea.
+
+07:46.850 --> 07:47.760
+I'm going to go right here.
+
+07:47.760 --> 07:50.380
+The bottom is going to be slide.
+
+07:50.660 --> 07:51.120
+Leave
+
+07:54.780 --> 07:55.250
+OK.
+
+07:55.510 --> 07:58.720
+So this slide leave is going to have an Pasotti of one
+
+08:01.950 --> 08:04.970
+one and then you can use translate.
+
+08:04.970 --> 08:08.120
+Zero percent zero zero zero percent.
+
+08:08.260 --> 08:09.110
+That's good.
+
+08:09.560 --> 08:21.420
+Now again that slide is going to be leave and then dot slide leave active.
+
+08:22.260 --> 08:24.190
+And this one again real easy.
+
+08:24.230 --> 08:29.170
+It's going to be a passerby 0.1 begin to use the transition.
+
+08:29.810 --> 08:35.470
+And then we're going to use a translator of mine is 100 percent.
+
+08:35.600 --> 08:37.880
+We make this better.
+
+08:38.320 --> 08:39.130
+That's good.
+
+08:39.500 --> 08:44.050
+So let's Rouleau the page and see if this is working in the abdomen.
+
+08:44.040 --> 08:44.420
+All right.
+
+08:44.440 --> 08:46.700
+And worse if I remove it.
+
+08:46.760 --> 08:48.590
+All right let's get.
+
+08:48.590 --> 08:56.870
+So all of this information of this this app I made right here just to show you this is going to be available
+
+08:57.230 --> 09:02.660
+on the number for transitions inside to get HAVE going to give you the link so you can download that.
+
+09:02.810 --> 09:09.200
+If you don't know how to use get have just let me know and then tell me how to how to download and install
+
+09:09.200 --> 09:14.550
+everything for get have if not you can go get have and download a zip file for this.
+
+09:14.890 --> 09:15.870
+OK that's fine.
+
+09:15.950 --> 09:20.140
+But this is enough for you with the transition section.
+
+09:20.180 --> 09:21.600
+Let's go to the next topic.

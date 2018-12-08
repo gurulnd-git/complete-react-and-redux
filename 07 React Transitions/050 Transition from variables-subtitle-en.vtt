@@ -1,0 +1,289 @@
+WEBVTT
+
+00:00.180 --> 00:04.640
+Till we have our basic animation and we get into a failed animation.
+
+00:04.650 --> 00:05.880
+It's always the same idea.
+
+00:05.880 --> 00:10.830
+We get into pretty much the same thing but with the fading element if she's going to fade in and then
+
+00:10.830 --> 00:16.150
+fade out if the element goes out the same idea.
+
+00:16.230 --> 00:16.890
+Go to fate.
+
+00:16.890 --> 00:23.100
+I'm going to go right here into the fade and the problem is that if we are if we go to the component
+
+00:23.100 --> 00:30.300
+for example right here in the basic Will this is a lot of code and imagining that you have you can have
+
+00:30.300 --> 00:33.090
+a lot of elements with Transition Group.
+
+00:33.090 --> 00:35.940
+And while this could get really really messy.
+
+00:35.940 --> 00:40.440
+So I'm going to show you a different way a different approach for the same thing.
+
+00:40.590 --> 00:41.990
+I'm going to go right here and top.
+
+00:42.030 --> 00:45.380
+And first we need to import the transfers.
+
+00:45.420 --> 00:51.380
+So I'm going to just copy of this CSSA from the scoop just paste it right here.
+
+00:51.600 --> 00:55.070
+Then we need to wrap everything inside the transition's group.
+
+00:55.200 --> 00:55.500
+OK.
+
+00:55.530 --> 01:04.680
+So I'm going to go right here and wrap that element with the A C Ss transition strip right OPEN CLOSE.
+
+01:04.740 --> 01:10.380
+Now the next thing is going to be to add the attributes right here.
+
+01:10.480 --> 01:12.020
+And we can do this in a different way.
+
+01:12.060 --> 01:15.450
+I'm going to go right here in the top and we're going to create a viable.
+
+01:15.480 --> 01:23.660
+It's going to be Konst and this is going to be called Faid animation just something that makes sense.
+
+01:24.030 --> 01:31.350
+And this is going to be an object inside of instead of fitting this attributes right here in the transmission's
+
+01:31.350 --> 01:38.160
+group what we can do we can make use of this object and feed that element with the object.
+
+01:38.160 --> 01:42.530
+So the first thing we need for the to start logistician is going to be the name.
+
+01:42.540 --> 01:44.520
+So this one is going to be called Fate.
+
+01:44.710 --> 01:52.260
+It's going to go and create transition and then just name the transition name is going to be fate.
+
+01:52.290 --> 01:55.680
+And remember the object we don't do this right here.
+
+01:55.890 --> 01:56.940
+It's going to be fate.
+
+01:57.210 --> 01:57.760
+OK.
+
+01:57.980 --> 01:58.890
+Then a coma.
+
+01:59.040 --> 02:00.950
+And OK what's the next one.
+
+02:00.990 --> 02:05.200
+I want you to do the appear transition.
+
+02:05.280 --> 02:05.780
+OK.
+
+02:05.880 --> 02:11.010
+So we do transition and then appear right.
+
+02:11.040 --> 02:14.560
+This one's going to be an object too and it's going to be true.
+
+02:14.580 --> 02:17.760
+All right then we need the transition appear.
+
+02:17.780 --> 02:18.390
+Time out.
+
+02:18.400 --> 02:20.320
+So I'm going to do a timeout.
+
+02:20.460 --> 02:21.060
+OK.
+
+02:21.320 --> 02:29.140
+And this one is going to be 500 milliseconds just like before then we need to set the enter transition.
+
+02:29.310 --> 02:35.240
+So again it's just going to be transition and then enter this again it's going to be true.
+
+02:35.760 --> 02:36.770
+And then a coma.
+
+02:36.810 --> 02:39.230
+And we need to set the time out for this one.
+
+02:39.270 --> 02:41.140
+So we just do the same thing.
+
+02:41.160 --> 02:45.660
+It's going to be time out and there's one again five hundred.
+
+02:45.690 --> 02:48.540
+OK the next one is going to be the transitional leave.
+
+02:48.540 --> 02:54.080
+So was going to say transition and leave and it's going to be again just true.
+
+02:54.120 --> 03:01.800
+And then again same idea with the transition time out of the 500 milliseconds.
+
+03:01.830 --> 03:02.560
+That's good.
+
+03:02.880 --> 03:09.560
+So now instead of just doing this inside the element when I can I can do I can just copy this viable
+
+03:09.760 --> 03:13.310
+going to go right here at the bottom and I'm going to do the following.
+
+03:13.320 --> 03:18.710
+I'm going to just add curly braces right here and I can paste that name.
+
+03:19.230 --> 03:25.950
+And it's not going to work you know because we are pretty much passing the whole object.
+
+03:26.040 --> 03:31.310
+So what we need to do we can we can we can make use of destructuring right here.
+
+03:31.770 --> 03:33.870
+It's actually not that torturing is going to be at rest.
+
+03:33.870 --> 03:35.690
+Operator is something.
+
+03:35.720 --> 03:39.580
+It's in some some a little bit of ESX magic.
+
+03:39.780 --> 03:46.920
+So I'm going to do dot dot dot and then just save it and that is going to work.
+
+03:46.920 --> 03:54.420
+Now Dot dot dot it's kind of a it's entering this is grabbing this object and with a dot dot dot it's
+
+03:54.420 --> 03:59.600
+entering to the contents of this one and for each one is creating an attribute.
+
+03:59.820 --> 04:03.470
+That's pretty much what's happening in a nutshell.
+
+04:03.600 --> 04:06.090
+So this is when it's really really useful.
+
+04:06.090 --> 04:13.840
+Now we need to do the set up on the DSS are going to go to the SS and begin to start setting this up.
+
+04:14.070 --> 04:20.730
+So the first thing we need to do is to set up the transition appear for this elements for the fading.
+
+04:20.850 --> 04:22.340
+So I'm going to say dots.
+
+04:22.950 --> 04:28.080
+We use the fade name and it's going to be Faid appear to fade appear.
+
+04:28.080 --> 04:34.220
+It's going to be opacity and just Zero Dark One just like we did before.
+
+04:34.560 --> 04:43.830
+Then the next stage is going to be Faid dash appear dot and then fade dash appear active.
+
+04:44.660 --> 04:45.270
+OK.
+
+04:45.360 --> 04:53.020
+This one is going to have an a passive one and the transmission is going to be capacity.
+
+04:53.910 --> 04:58.590
+And then just died five seconds is in.
+
+04:58.760 --> 04:59.230
+Right.
+
+04:59.290 --> 04:59.660
+Good.
+
+05:00.590 --> 05:05.610
+OK so let's review the page all right that's working.
+
+05:05.840 --> 05:09.730
+So now we need to do the same thing for the for the enter transition.
+
+05:09.830 --> 05:19.090
+So again Faid dosh enter and the entering is going to be a city of 0.1 just to have something.
+
+05:19.280 --> 05:26.840
+And then again Faid enter and it's going to be added the add the active it's going to be Faid then enter
+
+05:27.170 --> 05:29.260
+and then active.
+
+05:29.800 --> 05:35.270
+So that one is going to have to pass city of one and we're going to do the translation for this one
+
+05:35.270 --> 05:35.690
+as well.
+
+05:35.690 --> 05:42.950
+So I'm just going to copy of this and instead of doing five I'm just going to do 500 milliseconds just
+
+05:43.350 --> 05:47.420
+it's actually the same thing 0.5 seconds.
+
+05:47.420 --> 05:50.530
+So it's the same idea going to just below the page.
+
+05:50.840 --> 05:53.870
+And if I add an element right we're getting that.
+
+05:54.080 --> 06:03.200
+Let's get so let's do the remove transition and say Faid instead of enter it's going to be leave and
+
+06:03.200 --> 06:08.240
+the leave is going to have an impasse city of one just going to copy and paste and then begin to have
+
+06:08.240 --> 06:17.270
+the Faid dosh and then leave dot and then fade leave Dasch active.
+
+06:17.580 --> 06:17.850
+Right.
+
+06:17.900 --> 06:24.850
+Just like before this one is going to have an apache of zero that one and then the transition again
+
+06:24.870 --> 06:28.630
+be we just use the same thing just to save time.
+
+06:29.130 --> 06:33.880
+OK so if I reload the page I add a moment.
+
+06:33.970 --> 06:34.810
+We are getting it.
+
+06:34.920 --> 06:40.980
+And if I remove it right that's working just nicely right.
+
+06:40.990 --> 06:44.670
+So again just the same idea in a different way.
+
+06:44.980 --> 06:46.510
+So let's go to the next section.
+
+06:46.720 --> 06:48.060
+And I'm going to show you something else.
+
+06:48.100 --> 06:50.020
+And we're going to do the slide transition.

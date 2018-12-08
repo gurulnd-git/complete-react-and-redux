@@ -1,0 +1,364 @@
+WEBVTT
+
+00:00.960 --> 00:01.470
+Right.
+
+00:01.470 --> 00:05.650
+So the first set up we need to do is going to be the name of the session.
+
+00:05.820 --> 00:09.880
+I'm going to use the word basic Just like right here on the route.
+
+00:09.900 --> 00:12.230
+We have basic right here so I'm going to use that one.
+
+00:12.270 --> 00:13.370
+OK just for a simple.
+
+00:13.380 --> 00:15.280
+Just to tell you something simple.
+
+00:15.480 --> 00:18.260
+So to give it a name to a success.
+
+00:18.300 --> 00:24.770
+Yes as a transitional group we need to use transition and that's the first word we need to use transition.
+
+00:25.050 --> 00:27.290
+And then we need to use the name keyboard.
+
+00:27.310 --> 00:29.080
+It's going to be transitioning.
+
+00:29.340 --> 00:31.390
+And this is going to be equal to a string.
+
+00:31.530 --> 00:34.400
+It's just like using an ID or a class.
+
+00:34.410 --> 00:37.960
+So since all I want to use basic I'm going to put basic.
+
+00:38.090 --> 00:38.770
+All right.
+
+00:39.180 --> 00:46.510
+So now what we want to do we want to activate an animation whenever a new element is added on this list.
+
+00:46.530 --> 00:50.630
+I'm going to click an add element is going to add an element but we don't want that.
+
+00:50.640 --> 00:52.280
+We want to animate that.
+
+00:52.570 --> 00:52.910
+OK.
+
+00:52.950 --> 00:58.790
+So the first thing we need to do and we need to know actually is that react.
+
+00:58.890 --> 01:00.070
+It can work.
+
+01:00.090 --> 01:04.560
+Works in steps just like we have the state of the lifecycle.
+
+01:04.690 --> 01:06.740
+Well this is the same idea.
+
+01:06.900 --> 01:14.420
+The first set up is the name then whenever an item is added on the list our list is going to be transition
+
+01:14.490 --> 01:14.980
+enter.
+
+01:15.150 --> 01:17.580
+That is the idea we need to use.
+
+01:17.580 --> 01:18.780
+So I'm going to go right here.
+
+01:18.990 --> 01:26.230
+And for the transition enter we need to do we need to create two settings we need to add two settings.
+
+01:26.250 --> 01:32.040
+First one is going to be transition transition transition.
+
+01:32.040 --> 01:34.420
+There you go and it's going to be enter.
+
+01:34.650 --> 01:35.810
+That's the first keyword.
+
+01:35.820 --> 01:42.510
+Whenever an element is entering on the screen we need to do the setup now right here instead of using
+
+01:42.510 --> 01:43.060
+strings.
+
+01:43.200 --> 01:46.360
+We're going to use curly braces and what we do right here.
+
+01:46.380 --> 01:52.010
+We need to tell re-act that we want to use this transition Antar set up.
+
+01:52.080 --> 01:54.230
+So instead of Fallston going to say true.
+
+01:54.690 --> 02:00.960
+So re-act is going to know that we want to do a transition enter and it's going to activate this feature.
+
+02:00.960 --> 02:04.850
+The second thing is that we need to set up is going to be a transition timeout.
+
+02:04.890 --> 02:11.500
+So I'm going to say transition and then it's going to be enter again.
+
+02:11.580 --> 02:17.180
+So we can make reference to the same ID but this time I'm going to add timeout.
+
+02:18.030 --> 02:18.670
+All right.
+
+02:18.870 --> 02:23.340
+So the time out we're going to need to wrap everything in Currall basis and the time out.
+
+02:23.340 --> 02:28.730
+It's going to be the time that it's going to take react to use this transition answer.
+
+02:28.980 --> 02:29.980
+So what we want to do.
+
+02:30.000 --> 02:34.350
+I'm going to put just 500 milliseconds just to do something simple.
+
+02:34.530 --> 02:44.670
+OK just let me open the right here I'm going to just reload the application and that's fine.
+
+02:44.670 --> 02:48.400
+This is an error message but fix it in a few seconds.
+
+02:48.510 --> 02:51.890
+I'm going to just open the browser just a little bit wider.
+
+02:52.020 --> 02:57.800
+I'm going to go to elements now I'm going to inspect right here just the gentleman's.
+
+02:57.870 --> 02:59.610
+And we're going to have just two items.
+
+02:59.720 --> 03:00.890
+The one with the 99.
+
+03:00.900 --> 03:04.770
+And then the 25 and I'm going to do at ELINT is going to add an element.
+
+03:05.040 --> 03:09.680
+And can you see that it's kind of a flashing a class right here.
+
+03:10.710 --> 03:11.120
+All right.
+
+03:11.170 --> 03:12.600
+That is pretty much it.
+
+03:12.650 --> 03:16.770
+Whenever we add an element we act is going to add these div..
+
+03:17.000 --> 03:18.730
+And it's going to add a class to it.
+
+03:18.830 --> 03:25.090
+And after 500 milliseconds is going to remove the class so we can create animations with classes.
+
+03:25.160 --> 03:27.650
+I'm going to put five thousand.
+
+03:28.160 --> 03:32.350
+So we can see that that ID right here go right here.
+
+03:32.360 --> 03:38.000
+I'm going to click add elements and it's going to give us a class and I get the it's going to be basic
+
+03:38.150 --> 03:42.790
+Dorsch Antar basic Dasch enter active again let's do it again.
+
+03:43.190 --> 03:45.080
+So this is what we get.
+
+03:45.080 --> 03:51.930
+So now with this what we can do we can make we can go to see assess and make make a reference to this.
+
+03:52.310 --> 03:53.570
+OK let's let's do that.
+
+03:53.570 --> 03:54.570
+Let me just show you.
+
+03:54.590 --> 03:58.160
+I know can be confusing but don't worry you're going to get it.
+
+03:58.180 --> 04:04.240
+So OK I'm going to go to the C Ss and right here I have just the tax for here the tax for everything.
+
+04:04.310 --> 04:05.460
+So I'm going to.
+
+04:05.510 --> 04:12.120
+First we need to set up the main the main class OK the of the default class.
+
+04:12.380 --> 04:18.590
+So whenever the element entered the screen I went for that for the Alman to be in a kind of a darker
+
+04:18.650 --> 04:19.280
+blue.
+
+04:19.480 --> 04:20.060
+So OK.
+
+04:20.150 --> 04:23.230
+So first we have the class that is going to be basic.
+
+04:23.510 --> 04:25.870
+OK that was the name of the transition.
+
+04:26.030 --> 04:32.420
+Since we're using an enter transition I'm going to do dash and re-act is going to just add this dash
+
+04:32.480 --> 04:36.130
+enter then the other elements check it right here.
+
+04:36.360 --> 04:42.170
+Going can have basic dash enter that it's that it's going to be added by react.
+
+04:42.170 --> 04:48.840
+So since Is this the basic enter is going to be the main class to first class whenever an element is
+
+04:48.860 --> 04:49.550
+entering.
+
+04:49.620 --> 04:56.600
+I'm just going to set a default color size can be background and I'm going to add a hash tag.
+
+04:56.660 --> 05:03.780
+And then 3 F 5 won b 5 just something like that.
+
+05:03.920 --> 05:08.490
+Just like this is going to be just a darker blue.
+
+05:09.070 --> 05:09.360
+OK.
+
+05:09.380 --> 05:10.750
+Let's reload the application.
+
+05:10.760 --> 05:12.200
+Just going to bring this down.
+
+05:12.420 --> 05:16.880
+I'm going to add element and it's going to be with the darker blue.
+
+05:17.480 --> 05:21.290
+Now after five seconds react is going to remove the class.
+
+05:21.350 --> 05:22.450
+Let's do it again.
+
+05:23.900 --> 05:29.570
+It's going to take five seconds and it's going to remove the class and this element is going to go back
+
+05:29.570 --> 05:31.400
+to the original state.
+
+05:31.400 --> 05:38.840
+Now what we want to do we want to react to it too instead of just doing this to animate that transition
+
+05:38.840 --> 05:42.740
+between cars since we have the interactive we can use that.
+
+05:42.860 --> 05:48.500
+So I'm going to use basic answer right here and we need to set up the animation.
+
+05:48.740 --> 05:55.440
+So I'm going to say basic answer Dodd and I to make reference to that basic Antar active we have right
+
+05:55.440 --> 06:01.850
+here can have basic Antar active so we can give some styling to that.
+
+06:02.040 --> 06:09.750
+I'm going to say basic dosh answer dosh active OK.
+
+06:09.810 --> 06:20.210
+And I want to be for the background to be of the same one than before it's going to be 2 1 9 6 EF 3.
+
+06:21.120 --> 06:22.790
+That is the same car than this.
+
+06:22.800 --> 06:24.260
+It's just the default color.
+
+06:24.360 --> 06:26.300
+And since we want to animate everything.
+
+06:26.460 --> 06:31.620
+I'm going to say transition and we're going to use CSSA musicians and I'm just going to animate all
+
+06:32.310 --> 06:36.930
+I'm going to put 500 milliseconds and I get to say it's in
+
+06:40.010 --> 06:50.090
+there we go over the page and this is going to take this transition is going to take 500 milliseconds.
+
+06:50.160 --> 06:54.900
+The thing is that right here inside basic We have five thousand.
+
+06:54.900 --> 06:58.750
+So we always need to make sure that we have the same time out.
+
+06:58.880 --> 07:04.280
+OK so I'm going to do 500 if now you're going to it's going to work but you're going to have some errors.
+
+07:04.890 --> 07:08.860
+So I'm going to add elements and again I just mess that up.
+
+07:08.860 --> 07:09.940
+Can it remove this.
+
+07:10.060 --> 07:11.280
+Let's do it again.
+
+07:11.720 --> 07:12.100
+OK.
+
+07:12.150 --> 07:13.650
+That's working.
+
+07:13.800 --> 07:14.660
+It's giving us.
+
+07:14.670 --> 07:17.190
+It's entering with the with the with a different color.
+
+07:17.400 --> 07:24.590
+And then just removing the color and doing the transition when it's going back to the original color.
+
+07:24.600 --> 07:26.610
+All right let's get.
+
+07:26.610 --> 07:30.780
+So we have more options with CSSA transition group.
+
+07:30.780 --> 07:37.950
+We have right now we just checked the transmission enter its back whenever an element it's entering
+
+07:37.980 --> 07:38.790
+on screen.
+
+07:38.940 --> 07:42.780
+We have more for example whenever the an annulment.
+
+07:42.960 --> 07:46.480
+It's leaving the component we have that option too.
+
+07:46.500 --> 07:47.910
+We're going to do it on the next section.
