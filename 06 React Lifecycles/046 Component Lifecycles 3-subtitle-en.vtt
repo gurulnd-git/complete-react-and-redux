@@ -1,0 +1,169 @@
+WEBVTT
+
+00:00.180 --> 00:06.590
+OK so the next lifecycle is going to be components will receive prompts.
+
+00:06.740 --> 00:12.570
+And well the thing is that we already know how this one's work so we can assume what's going to happen
+
+00:12.570 --> 00:16.310
+when we do component will receive prompts.
+
+00:16.350 --> 00:17.460
+So I'm going to do it right here.
+
+00:17.460 --> 00:26.160
+It's going to be components and then we'll receive props props.
+
+00:26.340 --> 00:27.410
+Right.
+
+00:27.540 --> 00:32.780
+So this one is going to be called whenever this component it's getting you props.
+
+00:32.870 --> 00:35.180
+So I'm going to say console log.
+
+00:35.340 --> 00:43.370
+And then just before receiving prompts some something real simple before receiving prompts.
+
+00:43.410 --> 00:43.970
+There again
+
+00:47.220 --> 00:48.420
+let's get whatever.
+
+00:48.430 --> 00:52.880
+So the thing is and this is why it's going to fail.
+
+00:53.080 --> 01:01.120
+If I go to lifecycle and I'm going to go right here manually so I can show you nothing is going to happen
+
+01:01.210 --> 01:06.310
+before we get the before component gets created and after a component it's mounted.
+
+01:06.520 --> 01:14.800
+So whenever the application loads this one will not be called because this one will trigger after the
+
+01:14.860 --> 01:17.760
+component receives new prompts.
+
+01:17.860 --> 01:24.800
+It's not called when the component starts with the component starts it gets some props but it's not
+
+01:24.830 --> 01:25.790
+well received.
+
+01:25.810 --> 01:27.690
+OK it's not going to trigger this one.
+
+01:27.730 --> 01:35.140
+If I click on live again the we get to receive some prompts from re-act router OK.
+
+01:35.170 --> 01:39.940
+But the components it's already on the screen is not going to just create the component again.
+
+01:39.940 --> 01:41.910
+We already have it right here.
+
+01:41.980 --> 01:51.180
+So if I click life we get before receiving prompts so the prompts are from the Riak router again.
+
+01:51.220 --> 01:53.200
+So we are getting new props.
+
+01:53.240 --> 01:56.660
+Either they are the same props but we are getting props again.
+
+01:56.680 --> 02:01.090
+So that's why it's calling this component will receive prompts.
+
+02:01.090 --> 02:02.700
+All right so we have one more.
+
+02:02.890 --> 02:08.880
+We have the components will unmount and we will maybe use this one in the future.
+
+02:08.880 --> 02:16.060
+We're going to go right here at the bottom and it's going to be components of components.
+
+02:16.570 --> 02:20.480
+And then just will and unmount.
+
+02:21.230 --> 02:21.750
+OK.
+
+02:21.850 --> 02:22.640
+Let's get.
+
+02:22.880 --> 02:29.260
+So this one again it's pretty obvious whenever we just destroy this component we just go to a different
+
+02:29.260 --> 02:30.310
+component.
+
+02:30.310 --> 02:36.890
+Whenever we unmount reacts unmount the the the this view.
+
+02:36.910 --> 02:42.770
+This component is going to trigger a function and it's going to be this one component will and mount
+
+02:43.390 --> 02:45.780
+It's a console log.
+
+02:46.090 --> 02:51.250
+And then just announce something just something like that.
+
+02:51.580 --> 02:51.850
+OK.
+
+02:51.880 --> 02:58.460
+If I'm going to be inside lifecycle if I go to profile you get unmounted and mount.
+
+02:58.840 --> 03:06.370
+So again before everything gets destroyed with this component it's going to call to the final lifecycle
+
+03:06.640 --> 03:12.910
+it's going to be this one and this one it's kind of a useful let's say that maybe in the future you
+
+03:12.910 --> 03:19.540
+will need to clear some state or you will need to do something before going to a different view.
+
+03:19.570 --> 03:23.430
+You need to do something on the state or something on a global variable.
+
+03:23.520 --> 03:28.000
+Well you can do it with the component will unmount before destroying the component.
+
+03:28.030 --> 03:34.530
+You just do whatever you want to do inside here it is going to go to the next component without conflict.
+
+03:34.780 --> 03:38.350
+Let's get that one what this one is really really useful.
+
+03:38.470 --> 03:38.980
+So that's good.
+
+03:38.980 --> 03:43.390
+This is the components of lifecycle the re-act lifecycle.
+
+03:43.390 --> 03:44.850
+It's really really useful.
+
+03:44.890 --> 03:47.450
+You might be thinking why are we going to use this.
+
+03:47.530 --> 03:54.370
+Well we're going to use maybe not all of this life cycles but we're going to use pretty much the component
+
+03:54.370 --> 03:57.420
+will mount the mount and a couple more.
+
+03:57.420 --> 04:02.530
+But that said OK we just use it for some particular things.
+
+04:02.860 --> 04:03.110
+OK.
+
+04:03.130 --> 04:05.650
+Let's go to the next section.

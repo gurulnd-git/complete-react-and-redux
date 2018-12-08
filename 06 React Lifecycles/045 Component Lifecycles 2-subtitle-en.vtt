@@ -1,0 +1,337 @@
+WEBVTT
+
+00:00.150 --> 00:08.100
+OK so we have access to the lifecycle of react when creating a component we have the before the actual
+
+00:08.100 --> 00:11.950
+render and then the after component it's rendered.
+
+00:12.090 --> 00:12.760
+Right.
+
+00:12.810 --> 00:13.460
+That's good.
+
+00:13.590 --> 00:17.740
+So we also have access to the Whenever we act.
+
+00:17.760 --> 00:19.250
+It's updating a state.
+
+00:19.370 --> 00:21.020
+It's pretty much the same idea.
+
+00:21.120 --> 00:23.690
+Right now we have the component will mount.
+
+00:23.910 --> 00:26.860
+So with the update it's going to be just real simple.
+
+00:26.910 --> 00:28.010
+It's going to be components.
+
+00:28.020 --> 00:29.770
+We'll update we're going to do that.
+
+00:30.000 --> 00:32.010
+So it's going to be component.
+
+00:32.700 --> 00:36.990
+And then just will everything come case and then update.
+
+00:36.990 --> 00:37.660
+Right.
+
+00:37.680 --> 00:43.710
+So when a call component would update is going to do console log before it gets updated.
+
+00:43.710 --> 00:47.490
+So this function is going to trigger before updating a state.
+
+00:47.550 --> 00:54.040
+So I'm going to say Before Update right since we have the before.
+
+00:54.120 --> 00:56.000
+We also have the after.
+
+00:56.110 --> 01:03.720
+So is going to be components components and then that update just follows the same rules that components
+
+01:03.730 --> 01:04.540
+did mount.
+
+01:04.780 --> 01:06.390
+So it's going to be update.
+
+01:06.490 --> 01:07.830
+Right.
+
+01:07.860 --> 01:11.660
+And in SSB-B update I'm to I'm going to do a console log.
+
+01:12.060 --> 01:13.810
+And then after update.
+
+01:13.870 --> 01:14.230
+Right.
+
+01:14.280 --> 01:17.460
+Makes sense right.
+
+01:17.490 --> 01:19.940
+So now I need something to change the state.
+
+01:19.950 --> 01:22.440
+I'm going to add a button right here.
+
+01:22.600 --> 01:24.940
+Get it at something or do something simple.
+
+01:24.990 --> 01:29.250
+It's going to say Dev and Dave is going to have a click listener.
+
+01:29.310 --> 01:32.400
+It's going to be unclick just like we did before.
+
+01:32.700 --> 01:37.680
+And this is going to be a fad or a function and it's going to be it's going to update the state.
+
+01:37.680 --> 01:39.200
+So we're going to do this.
+
+01:39.240 --> 01:45.730
+That said state and city state we're going to change the title just something simple.
+
+01:45.730 --> 01:51.970
+We're going to say tidal and this is going to be called to something else that's fine.
+
+01:51.990 --> 01:56.760
+Something else right might just make it everything in one time.
+
+01:57.100 --> 01:57.410
+OK.
+
+01:57.420 --> 01:58.220
+Let's get.
+
+01:58.230 --> 02:00.130
+So if a reload the page.
+
+02:00.410 --> 02:04.640
+Let me just put something click to change right.
+
+02:05.070 --> 02:12.110
+So if I clicked this div is going to update the state it's going to change the title for something else.
+
+02:12.180 --> 02:16.160
+It's going to show it right here on the screen because we are using the state.
+
+02:16.170 --> 02:20.120
+And then it's going to go and trigger that before updating.
+
+02:20.120 --> 02:25.710
+And once it's updated it's going to just trigger the console log after update.
+
+02:25.830 --> 02:32.120
+OK so I'm going to go look at something else and you get before update and then just after update.
+
+02:32.280 --> 02:36.910
+So again whenever we update state we have the access of doing something else.
+
+02:36.930 --> 02:41.610
+Let's say that we have an application where the user needs to click on something and then you just need
+
+02:41.610 --> 02:47.660
+to check some data and do after something after the state gets updated.
+
+02:47.660 --> 02:49.890
+So this is going to useful.
+
+02:49.950 --> 02:53.590
+We have one more and this one is not that simple.
+
+02:53.640 --> 03:01.570
+So we have one that says shoot skin it starts like that is going to be shrewd.
+
+03:02.350 --> 03:11.670
+There you go should and it's going to be component update shit component update just like that.
+
+03:11.670 --> 03:15.900
+But this one is it's something else we're going to do something else with this one.
+
+03:15.930 --> 03:17.870
+This should component update.
+
+03:17.940 --> 03:19.930
+It takes two arguments.
+
+03:20.010 --> 03:27.730
+It's going to be the next prompts and then the second argument is going to be the next state.
+
+03:27.810 --> 03:33.860
+So this arguments are going to be the next property is the next data that are sending.
+
+03:33.990 --> 03:37.050
+And the next state of course makes sense.
+
+03:37.050 --> 03:42.000
+So this one this function it's always going to return false.
+
+03:42.090 --> 03:43.570
+So I'm going to say return.
+
+03:43.590 --> 03:45.240
+I'm sorry it's going to always return true.
+
+03:45.300 --> 03:45.890
+True.
+
+03:46.200 --> 03:48.590
+If I say return false it's not going to update.
+
+03:48.600 --> 03:54.020
+We can force the component not to update with the shift component update.
+
+03:54.060 --> 03:59.360
+And of course we can do more I'm going to put falls right here just to prove this.
+
+03:59.430 --> 04:02.100
+Going to click change and nothing happens.
+
+04:02.490 --> 04:09.800
+So since this one is returning false we are just preventing for the for the component to update.
+
+04:09.810 --> 04:17.850
+So if I just return true and redo the application I'm going to click change and it's going to pass.
+
+04:17.850 --> 04:21.020
+Now let me just comment this again.
+
+04:21.030 --> 04:21.820
+Go right here.
+
+04:21.820 --> 04:23.280
+I'm going to do.
+
+04:23.450 --> 04:25.430
+Lock and again a console.
+
+04:25.440 --> 04:27.690
+That does not state that title.
+
+04:27.910 --> 04:28.150
+OK.
+
+04:28.220 --> 04:34.060
+This dot state DOT DOT title right.
+
+04:34.320 --> 04:37.080
+So this is going to cancel the title The actual title.
+
+04:37.100 --> 04:38.590
+Right click it.
+
+04:39.040 --> 04:43.510
+We're going to get an R of course and it's going to say pulp fiction in us.
+
+04:43.610 --> 04:43.820
+OK.
+
+04:43.830 --> 04:47.380
+So we get the actual title before updating.
+
+04:47.600 --> 04:48.670
+OK let's get.
+
+04:48.810 --> 04:50.370
+Now if I say console log.
+
+04:50.640 --> 04:56.260
+And the next state the title is going to get something else console log.
+
+04:56.460 --> 04:58.530
+Going to be next state.
+
+04:58.560 --> 05:03.210
+Going to just copy that title.
+
+05:03.740 --> 05:09.240
+You never load the page going to click it get an error but we get something else.
+
+05:09.420 --> 05:16.920
+So right here we have access to the current the current state and even though we are not updating this
+
+05:16.920 --> 05:19.830
+one is catching the next update.
+
+05:19.860 --> 05:23.570
+For example we're getting something else on the next state.
+
+05:23.880 --> 05:27.960
+So with this one what we can do we can evaluate things.
+
+05:27.960 --> 05:34.450
+I mean the current state and the next state and decide if you want to update or not.
+
+05:34.650 --> 05:38.610
+Let's say I have a just an if statement we're going to do something simple.
+
+05:38.640 --> 05:41.760
+Going to say if and then just nothing.
+
+05:41.760 --> 05:44.390
+OK I'm going to evaluate something right here.
+
+05:44.460 --> 05:52.820
+I'm going to say if next state that title because we are accessing the title is going to be trivially
+
+05:52.830 --> 05:58.070
+equal to something else we can return false
+
+06:01.660 --> 06:06.690
+OK if not if this is not true it's going to return true.
+
+06:06.740 --> 06:11.160
+It's going to pass.
+
+06:11.270 --> 06:12.070
+That's good.
+
+06:12.100 --> 06:13.800
+So I'm going to make a tiny change.
+
+06:13.810 --> 06:16.610
+I'm going to go right here instead of something else.
+
+06:16.660 --> 06:21.120
+It's going to be something else seen without the.
+
+06:21.260 --> 06:27.780
+And if I just clicked change is going to go because this one is passing a false and a.
+
+06:27.820 --> 06:29.020
+And it's not true.
+
+06:29.020 --> 06:30.510
+Of course there's no match.
+
+06:30.640 --> 06:31.790
+And it returns True.
+
+06:31.930 --> 06:38.200
+But if I just correct it and go else and I could change it's not passing.
+
+06:38.410 --> 06:45.520
+So right here we just can evaluate the current state and the next state or some dummy data and decide
+
+06:45.520 --> 06:49.110
+if you want to move forward in updating the state or not.
+
+06:49.300 --> 06:51.620
+So it's really really useful.
+
+06:51.810 --> 06:52.190
+OK.
+
+06:52.270 --> 06:55.440
+Let's go to the next section and finish with the lifecycle.

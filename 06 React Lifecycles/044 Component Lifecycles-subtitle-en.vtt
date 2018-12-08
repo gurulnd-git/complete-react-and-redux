@@ -1,0 +1,364 @@
+WEBVTT
+
+00:00.480 --> 00:07.170
+OK so now we're going to talk about component's life cycles whenever re-act starts the application and
+
+00:07.170 --> 00:13.810
+it starts building and the component or it's going to update or receive data or receive props or whatever.
+
+00:13.920 --> 00:17.320
+Reac re-act does everything insteps.
+
+00:17.550 --> 00:20.430
+So it's going to just follow a pattern.
+
+00:20.430 --> 00:25.530
+First is going to one is going to get the default state.
+
+00:25.530 --> 00:33.630
+So we're going to get the fault state first is going to do that is the first step then the second one
+
+00:33.840 --> 00:37.190
+is going to set initial state.
+
+00:37.530 --> 00:42.190
+Then the third task is going to be before the component gets created.
+
+00:42.210 --> 00:49.360
+So it's going to be before it gets created then it's going to render the IJA sex.
+
+00:49.470 --> 00:56.310
+So we can say render Jair Sex and the last thing it's going to do is to call to a method that is going
+
+00:56.310 --> 00:59.760
+to be just put for right here.
+
+00:59.790 --> 01:00.090
+OK.
+
+01:00.120 --> 01:05.110
+And the fifth position is going to be after a component it's mounted or created.
+
+01:05.140 --> 01:12.040
+So I'm going to say after a component is mounted right.
+
+01:12.120 --> 01:16.210
+So don't worry I can explain you right now with a practical example.
+
+01:16.230 --> 01:22.510
+So OK so first react is going to start to hold cation and have made a new entry.
+
+01:22.710 --> 01:25.320
+It's going to be call lifecycle.
+
+01:25.680 --> 01:28.180
+I've added it right here in the routes.
+
+01:28.320 --> 01:31.240
+So I ams inside lifecycle is give me an.
+
+01:31.260 --> 01:34.580
+Because this is not a valid component of course.
+
+01:34.590 --> 01:43.770
+So first I'm going to say import import re-act from react so we can use GSX begin to bring the component
+
+01:43.850 --> 01:45.540
+is going to be a class.
+
+01:46.170 --> 01:52.860
+And of course we know this and then it's going to be import from and then just react after a while.
+
+01:52.860 --> 01:55.540
+This is kind of a natural.
+
+01:55.530 --> 01:59.940
+So OK we're going to start our class and this class is going to be called lifecycle.
+
+01:59.940 --> 02:00.940
+It's going to be class.
+
+02:01.110 --> 02:08.630
+And then just life cycle and going to make everything just in lowercase.
+
+02:08.940 --> 02:10.500
+And this going to extends.
+
+02:10.590 --> 02:13.400
+And then just a component just like always.
+
+02:13.960 --> 02:19.880
+OK so now the first thing that is going to happen I'm just going to cut copy right here.
+
+02:19.980 --> 02:24.100
+The first thing that it's going to happen is going to get to default state.
+
+02:24.240 --> 02:30.390
+So whenever it gets the default state is going to do it from the constructor it's going to get the prompts.
+
+02:30.500 --> 02:33.640
+It's going to go to the probs and get a default state.
+
+02:33.660 --> 02:42.240
+If we have one of course and let me just make sure right here I'm going to say export default and lifecycle
+
+02:44.700 --> 02:45.130
+OK.
+
+02:45.160 --> 02:49.510
+So whenever we get the full state which is the first thing that it's going to do it's pretty much what
+
+02:49.510 --> 02:52.290
+we've been doing right now on the Prue's lectures.
+
+02:52.300 --> 02:59.340
+It's just grabbing the constructor bringing the prompts and then just calling the super That's it.
+
+02:59.350 --> 03:06.700
+This is the first step that re-act is going to do and it's just a lifecycle then it's going to set an
+
+03:06.700 --> 03:07.810
+initial state.
+
+03:07.810 --> 03:11.600
+And of course if you have a state it's going to set the initial state.
+
+03:11.620 --> 03:20.200
+We're going to do that does that state and it calls to something again it put some dummy data can say
+
+03:20.220 --> 03:21.330
+tidal.
+
+03:21.670 --> 03:29.430
+Pulp fiction fiction in Cinemax whatever.
+
+03:29.500 --> 03:31.200
+I'm just going to put something else.
+
+03:31.210 --> 03:37.920
+It's going to be the tie that the body of news and it's just some some dummy text.
+
+03:37.960 --> 03:38.330
+Right.
+
+03:38.410 --> 03:38.840
+Let's get.
+
+03:38.860 --> 03:39.740
+That's fine.
+
+03:40.240 --> 03:45.820
+So this is going to be the second the second rule that's going to set the initial state and this one
+
+03:45.850 --> 03:51.400
+it's interesting before it gets created now before it's rendering everything.
+
+03:51.420 --> 03:57.020
+And before it's showing something on the screen is going to do something else.
+
+03:57.310 --> 04:04.150
+So this is going to be called component will mountains and this is something that you're going to hear
+
+04:04.180 --> 04:04.840
+a lot.
+
+04:04.960 --> 04:13.510
+It's going to be component and then just will everything is in camel case and mount and this is going
+
+04:13.510 --> 04:16.650
+to be a fancy function just a just like render.
+
+04:16.740 --> 04:22.030
+So inside the compound will mounth is going to do something before everything it's rendered is going
+
+04:22.030 --> 04:23.470
+to trigger dysfunction.
+
+04:23.530 --> 04:30.850
+And if we put some code right here this code will be executed before rendering anything in on the screen.
+
+04:30.850 --> 04:37.360
+So I'm going to say I'm just going to do a console log and the console log is going to bits and just
+
+04:37.450 --> 04:47.880
+some dummy text is going to be before before component's gets created just like that.
+
+04:47.890 --> 04:48.640
+All right.
+
+04:48.970 --> 04:53.610
+So the four position the fourth step is going to be rendering the GSX.
+
+04:53.620 --> 04:55.910
+And we've been doing this already.
+
+04:55.930 --> 05:02.110
+We already did this is going to be render and inside the render just open and close and then we just
+
+05:02.110 --> 05:04.590
+return some GSX.
+
+05:04.860 --> 05:05.410
+OK.
+
+05:05.650 --> 05:11.860
+So I hear I'm just going to return something that we have on in the state just some dummy text.
+
+05:11.890 --> 05:13.010
+It's going to be d of.
+
+05:13.120 --> 05:20.560
+And then H-1 that's going to make it smaller 8 4 and it's going to be a con..
+
+05:20.670 --> 05:22.560
+I'm sorry we're going to show the title.
+
+05:22.570 --> 05:23.060
+So it's going to.
+
+05:23.080 --> 05:26.180
+Does that state the title.
+
+05:26.600 --> 05:27.030
+OK.
+
+05:27.520 --> 05:34.850
+So then we're going to show the body we're going to do a break and then just show the body.
+
+05:34.850 --> 05:35.160
+OK.
+
+05:35.200 --> 05:36.380
+So it's dev.
+
+05:36.940 --> 05:43.260
+And this idea of again just does that state DOT body.
+
+05:43.510 --> 05:45.470
+OK that's fine.
+
+05:45.470 --> 05:52.000
+So it's going to work if the application is going to give me the title and some dummy text.
+
+05:52.210 --> 05:54.860
+Let's get let them just remove the break.
+
+05:55.330 --> 05:55.700
+OK.
+
+05:55.810 --> 06:02.260
+So this is the fourth step the fourth lifecycle is going to be the render then just like before it gets
+
+06:02.260 --> 06:06.990
+created we have after a component it's mounted or it's created.
+
+06:07.270 --> 06:13.060
+And this one is instead of component will mount its component did mounted.
+
+06:13.180 --> 06:19.340
+So the names kind of make sense now component will mount and mount.
+
+06:19.600 --> 06:28.420
+So it's going to be again everything in Coulon case is component's dead mount and it's just a function
+
+06:28.450 --> 06:36.720
+just like the other one and this one I'm going to say just console comes along and becomes a lock.
+
+06:36.790 --> 06:43.840
+It's going to be I don't know whatever we can to put after a component it's mounted of course after
+
+06:44.110 --> 06:53.950
+our component is mounted right so the page reloads it's outputting the text and it's right here it's
+
+06:53.950 --> 06:56.300
+going to say before component gets created.
+
+06:56.490 --> 07:00.910
+It's going to output it before the component did mount again.
+
+07:01.000 --> 07:09.070
+So the class starts the Capones starts is going to do the constructor then set the initial state then
+
+07:09.190 --> 07:11.260
+trigger that component will mount.
+
+07:11.410 --> 07:16.840
+It's going to come to this function then it's going to render and then component did mount after everything
+
+07:16.840 --> 07:17.480
+is created.
+
+07:17.680 --> 07:23.540
+That's why we it's we that's why we are getting the consul log after the before.
+
+07:23.560 --> 07:33.520
+So if I just caught this and paste it before the decomposed will mount it is still showing the before
+
+07:33.610 --> 07:34.730
+and then the after.
+
+07:34.930 --> 07:38.240
+So this is not changeable this is always after the render.
+
+07:38.350 --> 07:41.300
+And this is always before the render.
+
+07:41.500 --> 07:45.900
+So I'll go back just give you a practical example.
+
+07:45.900 --> 07:51.040
+Let's say that we want to change the color of the 8:4.
+
+07:51.120 --> 07:54.480
+So if I go to the compound will mount going to go right here.
+
+07:54.620 --> 07:59.540
+I'm going to say document just select that from the dorm directly.
+
+07:59.550 --> 08:06.520
+We shouldn't do this but whatever course selector and then begin to select that age for tag.
+
+08:06.720 --> 08:07.240
+OK.
+
+08:07.330 --> 08:18.660
+Beginning to enter the style of style that color and equals and something that we can notice it's going
+
+08:18.660 --> 08:19.380
+to be red.
+
+08:19.560 --> 08:24.810
+So the application is going to reload and it's going to give us an error message it's going to say cannot
+
+08:24.810 --> 08:25.590
+read properly.
+
+08:25.590 --> 08:26.940
+Style of no.
+
+08:27.060 --> 08:32.000
+So we are trying to access an element that it's not on the dorm.
+
+08:32.280 --> 08:36.860
+And this is because we are calling it before the component gets created.
+
+08:36.870 --> 08:43.440
+So whenever we call this this information doesn't exist yet and this is just one of the beauties of
+
+08:43.980 --> 08:50.130
+every act we can call and do things before everything is rendered and after everything is rendered and
+
+08:50.130 --> 08:53.460
+ready on screen we can call this and use this.
+
+08:53.460 --> 09:00.520
+So if I do it at the end I'm going to do it on the component that mount is going to work for sure.
+
+09:00.550 --> 09:08.100
+I read the page is changing the title The color because this exists on time.
+
+09:08.440 --> 09:09.900
+OK that's fine.
+
+09:09.900 --> 09:14.370
+Let's go to the next lecture and talk about a little bit more about life cycles.
