@@ -1,0 +1,385 @@
+WEBVTT
+
+00:01.860 --> 00:03.830
+OK so let's keep going this.
+
+00:03.870 --> 00:05.350
+I'm sorry I had to stop it.
+
+00:05.440 --> 00:10.500
+The video went along and I think my neighbor was having a fight outside my door.
+
+00:10.710 --> 00:13.410
+And I think he has a drinking problem sorry for that.
+
+00:13.410 --> 00:15.330
+Don't tell anybody.
+
+00:15.330 --> 00:17.570
+So OK let's keep going with this.
+
+00:17.750 --> 00:23.010
+Are going to have a link and right here we need to kind of set the route for this.
+
+00:23.010 --> 00:25.700
+So this one is going to be just like this.
+
+00:25.810 --> 00:29.660
+They're going to have for Slash and we can go to teams.
+
+00:29.950 --> 00:33.790
+It's going to be go to team actually Singler and then forward slash.
+
+00:33.900 --> 00:39.990
+And what we need to do is to pass the the item name you know the name of the team.
+
+00:40.020 --> 00:42.890
+If I go to Celtic I hear teams Celtic.
+
+00:43.020 --> 00:44.290
+So we don't get to go.
+
+00:44.410 --> 00:48.370
+We're going to use the idea that we're going to use the name of the team.
+
+00:48.570 --> 00:52.440
+So it's going to be teams and then item name.
+
+00:52.980 --> 00:53.470
+Right.
+
+00:53.630 --> 00:55.550
+With each iteration we need a key.
+
+00:55.550 --> 01:02.850
+So I'm going to say key and then item doesn't Id use the ID we're going to have a class so it's going
+
+01:02.850 --> 01:10.550
+to be class name and the class name is going to be a team item team item.
+
+01:10.980 --> 01:12.990
+Now let me make a wrap.
+
+01:12.990 --> 01:13.440
+OK.
+
+01:13.560 --> 01:17.030
+So with each team we can have an image right here.
+
+01:17.160 --> 01:24.000
+So I'm going to create an image tag and image that is going to have an alt and the old is going to be
+
+01:24.570 --> 01:26.760
+item that name right.
+
+01:26.910 --> 01:28.030
+You can have a source.
+
+01:28.080 --> 01:31.420
+And of course the source you can to use template strings to do this.
+
+01:31.470 --> 01:40.890
+And again it's going to be images for Slash then teams for Slash and then just the name of the logo
+
+01:40.940 --> 01:43.450
+is going to be item that logo.
+
+01:43.830 --> 01:47.140
+And then of course we close the image.
+
+01:47.400 --> 01:52.300
+So if we reload the page you're going to get a list of all the teams going to be really really ugly.
+
+01:52.430 --> 01:55.540
+You know let's get now to show this.
+
+01:55.530 --> 02:01.410
+We're going to use CSSA transition group so I'm going to go right here at the bottom and create the
+
+02:01.410 --> 02:02.370
+tag for this.
+
+02:02.370 --> 02:05.570
+We've imported this at the top right here.
+
+02:05.760 --> 02:14.190
+So we can make use of it and we'll go and wrap everything inside CSSA transition's group by open and
+
+02:14.190 --> 02:15.330
+close virga.
+
+02:15.460 --> 02:19.450
+We're going to put the list of teams inside.
+
+02:19.740 --> 02:25.080
+So now whenever i just render this I'm going to get an error and handle rejection.
+
+02:25.080 --> 02:29.800
+The thing is that with CSSA transitions group we need to set to put some SENEX.
+
+02:30.000 --> 02:33.780
+So what I'm going to do I'm going to put the settings inside of our will.
+
+02:33.840 --> 02:36.060
+So I'm going to say that dot dot dot.
+
+02:36.270 --> 02:43.110
+And the name of my animation is going to be fade and then just on the animation.
+
+02:43.690 --> 02:48.960
+Now I'm going to go right here the top and just create the settings for this animation.
+
+02:48.960 --> 02:53.910
+So I'm going to say Konst and then Faid animation.
+
+02:54.030 --> 03:00.150
+This is going to be equal to what we need to do first when you transition name it's going to be transition
+
+03:00.450 --> 03:07.550
+and then name and this one it's going to be Fate Yeah but right.
+
+03:07.740 --> 03:12.290
+So which we need to set three different types of animation.
+
+03:12.420 --> 03:14.160
+We need the transitional peer.
+
+03:14.280 --> 03:15.030
+OK.
+
+03:15.480 --> 03:18.110
+And what else do we need.
+
+03:18.450 --> 03:22.360
+We need to transition Pyr decision enter and the transition bellyfull course.
+
+03:22.500 --> 03:29.290
+So it's going to be transition then appear and the transition appear we're going to set it to True.
+
+03:29.740 --> 03:31.480
+Then we need to set the time out of this.
+
+03:31.590 --> 03:41.330
+So I'm just going to copy paste and set timeout right and the time out I'm going to use 500 for this.
+
+03:41.330 --> 03:43.520
+The next one is going to be the transition.
+
+03:43.530 --> 03:44.090
+Enter.
+
+03:44.190 --> 03:51.720
+So I'm going to say transition and then enter and then over again it can be true and we need to set
+
+03:51.720 --> 03:58.340
+the time out so I'm going to copy paste and set time out right.
+
+03:58.380 --> 04:00.940
+That time out again 500.
+
+04:00.940 --> 04:01.400
+Very good.
+
+04:01.470 --> 04:04.230
+Time out.
+
+04:04.240 --> 04:04.650
+Good.
+
+04:04.710 --> 04:07.600
+I'll do the same thing but this time.
+
+04:07.680 --> 04:08.510
+Very good.
+
+04:08.940 --> 04:10.650
+So again we need one more.
+
+04:10.650 --> 04:15.750
+It's going to be the transitional leave so I'm going to say transition and then leave.
+
+04:16.130 --> 04:17.760
+And this one is going to be true.
+
+04:18.120 --> 04:24.950
+And then we need to set the time out so we're just going to copy paste and time out.
+
+04:24.960 --> 04:29.230
+Burguet is going to be 500 Right.
+
+04:29.310 --> 04:30.780
+Right from the start it's going to work.
+
+04:30.780 --> 04:33.800
+But you know we're not going to get that the this effect.
+
+04:33.810 --> 04:35.370
+We need to add some CSSA.
+
+04:35.490 --> 04:38.080
+So I'm going to go to the styles and begin to do it now.
+
+04:38.180 --> 04:42.260
+I'm going to add the the settings for this for this faith animation.
+
+04:42.330 --> 04:47.660
+So if you go and you can just go ahead and and copy it from get help going to do it right here.
+
+04:48.030 --> 04:49.470
+So it's going to be first.
+
+04:49.500 --> 04:53.750
+It's going to be the fade and then appear and the fade appear.
+
+04:53.790 --> 04:59.170
+It's going to start with an opacity of zero dot 0 1.
+
+04:59.230 --> 05:04.650
+Now we have the fate appear and the fate appear active.
+
+05:04.810 --> 05:14.590
+So I was going to say Faid appear dot Faid appear Dorsch active and this one is going to be in a city
+
+05:14.980 --> 05:19.780
+of 1 0 1 and we need to create transmission.
+
+05:19.810 --> 05:21.420
+So it is going to be a transition.
+
+05:21.610 --> 05:27.060
+And then it's going to say we're going to grant the opacity we have right here and we can do the transition
+
+05:27.060 --> 05:27.620
+for that.
+
+05:27.760 --> 05:30.020
+It's going to be half second.
+
+05:30.280 --> 05:32.310
+So it's 500 milliseconds.
+
+05:32.300 --> 05:38.690
+Now if we do this or we do this it's the same thing you know.
+
+05:38.990 --> 05:49.220
+So it's going to be dot 5 0 5 and then just as like it and we can use is in.
+
+05:49.310 --> 05:49.920
+Right.
+
+05:50.630 --> 05:54.470
+So this is the first thing.
+
+05:54.860 --> 05:56.300
+So let's do the other ones.
+
+05:56.300 --> 05:58.380
+In theory it should be working.
+
+05:58.400 --> 05:59.380
+I know it's not working.
+
+05:59.420 --> 06:00.970
+Let's check it out.
+
+06:01.070 --> 06:04.380
+Transition appear it's going to be fade.
+
+06:04.610 --> 06:06.450
+So everything looks nice.
+
+06:06.470 --> 06:07.530
+Time out.
+
+06:07.750 --> 06:12.200
+If you made a mistake let's just continue with this and then I'll just check what's going on.
+
+06:12.210 --> 06:17.950
+You're going to have the Faid answer Oh no sorry it's fine.
+
+06:17.960 --> 06:23.320
+It's going to have it we're going to use just the fade answer because this items are not on the render
+
+06:23.350 --> 06:26.440
+day are just entering after we do the fetch.
+
+06:26.460 --> 06:30.200
+So we're going to do the same thing going to set the opacity for fate.
+
+06:30.230 --> 06:39.120
+Enter And then we need to set the capacity for Faid enter active so active.
+
+06:39.860 --> 06:42.320
+And now again the capacity is going to be one.
+
+06:42.330 --> 06:45.640
+I'm just going to copy off this and paste it right here.
+
+06:46.920 --> 06:51.390
+You know we already did this which is Titian's.
+
+06:51.450 --> 06:53.230
+OK so that's fine.
+
+06:53.380 --> 06:55.220
+Let's do the Fed the Fed leave.
+
+06:55.450 --> 06:59.250
+It's going to be fade and then just leave.
+
+07:00.550 --> 07:09.410
+And with the fatefully you've been just again a passerby one.
+
+07:10.090 --> 07:14.140
+And then we just put the faith leave active.
+
+07:14.200 --> 07:14.600
+All right.
+
+07:14.730 --> 07:16.300
+Fade leave.
+
+07:17.100 --> 07:19.020
+And then just active good
+
+07:22.420 --> 07:23.040
+active.
+
+07:24.900 --> 07:26.500
+I know same idea.
+
+07:26.600 --> 07:32.180
+I'm just going to copy all of this and paste it right here and now I've noticed I made a mistake right
+
+07:32.180 --> 07:33.940
+here on the faith enter active.
+
+07:33.970 --> 07:38.740
+I didn't set the capacity and the capacity is going to be one OK he's going to show it.
+
+07:38.750 --> 07:41.140
+Whenever we go to enter.
+
+07:41.180 --> 07:42.530
+So there you go.
+
+07:42.560 --> 07:45.150
+We have the transition.
+
+07:45.620 --> 07:48.940
+So if I just reload the page the items are entering.
+
+07:49.000 --> 07:51.950
+So it's working but it's good again.
+
+07:52.040 --> 07:52.990
+Nice.
+
+07:53.210 --> 08:02.330
+So now what we need to do we need to set them to go to the teams right go so what we need to do whenever
+
+08:02.330 --> 08:08.050
+we type something on the screen we need to make this Filcher functioning right now.
+
+08:08.150 --> 08:11.410
+So let's go to the next section and do the filtering for now.

@@ -1,0 +1,211 @@
+WEBVTT
+
+00:01.190 --> 00:04.810
+OK so let's start with the second project of this course.
+
+00:04.910 --> 00:06.320
+This is what we're going to be building.
+
+00:06.350 --> 00:07.660
+We're going to be building this.
+
+00:07.660 --> 00:09.160
+Let me just reload the page.
+
+00:09.500 --> 00:14.940
+So whenever the page loads we have an NBA Web site and we have a slider right here.
+
+00:14.960 --> 00:16.460
+We're going to use a plug in for this.
+
+00:16.460 --> 00:21.480
+I'm going to tell them which plug in we can use and whenever we scroll down we have this transition.
+
+00:21.650 --> 00:26.130
+And of course if we over which is have an animation and it's a link of course.
+
+00:26.340 --> 00:33.830
+And for example if we have a subscribe to section if we subscribe for example whatever and then just
+
+00:33.830 --> 00:39.880
+up come is going to save this into a database and it's going to give you a thank you.
+
+00:40.130 --> 00:42.500
+So this is pretty much what we can do.
+
+00:42.500 --> 00:46.810
+We're going to have a poll right here with will be we will be the next champion.
+
+00:46.970 --> 00:51.590
+And if we click on it it's going to just add a vote and everything is going to be again just saved into
+
+00:51.590 --> 00:52.580
+the database.
+
+00:52.640 --> 00:56.630
+We have an inside section if you go to teams we get a nice transition.
+
+00:56.650 --> 00:59.720
+We're going to have a list of all the teams of the NBA.
+
+00:59.810 --> 01:06.990
+And if we type 14 a team for example Celtics we can get that Tim can filter everything with ESX.
+
+01:07.160 --> 01:12.650
+And if a clear a team is going to take us to an inside page with a description of the team you know
+
+01:12.650 --> 01:18.080
+the logo name and just a simple description and we can have all the players all the players are going
+
+01:18.080 --> 01:18.950
+to be the same.
+
+01:18.980 --> 01:22.390
+We're going to be using a fake API for this.
+
+01:22.430 --> 01:24.110
+I'm going to give you all the information.
+
+01:24.110 --> 01:24.950
+Don't worry.
+
+01:25.020 --> 01:28.120
+And now I want to do this I want to do this in a different way.
+
+01:28.160 --> 01:31.920
+I don't want to just show you what to do.
+
+01:32.000 --> 01:37.560
+I'm going to give you and you can download you to be able to download as a resource on this lecture.
+
+01:37.600 --> 01:43.100
+You're going to have pretty much a document telling saying just specifying what you will need to do
+
+01:43.540 --> 01:45.130
+how you will need to do it.
+
+01:45.410 --> 01:50.540
+You're going to have the link to this Web site so you can inspect it but pretty much I'm going to give
+
+01:50.540 --> 01:56.890
+you all the resources so you can grab them and just tried to do it yourself and not just watch to BDO.
+
+01:57.260 --> 02:01.230
+So I'm going to give you this file with the documentation and everything else.
+
+02:01.230 --> 02:06.350
+And I'm going to give you a photoshop with all the signs and all the layers with the inside pages and
+
+02:06.350 --> 02:07.070
+everything else.
+
+02:07.190 --> 02:10.270
+So you can get the images from here or whatever.
+
+02:10.460 --> 02:18.030
+If not inside the same folder you're going to have the you can have the images folder right here.
+
+02:18.180 --> 02:19.330
+Imported already.
+
+02:19.430 --> 02:21.770
+You're going to have the images file there with all the images.
+
+02:21.770 --> 02:26.830
+So you don't need to just export from Photoshop because you may not have photoshop.
+
+02:26.840 --> 02:30.080
+So I'm just giving you all the files ready right here.
+
+02:30.320 --> 02:32.070
+So can going to give you one more thing.
+
+02:32.090 --> 02:33.940
+It's going to be the D-B that Jason.
+
+02:34.070 --> 02:38.880
+All the information about this about this database is going to be right here.
+
+02:38.900 --> 02:43.750
+So we're going to fetch this database and we're going to use Jason's server.
+
+02:43.910 --> 02:45.840
+Now we're going to use a bunch of things.
+
+02:45.890 --> 02:51.290
+Everything is going to be specified on the documentation that we can use the slider and begin going
+
+02:51.290 --> 02:52.700
+to react to slick.
+
+02:52.760 --> 02:56.930
+If you come from Jay Corey and Javascript you know this looks like.
+
+02:56.960 --> 02:59.650
+Well this is the re-act version for this.
+
+02:59.950 --> 03:02.940
+We're going to use the reveal whenever we scroll down.
+
+03:02.940 --> 03:04.130
+Just let me show you.
+
+03:05.110 --> 03:10.540
+If we scroll down we're going to have the animations right here and we're going to use re-act reveal
+
+03:10.540 --> 03:11.710
+for this.
+
+03:11.710 --> 03:14.360
+And of course the Jason server.
+
+03:14.800 --> 03:15.220
+OK.
+
+03:15.250 --> 03:16.830
+So this is fine.
+
+03:16.840 --> 03:21.790
+Just download the resource if you want if you wish it were the way you need to download it to get the
+
+03:21.790 --> 03:23.150
+images and the DVD.
+
+03:23.160 --> 03:28.580
+Jason for the course now on the next few weeks it's going to take a while it's going to take a while.
+
+03:28.670 --> 03:31.950
+I'm going to tell you how to build this right from the start.
+
+03:32.020 --> 03:32.360
+OK.
+
+03:32.380 --> 03:34.760
+We're going to do everything even the styles.
+
+03:35.140 --> 03:35.490
+So.
+
+03:35.490 --> 03:36.480
+OK.
+
+03:36.820 --> 03:39.020
+You will need to do at home.
+
+03:39.190 --> 03:39.880
+Just create.
+
+03:39.880 --> 03:40.350
+React.
+
+03:40.360 --> 03:40.880
+App.
+
+03:41.050 --> 03:41.470
+OK.
+
+03:41.650 --> 03:42.870
+Whatever name you wish.
+
+03:43.060 --> 03:47.770
+And we will only do we will do all the installing for the project on the next section.

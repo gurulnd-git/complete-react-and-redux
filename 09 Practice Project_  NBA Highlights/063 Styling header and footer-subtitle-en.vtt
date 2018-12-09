@@ -1,0 +1,433 @@
+WEBVTT
+
+00:00.980 --> 00:03.080
+OK let's start with the styles.
+
+00:03.230 --> 00:08.930
+I'm going to go to the main directory and get to go to public and I'm going to add a new folder that's
+
+00:08.960 --> 00:11.020
+going to be CSSA lowercase.
+
+00:11.050 --> 00:11.940
+Yes.
+
+00:12.140 --> 00:16.930
+And inside I will create and you fold and you file that it's going to be styles.
+
+00:17.120 --> 00:22.860
+That's the style to Singler that CSSA could be styles zem doesn't really matter.
+
+00:23.310 --> 00:26.000
+OK now we're going to use two fonts.
+
+00:26.070 --> 00:29.510
+Lynn Nicolas's we're going to use two different fonts.
+
+00:29.510 --> 00:32.680
+We go to Google and I'm just going to delete that just close that.
+
+00:32.780 --> 00:36.040
+And again it just searched fonts from right from the start.
+
+00:36.080 --> 00:42.410
+So I'm going to say Google font and then botto I'm doing this because maybe you don't know how to get
+
+00:42.410 --> 00:45.570
+the funds from Google funds so apt are just going to show you.
+
+00:45.740 --> 00:47.440
+So we're going to go to Google fonds.
+
+00:47.560 --> 00:48.210
+Oh sorry.
+
+00:48.230 --> 00:48.990
+We're going to go back.
+
+00:49.130 --> 00:52.090
+Since we search for Gobodo we have here we're botto.
+
+00:52.130 --> 00:59.400
+Google Fonte so you can have all the fonts and right here the top we select the font going to open this
+
+00:59.490 --> 01:02.820
+and I'm going to just customize this because I want more styles.
+
+01:03.000 --> 01:07.860
+I want to bring the light the regular the medium and the Bold.
+
+01:07.920 --> 01:12.930
+Maybe we are not going to use all of them but for now it doesn't matter in real life if you're not using
+
+01:12.930 --> 01:13.770
+fonts.
+
+01:13.790 --> 01:17.490
+Try to keep this of course because it takes more time to load.
+
+01:17.760 --> 01:21.380
+OK we're going to go to embed and begin to use one more font.
+
+01:21.630 --> 01:23.100
+I'm going to go right here at the top.
+
+01:23.100 --> 01:31.230
+The search and right here begin to type f j A and B can be used just one valid one.
+
+01:31.260 --> 01:37.440
+I don't know how how this is pronounced so are going to add it and then I'm going to go to families
+
+01:37.530 --> 01:41.430
+selected and the hollow one has only one style.
+
+01:41.460 --> 01:42.840
+It's going to be regular.
+
+01:42.840 --> 01:46.960
+So we can copy the embed just get a copy of this.
+
+01:47.420 --> 01:53.430
+OK I'm going to go to our project to the index not e-mail and I'm going to just copy all of this at
+
+01:53.430 --> 01:55.090
+the top right.
+
+01:55.410 --> 01:57.170
+So we need to import this.
+
+01:57.290 --> 01:58.810
+SS Well it's a link.
+
+01:58.860 --> 02:05.330
+So I'm going to go right here at the bottom and I'm going to say link and then rail and style sheet
+
+02:05.960 --> 02:07.520
+style sheet.
+
+02:07.740 --> 02:09.720
+Bigger than we need to link it.
+
+02:09.720 --> 02:11.240
+So it's going to be a ref.
+
+02:11.310 --> 02:18.740
+It's going to be inside for Shlash C Ss for Slash style that the SS.
+
+02:19.450 --> 02:22.640
+And then we're going to close it right.
+
+02:22.680 --> 02:27.690
+I'm going to close this and just bring this make this a little bit smaller.
+
+02:28.060 --> 02:28.440
+OK.
+
+02:28.460 --> 02:30.100
+We're going to start with the stands right now.
+
+02:30.200 --> 02:36.080
+So I'm going to go to style that's the SS and just add some set up stops on substance just a default
+
+02:36.080 --> 02:36.870
+style.
+
+02:36.920 --> 02:41.890
+So going to say body and the body is going to have a margin of zero pixels.
+
+02:42.410 --> 02:50.090
+You can have a padding of square pixels of course merging padding zero and I made stake here here going
+
+02:50.090 --> 02:52.330
+to say Margene Burgert.
+
+02:52.850 --> 02:55.530
+So we're going to use a font family for all of this.
+
+02:55.670 --> 03:00.280
+So I'm going to say font and then family and the font family by default.
+
+03:00.410 --> 03:02.210
+It's going to be a botto.
+
+03:02.210 --> 03:02.920
+Right.
+
+03:03.030 --> 03:09.010
+And we to change the color the color is going to be kind of a darker color.
+
+03:09.080 --> 03:17.210
+It's going to be one B one B one B so good we know that it's working.
+
+03:17.210 --> 03:19.930
+It's linking the siestas correctly that's good.
+
+03:20.030 --> 03:22.030
+So we're going to use that flex box container.
+
+03:22.040 --> 03:23.430
+We're going to set it up right now.
+
+03:23.430 --> 03:30.080
+It's going to be flex valks flex box and then container.
+
+03:30.710 --> 03:32.800
+And I'm just going to copy from here.
+
+03:32.960 --> 03:38.170
+We're going to make it flex so we can have the M-S flex for Microsoft.
+
+03:38.490 --> 03:41.970
+For Internet Explorer or acha or whatever then the web kid.
+
+03:42.140 --> 03:50.740
+And then just default flex we can add a default state for the links so we can remove that text decoration
+
+03:50.750 --> 03:53.690
+that really ugly text correction.
+
+03:53.690 --> 03:55.200
+Right.
+
+03:55.350 --> 03:56.420
+OK that's fine.
+
+03:56.530 --> 04:01.500
+I'm going to add more things right now so we can just use it whenever we hit the home.
+
+04:01.640 --> 04:03.510
+I can add style for the H.
+
+04:03.610 --> 04:11.200
+3 I'm going to say font family and the fun family is going to be that weird font it's going to be Hala.
+
+04:11.510 --> 04:13.710
+And then one.
+
+04:14.260 --> 04:18.050
+You know we you could add some default style right here.
+
+04:18.160 --> 04:19.270
+You know just to save time.
+
+04:19.310 --> 04:21.600
+I'm just not going to do it.
+
+04:21.610 --> 04:23.080
+We're going to add more thanks.
+
+04:23.090 --> 04:33.630
+This H-3 is going to be a fun size of 35 pixels than font weight font.
+
+04:35.580 --> 04:39.610
+And then wait there we go and it's going to be 300.
+
+04:40.110 --> 04:41.700
+And just the margin bottom
+
+04:45.030 --> 04:46.330
+of zero.
+
+04:46.890 --> 04:50.330
+Now we don't have this tax right now but we're going to have it in a minute.
+
+04:50.330 --> 04:53.520
+So I'm just saving time in doing it doing it right now.
+
+04:53.520 --> 04:55.500
+This fun family is going to be for Halloween.
+
+04:55.530 --> 04:58.380
+I'm just going to copy and paste at the font size.
+
+04:58.410 --> 05:04.380
+It's going to be 30 tiny pixels such as going to copy and paste tiny pixels.
+
+05:04.380 --> 05:04.950
+Right.
+
+05:05.070 --> 05:06.650
+So everything looks good.
+
+05:06.690 --> 05:11.270
+Now one thing we're going to add a margin to this is going to be a weird margin.
+
+05:11.280 --> 05:18.190
+We can add 15 pixels than zero pixels and you can get the pixel right here and then five pixels.
+
+05:18.710 --> 05:19.300
+OK.
+
+05:19.410 --> 05:20.240
+So it looks nice.
+
+05:20.250 --> 05:24.660
+Let's add the styles for the header and the future we have right now.
+
+05:24.660 --> 05:33.170
+So I'm just going to add a comment right here so we can know that we are studying the header and footer.
+
+05:33.900 --> 05:36.550
+So let's go back.
+
+05:36.630 --> 05:38.990
+We're going to make reference to Hetter.
+
+05:39.150 --> 05:42.070
+So I'm going to say Hetter right.
+
+05:42.120 --> 05:49.490
+And this is going to have a border border bottom of one pixel solid.
+
+05:49.590 --> 05:57.020
+It's going to be not white but kind of similar to E-2 into E2.
+
+05:57.660 --> 05:58.810
+And we can see it right here.
+
+05:58.830 --> 06:01.780
+You can see the the line.
+
+06:02.100 --> 06:07.800
+So I'm going to go right here at the bottom and since the header and footer are going to share some
+
+06:07.800 --> 06:13.570
+styles I can see I can say Hetter coma footer and we can add some styles.
+
+06:13.590 --> 06:17.730
+This is going to have a background of hash tag and then white.
+
+06:18.160 --> 06:25.230
+We can align items and the line items is going to be center we can add a padding and the padding is
+
+06:25.230 --> 06:30.680
+going to be 10 pixels beginning and used on family and the font family for this.
+
+06:30.690 --> 06:32.820
+It's going to be the same one as for Halloween.
+
+06:32.820 --> 06:36.610
+So I'm just going to copy and paste right.
+
+06:36.630 --> 06:39.220
+Let's get it looks like it's working.
+
+06:39.270 --> 06:41.280
+Now let's add the styles to the logo.
+
+06:41.280 --> 06:42.950
+Let's bring that logo.
+
+06:42.970 --> 06:46.530
+We're going to say Hetter and the make reference to the logo.
+
+06:46.800 --> 06:53.130
+And since we're going to use the same thing for the footer I'm just going to copy this do a coma and
+
+06:53.250 --> 07:02.010
+make reference to the footer because we pretty much have it the same logo on top and the same logo at
+
+07:02.010 --> 07:04.600
+the bottom says we're using Fluxbox.
+
+07:04.740 --> 07:09.340
+We're going to use flex and then engro.
+
+07:09.900 --> 07:11.280
+It's going to be one.
+
+07:11.670 --> 07:20.370
+And then height and the hide we're going to give the full tide of twenty two pixels and get OK.
+
+07:20.390 --> 07:23.180
+So it looks like it's kind of working.
+
+07:23.180 --> 07:26.280
+So let's add the image for the logos.
+
+07:26.330 --> 07:33.590
+So I'm going to say Hetter Dan Dadds logo and then span says we're going to use the same thing for the
+
+07:33.590 --> 07:34.080
+footer.
+
+07:34.110 --> 07:39.510
+I'm just going to copy of this comma and then just make reference to the footer.
+
+07:40.400 --> 07:40.640
+Right.
+
+07:40.640 --> 07:45.280
+So we can begin to bring the logo from the images folder.
+
+07:45.280 --> 07:46.640
+I gave you right here.
+
+07:46.640 --> 07:49.540
+So we have it available inside the images folder.
+
+07:49.730 --> 07:52.320
+So I'm going to say background.
+
+07:52.360 --> 07:57.930
+I'm going to use your L and then just quote.
+
+07:58.550 --> 08:02.910
+So I'm going to say for Slash we can access the images directory.
+
+08:03.140 --> 08:06.290
+Then Logo dot P and G.
+
+08:06.290 --> 08:13.500
+And of course it's going to be no repeat Burguet so we can it make it inspanned.
+
+08:13.580 --> 08:19.020
+We want to make it this plot display in line block what.
+
+08:19.230 --> 08:19.530
+OK.
+
+08:19.580 --> 08:23.280
+So we have to make it right with.
+
+08:24.230 --> 08:27.280
+Let's do it again with a go.
+
+08:27.320 --> 08:31.820
+Are we going to have 58 pixels is something really dumb.
+
+08:31.880 --> 08:34.750
+Height and 24 pixels.
+
+08:35.370 --> 08:36.680
+Ok we get the logo.
+
+08:36.680 --> 08:37.230
+That's good.
+
+08:37.280 --> 08:38.750
+So it looks nice.
+
+08:38.750 --> 08:43.540
+Now the back of the footer has kind of a darker color.
+
+08:43.540 --> 08:48.960
+So I'm just going to give a style to this and this much is going to be the end of the section.
+
+08:49.120 --> 08:54.210
+I going to add a background and the background is going to be kind of a dark color.
+
+08:54.620 --> 08:58.470
+And then it's going to be one f f f.
+
+08:59.090 --> 09:05.350
+You can add a margin top so we can split the B can separate the footer from the previous section.
+
+09:05.480 --> 09:08.400
+So I'm going to say 30 pixels.
+
+09:08.720 --> 09:14.560
+Let's go to the project and you know it looks nice could do better but looks nice right.
+
+09:14.570 --> 09:20.090
+So let's go to the next section and begin to start bringing the slider for this.

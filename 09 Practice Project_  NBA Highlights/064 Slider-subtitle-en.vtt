@@ -1,0 +1,394 @@
+WEBVTT
+
+00:00.960 --> 00:03.040
+OK so let's start building the home.
+
+00:03.120 --> 00:06.880
+So whenever we the page loads we can have a lot of components.
+
+00:06.960 --> 00:11.760
+You can have the component that it's going to just handle this slider.
+
+00:11.910 --> 00:18.180
+You can have a different component component to handle the subscriber's then one to render the blocks
+
+00:18.380 --> 00:20.200
+and then one for the poll.
+
+00:20.420 --> 00:25.200
+OK let's get now we can i need to create different components going to start with this one.
+
+00:25.260 --> 00:27.080
+I'm going to call it feature to component.
+
+00:27.120 --> 00:30.090
+You know just like it like or press a featured image.
+
+00:30.390 --> 00:34.260
+So again so we need to create a component that is going to be featured.
+
+00:34.380 --> 00:38.120
+And now this component whatever we information we get.
+
+00:38.130 --> 00:45.090
+You know the text the title you're going to get it from the Jason files from the API.
+
+00:45.120 --> 00:52.170
+So if I go to the adjacent file we have right here we're going to have to have a data whenever the this
+
+00:52.170 --> 00:52.790
+is starts.
+
+00:52.920 --> 00:56.380
+You can have a home and the bit inside you can have a slider.
+
+00:56.520 --> 01:00.410
+You can have the information that you're going to use on the blocks and everything else.
+
+01:00.510 --> 01:06.570
+So what we can do whenever this component's loads we can bring in the data we can fetch the data from
+
+01:06.570 --> 01:13.140
+the API and then pass the information we want to each component right here on the slider.
+
+01:13.260 --> 01:19.210
+You can use just the information that is inside the slider so we can pass that prompts.
+
+01:19.530 --> 01:21.550
+OK so let's start with this.
+
+01:21.600 --> 01:25.810
+So OK so I'm going to need to bring a component.
+
+01:26.100 --> 01:27.690
+It's going to be the featured component.
+
+01:27.690 --> 01:28.550
+We don't have it yet.
+
+01:28.580 --> 01:30.030
+We're going to create it in a minute.
+
+01:30.180 --> 01:38.100
+So I'm going to say components components and then it's going to say import and we can import that component
+
+01:38.340 --> 01:40.820
+and I'm going to call it featured.
+
+01:40.950 --> 01:41.390
+Right.
+
+01:41.520 --> 01:45.480
+So it's going to be from then dot dot for Slash.
+
+01:45.570 --> 01:49.200
+And we didn't have it yet but it's going to be called featured.
+
+01:49.610 --> 01:50.090
+Right.
+
+01:50.190 --> 01:50.770
+Let's get.
+
+01:50.950 --> 01:55.140
+So let's go to the components and create this feature components.
+
+01:55.470 --> 02:03.150
+So I'm going to create a new file and it's going to be called featured as inside the feature that you're
+
+02:03.150 --> 02:04.500
+not going to have anything.
+
+02:04.500 --> 02:08.180
+And this one is going to be just a stateless component.
+
+02:08.310 --> 02:14.370
+So I'm going to just copy this and paste it and we're going to get rid of the components can go right
+
+02:14.370 --> 02:14.750
+here.
+
+02:14.790 --> 02:19.450
+I'm going to say Konst and I know how are we going to call it.
+
+02:19.470 --> 02:25.430
+It's called a feature that's good featured and begin to say equal.
+
+02:25.470 --> 02:26.400
+And what are we going to do.
+
+02:26.480 --> 02:32.780
+It received a prompts the prompts are going to be that data that we need to put inside the slider.
+
+02:32.820 --> 02:40.810
+So I'm going to say prop's right and we're going to return some GSX so we can skip an error message.
+
+02:40.890 --> 02:45.910
+That's when I say return and Dev and slider.
+
+02:46.740 --> 02:50.650
+And of course we need to make this available this feature inside home.
+
+02:50.850 --> 03:01.500
+So I'm going to say export default and then just a feature right and we go back to home and back to
+
+03:01.530 --> 03:09.080
+our project and what we can do we can to make reference to this featured elements we have right here.
+
+03:09.120 --> 03:12.540
+So give the lead home nego right here at the bottom.
+
+03:12.660 --> 03:16.810
+And again just call this feature that components we are importing.
+
+03:17.160 --> 03:23.460
+So I'm going to say featured open close every page we get sliders so it's good.
+
+03:23.550 --> 03:25.490
+It's importing this correctly.
+
+03:25.620 --> 03:31.830
+Now what we need to do we need to fetch the information after this component the home it's rendered.
+
+03:32.070 --> 03:38.850
+So just like before we can to use components that mount to fetch the information whenever this is rendered
+
+03:38.970 --> 03:44.690
+will trigger the component amount we will fetch the information for any information from the data server
+
+03:45.060 --> 03:50.190
+and we will just add the data we receive to the state.
+
+03:50.500 --> 03:51.780
+Build the state first.
+
+03:51.840 --> 03:59.070
+I'm going to say constructor and the constructor is going to have some props and then inside we can
+
+03:59.070 --> 04:08.310
+have a state since we have a state we need to call super write I say prompts and we can create this
+
+04:08.490 --> 04:12.180
+data state equal to an object.
+
+04:12.180 --> 04:18.690
+Now first we're going to store inside Home older data we are getting from the from the API.
+
+04:18.870 --> 04:23.620
+So whenever the application starts this home is going to be just empty.
+
+04:23.920 --> 04:30.300
+I'm going to go right here at the bottom and I'm going I'm going to fetch this information we need so
+
+04:30.300 --> 04:40.360
+we can use fetch going to say component sorry components and begin to use the debt mount OK.
+
+04:40.770 --> 04:48.120
+So whenever the component mounts after the component mounts we can do the fetch some going to save fetch
+
+04:48.960 --> 04:50.690
+and just open and close.
+
+04:50.820 --> 04:58.110
+We will need a u r l to fetch this information and this this information is going to be stored in home.
+
+04:58.110 --> 05:05.260
+Let's go to the terminal and just check the the routing for this going to go to the Jason server whatever
+
+05:05.280 --> 05:10.760
+whatever we started the Jason server and we have right here the home resource.
+
+05:10.770 --> 05:15.040
+So I just going a copy of this and close it.
+
+05:15.470 --> 05:18.890
+Now I'm going to go right here at the top and I'm going to create a viable.
+
+05:18.900 --> 05:20.010
+It's going to be Konst.
+
+05:20.160 --> 05:25.200
+And then just you are l home and we can get the the the resource from there.
+
+05:25.350 --> 05:28.650
+Can I do this and just paste the address.
+
+05:29.250 --> 05:31.910
+That's the location we can fetch it from there.
+
+05:31.920 --> 05:37.170
+Of course it's going to give us in our message because we need to just do the settings right here.
+
+05:37.320 --> 05:44.790
+So I'm going to go at the bottom and begin to pass your L home as a valid location.
+
+05:44.830 --> 05:48.020
+We need to set up the method and the method is going to be good.
+
+05:48.060 --> 05:56.880
+So I'm going to say method and the method is going to be get Breguet.
+
+05:56.880 --> 06:01.310
+Now whenever we fetch some information we need to grab the Jason.
+
+06:01.320 --> 06:10.720
+So we say then and we grab the response and then we just convert everything from Jason.
+
+06:10.740 --> 06:15.390
+Jason responds that Jason but did this previously.
+
+06:15.390 --> 06:19.970
+Whenever we get this information we need to add it to the to the state.
+
+06:19.980 --> 06:21.310
+When you changed state.
+
+06:21.420 --> 06:24.950
+So I'm going to say Dan and create a callback for this.
+
+06:25.080 --> 06:26.790
+It's going to be Jason we're going to grab that.
+
+06:26.790 --> 06:28.680
+Jason we get.
+
+06:28.680 --> 06:32.170
+And then going to just run the callback.
+
+06:32.280 --> 06:41.790
+Now if I'm just going to do a log and get the Jason just check if the Jason is getting here correctly
+
+06:42.270 --> 06:47.660
+he's going to reload the page and bring the console going to go to console.
+
+06:47.770 --> 06:49.720
+OK we have an object right here.
+
+06:50.010 --> 06:55.300
+And the object is going to be blocks pole and slider is going to be all the elements from home.
+
+06:55.560 --> 06:57.050
+So now what are we going to do.
+
+06:57.120 --> 06:58.290
+Grab this.
+
+06:58.290 --> 07:00.310
+This Jason File.
+
+07:00.500 --> 07:08.600
+Begin to put it in the state and assign it home and whenever we called feature we can pass slider.
+
+07:09.030 --> 07:12.130
+OK we can slide up a slider as pop.
+
+07:12.240 --> 07:12.430
+OK.
+
+07:12.480 --> 07:12.880
+Let's get.
+
+07:12.880 --> 07:14.090
+That's what we can do.
+
+07:14.160 --> 07:15.570
+Going to bring this down.
+
+07:16.080 --> 07:16.390
+OK.
+
+07:16.470 --> 07:24.060
+So since we want to set state what we do is this dart set state open close.
+
+07:24.330 --> 07:28.050
+And since it's an object we're going to just open it.
+
+07:28.050 --> 07:31.320
+Do the caller braces we want to change the home.
+
+07:31.500 --> 07:33.310
+So I'm going to say home.
+
+07:33.710 --> 07:34.230
+OK.
+
+07:34.380 --> 07:37.500
+And the new data is going to be inside Jason.
+
+07:37.500 --> 07:37.900
+Right.
+
+07:37.920 --> 07:42.690
+So now the state of home is going to have all the information.
+
+07:42.690 --> 07:47.910
+So now what we need to do we need to pass it as props when we make this better.
+
+07:48.180 --> 07:53.850
+So we're going to go to feature and we get to create a prop that is going to be called slides and the
+
+07:53.850 --> 07:57.110
+slides is going to contain this.
+
+07:57.150 --> 08:00.310
+That state DOT home.
+
+08:00.500 --> 08:03.170
+And if you remember is going to be inside slider.
+
+08:03.210 --> 08:06.410
+So I'm going to say slider.
+
+08:06.520 --> 08:07.020
+All right.
+
+08:07.300 --> 08:13.930
+So if I go to featured this go to feature and we are whenever this featured It's called from here is
+
+08:13.970 --> 08:19.130
+going to pass all the data and the feature is going to receive it inside prompts.
+
+08:19.240 --> 08:23.960
+So if I go right here and console log and then prop's
+
+08:27.060 --> 08:34.490
+and every other page and bring the inspect and it comes along and the first time that it the app the
+
+08:34.510 --> 08:35.260
+compound loads.
+
+08:35.260 --> 08:36.690
+Of course we get nothing.
+
+08:36.750 --> 08:41.410
+And after it's mounted it's going to do the request update the state and then it's passing it.
+
+08:41.410 --> 08:43.820
+So we get it inside slides.
+
+08:44.050 --> 08:46.150
+Let's get OK.
+
+08:46.200 --> 08:48.760
+So on the next section we're going to go to the next section.
+
+08:48.850 --> 08:55.810
+Going to grab this props and show all the information and we're going to make use of the re-act slick.
+
+08:55.830 --> 08:58.080
+You can read the documentation first.
+
+08:58.110 --> 09:00.270
+We're begin to use a couple of things.
+
+09:00.270 --> 09:01.190
+Begin to use this one.
+
+09:01.190 --> 09:06.550
+And of course we need to do some settings just like a regular plugging for example with Jay Querrey
+
+09:06.780 --> 09:07.800
+same idea.
+
+09:07.860 --> 09:11.370
+So let's go to the next section and create the slider.

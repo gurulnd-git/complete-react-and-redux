@@ -1,0 +1,604 @@
+WEBVTT
+
+00:01.910 --> 00:06.490
+OK so let's start adding the stylus and the animation for this.
+
+00:06.490 --> 00:07.040
+This is going.
+
+00:07.040 --> 00:09.300
+This one is going to be inside blocks of course.
+
+00:09.410 --> 00:12.050
+So I'm going to make reference to the home blocks.
+
+00:12.260 --> 00:16.030
+We did here the parent container of all the elements.
+
+00:16.190 --> 00:18.920
+So I'm going to go right here the bottom and we're going to start doing it.
+
+00:19.000 --> 00:21.530
+It's going to say Dot and home blocks.
+
+00:21.560 --> 00:23.950
+Now we're going to use flex to show this.
+
+00:23.960 --> 00:29.760
+So the first one is going to be a display and flex right.
+
+00:31.090 --> 00:37.090
+Just for simplicity I'm not going to add with Web Kit flacs and then Miles flaks just going to do it
+
+00:37.090 --> 00:38.370
+for Web Kit.
+
+00:38.450 --> 00:41.990
+So OK we have the flex and we can have a direction.
+
+00:42.010 --> 00:45.580
+So it's going to be flex direction and we're going to use roll now.
+
+00:45.610 --> 00:52.570
+We want everything in a row then we want to select the flex and the wrap and the wrap is going to be
+
+00:52.650 --> 00:53.260
+wrapped.
+
+00:53.530 --> 00:54.660
+Right.
+
+00:54.670 --> 00:58.840
+So we wanted to add a margin top can say margin.
+
+00:58.840 --> 01:02.880
+And then just top and the margin is going to be 40 pixels.
+
+01:02.890 --> 01:04.840
+No we can just separate.
+
+01:04.960 --> 01:08.230
+The it's described to us from the Bloks we have right here.
+
+01:08.590 --> 01:13.000
+So now we need to make reference to each item that we have right here.
+
+01:13.060 --> 01:15.140
+Each item we have the class right here.
+
+01:15.250 --> 01:19.630
+So they want to make reference to that we're going to copy home blocks right here the bottom and say
+
+01:19.630 --> 01:21.940
+Dot item right.
+
+01:22.060 --> 01:27.940
+So each item is going to have a flex grow of one.
+
+01:27.970 --> 01:32.850
+Now the position is going to be relative relative frigate.
+
+01:33.280 --> 01:39.040
+Now we're going to have a fixed hide and it's going to be two hundred and seventy pixels and then the
+
+01:39.100 --> 01:40.840
+overflow is going to be hidden.
+
+01:40.840 --> 01:46.170
+Now whenever we Hoeber and this can have a tax rate here.
+
+01:46.330 --> 01:51.280
+So whenever this is want this one it's out of the box it should be should be hidden.
+
+01:51.280 --> 01:54.310
+So we want to set the flow hit him for that.
+
+01:54.640 --> 02:00.450
+So we have the 200 or so of pixels and we set overflow and then just hand.
+
+02:00.620 --> 02:01.770
+Right.
+
+02:01.820 --> 02:06.370
+And if you go right here of course you're going to get something.
+
+02:06.400 --> 02:10.560
+But now it looks nice and notice that this one is already big.
+
+02:10.690 --> 02:12.660
+This one is medium and this one is small.
+
+02:12.700 --> 02:16.970
+It's grabbing the classes that we are passing right here an item type.
+
+02:17.110 --> 02:18.460
+So that's working.
+
+02:18.490 --> 02:25.730
+Now what we need to do is we need to set up some of some just some values for the large medium and small.
+
+02:25.900 --> 02:32.550
+So again going to make reference to home blocks and begin to make reference to that item.
+
+02:32.740 --> 02:39.110
+And we want to grab the large one the large one right there we go.
+
+02:39.460 --> 02:45.850
+So the large one is going to have with and it's going to have with a 50 percent then we can have the
+
+02:45.850 --> 02:48.200
+same thing for medium.
+
+02:48.220 --> 02:53.660
+So going to go type medium but this one is going to be a little bit smaller.
+
+02:53.920 --> 03:00.020
+So we're going to say 30 and then we can have the small it's going to copy and paste that and say it
+
+03:00.090 --> 03:01.130
+is Sam.
+
+03:01.240 --> 03:07.840
+Now the S M is going to have a 20 you know 50 plus 30 plus 20 100 percent.
+
+03:08.020 --> 03:09.930
+So it's going to just wrap everything.
+
+03:10.550 --> 03:11.020
+Good.
+
+03:11.080 --> 03:11.620
+OK.
+
+03:11.860 --> 03:12.990
+So what is next.
+
+03:13.000 --> 03:14.820
+We need to set the image for this.
+
+03:15.010 --> 03:20.480
+So I'm going to go right here at the bottom and make reference again to home that blocks.
+
+03:20.510 --> 03:25.330
+Now again make reference to item and now we want to style the image.
+
+03:25.420 --> 03:29.680
+And of course we we we have a class for this on each element.
+
+03:29.680 --> 03:33.600
+And I believe it's going to be right here image.
+
+03:34.270 --> 03:37.790
+So back to the SS and when to add styles.
+
+03:37.810 --> 03:45.370
+So each image is going to be it's going to be a height of 270 pixels you know the full height of the
+
+03:45.400 --> 03:47.150
+block we have right here.
+
+03:47.740 --> 03:49.690
+So we can have a background size for this.
+
+03:49.690 --> 03:54.880
+It's going to be the background and it can say background and then to size and the size is going to
+
+03:54.880 --> 03:55.750
+be cover.
+
+03:55.930 --> 03:59.370
+And then important Breguet.
+
+03:59.480 --> 04:01.120
+Now we're going to have a background position.
+
+04:01.120 --> 04:02.800
+Everything is going to be centered.
+
+04:02.830 --> 04:10.000
+So I'm going to say background and then position and then center center everything is going to be centered.
+
+04:10.810 --> 04:17.070
+And then of course a mistake center Burguet And of course this is going to be important.
+
+04:18.760 --> 04:19.390
+Right.
+
+04:19.660 --> 04:26.140
+I can look at right now let's just add the title the at the styles for the title not just the other
+
+04:27.450 --> 04:28.270
+works.
+
+04:28.440 --> 04:29.790
+We can have a tiny problem.
+
+04:29.800 --> 04:35.950
+Whenever we load the application it's just going to show all at the same time and we don't want that
+
+04:35.980 --> 04:38.340
+we want just different behavior.
+
+04:38.340 --> 04:44.050
+I can scroll down and you know it's just like this and we're going to do this directly from the CSSA.
+
+04:44.350 --> 04:48.520
+So let's first add the styles to the title.
+
+04:48.520 --> 04:49.910
+You're going to see it right now.
+
+04:49.950 --> 04:51.850
+But now we're going to add it right now.
+
+04:52.180 --> 04:57.970
+And just to save some time we're going to say home and blocks we're going to make reference to item
+
+04:58.390 --> 05:02.890
+item and we make reference to the title.
+
+05:03.400 --> 05:11.380
+So the title is going to have a background of black you know something simple black you can have a panning
+
+05:11.380 --> 05:14.690
+of 10 pixels and then begin to have a transition.
+
+05:14.710 --> 05:19.710
+Whenever we Hoover the block this title it's going to show.
+
+05:19.830 --> 05:20.160
+Right.
+
+05:20.170 --> 05:27.510
+So we're going to have a chat session and the recession is going to anime it all is going to take 500
+
+05:27.520 --> 05:33.420
+milliseconds and it's going to be it's in out right.
+
+05:33.460 --> 05:40.300
+So now let's add the animation for this Hoeber event so we can get a copy of this just for simplicity
+
+05:40.690 --> 05:45.400
+and what we want to trigger this new styles this animation.
+
+05:45.400 --> 05:53.880
+Whenever we do Hoover on the item Hoover So OK.
+
+05:54.010 --> 05:59.650
+So what we want to do we want to animate this from bottom to top.
+
+05:59.680 --> 06:04.410
+You know whenever we Hoover it's going to go from bottom to top.
+
+06:04.570 --> 06:11.290
+So we want to use to transform going to use transform and then we say translate.
+
+06:11.460 --> 06:12.780
+I made a mistake.
+
+06:13.520 --> 06:14.960
+Translated.
+
+06:15.440 --> 06:16.920
+OK.
+
+06:17.740 --> 06:19.420
+There you go translate.
+
+06:19.570 --> 06:29.130
+And we want to animate zero pixels and then I'm going to say minus and 39 right and just close it.
+
+06:29.680 --> 06:30.300
+Good.
+
+06:30.330 --> 06:35.380
+Now again we need to do the transitions all going to just copy and paste it.
+
+06:35.410 --> 06:41.500
+So whenever this starts this item of course since it's a block item it's going to be just below the
+
+06:41.500 --> 06:42.070
+image.
+
+06:42.110 --> 06:43.400
+So it's going to be right here.
+
+06:43.420 --> 06:44.350
+It's going to begin.
+
+06:44.560 --> 06:49.780
+So we hope for and this one is going to do the animation is going to translate is just going to animate
+
+06:49.840 --> 06:55.240
+the element from bottom to top and it's going to stop and then we when we remove it it's going to go
+
+06:55.240 --> 06:57.010
+to the original position.
+
+06:57.330 --> 07:04.420
+And we have the transitions all on both elements it's going to go and go back just go in and go back.
+
+07:04.420 --> 07:07.840
+Let's see if this is happening on our project.
+
+07:07.990 --> 07:12.480
+If we're working let's get right now.
+
+07:12.490 --> 07:14.280
+This one is too small for this.
+
+07:14.330 --> 07:16.810
+You know you're going to have a problem right there.
+
+07:18.170 --> 07:20.440
+You know it's good anyways.
+
+07:21.050 --> 07:21.540
+OK.
+
+07:21.650 --> 07:22.580
+So what else.
+
+07:22.580 --> 07:24.060
+This blue link.
+
+07:24.080 --> 07:26.900
+I just really I don't like that.
+
+07:27.050 --> 07:35.120
+So I'm going to just make reference to that link and change the color of the link and say item dot title
+
+07:35.360 --> 07:36.400
+and then a.
+
+07:36.590 --> 07:44.290
+Right and the A It's going to have a color and the color it's going to be just a white color but a good
+
+07:45.820 --> 07:48.510
+so we are almost there.
+
+07:48.520 --> 07:50.040
+What else do we need to do.
+
+07:50.050 --> 07:58.840
+So whenever we go to the original and scroll down we have this effect as if for now whenever we just
+
+07:58.840 --> 08:05.770
+reload the application and scroll down it's animating all the elements just in blocks but we don't want
+
+08:05.770 --> 08:06.360
+that.
+
+08:06.400 --> 08:12.070
+Now what we can do we can delay the transition for each element.
+
+08:12.070 --> 08:17.770
+If it's large it's going to bring that big at first and if it's a medium it's going to wait a few seconds
+
+08:17.770 --> 08:20.340
+just a few milliseconds and then animated.
+
+08:20.440 --> 08:22.220
+We can do this from CSSA.
+
+08:22.510 --> 08:24.160
+So I'm going to go right here.
+
+08:24.520 --> 08:27.600
+I'm going to just make reference to the home blocks.
+
+08:27.760 --> 08:32.180
+I'm going to select the item we want to animate and the first one is going to be the large.
+
+08:32.590 --> 08:33.120
+OK.
+
+08:33.490 --> 08:37.740
+So there is a property on CSX that it's going to be animation delay.
+
+08:37.870 --> 08:41.860
+So pretty much we add a delay to each animation.
+
+08:42.130 --> 08:45.340
+So since I'm using Chrome I'm just going to use Web Kit.
+
+08:45.520 --> 08:46.170
+OK.
+
+08:46.360 --> 08:47.220
+Can I have it right here.
+
+08:47.230 --> 08:48.950
+Just let me copy paste it.
+
+08:49.150 --> 08:52.120
+Me use weskit animation delay.
+
+08:52.260 --> 08:55.080
+This is going to delay the animation principle.
+
+08:55.140 --> 09:02.060
+If you're using different vendors like Mozilla Firefox we have to use Dorsch mouse dash animation.
+
+09:02.250 --> 09:08.030
+And for Microsoft from Internet Explorer we do Dorsch M-S just to save time.
+
+09:08.040 --> 09:11.210
+I'm just going to do Web Kit because I'm using Chrome right.
+
+09:11.250 --> 09:16.290
+So we're going to add a delay to the animation and it should be working right now.
+
+09:16.290 --> 09:19.480
+If I scroll down you know it's working.
+
+09:19.770 --> 09:25.490
+So I'm going to just do the same thing for the other ones and just increase the animation delay.
+
+09:25.890 --> 09:26.260
+OK.
+
+09:26.280 --> 09:32.580
+This one is going to be 500 and instead of large it's going to be empty.
+
+09:32.940 --> 09:37.710
+I'm just going to copy this one and make reference to the small one.
+
+09:37.750 --> 09:41.650
+It's going to be awesome and I'm just going to type 800.
+
+09:41.660 --> 09:43.940
+Now you can type whatever you want right here.
+
+09:44.220 --> 09:47.020
+If I read the application go down.
+
+09:47.310 --> 09:47.730
+OK.
+
+09:47.790 --> 09:48.810
+So it's working.
+
+09:48.810 --> 09:49.590
+That's good.
+
+09:49.840 --> 09:50.570
+All right.
+
+09:50.700 --> 09:52.020
+So now what is next.
+
+09:52.020 --> 09:57.270
+The only thing left is to add this veil effect this over in black.
+
+09:57.270 --> 10:02.300
+So I'm going to go right here at the bottom and I've going to make reference to this veil we created
+
+10:02.310 --> 10:09.430
+before I was going to say home locks and then item and then dot veil.
+
+10:09.750 --> 10:14.580
+So this veil is going to be floating on top of the whole element.
+
+10:14.610 --> 10:16.710
+So it's going to be a position absolute.
+
+10:16.940 --> 10:21.550
+So right again this first set of background and the background is going to be black.
+
+10:21.570 --> 10:28.130
+So as hash tag and six zeroes right begin to set an opacity for this.
+
+10:28.230 --> 10:34.390
+And the capacity I've chosen 0.7 now the hide is going to be absolute.
+
+10:34.440 --> 10:36.020
+We can use percent's.
+
+10:36.150 --> 10:38.160
+So I'm going to set it to 100 percent.
+
+10:38.460 --> 10:40.680
+And the with is going to be 100.
+
+10:40.800 --> 10:42.530
+No make sense.
+
+10:42.690 --> 10:44.970
+We're going to cover the whole elements.
+
+10:45.100 --> 10:53.310
+You want to send it to top when to everything to be on top and then we sent the position position and
+
+10:53.310 --> 10:59.820
+then it's going to be absolute right since we want to animate whenever we Hoover we need to use the
+
+10:59.820 --> 11:00.560
+transition.
+
+11:00.660 --> 11:05.260
+And I'm going to just animate all transitions.
+
+11:05.390 --> 11:06.340
+Right.
+
+11:06.400 --> 11:13.180
+So now we need to go you know it's good but we need to add animation to this to the Hoover event.
+
+11:13.240 --> 11:18.120
+So get a copy of this go right here at the bottom and open and close.
+
+11:18.120 --> 11:23.490
+It says We want to trigger whoever is going to select the item and say Hoover.
+
+11:23.950 --> 11:27.120
+And the only thing we need to do right here is change the opacity.
+
+11:27.310 --> 11:30.070
+The person he is now is going to be 0.7.
+
+11:30.130 --> 11:30.990
+Going to be zero.
+
+11:31.030 --> 11:36.960
+So I'm going to go ahead and delete the seven since we want to trigger a transition.
+
+11:37.030 --> 11:38.520
+I'm going to just do transition.
+
+11:38.540 --> 11:46.930
+All you can do on the transition opacity right here instead of all good now should be working good to
+
+11:47.020 --> 11:48.370
+go right here.
+
+11:48.810 --> 11:49.170
+OK.
+
+11:49.180 --> 11:49.880
+It's working.
+
+11:49.890 --> 11:58.200
+If I do however get to everything looks nice when we make it bigger we go.
+
+11:58.240 --> 12:00.050
+I'm using Windows 10 of course.
+
+12:01.450 --> 12:02.200
+There you go.
+
+12:02.410 --> 12:03.490
+So that's better.
+
+12:04.980 --> 12:06.900
+Me just do it again.
+
+12:10.270 --> 12:10.640
+OK.
+
+12:10.670 --> 12:12.710
+So this is working.
+
+12:12.760 --> 12:15.180
+We're going to go to the next component.
+
+12:15.230 --> 12:17.870
+It's going to be the pole components right here.
+
+12:17.900 --> 12:20.300
+We have just a poll who will be the champion.
+
+12:20.300 --> 12:24.600
+And whenever we click this is going to just add a boat to it.
+
+12:24.800 --> 12:30.310
+And of course this boats are going to be saved into the Jason database of course.
+
+12:30.470 --> 12:33.980
+And you know again I'm going to change some values right now.
+
+12:34.010 --> 12:38.450
+Whenever we click this is going to re render and do some things inside here.
+
+12:38.570 --> 12:42.420
+Let's go to the next section and begin to talk about this component.

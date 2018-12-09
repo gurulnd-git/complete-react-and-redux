@@ -1,0 +1,211 @@
+WEBVTT
+
+00:02.550 --> 00:08.730
+OK so let's create a function to render this want to go right here at the top and before render data
+
+00:09.090 --> 00:12.740
+I'm going to create a function that is going to render this Quon.
+
+00:12.930 --> 00:13.630
+OK.
+
+00:13.950 --> 00:16.130
+So we can make it a fat zero.
+
+00:16.200 --> 00:23.530
+And then just call to pass the squat squat.
+
+00:23.550 --> 00:24.560
+Now this.
+
+00:24.660 --> 00:28.730
+This is it's going to be an array of objects.
+
+00:29.070 --> 00:29.900
+I made a mistake.
+
+00:30.030 --> 00:34.910
+I call the Reds or data is going to be called render squar good.
+
+00:35.300 --> 00:36.960
+So this is going to be an array.
+
+00:37.010 --> 00:38.800
+So we need to map over it.
+
+00:38.960 --> 00:49.540
+So I'm going to say return and then we want to map squad and then squad is going to be map and map right.
+
+00:49.550 --> 00:56.620
+So again with each map we're going to pass an item and then just run a function.
+
+00:56.620 --> 00:59.350
+We want it to return soon GSX.
+
+00:59.840 --> 01:04.880
+So we're going to create a div and return everything inside a container.
+
+01:05.260 --> 01:07.820
+So we need a key for each map.
+
+01:07.850 --> 01:15.920
+So we're going to pass the item that name could pass whatever we want in a past class name and the class
+
+01:15.920 --> 01:26.310
+name is going to be equal to item that player that wrapper.
+
+01:26.800 --> 01:33.430
+So now what we need to do we have just an image to render something you know this could be an avatar
+
+01:33.720 --> 01:40.360
+and I was going to get a lot of work to create some database and bring all the original images from
+
+01:40.360 --> 01:41.680
+the to the players.
+
+01:41.680 --> 01:43.360
+And you know there are not real players.
+
+01:43.370 --> 01:47.160
+Roberto Roboto Yeah it's not Michael Jackson Yeah.
+
+01:47.470 --> 01:48.000
+OK.
+
+01:48.160 --> 01:50.170
+So let's bring the image for that.
+
+01:50.170 --> 01:51.800
+Just a dummy image.
+
+01:51.880 --> 01:54.240
+So first we will need the image.
+
+01:54.250 --> 02:01.110
+So I'm going to say EMG and then for Slash to close it and say Allt and then opening close.
+
+02:01.270 --> 02:08.740
+Item that name we're going to bring the source so it can be source and we can use template strings to
+
+02:08.740 --> 02:09.780
+bring the source.
+
+02:09.940 --> 02:14.560
+And it's going to be stored in images for Slash Avatar.
+
+02:14.560 --> 02:20.220
+And this is going to be fixed our time that P and G.
+
+02:21.280 --> 02:24.460
+All else we need to bring the name of the player.
+
+02:24.610 --> 02:32.090
+So I'm going to say it for you to create an 84 and then inside I'm going to bring the item name.
+
+02:32.290 --> 02:34.640
+Let me check what's going on right here.
+
+02:35.010 --> 02:35.220
+OK.
+
+02:35.230 --> 02:37.330
+So we get that drunk.
+
+02:37.370 --> 02:40.240
+We have to add a lot of styles of course.
+
+02:40.240 --> 02:43.080
+Now we can have just the data.
+
+02:43.120 --> 02:50.230
+The other player you know the points for game the average per game assistance assistance per game no
+
+02:50.400 --> 02:51.130
+wherever.
+
+02:51.460 --> 02:56.720
+So we're going to just close it and going to create a container for this.
+
+02:56.760 --> 02:57.400
+No not not.
+
+02:57.520 --> 03:06.310
+I'm just going to create notes I'm going to say Dev and each div it's going to be just a node you know
+
+03:06.310 --> 03:08.740
+because we get a short clip classis.
+
+03:08.930 --> 03:13.280
+So just going to create a template of this of each node.
+
+03:13.540 --> 03:20.380
+So you get to say node and now we need to pass some attributes of the players I'm going to say spam
+
+03:20.920 --> 03:26.980
+and each attribute is going to be inside this van and this one is going to be the number and says we
+
+03:26.980 --> 03:27.890
+want the number.
+
+03:27.910 --> 03:29.480
+This is going to be in the database.
+
+03:29.590 --> 03:38.590
+So we say item that number could get a copy because it's just a template and instead of number it's
+
+03:38.590 --> 03:45.630
+going to be points per game and the points per game is going to be PBG right click Create a node create
+
+03:45.630 --> 03:46.560
+a new one.
+
+03:46.560 --> 03:58.000
+You can have assistance pre-game assists per game is a PGE if you're not a big fan of the NBA now it's
+
+03:58.000 --> 04:02.050
+just the amount of passes with scoring.
+
+04:02.350 --> 04:06.030
+Then we have a new node and it's going to be RPG.
+
+04:06.100 --> 04:09.170
+I really don't know what this is.
+
+04:09.250 --> 04:10.200
+No RPG.
+
+04:10.210 --> 04:13.370
+It's like a gun or something like that.
+
+04:13.660 --> 04:14.400
+I don't know.
+
+04:14.410 --> 04:15.650
+Not a big game or two.
+
+04:15.940 --> 04:16.170
+OK.
+
+04:16.180 --> 04:21.580
+So I'm going to go back reload the page and then we just get the data.
+
+04:21.640 --> 04:25.400
+You know it's really easy to get data inside of an array.
+
+04:25.420 --> 04:27.120
+No it's really really simple.
+
+04:27.140 --> 04:30.800
+When once you get used to it it's just copy pasting.
+
+04:31.240 --> 04:34.500
+OK so everything looks nice should be working fine.
+
+04:34.540 --> 04:38.570
+It's not because we need to add of course a lot of Starling's.
+
+04:38.650 --> 04:44.700
+So let's go to the next section of the styles for this and just call today.
+
+04:44.860 --> 04:46.330
+OK let's go to the next section.

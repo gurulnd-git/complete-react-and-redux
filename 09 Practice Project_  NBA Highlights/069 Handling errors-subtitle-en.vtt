@@ -1,0 +1,613 @@
+WEBVTT
+
+00:01.030 --> 00:06.060
+OK so now we to show some messages whenever the users sense something formation.
+
+00:06.220 --> 00:11.740
+So from start I'm going to go right here to the state whenever we send information.
+
+00:11.750 --> 00:16.510
+If everything is good you want to show a message that is going to say thank you.
+
+00:16.510 --> 00:21.560
+And if it's not good is going to say something that something like like check your e-mail in red.
+
+00:21.740 --> 00:27.070
+So we're going to go back to the project and since we want to handled this through to or through the
+
+00:27.070 --> 00:29.950
+state we need to set some states.
+
+00:29.950 --> 00:35.200
+Now whenever the user sends the information you can have a default state and it's going to say error
+
+00:35.260 --> 00:36.490
+or success.
+
+00:36.610 --> 00:40.930
+And if there is an error this error state is going to change to two.
+
+00:41.180 --> 00:46.850
+And whenever it's changed to true you're going to show something right here just on show.
+
+00:46.850 --> 00:51.660
+Let's set the state first right here so we can have a second state.
+
+00:51.670 --> 00:58.740
+It's going to be error error and this one whenever the application loads is going to be false.
+
+00:59.050 --> 01:05.000
+And then if everything everything just goes OK you can have one for success.
+
+01:05.200 --> 01:09.580
+So it's going to be success and this one again is going to be false.
+
+01:09.650 --> 01:13.150
+So whenever the application loads it's not going to show any any messages.
+
+01:13.150 --> 01:14.450
+We don't want that.
+
+01:14.630 --> 01:20.740
+So I'm going to go right here to the Rander and I'm going to write something that a few don't know if
+
+01:20.740 --> 01:25.390
+you know about tertiary is going to just kind of look a little bit weird.
+
+01:25.510 --> 01:27.530
+So we're going to go below the impact.
+
+01:27.970 --> 01:33.880
+And I'm just going to try and if this device is going to have the check your e-mails going can have
+
+01:33.880 --> 01:35.890
+the error message the bad message.
+
+01:35.950 --> 01:39.080
+You say check your e-mail.
+
+01:39.450 --> 01:40.240
+Right.
+
+01:40.420 --> 01:44.000
+This Dev is going to have a class name.
+
+01:44.290 --> 01:50.320
+And now what we need to do we need to assign a class name of error to this but we want to show it whenever
+
+01:50.320 --> 01:51.430
+we want.
+
+01:51.790 --> 01:56.290
+So what we need to do right here we need to do a conditional that is going to be checking the whole
+
+01:56.290 --> 01:56.950
+time.
+
+01:56.950 --> 02:03.730
+If that does that state that error is true or false whenever the rehang renders the application is going
+
+02:03.730 --> 02:04.290
+to check.
+
+02:04.470 --> 02:06.350
+And if it's good it's not going to show it.
+
+02:06.370 --> 02:08.530
+But if it's bad it's going to show it.
+
+02:08.590 --> 02:14.380
+So I'm going to First Call the state that we need to check since this one is going to be the error.
+
+02:14.500 --> 02:19.990
+Again to say this dot state DOT error.
+
+02:20.340 --> 02:20.750
+Right.
+
+02:20.770 --> 02:22.570
+That's the first thing.
+
+02:22.570 --> 02:25.570
+Now we're going to use tertiary to check this eternity.
+
+02:25.660 --> 02:29.300
+It's just like an if statement but everything is going to be in line.
+
+02:29.530 --> 02:34.390
+So whenever we use tourney first we pass the thing that we want to check if we want to check state or
+
+02:34.510 --> 02:35.820
+we just leave that.
+
+02:35.860 --> 02:38.740
+Now what we do we put a question mark right here.
+
+02:39.220 --> 02:46.000
+And if everything goes right and passes is true it means that the state that error it's true is going
+
+02:46.000 --> 02:50.440
+to show the error message begin to change the class because we are inside class.
+
+02:50.950 --> 02:55.690
+But if everything goes the other way you want to show something else.
+
+02:55.700 --> 02:56.090
+All right.
+
+02:56.100 --> 02:59.600
+So pretty much if this is true we showed this one.
+
+02:59.620 --> 03:05.550
+But if it's false we show this one said the class for the error is going to be error.
+
+03:05.770 --> 03:06.350
+All right.
+
+03:06.700 --> 03:08.860
+So if it's true we want to show it.
+
+03:08.890 --> 03:10.080
+And this one is true.
+
+03:10.240 --> 03:14.040
+So we want to say show that to me.
+
+03:14.310 --> 03:21.350
+If the statement is true we will add a class to this component to this death that is going to be error.
+
+03:21.400 --> 03:22.300
+That show.
+
+03:22.730 --> 03:28.280
+But if it's false you want to just give a class of error.
+
+03:29.860 --> 03:35.060
+Now the thing is that whenever the application loads scenes we add some classes to this.
+
+03:35.140 --> 03:37.070
+It's going to show it whatever.
+
+03:37.200 --> 03:39.430
+If it's bad or good it just can show it.
+
+03:39.580 --> 03:40.870
+I'm going to do the other one.
+
+03:40.900 --> 03:41.670
+Thank you.
+
+03:41.820 --> 03:45.970
+And it's pretty much the same idea but the opposite to the opposite.
+
+03:46.270 --> 03:47.460
+So it's going to be a death.
+
+03:47.500 --> 03:49.840
+It's going to say just thank you.
+
+03:49.840 --> 03:50.720
+Right.
+
+03:50.830 --> 03:51.820
+We need a class name.
+
+03:51.820 --> 03:56.130
+So it's going to be class name and this one is going to be called.
+
+03:56.170 --> 03:57.800
+It's going to be using attorney.
+
+03:58.120 --> 04:03.490
+So what we need to check right here is going to be that this state that success is going to get this
+
+04:03.940 --> 04:07.040
+that state doesn't success.
+
+04:07.240 --> 04:07.890
+Right.
+
+04:07.930 --> 04:10.200
+And again as we use the question mark.
+
+04:10.390 --> 04:14.740
+And if it's true we want to show the success we want to show.
+
+04:14.730 --> 04:15.490
+Thank you.
+
+04:15.670 --> 04:22.850
+So I was going to say the class is going to be success and then we want to add the show so it's can
+
+04:22.870 --> 04:24.180
+show that thank you.
+
+04:24.250 --> 04:32.590
+And if it's not right we want to just say success at success.
+
+04:32.640 --> 04:33.670
+Right.
+
+04:33.690 --> 04:35.480
+So now looks get.
+
+04:35.620 --> 04:40.410
+Now I'm going to go to the CSSA right here because right now it's going to just show it all.
+
+04:40.510 --> 04:43.030
+So when you hide it to hide it all.
+
+04:43.120 --> 04:43.510
+OK.
+
+04:43.510 --> 04:48.850
+So whenever the application starts this ones are not going to show they're going to go to the Stiles
+
+04:48.910 --> 04:55.410
+that's the SS just on the closest style he says I'm going to go right here at the bottom and we will
+
+04:55.520 --> 05:00.700
+never start writing the the code the styles for this crimes.
+
+05:00.730 --> 05:08.440
+So I'm going to say fine now what we want to do we want to use the subscribe panel erimus just so I'm
+
+05:08.440 --> 05:15.430
+going to call the parent class which is going to be subscribed and then panel when they go to the comput
+
+05:15.430 --> 05:18.840
+and and just make sure that this crime panel.
+
+05:18.850 --> 05:24.300
+So it's got that I go now we want to call the error.
+
+05:24.750 --> 05:28.880
+And if it's there what we want to do we want to show it.
+
+05:29.110 --> 05:29.760
+OK.
+
+05:30.300 --> 05:33.550
+It's the same one for the other one says we're going to have just two classes.
+
+05:33.550 --> 05:38.900
+I'm just going to copy everything and just paste it but this one is going to be success.
+
+05:39.270 --> 05:40.890
+Success.
+
+05:41.630 --> 05:42.710
+OK.
+
+05:43.040 --> 05:46.000
+And do this just going to put it right here.
+
+05:46.050 --> 05:50.730
+So if this one is show the Erse get to the show class.
+
+05:50.730 --> 05:54.470
+We want to this send this play to block.
+
+05:54.870 --> 05:55.690
+Very good.
+
+05:56.040 --> 05:59.430
+Now we need to write some other classes and go right here.
+
+05:59.430 --> 06:04.480
+Going to make reference to this crank panel and now what we need to do is to set up the error that's
+
+06:04.530 --> 06:11.390
+going to say error get this one is going to start always with the display of none.
+
+06:12.270 --> 06:14.710
+And we're going to have a caller that it's red.
+
+06:14.790 --> 06:15.980
+It's a nice read.
+
+06:16.020 --> 06:18.160
+Not just regular red.
+
+06:18.180 --> 06:22.310
+It's going to be EF 4 4 3 3 6 right.
+
+06:22.440 --> 06:25.740
+So now we need to do pretty much the same thing with thank you.
+
+06:25.920 --> 06:31.290
+So I'm going to just copy paste it right here I'm going to say success.
+
+06:31.350 --> 06:32.070
+There's one again.
+
+06:32.070 --> 06:33.620
+It's going to be this button on.
+
+06:33.890 --> 06:36.180
+But it just put a green instead.
+
+06:36.300 --> 06:40.210
+So this for C A F 5 0 set.
+
+06:40.350 --> 06:46.590
+Just a nice screen and with the application starts we are not going to see we're not going to get this.
+
+06:46.590 --> 06:52.510
+So now what do we need to do is we need to change the state whenever the users submit this.
+
+06:52.560 --> 06:59.200
+And if everything is good right here we can set the States we want to just handle this so.
+
+06:59.210 --> 06:59.820
+OK.
+
+07:00.180 --> 07:03.830
+So first I'm going to go right here and set the errors.
+
+07:03.930 --> 07:09.110
+So if everything goes bad if we just enter a text and e-mail it's incorrect.
+
+07:09.330 --> 07:12.370
+We want to set the state of error to do so.
+
+07:12.390 --> 07:12.930
+OK.
+
+07:13.060 --> 07:22.360
+We're going to say this that said stayed begin to grab this error and say and just change it to true.
+
+07:24.340 --> 07:24.910
+Right.
+
+07:25.180 --> 07:25.550
+OK.
+
+07:25.630 --> 07:26.350
+Let's get.
+
+07:26.620 --> 07:28.360
+So let's check it right now.
+
+07:28.360 --> 07:32.920
+I'm going to just type something and if I click enter we get check your e-mail.
+
+07:32.920 --> 07:33.870
+So that's good.
+
+07:34.070 --> 07:35.140
+I mean just reload the page.
+
+07:35.140 --> 07:37.040
+So it's it's working.
+
+07:37.060 --> 07:38.700
+We're going to have a problem in just a minute.
+
+07:38.770 --> 07:41.790
+I'm going to just let you know how to fix it.
+
+07:41.790 --> 07:42.250
+So OK.
+
+07:42.280 --> 07:49.930
+Now since we want to whenever we submit something and it's saved into the database we need to change
+
+07:49.930 --> 07:51.830
+the success to try again.
+
+07:52.080 --> 07:53.300
+So I'm going to go right here.
+
+07:53.530 --> 07:59.440
+And since we want to show in her message whenever everything it's whenever this is sent we get the call
+
+07:59.440 --> 08:00.420
+back right here.
+
+08:00.490 --> 08:06.270
+We want to call this success and we will say true right.
+
+08:06.280 --> 08:07.840
+So let's check it out.
+
+08:07.840 --> 08:08.990
+Got to go right here.
+
+08:08.990 --> 08:16.700
+I'm going to type whatever at gmail dot com and then I'm going to click enter and we get thank you.
+
+08:16.700 --> 08:17.240
+All right.
+
+08:17.440 --> 08:18.580
+So it's working.
+
+08:18.580 --> 08:22.370
+Now the problem is that you're saving the database we're calling the.
+
+08:22.540 --> 08:25.500
+But this message stays the same.
+
+08:25.540 --> 08:31.310
+So we kind of need to create a function that is going to just clear the messages is going to just change
+
+08:31.350 --> 08:35.240
+states of error and success to false.
+
+08:35.510 --> 08:35.980
+OK.
+
+08:36.040 --> 08:39.470
+So we want to do this every time we do Handels of men.
+
+08:39.520 --> 08:42.060
+You know if it's good it's going to do this.
+
+08:42.130 --> 08:46.860
+And at the end we want to change the state back to false.
+
+08:46.900 --> 08:47.260
+Right.
+
+08:47.380 --> 08:48.380
+It's going to go right here.
+
+08:48.470 --> 08:54.430
+I'm going to call to a function that it's going to run after a few seconds so I'm going to say this
+
+08:54.550 --> 08:57.850
+doesn't clear clear.
+
+08:57.940 --> 09:04.860
+And then man messages on that just make it right.
+
+09:05.050 --> 09:06.330
+There we go.
+
+09:06.340 --> 09:09.120
+So this function what it's going to do.
+
+09:09.160 --> 09:13.450
+It's going to just run said time out after three seconds.
+
+09:13.460 --> 09:18.820
+It's going to wait three three seconds and it's going to change the state of error and success back
+
+09:18.820 --> 09:19.440
+to false.
+
+09:19.630 --> 09:22.810
+And then it's just going to show it's going to hide the elements.
+
+09:23.140 --> 09:27.130
+So ok going to go right here and just create dysfunction.
+
+09:27.220 --> 09:30.490
+This one is going to be a clear messages.
+
+09:30.490 --> 09:31.000
+This one.
+
+09:31.000 --> 09:34.830
+It's not going to receive any any prompts.
+
+09:34.990 --> 09:39.200
+So I'm going to say just like this just can create a function.
+
+09:39.210 --> 09:41.540
+It doesn't matter.
+
+09:41.620 --> 09:49.960
+So now we need to do a set time out and do set time out right these say time out.
+
+09:49.990 --> 09:55.660
+The first argument that it's going to take it's a function I'm going to say function then open and close
+
+09:56.170 --> 09:58.790
+and begin going to do the change is state right here.
+
+09:58.810 --> 10:03.400
+The second argument of said time out is going to be the amount of time that it's going to wait.
+
+10:03.400 --> 10:05.710
+So we're going to say three seconds.
+
+10:05.740 --> 10:12.670
+Three thousand write the code that begin to run here is going to be changing the state of success an
+
+10:12.670 --> 10:14.380
+error that we have right here.
+
+10:14.560 --> 10:15.970
+Back to false.
+
+10:16.330 --> 10:26.170
+So we say this Dodd said state and we pass an object and we get what we're going to have it's going
+
+10:26.170 --> 10:33.340
+to be error back to false and then success back to false.
+
+10:33.400 --> 10:34.280
+Right.
+
+10:34.420 --> 10:35.180
+So that's get.
+
+10:35.260 --> 10:36.730
+This should be working.
+
+10:36.730 --> 10:45.950
+So I'm going to reload the page and I'm going to go right here and say Frances at gmail dot com enter.
+
+10:46.340 --> 10:47.620
+We get thank you.
+
+10:47.620 --> 10:51.350
+She'd be clearing up but it's not going to work.
+
+10:51.430 --> 10:58.130
+We're going to get an error message and this is good because whenever we call to a function inside set
+
+10:58.390 --> 11:06.850
+a timeout out and we say does this means set time out and not the class you know we need to change this
+
+11:07.450 --> 11:08.870
+we need to make reference to this.
+
+11:08.890 --> 11:15.040
+And this is going to be related to the structure to this class and now the time out because of course
+
+11:15.040 --> 11:17.150
+we don't have a state on said time out.
+
+11:17.170 --> 11:23.960
+So the way we do this is we go to the end of the function and we use that mind we use set going can
+
+11:23.960 --> 11:32.950
+say dot and then bind and inside the bind we say this so whenever we are saying we are using the bind
+
+11:32.980 --> 11:35.740
+and there's we are saying OK you just run this function.
+
+11:35.890 --> 11:42.880
+But whenever we said this inside function is going to be the class and not the the set time out or whatever.
+
+11:42.880 --> 11:50.380
+So if I just again reload the page and go right here and again type Francis at gmail dot com going to
+
+11:50.380 --> 11:51.130
+click enter.
+
+11:51.220 --> 11:52.510
+I'm going to say thank you.
+
+11:52.660 --> 11:54.190
+And it should be pillaring.
+
+11:54.250 --> 11:56.900
+And it's it's it's it's doing that.
+
+11:57.070 --> 11:59.530
+I'm going to type some whatever.
+
+11:59.530 --> 12:02.550
+Check your e-mail and it's gone.
+
+12:02.590 --> 12:03.040
+All right.
+
+12:03.100 --> 12:06.380
+So everything it's working as expected.
+
+12:06.400 --> 12:08.770
+So this is pretty much done.
+
+12:08.800 --> 12:11.480
+You can have of course code going to have.
+
+12:11.710 --> 12:14.440
+So what are we going to do on the next to the next lecture.
+
+12:14.440 --> 12:18.340
+Next video is going to be styling this just giving styles to this.

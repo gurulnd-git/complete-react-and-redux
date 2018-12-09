@@ -1,0 +1,208 @@
+WEBVTT
+
+00:00.930 --> 00:04.030
+All right so let out some styles to this Slider.
+
+00:04.200 --> 00:07.100
+I'm going to just paste right here.
+
+00:07.110 --> 00:13.290
+The separator and we want to make reference to item dash slider.
+
+00:13.290 --> 00:14.120
+All right.
+
+00:14.440 --> 00:20.400
+And we're going to just add some styles and I'm going to put the hide of 700 pixels and now we get it.
+
+00:20.400 --> 00:21.490
+Notice the difference.
+
+00:21.570 --> 00:23.120
+All right let's get.
+
+00:23.140 --> 00:23.840
+So let's.
+
+00:23.880 --> 00:25.320
+We don't need to do a lot more.
+
+00:25.350 --> 00:28.020
+We need to set the background size to cover.
+
+00:28.020 --> 00:36.430
+So I'm going to say background and then set the size to cover and then important.
+
+00:36.820 --> 00:37.330
+Let's get.
+
+00:37.390 --> 00:42.640
+So it's going to center just said the background size this cover is going to fit the whole container.
+
+00:42.640 --> 00:45.850
+Now what I'm going to do I'm going to set the background position to center.
+
+00:45.850 --> 00:55.330
+So I'm going to say background and then position to center center send her.
+
+00:55.810 --> 00:57.580
+You're going to make it a position relative.
+
+00:57.610 --> 01:00.760
+So we can float the captions.
+
+01:00.790 --> 01:03.830
+So I'm going to say position relative.
+
+01:04.870 --> 01:10.310
+And we're going to use a font family inside here and we're going to use that for all of one.
+
+01:10.320 --> 01:15.530
+You can just copy it from here and paste it right at the bottom.
+
+01:15.610 --> 01:22.030
+Burguet So we're going to make reference to items either again and make reference to the caption.
+
+01:22.050 --> 01:29.770
+So I going to say Dot caption right so the caption is going to have a color of white and we can see
+
+01:29.770 --> 01:30.700
+it now.
+
+01:30.990 --> 01:31.930
+OK that's good.
+
+01:31.930 --> 01:32.970
+We have the caption.
+
+01:33.220 --> 01:34.460
+So what are we going to do.
+
+01:34.460 --> 01:40.480
+We're going to make a position absolute and the position absolute.
+
+01:40.480 --> 01:49.820
+We want to make it ride zero pixels and then panning and the panning is going to be tiny pixels.
+
+01:50.370 --> 01:51.160
+OK.
+
+01:51.550 --> 01:53.870
+We want to align it to the right.
+
+01:53.890 --> 02:00.490
+So I'm going to say text align and the text line is going to be to the right.
+
+02:00.490 --> 02:06.120
+Forget now right here we have zero can say just zero.
+
+02:06.120 --> 02:14.170
+What else we want to set with initial width and the width is going to be 320 pixels.
+
+02:14.970 --> 02:24.840
+And we want to transform the text to uppercase So we will say text transform and then uppercase Burguet
+
+02:26.010 --> 02:26.610
+looks nice.
+
+02:26.610 --> 02:30.390
+Let's modify the 8:4 so it can be a lot bigger.
+
+02:30.420 --> 02:35.180
+I'm going to say item slider and we're going to make reference to that H for tag.
+
+02:35.400 --> 02:43.650
+We have some styles already on the 8:4 and we going to say font and font weight and the font weight
+
+02:43.650 --> 02:49.420
+is going to be 300 and you can add a margin of zero pixels.
+
+02:50.990 --> 02:51.280
+Right.
+
+02:51.290 --> 02:55.690
+If we have zero we can get rid of the pixels.
+
+02:55.740 --> 03:01.480
+Now let's add some styles to the to the text right here.
+
+03:01.520 --> 03:03.180
+Top score of the week.
+
+03:03.260 --> 03:05.370
+So we need to add some styles to that.
+
+03:05.400 --> 03:13.790
+I'm going to say item slider and then make reference to dot caption and I forgot to do it right here.
+
+03:13.820 --> 03:18.170
+Make the reference still working but now it's just better the caption.
+
+03:18.200 --> 03:21.240
+And we're going to make reference to the p tag.
+
+03:21.590 --> 03:31.330
+And we want to font size we have right here font size and the font size is going to be 70 pixels.
+
+03:31.920 --> 03:32.490
+OK.
+
+03:32.720 --> 03:36.110
+Kind of looks nice at the margin.
+
+03:36.950 --> 03:37.990
+And then top.
+
+03:38.210 --> 03:41.260
+And we're going to make it zero pixels.
+
+03:41.400 --> 03:46.040
+That could be better looks nicer at it that way.
+
+03:46.130 --> 03:47.680
+Now right now it's really small.
+
+03:47.690 --> 03:49.680
+If we make it bigger it's nicer.
+
+03:50.610 --> 03:51.770
+OK let's get.
+
+03:51.770 --> 03:54.110
+So we are done with the with the slider.
+
+03:54.110 --> 03:55.640
+Everything is working fine.
+
+03:55.640 --> 04:03.320
+Now let's go to the next section and start doing the next part which is can it be the subscribed to
+
+04:03.320 --> 04:03.820
+us.
+
+04:03.920 --> 04:08.930
+And right now it's not taking the center center with the background position and it's because they forgot
+
+04:08.930 --> 04:13.620
+to put important no.
+
+04:13.850 --> 04:17.360
+And that's much much better.
+
+04:18.180 --> 04:18.950
+There we go.
+
+04:18.960 --> 04:23.980
+So now we're going to do this this described to us whenever the user subscribes.
+
+04:24.080 --> 04:25.130
+We're going to add something.
+
+04:25.140 --> 04:27.560
+And if it's not right it's going to say check your e-mail.
+
+04:27.660 --> 04:31.800
+And if it's right it's going to add it to the DVD adjacent to the database.
+
+04:31.800 --> 04:33.380
+Let's go to the next section and did this.

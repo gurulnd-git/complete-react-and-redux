@@ -1,0 +1,430 @@
+WEBVTT
+
+00:00.420 --> 00:02.520
+OK so let's add some styles.
+
+00:02.580 --> 00:06.370
+So I'm going to go to styles and I'm going to go to teams.
+
+00:06.400 --> 00:10.340
+You know I want to create a new one that is going to be just team right.
+
+00:10.690 --> 00:12.510
+It's going to be team.
+
+00:12.960 --> 00:17.300
+And when you add the style so I'm going to start with the team data wrapper.
+
+00:17.460 --> 00:19.540
+I believe I call it like that.
+
+00:19.620 --> 00:21.180
+Team data wrapper.
+
+00:21.300 --> 00:22.180
+Yeah I did.
+
+00:22.470 --> 00:26.140
+So going to make reference to that element is going to be a class.
+
+00:26.160 --> 00:33.000
+So we do dart team data wrapper so we're going to use flex again for this you know because it's easier.
+
+00:33.410 --> 00:35.090
+We're going to use flex.
+
+00:35.160 --> 00:39.590
+It's going to be display flex OK.
+
+00:39.790 --> 00:40.940
+So what is next.
+
+00:40.990 --> 00:43.380
+We going to have a left and a side.
+
+00:43.450 --> 00:44.920
+Of course on the left and right.
+
+00:45.130 --> 00:51.940
+So going to make reference again to the same elements and again to call the DOT the left and then just
+
+00:51.940 --> 01:01.780
+close it right the left is going to have a box sizing of borderer box and we can add some padding to
+
+01:01.780 --> 01:01.990
+it.
+
+01:02.020 --> 01:12.880
+So it's going to be panning and begin at 10 from top and bottom and 20 for the science that's at the
+
+01:12.880 --> 01:17.380
+Stiles for the right one can say instead of left can you change it to.
+
+01:17.380 --> 01:18.400
+Right.
+
+01:18.670 --> 01:21.280
+So the right the right one is going to just grow.
+
+01:21.280 --> 01:26.560
+You know this one is going to be kind of a with a fixed width with images inside with image inside.
+
+01:26.800 --> 01:31.520
+And then the right one is going to stretch with the remaining space.
+
+01:31.540 --> 01:42.720
+So we want to be flex grow and one so we can use box sizing and box sizing is going to be border box.
+
+01:42.720 --> 01:45.350
+We're going to add a border left.
+
+01:45.370 --> 01:54.220
+So it's going to be border and just left and the board the left is going to have one pixel solid and
+
+01:54.330 --> 01:56.090
+hashtag benign.
+
+01:56.320 --> 01:59.800
+Benign benign is a nice way.
+
+02:00.030 --> 02:00.340
+OK.
+
+02:00.370 --> 02:05.250
+We're going to add a padding and the padding is going to be zero pixels and then 20 pixels from the
+
+02:05.250 --> 02:06.750
+side.
+
+02:06.920 --> 02:10.850
+Right now looks nice but we need to trim this image.
+
+02:11.000 --> 02:16.430
+So I'm going to go right here at the bottom and again to make reference to the left container and then
+
+02:16.430 --> 02:23.450
+to the image that we have inside OK we can add a width of one hundred and fifty and 50 pixels something
+
+02:23.450 --> 02:29.830
+small OK that's good looks nice you know still is still big.
+
+02:30.230 --> 02:36.280
+So OK let's add some stylings to each one.
+
+02:36.330 --> 02:42.450
+Now you can go right here at the bottom and just to make sure because you know we should be getting
+
+02:42.480 --> 02:43.380
+this in a different way.
+
+02:43.400 --> 02:50.670
+Oh that's why we're getting this container this big big container because the image on the Alattar it's
+
+02:50.760 --> 02:51.700
+really really big.
+
+02:51.810 --> 02:55.330
+That's why Letwin let's just keep moving forward.
+
+02:55.470 --> 02:58.090
+Let's add some stylings to the H-1 stack.
+
+02:58.320 --> 03:01.160
+We're going to say team data.
+
+03:01.800 --> 03:05.820
+And I believe it was Team data wrapper.
+
+03:05.850 --> 03:08.250
+Yep team data rubber have it right here.
+
+03:09.000 --> 03:12.970
+And we're going to make reference to the H-1 and we can change just a color.
+
+03:13.150 --> 03:14.150
+It's going to be hashed.
+
+03:14.340 --> 03:18.540
+And then 6 the 60 60.
+
+03:18.720 --> 03:26.500
+Again just a nice gray What else let's give some styling to this want you know the Squats are going
+
+03:26.500 --> 03:30.900
+to be floating just kind of you know income comes.
+
+03:31.050 --> 03:38.890
+So we're going to use flex for this to say team data and it going to access this quite OK.
+
+03:38.940 --> 03:43.740
+So the squad is going to be this play and begin to do flex.
+
+03:43.740 --> 03:45.510
+We want to flex direction.
+
+03:45.540 --> 03:47.140
+So it's going to be flex direction.
+
+03:47.310 --> 03:50.230
+And then just Roe and we need to flex.
+
+03:50.250 --> 03:52.120
+Rap.
+
+03:52.500 --> 03:54.150
+Rap.
+
+03:55.370 --> 03:56.020
+OK.
+
+03:56.400 --> 03:59.570
+Now I need to make more changes.
+
+03:59.940 --> 04:00.540
+What else.
+
+04:00.570 --> 04:06.990
+We have the item I'm going to just trim the image for this because it's kind of annoying me.
+
+04:07.190 --> 04:15.060
+I can say a team against Team data wrapper of course and the team data wrapper to access the squad just
+
+04:15.060 --> 04:16.570
+like before.
+
+04:16.890 --> 04:25.710
+Dot squad and we access the item and we get to access the EMG Takk and the EMG attack.
+
+04:25.800 --> 04:28.650
+It's just going to have some slim
+
+04:31.750 --> 04:32.280
+size.
+
+04:32.320 --> 04:32.600
+Okay.
+
+04:32.650 --> 04:35.060
+That's much better.
+
+04:35.110 --> 04:43.450
+So I'm going to just display block of course and it's going to be margin to zero out all that's good.
+
+04:43.810 --> 04:46.550
+So let's go and just keep moving with the squat.
+
+04:46.990 --> 04:53.690
+So we would grab each item and we can just float him to make the items really small make me.
+
+04:53.710 --> 04:56.320
+Let me just make the speaker Okay.
+
+04:56.680 --> 05:03.480
+So I to make reference to Team data and squat and I'm going to access the item inside.
+
+05:03.670 --> 05:04.880
+Right.
+
+05:04.960 --> 05:06.160
+Let me just make this better.
+
+05:06.210 --> 05:06.980
+Good.
+
+05:07.130 --> 05:07.770
+So OK.
+
+05:07.780 --> 05:13.270
+Inside each item begin to make it position relative.
+
+05:13.580 --> 05:19.250
+And we're going to set a width of 25 percent so it's going to be 4 per.
+
+05:19.300 --> 05:20.520
+Yeah that's good that's good.
+
+05:20.710 --> 05:21.450
+That's the idea.
+
+05:21.460 --> 05:22.930
+Four on each.
+
+05:23.320 --> 05:24.350
+OK.
+
+05:24.400 --> 05:26.170
+It's going to be overflow.
+
+05:26.170 --> 05:31.510
+Hidden Rigaud padding of tiny pixels.
+
+05:31.570 --> 05:36.760
+What's next it's going to be baulks sizing and just pour the box right.
+
+05:38.530 --> 05:40.020
+You know looks nice.
+
+05:41.520 --> 05:41.980
+OK.
+
+05:42.160 --> 05:42.880
+What else.
+
+05:43.030 --> 05:47.370
+We have the item we need to style the 8:04 inside.
+
+05:47.410 --> 05:54.550
+So I'm going to make reference to item an opening close and I'm going to just select the 8 right inside
+
+05:54.550 --> 06:01.810
+the page are going to make everything text align and center and then just color and we can put a nice
+
+06:01.810 --> 06:07.930
+nice kind of a bluish color 0 0 6 B.V. 6
+
+06:11.280 --> 06:12.070
+looks nice.
+
+06:12.230 --> 06:12.720
+OK.
+
+06:13.050 --> 06:14.310
+So what is next.
+
+06:14.310 --> 06:18.540
+We have the image the style the notes right here inside.
+
+06:18.690 --> 06:22.800
+So again pick up make reference to the item we're almost on.
+
+06:22.900 --> 06:31.440
+I'm going to say Dot node and begin to select the font size to 14 pixels and then padding and padding
+
+06:31.440 --> 06:35.880
+is going to be four pixels and then zero from the sides.
+
+06:35.880 --> 06:36.120
+Right.
+
+06:36.120 --> 06:36.510
+What else.
+
+06:36.510 --> 06:39.210
+We have a span inside you know this one.
+
+06:39.510 --> 06:48.710
+So ever again just select everything opening close and then just make reference to this pattern OK.
+
+06:48.770 --> 06:51.790
+You begin to kind of make it bigger.
+
+06:51.910 --> 06:55.870
+Kind of in a bold way bold style.
+
+06:55.890 --> 07:00.980
+So I'm going to say font weight and it's going to be 600.
+
+07:01.100 --> 07:02.200
+Using Rebozo.
+
+07:02.260 --> 07:04.200
+So it's going to grab it from there.
+
+07:04.920 --> 07:05.240
+All right.
+
+07:05.280 --> 07:07.020
+So everything looks nice.
+
+07:07.020 --> 07:09.300
+Let's see if that nothing's broken.
+
+07:09.300 --> 07:11.470
+I love the page the slider.
+
+07:11.490 --> 07:12.660
+It's working.
+
+07:12.660 --> 07:17.970
+If I go to subscribe to us well you're getting the transitions if I go to start to us.
+
+07:17.970 --> 07:21.920
+I'm going to say whatever Jamail to come for Antar.
+
+07:22.050 --> 07:22.620
+Thank you.
+
+07:22.620 --> 07:24.140
+And then goes away.
+
+07:24.350 --> 07:25.320
+It works.
+
+07:25.380 --> 07:34.560
+If I type whatever we get the are nice What else if I just click and Golden State is going to add the
+
+07:34.560 --> 07:37.260
+boats and whatever.
+
+07:37.260 --> 07:38.870
+More votes for next.
+
+07:39.400 --> 07:40.520
+OK we get the fruiterer's.
+
+07:40.510 --> 07:43.500
+Everything is going to go to teams.
+
+07:43.660 --> 07:46.070
+We get the transitions and all the teams.
+
+07:46.470 --> 07:53.330
+If I search for Celltex works next right.
+
+07:53.370 --> 07:57.130
+If I read everything everything goes back to the original state.
+
+07:57.140 --> 08:00.640
+If I click can Celtics we get the data right.
+
+08:01.170 --> 08:04.210
+So it's working everything it's working just nice.
+
+08:04.230 --> 08:10.620
+Remember you can go to get have and just clone the entire project everything the finished project is
+
+08:10.620 --> 08:14.850
+going to be just right there so you can download it and inspect it.
+
+08:14.910 --> 08:19.530
+If you have a problem building something it just let me know we just can check to get half and just
+
+08:19.530 --> 08:21.240
+match the differences.
+
+08:21.510 --> 08:22.000
+OK.
+
+08:22.080 --> 08:23.090
+So this is good.
+
+08:23.110 --> 08:24.000
+We're done with this.
+
+08:24.120 --> 08:28.360
+Let's go to the next section and start with redux.
+
+08:28.380 --> 08:30.080
+That one is going to be really nice.
+
+08:30.090 --> 08:36.270
+It's going to be again just long because relax it's hard to understand at the beginning.
+
+08:36.360 --> 08:39.600
+But once you get it it just works like a charm.
+
+08:39.600 --> 08:44.190
+There is no more just component will and then just creating the effect right there.
+
+08:44.230 --> 08:48.670
+We're going to do it on a different way and use something better for this.

@@ -1,0 +1,436 @@
+WEBVTT
+
+00:00.180 --> 00:04.400
+Create the components that it's going to contain all teams.
+
+00:04.440 --> 00:06.520
+So OK I'm going to go right here.
+
+00:06.530 --> 00:12.900
+And first we need to get a team to do create a component that it's going to host all the teams.
+
+00:12.900 --> 00:20.170
+So I'm going to say import and then just teams from and then teams.
+
+00:20.210 --> 00:23.900
+No we didn't have this component we're going to create it in a second.
+
+00:24.000 --> 00:25.620
+We need to set a route for this.
+
+00:25.830 --> 00:31.860
+So I'm going to say route and the route is going to be exact and we can have a path for this.
+
+00:31.860 --> 00:38.100
+Of course the path is going to be teams and we're going to use a component whenever we call to this
+
+00:38.400 --> 00:47.070
+route that is going to be component equals two teams and then we just close it right using teams with
+
+00:47.070 --> 00:49.410
+a capital T.
+
+00:49.470 --> 00:50.700
+Let me just change it.
+
+00:50.710 --> 00:51.690
+Good.
+
+00:51.960 --> 00:57.340
+So now what need do we need to create this component and this component is going to do a lot of things.
+
+00:57.360 --> 01:03.210
+So it's going to be a class based component going to go right here to components and are going to create
+
+01:04.140 --> 01:07.210
+a team teams component teams now.
+
+01:07.250 --> 01:09.670
+JS Right.
+
+01:09.930 --> 01:17.550
+So again since this is a class based component we're going to bring a lot of things are going to import
+
+01:18.660 --> 01:29.770
+react and then just component from re-act component and it's going to be from react.
+
+01:29.770 --> 01:32.650
+Now we're going to use a few things each image.
+
+01:32.910 --> 01:34.460
+Each team is going to be a link.
+
+01:34.620 --> 01:41.640
+So I'm going to go right ahead and just import link from re-act router link right.
+
+01:41.740 --> 01:45.020
+It's going to be from and then just react.
+
+01:45.700 --> 01:49.370
+Router dong do.
+
+01:49.410 --> 01:50.550
+No no.
+
+01:50.580 --> 01:51.290
+OK.
+
+01:51.780 --> 01:53.650
+We're going to use US rescissions group.
+
+01:53.720 --> 02:03.160
+So I'm going to import it and they're going to say C Ss and then transmission and then grew up.
+
+02:03.420 --> 02:04.490
+Grow up.
+
+02:04.560 --> 02:05.420
+Very good.
+
+02:05.730 --> 02:16.570
+And it's going to be from an again react Dorsch transmission dodge and grew up OK.
+
+02:16.590 --> 02:18.360
+So this should be right.
+
+02:18.630 --> 02:23.670
+Now let's create the class that's going to be a class and the name is going to have is going to be teams
+
+02:24.110 --> 02:28.290
+is going to extend the component.
+
+02:29.490 --> 02:30.490
+OK.
+
+02:31.020 --> 02:35.410
+Now what we need to do we need to call to a render method is going to be rendered.
+
+02:35.630 --> 02:39.540
+And inside the render we can return some GSX.
+
+02:39.540 --> 02:47.450
+So for now we're going to put it Dave that sits teams and says we need to make this component available.
+
+02:47.520 --> 02:56.810
+So I'm going to say export than default and then teams sorry and reload the page.
+
+02:57.150 --> 02:58.460
+And in theory you should be working.
+
+02:58.460 --> 03:01.270
+If I go to teams we get teams get.
+
+03:01.290 --> 03:02.380
+So that is good.
+
+03:02.400 --> 03:04.160
+So what is the first thing that we need to do.
+
+03:04.170 --> 03:06.920
+We need to at least render something right here.
+
+03:07.200 --> 03:13.510
+So I'm going to go right here to the component and I'm going to start creating this.
+
+03:13.630 --> 03:14.750
+This elements.
+
+03:14.790 --> 03:22.740
+So first the class name the main wrapper is going to be teams components.
+
+03:22.980 --> 03:28.170
+Now this steam component is going to have an input to go to here we have an input.
+
+03:28.240 --> 03:31.520
+OK so I'm going to create a wrapper for the input.
+
+03:31.710 --> 03:42.220
+So it's going to be dev that the class name equals to no team teams input from start.
+
+03:42.270 --> 03:44.640
+This input is going to have.
+
+03:44.670 --> 03:52.140
+This container is going to have an input and it's going to be type and then just text and then we just
+
+03:52.320 --> 03:52.980
+close the.
+
+03:53.030 --> 03:55.560
+Of course then we can add more things.
+
+03:55.560 --> 03:57.670
+I'm going to add the placeholder right now.
+
+03:57.750 --> 04:00.160
+Can you just bring that bring this down.
+
+04:00.210 --> 04:03.800
+And then just right here you can add placeholder.
+
+04:03.900 --> 04:14.130
+And this is going to be equal to search for for a team and we're going to do that one.
+
+04:14.140 --> 04:15.700
+OK let's get.
+
+04:16.050 --> 04:23.910
+And then after the impled you can have a container div that's going to it's going to contain all the
+
+04:23.910 --> 04:24.450
+teams.
+
+04:24.460 --> 04:29.920
+So I'm going to say class name equal to teams container.
+
+04:30.420 --> 04:33.060
+Again makes sense right here.
+
+04:33.080 --> 04:37.890
+You can have a list of teams and we need to do a lot of things first.
+
+04:38.280 --> 04:42.720
+The first thing the first thing that we need to do is that since this is a class component and begin
+
+04:42.720 --> 04:48.330
+to use the state I'm going to bring the constructor and the constructor is going to receive some prompts.
+
+04:48.510 --> 04:55.580
+And then again inside we can have the super props write this constructor.
+
+04:55.590 --> 04:57.760
+This component is going to have a state.
+
+04:57.930 --> 05:04.800
+So I'm going to say this that state calls to something or whatever the application loads we want to
+
+05:05.190 --> 05:07.460
+run inside a component.
+
+05:07.500 --> 05:12.390
+We're going out we're going to run a fetch that is going to grab the list of all the teams and whenever
+
+05:12.390 --> 05:18.840
+we get the list we can save them inside a state and the state is going to be teams.
+
+05:19.260 --> 05:27.210
+Since this is an array we're going to just start as an empty array get the next one whenever we filter
+
+05:27.300 --> 05:32.780
+the teams we want to grab that list of all the teams as reference.
+
+05:32.780 --> 05:39.420
+We want to filter and get maybe one for example if I say Celtic is going to Filcher and get one as a
+
+05:39.420 --> 05:40.170
+result.
+
+05:40.170 --> 05:49.830
+So we will grab this result and put that result inside a different state and teams get stays on mutated
+
+05:50.190 --> 05:53.800
+so we can say for it right.
+
+05:53.980 --> 05:57.150
+It is one again just empty array.
+
+05:57.150 --> 06:03.930
+Now whenever we type write something right here this component is going to be a control component so
+
+06:03.990 --> 06:09.300
+we can just pass we can to use the value for the inputs through react and through state.
+
+06:09.390 --> 06:12.160
+So I'm going to say keyboard's.
+
+06:12.630 --> 06:13.950
+So we did this many times.
+
+06:13.950 --> 06:16.960
+That's why I'm going a little bit fast.
+
+06:17.040 --> 06:17.750
+OK.
+
+06:18.060 --> 06:22.860
+So why do we need to do now we need to fetch the list of teams right.
+
+06:22.920 --> 06:26.850
+Because it's the first thing we eat before we get started.
+
+06:26.880 --> 06:28.920
+So I'm going to call this component
+
+06:31.250 --> 06:37.410
+component and then just didn't mount that mount.
+
+06:37.740 --> 06:42.860
+And after this gets triggered begin to do the fetch says we need.
+
+06:42.870 --> 06:51.060
+And you were able to do the fetch you once you created a verbal right here that is going to host all
+
+06:51.060 --> 06:55.320
+the you or else it's going to host a lot of teams.
+
+06:55.320 --> 06:58.500
+Of course it's going to be teams.
+
+06:58.540 --> 06:59.110
+There you go.
+
+06:59.400 --> 07:05.980
+And the URL in my case is going to be a local host three thousand five and then just teams that are
+
+07:06.000 --> 07:08.310
+going to do a fetch just like we did before.
+
+07:08.310 --> 07:17.450
+Same idea is going to say fetch and fetch is going to have a you're just going to be this you are l.
+
+07:17.510 --> 07:23.260
+So I'm going to copy and paste Burguet for now not doing nothing you say.
+
+07:23.350 --> 07:24.590
+I'm going fast.
+
+07:24.830 --> 07:31.460
+So we have a method and the method is going to be get get.
+
+07:31.640 --> 07:36.590
+Now whenever we we fetch this we want to grab our response from the body.
+
+07:36.720 --> 07:41.770
+I'm going to say then something is moving the furniture in a nice time to do it.
+
+07:41.810 --> 07:47.050
+It's going to say then and then just responds with a response.
+
+07:47.090 --> 07:50.440
+Of course we can get around that response and convert it.
+
+07:50.510 --> 07:57.580
+Convert everything to Jaison whenever we get this states on we want to run a callback.
+
+07:57.710 --> 08:01.140
+So it's going to be then and then just open close.
+
+08:01.170 --> 08:05.810
+We use Jaison we're going to run the callback right here.
+
+08:06.460 --> 08:06.960
+OK.
+
+08:07.130 --> 08:08.230
+So this is good.
+
+08:08.330 --> 08:10.780
+We know how to do this but did this many times.
+
+08:11.000 --> 08:16.970
+Now what is going to happen whenever we get the information from the Jason we want to store in the state
+
+08:17.420 --> 08:24.560
+the state of teams which is going to be equal to all the teams and then filtered into host went to save
+
+08:25.010 --> 08:26.960
+all the teams inside fizzer.
+
+08:27.050 --> 08:33.050
+So whatever the application loads is going to grab the filters as an argument can loop the filtered
+
+08:33.380 --> 08:35.100
+and it's going to show all the teams.
+
+08:35.180 --> 08:41.100
+That is what's going happen on the first on the first loading when the app loads.
+
+08:41.300 --> 08:44.480
+Then if you do something else we've changed as we want.
+
+08:44.480 --> 08:47.320
+Grab the teams that contains all the teams.
+
+08:47.700 --> 08:51.030
+You know this is to not to make a new network quest.
+
+08:51.150 --> 08:57.320
+You grab the list of all the teams with flittered and we store it inside Filcher and now the application
+
+08:57.320 --> 09:02.460
+is going to render is going to grab maybe just one or two teams we have inside filtered it is going
+
+09:02.460 --> 09:07.810
+to show the new state right since we need to set state is going to say this.
+
+09:07.820 --> 09:16.880
+That said state and inside said state you want to set state of teams equal to Jaison and that the set
+
+09:16.880 --> 09:23.300
+of the Filcher going to be altered and is going to be equal to Jason which is pretty much the whole
+
+09:23.300 --> 09:23.940
+list.
+
+09:24.750 --> 09:31.380
+All right so now we get to need to show something a list we are going to be using the CSSA from sessions
+
+09:31.380 --> 09:33.000
+group but not for now.
+
+09:33.000 --> 09:37.260
+I'm just going to render a list just to make sure that everything is working fine.
+
+09:37.470 --> 09:42.330
+So I'm going to open and close and right here we want to bring the list.
+
+09:42.510 --> 09:50.430
+So I'm going to say render list this list is going to grab this state as arguments.
+
+09:50.550 --> 09:52.910
+So we're going to say this in that state.
+
+09:53.610 --> 09:58.660
+OK so I'm going to go right here and create a function that is going to loop this list.
+
+09:58.750 --> 10:04.650
+So I'm going to say Wunderlist is one is going to be equal to a function.
+
+10:04.650 --> 10:09.360
+This function is going to grab the state as an argument and the data we want.
+
+10:09.390 --> 10:10.900
+It's going to be inside filtered.
+
+10:11.070 --> 10:15.830
+So we're going to use destructuring and call the filter.
+
+10:16.740 --> 10:23.030
+Nice you know get get you're going fast if you can't understand everything I'm doing.
+
+10:23.040 --> 10:24.390
+Congratulations.
+
+10:24.390 --> 10:28.920
+So I'm going to say return and we want to return whenever we want to filter.
+
+10:29.040 --> 10:37.080
+So we're going to call to have map so we can say filtered Dionte map and inside the map of course we
+
+10:37.080 --> 10:42.200
+pass an item and we run an anonymous function.
+
+10:43.190 --> 10:52.410
+OK we want to return some GSX of course and whenever we return the GSX we want to return a link you
+
+10:52.470 --> 10:53.550
+know each image.
+
+10:53.550 --> 11:01.030
+Each team is going to go to a place so say two equal to and open close.
+
+11:01.550 --> 11:08.040
+OK so one second find it it's video went along.
+
+11:08.040 --> 11:11.140
+So let's go to the next section and just continue with this map.

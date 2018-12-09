@@ -1,0 +1,553 @@
+WEBVTT
+
+00:02.400 --> 00:05.440
+OK so let's start building the Pole for this.
+
+00:05.480 --> 00:10.930
+We're going to go right here at the bottom and we have we can have some will who will be the next champion.
+
+00:10.950 --> 00:11.270
+No.
+
+00:11.270 --> 00:12.260
+Just a poll.
+
+00:12.480 --> 00:14.650
+And I'll just something right here.
+
+00:14.700 --> 00:17.880
+You can have two thousand three hundred fifty nine.
+
+00:17.880 --> 00:19.490
+You're going to have the same values.
+
+00:19.500 --> 00:21.860
+So this is coming from the server.
+
+00:21.960 --> 00:25.500
+The server is just rendering whatever value we have.
+
+00:25.500 --> 00:27.930
+First you know first second and third.
+
+00:28.080 --> 00:33.690
+So if I click right here Goans state is going to change the positions he's going to calculate which
+
+00:33.990 --> 00:39.350
+has more votes and then it's just going to give us back the correct order other of everything.
+
+00:39.660 --> 00:42.010
+So let's start with this.
+
+00:42.090 --> 00:47.190
+I'm going to go to the Jason Jason and right here that if you did Jason you can have something that
+
+00:47.190 --> 00:49.860
+says Paul but I didn't use this.
+
+00:49.870 --> 00:52.150
+I just change it right now.
+
+00:52.200 --> 00:59.120
+Just changed how this is going to work because you know in real life you can have just a date of database
+
+00:59.130 --> 01:03.550
+just one database that is going to have all the teams and you can have all the data right there.
+
+01:03.570 --> 01:05.530
+So you can use the same teams.
+
+01:05.850 --> 01:11.910
+So what is this is what's doing it's calling the teams to spring the teams from the server and it's
+
+01:11.910 --> 01:17.200
+bringing the three elements that have a pool and equal to two.
+
+01:17.220 --> 01:21.750
+You know we have the Atlanta Hawks right here and we have Paul faults.
+
+01:21.780 --> 01:23.710
+So it's not bringing that data.
+
+01:23.710 --> 01:28.000
+So whenever we have to he's going to bring that and now we're going to have a count.
+
+01:28.140 --> 01:30.730
+So it's only bringing the ones that have a count.
+
+01:30.870 --> 01:34.730
+So this is pretty much the the whole idea and.
+
+01:34.770 --> 01:41.790
+OK so let's start building this are going to go back to home and right here at the bottom we will need
+
+01:41.790 --> 01:43.700
+this components.
+
+01:43.710 --> 01:48.170
+The thing is that with this component we can begin to bring a different database.
+
+01:48.210 --> 01:55.530
+Not that this the state at home is going to bring this state that teams are going to handle everything
+
+01:55.590 --> 01:57.150
+inside this component.
+
+01:57.270 --> 02:00.620
+That's a creative component going to go right here at the top.
+
+02:00.620 --> 02:08.900
+And I'm just going to import it for now because say import and then I'm going to say Pull right then
+
+02:08.910 --> 02:17.240
+from and it's going to be of course DOD for Slash and pull dog for Slash and pole.
+
+02:17.280 --> 02:18.520
+Very good.
+
+02:18.680 --> 02:26.790
+They're going to go right here and create the components in a new fall and then pull the Jazz frigate.
+
+02:27.150 --> 02:33.990
+So this one is going to be state class component because we need to fetch data safe everything into
+
+02:33.990 --> 02:38.150
+the state and then we need to gravitate to mutate what we have right here.
+
+02:38.370 --> 02:46.620
+So I'm just going to go ahead and create a class based component is going to say import react react
+
+02:46.920 --> 02:49.390
+react react.
+
+02:49.600 --> 02:54.640
+Then you're going to bring components and I'm going to say component right.
+
+02:54.650 --> 02:56.080
+Going to make it better.
+
+02:56.250 --> 03:01.280
+Component we bring it from and react Breguet.
+
+03:01.440 --> 03:02.710
+This one is going to be a class.
+
+03:02.730 --> 03:09.950
+So I'm going to say Paul and extents and then components and be open and close.
+
+03:10.020 --> 03:13.620
+You're going to render some dummy text and call the render method.
+
+03:13.890 --> 03:17.530
+And then of course we want to return some GSX.
+
+03:17.560 --> 03:21.960
+I'm going to say dev poll Burguet.
+
+03:22.170 --> 03:30.330
+And since we won this component to be available from other components we say export default.
+
+03:31.080 --> 03:34.960
+And then just pull OK.
+
+03:35.000 --> 03:38.400
+So it's this component is going to have a state.
+
+03:38.560 --> 03:45.460
+I'm going to call the constructor science going to say constructor and then open you can pass the props.
+
+03:45.560 --> 03:46.880
+We don't need that anyways.
+
+03:47.030 --> 03:53.980
+It's going to say prompts and then to super and prop's right.
+
+03:54.230 --> 03:54.720
+OK.
+
+03:54.940 --> 03:56.180
+Everything looks fine.
+
+03:56.310 --> 04:04.040
+We can have a state but this is going to be this dot state and it's going to be equal to something and
+
+04:04.810 --> 04:10.310
+it's going to say pull teams now just going to add this and leave it empty.
+
+04:10.310 --> 04:11.930
+So what are we going to do.
+
+04:12.270 --> 04:13.710
+At the component.
+
+04:13.750 --> 04:15.140
+It's it's loading.
+
+04:15.140 --> 04:16.130
+It's going to load.
+
+04:16.130 --> 04:17.630
+It's going to bring all the data.
+
+04:17.630 --> 04:20.260
+Now I'm going to go to home and see what we have right here.
+
+04:20.420 --> 04:25.880
+I'm going to just import the components so we can at least see it on the screen.
+
+04:26.270 --> 04:26.700
+Right.
+
+04:26.780 --> 04:31.900
+So if I just read the page we get right here Paul.
+
+04:32.030 --> 04:33.020
+Very good.
+
+04:33.170 --> 04:34.880
+So let's go back to Paul.
+
+04:34.940 --> 04:39.740
+So now whenever this component loads you can trigger a function.
+
+04:39.860 --> 04:40.110
+OK.
+
+04:40.120 --> 04:45.070
+We're going to trigger a function that is going to go to the database to the adjacent server and bring
+
+04:45.170 --> 04:49.100
+all only the teams with the searching criteria.
+
+04:49.100 --> 04:51.890
+So let's start building this.
+
+04:52.000 --> 04:53.920
+This is going to be inside a container.
+
+04:53.930 --> 04:57.290
+It's going to be class name and it's going to be home.
+
+04:57.290 --> 05:01.490
+Paul Burguet you can have a title.
+
+05:01.550 --> 05:09.800
+It's going to be H-3 and it's going to say who will be the next champion.
+
+05:10.310 --> 05:12.780
+I'm not a big fan of the NBA.
+
+05:12.890 --> 05:17.540
+You know I'd like the NBA but I'm not a big fan.
+
+05:17.550 --> 05:20.210
+You know I really really like the NBA I mean that not a big fan.
+
+05:20.210 --> 05:21.440
+I'm from Argentina.
+
+05:21.560 --> 05:27.570
+Right here the main sport it's football soccer or whatever you want to call it.
+
+05:27.950 --> 05:30.370
+And you know I kinda like that sport.
+
+05:30.710 --> 05:38.270
+So this one is going to have right here we get just a call to the function and bring the items so we
+
+05:38.270 --> 05:43.230
+can at St. Paul container you know make sense.
+
+05:43.730 --> 05:48.680
+So this one is going to call to a function is going to bring whatever data we have and then it's going
+
+05:48.680 --> 05:49.490
+to render it.
+
+05:49.550 --> 05:55.580
+So this function is going to be called this and to render poll.
+
+05:56.150 --> 05:56.680
+OK.
+
+05:57.030 --> 05:57.420
+Let's get
+
+06:00.150 --> 06:00.870
+nice.
+
+06:00.880 --> 06:03.710
+So of course we don't have the function yet.
+
+06:03.740 --> 06:08.160
+It's going to create it right now and it's going to look a little bit weird.
+
+06:08.170 --> 06:14.070
+I'm going to just tell you which problems begin to we can have in just one minute to say render poll
+
+06:14.540 --> 06:15.840
+right.
+
+06:16.150 --> 06:22.480
+So this render poll when it's going to do it's going to grab whatever information we have in the state
+
+06:22.930 --> 06:24.070
+polls.
+
+06:24.070 --> 06:28.560
+And so those are on this state the poll team's poll teams.
+
+06:28.600 --> 06:31.920
+Going to be in a race is going to host three different teams.
+
+06:31.990 --> 06:33.190
+So we need to map that.
+
+06:33.190 --> 06:35.650
+The things that we don't have the information right now.
+
+06:35.680 --> 06:38.280
+So what I'm going to do I'm going to do the.
+
+06:38.410 --> 06:44.350
+So we can at least have some data so I'm going to go right here at the top and again it just create
+
+06:44.350 --> 06:47.510
+a function that is going to fetch whatever team we need.
+
+06:47.670 --> 06:50.080
+So it's going to be fetch Paul.
+
+06:50.360 --> 06:51.730
+Right.
+
+06:52.120 --> 06:57.690
+This function is going to do a fetch and to do two to make a patch just a network request.
+
+06:57.700 --> 07:02.060
+We're going to need a U R L R L is going to be inside.
+
+07:02.200 --> 07:06.650
+Just leave me right here inside localhost and teams.
+
+07:06.700 --> 07:12.730
+So just like before going to go right here at the top because this increased create of our will that
+
+07:12.730 --> 07:15.060
+it's going to host this L.
+
+07:15.100 --> 07:18.040
+So it's going to be you r l and Dench's.
+
+07:18.280 --> 07:19.330
+I get it just like the other one.
+
+07:19.330 --> 07:21.890
+I'm going to say home whatever.
+
+07:22.060 --> 07:22.870
+Right.
+
+07:23.030 --> 07:27.980
+It can be teams you know just to give it I get them to name it your home.
+
+07:28.000 --> 07:28.560
+Doesn't matter.
+
+07:28.570 --> 07:30.180
+You can call it whatever you want.
+
+07:30.470 --> 07:30.810
+OK.
+
+07:30.970 --> 07:32.850
+So I'm going to go to fetch.
+
+07:33.280 --> 07:37.190
+Fetch Paul is going to say Fetch going to start with that one.
+
+07:37.210 --> 07:39.330
+Fetch Burguet.
+
+07:39.360 --> 07:44.270
+We're going to open it close and what we use what we need is a u r l.
+
+07:44.320 --> 07:51.400
+The thing is that to bring the data we need and we need to pass some arguments some some some settings
+
+07:51.820 --> 07:58.870
+to the adjacent server so we can bring only three teams or the teams that have a pool.
+
+07:58.950 --> 08:00.230
+True right here.
+
+08:00.370 --> 08:01.260
+So OK.
+
+08:01.570 --> 08:06.600
+So first I'm going to use template strings and I'm going to call this your L home.
+
+08:06.640 --> 08:15.130
+It's going to be for the dollar side and then just or wherever currency and then just you are at home.
+
+08:15.180 --> 08:19.730
+Now we can set some attributes are going to use the question.
+
+08:19.830 --> 08:26.580
+So what we need to do we need to bring all the results that has have a poll and.
+
+08:26.700 --> 08:28.990
+So I'm going to say pull equal.
+
+08:29.100 --> 08:29.850
+True.
+
+08:30.340 --> 08:30.950
+Right.
+
+08:31.290 --> 08:34.460
+So we need to bring more things we're going to check for more things.
+
+08:34.470 --> 08:35.300
+So I'm going to do.
+
+08:35.370 --> 08:41.010
+And what we need to do is we need to sort their results by count.
+
+08:41.070 --> 08:44.100
+If I go to the database we have a count right here.
+
+08:44.310 --> 08:48.550
+So we need to put that in order and bring it in order.
+
+08:48.550 --> 08:54.070
+You know it's going to show the one that has more counts first and then the other ones of course.
+
+08:54.240 --> 09:01.490
+So we do underscored and sort and this one it's going to be equal to count.
+
+09:01.490 --> 09:04.910
+Right now what we need to do we need to set the order.
+
+09:05.040 --> 09:11.610
+It's going to be underscore or other equal desk that is descending.
+
+09:11.670 --> 09:15.340
+You can just arrange it results in a different way.
+
+09:15.360 --> 09:15.740
+OK.
+
+09:15.780 --> 09:18.170
+So the you are.
+
+09:18.210 --> 09:18.970
+It's good.
+
+09:19.080 --> 09:22.580
+So we're going to say coma and we going to set the method.
+
+09:22.770 --> 09:28.380
+The method is going to be get up not like this just like this.
+
+09:28.470 --> 09:30.900
+Get Burguet.
+
+09:30.930 --> 09:32.170
+The next thing we need to do.
+
+09:32.190 --> 09:39.220
+Whenever we use fecche we can just get the information on a different way so we need to grab that responds
+
+09:39.560 --> 09:43.950
+in adjacent format so we can say than write them.
+
+09:44.720 --> 09:51.660
+So we're going to grab the response and we're going to pass it to response and call the Jason method.
+
+09:52.020 --> 09:55.420
+Jason Burguet OK.
+
+09:55.620 --> 09:59.800
+And this of course is going to return something and we need to set a callback.
+
+09:59.940 --> 10:03.780
+So we're going to say then and we're going to start creating the Colback.
+
+10:03.780 --> 10:08.800
+We're going to grab that Jason and we're going to run a function with whatever we want to do.
+
+10:09.030 --> 10:17.340
+So this request is going to bring us pretty much three results with the teams so we can grab this result
+
+10:17.430 --> 10:23.210
+which this response is resolved and we can set the state to poll teams.
+
+10:23.360 --> 10:24.970
+So since we want to set state.
+
+10:24.990 --> 10:32.290
+We say this that said state this is going to be an object and we want to change the poll teams.
+
+10:32.300 --> 10:38.790
+So I'm going to say Poll teams and this is going to be equal to whatever we are getting for it.
+
+10:38.800 --> 10:43.990
+We Spawn's So this is good it should be working.
+
+10:43.990 --> 10:49.330
+The thing is that whenever the application loads we are not calling this function dysfunction it's never
+
+10:49.720 --> 10:50.770
+triggering.
+
+10:50.770 --> 10:56.530
+So what do we need to do is we need to call it now we're going to call it whenever this component it's
+
+10:56.680 --> 11:00.510
+loaded and it's rendered it's mounted we want to call this function.
+
+11:00.730 --> 11:08.000
+So we use component that mount you know the life cycle.
+
+11:08.050 --> 11:10.380
+We did this many time many times.
+
+11:10.390 --> 11:15.310
+Mount Breguet and we just called to this function.
+
+11:15.310 --> 11:25.660
+So it's going to be this dot fetch poll very good just to check that we're getting the information correctly.
+
+11:25.720 --> 11:27.240
+I'm going to do a log.
+
+11:27.350 --> 11:29.860
+And I'm just going to cancel whatever we're getting.
+
+11:29.930 --> 11:36.060
+So Jason up there you go counselor.
+
+11:36.770 --> 11:42.160
+So in theory if I just do the log check.
+
+11:42.230 --> 11:44.500
+We should be getting this data.
+
+11:44.850 --> 11:52.550
+And now this is the other one we get to see the array just an array and we can have all the the the
+
+11:52.580 --> 11:57.590
+three teams wires Cavalier's and next right here we get the data.
+
+11:57.590 --> 11:59.260
+So this is working.
+
+11:59.570 --> 12:06.560
+Now what we can do we can grab the state of poll teams and just create a map and then show the data
+
+12:06.620 --> 12:08.950
+just like we did many many times.
+
+12:08.960 --> 12:11.220
+So let's go to the next section and do this.

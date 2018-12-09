@@ -1,0 +1,358 @@
+WEBVTT
+
+00:00.450 --> 00:05.300
+OK so let's do all the set up and installing on the for these for this project.
+
+00:05.310 --> 00:12.030
+So from the start I have just the idea to create we are ranked AB I deleted pretty much everything just
+
+00:12.030 --> 00:15.330
+like we did before and left index as an index.
+
+00:15.330 --> 00:16.400
+Not H-G mail.
+
+00:16.560 --> 00:17.760
+So just like this.
+
+00:17.850 --> 00:23.970
+Now I've created a component's folder inside the source and then inside I had just create an app that
+
+00:23.970 --> 00:26.750
+has that is just rendering a hello world.
+
+00:26.790 --> 00:28.480
+Just something real simple.
+
+00:28.470 --> 00:29.640
+I've added the DVD.
+
+00:29.640 --> 00:37.950
+Jason do you have a US resource on the lecture and I've added the images folder so we can just grab
+
+00:37.950 --> 00:39.320
+the images from there.
+
+00:39.330 --> 00:39.580
+All right.
+
+00:39.600 --> 00:41.440
+That's the only thing I did begin to do.
+
+00:41.460 --> 00:42.610
+Everything else right now.
+
+00:42.790 --> 00:45.000
+We're going to need to install a lot of dependencies.
+
+00:45.090 --> 00:47.260
+So this is going to take to get it would take a while.
+
+00:47.280 --> 00:51.660
+I'm going to the video of course whenever I install anything so we can to use Jason's server.
+
+00:51.660 --> 00:55.710
+You can have the documentation right here.
+
+00:55.800 --> 01:01.680
+Basically this Jason's server is just to create a rest API in just a few seconds.
+
+01:01.720 --> 01:03.590
+It's literally a few seconds.
+
+01:03.840 --> 01:09.470
+So the only thing that the adjacent server or server uses is going to be the DVD Chaisson.
+
+01:09.900 --> 01:11.780
+So what we need to do to install it.
+
+01:11.790 --> 01:18.250
+If you don't have it if you did it on the previous lecture with the NPM installed mine is Jason's server.
+
+01:18.570 --> 01:20.530
+If you didn't do it we can do it now.
+
+01:20.670 --> 01:23.710
+It's going to be AM PM NPM.
+
+01:23.730 --> 01:28.960
+There we go up NPM install and then we can do minus D minus.
+
+01:28.970 --> 01:31.070
+Do you mean Global's global.
+
+01:31.080 --> 01:37.920
+So when I install this dependency globally we can just access some commands without doing PM install
+
+01:38.040 --> 01:39.540
+and we could just use it.
+
+01:39.540 --> 01:41.660
+It's going to be Jasen server.
+
+01:42.260 --> 01:43.720
+I'm going to just click enter.
+
+01:44.070 --> 01:45.300
+It's going to take a few seconds.
+
+01:45.300 --> 01:47.070
+I've already have it installed.
+
+01:47.190 --> 01:50.410
+So it's not going to take that long to be possible.
+
+01:50.460 --> 01:51.630
+And be right back.
+
+01:52.140 --> 01:52.470
+OK.
+
+01:52.470 --> 01:53.500
+Everything is ready.
+
+01:53.520 --> 01:57.570
+I'm going to open a new terminal because we need to right here on this terminal.
+
+01:57.650 --> 02:00.950
+We're going to run the NPM start for the re-act project.
+
+02:00.990 --> 02:07.290
+So we need a new terminal and run this Jason server on a different and different shell on different
+
+02:07.290 --> 02:07.860
+place.
+
+02:08.070 --> 02:16.180
+So to use to run the adjacent server we're going to say Jason server and then space and we're going
+
+02:16.180 --> 02:18.120
+to we're going to do minus minus.
+
+02:18.260 --> 02:21.960
+Watch that space and we're going to make reference to the file.
+
+02:22.000 --> 02:22.790
+I gave you.
+
+02:22.840 --> 02:24.540
+It's going to be divi done.
+
+02:24.550 --> 02:26.320
+Jason right.
+
+02:26.370 --> 02:28.250
+We need to specify the port.
+
+02:28.360 --> 02:33.790
+So we're going to be running everything inside port 3 0 0 4.
+
+02:33.850 --> 02:36.210
+You can choose whenever you want.
+
+02:36.230 --> 02:37.760
+They're going to click enter.
+
+02:37.780 --> 02:38.870
+It's going to do some stuff.
+
+02:38.920 --> 02:44.080
+And it's really fast and then it's going to give you is going to give you just a message going to say
+
+02:44.080 --> 02:48.560
+everything is ready and we load the DVD and Jason everything is done right.
+
+02:48.580 --> 02:50.280
+So you can have some resources.
+
+02:50.320 --> 02:57.310
+So if I just copy this inside this location you can have the Jasons going to just up give us.
+
+02:57.380 --> 02:59.270
+Jason's just like a fake.
+
+02:59.340 --> 03:01.100
+It's just like a rest API.
+
+03:01.270 --> 03:10.600
+So if I go to no home right here and I go home is going to give us the Jason so we can fetch the information
+
+03:10.600 --> 03:11.920
+right here and use it.
+
+03:12.290 --> 03:12.880
+OK.
+
+03:13.120 --> 03:13.540
+That's fine.
+
+03:13.540 --> 03:15.350
+That's the first step.
+
+03:15.370 --> 03:18.210
+I'm going to go back to the first terminal.
+
+03:18.220 --> 03:18.860
+Right.
+
+03:18.910 --> 03:22.090
+So we have installed we installed these in server.
+
+03:22.190 --> 03:24.680
+What else we can see we are going to be using routes.
+
+03:24.700 --> 03:36.480
+So we need to install reac router and get to say NPM install install and then re-act dash router dash
+
+03:36.870 --> 03:45.280
+Dom and we're going to use the person for Dot Z zero dot zero and then minus minus save.
+
+03:45.850 --> 03:46.230
+OK.
+
+03:46.290 --> 03:48.480
+It's going to take a few seconds and we'll be right back.
+
+03:50.930 --> 03:53.210
+OK so the router it's installed.
+
+03:53.270 --> 03:54.230
+What else we can need.
+
+03:54.230 --> 03:58.320
+We're going to need something to do this transition.
+
+03:58.340 --> 04:00.080
+This actually is going to be a slider.
+
+04:00.260 --> 04:01.460
+So we have some options.
+
+04:01.460 --> 04:07.410
+We have a lot of options just like when we use Jay Querrey we have a lot of light libraries to do this.
+
+04:07.430 --> 04:13.870
+Well this is the same idea you can have to use the re-act slick if you know the slick slider for Jay
+
+04:13.870 --> 04:16.550
+Querrey Well this is the re-act version.
+
+04:16.610 --> 04:17.570
+Same idea.
+
+04:17.760 --> 04:22.650
+So two solid beginning solid i've already have installed but I'm going to sit on it anyways.
+
+04:22.790 --> 04:31.210
+It's going to be NPM install and then it's going to be called re-act then dash and slick and going to
+
+04:31.210 --> 04:31.400
+do.
+
+04:31.410 --> 04:33.720
+Minus minus safe of course.
+
+04:34.190 --> 04:34.710
+OK.
+
+04:34.840 --> 04:36.170
+It's going to take a couple minutes.
+
+04:36.180 --> 04:36.970
+I'll be right back.
+
+04:40.160 --> 04:47.870
+OK so the reveal it installed whenever we just scroll down on the web page you're going to have this
+
+04:47.930 --> 04:48.830
+transition.
+
+04:49.040 --> 04:54.410
+So when you begin to use something else for this it's going to be called re-act reveal.
+
+04:54.710 --> 05:02.420
+And again just like the reveal from Jay Carney we just the same idea which is scroll and whenever the
+
+05:02.420 --> 05:06.610
+element appears on the screen it's just going to do a transition.
+
+05:06.620 --> 05:09.540
+So this re-act reveal uses two things.
+
+05:09.550 --> 05:14.360
+It uses the dependency for react with reveal and uses an animate CSSA.
+
+05:14.510 --> 05:19.070
+So whenever you install We need to install both and then we need to to use both.
+
+05:19.070 --> 05:23.450
+Don't worry we going to I'm going to tell you how to use this so we can install this.
+
+05:23.540 --> 05:30.470
+So it is going to be NPM install than space re-act dash reveal.
+
+05:30.680 --> 05:31.660
+That's the first thing.
+
+05:31.850 --> 05:32.860
+And then begin to be done.
+
+05:32.870 --> 05:33.910
+And he made CSSA.
+
+05:33.950 --> 05:43.100
+So we are going to do animate dot see SS and then of course mine is mine is safe right click enter and
+
+05:43.100 --> 05:45.330
+it's going to take a few seconds and I'll be right back.
+
+05:47.150 --> 05:54.470
+OK so whenever on the on the actual project whenever I go to teams we can have this nice transition
+
+05:54.560 --> 05:57.920
+this fading transition.
+
+05:57.920 --> 06:03.050
+And of course if we change again we're going to have to see the same transition but maybe you're going
+
+06:03.050 --> 06:05.740
+to be using a successor group for this.
+
+06:05.870 --> 06:09.920
+So we will need to install that dependency for the transition group.
+
+06:09.950 --> 06:22.210
+I'm going to say NPM install and install and then react dash transmission and dash group right.
+
+06:22.240 --> 06:23.750
+We're going to use the version 1.
+
+06:23.750 --> 06:26.930
+So it's going to be one dot X and then we're going to do.
+
+06:26.930 --> 06:29.010
+Mine is mine is safe.
+
+06:29.040 --> 06:35.160
+It could enter it's going to take a few seconds and again I'll be right back OK.
+
+06:35.160 --> 06:36.330
+We are almost done.
+
+06:36.390 --> 06:39.500
+We need to install redux because we can use redux.
+
+06:39.510 --> 06:40.560
+And this project.
+
+06:40.560 --> 06:45.320
+So we are going to do NPM Oh no I'm sorry this is not the speaking for the use Windows.
+
+06:45.450 --> 06:48.000
+So everything is ready right now.
+
+06:48.060 --> 06:51.180
+We're just going to start building the first component.
+
+06:51.180 --> 06:54.180
+So let's go to the next section and start building this.

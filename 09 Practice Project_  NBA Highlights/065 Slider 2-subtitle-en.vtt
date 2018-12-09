@@ -1,0 +1,457 @@
+WEBVTT
+
+00:00.780 --> 00:07.830
+OK so let's add the slider so we can use to react to Slick's later and we can have a lot of documentation
+
+00:07.830 --> 00:08.460
+for this.
+
+00:08.550 --> 00:12.750
+If you used react this six letter from J Querrey that same idea.
+
+00:13.020 --> 00:18.210
+So first what we need to do we need to import the slider from re-act slept.
+
+00:18.330 --> 00:28.670
+So I'm going to say import and then slider from and then react like it's going to be re-act slick BRIGA.
+
+00:29.130 --> 00:36.090
+So now if we check the documentation there react slider uses some settings right here whenever we trigger
+
+00:36.180 --> 00:36.670
+the slider.
+
+00:36.690 --> 00:43.350
+We can do this right now but before that to to show the slider is going to use is going to use some
+
+00:43.650 --> 00:47.650
+some success you know so what do we need to do.
+
+00:47.650 --> 00:55.760
+We need to grab all of this right here and just add it in South inside index over have right here.
+
+00:55.800 --> 00:58.150
+And just going to copy and paste.
+
+00:58.390 --> 01:01.090
+So that is the only thing we need right now.
+
+01:01.090 --> 01:02.250
+So I'm just going to close this.
+
+01:02.260 --> 01:05.650
+Just go back and go back to featured.
+
+01:05.860 --> 01:06.870
+Now what do we need to do.
+
+01:06.950 --> 01:11.420
+We're calling this featured component and we are receiving props.
+
+01:11.590 --> 01:17.340
+So now what we need to do we need to trigger a kind of a function and just loop.
+
+01:17.470 --> 01:19.590
+This prompts you're receiving.
+
+01:19.740 --> 01:25.660
+So I'm going to I'm going to just the lead slider and I get a call to a function that is going to be
+
+01:25.660 --> 01:32.490
+called generate slides generated slides.
+
+01:33.070 --> 01:38.690
+This one is going to be passing the props that we are receiving right here.
+
+01:38.800 --> 01:40.850
+Now I'm going to go just right here.
+
+01:41.080 --> 01:47.020
+On top of feature and I'm just going to call to this function you're going to stored inside of our will
+
+01:47.320 --> 01:49.750
+and this one is going to receive some props.
+
+01:50.050 --> 01:53.800
+And then just run that function get.
+
+01:54.020 --> 01:54.260
+Right.
+
+01:54.260 --> 02:02.110
+So since we're passing props the slides are going to be available inside Propst dot slides.
+
+02:02.120 --> 02:08.310
+If I just inspect this and go to the council we have here it's props sleights.
+
+02:08.330 --> 02:09.820
+And then the data.
+
+02:10.010 --> 02:16.300
+I don't want to do this I don't want to do is just access directly to slides since I'm passing probs.
+
+02:16.370 --> 02:21.950
+I'm going to make use of these structuring and enter the slides.
+
+02:22.040 --> 02:22.560
+That's good.
+
+02:23.380 --> 02:23.820
+Looks nice.
+
+02:23.820 --> 02:29.700
+Now whenever we just come into this component the feature first props is going to be empty.
+
+02:29.890 --> 02:33.020
+So if we map over ED going to get an error.
+
+02:33.100 --> 02:34.250
+So what are you going to do.
+
+02:34.270 --> 02:40.120
+Going to go right here and create a conditional and we all we've all read this and I'm going to check
+
+02:40.150 --> 02:49.140
+if it's sleights it's empty and if it's not we're going to run the map now to use the slick slider.
+
+02:49.390 --> 02:50.700
+Well the first thing we need to do.
+
+02:50.710 --> 02:53.700
+Just like reactor's incisions group same idea.
+
+02:53.780 --> 02:58.510
+We need to wrap everything inside a component that is going to be called slider.
+
+02:58.520 --> 02:59.150
+So OK.
+
+02:59.200 --> 03:01.170
+Since we want to return something.
+
+03:01.210 --> 03:03.660
+I'm going to return something.
+
+03:03.760 --> 03:11.570
+But the first thing we need to do is to call this slider slider right.
+
+03:12.040 --> 03:14.560
+The slider is going to take some settings.
+
+03:14.740 --> 03:22.300
+If I go right here and check the data we can detect some settings and we start slider and then we pass
+
+03:22.300 --> 03:28.390
+the sayings you know whenever we use this is kind of up right here in the settings we have dots through
+
+03:28.390 --> 03:29.440
+for example.
+
+03:29.440 --> 03:36.220
+So this is equal to doing darts equal and then just passing through or whatever.
+
+03:36.220 --> 03:37.270
+It's the same idea.
+
+03:37.270 --> 03:43.330
+The only thing is that we are doing it like this with this spread operator and it looks better.
+
+03:43.330 --> 03:49.570
+So I'm just going to delete all this and I'm going to go right here and create some settings that we
+
+03:49.570 --> 03:51.460
+need to use for the slider.
+
+03:51.550 --> 03:57.160
+So I'm going to say Kunst and settings settings.
+
+03:57.740 --> 04:02.650
+Now the settings are going to be it's going to be an object and you can have a lot of settings.
+
+04:02.720 --> 04:04.220
+You can have the arrows.
+
+04:04.790 --> 04:06.430
+And this one is going to be false.
+
+04:06.440 --> 04:11.300
+We don't want arrows you know when the slider starts you can have the arrows in the left and the right.
+
+04:11.330 --> 04:12.780
+But we don't want that.
+
+04:12.950 --> 04:18.530
+We have the option to use darts by default is true but we're going to set it to False.
+
+04:18.530 --> 04:21.470
+We don't want we want it to be infinite.
+
+04:21.480 --> 04:22.640
+So I'm going to say infinite
+
+04:26.190 --> 04:29.400
+go infinite and this one is going to be true.
+
+04:30.110 --> 04:31.140
+Right.
+
+04:31.190 --> 04:34.280
+So we want to speed the speed is going to be 500.
+
+04:34.310 --> 04:36.060
+You know the speed of the transition.
+
+04:36.230 --> 04:39.020
+And then you have two default settings.
+
+04:39.080 --> 04:43.290
+It's going to be slides to show.
+
+04:44.390 --> 04:51.050
+And then one you know I really kind of don't know what this does but the added on the settings I just
+
+04:52.070 --> 05:02.720
+added it is going to be slides to scroll one you can get rid of this and check what's happening.
+
+05:02.750 --> 05:07.090
+It's not really good really well documented.
+
+05:07.530 --> 05:08.280
+OK.
+
+05:08.360 --> 05:14.870
+We're going to grab the settings and since we want to pass all these attributes inside slider what are
+
+05:14.870 --> 05:15.530
+we going to do.
+
+05:15.560 --> 05:16.610
+Going to use the rest.
+
+05:16.610 --> 05:17.250
+Operator.
+
+05:17.270 --> 05:22.460
+Just open and close curly braces and do dot dot dot and settings.
+
+05:22.460 --> 05:26.210
+And of course it's going to grab the settings and just pass it right here.
+
+05:26.960 --> 05:29.990
+So everything kind of looks nice.
+
+05:29.990 --> 05:36.830
+Now we need to map overhead because we didn't have data so well it's not going to work because we didn't
+
+05:36.830 --> 05:38.480
+have anything inside slides.
+
+05:38.600 --> 05:41.050
+So that's why it's giving us an error message.
+
+05:41.060 --> 05:45.130
+Now I'm going to go right here and start doing this now.
+
+05:45.410 --> 05:51.980
+Whenever we use something like this we need to pass the data right here and a different way.
+
+05:52.100 --> 05:58.450
+And what we need to do we need to wrap everything inside collar braces and here I'm going to call this
+
+05:58.540 --> 06:02.970
+the slides and I'm going to map over it.
+
+06:03.070 --> 06:05.900
+Now each map takes an image function.
+
+06:05.900 --> 06:11.470
+So I'm going to do open the the apprentice's then just a function.
+
+06:11.720 --> 06:14.060
+All right this function.
+
+06:14.060 --> 06:21.980
+Of course this map is going to take an item and what are we going to do in every terms and GSX.
+
+06:21.990 --> 06:24.470
+So I'm just going to oh sorry.
+
+06:24.530 --> 06:28.760
+If you want to return x we say return OK.
+
+06:28.930 --> 06:32.100
+And this is going to return pretty much all the slides.
+
+06:32.290 --> 06:33.810
+So I'm going to create a div.
+
+06:34.720 --> 06:36.700
+And if you're He should be working.
+
+06:36.730 --> 06:37.020
+OK.
+
+06:37.030 --> 06:38.080
+So we get no errors.
+
+06:38.110 --> 06:39.140
+So that is good.
+
+06:39.490 --> 06:41.190
+So if I say slide
+
+06:44.090 --> 06:49.230
+the slide key word right here and if we move it you know it's working again.
+
+06:49.460 --> 06:54.220
+So let's do the all the mark of this all the GSX for each iteration.
+
+06:54.260 --> 07:00.290
+And whenever we use a map we need a key so I'm going to say key and the key is going to be available
+
+07:00.350 --> 07:02.970
+inside each element inside Jason.
+
+07:02.990 --> 07:05.700
+We have the ID of each slide.
+
+07:05.780 --> 07:08.210
+So we going to use that one.
+
+07:08.210 --> 07:09.700
+Let me just save this one.
+
+07:09.700 --> 07:10.650
+OK.
+
+07:10.940 --> 07:15.490
+We're going to use the key and it's going to be item dot ID.
+
+07:15.920 --> 07:18.020
+So we're going to add a class name to this.
+
+07:18.050 --> 07:27.090
+It's going to be class name and the class name is going to be item underscore the slider.
+
+07:27.320 --> 07:34.850
+Now we can add an image as a background image to these to this element.
+
+07:34.850 --> 07:35.860
+So what are we going to do.
+
+07:35.880 --> 07:43.310
+We're going to say style and two and inline styles in GSX need to wrap everything inside curly braces
+
+07:43.400 --> 07:47.130
+and then two curly braces I'm going to say background.
+
+07:47.160 --> 07:58.010
+It's just it's a CSSA style back ground and back ground Burguet and we get to pass the values as with
+
+07:58.010 --> 07:58.640
+tactics.
+
+07:58.700 --> 08:00.320
+It's going to be template strings.
+
+08:00.320 --> 08:07.100
+So we get everything the image the cover for this is going to be inside your L inside images the images
+
+08:07.100 --> 08:09.690
+directory and then covers.
+
+08:09.710 --> 08:15.280
+And then for Slash and we make reference to the data we have right here inside cover which is going
+
+08:15.280 --> 08:16.660
+to cover one.
+
+08:16.670 --> 08:17.240
+OK.
+
+08:17.570 --> 08:23.930
+So a door or whatever currency and then item that cover.
+
+08:24.840 --> 08:25.430
+OK.
+
+08:25.750 --> 08:26.440
+Let's get.
+
+08:26.450 --> 08:27.980
+Looks nice.
+
+08:27.980 --> 08:32.480
+So now what we need to do we need to know we can have it.
+
+08:32.510 --> 08:33.790
+We need to add some styles.
+
+08:33.800 --> 08:34.710
+The image is there.
+
+08:34.760 --> 08:36.410
+It's just one pixel.
+
+08:36.440 --> 08:37.310
+So when I'm going to do.
+
+08:37.310 --> 08:44.460
+I'm going to add the caption right here we have some text with the title and then just a user.
+
+08:44.620 --> 08:46.070
+Sorry it's the topic.
+
+08:46.340 --> 08:53.530
+So I'm going to go and create a new section on you and that is going to contain this captions.
+
+08:53.630 --> 08:55.460
+So I'm going to say class name.
+
+08:55.790 --> 08:56.440
+Close.
+
+08:56.600 --> 09:02.750
+And this one is going to be caption class caption but we have to have an age for it if you remember
+
+09:02.750 --> 09:11.810
+we added styles for 8:04 this one because we can to use it right now can be item and then topic OK if
+
+09:11.810 --> 09:13.090
+we save it.
+
+09:13.660 --> 09:14.050
+OK.
+
+09:14.060 --> 09:14.510
+Looks nice.
+
+09:14.510 --> 09:18.560
+We have Sean Stewart and Stephen on the Sean Simonsen right here.
+
+09:18.740 --> 09:21.890
+You know it's kind of a darker night here.
+
+09:21.890 --> 09:27.200
+You're not able to see or to see at the time you're going to style it in a minute.
+
+09:27.230 --> 09:30.030
+I'm going to say a pea and begin to add the text.
+
+09:30.200 --> 09:37.010
+So since we have that information inside of evil again it's an inside a title going to say item that
+
+09:37.070 --> 09:42.730
+title you know right here the topic and the title.
+
+09:42.770 --> 09:44.420
+So we are getting the data.
+
+09:44.900 --> 09:47.520
+So this is working nicely.
+
+09:47.720 --> 09:52.040
+It's really really ugly because we need to add our styles to it.
+
+09:52.250 --> 09:56.390
+So let's go to the next section and add the styles for the slider.

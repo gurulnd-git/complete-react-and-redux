@@ -1,0 +1,661 @@
+WEBVTT
+
+00:01.920 --> 00:04.270
+All right so let's go to the next component.
+
+00:04.430 --> 00:10.830
+The next component is going to be described to us so much when the user just enters a male is going
+
+00:10.830 --> 00:15.430
+to just save the email into a database into the adjacent database.
+
+00:15.500 --> 00:16.710
+Well let me just give you an example.
+
+00:16.710 --> 00:23.700
+I'm going to just put an email an e-mail at e-mail that come whatever any click enter is going to say
+
+00:23.700 --> 00:24.410
+thank you.
+
+00:24.480 --> 00:30.450
+It's going to disappear after a few seconds and this information will be saved and the story is stored
+
+00:30.510 --> 00:32.110
+inside the DVD on Jason.
+
+00:32.140 --> 00:35.750
+And if I type something else that it's not right you're going to it that.
+
+00:35.940 --> 00:39.000
+So this is what we can do at first it's going to look ugly.
+
+00:39.000 --> 00:39.480
+We're going to do it.
+
+00:39.500 --> 00:40.780
+Ugly is going to work.
+
+00:40.800 --> 00:46.290
+And then at the end we will add the styles and of course just like before you can just go to get have
+
+00:46.530 --> 00:48.570
+and copy the stylus for this.
+
+00:48.560 --> 00:48.930
+So right.
+
+00:48.960 --> 00:51.140
+Let's start building this component.
+
+00:51.180 --> 00:54.320
+So this is going to be just the different components.
+
+00:54.360 --> 00:59.000
+We're going to go ahead right here and just import this new components.
+
+00:59.160 --> 01:01.900
+I'm going to say import and then go in.
+
+01:01.920 --> 01:06.490
+It's going to be subscriptions up descriptions.
+
+01:06.540 --> 01:07.150
+That's right.
+
+01:07.490 --> 01:09.850
+So as subscriptions target.
+
+01:09.990 --> 01:16.680
+So it's going to be from AM again we're going to say Dot for Slash and I'm just going to just copy this
+
+01:17.070 --> 01:18.270
+and paste it right here.
+
+01:18.270 --> 01:21.210
+And change is going to be do everything lowercase.
+
+01:21.210 --> 01:26.070
+So I'm going to go right here to the components for there and a good creating you component for this
+
+01:26.400 --> 01:28.320
+and this one is going to be subscriptions.
+
+01:28.340 --> 01:29.130
+Now.
+
+01:29.540 --> 01:30.930
+It's like with a 4.
+
+01:31.400 --> 01:38.340
+Ok this subscriptions dodgiest is going to be a class based component because we have an input and we
+
+01:38.340 --> 01:41.090
+need to handle the input through the state.
+
+01:41.230 --> 01:41.540
+OK.
+
+01:41.550 --> 01:46.740
+So first we will say import re-act from.
+
+01:46.860 --> 01:49.840
+It's going to be react with a capital or are.
+
+01:50.180 --> 01:51.980
+So it's going to be re-act from.
+
+01:52.020 --> 01:58.050
+And then just react and we're going to need to make use of component it's going to go right here a coma
+
+01:58.350 --> 02:00.930
+and then right component right.
+
+02:01.450 --> 02:08.520
+Burguet So you know just to save time and I can just let you know right now you can have a plugging
+
+02:08.520 --> 02:10.190
+for the via's code.
+
+02:10.310 --> 02:12.130
+I've already have it installed.
+
+02:12.150 --> 02:16.420
+I believe it's going to be the re-act code snippets.
+
+02:16.680 --> 02:22.230
+And you know whenever you want to create a good bad class based component you're going to say re-act
+
+02:22.770 --> 02:25.220
+class component then enter.
+
+02:25.440 --> 02:29.560
+It's going to just create a template for you so you don't need to type this.
+
+02:29.650 --> 02:33.570
+You know you can download that planning and make use of it inside of the plumbing.
+
+02:33.570 --> 02:38.580
+They have to it's just like an index with all the code snippets you can use and they are just a lot
+
+02:38.580 --> 02:39.560
+of snippets.
+
+02:39.630 --> 02:42.730
+So if I could just just going to go back and get to write everything.
+
+02:42.960 --> 02:48.690
+So this one is going to be a class and the class is going to be called whatever we are using right here
+
+02:48.730 --> 02:49.590
+subscriptions.
+
+02:49.670 --> 02:50.840
+Right.
+
+02:50.920 --> 02:57.420
+So is that what this one is going to extents up not next export stance as an expense component.
+
+02:57.960 --> 02:58.680
+Right.
+
+02:58.770 --> 03:00.300
+Opening close.
+
+03:00.300 --> 03:03.160
+Now I'm just going to render some text just something minimal.
+
+03:03.190 --> 03:12.550
+It's going to say render an inside beginning to return something some GSX just just a div you know and
+
+03:12.760 --> 03:15.310
+I don't know email whatever.
+
+03:15.420 --> 03:16.120
+Right.
+
+03:16.200 --> 03:24.330
+Go back right here and you're not going to get it right here because we need to put it inside of the
+
+03:24.570 --> 03:26.680
+component we need to do some more coding.
+
+03:26.840 --> 03:31.590
+When I go here I'm going to make this component available inside other components.
+
+03:31.590 --> 03:37.590
+So I'm going to say export the font and Dench's subscriptions.
+
+03:37.940 --> 03:39.100
+Right.
+
+03:39.150 --> 03:39.540
+Very good.
+
+03:39.540 --> 03:44.580
+So I'm going to go to home and since we have it available right here I'm going to go at the bottom and
+
+03:44.580 --> 03:46.290
+just below featured.
+
+03:46.360 --> 03:48.290
+It's just going to call this component.
+
+03:48.570 --> 03:49.280
+Right.
+
+03:49.740 --> 03:51.600
+If you load the page we have right here.
+
+03:52.050 --> 03:52.510
+Let's get.
+
+03:52.500 --> 03:53.740
+So it's working.
+
+03:53.760 --> 03:56.560
+So now this component is going to have a state.
+
+03:56.760 --> 04:03.660
+And since we want to use the state I need to call the constructor constructor Burguet open close.
+
+04:03.660 --> 04:09.430
+This one is going to receive is going to grab the prompts and then we call super and prompts you know.
+
+04:09.460 --> 04:11.410
+So it was the same thing.
+
+04:12.030 --> 04:12.480
+Right.
+
+04:12.480 --> 04:17.790
+So since this is going to be it's going to have a state you're going to say this that state equals to
+
+04:17.850 --> 04:19.050
+an object.
+
+04:19.140 --> 04:24.810
+Now right here inside the state whenever we enter some information right here says we want to make this
+
+04:24.870 --> 04:26.800
+impot a controlled component.
+
+04:26.970 --> 04:33.040
+And if you remember about controlled components we want to manage the value through react.
+
+04:33.090 --> 04:35.130
+So what we need to put here.
+
+04:35.160 --> 04:40.260
+It's the email the text of e-mail and we're going to put the value inside the state.
+
+04:40.350 --> 04:45.820
+So I'm going to say e-mail and whenever the application loads this e-mail is going to be empty.
+
+04:45.870 --> 04:46.410
+Right.
+
+04:46.440 --> 04:51.100
+We're going to have more things to validate this but for now which is going to leave it at e-mail.
+
+04:51.490 --> 04:51.840
+OK.
+
+04:51.840 --> 04:52.810
+So right.
+
+04:52.950 --> 04:58.980
+I'm going to go right here to the render and we just start doing the GSX for this and writing all the
+
+04:59.140 --> 05:00.050
+the code.
+
+05:00.090 --> 05:02.700
+So we're going to just delete now and go right here.
+
+05:03.070 --> 05:05.030
+And I'm going to give a class to this.
+
+05:05.200 --> 05:15.150
+And this class is going to be subscribed panel make sense subscribe them panel right.
+
+05:15.350 --> 05:18.160
+We're going to have a title for this component.
+
+05:18.160 --> 05:19.450
+This tiny snippet.
+
+05:19.580 --> 05:23.670
+So I'm going to give it an agent three tack three.
+
+05:23.810 --> 05:28.230
+It's going to be subscribed to us.
+
+05:28.490 --> 05:29.390
+Right.
+
+05:29.420 --> 05:34.910
+So this this pretty much is going to be a form and I'm going to use forms because whenever I don't have
+
+05:34.910 --> 05:42.470
+a button right here just to send the saved e-mail so whenever they click enter we can send it and since
+
+05:42.470 --> 05:45.510
+we want that behavior we need to use a form.
+
+05:45.590 --> 05:50.950
+So I'm going to say Dave I'm going to wrap everything inside a div and then I'm going to say form and
+
+05:50.960 --> 05:53.270
+then just open close.
+
+05:53.540 --> 05:56.480
+So this form is going to have an impact.
+
+05:56.630 --> 06:05.020
+It's going to be input and the type is going to be text No just a regular input.
+
+06:05.510 --> 06:07.850
+And then we need to close it and forget it.
+
+06:07.850 --> 06:09.860
+So everything is kind of ready now.
+
+06:09.880 --> 06:15.240
+If you check right here the final we have kind of a tiny tiny comment right here.
+
+06:15.380 --> 06:22.040
+So I'm going to go just after the forum and I'm going to create a small task and we can add some text.
+
+06:22.040 --> 06:23.320
+I have it ready right here.
+
+06:23.330 --> 06:24.800
+You can put whatever you want.
+
+06:24.800 --> 06:27.260
+I'm just going to put some lorem ipsum.
+
+06:27.520 --> 06:28.020
+Good.
+
+06:28.160 --> 06:29.490
+So what do we need right now.
+
+06:29.570 --> 06:36.310
+Whenever the user enters right here to this screen just read the page we're going to get a placeholder.
+
+06:36.350 --> 06:37.450
+So we're going to do that.
+
+06:37.460 --> 06:45.470
+We can add a placeholder just gonna put this at the bottom and I'm going to just write a placeholder.
+
+06:45.500 --> 06:50.690
+So it's going to be a place holder equals and we need to button text.
+
+06:50.690 --> 06:56.760
+So it's going to be your email at email dot com.
+
+06:56.930 --> 06:58.230
+Right.
+
+06:58.250 --> 07:03.150
+So what is the next thing we need is we want to make this a control component.
+
+07:03.350 --> 07:07.400
+We want to handle the value of this input through the components.
+
+07:07.580 --> 07:15.830
+So OK so to enter the value whenever the state of this input it's changed the state of email is changed.
+
+07:15.830 --> 07:22.480
+We want to connoted and put it right here in the state there's going to be this that state that e-mail
+
+07:23.720 --> 07:28.670
+and whenever we enter an email re-act is going to that state is going to put it right here and then
+
+07:28.670 --> 07:33.210
+it's going to read render and show whenever we are entering get.
+
+07:33.260 --> 07:34.210
+That's the first thing.
+
+07:34.310 --> 07:39.410
+So now we need to catch this whenever the user just changes the input.
+
+07:39.470 --> 07:44.630
+So I'm going to go right here and we're going to use the onchange listener is going to be up on change
+
+07:46.460 --> 07:52.970
+right on change equal and then we can a call to a function that is going to catch this email.
+
+07:53.000 --> 07:56.100
+So we're going to send this dot on.
+
+07:56.120 --> 08:03.040
+And my function is going to be call on change input now makes sense.
+
+08:03.050 --> 08:08.270
+So now I'm going to copy this the name of function are going to go right here at the top of the render
+
+08:08.540 --> 08:11.350
+and we can start creating this change.
+
+08:11.460 --> 08:17.790
+So I'm going to go right here and paste it says we want to catch the event and we need to use a fat
+
+08:18.000 --> 08:18.840
+function.
+
+08:19.220 --> 08:26.500
+So I'm going to say open close and inside here it says pass the events right.
+
+08:26.540 --> 08:27.900
+The thing looks good.
+
+08:28.100 --> 08:34.820
+So now what do we need to do whenever the user changes this impot we need to grab the event get the
+
+08:34.820 --> 08:38.490
+value for this input and just update the emails date.
+
+08:38.520 --> 08:39.000
+So OK.
+
+08:39.020 --> 08:46.670
+So I'm going to say this that set stayed open close and since we have an object just open close it curly
+
+08:46.670 --> 08:52.850
+braces and we're going to be changing the e-mail so I'm going to say e-mail and now the value of this
+
+08:53.190 --> 08:55.630
+company is going to be inside the event.
+
+08:55.640 --> 09:04.810
+So first we call the UN then we access the target and then we get the value get so this should be working
+
+09:05.730 --> 09:07.000
+begin to check it later.
+
+09:07.090 --> 09:08.960
+Going to do some of the things right now.
+
+09:09.280 --> 09:09.580
+OK.
+
+09:09.580 --> 09:14.270
+So the thing is that whenever whenever we change this is going to pay the state.
+
+09:14.530 --> 09:20.820
+And if I go right here and just type something it's going to type it if this is not working.
+
+09:21.100 --> 09:22.420
+We have the bag right here.
+
+09:22.420 --> 09:30.450
+If this does not work we cannot be able to update the bounty right here because we have a control component.
+
+09:30.850 --> 09:36.430
+So now to submit the form we need to call to a function whenever the user enters something and click
+
+09:36.430 --> 09:37.170
+and enter.
+
+09:37.390 --> 09:43.410
+If I just leave it as it is it's going to reload the page and just show you that reloading the page.
+
+09:43.750 --> 09:48.210
+So we need to call to a function whenever this form it's submitted.
+
+09:48.520 --> 09:52.870
+We need to call a function grab the event and do the preven default.
+
+09:53.200 --> 09:57.750
+So I'm going to call to the on submit event listener for this function.
+
+09:57.820 --> 09:59.650
+It's going to be on submit.
+
+09:59.940 --> 10:02.780
+And this just like the input is going to run a function.
+
+10:02.800 --> 10:09.950
+So it's going to be this dot and I are going to say handle submit.
+
+10:10.450 --> 10:10.960
+Right.
+
+10:11.260 --> 10:15.600
+So we're going to do a lot of things on the Handels meant to write more functions.
+
+10:15.700 --> 10:21.280
+So we're going to go right here on top of the onchange but I get to just paste the name of the function
+
+10:21.710 --> 10:25.030
+and I'm going to do pretty much the same thing with the on change input.
+
+10:25.050 --> 10:30.430
+It's going to be equal to something that is going to pass the event and then we're going to say Fat
+
+10:30.490 --> 10:32.710
+our function right.
+
+10:32.720 --> 10:36.930
+So we need to prevent the default behavior of the form.
+
+10:36.970 --> 10:43.650
+So I'm going to say events that prevent and then default.
+
+10:43.650 --> 10:44.060
+Right.
+
+10:44.080 --> 10:47.120
+And this is going to stop the page from reloading.
+
+10:47.140 --> 10:53.210
+If I go right here type something click enter nothing happens just clicking enter.
+
+10:53.500 --> 10:54.510
+So what do we need to do.
+
+10:54.550 --> 11:02.380
+We need to do so when it's first to do one thing which is going to be just grabbing the value that we
+
+11:02.380 --> 11:08.180
+have in the state so we can just grab the value and run a function that is going to update.
+
+11:08.200 --> 11:11.500
+It's going to send the value to the database.
+
+11:11.500 --> 11:13.880
+So OK I'm just going to run a function.
+
+11:14.290 --> 11:22.360
+It's going to be let email and the email is going to be inside this that state that e-mail.
+
+11:22.380 --> 11:27.370
+Now when we do the change we get the either the values right here.
+
+11:27.910 --> 11:28.770
+What else do we need.
+
+11:28.780 --> 11:31.190
+We're going to need something I'm just going to copy paste.
+
+11:31.190 --> 11:34.690
+You need to pass the screen and try to reproduce.
+
+11:34.870 --> 11:36.340
+I'm going to put it right now.
+
+11:36.340 --> 11:39.860
+Now to validate the e-mail and begin to do the validation later.
+
+11:40.150 --> 11:47.290
+We wanted to check if the if we have an app for example if I do a friend type Francis and then just
+
+11:47.290 --> 11:50.900
+click enter is going to let us know that we didn't have a valid email.
+
+11:50.980 --> 11:54.920
+And if I put an ad right here it's going to pass.
+
+11:54.940 --> 11:59.820
+So when you do a regular expression that it's going to check this and I'm going to say let's.
+
+11:59.890 --> 12:05.370
+And then Raggatt X you know you can find about regular expressions on the web.
+
+12:05.400 --> 12:07.840
+There is a lot of information there are really awesome.
+
+12:08.020 --> 12:13.660
+I'm just going to paste it right here and this regular expression is going to check if the e-mail is
+
+12:13.660 --> 12:18.800
+correct or not and if it's not of course it's not going to pass and it's going to give us an error message.
+
+12:18.930 --> 12:20.650
+So I'm going to go right here at the bottom.
+
+12:20.650 --> 12:27.730
+I'm going to say if and then just open and close and if it's not passed it's going to do something else
+
+12:27.740 --> 12:29.770
+this can just show the error message.
+
+12:30.120 --> 12:30.400
+OK.
+
+12:30.430 --> 12:38.380
+So right here the way we check the reg X is going to be called the rag X and then we can do that and
+
+12:38.380 --> 12:45.100
+we do test and inside the test we pass whatever value we want to change the check since we want to check
+
+12:45.100 --> 12:49.060
+the email I get to say test email right.
+
+12:49.260 --> 12:52.180
+Right now on the else I'm not going to return anything.
+
+12:52.600 --> 12:58.150
+But if it's if it's passing what we want to do we want to run a function that is going to grab the e-mail
+
+12:58.240 --> 13:00.650
+and save it to the database.
+
+13:00.700 --> 13:06.770
+So I'm going to say this they're going to call to a function and my function is going to be save Suppes
+
+13:07.020 --> 13:08.790
+decryption.
+
+13:08.860 --> 13:11.590
+Now this saved subscription is going to pass.
+
+13:11.770 --> 13:15.680
+An argument is going to be whatever value we have on the e-mail.
+
+13:15.870 --> 13:17.360
+It's going to pass.
+
+13:17.360 --> 13:18.880
+Email.
+
+13:19.050 --> 13:19.480
+That's good.
+
+13:19.500 --> 13:23.730
+So now what we need to do we need to create a function called Safe subscription.
+
+13:23.880 --> 13:29.770
+But it's going to just grab this e-mail and just do a post request.
+
+13:29.850 --> 13:30.870
+I'm going to go right here.
+
+13:30.910 --> 13:36.420
+We're going to start creating this function going to say save subscription.
+
+13:36.450 --> 13:41.160
+This is going to be equal and you can have an argument and the argument is going to be e-mail.
+
+13:41.380 --> 13:42.470
+Right.
+
+13:42.480 --> 13:44.830
+And then we just run a function.
+
+13:44.910 --> 13:47.380
+Now we're going to do fetch with this.
+
+13:47.380 --> 13:48.990
+We can just fetch the data.
+
+13:49.110 --> 13:50.910
+Now this section went too long.
+
+13:51.030 --> 13:56.130
+Let's go to the next one and create the fetch and the saving data to the to the database.

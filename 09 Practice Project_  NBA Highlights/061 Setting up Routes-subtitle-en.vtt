@@ -1,0 +1,349 @@
+WEBVTT
+
+00:01.840 --> 00:09.200
+OK so let's start building this for the first component which is going to be the main entry of the application.
+
+00:09.340 --> 00:14.540
+So I just have the index not just that it's calling the app inside computer components.
+
+00:14.800 --> 00:17.370
+So I'm just rendering Hello world.
+
+00:17.530 --> 00:24.160
+I'm going to do NPM start so we can at least get the hello world right here and in the meantime I'm
+
+00:24.160 --> 00:27.800
+just going to just ride some things I'm going to go over here.
+
+00:27.840 --> 00:31.880
+Oh it's just something he's already I'm running running on port three thousand it's because I have the
+
+00:32.350 --> 00:33.730
+finished project right here.
+
+00:33.850 --> 00:40.360
+So I'm going to say yes and it's going to do the same thing but it's going to just run the project inside
+
+00:40.360 --> 00:42.150
+the three years you want the next.
+
+00:42.190 --> 00:43.140
+Then export.
+
+00:43.270 --> 00:44.000
+Right.
+
+00:44.020 --> 00:48.080
+So hopefully we're going to get the hello world and we do Burguet.
+
+00:48.220 --> 00:52.380
+So OK so the first thing we need to do is to create the routes for this.
+
+00:52.390 --> 00:54.320
+We're going to have just three routes.
+
+00:54.430 --> 01:01.060
+It's going to be home and then we're going to have teams and whenever we can a team is going to take
+
+01:01.060 --> 01:02.400
+us to the description.
+
+01:02.440 --> 01:02.880
+Right.
+
+01:02.920 --> 01:03.680
+That's good.
+
+01:04.000 --> 01:05.530
+So let's go back to home.
+
+01:05.540 --> 01:07.630
+So we're going to have three different routes.
+
+01:07.810 --> 01:10.710
+First we need to import routes and router and routes.
+
+01:10.710 --> 01:18.670
+So I'm going to say import than do destructuring it's going to be browser router right.
+
+01:18.700 --> 01:26.680
+That's the first thing that we need to import route and everything is going to be imported import ups
+
+01:26.800 --> 01:27.560
+from.
+
+01:27.820 --> 01:32.220
+And then just react broader dumb re-act router.
+
+01:32.600 --> 01:34.270
+Don't forget.
+
+01:34.840 --> 01:38.890
+So from the start we can have a few components.
+
+01:38.890 --> 01:46.440
+So I'm going to say components and begin to have a header right here whenever the the application loads.
+
+01:46.570 --> 01:48.270
+We have a header right here.
+
+01:48.320 --> 01:51.140
+We're going to have to have a future of course.
+
+01:51.310 --> 01:52.600
+And then we're going to have home.
+
+01:52.690 --> 01:55.020
+OK so this is the first round.
+
+01:55.270 --> 01:58.160
+So I'm going to go just right had an import.
+
+01:58.190 --> 02:00.200
+However we didn't have it yet.
+
+02:00.280 --> 02:10.060
+But anyways so we can say import Hetter from are we going to say Dot for Slash and hetter Let's get
+
+02:11.240 --> 02:12.510
+we're going to have a future.
+
+02:12.520 --> 02:15.220
+So I'm going to say import footer
+
+02:19.240 --> 02:27.550
+from and then just footer dot force lounge and footer Breguet just like a regular web page and we're
+
+02:27.550 --> 02:35.560
+going to have the home I'm going to say import home from dawn to force Nash home.
+
+02:35.810 --> 02:40.680
+Burguet So what we need to do right now is to create the rounds.
+
+02:40.750 --> 02:46.870
+So I'm going to go right here and just delete the hello world and inside the return we're going to start
+
+02:46.870 --> 02:50.880
+with browser router to open close.
+
+02:50.880 --> 02:59.870
+You can rub everything inside a div OK and inside of it start building the router for this.
+
+02:59.870 --> 03:01.080
+First we're going to have the header.
+
+03:01.100 --> 03:03.260
+Of course you're going to get an error but it doesn't matter.
+
+03:03.260 --> 03:06.580
+We're going to just add something to the header right now.
+
+03:06.800 --> 03:10.110
+So I'm going to say Hetter.
+
+03:10.420 --> 03:11.220
+All right.
+
+03:11.330 --> 03:15.940
+The next one is going to be the first route which is going to be the one that just closed.
+
+03:16.110 --> 03:24.440
+That's the first route is going to be the home so we can say route and then we can have the exact because
+
+03:24.440 --> 03:27.420
+it's going to be just home and we can do path.
+
+03:27.620 --> 03:32.500
+And this one is going to be equal to four slash the component that begin to use for home.
+
+03:32.570 --> 03:33.380
+It's going to be homes.
+
+03:33.410 --> 03:40.370
+I'm going to say component calls and then just home well there we go.
+
+03:41.030 --> 03:41.260
+OK.
+
+03:41.270 --> 03:45.510
+This is the first round we're going to have the teams roud and the and the.
+
+03:45.520 --> 03:48.620
+And then the team idea about they can begin to do it later.
+
+03:48.830 --> 03:51.180
+And just after this we can have a footer.
+
+03:51.290 --> 03:58.590
+So I'm going to say footer there we go OK.
+
+03:58.710 --> 04:04.410
+So now if I go here of course you get a nerd because we didn't have a letter and we didn't have a footer.
+
+04:04.530 --> 04:05.210
+Let's get.
+
+04:05.280 --> 04:11.490
+So let's create a header and footer right now so we can skip that our message going to go to components
+
+04:11.770 --> 04:19.600
+and I'm going to create a new file and it's going to be Hetter dot J.S. and I'm going to create a footer
+
+04:21.150 --> 04:27.650
+new file footer that has Burguet.
+
+04:27.780 --> 04:30.620
+So right from the start the header.
+
+04:31.140 --> 04:38.970
+Well we don't need unity state inside the header so we just need to import just react and create a stateless
+
+04:39.240 --> 04:40.200
+component.
+
+04:40.350 --> 04:42.440
+So I'm going to go right here at the top.
+
+04:42.450 --> 04:48.690
+I'm going to copy this and paste it right here and remove the components cause it and I hate it.
+
+04:48.720 --> 04:50.440
+We have to import re-act from Riyadh.
+
+04:50.520 --> 04:51.510
+Let's get.
+
+04:51.510 --> 04:57.510
+So we're going to use link because whenever we go to the actual project instead here we have two links.
+
+04:57.630 --> 05:02.230
+So we need to import link from reac router.
+
+05:02.280 --> 05:08.230
+I'm going to say link and then from re-act router.
+
+05:09.060 --> 05:14.720
+Don Burguet going to go right here and begin to create a function to render the header.
+
+05:14.790 --> 05:20.090
+So I'm going to say Kunst header and this one is going to be equal to something we had.
+
+05:20.100 --> 05:21.740
+We didn't have any arguments.
+
+05:21.930 --> 05:29.190
+So we're going to go right here and just return a letter and I say return and begin to have a header
+
+05:29.640 --> 05:37.180
+header and right here which is going to return a div that's going to say headers.
+
+05:37.200 --> 05:40.260
+So we can make sure that it's importing the file correctly.
+
+05:40.260 --> 05:46.770
+So OK we have this component and we need to make this components available from other components.
+
+05:46.830 --> 05:54.030
+So we say export default and then just had her there go.
+
+05:54.170 --> 05:57.860
+Now let's do the same thing with the footer since it's pretty much same logic.
+
+05:57.860 --> 06:02.800
+I'm just going to copy all go to footer paste it right here.
+
+06:02.990 --> 06:04.900
+Just called footer.
+
+06:05.180 --> 06:10.590
+Going to change the export and right here I'm going to say footer.
+
+06:10.790 --> 06:11.100
+All right.
+
+06:11.150 --> 06:13.170
+Let's go to the main project.
+
+06:13.350 --> 06:15.440
+Let's reload the page and.
+
+06:15.480 --> 06:22.090
+OK I cannot resolve no that's good because we didn't have a home so we can go to component's right here
+
+06:22.100 --> 06:27.140
+to components and we can create a new file that is going to be home.
+
+06:27.270 --> 06:29.840
+That is good.
+
+06:30.020 --> 06:30.260
+OK.
+
+06:30.260 --> 06:34.560
+This home that Jay asked is going to do a lot a lot of things.
+
+06:34.700 --> 06:37.860
+So this home is going to be a class based component.
+
+06:38.140 --> 06:45.200
+So OK so I'm going to go right here to app and copy that react and components so that we can save some
+
+06:45.200 --> 06:45.680
+time.
+
+06:45.740 --> 06:51.500
+Just going to be at home I get to have react and components.
+
+06:51.500 --> 06:56.180
+Now I'm going to just create the class and return something so we can skip this error message.
+
+06:56.210 --> 07:00.000
+So it's going to be a class and the class is going to be called home.
+
+07:00.200 --> 07:06.370
+It's going to extend the re-act component and then we just do all the logic right here.
+
+07:06.590 --> 07:11.950
+So for the for class of class based component we need to render to use the render method.
+
+07:12.050 --> 07:17.150
+So I can say render than open close and just return some GSX.
+
+07:17.150 --> 07:19.430
+So it's going to be you return.
+
+07:19.970 --> 07:23.470
+And then just home or whatever.
+
+07:23.990 --> 07:26.990
+So we need to make this class available from other components.
+
+07:27.140 --> 07:29.950
+So I'm going to say export default.
+
+07:30.170 --> 07:33.830
+And then how.
+
+07:33.860 --> 07:34.650
+All right.
+
+07:34.660 --> 07:39.800
+So right here whenever the pitch loads we have just three things we have the header.
+
+07:39.820 --> 07:40.930
+So it's working.
+
+07:40.990 --> 07:42.040
+We have home.
+
+07:42.070 --> 07:44.320
+So that's working and we have the footer.
+
+07:44.680 --> 07:48.870
+So OK let's start building the first component beginning.
+
+07:49.140 --> 07:54.520
+We're going to bring the header right now on the next section and we're going to start doing the main
+
+07:54.520 --> 07:54.930
+banner.

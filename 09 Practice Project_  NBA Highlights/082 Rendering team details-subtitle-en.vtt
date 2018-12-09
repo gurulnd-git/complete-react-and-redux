@@ -1,0 +1,490 @@
+WEBVTT
+
+00:02.160 --> 00:04.430
+OK so let's keep moving for it.
+
+00:04.450 --> 00:05.870
+You're almost done with this.
+
+00:05.880 --> 00:09.530
+What we need to do now is to show the detail of the teaching.
+
+00:09.750 --> 00:12.110
+So we need to create a route for this.
+
+00:12.110 --> 00:15.850
+So I'm going to go right here on the top and create an import for this.
+
+00:16.050 --> 00:22.130
+So we're going to be it's going to be team from and then just team can go.
+
+00:22.140 --> 00:25.320
+Don't force slash and team right.
+
+00:25.350 --> 00:27.570
+Going to go right here at the bomb and create around.
+
+00:27.690 --> 00:34.060
+It's going to be route and exact and begin to select the path.
+
+00:34.150 --> 00:36.930
+Now this is up to you can you switch right here.
+
+00:37.080 --> 00:37.930
+No.
+
+00:38.420 --> 00:38.670
+OK.
+
+00:38.700 --> 00:43.960
+So we are we can be entering team and we can pass on ID.
+
+00:44.000 --> 00:50.730
+I'm going to say cone and ID right now we need to select the components that is going to render this
+
+00:50.730 --> 00:53.160
+information that's going to be team.
+
+00:53.820 --> 00:55.470
+And then just close.
+
+00:55.470 --> 00:55.780
+Right.
+
+00:55.800 --> 00:57.580
+Let's create the component for this.
+
+00:57.750 --> 01:00.460
+And again it's going to be called Team.
+
+01:00.470 --> 01:09.570
+It's going to be create a new file and team DOD J.S. get team is going to be again just a class based
+
+01:09.570 --> 01:17.110
+component because we need to know what we need to render a class fetch the information of the team given
+
+01:17.120 --> 01:17.870
+the.
+
+01:18.090 --> 01:21.100
+And then just do the rendering.
+
+01:21.420 --> 01:25.100
+So again I'm just going to go since we did it many many times.
+
+01:25.280 --> 01:29.230
+I'm gonna copy all of this and put it right here.
+
+01:29.700 --> 01:36.190
+So I'm going to say first I'm going to create a class that is going to be called Team Force.
+
+01:36.390 --> 01:38.950
+It's going to be team right.
+
+01:38.980 --> 01:43.740
+It's expanse and then component.
+
+01:43.760 --> 01:44.250
+Right.
+
+01:44.270 --> 01:50.660
+Going to create a class and just do that so we know what to do since his classmates component.
+
+01:50.820 --> 01:55.690
+And we're going to use the state I'm going to just go right ahead and write whatever we need to use.
+
+01:55.710 --> 02:00.890
+We're going to be using a constructor with prompts super props.
+
+02:01.050 --> 02:06.160
+You know it's always the same idea you know once you get the flow of this it's really really simple.
+
+02:06.210 --> 02:12.990
+It's going to be this state and this one is going to be equal to some data are going to say data and
+
+02:12.990 --> 02:18.100
+right here we're going to store all the data of this particular team.
+
+02:18.470 --> 02:18.710
+OK.
+
+02:18.720 --> 02:20.010
+So we will need a render.
+
+02:20.010 --> 02:27.120
+So I'm going to say render and then just open and close and we will return some data and say here can
+
+02:27.120 --> 02:31.810
+I say Dave and team we need to make this component available.
+
+02:31.830 --> 02:40.520
+So I'm going to say export Export default and then team.
+
+02:40.540 --> 02:41.830
+Right.
+
+02:42.060 --> 02:44.000
+We should be getting something team.
+
+02:44.010 --> 02:47.620
+All right let's get now when the component.
+
+02:47.820 --> 02:52.120
+We need to call the component that amount to fetch the information.
+
+02:52.260 --> 03:01.740
+So again say component did mount and nothing you right here we need to do a fetch.
+
+03:01.740 --> 03:08.790
+Now the fetch is going to be in local host whatever port you have for Slash teams just like we did before.
+
+03:08.810 --> 03:12.360
+So I'm going to create a U R L that is going to contain that.
+
+03:12.360 --> 03:15.920
+That location is going to be you or L team.
+
+03:16.100 --> 03:16.590
+OK.
+
+03:16.890 --> 03:23.400
+This one is going to be equal to local host and whatever location and then just teams.
+
+03:23.400 --> 03:23.830
+All right.
+
+03:23.870 --> 03:28.640
+I'm going to go right here and create the fetch for this and I say Fetch.
+
+03:28.740 --> 03:35.440
+We whenever we fetch we pass that you are l of team right here.
+
+03:35.790 --> 03:37.060
+And we need to.
+
+03:37.200 --> 03:39.720
+We need to do something else on the gist of this.
+
+03:39.750 --> 03:41.280
+We're going to create tactics.
+
+03:41.550 --> 03:48.450
+I'm going to just call this team you are l and whatever we're calling this if we just call two teams
+
+03:48.740 --> 03:53.620
+you can get a list of all the teams and we do want that which is one to get one team.
+
+03:53.670 --> 03:55.170
+So we do Jason's server.
+
+03:55.170 --> 04:01.720
+You can just request the team and then the name of the team is going to search for that.
+
+04:01.740 --> 04:09.420
+So to do this we do a question mark and we search my name and this one is going to be equal to whatever
+
+04:09.480 --> 04:11.080
+we have right here.
+
+04:11.160 --> 04:18.060
+Now if you remember with re-act router what you can do you can you can have you can have this program
+
+04:18.270 --> 04:23.380
+inside there's the props that match that times and then Id.
+
+04:23.640 --> 04:31.850
+So we can get from there going to go right here and say this that prompts that match that programs don't
+
+04:32.070 --> 04:33.900
+Id look at.
+
+04:34.120 --> 04:35.700
+Let's get let's get to work.
+
+04:35.700 --> 04:39.820
+So next we need to select the method just like we did previously.
+
+04:39.840 --> 04:46.310
+The method is going to be called to get right next.
+
+04:46.380 --> 04:52.370
+Whenever we do get we need to grab whatever we have on the body and go to get to Jason.
+
+04:52.380 --> 05:01.280
+So going to say I'm going to say then opening close grab the response and do the Jasen response rather
+
+05:01.290 --> 05:03.050
+Jason.
+
+05:03.450 --> 05:04.170
+Right.
+
+05:04.200 --> 05:11.550
+And whenever we get to Jason we need to run a callback and update the state so we can say Jaison then
+
+05:12.440 --> 05:15.290
+run the call Mac says you want to change this state.
+
+05:15.300 --> 05:16.530
+We're going to say this.
+
+05:16.530 --> 05:24.240
+That said state and again we just grabbed the data we have right here and we say that this one is going
+
+05:24.240 --> 05:26.040
+to be equal to Jason.
+
+05:26.180 --> 05:26.830
+Right.
+
+05:26.960 --> 05:27.810
+We get no wires.
+
+05:27.810 --> 05:30.410
+So in theory should be good.
+
+05:30.810 --> 05:32.200
+So what do we need right now.
+
+05:32.460 --> 05:38.290
+We need to render something and we need to render a list of what we have inside data that Chaisson.
+
+05:38.490 --> 05:43.970
+So I'm going to go just make space right here and put a class to the container.
+
+05:43.980 --> 05:49.860
+It's going to be class name you know team data right here.
+
+05:49.890 --> 05:55.680
+We need to create a function that is going to loop the data that we have inside the team.
+
+05:55.710 --> 06:03.660
+So it's going to be this that render data and what we're going to do we can get past that that this
+
+06:03.660 --> 06:11.120
+data sets that because the information it's going to be inside the state right.
+
+06:11.280 --> 06:11.710
+OK.
+
+06:11.870 --> 06:12.690
+Let's get.
+
+06:13.020 --> 06:19.740
+So I'm going to call this function that it's going to be rendered data and render data.
+
+06:19.960 --> 06:25.940
+We just say equal to some data and then just run the function.
+
+06:25.990 --> 06:32.890
+Now whenever we pass to the state data we want it's going to be inside this that sets these that state
+
+06:32.980 --> 06:40.320
+that data so we can make use of this structuring and say data right.
+
+06:40.360 --> 06:47.440
+We don't really need to use a map I'm just going to use it you know just to get you used to use the
+
+06:47.440 --> 06:48.100
+map.
+
+06:48.160 --> 06:50.500
+So we need to call the data we have.
+
+06:50.640 --> 06:59.320
+If we can a map over it I'm going to open it close and get out just call function open and close and
+
+06:59.320 --> 07:00.980
+then just run whatever we have.
+
+07:01.120 --> 07:02.940
+And we passed an item.
+
+07:03.290 --> 07:03.840
+OK.
+
+07:04.480 --> 07:11.680
+So now what we need to do we need to return some GSX Sex and the sex is just going to be a dip.
+
+07:12.030 --> 07:12.680
+Right.
+
+07:13.030 --> 07:15.770
+So each item needs to have a key.
+
+07:15.940 --> 07:20.700
+So we can to call the item docked Id get
+
+07:23.400 --> 07:28.920
+what else are we going to call the we can add a class name to this element.
+
+07:29.000 --> 07:35.430
+So it's going to be Team data and then wrapper makes sense.
+
+07:36.080 --> 07:36.520
+OK.
+
+07:36.560 --> 07:38.320
+So we're going to need a few things.
+
+07:38.930 --> 07:41.790
+If you check the original this is the final one.
+
+07:41.810 --> 07:47.710
+We have the image in the left the description in the right and then begin to do this.
+
+07:47.750 --> 07:50.190
+So OK so I'm going to create a container for that.
+
+07:50.240 --> 07:53.980
+But first you can say dev.
+
+07:54.690 --> 07:56.160
+Weird dev.
+
+07:56.330 --> 08:00.100
+And inside the div we can add to the image.
+
+08:00.200 --> 08:02.670
+But first I'm going to add a class name to it.
+
+08:02.930 --> 08:06.410
+And this one is going to be left right.
+
+08:06.500 --> 08:07.740
+You're going to call to an image.
+
+08:07.760 --> 08:10.840
+So I'm going to say EMG and just close it.
+
+08:10.970 --> 08:17.030
+And what we need to do we need selecting old and we need to pass the item and I'm going to pass the
+
+08:17.030 --> 08:19.340
+name for this.
+
+08:19.350 --> 08:20.520
+We select the source.
+
+08:20.540 --> 08:27.440
+So it's going to be called to as I see an opening close and right here we need to use template strings
+
+08:27.740 --> 08:29.180
+to pass the location.
+
+08:29.180 --> 08:37.790
+So it's going to be just for Shlash teams for Slash and whatever information we have inside the logo
+
+08:37.880 --> 08:39.220
+on the Jason.
+
+08:39.590 --> 08:42.400
+Now just logo right.
+
+08:42.410 --> 08:51.340
+So it's going to be item that logo Let's go back and this could mean that it means that we are calling
+
+08:51.350 --> 08:51.980
+it spring.
+
+08:52.080 --> 08:54.540
+Everything so it's working nicely.
+
+08:54.600 --> 09:00.770
+Let's create the all the container and the container that the one that has the title and the description.
+
+09:00.810 --> 09:03.270
+So this one we're going to call it.
+
+09:03.600 --> 09:09.950
+Of course if the other one with the left this one is going to be called right now.
+
+09:10.860 --> 09:11.170
+OK.
+
+09:11.250 --> 09:12.530
+So we can have a title.
+
+09:12.570 --> 09:13.350
+I'm going to call.
+
+09:13.350 --> 09:15.090
+I'm going to use an H1 tag.
+
+09:15.360 --> 09:17.710
+That's going to be equal to the team.
+
+09:17.750 --> 09:22.450
+Oh sorry item that name right.
+
+09:22.510 --> 09:24.160
+Going to bring the description.
+
+09:24.210 --> 09:27.210
+So this one is going to be just a simple tag.
+
+09:27.420 --> 09:30.150
+And we're going to bring the item that the description
+
+09:33.590 --> 09:36.510
+well on there we go.
+
+09:37.010 --> 09:37.250
+Right.
+
+09:37.250 --> 09:37.890
+So.
+
+09:37.980 --> 09:38.290
+OK.
+
+09:38.330 --> 09:40.540
+So it works nicely.
+
+09:40.550 --> 09:42.980
+The final one has a squad right here.
+
+09:43.150 --> 09:47.990
+It's going to go and create new elements right here and I'm going to tell you in a few seconds what
+
+09:48.290 --> 09:55.450
+you are going to do just a horizontal ruler just a line and then I'm going to curl.
+
+09:55.460 --> 10:00.630
+I'm going to create new elements and this new element is going to contain squat.
+
+10:00.630 --> 10:05.530
+It's going to say class name and it's quite good.
+
+10:05.540 --> 10:12.710
+Now the thing is that this squad is going to be an array of players just just like that.
+
+10:12.850 --> 10:16.440
+You know it's going to be just like this.
+
+10:16.850 --> 10:19.350
+So we need to map over it.
+
+10:19.700 --> 10:21.990
+So I don't want to do it right here.
+
+10:22.070 --> 10:29.750
+So I'm going to call to a different function but it's going to be called render squad and the render
+
+10:29.750 --> 10:37.120
+squad is going to take the item that is Quon.
+
+10:37.340 --> 10:37.810
+Right.
+
+10:37.820 --> 10:44.510
+And this is going to just loop over the squad and just bring the information is going to just kill the
+
+10:44.510 --> 10:46.820
+script because we didn't have this function.
+
+10:47.000 --> 10:49.990
+Let's go to the next section and just add the renderers.
+
+10:50.220 --> 10:52.430
+And I'm not going to take a lot of time.

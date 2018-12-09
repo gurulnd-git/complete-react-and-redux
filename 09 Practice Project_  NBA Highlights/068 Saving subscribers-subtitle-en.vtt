@@ -1,0 +1,286 @@
+WEBVTT
+
+00:01.350 --> 00:07.650
+OK so let's start writing the function to fetch they fetch to get to posting information.
+
+00:07.710 --> 00:08.340
+So OK.
+
+00:08.370 --> 00:10.380
+Inside the Jason.
+
+00:10.470 --> 00:11.480
+Jason.
+
+00:11.670 --> 00:17.850
+We're going to have of course a lot of things and right here we have a part just a part in the database
+
+00:18.120 --> 00:19.380
+that is going to be subscriptions.
+
+00:19.410 --> 00:24.570
+So whenever we just send this information we post this information is going to be stored right here
+
+00:24.840 --> 00:27.090
+and see it working.
+
+00:27.220 --> 00:28.400
+It's going to close it out.
+
+00:28.390 --> 00:29.790
+Now I'm just going to go to home.
+
+00:29.820 --> 00:31.360
+I'm sorry subscriptions.
+
+00:31.380 --> 00:32.850
+I'm going to start doing the fetch.
+
+00:32.850 --> 00:40.950
+Now if I go to the console to the terminal and go to the partial where we're running the the the adjacent
+
+00:40.950 --> 00:41.460
+server.
+
+00:41.610 --> 00:48.130
+We have one that is going to be local host 3 0 0 4 or whatever whatever port you have.
+
+00:48.300 --> 00:49.340
+And then subscriptions.
+
+00:49.440 --> 00:52.650
+So we need to make the call to this to this part.
+
+00:52.650 --> 00:58.330
+So I'm going to just copy and I'm going to create a viable that is going to host this your l.
+
+00:58.500 --> 01:07.380
+So it's going to be Konst and it's going to be Konst and I get a call that you are l underscore email
+
+01:08.310 --> 01:14.660
+and this one is going to just contain whatever Yarnall we have got.
+
+01:14.910 --> 01:17.360
+So now I'm going to close this.
+
+01:17.400 --> 01:18.610
+We don't need it anymore.
+
+01:18.870 --> 01:22.840
+So whenever we call subscriptions we need to do a fetch to this e-mail.
+
+01:22.920 --> 01:26.910
+So we're going to go right here the bottom and start writing fetch.
+
+01:26.910 --> 01:27.250
+Right.
+
+01:27.270 --> 01:32.780
+So I'm going to say fetch and begin to open and close first.
+
+01:32.940 --> 01:37.950
+We will need the URL and since we have it right here it's going to be your e-mail.
+
+01:38.220 --> 01:40.320
+Now we need to set up the method.
+
+01:40.350 --> 01:47.490
+So it's going to be open and closed just just like a object just like an object and for posts requests
+
+01:47.550 --> 01:50.110
+we need to do a lot more things not that simpler.
+
+01:50.190 --> 01:55.810
+So we need to do method and the method and the method is going to be post right.
+
+01:56.280 --> 02:00.270
+So we need to set the headers whenever we send information we need set headers.
+
+02:00.270 --> 02:05.970
+So I'm going to go right here and say headers this is going to be equal to an object you're going to
+
+02:05.970 --> 02:07.620
+pass a couple of things.
+
+02:07.620 --> 02:14.190
+First we need to the we need to set the accept So we're going to say except just like that and this
+
+02:14.190 --> 02:17.910
+one is going to have it's going to contain a value but we need to send.
+
+02:17.970 --> 02:24.010
+It's going to be the application that Jason is going to be application for Slash.
+
+02:24.100 --> 02:25.900
+Jason right.
+
+02:25.980 --> 02:27.860
+We're going to need to set the content type.
+
+02:27.960 --> 02:36.410
+So we're going to go right here and say content and then dash time and everything is going to be with
+
+02:37.010 --> 02:40.630
+just caps with uppercase.
+
+02:41.310 --> 02:46.950
+So OK so what we need to do right here is the same thing with the except just going to copy all this
+
+02:47.190 --> 02:50.280
+and just pass it right here at the bottom right.
+
+02:50.310 --> 02:51.500
+So what else do we need.
+
+02:51.630 --> 02:54.360
+We need it we need the body we need to send the body.
+
+02:54.420 --> 02:55.570
+So I'm going to go right here.
+
+02:55.590 --> 02:57.690
+Say coma and say body
+
+03:00.520 --> 03:02.310
+so the body.
+
+03:02.340 --> 03:08.650
+But whenever we send post data we're sending a Jason object that we have right here.
+
+03:08.860 --> 03:13.900
+So we need to kind of grab this object and convert everything to string.
+
+03:14.140 --> 03:16.180
+And this is not react.
+
+03:16.210 --> 03:17.740
+It's just plain javascript.
+
+03:17.740 --> 03:19.510
+We have a method just to convert.
+
+03:19.510 --> 03:23.600
+This is going to be string fine OK.
+
+03:24.000 --> 03:29.640
+So we're going to open and close and what we pass right here is going to be the email we have the we
+
+03:29.640 --> 03:32.250
+have right here as an argument.
+
+03:32.340 --> 03:34.820
+So this is going to have a ready.
+
+03:34.830 --> 03:39.690
+So now what we need to do whenever we work with fach you're going to get just maybe a response and we
+
+03:39.700 --> 03:45.540
+can grab that response and converted and grabbed the JSM from there so we can get a response it's going
+
+03:45.540 --> 03:53.580
+to be rest and this one we're going to grab the response and then just do Jason right where we did this
+
+03:53.730 --> 03:55.100
+we should be getting callback.
+
+03:55.140 --> 04:01.560
+So I'm going to go right here the bottom and say dot then OK I'm going to open a close and this one
+
+04:01.650 --> 04:07.500
+is going to be a function and it's going to be equal to whatever code we can run.
+
+04:07.500 --> 04:12.610
+So whenever we send the information to the database it's going to save it.
+
+04:12.660 --> 04:18.060
+And what we need to do now we need to update the state of the e-mail you know is going to send the information
+
+04:18.060 --> 04:22.080
+save it but the email is going to steal that state of e-mail.
+
+04:22.150 --> 04:25.090
+It's going to still contain the e-mail we are sending.
+
+04:25.180 --> 04:32.180
+This is done but we need to clear the e-mail just just remove whatever value we have right here.
+
+04:32.460 --> 04:35.200
+So since we want to change this state I'm going to say this.
+
+04:35.250 --> 04:41.780
+Dodd sent state open close and it's an object right.
+
+04:41.780 --> 04:46.160
+So OK so he can grab that e-mail and I'm going to say just nothing.
+
+04:46.170 --> 04:47.780
+Just remove it from there.
+
+04:48.000 --> 04:50.060
+Let's check if this is working.
+
+04:50.110 --> 04:53.250
+Going to reload the page and I'm going to go right here.
+
+04:53.250 --> 04:53.880
+Oh sorry.
+
+04:53.910 --> 04:54.720
+It's not out yet.
+
+04:54.720 --> 04:55.480
+We have a function.
+
+04:55.550 --> 04:57.140
+I thought that we didn't get it.
+
+04:57.150 --> 05:00.420
+Let's get to reload the page and it should be working.
+
+05:00.420 --> 05:03.530
+And I'm going to go to Jason and right here.
+
+05:03.570 --> 05:05.130
+Just want change.
+
+05:05.180 --> 05:09.860
+Going to say Francis at gmail dot com.
+
+05:09.880 --> 05:13.750
+I'm going to say enter and again we have it right here.
+
+05:13.770 --> 05:18.860
+It just Insley showing right here we have e-mail Francis at gmail dot com.
+
+05:18.900 --> 05:22.980
+And then the idea of one and this is directly from Jason server.
+
+05:22.990 --> 05:26.070
+When add information is going to add an I.D..
+
+05:26.160 --> 05:26.510
+OK.
+
+05:26.580 --> 05:30.330
+So this is working and it's clearing the e-mail so get.
+
+05:30.480 --> 05:35.700
+So now what we need to do we need to have a body date this what happens if the user enters something
+
+05:35.700 --> 05:36.890
+that we don't want.
+
+05:37.150 --> 05:40.560
+Cantor quick answer Oh it's not going to pass.
+
+05:40.560 --> 05:44.570
+Of course we add the regs but now we have to show an error message.
+
+05:45.060 --> 05:45.440
+Let's get.
+
+05:45.450 --> 05:49.440
+So let's go to the next section and start adding some messages.
+
+05:49.440 --> 05:50.880
+Whenever we validate this.

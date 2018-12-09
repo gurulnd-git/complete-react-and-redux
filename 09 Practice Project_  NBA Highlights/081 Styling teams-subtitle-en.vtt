@@ -1,0 +1,274 @@
+WEBVTT
+
+00:01.250 --> 00:02.760
+OK so let's go to the styles.
+
+00:03.410 --> 00:07.490
+And at some styling for this because you know it's really ugly.
+
+00:07.490 --> 00:12.640
+So I'm going to go put teams right here and we're going to start doing doing the styles.
+
+00:12.680 --> 00:21.830
+So I'm going to say teams and teams and then underscore components as one is the main wrapper.
+
+00:21.950 --> 00:30.420
+So this one is going to have a min height because if we just make a search for filter everything and
+
+00:30.420 --> 00:32.000
+there's only one result.
+
+00:32.000 --> 00:36.800
+Now if the container is going to get very small and we can have the footer just spread here on top and
+
+00:36.800 --> 00:37.720
+we don't want that.
+
+00:37.940 --> 00:43.940
+So I'm going to set a mean height of 800 pixels you know something that is sure.
+
+00:43.940 --> 00:45.290
+Now what else do we have.
+
+00:45.290 --> 00:46.480
+We have teams input.
+
+00:46.490 --> 00:49.220
+It's a style of the team's input.
+
+00:49.220 --> 00:55.520
+So I'm going to say team input and it's going to be text text align and center.
+
+00:55.820 --> 00:56.720
+Right.
+
+00:57.120 --> 01:05.770
+Then we can have a padding and the padding is going to be tiny pixels and zero pixels from the side.
+
+01:06.180 --> 01:10.410
+What else we're going to have a background so we get a set of background and the background it's going
+
+01:10.410 --> 01:17.360
+to be kind of a gray background is 6 6 6.
+
+01:17.550 --> 01:18.830
+Ok so that works.
+
+01:18.850 --> 01:21.580
+What else we have to style the input.
+
+01:21.610 --> 01:26.390
+So I'm going to say Tim's input and the make reference to the input.
+
+01:27.020 --> 01:27.700
+OK.
+
+01:27.880 --> 01:29.910
+So we want to set font family for this.
+
+01:30.100 --> 01:32.840
+And the phone family it's going to be Rebozo.
+
+01:32.970 --> 01:33.850
+I love that name.
+
+01:33.890 --> 01:38.450
+Botto so I'm going to say border radios.
+
+01:38.650 --> 01:44.410
+And then the radios and it's going to be 30 pixels.
+
+01:45.100 --> 01:45.710
+Right.
+
+01:45.850 --> 01:46.870
+Ooh what's next.
+
+01:46.870 --> 01:51.120
+We're going to have a border and the border is going to be one pixel solid.
+
+01:51.160 --> 01:53.610
+And just for fun light gray.
+
+01:54.120 --> 01:54.730
+OK.
+
+01:55.300 --> 02:00.640
+What else we can have the color the color is going to be black.
+
+02:01.150 --> 02:01.630
+Right.
+
+02:01.720 --> 02:04.000
+What else we need to set the font size.
+
+02:04.000 --> 02:06.070
+You know it's to be bigger than that.
+
+02:06.240 --> 02:10.240
+So we're going to say font size and the font size is going to be tiny pixels.
+
+02:10.450 --> 02:15.540
+We want to add some padding and the padding is going to be 10 pixels.
+
+02:15.590 --> 02:16.180
+Let's.
+
+02:16.740 --> 02:18.130
+You one set a fun way.
+
+02:18.160 --> 02:25.330
+So it's going to be fun to wait and it's going to be 300 something really slim then diktats line is
+
+02:25.330 --> 02:29.880
+going to be center of center.
+
+02:29.960 --> 02:32.870
+It looks nice.
+
+02:32.890 --> 02:35.950
+I know about you but I just really like it.
+
+02:36.970 --> 02:40.360
+So Pacer's that still works good.
+
+02:40.390 --> 02:43.440
+So I want to get rid of the focus right here.
+
+02:43.450 --> 02:46.090
+The blue border.
+
+02:46.270 --> 02:53.740
+So I'm going to go right here the bottom and say Tim's team's input and then just focus and get rid
+
+02:53.740 --> 02:54.460
+of that.
+
+02:54.790 --> 02:58.710
+We're going to say outlined in the nine.
+
+02:59.720 --> 03:03.620
+OK let's get let's some styling to the teams.
+
+03:03.670 --> 03:06.100
+This one is going to be really easy to use flex.
+
+03:06.100 --> 03:10.010
+So it's going to be teams and then container.
+
+03:10.540 --> 03:15.370
+And this one we will need to make reference to this span inside the container.
+
+03:15.370 --> 03:19.420
+So it's going to be this play and then flex.
+
+03:19.690 --> 03:20.330
+Right.
+
+03:20.800 --> 03:22.950
+So we're going to say we're going to set a flex direction.
+
+03:22.960 --> 03:29.650
+So it's going to flex direction and it's going to be rolled and then we're going to just use the flex
+
+03:29.650 --> 03:35.870
+wrap so we can just put everything one after the other one just like floating moments.
+
+03:35.990 --> 03:36.970
+We're going to say wrap
+
+03:40.380 --> 03:45.690
+OK well you'll be getting something else on things.
+
+03:45.970 --> 03:47.760
+Let's set the width of live.
+
+03:47.760 --> 03:48.250
+That's good.
+
+03:48.310 --> 03:49.200
+That's the problem.
+
+03:49.270 --> 03:52.590
+You say teams container just like before.
+
+03:52.710 --> 03:55.500
+We're going to make reference to teams item.
+
+03:56.000 --> 04:06.070
+It's going to be Team underscore item and we can set a default with you one for per row so we going
+
+04:06.070 --> 04:09.870
+to say 25 percent and that should do the trick.
+
+04:10.430 --> 04:11.640
+I got it working.
+
+04:11.650 --> 04:14.080
+The thing is that the image is too big and that's the problem.
+
+04:14.080 --> 04:21.830
+So we can have a panning of 30 pixels and then a box sizing of border box.
+
+04:22.820 --> 04:23.340
+OK.
+
+04:23.410 --> 04:28.990
+And the last thing we're going to do is it would be to change the size of image because it's really
+
+04:29.080 --> 04:29.940
+really big.
+
+04:29.960 --> 04:37.960
+I mean to say teams that underscore container and inside the team's container we going to have a team
+
+04:38.050 --> 04:42.470
+item and inside the team item we can have the image.
+
+04:42.500 --> 04:45.550
+I'm going to say EMG right.
+
+04:45.580 --> 04:56.430
+So now we will set the size of the image to the size of the container and we can do 100 right.
+
+04:56.440 --> 05:00.450
+So that works when you just reload the page.
+
+05:00.650 --> 05:03.100
+So go to Celtic.
+
+05:04.060 --> 05:04.510
+OK.
+
+05:04.510 --> 05:06.360
+So it's working just fine.
+
+05:06.670 --> 05:08.510
+So go Pacer's.
+
+05:09.000 --> 05:13.690
+And if I search my team I'm going to say next.
+
+05:13.870 --> 05:14.370
+Let's get.
+
+05:14.380 --> 05:15.410
+So it's working.
+
+05:15.580 --> 05:21.020
+Now if we click on an item it's going to take us to the inside view.
+
+05:21.190 --> 05:26.000
+So now we need to go to Celltex and we need to fetch the information for this component.
+
+05:26.080 --> 05:29.310
+And that that will be the last component that you can do.
+
+05:29.320 --> 05:32.510
+It is kind of long you know but this is just like this.
+
+05:32.530 --> 05:33.730
+It takes time.
+
+05:33.790 --> 05:37.930
+So let's go to the next section and finish the project.

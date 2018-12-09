@@ -1,0 +1,379 @@
+WEBVTT
+
+00:00.450 --> 00:00.770
+OK.
+
+00:00.780 --> 00:07.920
+So let's create the GSX for this render Paul just to show something so we can have the data available
+
+00:08.010 --> 00:09.770
+inside pull teams around.
+
+00:09.780 --> 00:11.100
+When are we fetching.
+
+00:11.100 --> 00:14.610
+We update the state and then we can have pool teams.
+
+00:14.740 --> 00:15.250
+OK.
+
+00:15.360 --> 00:18.620
+So I'm going to go to render Paul and start doing the logic.
+
+00:18.680 --> 00:20.560
+You can have a compromise with this.
+
+00:20.580 --> 00:24.620
+A few problems and I'm just going to solve problems as we go.
+
+00:24.630 --> 00:30.660
+So since we want to return some jazz acts that it's going to be inside a map we need to look there's
+
+00:31.340 --> 00:36.730
+a way we can say okay return of course after we return.
+
+00:36.750 --> 00:40.480
+We want to access whatever information we have inside pool teams.
+
+00:40.500 --> 00:47.400
+So it's going to be this state that pulled teams since we want to begin to use IMAP.
+
+00:47.670 --> 00:48.690
+Right.
+
+00:48.690 --> 00:54.780
+The map is going to take an argument and then just run a function right.
+
+00:54.990 --> 01:06.390
+We're going to pass an item for each iteration and we want to return some GSX.
+
+01:06.530 --> 01:11.540
+Let's add some data first that are going to show you what we can do going every turn just a div and
+
+01:11.570 --> 01:13.430
+an each with each iteration.
+
+01:13.430 --> 01:14.650
+We need to have a key.
+
+01:14.840 --> 01:21.810
+Ok so I'm going to say key and this one is going to be equal to item dot ID if you check the DV that
+
+01:21.830 --> 01:24.840
+Jason each team has an 80 get.
+
+01:25.040 --> 01:26.390
+So what is next.
+
+01:26.390 --> 01:28.880
+So the next is going to be adding the class name.
+
+01:28.880 --> 01:35.170
+It's going to be a class name and we can have a poll underscore id..
+
+01:35.180 --> 01:35.760
+All right.
+
+01:35.780 --> 01:38.380
+We're going can have more things right here but we're going to do it later.
+
+01:38.660 --> 01:46.160
+So each element has an image so I'm going to say EMG and then just going to open and close.
+
+01:46.220 --> 01:49.760
+Now the EMG is going to have an alt title.
+
+01:50.150 --> 01:56.170
+So the title is going to be we're going to just use the name of the team is going to be item that name
+
+01:56.520 --> 01:57.380
+right.
+
+01:57.560 --> 02:04.320
+We can have a source and the source is going to be equal to the image we're passing.
+
+02:04.580 --> 02:08.710
+So inside the Jasen logo contains the image.
+
+02:08.720 --> 02:15.110
+So OK so we are going to go right here use template strings and then just put the location.
+
+02:15.110 --> 02:23.300
+So it's going to be for flash images for these large teams for Nash and whatever name you're using a
+
+02:23.340 --> 02:23.870
+logo.
+
+02:23.900 --> 02:28.140
+So it's going to be item Dopp logo right.
+
+02:28.370 --> 02:31.490
+So you know this should be working.
+
+02:32.080 --> 02:33.670
+And now get a prom.
+
+02:33.800 --> 02:40.630
+So we got to say this is going to tell us this state that poll teams map it's not a function.
+
+02:40.760 --> 02:47.020
+Whenever you get this message it's because you're trying to loop something that has no data that it's
+
+02:47.270 --> 02:54.200
+not not defined or that something that it's not an array you know map is just a loop race arrays of
+
+02:54.200 --> 02:54.800
+data.
+
+02:55.100 --> 02:58.450
+So that's why it's going to give you this error message is going to break.
+
+02:58.730 --> 03:05.600
+So instead of just doing an if statement just like we did before we going to check if there's that state
+
+03:05.600 --> 03:07.560
+that pulse teams has data.
+
+03:07.560 --> 03:09.910
+Let me just do it right now just to show you.
+
+03:10.030 --> 03:15.350
+It's good to see if and we've been doing this we did this previously many many times.
+
+03:15.350 --> 03:21.980
+If I check if this St. Paul teams has data I want to return something if not of course is not going
+
+03:21.980 --> 03:22.730
+to do anything.
+
+03:23.030 --> 03:27.630
+And this is going to work you know going to go right here and it's going to show us right.
+
+03:27.660 --> 03:29.370
+The the information right here.
+
+03:29.370 --> 03:31.270
+Ugly but it's working.
+
+03:31.700 --> 03:35.170
+But the thing is that I'm going to go back and just delete this.
+
+03:35.180 --> 03:39.430
+Just go back to the previous state and we get the error.
+
+03:39.500 --> 03:40.140
+OK.
+
+03:40.610 --> 03:44.470
+So we are trying to loop this information and this information.
+
+03:44.480 --> 03:52.550
+It's inside the state now whenever the applications start this teams team's going to be a string an
+
+03:52.550 --> 03:54.200
+empty string but it's a string.
+
+03:54.330 --> 03:54.840
+Yeah.
+
+03:55.100 --> 04:00.680
+So what we can do this is we can change the default state and instead of using a string which it can
+
+04:00.680 --> 04:05.190
+use an array and the map is going to skip that error.
+
+04:06.290 --> 04:06.820
+And it's going to.
+
+04:06.820 --> 04:11.600
+Of course the first time that descenders is going to return nothing but the next time you can have the
+
+04:11.600 --> 04:15.210
+poll teams and it's going to return something that's good.
+
+04:15.470 --> 04:18.680
+So let's go let's keep moving forward.
+
+04:18.720 --> 04:25.530
+We can and we can have a problem with this or can it just call Dave and just bring the count.
+
+04:25.610 --> 04:27.350
+We have for each team.
+
+04:27.350 --> 04:37.640
+So I'm going to say item that count and then begin at boats and of course it can show the image and
+
+04:37.640 --> 04:39.800
+the boats that we have for each team.
+
+04:40.110 --> 04:40.410
+OK.
+
+04:40.490 --> 04:41.230
+That's good.
+
+04:42.280 --> 04:49.270
+Now the thing is that if you go to the final application whenever ever read rendering the data the first
+
+04:49.270 --> 04:54.970
+team the one that has more boats is going to have the first than the second and then the third.
+
+04:55.210 --> 04:57.610
+We didn't have the information on the database.
+
+04:57.620 --> 05:06.700
+Now this information we put it right there dynamically so we can a new way to loop through this and
+
+05:06.700 --> 05:11.640
+to inject this first second and third what we can do we can use an array.
+
+05:11.710 --> 05:16.250
+So on the show I'm going to go right here and create a variable.
+
+05:16.270 --> 05:20.870
+It is going to host an array of the first second and third.
+
+05:21.100 --> 05:27.090
+So I'm going to say Konst and this concert is going to host the positions.
+
+05:27.090 --> 05:27.990
+All right.
+
+05:28.510 --> 05:30.860
+And this is going to be an array of strings.
+
+05:31.090 --> 05:37.360
+So the first item is going to be first going to do one and s t.
+
+05:37.390 --> 05:43.380
+Then the second item on the array is going to be second and the third item is going to be.
+
+05:43.380 --> 05:45.090
+Of course third.
+
+05:45.710 --> 05:47.340
+So yeah.
+
+05:47.890 --> 05:49.720
+So one not next one.
+
+05:49.720 --> 05:55.430
+We loop this state we have an iteration number.
+
+05:55.750 --> 06:03.250
+So whenever we map the second argument right here could be the index we can say Index.
+
+06:03.370 --> 06:07.630
+This index is going to be the number of the iteration.
+
+06:07.630 --> 06:09.710
+The first time there is going to trade.
+
+06:09.850 --> 06:12.220
+This index is going to be equal to zero.
+
+06:12.460 --> 06:14.320
+And is we have an array right here.
+
+06:14.350 --> 06:16.750
+And zero is going to be one.
+
+06:16.810 --> 06:20.130
+What I can do is just create a new element.
+
+06:20.170 --> 06:27.210
+But it's going to be I'm going to make an A for is going to be for I'm going to just bring some data
+
+06:27.550 --> 06:31.580
+when I want to do is grab whatever we have on the position.
+
+06:31.720 --> 06:37.390
+And this is the first iteration is going to be zero and the first element the zero loop is going to
+
+06:37.390 --> 06:44.740
+be the first one I'm going to just call to positions position and I'm going to pass the number of the
+
+06:45.220 --> 06:47.530
+iteration if I do zero.
+
+06:47.680 --> 06:50.240
+All of them are going to be of course one
+
+06:53.020 --> 07:03.350
+one first first first bud if I pass the index we can about fix the problem can loop.
+
+07:03.520 --> 07:05.220
+Killed it go again.
+
+07:05.990 --> 07:09.200
+It's going to be first second and third.
+
+07:09.230 --> 07:12.340
+Now what this is doing we are mapping over.
+
+07:12.590 --> 07:13.620
+We're doing a map.
+
+07:13.820 --> 07:15.690
+And the first iteration is going to be zero.
+
+07:15.770 --> 07:22.050
+So this decision that index is going to be this one the zero position inside this array.
+
+07:22.190 --> 07:24.010
+The next iteration is going to be index.
+
+07:24.020 --> 07:28.930
+It's going to be one because it's the second situation and it's going to be positioned in next and we're
+
+07:28.930 --> 07:30.320
+going to get the second one.
+
+07:30.620 --> 07:33.830
+The next one is going to be in next to this.
+
+07:34.090 --> 07:35.310
+The third iteration.
+
+07:35.480 --> 07:37.950
+So this is going to be two and we get this one.
+
+07:37.970 --> 07:39.930
+You know the arrays start to zero.
+
+07:39.950 --> 07:43.900
+I'm just telling you this because maybe you didn't know about this.
+
+07:44.030 --> 07:49.820
+If your experience with javascript arrays and functions and iterators you get to know this of course
+
+07:49.880 --> 07:52.870
+you're going to say yeah do it now but maybe you don't know.
+
+07:52.970 --> 07:57.250
+So I'm just explaining you what's happening right here.
+
+07:57.600 --> 07:59.830
+So OK so this is working.
+
+07:59.910 --> 08:03.770
+We get the images we get the positions it's working nicely.
+
+08:03.910 --> 08:06.650
+Of course it's ugly but it works.
+
+08:06.650 --> 08:13.370
+Now what we need to do whenever we click an item just an element we need to trigger a function that
+
+08:13.370 --> 08:19.490
+it's going to be triggered with the On Click event and this function is going to just go to the database
+
+08:20.000 --> 08:25.730
+at that account and then it's going to just call again to the fetch poll so we can get the information
+
+08:25.730 --> 08:28.510
+again with the new state of boats.
+
+08:28.520 --> 08:30.560
+Let's go to the next section and just do that.

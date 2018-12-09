@@ -1,0 +1,535 @@
+WEBVTT
+
+00:01.830 --> 00:03.810
+OK so let's add the filter.
+
+00:03.810 --> 00:08.120
+So I'm going to just slow down just a little bit because this one is can you.
+
+00:08.340 --> 00:14.750
+So whenever we just type something on the input we want to go run a function.
+
+00:14.760 --> 00:20.190
+This function is going to check the teams it's going to try to find one and whenever it's finding one
+
+00:20.430 --> 00:23.060
+is just going to change the state of filtered.
+
+00:23.410 --> 00:23.720
+OK.
+
+00:23.730 --> 00:27.430
+So first set we want this component to be a control component.
+
+00:27.570 --> 00:32.540
+So the whatever value we type inside it's going to be handled by react.
+
+00:32.730 --> 00:38.680
+So we need to set a value to use the state of keyword.
+
+00:38.880 --> 00:46.680
+So I'm going to say value equal to this dot state and right here we have the keyboard.
+
+00:46.740 --> 00:47.250
+OK.
+
+00:47.450 --> 00:51.680
+So I'm going to say Dot and keyword right.
+
+00:51.720 --> 00:59.850
+So whenever we type something right here we need to trigger onchange listener listener and run a function
+
+00:59.880 --> 01:05.550
+that it's going to just search for a team that's going to go right here the bottom and I'm going to
+
+01:05.550 --> 01:09.420
+call to an on Change event change.
+
+01:09.420 --> 01:10.250
+Very good.
+
+01:10.740 --> 01:16.060
+So the change is going to run a function it's going to pass an event and so we can say like this with
+
+01:16.860 --> 01:24.000
+if we use a function that it's going to be just a nerve function and then just something in our front
+
+01:24.000 --> 01:29.730
+room is going to be called search term search term.
+
+01:29.730 --> 01:31.230
+So what do we need to do right now.
+
+01:31.230 --> 01:35.330
+We need to pass the event whenever we just do something right here.
+
+01:35.610 --> 01:42.270
+So if I pass the event right here what we can do instead of putting this inside a parenthesis since
+
+01:42.270 --> 01:49.290
+we have only one arguments you can skip the parenthesis and we run a function and we pass the event
+
+01:49.950 --> 01:50.880
+right.
+
+01:50.880 --> 01:55.450
+Search team do it dry team.
+
+01:55.570 --> 01:59.940
+OK so now we need to call to this function to create this function.
+
+02:00.270 --> 02:01.330
+So let's go right here.
+
+02:01.350 --> 02:07.020
+On top of the rental list and we're going to just create the function.
+
+02:07.020 --> 02:10.230
+This function is going to take an event.
+
+02:10.230 --> 02:16.060
+So I going to say events and then just run the function right.
+
+02:16.110 --> 02:23.100
+So now we what we need to do from the event of the input we need to grab the value.
+
+02:23.100 --> 02:28.030
+So we have access to the values inside the event that target that value.
+
+02:28.200 --> 02:33.270
+So I'm going to create a viable that is going to host this keyboard and say a keyboard.
+
+02:33.420 --> 02:38.610
+Now this is going to be equal to event that target
+
+02:41.180 --> 02:42.850
+dot value.
+
+02:43.130 --> 02:44.580
+Right.
+
+02:44.750 --> 02:46.540
+So we get the keyword right there.
+
+02:46.870 --> 02:52.790
+So the Council of the keyboard just to make sure that everything works fine is going to say keyboard
+
+02:54.260 --> 02:58.110
+and I'm just going to reload the page open the console.
+
+02:58.130 --> 03:02.250
+And if you go to the console and type something up and type something.
+
+03:02.540 --> 03:04.920
+That's why we are kind of getting it.
+
+03:05.180 --> 03:06.230
+We have an error message.
+
+03:06.310 --> 03:09.460
+You know it's just showing one for all.
+
+03:09.480 --> 03:15.800
+So we are not setting the state correctly and this is because whenever we pass because we are calling
+
+03:15.800 --> 03:22.850
+the search team we need to set the state of this ward to the state that we have right here in town.
+
+03:23.000 --> 03:25.190
+You know that's why it's not working.
+
+03:25.220 --> 03:27.110
+We are not updating the state.
+
+03:27.560 --> 03:28.530
+So OK.
+
+03:29.030 --> 03:32.490
+Now the thing is that we need to check for some things.
+
+03:32.630 --> 03:39.830
+For example if I just go right here to the to the finish one and if I tie something that ties something
+
+03:40.290 --> 03:42.820
+you're going to search something with an neph.
+
+03:42.830 --> 03:43.620
+We don't have it.
+
+03:43.730 --> 03:45.220
+It's not going to return anything.
+
+03:45.410 --> 03:51.420
+But if I delete something is going to go back to all the teams is going to show back to all the teams.
+
+03:51.590 --> 03:55.330
+So we need a way to check if the keyword is empty or not.
+
+03:55.340 --> 04:02.570
+So I'm going to delete this and I'm going to create a conditional right and this one is going to check
+
+04:02.580 --> 04:04.340
+if the keyword it's empty.
+
+04:04.340 --> 04:09.820
+So you're going to say if keyword it's different than nothing.
+
+04:09.830 --> 04:13.520
+Just we want to update the state and filter the teams.
+
+04:13.520 --> 04:19.400
+But if it's empty we want to set the state of pretty much everything.
+
+04:19.820 --> 04:21.780
+So I'm going to do that with the other one first.
+
+04:21.780 --> 04:31.530
+I'm going to say this don't set state and we want to set the state of teams and filter in theory filters.
+
+04:31.700 --> 04:34.260
+We already have teams.
+
+04:34.260 --> 04:34.900
+All right.
+
+04:34.900 --> 04:41.300
+It's the whole database and this one we should not mutate this one but this one we can mutate it as
+
+04:41.300 --> 04:43.020
+much as we want.
+
+04:43.040 --> 04:46.070
+So I'm going to call the filtered and the filtered.
+
+04:46.130 --> 04:48.800
+It's going to be equal to all the teams.
+
+04:49.250 --> 04:57.950
+So since we have all the teams inside this that teams inside it is just that state that teams can say
+
+04:58.040 --> 05:04.180
+that filter is going to be equals equal to this does that state that teams.
+
+05:04.340 --> 05:04.980
+All right.
+
+05:05.240 --> 05:11.030
+The next thing is is going to be to set the keyboard whenever we type something we are on the input
+
+05:11.120 --> 05:13.070
+we need to update the state of keyboard.
+
+05:13.250 --> 05:16.730
+So even though we have nothing we should be doing it right here.
+
+05:16.790 --> 05:22.420
+So again it's a keyboard and the keyboard again it's going to be equal to keyboard.
+
+05:23.450 --> 05:25.840
+So I'm going to put it right here.
+
+05:26.020 --> 05:30.480
+You could say even the target the built that value but in us that we can use keyboard.
+
+05:30.830 --> 05:37.970
+So if we have the same key value pairs we can get rid of the second one and say keyboard and that's
+
+05:37.970 --> 05:38.970
+going to work.
+
+05:39.500 --> 05:46.430
+So now we can check this right now because you know we cannot say for the time something nothing is
+
+05:46.430 --> 05:48.390
+going to happen.
+
+05:48.440 --> 05:51.340
+So what we need to do.
+
+05:51.640 --> 05:53.390
+Birkat Let's go back.
+
+05:54.080 --> 05:59.830
+So what do we need to do is to set the first conditional just right now let's just make sure we're going
+
+05:59.840 --> 06:04.250
+to put event a target value and see what happens.
+
+06:08.430 --> 06:11.620
+If I type something that's when nothing happens.
+
+06:12.050 --> 06:12.810
+So OK.
+
+06:13.320 --> 06:20.580
+So this is good not what we need to do now is to set the stage in case of we have in case we have something
+
+06:20.880 --> 06:22.090
+as volume keyword.
+
+06:22.290 --> 06:26.550
+If I type something nothing is going to happen that we have we have a letter right here.
+
+06:26.550 --> 06:33.410
+We have character and it's inside the state inside the key sorry the event the event or target the volley.
+
+06:33.420 --> 06:36.150
+So now we need to set the state of that.
+
+06:36.490 --> 06:36.870
+OK.
+
+06:37.080 --> 06:38.140
+That's fine.
+
+06:38.670 --> 06:46.500
+Whenever we get a keyword or just a letter we need to search the teams just to run a filter and just
+
+06:46.500 --> 06:52.950
+trying to find whatever is inside teams with the keyboards we are typing now for this we cannot use
+
+06:52.950 --> 06:57.320
+a map because we don't want to map the entire list.
+
+06:57.330 --> 07:03.210
+We just want to find something now to find something we can use a helper that is going to be called
+
+07:03.700 --> 07:04.390
+Filter.
+
+07:04.440 --> 07:05.520
+You can use that helper.
+
+07:05.730 --> 07:11.820
+So I'm going to store everything in evolvable and this helper this filter helpful helper is just like
+
+07:11.820 --> 07:14.880
+the map is going to return an array by default.
+
+07:14.880 --> 07:18.140
+So I'm going to say Konst list and I'm going to say equal.
+
+07:18.460 --> 07:26.130
+And now I want to run a filter so I'm going to say this dot state DOT teams because you want to filter
+
+07:26.400 --> 07:32.820
+all the teams and it's going to be dot and we're going to use the Filcher helper or helper.
+
+07:32.850 --> 07:40.700
+Just like a map is going to take an item and it's going to run a function OK.
+
+07:41.120 --> 07:47.270
+Now whenever we use the filter we need to return something just like a map.
+
+07:47.270 --> 07:54.100
+Now what we need to do is we need to return something if it matches a criteria.
+
+07:54.320 --> 08:02.050
+So what we need to do is to check if the keyword we are passing it's inside of the name of the team.
+
+08:02.270 --> 08:02.730
+Right.
+
+08:02.870 --> 08:07.650
+So since we want to check the name of the team we're going to say item dad's name.
+
+08:07.670 --> 08:14.570
+Know we have item right here and we access the name since the names in the database are with uppercase
+
+08:14.570 --> 08:16.940
+as with capital letters.
+
+08:16.940 --> 08:24.080
+We need to convert everything to lowercase before we can compare the keywords we are entering with the
+
+08:24.110 --> 08:26.230
+actual name on the database.
+
+08:26.230 --> 08:37.130
+So I'm going to say to lower case and just have it right here to lower case this is a javascript function
+
+08:37.400 --> 08:41.050
+that's going to grab whatever value you're calling bringing in right here.
+
+08:41.100 --> 08:43.660
+It's converting everything to lowercase.
+
+08:43.760 --> 08:48.950
+Now to check if the keyword it's inside of the the name of the team.
+
+08:49.010 --> 08:51.870
+Well we can use because we can make use of the index off.
+
+08:51.870 --> 08:57.670
+So I'm going to say index off and right here we pass what we want to check.
+
+08:58.070 --> 08:59.440
+And we want to check the keyword.
+
+08:59.540 --> 09:04.860
+So we say Key says this keyword could be in uppercase is whenever we type break here.
+
+09:05.000 --> 09:11.210
+Again we want to convert this keyword to lowercase so we can skip our messages.
+
+09:11.210 --> 09:15.420
+Now if there is some match right here it's going to return something.
+
+09:15.590 --> 09:22.660
+So we're going to check if these if there is a match and if it's greater than minus one.
+
+09:22.730 --> 09:30.830
+Now if there is a match this index off it's going to return something that is zero OK and greater than
+
+09:30.840 --> 09:38.540
+1 reader I'm sorry greater than zero but since if there is nothing we want to return something that
+
+09:38.540 --> 09:41.480
+is less than 1 or I that's fine.
+
+09:41.840 --> 09:45.190
+So if it's zero is going to it means that we found a match.
+
+09:45.380 --> 09:53.700
+But if it's a negative number just like less than zero which is one we're going to get that.
+
+09:54.050 --> 09:55.450
+It's not finding anything.
+
+09:55.460 --> 09:57.260
+That's pretty much what's doing.
+
+09:57.560 --> 09:58.490
+So that's fine.
+
+09:58.550 --> 10:00.660
+You know this is just javascript.
+
+10:00.680 --> 10:01.660
+It's not.
+
+10:01.760 --> 10:02.190
+Yes.
+
+10:02.210 --> 10:04.920
+So it's not react just plain Javascript.
+
+10:05.210 --> 10:09.640
+So let's reload the page and see what happens.
+
+10:10.370 --> 10:10.720
+OK.
+
+10:10.790 --> 10:16.700
+Nothing is going to happen because we are returning everything inside the list Marvel.
+
+10:16.880 --> 10:22.700
+Now what we need to do is to update the state with whatever we have inside the list.
+
+10:22.700 --> 10:30.530
+So I'm going to go right here I'm going to call the set state right where we such state we want to change
+
+10:30.920 --> 10:32.520
+the state of the things.
+
+10:32.600 --> 10:40.900
+So first we want to change the state of filter right filter is going to be equal to whatever you're
+
+10:40.940 --> 10:42.500
+getting inside list.
+
+10:42.500 --> 10:49.130
+So if I say list should be working now since this is going we need to do the same thing we did with
+
+10:49.190 --> 10:54.680
+keyboard type keyword and event the target value.
+
+10:54.680 --> 11:00.020
+Now if I type something it's going to update the input is going to search if there is a match and if
+
+11:00.020 --> 11:06.900
+there is a match is going to return everything inside list and then we said the state of filter list.
+
+11:07.090 --> 11:08.610
+Let's see what happens.
+
+11:08.640 --> 11:11.350
+It's I pocks and it's working.
+
+11:11.520 --> 11:14.520
+Good talks.
+
+11:14.670 --> 11:20.490
+If I just delete everything since we set a default as a scenario it's going to show all the teams.
+
+11:20.610 --> 11:30.110
+If I type something something else so thick Celltex know Celtics Arrigo is going to show the Celtics.
+
+11:30.110 --> 11:33.180
+So yeah it's working nicely.
+
+11:33.200 --> 11:37.590
+So now we're going to go to the next section and we're going to do the styling for this.
+
+11:37.610 --> 11:44.510
+And again if you want to go to have and get staff there's no problem you can go and copy the SS and
+
+11:44.510 --> 11:47.210
+just paste it in your application.
+
+11:47.300 --> 11:47.790
+OK.
+
+11:47.900 --> 11:51.490
+So this was fine and I'm and I want to check something else.
+
+11:51.770 --> 11:55.430
+I want to show you something else right here we are doing keyboard event.
+
+11:55.460 --> 11:57.170
+The target value.
+
+11:57.290 --> 12:00.370
+The thing is that we already have have it right here.
+
+12:00.530 --> 12:06.830
+So if I just delete this key word is going to be equal to keyboard.
+
+12:07.110 --> 12:07.740
+Right.
+
+12:07.850 --> 12:09.740
+If I did this again.
+
+12:09.740 --> 12:12.840
+Again keyboard is going to be equal to the keyboard.
+
+12:12.920 --> 12:18.520
+We have right here so if I type Hock's it's going to still work.
+
+12:18.630 --> 12:19.630
+If you go to Celtic
+
+12:22.330 --> 12:30.130
+it works right with ESX and this is ESX it's not it's not react whenever you have a key value per with
+
+12:30.130 --> 12:31.680
+the same name.
+
+12:32.320 --> 12:35.610
+Javascript it's gonna assume that you have the same.
+
+12:35.620 --> 12:40.140
+So if you put one it will still understand what you want to do.
+
+12:40.510 --> 12:46.160
+So if you get confused with this off it's confusing you know if there is a match is going to return
+
+12:46.170 --> 12:50.860
+or return a positive number and if it's not it's going to return minus 1.
+
+12:51.280 --> 12:52.880
+OK so that's fine.
+
+12:52.960 --> 12:56.300
+Let's go to the next section and do the styling for this.
