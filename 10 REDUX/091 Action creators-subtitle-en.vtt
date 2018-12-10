@@ -1,0 +1,238 @@
+WEBVTT
+
+00:01.710 --> 00:02.130
+Right.
+
+00:02.120 --> 00:08.760
+So the one in charge to connect with the producer is going to be the action creator just like we did
+
+00:08.760 --> 00:15.060
+with the reducer folder which will create a new folder that it's going to host the actions.
+
+00:15.060 --> 00:21.870
+So I'm going to go to the source folder and I'm going to create a new folder that calls actions just
+
+00:21.870 --> 00:23.500
+like that actions.
+
+00:23.760 --> 00:29.480
+Now just again just like we geezer's this actions is going to have an index so I'm going to say index
+
+00:29.720 --> 00:30.090
+that.
+
+00:30.160 --> 00:32.650
+Yes that's good.
+
+00:32.940 --> 00:35.040
+So this is going to be really really simple.
+
+00:35.070 --> 00:38.220
+You know there's not a lot of logic right here.
+
+00:38.220 --> 00:44.430
+So whenever we call the action we call to a function is just just a function and this function is going
+
+00:44.430 --> 00:46.130
+to return an object.
+
+00:46.140 --> 00:52.830
+So since we want to call to a function I'm going to just create a function and exported to make it available
+
+00:52.890 --> 00:54.300
+on different components.
+
+00:54.330 --> 00:57.690
+So I'm going to say export function.
+
+00:57.690 --> 00:59.750
+This function is going to have a name.
+
+00:59.760 --> 01:04.860
+So whenever we call this action creator we need to call it by its name.
+
+01:04.860 --> 01:11.440
+So in this case since we want to get a movies list I'm going to call it movies list.
+
+01:11.940 --> 01:12.270
+Right.
+
+01:12.350 --> 01:14.540
+And it just closes.
+
+01:14.550 --> 01:16.820
+Now this movie's list is going to be a function.
+
+01:16.890 --> 01:21.960
+So we use the parenthesis and then the curly braces we open and close.
+
+01:21.960 --> 01:26.610
+Now this movie's list which is the action creator is going to return an object.
+
+01:26.610 --> 01:28.420
+So we say return.
+
+01:28.550 --> 01:32.310
+And then inside here we just return an object.
+
+01:32.850 --> 01:38.160
+Now inside the action creator is going to have to things he's going to return an object with two things
+
+01:38.580 --> 01:40.600
+a type and a payload.
+
+01:40.770 --> 01:46.920
+So the type you need to put a name to the type and this case this reducer is going to receive a type
+
+01:46.920 --> 01:48.350
+that is going to be moves list.
+
+01:48.420 --> 01:51.660
+So I'm going to use movies list.
+
+01:51.720 --> 01:57.540
+The second thing that is going to be passing is going to be a payload and again payload.
+
+01:57.540 --> 01:59.040
+It's kind of a convention.
+
+01:59.070 --> 02:06.150
+So if you use payload everyone will understand that you could just use whatever you know I'm going to
+
+02:06.150 --> 02:08.850
+use payload right.
+
+02:08.970 --> 02:13.490
+So this payload pretty much is going to be the data that you're getting from the server.
+
+02:13.710 --> 02:20.670
+Maybe before they return you're going to do some some maybe of travel there is going to do a fetch for
+
+02:20.670 --> 02:25.840
+example and whatever is going to do the fashion and get the information.
+
+02:25.980 --> 02:30.630
+And then when the information is ready and the promise is sold and begin to begin to talk about promises
+
+02:31.530 --> 02:34.950
+it's going to return this with the information that we're fetching.
+
+02:34.950 --> 02:39.500
+You know we're not going to do that right now just to have something simple.
+
+02:39.540 --> 02:42.550
+So this payload is going to be just a list of movies.
+
+02:42.690 --> 02:45.830
+I have a list right here which just copy and paste.
+
+02:46.010 --> 02:46.470
+OK.
+
+02:46.710 --> 02:51.320
+So we return an array of objects with just three movies.
+
+02:51.330 --> 02:52.020
+Pulp Fiction.
+
+02:52.020 --> 02:52.760
+Pacific Rim.
+
+02:52.760 --> 02:53.860
+I love Pacific Rim.
+
+02:53.860 --> 02:56.170
+I know it's only but it can a lot.
+
+02:56.400 --> 02:59.210
+And then Rambo again just a great movie.
+
+02:59.220 --> 02:59.720
+OK.
+
+02:59.880 --> 03:06.830
+So this actually creator whenever we call it it's going to go to the reducers and pass this object.
+
+03:06.840 --> 03:13.170
+This object is going to be received by all that we do TSRs and the reducers will just try to search
+
+03:13.220 --> 03:22.050
+a match up A-type right here since we have the same type again movies list and rike movies list.
+
+03:22.080 --> 03:23.440
+There's going to be a match.
+
+03:23.670 --> 03:29.330
+And what it's going to return it's the actual payload that we're passing right here.
+
+03:29.500 --> 03:29.830
+OK.
+
+03:29.850 --> 03:35.430
+Just a list of movies and there is going to grab this payload is going to go to the combined reducers
+
+03:35.780 --> 03:40.970
+the combine reducers to the index and it's going to just set a new estate.
+
+03:41.250 --> 03:41.850
+All right.
+
+03:41.850 --> 03:46.140
+Really simple but we have one problem right now.
+
+03:46.140 --> 03:48.920
+We have our action creator and the reducer.
+
+03:49.080 --> 03:53.460
+But if you notice there's no mention of this moves to this function.
+
+03:53.460 --> 03:55.470
+So we are not connecting them.
+
+03:55.470 --> 04:01.970
+So how do we connect the action creators with the reducers.
+
+04:02.170 --> 04:06.800
+Again not that simple and we don't do it from here.
+
+04:07.020 --> 04:08.540
+What are we willing to do.
+
+04:08.540 --> 04:10.840
+We will need to call to this function.
+
+04:11.150 --> 04:11.450
+All right.
+
+04:11.460 --> 04:15.730
+We call this function inside the components whatever component we have.
+
+04:15.730 --> 04:22.110
+If we we want to use it on index to whenever the application loads we need to fetch that information
+
+04:22.110 --> 04:23.600
+that moves list.
+
+04:23.610 --> 04:28.930
+We go here and we call this auction creator which is called to this function right here.
+
+04:29.190 --> 04:33.280
+And this function is going to get triggered and do all its logic.
+
+04:33.450 --> 04:37.260
+The thing is that we cannot just call it like this.
+
+04:37.260 --> 04:39.080
+We need to do something else.
+
+04:39.090 --> 04:45.750
+We need to do a lot of setup first so we can assure that we can make sure that it's going to go to all
+
+04:45.750 --> 04:46.800
+reducers.
+
+04:46.800 --> 04:50.760
+Let's go to the next section and start just grabbing.
+
+04:50.760 --> 04:56.010
+I'm going to grab the app component and make the call to this action creator.

@@ -1,0 +1,211 @@
+WEBVTT
+
+00:01.590 --> 00:08.080
+OK so now we're going to talk about reducers now inside the source folder just like we did with components.
+
+00:08.230 --> 00:14.460
+We to create a folder that it's going to host all the reducers it's going to go right here inside source
+
+00:14.730 --> 00:16.610
+and it can create a new folder.
+
+00:16.830 --> 00:20.250
+And this is going to be called reducers just like that.
+
+00:20.770 --> 00:29.310
+Now we need to create some files and this reducers folder first is going to have an index just an index
+
+00:29.310 --> 00:29.860
+file.
+
+00:29.860 --> 00:36.180
+So I'm going to go and create an index that G-S and don't worry this is going to make sense in just
+
+00:36.180 --> 00:37.180
+a minute.
+
+00:37.260 --> 00:42.750
+Now then what we need since since we can either be using movies or movies that we users are going to
+
+00:42.750 --> 00:47.860
+create a new file that is going to handle all this movies reducers.
+
+00:47.860 --> 00:51.590
+So I'm going to go right here I'm going to say movies reducers.
+
+00:51.810 --> 00:58.210
+We just heard just like that and notice that the underscore and reducer is just like a convention.
+
+00:58.230 --> 01:04.700
+You can name this whatever you want you know but since this resistor is going to kinda make sense.
+
+01:05.100 --> 01:10.470
+So I'm going to go to index back to index and just going to Klaas's OK.
+
+01:10.770 --> 01:17.580
+So now if we go right here in our index we can have the provider and the provider is going to be using
+
+01:17.580 --> 01:22.410
+the create store with middleware which is created right here at the top.
+
+01:22.410 --> 01:28.320
+This function takes an argument and it's going to take a list of all the reducers.
+
+01:28.650 --> 01:35.700
+So what we can do we can pass the index we just create it so we can need a common place where all the
+
+01:35.700 --> 01:39.280
+reducers are going to be combined into one single element.
+
+01:39.330 --> 01:45.000
+So we can pass one argument right here and that's why again we have the index so the index is going
+
+01:45.000 --> 01:49.100
+to combine all the reducers and passed to the provider.
+
+01:49.530 --> 01:57.210
+So if we go to the right here to the index that we are going to start creating this combination of all
+
+01:57.210 --> 01:58.340
+the reducers.
+
+01:58.650 --> 02:04.830
+Now what we need to do first we need to import something from redux that is going to be called Combined
+
+02:04.830 --> 02:05.430
+reducers.
+
+02:05.460 --> 02:13.100
+So I'm going to say import and then just use destructuring and say combine reducers.
+
+02:13.380 --> 02:14.840
+Right.
+
+02:15.210 --> 02:25.930
+And this is going to be imported from and redux right now 6 You don't need the the current that anyways.
+
+02:26.240 --> 02:26.860
+So OK.
+
+02:26.910 --> 02:33.260
+So now what we need to do we need to create a viral that is going to host all the reducers.
+
+02:33.360 --> 02:38.390
+So we are going to create just conc just marvel and this is going to be called route reducers.
+
+02:38.430 --> 02:41.370
+This is going to say rude and then reducer.
+
+02:41.430 --> 02:44.580
+And again this is just like a convention.
+
+02:44.580 --> 02:48.600
+This route reducer is going to take the combined we do sir.
+
+02:48.660 --> 02:52.160
+We import it right here at the bottom and it's going to pass.
+
+02:52.360 --> 02:53.890
+We do Sairy that we want to use.
+
+02:53.910 --> 03:00.660
+So we're going to say combine reducers and this is going to be a function and it's going to pass an
+
+03:00.750 --> 03:05.110
+object with all the reducers it's going to be working with movies.
+
+03:05.130 --> 03:06.780
+We're going to say movies.
+
+03:07.160 --> 03:15.810
+Let's get tipples that now since we need this for these cons to be available to other components inside
+
+03:15.810 --> 03:22.900
+the same application we need to do export default just like we did before and then route.
+
+03:22.980 --> 03:23.750
+We do sir.
+
+03:23.940 --> 03:24.430
+Okay.
+
+03:24.570 --> 03:29.880
+So this code is going to be available inside of all other components.
+
+03:30.080 --> 03:31.220
+Okay that's fine.
+
+03:31.440 --> 03:36.490
+So let's going to go back to the index and we need to import that file.
+
+03:36.600 --> 03:45.810
+So I'm going to say import and begin to bring movies from and the BEGIN to say oh sorry I made a mistake.
+
+03:45.810 --> 03:50.850
+Now movies begin at import reducers import reducers.
+
+03:51.940 --> 03:59.480
+And again it's going to be from and I'm going to do that for Slash and reducers.
+
+03:59.550 --> 04:04.540
+And of course since we have nothing right here it's going to bring the index right here you get.
+
+04:04.590 --> 04:05.910
+You get it right here.
+
+04:06.360 --> 04:06.640
+OK.
+
+04:06.660 --> 04:12.390
+So we have the reducers So we have the list of all the reducers and what we need to do is just read
+
+04:12.390 --> 04:19.680
+this and pass it right here as an argument and this is going to use the the store is going to be created
+
+04:19.710 --> 04:22.460
+with all the registers right make sense.
+
+04:22.860 --> 04:28.880
+So if I just save it and reload the page we should be getting an error.
+
+04:28.930 --> 04:33.840
+Movies is not defined and that is good because we didn't have movies reducers.
+
+04:34.020 --> 04:35.170
+So I'm going to go right here.
+
+04:35.190 --> 04:41.320
+Back to the combined producers and I'm going to import the movies reducer we have right here.
+
+04:41.400 --> 04:44.560
+So I'm going to say import movies.
+
+04:44.730 --> 04:51.810
+You know we have this same a same name and this movie is going to be imported from and it's going to
+
+04:51.810 --> 04:52.780
+be the same folder.
+
+04:52.800 --> 04:55.920
+So I'm going to say don't for Slash and then movies.
+
+04:55.920 --> 05:02.410
+Reducers So now the movie is reducers Regis or it's going to be level in the combined reducers.
+
+05:02.630 --> 05:02.970
+OK.
+
+05:03.000 --> 05:11.760
+If I just do a console log we can get again an error is going to say store does not have a valid re
+
+05:11.850 --> 05:12.370
+reducer.
+
+05:12.390 --> 05:15.660
+Make sure that the argument is passed to combine registers.
+
+05:15.780 --> 05:21.540
+This is good because inside movies every users we have a REDUCE-IT run and begin to create it on the
+
+05:21.540 --> 05:22.090
+next section.

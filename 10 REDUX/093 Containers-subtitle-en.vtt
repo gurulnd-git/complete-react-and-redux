@@ -1,0 +1,193 @@
+WEBVTT
+
+00:00.990 --> 00:07.500
+OK so far we've been using the keywords components or views and that is fine but we react redux.
+
+00:07.500 --> 00:13.920
+We need to use something else we need to use containers you know containers is just nothing different.
+
+00:14.160 --> 00:19.740
+Our container is just a component that it's directly connected to redux state.
+
+00:20.130 --> 00:25.440
+So just like here just to give you an example you could have a folder that is going to be called components
+
+00:25.830 --> 00:33.330
+where you have a large list of re-act components and some of this components are I didn't just make
+
+00:33.330 --> 00:40.020
+some calls to the read ex-state and maybe you could have other components just dump components that
+
+00:40.020 --> 00:42.820
+do but pretty much nothing with redux.
+
+00:43.140 --> 00:49.650
+So the thing is that readout is going to advise you to store all the components related to the state
+
+00:49.790 --> 00:53.170
+read ex-state inside something that calls containers.
+
+00:53.400 --> 01:00.360
+So real simple I'm going to go right here and see we have actions and reducers we will have a new folder
+
+01:00.450 --> 01:09.870
+that is going to be called containers consist of UPS Lego containers all together and inside this container
+
+01:10.070 --> 01:15.150
+I'm going to have something that it's going to be called movers list because we get a movie or movies
+
+01:15.150 --> 01:17.680
+list so I going to create a new file.
+
+01:17.730 --> 01:27.830
+It's going to be movies that don't list of movies underscore list and then that jazz.
+
+01:28.450 --> 01:28.740
+OK.
+
+01:28.780 --> 01:31.670
+So I'm going to copy pretty much the whole app.
+
+01:31.740 --> 01:35.780
+Going to put it right here and I'm going to go back to app.
+
+01:35.820 --> 01:40.270
+You know it's going to delete all this logic because we don't need it.
+
+01:40.380 --> 01:45.360
+I'm going to delete the component will mount because again we don't need it.
+
+01:45.630 --> 01:47.730
+We don't need the render list.
+
+01:47.730 --> 01:51.110
+We need the render going into the demobbed state to process.
+
+01:51.150 --> 01:57.420
+I'm just going to export the default app you know just like a simple component.
+
+01:57.420 --> 01:58.350
+Now what we need to do.
+
+01:58.350 --> 02:01.980
+And of course we're going to get an error message.
+
+02:01.980 --> 02:07.750
+We're going to just delete this and right here we're going to make reference to this movie's list.
+
+02:07.830 --> 02:15.440
+So I'm going to say your movies list just like that.
+
+02:15.480 --> 02:17.110
+There we go.
+
+02:17.220 --> 02:22.030
+Now we want to access this movie list to render whatever we have right here.
+
+02:22.050 --> 02:24.760
+We need to we need to import that.
+
+02:25.020 --> 02:26.430
+So I'm going to say import
+
+02:29.400 --> 02:33.940
+import and then it's going to be movies list from.
+
+02:33.980 --> 02:39.900
+And again we need to call to access the containers and inside the containers we can have something that
+
+02:39.900 --> 02:42.260
+calls movies list and that's good.
+
+02:42.280 --> 02:44.790
+You know we all did this.
+
+02:44.850 --> 02:48.690
+It's just a component that it's calling a child component.
+
+02:48.760 --> 02:53.540
+Now inside this I made a mistake right here inside the movers list.
+
+02:53.550 --> 02:57.650
+We just need to change everything so we can use that name.
+
+02:57.690 --> 03:00.950
+So it's going to be just movies list.
+
+03:01.440 --> 03:05.770
+And instead of just app it's going to be movies list.
+
+03:05.870 --> 03:08.300
+Now just something real simple.
+
+03:08.510 --> 03:13.230
+Let me just reload the page and OK I can solve actions in users.
+
+03:13.230 --> 03:13.610
+OK.
+
+03:13.680 --> 03:16.170
+So I change everything one directory up.
+
+03:16.250 --> 03:18.410
+I will just need to do this again.
+
+03:18.420 --> 03:21.170
+It's going to be dot for Slash.
+
+03:21.300 --> 03:23.810
+And then just move this list now.
+
+03:23.870 --> 03:24.340
+I'm sorry.
+
+03:24.360 --> 03:27.610
+It's going to be dot dot dot slash.
+
+03:27.630 --> 03:28.290
+That's right.
+
+03:28.440 --> 03:34.920
+And we go to actions and instead actions of course we're just going to import everything.
+
+03:35.980 --> 03:36.880
+And there we go.
+
+03:37.780 --> 03:39.230
+You know.
+
+03:39.440 --> 03:44.350
+You might be asking yourself Is this really necessary.
+
+03:44.650 --> 03:48.160
+Well you could take the easy way and just use components.
+
+03:48.320 --> 03:56.420
+But really it's advice you to split everything everything up for performance reasons.
+
+03:56.590 --> 03:59.600
+So again this is just up to you.
+
+03:59.990 --> 04:00.290
+OK.
+
+04:00.340 --> 04:05.650
+So now we just know the basics of redux on the next section.
+
+04:05.680 --> 04:13.230
+We will start with a clean create re-act app and we're going to do more complex things with redux.
+
+04:13.420 --> 04:17.380
+And don't worry we did they react project.
+
+04:17.380 --> 04:22.000
+So we will create a reallife react redux project at the end.
+
+04:22.030 --> 04:22.560
+OK.
+
+04:22.690 --> 04:24.670
+We're going to do a large project.
+
+04:24.730 --> 04:28.930
+So let's go to the next section and start with redux intermediate.

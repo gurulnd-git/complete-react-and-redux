@@ -1,0 +1,625 @@
+WEBVTT
+
+00:01.260 --> 00:07.680
+OK so now what we need to do we need to connect the action creators and the producers and what we do
+
+00:07.680 --> 00:11.220
+we connect them through the components.
+
+00:11.580 --> 00:17.840
+So I'm going to be inside the app that has the one that it's just outputting rendering the hello world.
+
+00:18.010 --> 00:18.370
+OK.
+
+00:18.420 --> 00:21.900
+So the first thing we need to do to connect them.
+
+00:21.900 --> 00:28.470
+It's going to be it's going to be to bring we can bring something and we're going to bring it from react
+
+00:28.590 --> 00:29.980
+react with.
+
+00:30.150 --> 00:32.540
+And this is going to be called connect.
+
+00:32.630 --> 00:32.990
+Yeah.
+
+00:33.030 --> 00:34.640
+You know can it make sense.
+
+00:34.650 --> 00:36.680
+It's going to be connect.
+
+00:36.720 --> 00:36.990
+All right.
+
+00:36.990 --> 00:43.980
+This connect is going to be from and just react redux right.
+
+00:43.990 --> 00:45.190
+That's very good.
+
+00:45.630 --> 00:50.950
+So the second thing that we need to do is we need to call to an action creator.
+
+00:51.120 --> 00:55.620
+So we need to import this action creators so we can use it.
+
+00:55.680 --> 01:01.210
+I'm going to I'm going to do it on a different way just to show you how this how this works.
+
+01:01.320 --> 01:06.100
+But then we are going to change it but we can call the action creator in a different way.
+
+01:06.300 --> 01:09.630
+I'm going to just do this because it's going to be kind of confusing.
+
+01:09.630 --> 01:13.310
+So I'm going to just dedicate a whole section to do this.
+
+01:13.560 --> 01:13.860
+OK.
+
+01:13.890 --> 01:17.810
+So first I'm going to import the action creator and what I'm going to do.
+
+01:17.820 --> 01:25.520
+I'm going import all these actions from and then just going to bring the actions.
+
+01:25.680 --> 01:31.560
+So this pretty much is going to go to the actual file we have right here and it's going to bring whatever
+
+01:31.590 --> 01:34.490
+we have inside there so we we can have access.
+
+01:34.590 --> 01:34.830
+All right.
+
+01:34.840 --> 01:36.490
+That's why we use this.
+
+01:36.820 --> 01:37.310
+OK.
+
+01:37.480 --> 01:38.820
+That's the second thing.
+
+01:38.820 --> 01:45.880
+Just bringing the actions now what we need to do whenever this component it's loaded on the screen.
+
+01:46.080 --> 01:50.150
+We want to call this action and this action is going to go to the producer.
+
+01:50.160 --> 01:52.410
+The producer is going to update the state.
+
+01:52.590 --> 01:57.260
+And then we need to catch that new state so we can render the information right here.
+
+01:57.490 --> 02:04.020
+OK but first I need to call this action creator since we want to Connard whenever the application starts
+
+02:04.410 --> 02:07.570
+or the component the components renders.
+
+02:07.590 --> 02:12.750
+So we're going to call the component will mount.
+
+02:13.310 --> 02:13.990
+OK.
+
+02:14.190 --> 02:20.310
+So after this component it's it's rendered we're going to just trigger that function that action creator
+
+02:20.310 --> 02:21.150
+from here.
+
+02:21.480 --> 02:26.780
+So I'm going to say this that prompts and we're going to call this function.
+
+02:26.800 --> 02:28.980
+And I believe it's going to be movies list.
+
+02:29.060 --> 02:30.410
+Yeah.
+
+02:31.540 --> 02:31.950
+OK.
+
+02:32.040 --> 02:32.670
+That's good.
+
+02:32.670 --> 02:33.620
+They don't need that.
+
+02:34.140 --> 02:39.660
+So again the complaint mounts and we call the movers list the action creator.
+
+02:40.140 --> 02:40.680
+OK.
+
+02:40.740 --> 02:47.910
+Now this is going to be kind of confusing in react if you remember from a component we can access the
+
+02:47.910 --> 02:51.730
+parent state doing this that prompts.
+
+02:51.950 --> 02:56.610
+So whenever we call this that prompts we go to the parent component which in this case is going to be
+
+02:56.610 --> 03:02.860
+this one and we're going to bring all the set ups and all the data that it's inside prompts.
+
+03:02.940 --> 03:09.900
+Well the thing is that if we do now we're used to this that prompts there is no recollection of the
+
+03:09.960 --> 03:10.370
+data.
+
+03:10.380 --> 03:13.650
+We have the state because the state of react.
+
+03:13.680 --> 03:17.640
+It's not the same state as the the redux state.
+
+03:17.640 --> 03:19.250
+There are just two different things.
+
+03:19.260 --> 03:23.970
+The state is one thing and the reactive state are a different thing.
+
+03:23.970 --> 03:30.660
+The thing is that to use them they read Acts state with this that prompts when it's we need a way to
+
+03:30.750 --> 03:37.920
+inject the redux state in somebody that this prompts so we can access the data.
+
+03:38.220 --> 03:41.760
+So we have a function that it's provided by redux.
+
+03:42.000 --> 03:47.160
+And it's going to be it's going to be called Map state to prompts you know the name.
+
+03:47.300 --> 03:49.300
+It's kind of confusing but it makes sense.
+
+03:49.300 --> 03:56.680
+It's map because we we used make use of the helper map just mapping and the state to.
+
+03:56.700 --> 04:01.140
+You're converting the read Act state to prom's makes sense.
+
+04:01.140 --> 04:07.530
+So I'm going to go right here before the export and I going to say function is just a function and the
+
+04:07.530 --> 04:16.200
+function call map and everything it's in camel case state to prop's you know it's a good age since you
+
+04:16.200 --> 04:17.070
+can use it.
+
+04:17.070 --> 04:21.070
+A lot of times is a good idea to create a snippet for this.
+
+04:21.450 --> 04:24.130
+Just typing everything so you can see Seamew typing.
+
+04:24.380 --> 04:24.910
+OK.
+
+04:25.200 --> 04:33.600
+So this maps state prompts is going to take one argument and the argument is going to be the state.
+
+04:33.650 --> 04:38.980
+Now this map state prompts it's only going to return some some data.
+
+04:39.020 --> 04:40.630
+So we're going to say return.
+
+04:40.820 --> 04:41.450
+All right.
+
+04:41.750 --> 04:44.460
+And this is going to return an object.
+
+04:44.630 --> 04:45.550
+Right.
+
+04:45.650 --> 04:51.010
+So the object is going to be whatever we want to have available as props.
+
+04:51.140 --> 04:58.430
+Since I want to get movies I'm just going to call it movies and the movies is going to be the data that
+
+04:58.460 --> 05:01.160
+we want to fetch that one to have.
+
+05:01.160 --> 05:08.320
+Sorry it's going to be inside the redux state and this is the read us redux state not the state.
+
+05:08.420 --> 05:15.450
+Whenever we just returned the movies everything if we go to the league I have a right here the index
+
+05:15.900 --> 05:16.500
+everything.
+
+05:16.570 --> 05:21.220
+It's going to be stored inside something that calls movies.
+
+05:21.220 --> 05:26.840
+And OK so if I go to the app I have the movies right here and I want to make reference to this that
+
+05:26.850 --> 05:36.100
+props the movies and I should be getting whatever I have inside this state of redux darts movies.
+
+05:37.970 --> 05:46.830
+OK so in this way we grab whatever we have India read ex-state that costs movies and we can access through
+
+05:46.860 --> 05:50.200
+this that prompts movies with this.
+
+05:50.420 --> 05:51.800
+That's the first step.
+
+05:51.930 --> 05:57.360
+And I'm going to I'm going to go right here and I'm going to say console log and then just state right
+
+05:57.360 --> 06:00.590
+so we can see whatever we are getting as a state.
+
+06:00.690 --> 06:03.110
+Now we are still getting an error.
+
+06:03.210 --> 06:05.700
+So we need to do more things.
+
+06:06.060 --> 06:12.430
+So this map state to prop's needs something else to connect redux.
+
+06:12.450 --> 06:13.700
+So what we need to do.
+
+06:13.750 --> 06:17.250
+We're not going to be exporting default the app.
+
+06:17.340 --> 06:21.070
+We need to export that default something from redux.
+
+06:21.330 --> 06:25.480
+And since we imported a connect right here we can make use of connect.
+
+06:25.500 --> 06:33.150
+So I'm going to go read here just delete the app and I'm going to do connect this connect takes two
+
+06:33.210 --> 06:34.470
+arguments.
+
+06:34.650 --> 06:42.420
+I can get two arguments and after that everything is ready is going to just return the class which in
+
+06:42.420 --> 06:45.680
+this case is going to be app the app component.
+
+06:46.150 --> 06:46.520
+OK.
+
+06:46.570 --> 06:49.550
+Let's get we are on the good track now.
+
+06:49.560 --> 06:54.070
+This this connect is going to take two arguments.
+
+06:54.100 --> 06:56.890
+One is going to be the map state two.
+
+06:56.940 --> 07:03.420
+That's the first one and then it's going to receive a second argument argument and it's going to be
+
+07:03.570 --> 07:04.910
+the actions number.
+
+07:04.950 --> 07:07.290
+In this case we imported all the actions.
+
+07:07.410 --> 07:10.160
+So it's going to use the actions.
+
+07:10.200 --> 07:10.870
+All right.
+
+07:11.190 --> 07:11.850
+So OK.
+
+07:11.970 --> 07:17.940
+In a natural what we are doing the Kinect is going to make actions available it's going to make all
+
+07:17.940 --> 07:19.410
+the function we have right here.
+
+07:19.410 --> 07:26.850
+This move is list available so we can use it as this process moves just it is going to call to the action
+
+07:26.850 --> 07:27.580
+creators.
+
+07:27.780 --> 07:34.800
+And after the state the relaxed state it's updating its It's updated it's going to it's going to use
+
+07:34.800 --> 07:39.200
+the map state to prompts and it's going to be everything available inside this process.
+
+07:39.240 --> 07:42.410
+That's the main idea of this.
+
+07:42.780 --> 07:47.490
+So if you notice right here on the console we are getting something.
+
+07:47.490 --> 07:50.840
+The first one whenever the application loads this code.
+
+07:50.880 --> 07:51.870
+It's not running.
+
+07:51.870 --> 07:56.640
+So whenever we cancel log the main state of redux is going to be null.
+
+07:56.700 --> 08:04.290
+If you remember whenever we created the redux I'm sorry the reducers domain reader sir we said that
+
+08:04.290 --> 08:05.660
+the state was null.
+
+08:05.670 --> 08:09.030
+So that's why we are getting no because there is no data.
+
+08:09.030 --> 08:12.040
+But after the component it's loaded.
+
+08:12.290 --> 08:12.670
+OK.
+
+08:12.690 --> 08:17.680
+The complaint will mount everything to render its mount it is going to go again.
+
+08:17.880 --> 08:24.240
+And it is going to call the movers list the movers list is going to go to the to the actual creator
+
+08:24.330 --> 08:25.710
+the moves list.
+
+08:25.710 --> 08:31.340
+This action creators going to send all this data we have right here to the producer and then we do sir
+
+08:31.350 --> 08:34.940
+will update the state with whatever payload we have.
+
+08:35.340 --> 08:40.490
+Then it's going to go to redoes read access state and right here the map step prompts.
+
+08:40.500 --> 08:43.810
+It's just catching this state this new state right here.
+
+08:43.980 --> 08:47.050
+So now we have access to all the movies.
+
+08:47.060 --> 08:49.960
+Now it's works in a magic way.
+
+08:49.960 --> 08:54.200
+There's there's kind of a magic behind redux.
+
+08:54.240 --> 09:01.980
+So now what we can do inside here inside the render we can create a function to just output this all
+
+09:01.980 --> 09:03.110
+this information.
+
+09:03.140 --> 09:03.680
+OK.
+
+09:03.900 --> 09:05.200
+So I'm going to do that now.
+
+09:05.300 --> 09:12.410
+Now I was going to wait until the next section but why not why not doing it right now.
+
+09:12.480 --> 09:18.310
+So I'm just going to delete this the hello world because we don't need it.
+
+09:18.360 --> 09:25.350
+And what I'm going to do I'm going to just I'm going to put everything inside the div you know and I'm
+
+09:25.350 --> 09:31.090
+going to call right now to a function that is going to iterate this array.
+
+09:31.230 --> 09:31.760
+OK.
+
+09:31.950 --> 09:33.080
+Just like we did before.
+
+09:33.100 --> 09:34.260
+It's going to say this.
+
+09:34.440 --> 09:38.560
+And my function is going to be called render list.
+
+09:38.880 --> 09:44.950
+And now the render list is going to take whatever we have inside the map states prompts.
+
+09:45.030 --> 09:52.380
+In this case we have movies and the main idea of my state prompts is to make this movies available inside
+
+09:52.380 --> 09:58.660
+props so we can do this that prompts dance movies.
+
+09:58.800 --> 10:00.120
+All right that's good.
+
+10:00.360 --> 10:03.610
+I mean you're getting errors but don't worry we're going to fix right now.
+
+10:03.930 --> 10:06.210
+So I'm going to create this function.
+
+10:06.270 --> 10:08.000
+It's going to be called render list.
+
+10:08.200 --> 10:11.920
+So going to go right here and create a render list function.
+
+10:11.940 --> 10:16.640
+This is going to be a fat arrow function right.
+
+10:16.960 --> 10:22.600
+And this fat arrow function is going to it's going to take us an argument the list of movies.
+
+10:22.660 --> 10:25.890
+So I'm going to go right here and say movies.
+
+10:26.780 --> 10:27.280
+OK.
+
+10:27.400 --> 10:28.510
+That is good.
+
+10:28.510 --> 10:30.610
+Now I'm going to do it and we're going to get an error.
+
+10:30.640 --> 10:32.770
+And in a minute I'm going to tell you why.
+
+10:32.830 --> 10:36.150
+Because if I do I find just do it.
+
+10:36.150 --> 10:36.850
+You're not going.
+
+10:36.880 --> 10:40.920
+You're not going to understand why I'm doing a conditional.
+
+10:40.960 --> 10:47.370
+I'm going to say return and are going to say I'm going to call the movies object we have right here.
+
+10:47.850 --> 10:48.500
+OK.
+
+10:48.760 --> 10:53.160
+So we're going to map over it going to say map right here.
+
+10:53.160 --> 11:00.070
+We open and close and we do a fad our function just to function OK.
+
+11:00.130 --> 11:04.650
+I pass I know I'm going to use movies so it can make sense.
+
+11:04.720 --> 11:13.900
+So we're going to return something on each iteration and it's going to be just a div with the name of
+
+11:13.900 --> 11:14.400
+the movie.
+
+11:14.410 --> 11:22.240
+So I'm going to call a movie that name OK and this is the it's going to be the earth that we're getting.
+
+11:22.260 --> 11:25.390
+You're going to get cannot read properly map.
+
+11:25.490 --> 11:26.220
+No.
+
+11:26.510 --> 11:27.880
+And this is good.
+
+11:28.040 --> 11:35.510
+You know whenever with the application LOTES the state of this of this application the main state with
+
+11:35.510 --> 11:37.710
+the movies is going to be no.
+
+11:37.940 --> 11:44.720
+The thing is that with map we can not loop inside of something we can loop an object that is going to
+
+11:44.720 --> 11:45.420
+be null.
+
+11:45.470 --> 11:46.450
+You know cannot be done.
+
+11:46.450 --> 11:48.510
+It's going to just give you an error message.
+
+11:48.530 --> 11:55.940
+So what we need to do we need to use a conditional to check if this movie is empty or not and if it's
+
+11:55.940 --> 12:00.410
+not empty we want to do this if not of course nothing is going to happen.
+
+12:00.410 --> 12:06.170
+So I'm going to go right here and I'm going to say if and then movies.
+
+12:06.620 --> 12:09.640
+I'm just going to wrap everything inside here
+
+12:13.460 --> 12:14.320
+and we get it.
+
+12:14.420 --> 12:18.660
+Pulp Fiction Pacific Rim and Rambo right.
+
+12:18.710 --> 12:22.600
+So this is working just fine.
+
+12:22.730 --> 12:27.830
+Let's go again through the hold the whole process.
+
+12:27.890 --> 12:32.850
+We have the producers and the creators we imported connect from reac redux.
+
+12:32.870 --> 12:39.210
+So we can make a connection between this component between the action creators and then the users.
+
+12:39.290 --> 12:47.230
+We imported the actions so we can use them then we can skip to the bottom and we make this.
+
+12:47.420 --> 12:52.210
+This is this class this component available to redux.
+
+12:52.400 --> 13:00.830
+And we are using maps state to props to inject the props the the new state inside props so we can access
+
+13:01.220 --> 13:08.240
+the prompts just like this does that prompts and we are using the actions we've imported so we can call
+
+13:08.240 --> 13:10.160
+them whenever they're ready.
+
+13:10.580 --> 13:17.150
+And then this just fetching the information is making the new state available inside this the props.
+
+13:17.270 --> 13:23.060
+And we are calling everything inside this that props that movies so we can get the information so we
+
+13:23.060 --> 13:30.480
+can loop it and we get the information you know it's a lot of work just to get three things.
+
+13:30.830 --> 13:36.160
+Ted remarriages just like it's all before once you know how to do this you pretty much you can have
+
+13:36.200 --> 13:38.160
+just a template to do all of this.
+
+13:38.330 --> 13:43.700
+And the only thing that you will need to do is just to assign a name brand here and then just to the
+
+13:43.700 --> 13:44.960
+function you know.
+
+13:45.300 --> 13:46.950
+OK let's go to the next section.
+
+13:47.090 --> 13:51.430
+I want to talk about something else I want to talk about containers.

@@ -1,0 +1,172 @@
+WEBVTT
+
+00:00.820 --> 00:07.870
+OK so you might be thinking redux every act are just new technologies so updating the redux state or
+
+00:07.870 --> 00:14.440
+just making a network request should be really really simple but really there is a lot of logic and
+
+00:14.440 --> 00:16.340
+set up we need to do first.
+
+00:16.660 --> 00:24.910
+So to use redux probably we need to use something that calls action creators and producers this action
+
+00:24.910 --> 00:28.840
+creator is getting is going to be the one that it's going to be called.
+
+00:28.930 --> 00:35.050
+At first this action creator is going to do something and it's going to return an object with a type
+
+00:35.260 --> 00:36.520
+and a payload.
+
+00:36.670 --> 00:42.910
+So this object is going to go to all the reducers and it's going to search for a reduce or we manually
+
+00:42.910 --> 00:50.290
+create for this action and then it's going to go and just update the read ex-state and once the state
+
+00:50.320 --> 00:57.060
+it's updated re-act is going to render with just new information on a really really confusing.
+
+00:57.160 --> 01:01.040
+Let me just show you a chart I have right here.
+
+01:01.070 --> 01:04.650
+It's going to hide everything else so we can start from the beginning.
+
+01:04.710 --> 01:07.770
+So we're going to have just an application we just for movies.
+
+01:07.800 --> 01:08.280
+OK.
+
+01:08.310 --> 01:15.510
+And if we click on one of these movies we just need to fetch some data and show the detailed information
+
+01:15.510 --> 01:16.420
+of this movie.
+
+01:16.650 --> 01:23.220
+So whenever we click what are we going to do we're going to call to an action creator this action creator
+
+01:23.500 --> 01:25.770
+is going to return just an object.
+
+01:25.770 --> 01:31.270
+The object is going to have two things one the type and the type is just a name.
+
+01:31.320 --> 01:34.480
+OK in this case we're just we want to get a movie.
+
+01:34.560 --> 01:36.040
+It's just a movie.
+
+01:36.150 --> 01:40.890
+And the second thing is going to it's going to have it's going to be a payload this payload is going
+
+01:40.890 --> 01:43.640
+to be the information that comes from the server.
+
+01:43.650 --> 01:49.410
+For example if you click it is going to go to the to make a network a network request and bring some
+
+01:49.440 --> 01:50.460
+Jason data.
+
+01:50.580 --> 01:56.210
+You know the detailed information about the the element we just clicked.
+
+01:56.370 --> 02:02.340
+So after it's just getting this the type and the information we have in the on the payload it's just
+
+02:02.340 --> 02:08.630
+going to go and return an object with an action action type and a pillock get this object.
+
+02:08.670 --> 02:12.090
+It's going to be sent to all the reducers we can have.
+
+02:12.090 --> 02:16.460
+We do Sir's to pretty much to update the redux redux.
+
+02:16.590 --> 02:22.800
+Now this reducers are going to receive again this object and since we have a type.
+
+02:22.860 --> 02:29.460
+We need to create a reducer with the same name if we have a type but it's movie we create every douceur
+
+02:29.550 --> 02:34.250
+with the name movie you know it's going to go right here.
+
+02:34.260 --> 02:36.540
+It's going to match the type name.
+
+02:36.540 --> 02:40.450
+In this case movie with a reducer a sign for this time.
+
+02:40.510 --> 02:46.730
+OK we match movie with movie movie action creator movie type with movie douceur.
+
+02:46.950 --> 02:52.470
+Now whenever it's done the reducer is going to grab whatever we have on the payload which is the adjacent
+
+02:52.470 --> 02:58.050
+information dates Jason data and it's going to be sent to the application to the provider with the create
+
+02:58.050 --> 02:58.670
+store.
+
+02:58.890 --> 03:04.800
+And then we just update the read ex-state and once the read Act state it's updated it is going to read
+
+03:04.800 --> 03:06.860
+render and just do whatever we want.
+
+03:06.870 --> 03:10.380
+And this is going to be react side.
+
+03:11.490 --> 03:16.890
+I know this is just a lot of logic to just to update a state.
+
+03:17.040 --> 03:17.650
+And you're right.
+
+03:17.680 --> 03:18.850
+You know you will be right.
+
+03:18.960 --> 03:20.210
+There's a lot of logic.
+
+03:20.220 --> 03:27.810
+So the reason why redux it's so popular it's because whenever you just learned to do this process it's
+
+03:27.900 --> 03:31.090
+always and always the same idea.
+
+03:31.170 --> 03:37.600
+It goes to action sense reducers and then just bring it back and just update the state.
+
+03:37.720 --> 03:40.790
+No action reducers opt it's state.
+
+03:40.920 --> 03:42.330
+It's always the same idea.
+
+03:42.420 --> 03:47.660
+And in a large scale application or you can use it in small application.
+
+03:47.670 --> 03:53.560
+It doesn't matter where you make just a lot of requests requests and updates redux.
+
+03:53.610 --> 03:59.100
+It's going to make everything simpler because it's always the same process and it works like a charm
+
+03:59.880 --> 04:00.170
+right.
+
+04:00.180 --> 04:07.770
+So let's go to the next section and create the first reduce or begin to start just from the from the
+
+04:07.770 --> 04:11.310
+back begin to start creating our producer in the action create the first.

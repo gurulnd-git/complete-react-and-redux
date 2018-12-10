@@ -1,0 +1,379 @@
+WEBVTT
+
+00:00.480 --> 00:03.470
+All right so let's create a valid REDUCE-IT.
+
+00:03.670 --> 00:07.570
+So and this is going to be inside movies reducers.
+
+00:07.690 --> 00:08.830
+Yes.
+
+00:09.090 --> 00:12.780
+This reducer is going to return a new state.
+
+00:12.780 --> 00:19.350
+If an action is matched so I'm going to start and this reducer is just going to be a function.
+
+00:19.530 --> 00:25.800
+So we need to write a function and export dysfunction so it can be used inside the combined reducers.
+
+00:26.010 --> 00:32.430
+So since we want to export the function I'm going to start saying support and default just like that.
+
+00:32.730 --> 00:37.040
+And since you wanted the export function I'm going to say function right.
+
+00:37.290 --> 00:42.710
+This function is going to have two main arguments going to do this.
+
+00:43.050 --> 00:48.030
+And then just open and close the arguments that we can use here.
+
+00:48.180 --> 00:53.340
+It's going to be the previous state and then begin to use the action.
+
+00:54.390 --> 01:02.130
+So if I go to the chart again whenever we dispatch an action call to an action creator the action creator
+
+01:02.550 --> 01:07.220
+goes to the we do series with some information and the information is just going to be an object.
+
+01:07.230 --> 01:09.680
+In this case with the type of a payload.
+
+01:09.900 --> 01:18.210
+So again if I just bring this down the data that we douceur is going to receive is going to be just
+
+01:18.210 --> 01:22.950
+something like that you know or just an object with a movie list and a payload.
+
+01:22.950 --> 01:29.130
+Now the action is going to be this is going to be equal to this object but the type and the payload
+
+01:29.280 --> 01:30.250
+to something simple.
+
+01:30.340 --> 01:31.750
+OK just an object.
+
+01:31.750 --> 01:32.330
+OK.
+
+01:32.510 --> 01:34.640
+Let's see the action argument.
+
+01:34.690 --> 01:36.870
+You can have that inside action.
+
+01:36.870 --> 01:40.580
+Now if this is not real I just put it here just to show you something.
+
+01:40.650 --> 01:43.480
+Now the other thing the other argument.
+
+01:43.500 --> 01:45.770
+It's it's a little bit more confusing.
+
+01:45.780 --> 01:48.930
+I'm going to just come this way just for now.
+
+01:49.230 --> 01:53.590
+And this state is going to be the previous State of the application.
+
+01:53.940 --> 01:55.980
+So let me just show you an example.
+
+01:56.040 --> 01:58.670
+Let's say I have a Whenever the application starts.
+
+01:58.800 --> 02:01.590
+We have a state that is going to be zero.
+
+02:01.680 --> 02:02.000
+OK.
+
+02:02.010 --> 02:06.070
+Just the application loads and starts at zero.
+
+02:06.360 --> 02:12.600
+So something happens on the application we make a click we call to an action creator the action creator
+
+02:12.870 --> 02:21.390
+returns a type and a payload and we to enter right here now whenever we triggered this function is going
+
+02:21.390 --> 02:25.560
+to look for this action is going to match it and it's going to do something.
+
+02:25.840 --> 02:26.210
+OK.
+
+02:26.220 --> 02:28.260
+It's going to update the state.
+
+02:28.560 --> 02:30.540
+Now the state right now it's zero.
+
+02:30.570 --> 02:36.360
+So when whenever this reducer is going to update the state the state it's going to be something else.
+
+02:36.360 --> 02:42.200
+It's going to be returned for example state now state it's equal to one.
+
+02:42.480 --> 02:44.110
+OK it's going to add one.
+
+02:44.410 --> 02:44.860
+OK.
+
+02:45.000 --> 02:51.480
+So this state now it's going to be equal to one but maybe or maybe later on the application we're going
+
+02:51.480 --> 02:55.360
+to do pretty much the same action and begin to trigger this again.
+
+02:55.500 --> 02:59.080
+But now the state it's not going to be zero anymore it is going to be one.
+
+02:59.100 --> 03:02.700
+So he's going to go right here execute whatever action we have.
+
+03:02.700 --> 03:06.630
+And now the state is going to be too you know this is the previous state.
+
+03:06.660 --> 03:08.190
+It's always the previous state.
+
+03:08.190 --> 03:10.280
+That's why we are using it right here.
+
+03:10.530 --> 03:16.360
+Now since whenever the application starts the state it's going to be empty.
+
+03:16.650 --> 03:17.270
+OK.
+
+03:17.470 --> 03:22.560
+We don't have any data when the application starts then it's going to do something called the reducers
+
+03:22.560 --> 03:23.760
+and the actress and whatever.
+
+03:23.880 --> 03:25.780
+And it's going to be it's the state.
+
+03:25.920 --> 03:29.970
+And you can have some information but when the when the application starts nothing is going to happen
+
+03:29.970 --> 03:32.040
+to this state it's going to be just empty.
+
+03:32.040 --> 03:35.390
+Now the thing is that if I leave it empty we leave this empty.
+
+03:35.610 --> 03:40.790
+We're going to get an error because it's going to say that the state it's not the fine.
+
+03:40.860 --> 03:42.770
+So to make it fine.
+
+03:42.810 --> 03:49.020
+Well we can say we're going to use something that it's from iOS 6 it's going to be called default function
+
+03:49.050 --> 03:54.350
+arguments and whatever whenever we pass an argument inside of a function.
+
+03:54.630 --> 04:01.660
+If this state has no data what we can do we can set a default state for this a default value for this
+
+04:01.660 --> 04:08.790
+estate so we can say no whenever the application starts state it's not empty anymore it's just going
+
+04:08.790 --> 04:09.640
+to be Noul.
+
+04:09.870 --> 04:10.290
+OK.
+
+04:10.290 --> 04:11.760
+And we're not going to get there.
+
+04:11.790 --> 04:14.280
+Now we'll get an error for it for a different reason.
+
+04:14.280 --> 04:15.130
+But don't worry.
+
+04:15.510 --> 04:16.180
+OK.
+
+04:16.500 --> 04:23.100
+Now whenever the we call the action the actual creator the action creator is going to return this object
+
+04:23.520 --> 04:25.250
+with a type and a payload.
+
+04:25.260 --> 04:30.300
+Now it's going to enter right here to this function and right here what its going to do is going to
+
+04:30.300 --> 04:31.780
+search for an action.
+
+04:31.800 --> 04:37.380
+We could have a lot of factions right here in this case this one is going to be called movers list.
+
+04:37.560 --> 04:38.120
+OK.
+
+04:38.250 --> 04:43.380
+But we can have a different reduce or a different action that is going to be called there are no movies
+
+04:43.410 --> 04:46.770
+actors or movies tax or whatever.
+
+04:46.800 --> 04:53.430
+So what we need to do we need to create a switch that is going to match the type so I'm going to do
+
+04:53.430 --> 04:53.740
+that.
+
+04:53.790 --> 04:55.830
+And in a minute it's going to make sense.
+
+04:55.830 --> 04:57.580
+No we're going to go right here.
+
+04:57.630 --> 05:03.220
+I'm going to say switch and is this is regular search with javascript.
+
+05:03.660 --> 05:09.750
+We started to switch and what we want to search want to match is going to be the action type.
+
+05:09.840 --> 05:10.510
+OK.
+
+05:10.710 --> 05:17.550
+So I'm going to say Action action tied up that time.
+
+05:19.110 --> 05:25.170
+Now we need to make different cases for this since we are matching the action type are going to say
+
+05:25.260 --> 05:32.560
+OK if the case is that the type it has movies the movies list we want to do something.
+
+05:32.580 --> 05:41.560
+So I'm going to say movies list now this whenever there is a match is going to return something.
+
+05:41.670 --> 05:48.270
+In this case what we return is going to be whenever we have inside the payload you know we have the
+
+05:48.280 --> 05:51.230
+type and the payload right here we match the type.
+
+05:51.240 --> 05:56.370
+This is going to go through and right here we return the payload to redux.
+
+05:56.400 --> 05:59.540
+If you notice this is just a database just adjacent data.
+
+05:59.780 --> 06:00.300
+OK.
+
+06:00.690 --> 06:05.420
+So we're here I'm going to say return it and I'm sorry.
+
+06:05.850 --> 06:12.280
+So we're going to return and what we turn is going to be the action that payload.
+
+06:12.970 --> 06:13.700
+Right.
+
+06:13.950 --> 06:15.080
+That's what we do.
+
+06:15.540 --> 06:19.300
+And if we can't do this we do sir.
+
+06:19.650 --> 06:21.710
+And within the time.
+
+06:21.900 --> 06:23.860
+And there is no match for the type.
+
+06:23.970 --> 06:31.410
+We need to look to return something else so what we do is we set a default case and what we return is
+
+06:31.410 --> 06:33.050
+going to be state.
+
+06:33.340 --> 06:36.310
+All right the same state we have with the well in the on the application.
+
+06:36.480 --> 06:42.130
+So I'm going to say return state right.
+
+06:42.540 --> 06:43.180
+That's it.
+
+06:43.200 --> 06:44.580
+That's pretty much it.
+
+06:45.150 --> 06:48.040
+So again let's go over the process again.
+
+06:48.520 --> 06:52.390
+I know that the application loads and notice that we not getting an error right now.
+
+06:52.740 --> 06:54.030
+The application loads.
+
+06:54.180 --> 07:00.390
+We have a movie Click on the movie is going to call the action creator and the action creator is going
+
+07:00.390 --> 07:07.730
+to fetch the information and it's going to pass an object to the reducers with the type and a payload.
+
+07:07.900 --> 07:14.040
+This this reducers dysfunction is going to catch whatever we have right here is going to pass a default
+
+07:14.040 --> 07:17.160
+state and an action right here.
+
+07:17.190 --> 07:20.980
+We search and trying to find a match for this action.
+
+07:21.210 --> 07:25.680
+This object the type it's going to be movies list.
+
+07:25.710 --> 07:32.670
+So right here we have a match is entering this case and what we return to redux is going to be the action
+
+07:32.730 --> 07:38.510
+that payload the information about that movie and then it's going to go to the combined reducers the
+
+07:38.510 --> 07:43.980
+combined reducers is going to talk to the index that has and is going to pass it to the Create story
+
+07:44.280 --> 07:45.260
+and create the story.
+
+07:45.300 --> 07:52.770
+We'll update the the state the read ex-state and then the application read renders that is pretty much
+
+07:52.770 --> 07:53.970
+the process.
+
+07:54.870 --> 07:56.390
+OK that's fine.
+
+07:56.540 --> 07:57.850
+And don't worry I know this.
+
+07:57.880 --> 08:04.730
+This is really confusing but to do this a lot of times we can ride a lot of reducers.
+
+08:04.970 --> 08:09.010
+So if you don't get it now don't worry you're going to have a lot of practice.
+
+08:09.260 --> 08:13.530
+Let's go to the next section and create a natural Creator for this.

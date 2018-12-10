@@ -1,0 +1,121 @@
+WEBVTT
+
+00:01.180 --> 00:07.440
+OK so we are starting the redux section of the course and it's going to be challenging for sure.
+
+00:07.600 --> 00:09.390
+So what is redux.
+
+00:09.400 --> 00:16.890
+If we could check the read documentation they say redux is a predictable state container for javascript.
+
+00:17.130 --> 00:18.370
+Well you know that's fine.
+
+00:18.430 --> 00:20.710
+It's nice but not very clear.
+
+00:20.890 --> 00:23.150
+So let me just show you a chart.
+
+00:23.190 --> 00:24.420
+Just a simple chart.
+
+00:24.780 --> 00:25.300
+OK.
+
+00:25.480 --> 00:32.140
+So right here we're going to have a kind of a container with redox data and you can have just a list
+
+00:32.140 --> 00:32.620
+of movies.
+
+00:32.620 --> 00:34.040
+OK something real simple.
+
+00:34.180 --> 00:35.580
+And this is just like an object.
+
+00:35.620 --> 00:36.110
+OK.
+
+00:36.250 --> 00:37.710
+So we can have this section.
+
+00:38.050 --> 00:43.240
+Now whenever the application starts it's going to fetch in the list of movies from whatever you have
+
+00:43.240 --> 00:48.370
+the information it's going to make an at work request and bring a list of movies.
+
+00:48.640 --> 00:55.660
+Then redox is going to send the information to to react and it's going to say OK this list of movies
+
+00:55.660 --> 00:59.710
+component is going to grab this list of movies and then react.
+
+00:59.740 --> 01:06.460
+It's going to grab that information that data will do its job and just render a screen with a list of
+
+01:06.460 --> 01:07.620
+movies.
+
+01:07.630 --> 01:13.750
+Now if I click on one of this movies begin to kind of do the same process again.
+
+01:13.900 --> 01:19.780
+It's going to go back it's going fetch the information is going to store it inside the redox data data
+
+01:19.810 --> 01:26.530
+of the movie we selected then redux is going to pass it again to react and is going to know that whenever
+
+01:26.530 --> 01:33.580
+we have this data we need to show the movie component is child component and that in that that part
+
+01:33.700 --> 01:39.050
+react with this component is just going to go do its job again and show the information.
+
+01:39.090 --> 01:40.880
+Ok am atomistic was second.
+
+01:40.920 --> 01:41.600
+There you go.
+
+01:41.680 --> 01:47.910
+He's going to go and render the bew or the component where we just have this information.
+
+01:47.930 --> 01:49.460
+So again redux.
+
+01:49.570 --> 01:57.100
+It's kind of a state management Laverty and that's why they say that redux is a state manager and a
+
+01:57.100 --> 01:57.800
+library.
+
+01:57.910 --> 02:05.650
+And if you think about it this Rydex data is kind of a this state of reacted just just just the state
+
+02:05.650 --> 02:12.910
+of re-act just adjacent with a lot of information and this Jason it's being consumed by react and then
+
+02:12.910 --> 02:15.270
+react does something with that data.
+
+02:15.600 --> 02:22.090
+And yeah if you think about it again it's just like a big object where we store data inside and there's
+
+02:22.210 --> 02:26.910
+data always we will advise re-act how to behave.
+
+02:26.920 --> 02:28.840
+That's the main point of this.
+
+02:28.960 --> 02:34.390
+So let's let's go to the next section we're going to start with a clean project.
+
+02:34.460 --> 02:42.160
+OK so if you want just do the Create re-act project them sort of the create with the reactive like just
+
+02:42.160 --> 02:43.270
+like we did before.

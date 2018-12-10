@@ -1,0 +1,376 @@
+WEBVTT
+
+00:01.620 --> 00:05.380
+OK so I have just a clean clean project right here.
+
+00:05.780 --> 00:07.460
+We don't have a lot of set up.
+
+00:07.500 --> 00:14.280
+I just have a unindexed non-jazz and then just an app component that it's returning some hello world
+
+00:14.440 --> 00:15.750
+to something simple.
+
+00:16.020 --> 00:16.290
+OK.
+
+00:16.290 --> 00:19.470
+So to start we need to start with X really did it.
+
+00:19.540 --> 00:22.540
+I'm going to do it right now just to show you.
+
+00:22.590 --> 00:24.450
+So I'm going to go to the terminal.
+
+00:24.450 --> 00:29.850
+It's going to be bew integrated terminal and right here you notice that it just did it.
+
+00:30.000 --> 00:37.260
+So the first thing we need to do is to install redirects so to install and begin to say NPM install
+
+00:38.850 --> 00:45.040
+and then just read X and then mine is mine is safe so we can save everything into the package.
+
+00:45.060 --> 00:51.430
+Jason so redux from the start is going to be just like a parent component going to go right here to
+
+00:51.440 --> 00:54.200
+the next is going to be just like light like this app.
+
+00:54.230 --> 00:59.880
+It's going to be the parent component of the whole application just like we did with re-act router.
+
+00:59.930 --> 01:05.660
+Same idea you can wrap the whole application inside redux Zinn's redux.
+
+01:05.660 --> 01:09.040
+It's an outside party of react.
+
+01:09.080 --> 01:12.660
+They are not related from different two different developers.
+
+01:12.660 --> 01:16.520
+We stop something else to connect redux would react.
+
+01:16.520 --> 01:22.340
+So we can have redux Unhand react in the other hand and we need something in the middle that is going
+
+01:22.340 --> 01:25.840
+to it's going to be as a middleman between these two.
+
+01:26.150 --> 01:29.550
+So this is going to be called re-act redux.
+
+01:29.600 --> 01:30.830
+So we need to install it.
+
+01:30.830 --> 01:38.880
+It's a different dependency so we're going to say NPM install and then re-act redux and then just minus
+
+01:38.900 --> 01:41.060
+mine is safe.
+
+01:41.660 --> 01:45.710
+And then it's going to go and install all the dependencies.
+
+01:45.740 --> 01:46.550
+That's good.
+
+01:46.750 --> 01:47.250
+So OK.
+
+01:47.300 --> 01:54.860
+So now we need to do a lot of setup to connect them and read X uses a lot of fancy words.
+
+01:54.860 --> 01:58.770
+So at first it's going to be a little bit over whelming.
+
+01:58.940 --> 02:05.960
+But as soon as we just keep repeating the process and we repeat it many times it's going to become natural.
+
+02:05.980 --> 02:07.300
+Just trust me.
+
+02:07.400 --> 02:13.220
+So to connect redux we need to the first thing we need to do to connect redux is to import something
+
+02:13.340 --> 02:16.450
+from react Rydex you know to middleman.
+
+02:16.790 --> 02:19.460
+And this is going to be called provider.
+
+02:19.680 --> 02:25.030
+It's going to go right here at the top and I'm going to say import we're going to use destructuring.
+
+02:25.280 --> 02:32.670
+And then it's going to be Vider this provider is going to come from re-act redux.
+
+02:32.690 --> 02:37.520
+So I'm going to say re-act redux right.
+
+02:37.550 --> 02:43.900
+So just like re-act router we need to wrap everything the whole application inside this provider.
+
+02:44.000 --> 02:53.000
+So I'm going to go right here may make a space and then just go right here top and say provider right
+
+02:53.570 --> 02:57.320
+this provider again it's just like re-act router.
+
+02:57.350 --> 03:00.020
+We're going to wrap everything inside of this.
+
+03:00.710 --> 03:01.000
+Right.
+
+03:01.010 --> 03:02.470
+So that is the first step.
+
+03:02.630 --> 03:06.400
+Just importing the provider and using the provider.
+
+03:06.800 --> 03:14.450
+So now we need to connect this provider that comes from re-act reacts with Rydex with actual redux.
+
+03:14.450 --> 03:19.260
+So again we need to import more things are going to go over the top.
+
+03:19.380 --> 03:23.880
+Am going to say import Now what we can that we can import two things.
+
+03:23.870 --> 03:25.110
+Two main things.
+
+03:25.760 --> 03:28.820
+I'm going to show you something that can be used in the real world.
+
+03:28.850 --> 03:32.040
+I could just show you how to use react.
+
+03:32.090 --> 03:33.170
+I'm sorry redux.
+
+03:33.230 --> 03:34.680
+Just out of the box.
+
+03:34.820 --> 03:41.030
+But most of the times in real life you to use more dependencies you're going to use middleware.
+
+03:41.240 --> 03:42.900
+So I'm just going to show you how to use it.
+
+03:42.910 --> 03:49.040
+With middleware is you're not going to use middle worse and at the start but as soon as we hit a little
+
+03:49.040 --> 03:54.920
+bit of more advanced section of the course which read begin to be using words.
+
+03:54.950 --> 04:02.070
+So the first thing we need to import from results is going to be something that calls create store.
+
+04:02.150 --> 04:03.520
+That's the first thing.
+
+04:03.800 --> 04:06.470
+And then we're going to bring the Midwest.
+
+04:06.530 --> 04:09.980
+So it's going to be call apply middleware
+
+04:14.390 --> 04:21.500
+just applied it to where this is going to be going to bring this from redux directly not from Briac
+
+04:21.560 --> 04:22.530
+redux.
+
+04:22.600 --> 04:23.040
+Right.
+
+04:23.090 --> 04:28.460
+So everything it's done right here now to connect them we need to do a couple of things.
+
+04:30.120 --> 04:31.810
+We're going to show you a chart right here.
+
+04:31.810 --> 04:33.030
+You have it right here.
+
+04:33.030 --> 04:35.880
+So whenever the application starts it starts with a redux.
+
+04:35.880 --> 04:37.110
+It's going to do some set up.
+
+04:37.260 --> 04:42.780
+If you have information the information is going to go to the middle where the middleware is going to
+
+04:42.780 --> 04:50.140
+do something to this information and then the middleware is going to pass it to react and then react.
+
+04:50.160 --> 04:53.760
+It's going to just show the application with that data.
+
+04:54.060 --> 05:00.900
+And if if the state changes and read X it's receiving more information than it's going to just repeat
+
+05:00.930 --> 05:05.520
+the cycle again just pass through the mirror whereas go to react and react.
+
+05:05.640 --> 05:07.040
+Just show the application.
+
+05:07.110 --> 05:09.030
+Just simple as that.
+
+05:09.090 --> 05:10.630
+So let's go back to the code.
+
+05:10.650 --> 05:13.230
+Just going to minimize this.
+
+05:13.230 --> 05:16.940
+So just just let let's go back to the code.
+
+05:16.980 --> 05:19.210
+And so I find myself.
+
+05:19.320 --> 05:24.820
+So this provider right here needs to be linked with a redux.
+
+05:24.810 --> 05:27.790
+You know this provider comes from re-act redux.
+
+05:27.900 --> 05:30.900
+We imported everything from redux but you're not using it.
+
+05:30.930 --> 05:33.270
+We are not using anything from gridlocks right here.
+
+05:33.510 --> 05:39.390
+So the thing that we can use to link this to is going to be it's something that it's going to be called
+
+05:39.470 --> 05:40.360
+store.
+
+05:40.410 --> 05:47.580
+It's going to go right here and just like a prop I'm going to say store and this store is going to receive
+
+05:47.970 --> 05:49.740
+some setting some data.
+
+05:49.860 --> 05:53.140
+So I'm just going to do curly braces right.
+
+05:53.140 --> 06:02.560
+So inside the store we need to pass a function that is going to just start all of this this behavior
+
+06:02.650 --> 06:04.030
+between reacts and reacts.
+
+06:04.150 --> 06:06.240
+OK we just need to trigger function.
+
+06:06.250 --> 06:10.600
+This function is going to have a lot of data and we're going to use it with mid-Wales so I'm going to
+
+06:10.600 --> 06:16.450
+say constant Mokoena creative Arbel that's going to just host this dysfunction.
+
+06:16.720 --> 06:18.440
+So it's going to be creative.
+
+06:18.940 --> 06:26.950
+And then just store you know it's the same thing same keyboard but it's going to be with middleware
+
+06:28.660 --> 06:32.090
+and you know this is just a viable just to name the name of Marvel.
+
+06:32.110 --> 06:39.250
+You can use whatever you want but it's always a good idea to create a viral name that means something
+
+06:39.280 --> 06:42.300
+that it's just related with what we want to do.
+
+06:42.580 --> 06:47.380
+So I'm going to say this is equal and it's going to be equal to something just just a minute.
+
+06:47.630 --> 06:52.150
+Now what we need to do we need to call the Apply middleware right here.
+
+06:52.150 --> 06:57.970
+The one we are employing So I'm going to say apply middleware.
+
+06:58.420 --> 07:05.400
+So this apply to where it's going to be a function and it's going to do something with the Create story.
+
+07:05.410 --> 07:08.680
+So I'm going to just copy and pasted right here.
+
+07:08.680 --> 07:12.490
+Now we are just linking this to now.
+
+07:12.670 --> 07:19.240
+Inside the store what we can be using is going to be this one just this is going to graph this and I'm
+
+07:19.240 --> 07:23.010
+going to go right here and say OK this this is my function.
+
+07:23.200 --> 07:28.750
+So we need whenever the provider here the writer starts is going to create a store it's going to create
+
+07:28.750 --> 07:30.380
+a store with middleware.
+
+07:30.460 --> 07:33.240
+And this is going to be a function that it's going to be Trenker.
+
+07:33.580 --> 07:39.610
+Now in the future whenever we start this we need to pass some information right here.
+
+07:39.610 --> 07:44.560
+So the information right here is going to be just available to us an argument that is going to contain
+
+07:44.800 --> 07:47.560
+all the information that we want to do on the application.
+
+07:47.560 --> 07:53.890
+You know the just the data we have and we're going to do this in just a minute.
+
+07:53.890 --> 08:01.450
+So OK this is enough for now whenever we just started redux we just this is the main the main the minimum
+
+08:01.720 --> 08:06.030
+we need to do to to do the two to start redux.
+
+08:06.160 --> 08:11.560
+There's going to be called the provider create store and the bit where we instant create an instance
+
+08:11.560 --> 08:14.020
+of the applying middleware and the created store.
+
+08:14.080 --> 08:15.980
+And then we pass it to the store.
+
+08:16.120 --> 08:17.390
+That's it.
+
+08:17.450 --> 08:21.480
+And you know I'm just showing you how this works.
+
+08:21.610 --> 08:26.200
+But in the future I'm pretty sure that you can have a template to do all of this.
+
+08:26.260 --> 08:30.050
+You're just going to copy and paste because it's always the same idea.
+
+08:30.510 --> 08:32.100
+OK let's go to the next section.
+
+08:32.200 --> 08:32.850
+We're going to talk.
+
+08:32.850 --> 08:36.280
+We can start talking about actions and we do cers.
