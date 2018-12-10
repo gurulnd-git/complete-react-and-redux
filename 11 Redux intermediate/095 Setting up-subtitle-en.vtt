@@ -1,0 +1,280 @@
+WEBVTT
+
+00:01.310 --> 00:06.690
+OK so we're going to start with a new project I've made to create create re-act app.
+
+00:06.950 --> 00:13.430
+Just a simple template and just like always I'm just deleting everything and just leaving the index
+
+00:13.520 --> 00:18.740
+that jazz and the index that HVM L.
+
+00:19.010 --> 00:19.460
+OK.
+
+00:19.670 --> 00:20.330
+So that's fine.
+
+00:20.330 --> 00:27.470
+So let me show you a mockup of what we can do so we can build just a simple application just learned
+
+00:27.560 --> 00:31.500
+a little bit about a little bit more about redux.
+
+00:31.520 --> 00:37.640
+So whenever the page loads begin to have a simple header and we can have some items right here with
+
+00:37.640 --> 00:38.790
+cars.
+
+00:38.950 --> 00:44.400
+Now whenever the page loads we can have a list of all the cars we have on the database.
+
+00:44.570 --> 00:50.900
+And then whenever we click on a car it's going to show you the it's going to show us the in the detail
+
+00:50.970 --> 00:52.190
+detail of the car.
+
+00:52.280 --> 00:52.740
+OK.
+
+00:52.820 --> 00:54.130
+Just simple as that.
+
+00:54.170 --> 00:57.330
+So I'm just going to minimize this and we need to do some set up.
+
+00:57.350 --> 01:00.450
+We need to install some things on the project.
+
+01:00.460 --> 01:06.770
+I deleted everything just like before and since we are going to work with redux we can just use some
+
+01:06.770 --> 01:08.840
+folders to go to source.
+
+01:08.880 --> 01:10.940
+I'm going to create a new folder.
+
+01:10.940 --> 01:14.420
+This one is going to be actions that need actions.
+
+01:15.440 --> 01:19.260
+We're going to need a new folder for containers.
+
+01:19.410 --> 01:22.150
+We're going to use containers.
+
+01:22.340 --> 01:27.740
+We're going to need a new folder for reducers.
+
+01:28.160 --> 01:29.030
+Right.
+
+01:29.070 --> 01:31.030
+And you fall there for components.
+
+01:31.070 --> 01:35.060
+So I'm going to say components right.
+
+01:35.060 --> 01:39.270
+So the main entry point of our application is going to be app.
+
+01:39.280 --> 01:40.910
+We're going to start from there.
+
+01:40.940 --> 01:47.120
+So I'm going to go to components and again I'm going to create a new file that is going to be app app
+
+01:47.120 --> 01:50.270
+that as simple as that.
+
+01:50.540 --> 01:56.090
+Since this is just it's going to start as a simple component I'm going to import re-act from react.
+
+01:56.150 --> 01:57.800
+I'm going to make a class component.
+
+01:57.860 --> 02:02.020
+So it's going to be components are going to go right here.
+
+02:02.030 --> 02:07.470
+Can I say class and then just on no app makes sense.
+
+02:08.750 --> 02:13.550
+And this one is going to be extensive and then just components just like before.
+
+02:14.150 --> 02:20.200
+This one just just to put a friend there so we can get something on the screen whenever the page loads.
+
+02:20.220 --> 02:26.410
+So we're going to say render it inside the render we can return some GSX so is going to say we turn
+
+02:26.690 --> 02:32.060
+and then just a simple div just something simple hello.
+
+02:32.570 --> 02:36.470
+And of course we need to export this components.
+
+02:36.570 --> 02:39.580
+I'm going to say export default.
+
+02:40.280 --> 02:42.510
+And then just app.
+
+02:42.680 --> 02:43.750
+All right that's good.
+
+02:43.760 --> 02:45.770
+Now I'm going to go to the index database.
+
+02:45.920 --> 02:48.810
+I'm going to import that of components.
+
+02:49.040 --> 02:57.620
+So I'm going to say app from and then dot for Slash components for Slash at that jazz that's going to
+
+02:57.620 --> 02:58.980
+work OK.
+
+02:59.000 --> 03:02.300
+So what do we need we need to install a lot of things.
+
+03:02.450 --> 03:06.500
+So we need to install redux and react redux.
+
+03:06.500 --> 03:15.440
+So I'm going to go right here to the terminal and I'm going to say OK I'm going to say NPM install redux.
+
+03:15.470 --> 03:16.650
+That's the first thing.
+
+03:16.970 --> 03:22.280
+It's going to be mine amount minus minus safe and click enter and then I'm going to pass the video because
+
+03:22.280 --> 03:23.690
+it's going to take a couple minutes.
+
+03:25.460 --> 03:26.600
+OK so this is done.
+
+03:26.640 --> 03:29.130
+We need to install re-act redux.
+
+03:29.300 --> 03:39.740
+So again and PM install and then re-act redux and then mine is mine is safe again just kind of Ponzo
+
+03:39.740 --> 03:40.060
+BDO.
+
+03:40.060 --> 03:41.310
+Be right back.
+
+03:42.740 --> 03:45.200
+All right so we can do anything we can to use routes.
+
+03:45.200 --> 03:48.160
+So we need to install re-act router.
+
+03:48.320 --> 03:57.270
+So I'm going to say NPM install and then re-act router and then just Dohm right.
+
+03:57.290 --> 04:05.100
+It's going to be out and it's going to be the person for 0 0 and then just minus minus save.
+
+04:05.600 --> 04:05.930
+All right.
+
+04:05.960 --> 04:08.870
+Again going to pass the BDA.
+
+04:09.290 --> 04:14.950
+OK so we're going to be calling making calls to an API and begin to use Jason's server for this.
+
+04:14.990 --> 04:21.270
+So I'm going to go right here to the root of our application and I'm going to create a new file and
+
+04:21.290 --> 04:24.750
+you file and it's going to be divi dad.
+
+04:24.800 --> 04:29.190
+Jason just like that divi that Jason and it's going to be just empty.
+
+04:29.480 --> 04:30.080
+OK.
+
+04:30.320 --> 04:32.900
+And we need to install Dayson server.
+
+04:33.110 --> 04:40.310
+Now if you don't have it installed globally Here's the command you need to NPM install minus D and then
+
+04:40.310 --> 04:41.280
+Jason's server.
+
+04:41.300 --> 04:42.570
+That's what you need to do.
+
+04:42.710 --> 04:46.660
+I'm never going to install it because I already have it.
+
+04:46.730 --> 04:50.180
+So we need to start to server I'm going to go to a new tab.
+
+04:50.210 --> 04:51.250
+Right here when you click.
+
+04:51.260 --> 04:53.960
+Plus it's going to take you to a new tab.
+
+04:54.170 --> 05:00.420
+And if we do Jason Dasch server then minus minus watch TV that Jason is the one we have right here.
+
+05:00.800 --> 05:08.500
+And then port and 3 0 0 4 we click enter is going to start everything for us and we can have an API
+
+05:08.540 --> 05:09.700
+just in one minute.
+
+05:09.930 --> 05:10.830
+It's very good.
+
+05:11.030 --> 05:11.960
+I love this.
+
+05:11.960 --> 05:12.990
+Jason server.
+
+05:13.330 --> 05:13.820
+OK.
+
+05:14.150 --> 05:19.040
+So everything it's ready so we can start as soon as this is ready.
+
+05:19.320 --> 05:19.600
+OK.
+
+05:19.670 --> 05:21.950
+So everything is fine it's fine.
+
+05:21.950 --> 05:28.190
+So I'm going to go to mine to the first one to the first terminal and I'm going to do.
+
+05:28.190 --> 05:29.540
+NPM start
+
+05:32.650 --> 05:34.630
+all right it's going to take a few seconds.
+
+05:34.870 --> 05:40.260
+And as soon as it's done you should be getting the hello.
+
+05:40.560 --> 05:46.540
+We have right here on the local host 3000 is going to reload the page and we get hello.
+
+05:46.590 --> 05:49.390
+So that's good you know very very fast.
+
+05:49.560 --> 05:55.440
+So let's go to the next section and start creating the components for our tiny application.

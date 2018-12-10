@@ -1,0 +1,238 @@
+WEBVTT
+
+00:00.580 --> 00:07.090
+OK so now we need to make use of this Rydex premise and I'm sorry that sometimes I say redux instead
+
+00:07.090 --> 00:12.540
+of redux you know with different accent because in my country they'd say redux.
+
+00:12.640 --> 00:15.700
+You know it's confusing for me.
+
+00:15.700 --> 00:16.750
+I'm sorry for that.
+
+00:16.960 --> 00:18.210
+Let's keep moving forward.
+
+00:18.220 --> 00:21.540
+If I say redux you know that it's redux that's fine.
+
+00:21.550 --> 00:23.130
+We need to install this promise.
+
+00:23.140 --> 00:25.390
+The real problem is that this middleware.
+
+00:25.660 --> 00:27.500
+So we get to go to the terminal.
+
+00:27.510 --> 00:30.150
+I'm going to say View integrated terminal.
+
+00:30.370 --> 00:36.970
+And whenever you install new dependencies it's always good to kill the process right here.
+
+00:37.210 --> 00:41.830
+So in Windows if you do Control-C is going to ask a terminal BATSHAW.
+
+00:41.850 --> 00:42.340
+Yes.
+
+00:42.430 --> 00:43.570
+Did you just yes.
+
+00:43.700 --> 00:46.400
+If your Mac is going to be Kamensky.
+
+00:46.750 --> 00:48.060
+No real simple.
+
+00:48.280 --> 00:50.320
+So we need to install redux promise.
+
+00:50.380 --> 01:00.880
+So I'm going to say NPM install and then read UX and then promise promise it is going to be mine is
+
+01:00.880 --> 01:04.370
+mine to save and he's going to do all the installing.
+
+01:04.460 --> 01:09.280
+It's not just that just a few seconds but I'm going to just pause the video just to make it make everything
+
+01:09.280 --> 01:09.920
+faster.
+
+01:11.680 --> 01:13.210
+Right so everything is installed.
+
+01:13.330 --> 01:15.150
+So I'm going to go right here and I'm going to do.
+
+01:15.220 --> 01:17.980
+PM start again.
+
+01:17.980 --> 01:19.190
+All right.
+
+01:19.190 --> 01:20.550
+We're going to bring this down.
+
+01:21.660 --> 01:22.310
+And right.
+
+01:22.330 --> 01:25.800
+So we need to connect this redux promise.
+
+01:25.830 --> 01:27.890
+It's install on our computer.
+
+01:27.940 --> 01:29.370
+So we need to do some set up.
+
+01:29.410 --> 01:35.320
+I'm going to go I'm going to go to the index dodginess and the worry is set up it's really really simple.
+
+01:35.320 --> 01:38.470
+We have it ready for for us right here.
+
+01:38.470 --> 01:44.080
+So what we need to do first see since we installed a new dependency we need to import that.
+
+01:44.140 --> 01:52.140
+So I'm going to say import and it's going to call promise made aware.
+
+01:52.220 --> 01:52.500
+All right.
+
+01:52.540 --> 01:58.870
+That's fine and is going to say from and it's going to be redux promise.
+
+01:59.190 --> 02:01.200
+Very good.
+
+02:02.200 --> 02:11.320
+So now in order to use this what we do we just can't just copy this and we go right here inside apply
+
+02:11.320 --> 02:13.810
+middleware and we just put it right here.
+
+02:14.050 --> 02:15.480
+It's that simple.
+
+02:15.700 --> 02:21.370
+If you have more hours maybe to do something else because you could have a lot of malwares you just
+
+02:21.490 --> 02:26.770
+just stacking them there just coma and you add and you were just simple as that.
+
+02:27.130 --> 02:33.110
+So since you're going to use just for now the promise the redox promise is just going to use one.
+
+02:33.430 --> 02:34.630
+OK that's good.
+
+02:35.020 --> 02:41.370
+So if I just reload the page and go right here and type for it.
+
+02:41.850 --> 02:43.180
+OK that's good.
+
+02:43.180 --> 02:45.540
+Notice that we get the type we get the payload.
+
+02:45.730 --> 02:50.780
+And this we now we get a response and we are not getting that promise.
+
+02:50.830 --> 02:55.200
+So I'm going to go right here and just open all this.
+
+02:55.590 --> 03:02.290
+Ok we get a payload and get a lot of data on the payload you know have the body headers.
+
+03:02.500 --> 03:06.460
+You have a lot of information and we have one more problem that we need to solve.
+
+03:06.460 --> 03:12.430
+We have a lot of information but the data it's not like here it's not a it's not a promise or something
+
+03:12.430 --> 03:14.720
+else but we don't have the data.
+
+03:14.890 --> 03:20.660
+Now the thing is that with fetch We need to do something else the response the actual Jason.
+
+03:20.800 --> 03:22.420
+It's not available in there.
+
+03:22.420 --> 03:25.760
+We need to do some more set up with fetch.
+
+03:25.900 --> 03:27.350
+And that's why I use Axel's.
+
+03:27.370 --> 03:29.570
+It's simpler actually.
+
+03:29.710 --> 03:32.580
+Whenever you call ASIO's is going to give you the actual Jason.
+
+03:32.620 --> 03:34.410
+You don't need to do more set up.
+
+03:34.420 --> 03:40.820
+So what we need to do right here we need to do that then we can use then and then inside here we're
+
+03:40.880 --> 03:46.640
+going to call that response and then the response is going to be equal to.
+
+03:46.660 --> 03:54.530
+And we can at we convert the response to Jason's response and then Jason and we convert everything.
+
+03:54.850 --> 03:58.610
+So this is it's going to do it's going to grab that response we're getting.
+
+03:58.690 --> 04:06.280
+And it's just fetching that Jason the data we need and it's good to return that response.
+
+04:06.280 --> 04:07.600
+You know is going to sign.
+
+04:07.600 --> 04:12.120
+Response to response responses Jason so I'm going to do forward.
+
+04:12.390 --> 04:18.330
+And this time instead of a response we get the actual Jasen the array of data.
+
+04:18.580 --> 04:19.190
+Right.
+
+04:19.270 --> 04:20.910
+So that is working.
+
+04:21.070 --> 04:27.130
+You know it was a lot of work just to get this working but now it's available and we can do a lot of
+
+04:27.130 --> 04:28.410
+things with this.
+
+04:28.410 --> 04:29.150
+So OK.
+
+04:29.260 --> 04:31.640
+Let's go to the next section.
+
+04:31.960 --> 04:38.260
+We can begin to grab this information we can to create a reduce or to grab this information the one
+
+04:38.260 --> 04:44.530
+that we are getting right here because as for now we are calling the we do sorry we are just canceling
+
+04:44.980 --> 04:46.040
+the data we are.
+
+04:46.050 --> 04:52.030
+We are getting to ground this data create the actual reducer and whenever we get this information we
+
+04:52.030 --> 04:54.880
+will update the results state with this.

@@ -1,0 +1,322 @@
+WEBVTT
+
+00:01.490 --> 00:07.700
+OK so now what you're going to do we going to try to fetch the data inside this card detail you're going
+
+00:07.700 --> 00:08.760
+to do that right now.
+
+00:08.960 --> 00:12.380
+So if you remember I had a Inside the actions.
+
+00:12.440 --> 00:18.710
+Let me just close all of this because you know it can get confusing for you and confusing for me.
+
+00:18.710 --> 00:24.710
+So I'm going to open the actions just the actions index and then the car to the car.
+
+00:25.520 --> 00:31.370
+So right here we have an action that it's going to do a request going to fetch some data from the server
+
+00:31.640 --> 00:33.500
+and then it can just cancel logging the request.
+
+00:33.500 --> 00:39.830
+This will return a promise but just to check that we are calling it did the action create are just fine.
+
+00:39.970 --> 00:45.490
+I'm going to call the component will mount and just trigger that action.
+
+00:45.560 --> 00:50.000
+Remember that whenever we use bank bind action creators we add this action.
+
+00:50.000 --> 00:55.550
+The card detail action is going to be a level inside this that prompts that card detail.
+
+00:55.610 --> 01:04.220
+So I was going to say this that prompts dot Cardy card detail and says we need an ID and we have the
+
+01:04.220 --> 01:05.360
+ID right here.
+
+01:05.420 --> 01:08.620
+I'm just going to pass the ID Breguet.
+
+01:08.860 --> 01:12.890
+So if I go to the home I go to forward.
+
+01:13.360 --> 01:14.620
+I click my stand.
+
+01:14.740 --> 01:19.390
+We get a promise my Here let me just make it bigger get a promise.
+
+01:19.460 --> 01:21.040
+It means that it's working.
+
+01:21.370 --> 01:23.950
+I'm going to delete this because we don't need it.
+
+01:24.000 --> 01:28.840
+And now what I'm going to do what we need to do is we need to know that we need to create or reduce
+
+01:28.840 --> 01:33.490
+her to take this data and update the state.
+
+01:33.690 --> 01:34.210
+OK.
+
+01:35.750 --> 01:39.160
+We're going to have a problem with this because let me show you first.
+
+01:39.170 --> 01:41.620
+Let's do it in the bad way.
+
+01:41.780 --> 01:46.700
+And after we understand the bad way to do it we can do it on a different way.
+
+01:46.700 --> 01:47.780
+We're going to change it.
+
+01:48.120 --> 01:54.380
+So OK first I'm going to go to the reducers to the car which is her right here to the let's go to the
+
+01:54.510 --> 01:56.760
+next now.
+
+01:56.760 --> 01:57.950
+So card with her.
+
+01:58.050 --> 01:58.980
+That's good.
+
+01:59.090 --> 01:59.680
+So OK.
+
+01:59.690 --> 02:07.250
+The thing is that whenever we call the producers we can switch and search for a type the type that we
+
+02:07.250 --> 02:09.140
+have inside here.
+
+02:09.140 --> 02:10.690
+It's going to be card detail.
+
+02:10.710 --> 02:18.320
+So OK I'm going to go inside the reducer and create a new case for this and this one is going to return
+
+02:18.440 --> 02:20.280
+an action that payload.
+
+02:20.450 --> 02:20.870
+Right.
+
+02:20.870 --> 02:22.530
+Same thing same code.
+
+02:22.550 --> 02:26.200
+The only thing the know difference it's going to be the type.
+
+02:26.220 --> 02:26.710
+Right.
+
+02:26.940 --> 02:27.400
+OK.
+
+02:27.540 --> 02:28.430
+Let's good.
+
+02:28.440 --> 02:37.480
+So now if I just go back reload the page I go to Ford and click on Mustang.
+
+02:37.830 --> 02:44.790
+And before that I'm going to go to the gym right here to the container to the car's container and I'm
+
+02:44.790 --> 02:50.560
+just going to cancel a lot of the state to make sure that we get one car instead of four cars.
+
+02:51.600 --> 02:53.500
+OK so I'm going to go for it.
+
+02:54.330 --> 02:59.690
+Ok we get the list of cars and right here we have an array of four carts.
+
+02:59.870 --> 03:01.730
+That's the first reducer.
+
+03:01.980 --> 03:03.550
+That one is working.
+
+03:03.600 --> 03:06.080
+If I click a Mustang OK.
+
+03:06.180 --> 03:07.950
+Going to do something else of course.
+
+03:07.950 --> 03:14.790
+And then we have a car array of one and this one should be the Mustang and it's going to be the Mustang
+
+03:14.790 --> 03:16.080
+for sure.
+
+03:16.080 --> 03:16.620
+That's good.
+
+03:16.620 --> 03:19.260
+So this means that it's working.
+
+03:19.260 --> 03:23.690
+Now if you notice you're storing everything inside cars.
+
+03:24.390 --> 03:33.180
+Inside the same key the thing is that if I go back we have the same state you know and this is the problem
+
+03:33.600 --> 03:38.970
+because we are storing all the information inside cars so whenever we search for cars we have the same
+
+03:38.970 --> 03:40.350
+one with four cars.
+
+03:40.530 --> 03:47.250
+And then we are using the same one to retrieve only one one car so that one is not going to work just
+
+03:47.250 --> 03:47.750
+fine.
+
+03:47.970 --> 03:54.180
+So one way to do it is going to be creating one reducer for all seasons.
+
+03:54.180 --> 03:57.480
+Right here we are storing everything inside cars.
+
+03:57.480 --> 04:03.680
+What we can do is create a new one but it's going to be car detail just like that.
+
+04:04.040 --> 04:14.610
+I'm going to create a new reducer that is going to be car detail car detail non-jazz and right here
+
+04:14.650 --> 04:20.940
+I can take just copy all of this and put it right here going to delete the search cars because we don't
+
+04:20.940 --> 04:22.030
+need it.
+
+04:22.110 --> 04:24.340
+And inside the car reducer are going to search.
+
+04:24.360 --> 04:26.040
+I'm going to delete the card detail.
+
+04:26.070 --> 04:33.330
+So we're going to have just two reducers one for the search cars and one for the car detail now inside
+
+04:33.360 --> 04:42.960
+here get a copy is going to go back and I'm going to say this import the car detail from and then car
+
+04:43.080 --> 04:45.230
+detail right.
+
+04:45.450 --> 04:46.080
+That's right.
+
+04:46.080 --> 04:48.270
+There's one more thing we need to do right here.
+
+04:48.300 --> 04:54.700
+Whenever we call the inside the car the component we are setting the stage right here.
+
+04:54.810 --> 05:01.250
+This one should be equal to car detail so redux is going to make this dispatch.
+
+05:01.380 --> 05:07.230
+It's going to go to the action going to fetch the information right here is going to return the card
+
+05:07.230 --> 05:13.880
+the tail is going to flow through all the reducers and it's going to find a match inside card detail.
+
+05:14.010 --> 05:16.350
+It's going to return it of course.
+
+05:16.350 --> 05:22.650
+And inside the reducer it's going to store the information inside something that calls card detail now
+
+05:22.710 --> 05:28.980
+from inside the component we have access to card detail right here because this one is equal to state
+
+05:28.980 --> 05:30.330
+card detail.
+
+05:30.330 --> 05:35.100
+So if we call the card detail we can have the information right there.
+
+05:35.260 --> 05:41.190
+It's a forward we get cards and card detail a rate of zero.
+
+05:41.280 --> 05:43.810
+And that is good right here.
+
+05:44.800 --> 05:48.930
+Right here cars for card detail it's empty.
+
+05:48.940 --> 05:50.960
+And if I click a Mustang good.
+
+05:51.010 --> 05:56.670
+We have cars array for in card detail array of one that's good.
+
+05:56.800 --> 06:03.740
+And if we go back we have all the cars because this rendering from cars and not car detail and you know
+
+06:03.940 --> 06:05.950
+it works that's fine.
+
+06:05.950 --> 06:08.710
+But there is still one problem.
+
+06:08.860 --> 06:12.220
+This is just a tiny application so this could work.
+
+06:12.220 --> 06:19.180
+The problem is that most of the time you're going to use regex for applications where you need to use
+
+06:19.180 --> 06:23.270
+applications to create applications and handle lots of data.
+
+06:23.590 --> 06:33.280
+So if you had to create one reducer and one file for each reducer that you create or just one for each
+
+06:33.940 --> 06:39.720
+you know you can have a prong it's going to be really hard to maintain it's going to be a problem.
+
+06:39.730 --> 06:49.130
+So what we advise when actually redux advise is for you to use an object OK to store it in instead of
+
+06:49.140 --> 06:51.180
+raw and re use an object.
+
+06:51.340 --> 06:58.330
+And for example if you're talking about cars use one cars and store everything related to cars inside
+
+06:58.330 --> 06:59.180
+an object.
+
+06:59.290 --> 07:03.480
+If you have users store all the information inside an object.
+
+07:03.610 --> 07:12.820
+For users if you have news whatever news store all the news inside use no one reducer for the same type
+
+07:12.820 --> 07:14.070
+of information.
+
+07:14.500 --> 07:16.530
+So this is good.
+
+07:16.600 --> 07:19.810
+This works but we're going to change it to.
+
+07:19.950 --> 07:21.370
+To use an object.
+
+07:21.370 --> 07:25.300
+Let's go to the next section and see how to fix this state.

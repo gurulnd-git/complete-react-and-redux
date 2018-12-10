@@ -1,0 +1,496 @@
+WEBVTT
+
+00:00.870 --> 00:06.540
+OK so now what we need to do we need to create a container that is going to be listening for changes
+
+00:06.870 --> 00:08.260
+in the redux stayed.
+
+00:08.280 --> 00:13.800
+And whenever there is a change whenever we have a list of cars it's going to just grab that data and
+
+00:13.800 --> 00:14.900
+display the list.
+
+00:14.910 --> 00:22.320
+So if I type Ford right here this is going to bring from the server all the entries with forward it
+
+00:22.320 --> 00:28.920
+will update this state and whenever the state gets updated this component right here is going to render
+
+00:29.010 --> 00:29.980
+the whole list.
+
+00:30.180 --> 00:31.040
+So that's fine.
+
+00:31.080 --> 00:35.010
+Let's do it and we learn as we go.
+
+00:35.070 --> 00:40.980
+So we're going to go to containers and I'm going to need a new container that is going to be on a list
+
+00:40.980 --> 00:41.900
+of cars.
+
+00:41.910 --> 00:43.350
+That sounds good.
+
+00:43.350 --> 00:51.960
+So it's going to be a list of cars to make it your case list of cars.
+
+00:54.590 --> 00:54.820
+OK.
+
+00:54.830 --> 00:57.300
+And this one dodgiest of course.
+
+00:57.740 --> 01:02.200
+So we need to do a lot of things we need to import a few things.
+
+01:02.200 --> 01:09.230
+I'm going to go right here to the search and instead of just typing everything you can at just copy
+
+01:09.230 --> 01:10.310
+some things.
+
+01:10.310 --> 01:16.850
+The first thing we need is going to be react the component so import react and component from react.
+
+01:17.170 --> 01:25.650
+We're going to create a class and the class is going to be list of cars something like that.
+
+01:26.590 --> 01:33.820
+OK this one is going to extend component very good.
+
+01:34.070 --> 01:41.310
+And for now we're just going to render a list going to say render and then be open and close and we
+
+01:41.390 --> 01:44.300
+return some constants.
+
+01:44.360 --> 01:49.810
+So right here it's going to say a div and I don't know this div is going to have something that calls
+
+01:49.850 --> 01:52.250
+cars let's forget right here.
+
+01:52.370 --> 01:59.300
+Export default default and then list.
+
+01:59.300 --> 02:06.920
+Of course you're going to change all of this right now right now because we need to to bring the data
+
+02:06.950 --> 02:10.160
+from redux we need to link this to redux.
+
+02:10.160 --> 02:16.220
+So let's go to the index is going to be the ABs that is inside the components and bring this list of
+
+02:16.220 --> 02:17.180
+course.
+
+02:17.180 --> 02:23.360
+So I'm going to go to components and go to app and right here after the search we're going to bring
+
+02:23.360 --> 02:25.320
+this list of course.
+
+02:25.780 --> 02:26.430
+OK.
+
+02:26.870 --> 02:28.510
+Remember to import.
+
+02:28.520 --> 02:37.040
+It's going to set import and then list of cars from and then done that it's going to be containers for
+
+02:37.040 --> 02:40.100
+Slash and list of course Burguet.
+
+02:40.190 --> 02:43.120
+If I were of the page we get cars that's good.
+
+02:43.430 --> 02:48.620
+So I'm going to go to the list of cars I'm going to start creating the the connection that we need to
+
+02:48.620 --> 02:51.160
+create with the redux.
+
+02:51.230 --> 02:52.350
+So I'm going to go right here.
+
+02:52.380 --> 02:53.780
+I'm going to say important.
+
+02:54.190 --> 02:59.140
+And the first thing we need to do that first thing we need is connect.
+
+02:59.700 --> 03:01.770
+OK then we're going to say from.
+
+03:01.880 --> 03:05.380
+And it's going to be re-act redux.
+
+03:05.390 --> 03:07.770
+Very good.
+
+03:07.800 --> 03:14.820
+Now the thing is that this component right here the list of cars has no action.
+
+03:14.840 --> 03:20.710
+The only thing that this component cares is what is happening with the redux state.
+
+03:20.830 --> 03:28.010
+Now if we make a change in type for it and the state of course changes and now it has a list this one
+
+03:28.430 --> 03:31.500
+worries about that needs to be listening for that.
+
+03:31.580 --> 03:33.850
+So there is no actions in this component.
+
+03:34.040 --> 03:39.080
+So there's no need right here to import the buying action creators.
+
+03:39.080 --> 03:40.370
+You know there's no.
+
+03:40.910 --> 03:41.440
+So.
+
+03:41.550 --> 03:43.990
+So what are we going to do.
+
+03:44.030 --> 03:45.710
+We're going to go right here at the bottom.
+
+03:45.710 --> 03:51.120
+And since this component meets kit needs to care about the redux state.
+
+03:51.290 --> 03:55.120
+We're going to save function and we're going to use the map state to prompt.
+
+03:55.130 --> 04:04.450
+We need that one and this bay map stayed to prop's the map state to prop's it's open and close.
+
+04:04.460 --> 04:08.720
+And this one takes an argument and it's going to be the actual state.
+
+04:08.850 --> 04:17.470
+Now it's going to return something and what it's going to be returning it's going to be cars no cars.
+
+04:17.510 --> 04:21.400
+It's pretty much the same thing we have right here.
+
+04:22.020 --> 04:24.080
+And that's why I'm using cars.
+
+04:24.290 --> 04:29.660
+So this one is going to be equal to state DOT cars.
+
+04:29.750 --> 04:33.260
+Now it's always a good idea to use pretty much the same name.
+
+04:33.260 --> 04:40.190
+I could say right here I can say sunshine whatever and whenever we call two props is going to be sunshine.
+
+04:40.370 --> 04:44.870
+But since you're calling cars it's always a good idea to keep the same idea.
+
+04:44.880 --> 04:45.480
+Right.
+
+04:45.710 --> 04:53.240
+So get inside cars get the state of cars whenever the redux state it's updated.
+
+04:53.360 --> 04:53.620
+OK.
+
+04:53.660 --> 05:00.650
+I'm going to go right here to export default and we need to connect the map stage props to relax.
+
+05:00.860 --> 05:06.180
+So I'm going to say export and default and then we're going to use the connect.
+
+05:06.200 --> 05:08.070
+We import it on top.
+
+05:08.150 --> 05:09.160
+It's going to be connect.
+
+05:09.350 --> 05:11.810
+And this one takes two arguments.
+
+05:11.810 --> 05:14.920
+First one the first it's the maps data prompts.
+
+05:15.050 --> 05:19.420
+Since we are using it right here I'm going to say maps data prompts.
+
+05:19.490 --> 05:22.020
+The second one is going to be the actions scenes.
+
+05:22.040 --> 05:25.320
+We don't have any actions it's going to be No.
+
+05:25.880 --> 05:28.600
+And then it's just going to return the class.
+
+05:28.600 --> 05:37.010
+We just lost of course now if we go right here and counsel of the state we should be we should be getting
+
+05:37.010 --> 05:39.310
+the the changing state right here.
+
+05:39.470 --> 05:46.260
+So I'm going to say consulate's just to make sure that everything is working console log and then state.
+
+05:46.520 --> 05:47.950
+Right.
+
+05:48.200 --> 05:53.690
+So if I reload the application we get cars and an array of zero.
+
+05:53.840 --> 05:58.310
+And this is why we went to the cars we do searches and we do.
+
+05:58.310 --> 06:01.230
+We did a state with an empty array.
+
+06:01.280 --> 06:04.730
+So whenever everything is starting we get an empty array.
+
+06:04.750 --> 06:06.420
+All right it's just like empty.
+
+06:06.440 --> 06:06.790
+And that's good.
+
+06:06.830 --> 06:09.070
+That's what we need to start now.
+
+06:09.110 --> 06:18.440
+If I do a Ford and that just closes if I do Ford and click enter we get a new state right here and we
+
+06:18.440 --> 06:19.600
+get an array of four.
+
+06:19.700 --> 06:25.990
+So the Jasons server it's finding four entries with a keyboard for it with the brand for.
+
+06:26.260 --> 06:26.910
+All right.
+
+06:26.990 --> 06:28.360
+So it's working.
+
+06:28.400 --> 06:30.200
+So it seems that it's working.
+
+06:30.320 --> 06:38.600
+Now we have the data right here and it's available inside this Propst of cars we can right here we can
+
+06:38.600 --> 06:42.060
+create a function to map all this information.
+
+06:42.320 --> 06:48.740
+So OK let's create the map so we can render a simple list to go right here at the top.
+
+06:48.740 --> 06:54.650
+Just going to bring this down and right here we need to call to a function that is going to render this
+
+06:54.650 --> 06:59.500
+list so OK I'm going to say this and this.
+
+06:59.520 --> 07:08.520
+There we go this dot list of course that makes sense because of course that's going to be the name of
+
+07:08.520 --> 07:10.300
+the function and what do you get.
+
+07:10.350 --> 07:17.850
+Going to pass as an argument to this function is going to be the list of course since we have it available
+
+07:18.120 --> 07:19.630
+inside this that prompts.
+
+07:19.680 --> 07:27.200
+I'm going to say this that prompts I'm going to copy this function right here.
+
+07:27.370 --> 07:30.400
+I'm going to just this one is going to be equal to.
+
+07:30.830 --> 07:33.790
+We have the argument and the fat arrow function.
+
+07:33.790 --> 07:37.330
+Now inside this prompts we have the cars.
+
+07:37.480 --> 07:44.500
+So right here we can use make use of destructuring and since we have this that prompts we can get direct
+
+07:44.590 --> 07:46.350
+access to cars.
+
+07:47.010 --> 07:54.790
+OK so now we're going to need to render the list and we can have again one problem if we do a map right
+
+07:54.790 --> 07:55.420
+here.
+
+07:55.630 --> 07:59.150
+And the application starts and we have an array of zero.
+
+07:59.220 --> 08:01.070
+We're going to have to have a problem.
+
+08:01.090 --> 08:03.220
+It's not going to render anything.
+
+08:03.220 --> 08:04.790
+So what I'm going to do.
+
+08:04.930 --> 08:09.680
+We're going to need to put a conditional and we always did this before going to say car.
+
+08:09.760 --> 08:16.970
+If cars if this cars has any data we want to return a list OK.
+
+08:17.380 --> 08:27.910
+So I'm going to say Return return and then it's going to be cars and begin to map over it to open it
+
+08:27.940 --> 08:28.610
+right here.
+
+08:28.660 --> 08:31.000
+This one takes an anonymous function.
+
+08:31.260 --> 08:35.490
+And inside here we just open and close we're going to trade.
+
+08:35.860 --> 08:43.120
+And we going to pass inside instead of item going to use a car that makes more sense each car inside
+
+08:43.120 --> 08:44.270
+of a list of cars.
+
+08:44.500 --> 08:45.020
+OK.
+
+08:45.520 --> 08:49.120
+So we have the car we have the function.
+
+08:49.120 --> 08:52.790
+So now what we need to do is we need to return some GSX.
+
+08:52.900 --> 08:57.250
+So I'm going to say return an open and close.
+
+08:57.250 --> 09:05.460
+We're going to have to add a class to the deaf because we can at some style some styles to this.
+
+09:05.680 --> 09:10.330
+So this one is going to be car item.
+
+09:10.870 --> 09:14.840
+So what we need to do we need to access the data we have right here.
+
+09:15.040 --> 09:22.210
+And if I go to the Jason I just provide you we have different items.
+
+09:22.210 --> 09:25.300
+We have the brand model and the ear.
+
+09:25.330 --> 09:36.880
+So just for testing I can output the model so I'm going to say item and then model it fails to compile.
+
+09:36.910 --> 09:41.330
+That's why item it's not that far I'm sorry it's car not item.
+
+09:41.410 --> 09:42.430
+My mistake.
+
+09:44.730 --> 09:46.130
+So everything looks fine.
+
+09:46.200 --> 09:47.030
+No errors.
+
+09:47.130 --> 09:52.470
+The application starts right here you can have some text saying search for a car or whatever just to
+
+09:52.470 --> 09:54.830
+keep it simple and to save time.
+
+09:55.050 --> 09:56.150
+We are not going to do it.
+
+09:56.160 --> 10:02.070
+We're going to type forward and whenever we type forward we should be getting data and that's when we
+
+10:02.070 --> 10:04.240
+get to worry about this message.
+
+10:04.380 --> 10:07.010
+So we get most and Fiesta Falco's and tours.
+
+10:07.120 --> 10:07.450
+OK.
+
+10:07.560 --> 10:08.430
+So it's working.
+
+10:08.430 --> 10:12.660
+We are fetching data just beautifully.
+
+10:12.690 --> 10:16.150
+Let's go again with step just over the old steps.
+
+10:16.160 --> 10:22.260
+I'm sorry that this is kind of redundant but you need to be sure of what is happening right here.
+
+10:22.540 --> 10:24.470
+So OK the application starts.
+
+10:24.660 --> 10:31.900
+We type some data inside we type for for example and this one is going to trigger an action.
+
+10:32.130 --> 10:39.210
+The action is going to go and make and then request and whenever it's done the middleware the redux
+
+10:39.210 --> 10:43.850
+premise that we are using a waits until there is a response.
+
+10:43.980 --> 10:50.940
+Once we get a response the action creator is going to flow through all the reducers with the payload
+
+10:51.060 --> 10:52.610
+and the type.
+
+10:52.650 --> 11:00.450
+Whenever there is some match with the name with the with it type and the the action squealers type and
+
+11:00.450 --> 11:05.560
+the reducers whenever there is a match it's going to grab the data we have on the payload.
+
+11:05.730 --> 11:12.720
+It's going to update the state and once the state is updated this list of course it's always listening
+
+11:13.110 --> 11:17.960
+with the maps data prompts the always listens for changes inside the state.
+
+11:17.970 --> 11:23.820
+And this is we have a change on the state is going to really render the application because we have
+
+11:23.820 --> 11:30.420
+it inside the does the props and the the reactor is going to be rendered with a list that is pretty
+
+11:30.420 --> 11:31.610
+much what's happening.
+
+11:31.620 --> 11:33.420
+In a nutshell.
+
+11:33.870 --> 11:40.750
+So let's go to the next section and let's try to add some styles and make this list a little bit better.

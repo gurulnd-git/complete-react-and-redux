@@ -1,0 +1,475 @@
+WEBVTT
+
+00:01.700 --> 00:06.820
+OK so now we're going to bind in-action Creator for this for the search.
+
+00:06.830 --> 00:11.130
+Now I'm going to go right here to the index of actions.
+
+00:11.180 --> 00:16.920
+I'm going to create a new file that is going to be index that jazz just like we did before.
+
+00:16.970 --> 00:22.380
+And next that jazz Briger so I can go back to search.
+
+00:22.520 --> 00:30.890
+Now if you remember on the previous section where we were when we were covering the basics of redux
+
+00:31.370 --> 00:37.080
+we import in the importante actions just like that imported import all.
+
+00:37.110 --> 00:40.590
+And we did the just like this as actions.
+
+00:40.730 --> 00:44.880
+And then from and just the main index of actions.
+
+00:45.320 --> 00:48.330
+Well the thing is that this is not the right way to do it.
+
+00:48.350 --> 00:50.050
+We do it on a different way.
+
+00:50.090 --> 00:51.520
+Just gonna delete all this.
+
+00:51.540 --> 00:55.030
+We're going to start again with with this.
+
+00:55.040 --> 01:02.520
+So first I want to do I want to go to the to the action creators and we're going to create an action
+
+01:03.290 --> 01:08.730
+and first be just going to cancel something just to make sure that we are calling the action correctly.
+
+01:08.900 --> 01:17.720
+So I'm going to say export default export function and this one is going to be called Get cars something
+
+01:17.720 --> 01:24.410
+real simple get cars right this action creator is going to receive an argument.
+
+01:24.410 --> 01:30.110
+So whenever we triggered the section the search right here is going to call to this action and it's
+
+01:30.110 --> 01:33.030
+going to pass that this that state that.
+
+01:33.030 --> 01:34.890
+So we passed the keywords.
+
+01:35.030 --> 01:35.370
+OK.
+
+01:35.480 --> 01:38.330
+Let's get so this one who's going to receive an argument.
+
+01:38.450 --> 01:43.620
+And it's going to be keyboards of keyboards.
+
+01:43.820 --> 01:45.070
+Right.
+
+01:45.170 --> 01:48.640
+So I'm going to go right here and do a console lock for now.
+
+01:48.640 --> 01:55.460
+You're not going to do the API request because we need to use a Midwest and that section it's a bit
+
+01:55.460 --> 02:01.610
+long so I'm going to say made a request with the.
+
+02:01.790 --> 02:03.810
+And then we're going to use template strings.
+
+02:04.010 --> 02:06.790
+If you're going to make use of this keyboard is viable.
+
+02:06.810 --> 02:07.870
+We are getting.
+
+02:08.360 --> 02:10.640
+And then just say key.
+
+02:10.640 --> 02:10.910
+Right.
+
+02:10.910 --> 02:16.870
+So whenever we call this action creator you can get a console log with made a request with the.
+
+02:16.980 --> 02:19.250
+And whatever we typed right here.
+
+02:19.700 --> 02:19.970
+OK.
+
+02:20.000 --> 02:21.490
+So let's go back to the search.
+
+02:21.710 --> 02:24.410
+Let's go step by step by step on this.
+
+02:24.590 --> 02:31.520
+So the first thing we need to do or two or two use redux inside of this container we need to import
+
+02:31.730 --> 02:34.040
+connect so we can connect redux.
+
+02:34.250 --> 02:40.530
+So it's going to say import import and then we bring connect.
+
+02:40.990 --> 02:41.620
+Right.
+
+02:42.080 --> 02:43.410
+And it's going to be from.
+
+02:43.670 --> 02:46.820
+And then re-act redux.
+
+02:47.510 --> 02:48.030
+Right.
+
+02:48.080 --> 02:50.000
+That's the first step.
+
+02:50.000 --> 02:56.570
+Now we need to bring the action creator we just created and we're not going to do import all as actions.
+
+02:56.570 --> 03:00.330
+What we do is we import the actual action.
+
+03:00.440 --> 03:05.310
+So I'm going to say import I'm going to make use of this structuring right here.
+
+03:05.540 --> 03:11.840
+And the function the auction creator was called Get cars and notice that right here we are exporting
+
+03:11.840 --> 03:12.590
+this.
+
+03:12.590 --> 03:18.200
+So what we can do instead of importing all since we need one action inside of this container we're going
+
+03:18.200 --> 03:22.940
+to put get cars it's just going to bring that one and it's going to be from.
+
+03:23.330 --> 03:28.980
+And then I believe it's going to be Dab-Dab for Slash and actions.
+
+03:29.000 --> 03:29.290
+Right.
+
+03:29.360 --> 03:29.910
+That's good.
+
+03:30.080 --> 03:34.070
+So we have access to these action creator.
+
+03:34.070 --> 03:42.940
+Now if you remember on the previous section we're using to inject the props whenever we have the redux
+
+03:42.940 --> 03:54.620
+state we injected the props right here inside the container doing the map state map state to prop's
+
+03:55.370 --> 04:04.340
+remember then there's a sequel and then we just return a new a new state return and then just an object
+
+04:04.850 --> 04:05.520
+whatever.
+
+04:05.630 --> 04:10.190
+And then we will just inject this inside the prop so we can have access.
+
+04:10.190 --> 04:17.750
+The thing is that this container will not use mapped state prompts because whenever we want whenever
+
+04:17.750 --> 04:25.370
+we load this component and we just type something and call that action creator we're just going to do
+
+04:25.370 --> 04:28.330
+that which is call an action Creator.
+
+04:28.330 --> 04:36.380
+This component's It's not aware of what's happening with the weed at the state so we don't need to know
+
+04:36.380 --> 04:37.740
+about the real estate.
+
+04:37.790 --> 04:43.520
+So there's no need to use Map state to prop's because we don't use the state right here which is trigger
+
+04:43.600 --> 04:45.710
+in action and that's it.
+
+04:45.710 --> 04:50.800
+Now to trigger an action we need to do something else.
+
+04:50.930 --> 04:58.310
+And you know just like maps take the props map state to props to props.
+
+04:58.310 --> 05:02.180
+We have a different way you know right here we get the props.
+
+05:02.180 --> 05:08.240
+Now to this patch props dispatch action we need to call to you to use something else that is going to
+
+05:08.240 --> 05:15.650
+be map just like that and then dispatch to props you know make sense.
+
+05:16.600 --> 05:19.870
+Now map state prompts and map dispatch to props.
+
+05:20.160 --> 05:20.390
+OK.
+
+05:20.410 --> 05:27.070
+So I'm going to create it right now and am I'm going to say function just like we did before function
+
+05:27.610 --> 05:33.870
+and this one is going to be map and then all it's in its own income case it's going to be this patch
+
+05:34.750 --> 05:37.950
+and then two and then props.
+
+05:38.380 --> 05:38.760
+Right.
+
+05:38.860 --> 05:42.650
+So open close just like that.
+
+05:42.670 --> 05:49.420
+Now this map dispatched props is going to use an argument and it's going to be dispatch.
+
+05:49.650 --> 05:50.040
+Right.
+
+05:50.050 --> 05:52.040
+This is from redux.
+
+05:52.090 --> 05:56.660
+Now this dispatch needs something needs to return something.
+
+05:56.660 --> 06:00.180
+So I'm going to say return and what we need to return.
+
+06:00.260 --> 06:06.290
+It's something else from redux and it's going to be called bind action creators.
+
+06:06.310 --> 06:12.280
+Now this is not something that we create right here manually not a function that we ride manually but
+
+06:12.280 --> 06:15.990
+we need to call the find action creators from redux.
+
+06:16.030 --> 06:22.060
+So I'm going to go just right here at the top and we're going to import that functionality.
+
+06:22.090 --> 06:33.210
+It's going to be import and then we will we will call bind and then just action and then creators.
+
+06:33.220 --> 06:36.840
+And remember I told you redux has fancy lingo.
+
+06:37.060 --> 06:42.290
+Well you know it's redux.
+
+06:42.500 --> 06:46.270
+So it's not really redux we import it directly from readers.
+
+06:46.580 --> 06:46.860
+OK.
+
+06:46.880 --> 06:49.210
+So since we have this what are we going to do.
+
+06:49.220 --> 06:54.740
+We're going to go right here at the bottom and we're going to we're going to use this mind action creators.
+
+06:55.060 --> 06:55.370
+OK.
+
+06:55.370 --> 06:57.350
+So we called by an actual creators.
+
+06:57.500 --> 07:00.390
+And this one takes two arguments.
+
+07:00.560 --> 07:06.560
+The first one is going to be the action creator that we want to use in this case is going to be get
+
+07:06.560 --> 07:07.080
+cars.
+
+07:07.130 --> 07:09.200
+So we do get cars.
+
+07:09.380 --> 07:10.740
+That's good.
+
+07:10.790 --> 07:12.080
+Now what we want to do.
+
+07:12.110 --> 07:15.950
+The second argument it's this dispatch we have right here.
+
+07:16.160 --> 07:18.860
+You know it just it works kind of in a magic way.
+
+07:20.000 --> 07:20.710
+OK.
+
+07:21.020 --> 07:27.470
+The last thing we need to do is that whenever we just do the set up for read X instead of exporting
+
+07:27.530 --> 07:34.560
+the default components we need to export it with CONNECT so we can use reacts so we can do connect.
+
+07:35.140 --> 07:35.560
+OK.
+
+07:35.690 --> 07:44.750
+Going to open and close and what we do right here we take two arguments but then we just return the
+
+07:45.170 --> 07:49.260
+original component which is going to be search.
+
+07:49.790 --> 07:53.570
+If you remember right here we used two arguments.
+
+07:53.570 --> 07:58.610
+We use the map state two props.
+
+07:59.060 --> 08:04.330
+And then the Preuss lecture we will be used in action action.
+
+08:04.340 --> 08:08.150
+Now the thing is that we are not going to use this just like this anymore.
+
+08:08.300 --> 08:15.920
+We use the map this dispatch props so I can just copy all and put map dispatched to prop's now right
+
+08:15.920 --> 08:16.190
+here.
+
+08:16.190 --> 08:21.530
+It says map state to properest undefined it's because we are not using it because we don't need it.
+
+08:21.530 --> 08:27.290
+The thing is that you still need to provide something if not it's just going to it's going to fail.
+
+08:27.470 --> 08:32.310
+So since we are not using maps data prompts what we do we say no.
+
+08:32.840 --> 08:33.850
+And that's going to work.
+
+08:34.690 --> 08:35.080
+OK.
+
+08:35.260 --> 08:35.840
+That's fine.
+
+08:36.070 --> 08:46.000
+So in theory right here my dispatch my call to the to the to the actual creator it's ready and everything
+
+08:46.000 --> 08:47.880
+should be working just fine.
+
+08:47.890 --> 08:54.070
+Now the only thing that we need to do is to call this action creator and the main point of doing all
+
+08:54.070 --> 09:00.090
+of this is that whenever we can this action creator right here right here we can call it right here.
+
+09:00.220 --> 09:06.130
+This action creator is going to be handled by readouts directly on the previous lectures since we were
+
+09:06.150 --> 09:12.940
+using import all its actions we were triggering triggering triggering that action directly.
+
+09:12.940 --> 09:19.240
+We were doing everything manually but now whenever we call it it's going to be handled by Ouida X right
+
+09:19.240 --> 09:20.160
+here.
+
+09:20.620 --> 09:28.870
+So I'm going to go and just lot of this and we're going to just call that get cars we have right here
+
+09:28.930 --> 09:30.560
+that action creator.
+
+09:30.560 --> 09:31.160
+So OK.
+
+09:31.180 --> 09:39.190
+So since we have it available inside probs I'm going to said this that props that get cars you know
+
+09:39.310 --> 09:44.830
+we have it available in this that props get cars because we are using the match dispirit dispatched
+
+09:44.830 --> 09:52.030
+props you know with the maps that props we inject the props and right here we inject the dispatch the
+
+09:52.030 --> 09:54.040
+action creators same idea.
+
+09:54.050 --> 10:01.030
+There's the props that get cars this function this action creator takes an argument which is going to
+
+10:01.030 --> 10:02.290
+be the word.
+
+10:02.560 --> 10:11.280
+And since we have access to the keyboard right here inside the state we're going to say this that stage
+
+10:11.670 --> 10:17.840
+that keyboard right now that's fine.
+
+10:17.850 --> 10:18.100
+OK.
+
+10:18.120 --> 10:24.800
+So if I type forward and click enter up we get an error message and C.Y..
+
+10:24.980 --> 10:25.860
+That's fine that's good.
+
+10:25.910 --> 10:29.300
+And I can explain you know why right here we get the message.
+
+10:29.300 --> 10:34.270
+It says made a request or request with the Ford key.
+
+10:34.400 --> 10:39.850
+So the actual creator it's getting triggered and it's receiving the keyboard.
+
+10:40.010 --> 10:42.230
+So this is working right here.
+
+10:42.230 --> 10:45.110
+Now what we can to do we're going to return to the Creator.
+
+10:45.500 --> 10:50.490
+Do all the logic for the action creator returning the type and the payload.
+
+10:50.540 --> 10:53.710
+No but we're going to do it on the next election.
+
+10:53.960 --> 10:57.830
+But right now let's get cars is working just fine.
+
+10:57.830 --> 11:06.140
+It's being called and receiving keywords and right here we have a nice message a nice error and it's
+
+11:06.140 --> 11:09.220
+saying actions must be plane objects.
+
+11:09.230 --> 11:11.550
+OK we know that we can do that right now.
+
+11:11.790 --> 11:19.300
+As I say use custom middleware for async actions and that's why we can to use middleware.
+
+11:19.550 --> 11:23.090
+Let's go to the next section and set up the middle work for this.

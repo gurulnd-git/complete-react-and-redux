@@ -1,0 +1,619 @@
+WEBVTT
+
+00:01.150 --> 00:04.180
+OK so we have all the dependencies we need.
+
+00:04.180 --> 00:11.590
+We have this main component we index the jazz and it's bringing the components that dush app which it's
+
+00:11.590 --> 00:12.980
+giving us hello world.
+
+00:13.030 --> 00:14.430
+Just something real simple.
+
+00:14.680 --> 00:17.160
+So what we need to do a lot of things are going to show you a chart.
+
+00:17.210 --> 00:21.030
+The chart again and we need to do a lot of set ups right now.
+
+00:21.370 --> 00:22.680
+We have a lot of components.
+
+00:22.750 --> 00:27.460
+We can have the app component which is this one inside we're going to have a new component which is
+
+00:27.460 --> 00:34.060
+going to be the header that contains the search and then we can have a different component to wrap the
+
+00:34.270 --> 00:35.810
+list of course.
+
+00:36.010 --> 00:41.560
+And whenever a user clicks on a car we can have a new component for each car for each item and whenever
+
+00:41.560 --> 00:46.960
+they click it is going to show a new one that it's going to fetch all the information of this car.
+
+00:47.130 --> 00:51.460
+Update the state and then just show show it right here to something simple.
+
+00:51.520 --> 00:52.020
+OK.
+
+00:52.320 --> 00:57.050
+So OK I'm going to go back to the project and we can to start setting this up.
+
+00:57.160 --> 00:58.390
+We're going to be using routes.
+
+00:58.390 --> 01:03.120
+So the first thing is going to be importing the rounds have router.
+
+01:03.190 --> 01:11.550
+So I'm going to say import and are going to do of this and I'm going to bring the browser router right.
+
+01:11.560 --> 01:14.880
+The second thing we need is going to be the route.
+
+01:15.490 --> 01:21.060
+And we're going to import this from re-act router.
+
+01:21.250 --> 01:24.140
+It's going to be re-act router done.
+
+01:24.220 --> 01:25.290
+That's good.
+
+01:25.860 --> 01:26.900
+Okay that's good.
+
+01:27.130 --> 01:29.740
+So now we can have two main components.
+
+01:29.920 --> 01:31.780
+One is going to be the app component.
+
+01:31.960 --> 01:34.010
+And then just IKAR detail.
+
+01:34.050 --> 01:39.470
+So I'm going to call a car right now so I'm going to create and imported it but then we're going to
+
+01:39.610 --> 01:44.810
+go and create this component just to save time and go into imported right now.
+
+01:45.040 --> 01:52.330
+So it's going to be car from components and I'm going to call this one car right now I to set up the
+
+01:52.360 --> 01:58.150
+routes for this are going to go right here at the bottom and I'm going to just delete the car because
+
+01:58.170 --> 02:03.930
+the idea because we don't need it so we need to wrap the whole application inside the inside the browser
+
+02:03.940 --> 02:04.410
+router.
+
+02:04.410 --> 02:10.850
+So I'm going to say browse a router and the browser router takes one elements.
+
+02:10.870 --> 02:13.070
+If we pass more elements it's going to break.
+
+02:13.180 --> 02:15.960
+So we're going to wrap everything inside a zip.
+
+02:16.360 --> 02:18.030
+We're going to use two routes.
+
+02:18.040 --> 02:22.020
+We're going to use the home route and then the car with the with the IDs.
+
+02:22.030 --> 02:24.250
+So first I'm going to do the home.
+
+02:24.580 --> 02:25.860
+So it's going to be route.
+
+02:26.200 --> 02:31.010
+Am I going to just open it close and this one is going to be exact.
+
+02:31.030 --> 02:33.110
+I'm not going to use switch.
+
+02:33.130 --> 02:37.810
+We're going to use the path and the path for this one is going to be just for Slash.
+
+02:38.080 --> 02:44.280
+We need to pass a component and the component is going to be it's going to be at that JSC.
+
+02:44.380 --> 02:46.730
+So it's got.
+
+02:47.130 --> 02:50.320
+So the next route is going to be this one right here.
+
+02:50.320 --> 02:56.110
+Now whenever we click on an item it's going to go to this view and it's going to take an idea and idea
+
+02:56.140 --> 03:03.280
+from there from the pro-ams as an argument so we can do bring the information of this particular car.
+
+03:03.470 --> 03:11.380
+So I'm going to go right here again to say route and this one again is going to have a path and the
+
+03:11.380 --> 03:13.960
+path is going to be car.
+
+03:14.240 --> 03:22.610
+It's going to be for Slash car and then for Slash calling and we pass the id the as an argument.
+
+03:22.840 --> 03:23.270
+Right.
+
+03:23.420 --> 03:24.120
+That's good.
+
+03:24.310 --> 03:31.040
+So this one is going to use the components and the component is going to be car right.
+
+03:31.150 --> 03:33.430
+Everything looks fine.
+
+03:33.490 --> 03:39.250
+Let's go and create the car component going to go right here inside components and create a new file.
+
+03:39.250 --> 03:43.500
+This one is going to be called car door jams.
+
+03:43.590 --> 03:44.640
+Right.
+
+03:44.680 --> 03:46.270
+Let me minimize this.
+
+03:46.330 --> 03:52.240
+So this car that just real simple we need to import re-act from Briac that's just going to be a class
+
+03:52.250 --> 03:55.390
+of components we need to bring components
+
+03:57.960 --> 04:00.140
+components right.
+
+04:00.270 --> 04:02.100
+What is the next thing we need.
+
+04:02.190 --> 04:14.040
+We need to create a class so this one is going to be class car and extends component why we want to
+
+04:14.070 --> 04:16.960
+render something for now just to make sure that everything is working.
+
+04:16.980 --> 04:22.350
+So I'm going to say render and inside the render method we're going to return something.
+
+04:22.350 --> 04:23.880
+Now we will return.
+
+04:23.900 --> 04:25.770
+It's just a dip.
+
+04:25.890 --> 04:29.720
+Just something really dumb just saying.
+
+04:30.000 --> 04:39.210
+And now we need to export and then default and we export the car so we can make it available inside
+
+04:39.270 --> 04:40.570
+other components.
+
+04:40.850 --> 04:41.810
+OK that's fine.
+
+04:41.850 --> 04:45.090
+So if I say it everything should be working fine.
+
+04:45.090 --> 04:45.780
+Home.
+
+04:45.810 --> 04:46.490
+Hello.
+
+04:46.650 --> 04:53.170
+And if I go to a car for Slash car and then for that last one we get car.
+
+04:53.310 --> 04:54.090
+Let's get.
+
+04:54.510 --> 04:55.920
+So now what do we need to do on the.
+
+04:55.920 --> 04:57.600
+Bring the chart again.
+
+04:57.600 --> 05:03.360
+We need to create the first components the first component is going to beat Hetter whenever we search
+
+05:03.360 --> 05:04.920
+at the user.
+
+05:04.920 --> 05:06.880
+We're going to store this value.
+
+05:06.900 --> 05:12.570
+The keyboards inside the components state and then we get to grab that keyboard and we can pass it to
+
+05:12.570 --> 05:15.670
+this component so we can search the cars.
+
+05:15.990 --> 05:16.360
+OK.
+
+05:16.440 --> 05:16.910
+That's fine.
+
+05:16.950 --> 05:20.390
+Let's create the search components.
+
+05:20.910 --> 05:25.450
+Now the search component is going to be directly linked to redux.
+
+05:25.560 --> 05:28.600
+So we will make a container with this.
+
+05:28.770 --> 05:36.630
+So I'm going to go right here back to the project and inside containers are going to create a new file
+
+05:36.960 --> 05:41.000
+that is going to be called search makes sense.
+
+05:41.490 --> 05:45.510
+Search dogs jazz.
+
+05:45.580 --> 05:52.630
+Now again we're going to make it a class based components on going to react and component and we're
+
+05:52.630 --> 06:02.980
+going to write to class is going to be class and then search and then extents and then component right.
+
+06:03.100 --> 06:09.910
+So what we need to do we can and just render some device right now is going to say render an inside
+
+06:09.910 --> 06:13.550
+the just after the render begin to return some GSX.
+
+06:13.570 --> 06:18.860
+So its return and that open and close again to create a parent's death.
+
+06:18.910 --> 06:23.640
+Just a container and the containers can have a class.
+
+06:23.670 --> 06:29.650
+I'm going to put a class name of main search makes sense.
+
+06:30.130 --> 06:32.160
+You can put whatever you want.
+
+06:32.220 --> 06:37.240
+OK so this may search we can have a form inside the search with the input.
+
+06:37.420 --> 06:46.990
+So I'm going to say form open it close and this is going to have an input and input is going to be for
+
+06:46.990 --> 06:51.400
+now type text right.
+
+06:51.610 --> 06:54.600
+Makes sense when it closes.
+
+06:54.680 --> 06:56.550
+And now everything's fine.
+
+06:56.950 --> 06:58.420
+There's something missing.
+
+06:58.420 --> 07:08.620
+We need to export the component export default and then we say search since this is going to be linked
+
+07:08.860 --> 07:10.360
+to redux.
+
+07:10.520 --> 07:11.380
+I need to do.
+
+07:11.560 --> 07:14.520
+We need to change a lot of things right now right here.
+
+07:14.590 --> 07:16.350
+So we're going to need to do something else.
+
+07:16.720 --> 07:18.360
+I'm getting an error right here.
+
+07:18.610 --> 07:22.280
+Remember with GSX you need to follow some rules.
+
+07:22.360 --> 07:29.100
+So if you create unempowered and we don't have the closing tag it's going to break the GSX.
+
+07:29.170 --> 07:29.490
+Yeah.
+
+07:29.590 --> 07:30.450
+Really don't.
+
+07:30.790 --> 07:31.100
+OK.
+
+07:31.120 --> 07:31.710
+That's fine.
+
+07:31.870 --> 07:35.620
+So let's go to the parent component which is going to be the app component.
+
+07:35.650 --> 07:38.620
+We can include this component from the from the app.
+
+07:38.690 --> 07:44.440
+So I'm going to go back to the app and I'm going to import the components.
+
+07:44.950 --> 07:46.900
+OK let's do it from here.
+
+07:46.900 --> 07:53.710
+I'm going to go right here and I'm going to say components and begin to bring the first component so
+
+07:53.710 --> 08:00.640
+it's going to be import and then search search from.
+
+08:00.790 --> 08:02.570
+And this one is going to be inside containers.
+
+08:02.590 --> 08:05.840
+So we're going to do that for Slash containers.
+
+08:05.890 --> 08:10.230
+We go and we will go one directory up and this one is going to be called search.
+
+08:10.530 --> 08:11.060
+OK.
+
+08:11.170 --> 08:18.530
+So if I go inside app I'm just going to delete the hello I'm going to wrap everything inside the app.
+
+08:18.600 --> 08:20.810
+I'm going to add a class right here.
+
+08:21.160 --> 08:22.840
+I always like to add a class.
+
+08:22.850 --> 08:24.370
+You know you don't need to do this.
+
+08:24.490 --> 08:25.530
+It's going to be app.
+
+08:25.600 --> 08:29.320
+Now we're going to we want to bring the search component right here.
+
+08:29.320 --> 08:34.210
+So I'm going to say search since we have it available right here.
+
+08:34.210 --> 08:35.930
+We can bring it no problem.
+
+08:35.930 --> 08:45.460
+And it's a search then just for Slash them it and I'm going to go back to the home and get we get the
+
+08:45.680 --> 08:46.650
+I made a mistake right here
+
+08:50.390 --> 08:52.830
+one second.
+
+08:52.940 --> 08:56.470
+So I have a closing tag right here that it's not right.
+
+08:57.330 --> 08:59.620
+If you can see it just let me know.
+
+09:00.940 --> 09:01.320
+OK.
+
+09:01.420 --> 09:03.790
+It must be on the search right here.
+
+09:03.790 --> 09:08.270
+You know I'm not used to use the VS code a lot.
+
+09:08.860 --> 09:11.210
+I just knew with it vs code.
+
+09:11.350 --> 09:15.330
+So I still need some polish.
+
+09:15.330 --> 09:22.030
+So OK so we included the search component and it's right here available inside the app.
+
+09:22.240 --> 09:25.510
+You know this is really really ugly.
+
+09:25.630 --> 09:29.090
+So we can do some styles we can add some styles.
+
+09:29.170 --> 09:36.110
+So I'm going to go to the main index are going to go right here and I'm going to import and when going
+
+09:36.110 --> 09:42.390
+to important just to see assess and we're going to do it from here it's going to be app that says OK
+
+09:42.550 --> 09:45.100
+we don't have this file so I'm going to go and create it.
+
+09:45.100 --> 09:50.310
+Right now it's going to be in the main directory.
+
+09:50.510 --> 09:54.550
+Sorry it's going to be the source directory I mean site the source directory.
+
+09:54.600 --> 09:57.510
+I'm going to create just a file but it's going to be apps.
+
+09:57.520 --> 09:59.090
+That's yes.
+
+09:59.230 --> 10:04.890
+That's SS Raigad get that mature make sure that this is fine.
+
+10:04.960 --> 10:11.470
+You we say Dot and for Slash we get the obvious Burguet So we're going to add some styles just to make
+
+10:11.470 --> 10:13.390
+this a little bit better.
+
+10:13.750 --> 10:21.700
+So I'm going to go first at some styles for the body and the body is going to have a marching zero and
+
+10:21.700 --> 10:28.800
+then a padding of zero again you know just some basic rules we're going to use a phone family going
+
+10:28.800 --> 10:33.650
+to add in the in the next video family.
+
+10:33.830 --> 10:38.350
+Now you can you can actually outed yourself that there's no problem if you want to use a fun family
+
+10:38.390 --> 10:39.660
+just like we're botto.
+
+10:39.850 --> 10:41.960
+You can if not just doesn't matter.
+
+10:42.000 --> 10:43.460
+It's not really important.
+
+10:43.510 --> 10:46.150
+So we get to do the stylings for the search.
+
+10:46.150 --> 10:50.140
+Now the main search we added a class of the search that is going to be made search.
+
+10:50.140 --> 10:54.800
+So right here going to make reference to that main search and at some styles.
+
+10:54.940 --> 10:58.720
+So this one is going to be text align and it's going to be Center.
+
+10:58.780 --> 11:01.580
+What else are we going to do padding and padding.
+
+11:01.600 --> 11:03.740
+It's going to be of pixels.
+
+11:03.950 --> 11:09.110
+We can add a border just a border bottom.
+
+11:09.140 --> 11:17.410
+Know just to add a line at the bottom and it's going to be one pixel solid.
+
+11:17.680 --> 11:21.560
+And I don't know we going do light gray.
+
+11:22.600 --> 11:23.140
+OK.
+
+11:23.380 --> 11:24.850
+Now we're going to style the empathy.
+
+11:24.880 --> 11:31.810
+So I'm going to grab the same selector main search and then make reference to the impot this impled
+
+11:31.960 --> 11:35.250
+It's going again have fun family photo.
+
+11:35.320 --> 11:46.180
+So just going to copy and paste just to save time and what else we can add a border radius border radius
+
+11:46.270 --> 11:48.520
+and it's going to be you know 30 pixels.
+
+11:48.540 --> 11:50.300
+That sounds nice.
+
+11:50.320 --> 11:57.250
+You can add a border again and this one is going to be one big old solid and just to save time begin
+
+11:57.250 --> 12:01.920
+to say light gray OK.
+
+12:02.300 --> 12:09.750
+And the color is going to be black that's fine it's black by default but doesn't matter.
+
+12:10.160 --> 12:10.450
+OK.
+
+12:10.490 --> 12:11.770
+Well what else.
+
+12:11.780 --> 12:13.670
+What we what else we can do with this.
+
+12:13.730 --> 12:15.180
+It's really really small.
+
+12:15.260 --> 12:21.350
+So I'm going to change the font size is a font size.
+
+12:21.880 --> 12:28.730
+It's going to be 20 pixels and we can add some padding you to something real simple and then just a
+
+12:28.940 --> 12:31.020
+fun just fine.
+
+12:34.320 --> 12:35.950
+It's going to be 300.
+
+12:36.750 --> 12:38.000
+OK that's fine.
+
+12:38.010 --> 12:41.820
+So if I click on this we can have this ugly ugly focus.
+
+12:41.820 --> 12:46.820
+So I'm going to just make reference to the input again and this is the last thing we're going to do.
+
+12:46.890 --> 12:54.300
+It's going to be focus and we remove that blue outline.
+
+12:54.350 --> 12:56.400
+OK so online none.
+
+12:56.440 --> 12:59.610
+Let's get if I click it.
+
+12:59.620 --> 13:00.680
+No I'd like that's good.
+
+13:00.700 --> 13:02.470
+If I type something real nice.
+
+13:02.520 --> 13:03.030
+Botto.
+
+13:03.160 --> 13:06.410
+And it's kind of a light font right.
+
+13:06.430 --> 13:07.920
+So everything looks fine.
+
+13:07.930 --> 13:08.680
+Weird.
+
+13:08.710 --> 13:13.170
+We did the routes all the setups and we created this component.
+
+13:13.180 --> 13:16.290
+So now on the next section we're going to make the search work.

@@ -1,0 +1,487 @@
+WEBVTT
+
+00:01.770 --> 00:05.880
+OK so we have our action creator that it's doing just a console log.
+
+00:06.060 --> 00:09.950
+You know this is not just not real not going to work just like that.
+
+00:09.960 --> 00:11.980
+So we need to change all of this.
+
+00:12.030 --> 00:17.540
+I'm going to delete this and I'm going to start creating our actual creator.
+
+00:17.610 --> 00:23.100
+Now what we're going to do we can do make that network request to our Jason server.
+
+00:23.400 --> 00:28.830
+Now just to make sure that the adjacent server is working you can go to integrated terminal and whatever
+
+00:28.850 --> 00:32.960
+you started the the Jason server.
+
+00:33.090 --> 00:35.290
+So I'm going to have it right here.
+
+00:35.490 --> 00:37.500
+This means that it's working.
+
+00:37.500 --> 00:41.370
+So I'm going to just go to copy this you're able to resources.
+
+00:41.400 --> 00:43.000
+It's going to be cars index.
+
+00:43.080 --> 00:46.410
+And as a resource I've added all the data for the DVD.
+
+00:46.410 --> 00:47.820
+Jason right here.
+
+00:48.030 --> 00:54.150
+So you know it's just going to be a simple database with the car's index and just a list of cars you
+
+00:54.150 --> 00:54.400
+know.
+
+00:54.420 --> 00:59.790
+We're going to have a brand model your description and whatever I can to give you the images in just
+
+00:59.790 --> 01:04.500
+a couple pictures but it's one we just have a deep database.
+
+01:04.800 --> 01:05.040
+OK.
+
+01:05.040 --> 01:07.040
+So to make sure that it is working.
+
+01:07.160 --> 01:12.360
+I'm going to go right here to localhost three thousand four and cars and.
+
+01:12.570 --> 01:13.840
+And we should be getting that.
+
+01:13.910 --> 01:15.420
+Jason.
+
+01:15.630 --> 01:16.180
+Let's get.
+
+01:16.220 --> 01:18.210
+So you need to make sure that it is working.
+
+01:18.240 --> 01:20.600
+If not you cannot move forward.
+
+01:20.730 --> 01:21.190
+Right.
+
+01:21.300 --> 01:21.560
+OK.
+
+01:21.570 --> 01:27.240
+So what we need to do now which is going to close the terminal and right here we need to make a network
+
+01:27.360 --> 01:28.800
+request.
+
+01:28.800 --> 01:32.160
+We're going to need the router Uriel of the server.
+
+01:32.160 --> 01:35.220
+So in this case it's local host 3 0 0 4.
+
+01:35.310 --> 01:36.160
+That's good.
+
+01:36.540 --> 01:43.560
+So right here this action creator needs to return an object with a type and a payload.
+
+01:43.560 --> 01:48.390
+So I'm going to go right here and we're going to say return the type.
+
+01:48.390 --> 01:51.390
+It's going to be whatever keyword you choose.
+
+01:51.390 --> 01:54.910
+So in my case this is going to be there for search and cars.
+
+01:54.930 --> 01:58.070
+I'm going to say search cars.
+
+01:58.920 --> 02:01.530
+The second one is going to be the payload.
+
+02:01.680 --> 02:09.240
+And we're going to have a payload and the payload is going to be the whatever the request it's giving
+
+02:09.240 --> 02:10.070
+us back.
+
+02:10.080 --> 02:12.390
+So it's going to be equal to a request.
+
+02:12.390 --> 02:15.200
+You know again we're going to do just in one second.
+
+02:15.650 --> 02:15.950
+OK.
+
+02:15.990 --> 02:19.230
+Now we need to make the actual request now.
+
+02:19.340 --> 02:26.100
+I'm going to cancel right now just for just for now I'm going to create the are L Where are we going
+
+02:26.100 --> 02:32.100
+to make this request so I'm going to just do the log just to make sure we get the you are a correctly
+
+02:32.300 --> 02:37.190
+and I'm going to use template strengths we need to make a call to this Ural rude.
+
+02:37.380 --> 02:40.610
+So it's a dollar sign than curly braces.
+
+02:40.770 --> 02:42.800
+And then the the u r l.
+
+02:43.140 --> 02:47.540
+This one is going to be inside I believe index cards course index.
+
+02:47.610 --> 02:50.820
+So it's going to be four slash cars and decks.
+
+02:51.360 --> 02:55.130
+And with the adjacent server we can search things inside the server.
+
+02:55.220 --> 02:57.190
+It's going to be going to make a search.
+
+02:57.390 --> 03:01.450
+So it's going to be questionmark and then q an equal.
+
+03:01.630 --> 03:07.200
+And right here what we do whenever we call this Jason is going to search and trying to match a keyboard
+
+03:07.350 --> 03:08.100
+right here.
+
+03:08.280 --> 03:14.590
+So we say Ford is going to bring us all the the results with the keyboard for it.
+
+03:14.610 --> 03:16.580
+So right here we have our keyboard.
+
+03:16.770 --> 03:22.230
+So I'm going to go and put a dollar sign and pass does that as an argument.
+
+03:22.230 --> 03:25.860
+So if I just go right here and type forward and click enter.
+
+03:25.970 --> 03:27.430
+Of course we get a lot of errors.
+
+03:27.570 --> 03:31.010
+But by here we get the actual requests that you are.
+
+03:31.040 --> 03:33.760
+So let's get that looks looks nice.
+
+03:34.000 --> 03:34.540
+OK.
+
+03:34.800 --> 03:41.580
+So I'm going to go right here and comb this and I'm going to create a viable that is going to do the
+
+03:41.580 --> 03:42.220
+fetching.
+
+03:42.240 --> 03:49.420
+So I'm going to say Konst and request this one is going to be equal to fetch because we're going to
+
+03:49.420 --> 03:52.250
+use fettering now in real life.
+
+03:52.260 --> 03:53.300
+I use a different thing.
+
+03:53.430 --> 03:55.280
+I don't use fetch at all.
+
+03:55.290 --> 04:04.010
+I use ASIO's is a library to make network requests just like Ajax like the j create Ajax same idea but
+
+04:04.090 --> 04:08.740
+right now we can use Fadge and on the next project and begin to use Axel's.
+
+04:09.190 --> 04:12.940
+OK so I'm going to copy the URL right here.
+
+04:14.440 --> 04:21.920
+Just copy and just delete everything else and I get the request it's going to be this year I'll.
+
+04:22.330 --> 04:27.620
+We need to set the method and the method it's going to be get it's going to be a get request.
+
+04:27.670 --> 04:34.240
+So we say method equals to get let's get let's fine.
+
+04:34.240 --> 04:39.700
+So now we can begin to trigger this get cars this action creator and this action creator is going to
+
+04:39.700 --> 04:40.870
+go to the reducers.
+
+04:40.870 --> 04:45.350
+The problem is that we don't have a ballad reducer So we need to create one.
+
+04:45.430 --> 04:50.860
+You can create a dummy one so we can we can check if we get the payload.
+
+04:51.050 --> 04:56.260
+I'm going to go right here to the reducers and I'm going to create a new file that is going to be cars
+
+04:57.000 --> 05:07.290
+cars we douceur reducers you know cars reduce or dodginess Burguet we need to include this cars reduce
+
+05:07.290 --> 05:10.480
+or on the combined reducers on the index.
+
+05:10.540 --> 05:11.490
+So we're going to do that.
+
+05:11.570 --> 05:18.980
+I'm going to say import and then cars from DOD for Slash cars.
+
+05:19.000 --> 05:20.550
+Reducers mine is going to be cars.
+
+05:20.560 --> 05:22.980
+You can just name it whatever you want.
+
+05:23.290 --> 05:26.870
+Right here we make reference to the same old to cars.
+
+05:27.400 --> 05:27.760
+OK.
+
+05:27.820 --> 05:29.650
+I'm going to go to the cars we do sir.
+
+05:30.160 --> 05:32.910
+And I'm going to start just doing a reducer.
+
+05:32.920 --> 05:41.040
+You know the same thing we did before going to close us and I'm going to say export default and function.
+
+05:41.370 --> 05:43.980
+Open and close just like that.
+
+05:44.020 --> 05:46.660
+This function takes two arguments.
+
+05:46.660 --> 05:51.520
+The first one is going to be the state and the second one is going to be the action the actual action
+
+05:51.550 --> 05:53.410
+we get from the actual creator.
+
+05:53.560 --> 06:01.120
+The object with the type and the payload right whenever the application starts the state needs to be
+
+06:01.120 --> 06:02.780
+null.
+
+06:02.970 --> 06:04.000
+And now what are we going to do.
+
+06:04.000 --> 06:07.170
+We going to return the state for now.
+
+06:07.570 --> 06:14.530
+But before that we're going to cancel lock whatever we're getting as an action the type and the payload.
+
+06:14.530 --> 06:21.100
+So I'm going to say cancel Lague and then action just to make sure that everything is working and that
+
+06:21.100 --> 06:23.530
+we are getting the data correctly.
+
+06:23.530 --> 06:27.300
+And if you see the console Now we didn't have that error message and what we get.
+
+06:27.340 --> 06:32.870
+It's a lot of set up that redux it's doing you know we don't care about this.
+
+06:33.040 --> 06:42.110
+So OK I'm going to go to the action going to reload the page get a type it if I click enter it's going
+
+06:42.110 --> 06:48.050
+to call this action creator is going to make the request and then it's going to return an object with
+
+06:48.050 --> 06:50.080
+a type and a payload.
+
+06:50.300 --> 06:50.780
+OK.
+
+06:50.780 --> 06:54.290
+The payload is going to be equal to whatever we get from the server.
+
+06:54.500 --> 07:01.040
+This one is going to be sent to our region or right here to the reduce or the reducers just going to
+
+07:01.040 --> 07:04.720
+cancel log whatever we are getting right here.
+
+07:04.720 --> 07:05.130
+Right.
+
+07:05.210 --> 07:11.060
+So if I type click enter get we get it right here we get the time which is search cars.
+
+07:11.270 --> 07:17.510
+And that is correct and then we just make this bigger and then as a payload we get a promise and we
+
+07:17.510 --> 07:19.050
+got a problem right here.
+
+07:19.070 --> 07:26.460
+If you don't know what a promise is a promise it's something that it's not the actual data.
+
+07:26.720 --> 07:32.040
+We cannot work with a promise that we didn't have our data right here.
+
+07:32.150 --> 07:38.780
+For example whenever we do a fetch for example right here we get a promise that first we do the Fadge
+
+07:39.350 --> 07:40.320
+and the.
+
+07:40.400 --> 07:41.060
+I'm sorry.
+
+07:41.170 --> 07:42.500
+We need to start from the beginning.
+
+07:42.650 --> 07:44.440
+We call the action creator.
+
+07:44.750 --> 07:45.280
+OK.
+
+07:45.320 --> 07:51.710
+Then the actual the actual creator is going to call it's going to just trigger this fetch is going to
+
+07:51.710 --> 07:58.760
+do a fetch and the fetch is going to go to the adjacent server and then the adjacent servers going to
+
+07:58.760 --> 08:06.160
+search and then after the search is going to return the data.
+
+08:06.200 --> 08:08.770
+So this is what should be happening right.
+
+08:08.810 --> 08:10.220
+This makes sense.
+
+08:10.220 --> 08:16.250
+The thing is that whenever we call the action Creator and we triggered this fetch the application it's
+
+08:16.250 --> 08:23.600
+not waiting until this one it's done this could take some milliseconds or maybe a second or a lot of
+
+08:23.600 --> 08:24.160
+time.
+
+08:24.440 --> 08:27.890
+But the application is just going directly after fetch.
+
+08:27.890 --> 08:37.840
+After calling this is going directly to send to reducers to reducers just like that.
+
+08:37.880 --> 08:41.090
+It's not a waiting until this one it's resolved.
+
+08:41.090 --> 08:47.450
+So what do we need to do instead of just going action fetch in center we do sers we need a way to instead
+
+08:47.450 --> 08:56.960
+of doing this just wait until it returns and data and then send to reducers and for that we need something
+
+08:56.960 --> 09:02.660
+else that it's can it's going to need to resolve that promise is going to to stop the whole application
+
+09:02.960 --> 09:05.760
+until we get the data we want.
+
+09:06.110 --> 09:09.110
+And that's why we are going to use middleware.
+
+09:09.140 --> 09:10.990
+Remember we talked about later worse.
+
+09:11.150 --> 09:13.080
+Let me just give you a chart.
+
+09:13.130 --> 09:17.890
+The application starts and whatever we make a click we took an action creator.
+
+09:18.020 --> 09:21.090
+We get the data sends an object with the type and the payload.
+
+09:21.110 --> 09:22.440
+We know this.
+
+09:22.660 --> 09:26.120
+The thing is right now we are making a network request.
+
+09:26.150 --> 09:31.510
+It is just going and sending the objects not waiting until that promise is resolved.
+
+09:31.700 --> 09:38.180
+So we need something right here before sending the object with the type in the payload that is going
+
+09:38.180 --> 09:43.840
+to stop the whole application or waits for the server until we get an answer.
+
+09:43.850 --> 09:49.700
+We get adjacent data and we get a valid data and whenever whenever we get the data out or maybe data
+
+09:49.700 --> 09:50.600
+is going to fail.
+
+09:50.780 --> 09:56.840
+But whenever we get a we solved and that promise is resolved then it's going to go and send the type
+
+09:56.900 --> 09:58.950
+the object with the type and the payload.
+
+09:59.060 --> 10:01.270
+We need something to do that.
+
+10:01.430 --> 10:01.700
+OK.
+
+10:01.740 --> 10:03.490
+We need a middleman right here.
+
+10:03.620 --> 10:08.390
+And that's why we are going to use middleware is there is there is something that is going to be called
+
+10:09.620 --> 10:15.270
+redox promise and it's just for this is just to start the whole application.
+
+10:15.470 --> 10:22.460
+Wait wait until the promise is resolved and then just go to the reducers we need to do that right now
+
+10:22.790 --> 10:26.050
+so we can use the dis reduce products.
+
+10:26.120 --> 10:27.670
+This letter went too long.
+
+10:27.800 --> 10:34.010
+So let's go to the next Lechter install reduce reduce redux promised and use it.

@@ -1,0 +1,445 @@
+WEBVTT
+
+00:00.550 --> 00:03.210
+OK so let's create the card detail for this.
+
+00:03.240 --> 00:09.750
+Now I've made a mistake in the list of course I've chosen to put cars instead of car.
+
+00:09.790 --> 00:13.050
+So it's going to be Singler If not it's just going to fail.
+
+00:13.090 --> 00:19.210
+So we have our car components and this car Daniele's is going to be inside components.
+
+00:19.240 --> 00:25.280
+So if I just type Ford got the whistles and click on this I'm going to get the car.
+
+00:25.340 --> 00:30.430
+The thing is I don't want this component right here inside components because this one is going to be
+
+00:30.550 --> 00:32.110
+linked to redux.
+
+00:32.110 --> 00:33.370
+So it should be a container.
+
+00:33.400 --> 00:39.270
+So I'm going to grab this and promoed to a container or to just put it inside the containers folder.
+
+00:39.490 --> 00:43.220
+I'm going to go to this and I'm going to change containers.
+
+00:46.430 --> 00:46.850
+OK.
+
+00:46.910 --> 00:47.320
+That's good.
+
+00:47.330 --> 00:48.990
+We still got car.
+
+00:49.190 --> 00:49.750
+That's right.
+
+00:49.940 --> 00:52.850
+So I'm going to close this and I'm going to go back to cars.
+
+00:53.060 --> 00:55.420
+Now we need to create all the logic for this.
+
+00:55.420 --> 00:57.810
+We need to import a lot of things.
+
+00:57.830 --> 01:03.980
+So what we need to import first is going to be imports are going to do import and we're going to bring
+
+01:04.070 --> 01:11.330
+Kinect from re-act redux and the From and re-act redux.
+
+01:11.590 --> 01:12.430
+Right.
+
+01:12.650 --> 01:15.710
+The next thing we're going to need is going to be the action creator.
+
+01:15.860 --> 01:17.190
+So we're going to import.
+
+01:17.210 --> 01:18.560
+And we didn't have the action.
+
+01:18.560 --> 01:20.610
+I'm just going to create it right now.
+
+01:20.660 --> 01:24.480
+It's going to be car detail and we're going to get an answer for this.
+
+01:24.680 --> 01:25.700
+But doesn't matter.
+
+01:25.820 --> 01:29.590
+So it's going to be from and we're going to bring it from actions.
+
+01:29.780 --> 01:33.760
+So it's going to be dotted for actions.
+
+01:33.920 --> 01:34.400
+Right.
+
+01:34.410 --> 01:35.370
+Let's get.
+
+01:35.400 --> 01:42.570
+So now whenever we click on it on an item it's going to take us to a new a view and this view is going
+
+01:42.570 --> 01:44.430
+to do two things.
+
+01:44.430 --> 01:49.690
+First it's going to dispatch an action to bring the data for this car.
+
+01:49.800 --> 01:57.630
+So we will need map this patch to props from redux and we will need since we need map dispatch prompts
+
+01:57.990 --> 02:00.370
+we need to use bind action creators.
+
+02:00.510 --> 02:09.150
+So I'm going to say import and I are going to bring bind action creators and this one is going to be
+
+02:09.150 --> 02:11.790
+from burritos and missing from.
+
+02:12.000 --> 02:16.010
+And then redux right.
+
+02:16.120 --> 02:24.000
+Breguet So now whenever we felt we trigger the action and we fetched the data we need to change inject
+
+02:24.120 --> 02:29.040
+that data inside the component so we can render the GSX with all the data.
+
+02:29.220 --> 02:33.710
+So since we need to inject the prompts we will need the maps data prompts.
+
+02:33.970 --> 02:34.410
+OK.
+
+02:34.560 --> 02:42.840
+So I'm going to go right here the bottom and I'm going to say function and bring the map state to prop's
+
+02:43.880 --> 02:52.980
+this map state prompts it's going to take an argument the state is going to be state.
+
+02:53.330 --> 03:00.080
+Now this function is going to return an object so I'm going to say return and just an object.
+
+03:00.120 --> 03:05.210
+Now we can have a lot of problems with this and we are going to be solving the issues as we go.
+
+03:05.420 --> 03:13.820
+So I'm going to say car and inside car we will bring the state and then something that car calls card
+
+03:13.830 --> 03:16.300
+detail just like that.
+
+03:17.120 --> 03:22.370
+And then I'm going to tilt and then begin to discuss why we're doing this and why we will need to change
+
+03:22.760 --> 03:23.710
+some things.
+
+03:24.070 --> 03:25.460
+OK that's good.
+
+03:25.490 --> 03:26.960
+We have the maps major props.
+
+03:27.040 --> 03:30.300
+We all need to do the map dispatch to prompts.
+
+03:30.360 --> 03:38.950
+So I'm going to say function and then map this patch to prop's right.
+
+03:38.990 --> 03:41.660
+This one takes dispatch as an argument.
+
+03:41.690 --> 03:48.730
+So I'm going to say this patch right now what else we need to return the bind auction creators.
+
+03:48.860 --> 03:57.450
+So I'm going to say return and then bind auction creators get by and there you go.
+
+03:57.550 --> 04:01.150
+Now this bind auction creators takes two arguments.
+
+04:01.150 --> 04:03.080
+First it's going to be the action.
+
+04:03.280 --> 04:04.700
+And this case is going to be car.
+
+04:04.720 --> 04:06.760
+It's going to be called Car dieta detail.
+
+04:06.910 --> 04:11.680
+And this one is going to be equal to car car detail.
+
+04:11.680 --> 04:17.260
+Now since we are using S6 we can simplify this a little bit since we have the same name for the key
+
+04:17.620 --> 04:20.660
+and the value we can just do this and this.
+
+04:20.680 --> 04:22.650
+This one is going to be just equals this.
+
+04:22.720 --> 04:23.290
+OK.
+
+04:23.510 --> 04:24.260
+Right.
+
+04:24.580 --> 04:29.860
+The next argument that we need inside of mind actually creators is going to be the dispatch we have
+
+04:29.860 --> 04:30.290
+right here.
+
+04:30.290 --> 04:33.170
+So I'm going to copy and paste brigade.
+
+04:33.220 --> 04:37.480
+The last thing we need to do from now is going to be to do the connect.
+
+04:37.750 --> 04:44.520
+So I'm going to say export default and then connect the connect takes two.
+
+04:44.740 --> 04:49.900
+And the second one right here is going to be the actual components which in this case is going to be
+
+04:49.900 --> 04:50.530
+car.
+
+04:50.690 --> 04:53.620
+OK so I'm going to go to a car and put it right here.
+
+04:53.620 --> 04:56.720
+It's going to be using the map state to Propst the map.
+
+04:56.720 --> 04:59.630
+This batch of product prompts we need to put both.
+
+04:59.650 --> 05:00.700
+There is no null.
+
+05:00.730 --> 05:06.740
+Right here and now we're going to get an error because actions we don't have an action Creator for this
+
+05:06.790 --> 05:08.540
+and we're importing it.
+
+05:08.590 --> 05:11.140
+So that's why we get the OR that's fine.
+
+05:11.140 --> 05:13.400
+We're going to do something else right now.
+
+05:13.570 --> 05:14.610
+I'm going to open up.
+
+05:14.750 --> 05:17.350
+Let's let's go and create the action creator.
+
+05:17.350 --> 05:19.400
+We're not going to go right here.
+
+05:19.510 --> 05:28.750
+And then inside actions and we're going to go to the index of the actions Breguet now right here you
+
+05:28.750 --> 05:32.130
+can have a thousand actions doesn't matter.
+
+05:32.290 --> 05:33.750
+They are just functions.
+
+05:33.850 --> 05:40.150
+So to create a new actions a new action inside the index dodgiest we just go below this function and
+
+05:40.150 --> 05:40.920
+create a new one.
+
+05:40.930 --> 05:47.170
+So it's going to be explored and then function to simple as that and the function that we're going to
+
+05:47.170 --> 05:49.830
+be calling is going to be called carnt detail.
+
+05:49.840 --> 05:53.230
+So we use card detail simple as that.
+
+05:53.640 --> 05:57.770
+Okay I'm going to just open close and just leave it as it is.
+
+05:57.800 --> 06:04.580
+This detail is going to receive an argument and it's going to be whatever we get inside the ID.
+
+06:04.690 --> 06:08.110
+So I'm going to say Id very good.
+
+06:08.740 --> 06:12.580
+Now let's go back to cars for one second.
+
+06:12.580 --> 06:21.050
+Whenever we reach this component we need to have access to the U R L right here to the idea of the car.
+
+06:21.040 --> 06:25.460
+So if I say Ford and click a Mustang we have the number one.
+
+06:25.570 --> 06:27.460
+So we need to have access to this.
+
+06:27.520 --> 06:34.280
+Now if you remember with re-act router we already have access to this inside.
+
+06:34.400 --> 06:38.860
+Does that props up one second.
+
+06:38.860 --> 06:41.060
+Let me just create a diff container for this.
+
+06:41.260 --> 06:44.490
+If not react is going to complain.
+
+06:44.830 --> 06:53.530
+OK so it's going to be this that prompts and it's going to be inside match then it's going to be our.
+
+06:53.560 --> 06:55.840
+Yeah I believe it's match it's match.
+
+06:55.840 --> 06:56.530
+Yeah of course.
+
+06:56.530 --> 07:00.090
+Forgot for one second and then perhaps and then Id.
+
+07:01.000 --> 07:05.520
+So if I just reload the page we get the ID this that prompts that match.
+
+07:05.590 --> 07:07.700
+Perhaps I forgot about this one.
+
+07:07.890 --> 07:08.300
+Right.
+
+07:08.320 --> 07:17.590
+So what we can do now since we have the prams which you can call in inside a computer will mount an
+
+07:17.590 --> 07:21.260
+action can trigger that action with the Priam's right here.
+
+07:21.320 --> 07:22.450
+We're not going to do it right now.
+
+07:22.450 --> 07:24.020
+We're going to do it in a few minutes.
+
+07:24.160 --> 07:27.580
+So I'm going to go back to index and just complete this.
+
+07:27.580 --> 07:31.030
+Just make the network network request.
+
+07:31.030 --> 07:32.300
+We don't need to do cancel log.
+
+07:32.290 --> 07:33.240
+Again just like with it.
+
+07:33.250 --> 07:35.260
+But this we can know this.
+
+07:35.260 --> 07:39.800
+So OK so we're going to go to the card detail and I'm going to create a request.
+
+07:39.820 --> 07:44.040
+It's going to be Konst request now.
+
+07:44.080 --> 07:47.080
+Pretty much we're going to have the same thing in here.
+
+07:47.080 --> 07:53.570
+So I'm just going to copy all of this and I will just modify it you know to do the same thing.
+
+07:53.600 --> 07:59.620
+So OK we're going to be calling the card index but this time you're not going to be doing the search.
+
+07:59.680 --> 08:01.290
+We're going to search for an ID.
+
+08:01.370 --> 08:09.820
+So right here going to say I.D. And since we are passing an ID as an argument you're going to say Id
+
+08:09.850 --> 08:12.770
+for the argument something like that.
+
+08:12.790 --> 08:16.930
+So pretty much same code different arguments.
+
+08:17.320 --> 08:17.740
+OK.
+
+08:17.800 --> 08:19.360
+I'm going to go right here.
+
+08:19.630 --> 08:23.100
+And I'm just to check that everything is going fine.
+
+08:23.260 --> 08:27.460
+I'm going to cancel the request.
+
+08:28.780 --> 08:29.350
+OK.
+
+08:29.630 --> 08:36.700
+Now this action creator needs to return an object with a type and a payload.
+
+08:36.730 --> 08:38.030
+So we're going to do that right now.
+
+08:38.050 --> 08:44.800
+It's going to be we turn and go right here and he's going to say type and then this one is going to
+
+08:44.800 --> 08:48.300
+be call car detail.
+
+08:49.000 --> 08:49.530
+OK.
+
+08:49.750 --> 08:51.610
+And then we just put coma.
+
+08:51.610 --> 08:54.490
+Now this one is going to be sending a payload.
+
+08:54.640 --> 08:58.290
+So the payload is going to be equal to request
+
+09:02.330 --> 09:02.810
+OK.
+
+09:03.000 --> 09:04.500
+So everything looks fine.
+
+09:05.620 --> 09:10.360
+So we're going to go to the next section to the next video if we can if we can to do that when we create
+
+09:10.540 --> 09:15.430
+the we do search for this and we're going to have a few problems and I'm going to give you this dissolution
+
+09:15.430 --> 09:18.700
+of course but it's going to be kind of weird at the beginning.
+
+09:18.750 --> 09:20.170
+But let's go to the next section.

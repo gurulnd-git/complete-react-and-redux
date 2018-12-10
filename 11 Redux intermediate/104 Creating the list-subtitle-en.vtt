@@ -1,0 +1,409 @@
+WEBVTT
+
+00:00.290 --> 00:07.080
+OK since now we have access to these allies this list of cars we can make something something better
+
+00:07.410 --> 00:10.070
+if I type forward which is get the list of this.
+
+00:10.110 --> 00:12.560
+So we're going to do something else right here.
+
+00:12.850 --> 00:19.830
+And since we want to have a link for each car item so we can click the link click the car and it's going
+
+00:19.830 --> 00:21.310
+to take us to a new screen.
+
+00:21.450 --> 00:24.760
+We need to import link from re-act router.
+
+00:24.990 --> 00:31.190
+So I'm going to go right here and just let me just bring this down and I'm going to say import and we're
+
+00:31.190 --> 00:38.420
+going to bring link just like before it can say Lenk from and then just react.
+
+00:38.500 --> 00:44.780
+Router Dom Burguet Let's get now what we going to do.
+
+00:44.780 --> 00:46.890
+We're going to create something else right here.
+
+00:47.090 --> 00:50.390
+We're going to leave the current item but begin to do more things.
+
+00:50.390 --> 00:56.960
+So first we need to make this element to be a link because whenever we click it it's going to take us
+
+00:57.210 --> 00:59.000
+to that to a new section.
+
+00:59.000 --> 01:01.440
+So I'm going to send a link right next.
+
+01:01.490 --> 01:04.510
+It's going to be do or specify that two.
+
+01:04.550 --> 01:12.980
+Now the thing is that whenever we click on this we need to go to the local host dash car's dash and
+
+01:12.980 --> 01:18.290
+the I.D. of the of the car so we can have a need to use something else right here.
+
+01:18.330 --> 01:24.980
+I'm going to do this and I'm going to use curly braces since we want to just create a template string
+
+01:24.980 --> 01:25.900
+right here.
+
+01:25.900 --> 01:28.620
+I'm going to need to do batiks right.
+
+01:28.910 --> 01:30.830
+So the first one is going to be cars.
+
+01:30.860 --> 01:32.530
+It's going to be inside cars.
+
+01:32.660 --> 01:37.880
+And the second one is going to be the ID since we have access to the to the car.
+
+01:37.880 --> 01:46.410
+Id like to just do a sign and then it's going to be car dot I.D..
+
+01:46.490 --> 01:47.590
+All right that's good.
+
+01:47.870 --> 01:52.310
+Now it's the Whenever we have a list inside the map.
+
+01:52.430 --> 01:56.000
+If we don't use a key re-act is going to just let us know.
+
+01:56.000 --> 01:57.630
+Do you need to put a key.
+
+01:57.660 --> 01:58.990
+So are we going to do that right now.
+
+01:59.000 --> 02:07.890
+I'm going to say key and since we have an ID for each car I'm going to say car dot ID that's fine.
+
+02:07.890 --> 02:08.460
+So OK.
+
+02:08.490 --> 02:14.850
+So what we can have is going to be an image in the left side and then just the data of the car in the
+
+02:14.850 --> 02:15.650
+right side.
+
+02:15.840 --> 02:17.140
+So I'm going to go right here.
+
+02:17.250 --> 02:25.140
+I'm going to create a div and this div is going to have a class name of left right and then the next
+
+02:25.140 --> 02:32.350
+one is going to be again a div and you can have a class name or right makes sense class name.
+
+02:32.430 --> 02:33.580
+Right.
+
+02:34.280 --> 02:34.610
+OK.
+
+02:34.620 --> 02:38.620
+So now inside here inside the left you can have an image.
+
+02:38.760 --> 02:47.280
+Now as a resource to this section I've added an image folder just just in folder with some images for
+
+02:47.280 --> 02:48.020
+each car.
+
+02:48.210 --> 02:54.060
+So you will need to download it and you need to put it put it inside the public folder right here and
+
+02:54.060 --> 02:56.970
+then begin to make a reference to that folder right here.
+
+02:57.000 --> 02:59.490
+So OK I think we need we need an image.
+
+02:59.570 --> 03:07.400
+I'm going to say EMG and then Source equals to something and then just close the close the image symbols
+
+03:07.410 --> 03:09.600
+that right.
+
+03:09.660 --> 03:15.930
+So now here we need to put the path we need to specify the path to this to this image.
+
+03:15.960 --> 03:22.520
+So again we're going to use template strings I'm going to do it just like that to use the curly braces.
+
+03:22.650 --> 03:23.120
+OK.
+
+03:23.370 --> 03:27.240
+We're going to use biotech's and inside the back text.
+
+03:27.270 --> 03:34.320
+The image is going to be inside images then for Slash and then we need the name of the image.
+
+03:34.350 --> 03:42.380
+If I go to the DVD that Jason right here at the bottom of it right here you can see that I just added
+
+03:42.380 --> 03:46.780
+the name of the image so we can just call the image and that would be it.
+
+03:46.790 --> 03:54.290
+So I'm going to go to list of course I'm going to say car dot and then image and it's going to bring
+
+03:54.290 --> 03:55.780
+the image Breguet.
+
+03:56.150 --> 03:59.330
+OK so now inside here it closes.
+
+03:59.450 --> 04:02.990
+I'm going to go back now I'm going to bring the names.
+
+04:03.020 --> 04:07.040
+Just the model and the brand of the car so we can have something right here.
+
+04:07.220 --> 04:09.150
+So the first one is going to be kind of a title.
+
+04:09.170 --> 04:15.370
+So it's going to be in 8:04 and we can call the car and then do the model.
+
+04:15.410 --> 04:16.530
+You can do that.
+
+04:16.910 --> 04:19.300
+And then we're going to output the the brand.
+
+04:19.490 --> 04:25.250
+But it's going to be kind of a smaller so I'm going to do an H six for this and we're going to call
+
+04:25.310 --> 04:29.010
+brand brand that's fun.
+
+04:29.180 --> 04:29.600
+OK.
+
+04:29.660 --> 04:32.180
+Let's see what happens if I type Ford.
+
+04:33.100 --> 04:33.590
+OK.
+
+04:33.600 --> 04:35.150
+Now it's really ugly.
+
+04:35.150 --> 04:37.710
+We're going to get some styling right now in a minute.
+
+04:37.910 --> 04:40.620
+But you know it works.
+
+04:41.210 --> 04:44.990
+And if I click on it it's going to take us to the idea of the car.
+
+04:44.990 --> 04:45.270
+Good.
+
+04:45.290 --> 04:47.500
+So that's working right.
+
+04:47.680 --> 04:52.180
+That's some style to this because this is really really really ugly.
+
+04:52.210 --> 04:53.730
+I'm going to go to the CSX.
+
+04:53.780 --> 05:00.020
+We have the the CSSA right here inside the APS-C assassin site the source folder.
+
+05:00.050 --> 05:03.130
+And it just closed all right here.
+
+05:03.250 --> 05:07.990
+So I'm going to go right here at the bottom and I'm going to add some styles so we can have a car item
+
+05:08.590 --> 05:12.600
+and for each car item we're going to add some styles to it.
+
+05:12.670 --> 05:17.440
+I'm going to say this one the car is going to be display and it's going to be flexible going to make
+
+05:17.440 --> 05:19.970
+use of flex because it's really nice.
+
+05:20.040 --> 05:26.140
+You're going to have a border and the border is going to be one pixel solid.
+
+05:26.200 --> 05:31.220
+And then just light gray the way.
+
+05:31.550 --> 05:32.920
+Very good.
+
+05:32.920 --> 05:35.460
+Next thing we're going to add some margin to it.
+
+05:35.650 --> 05:39.800
+So it's going to be 10 pixels pixels.
+
+05:39.810 --> 05:40.550
+Very good.
+
+05:40.900 --> 05:42.150
+It's a very real page.
+
+05:42.190 --> 05:43.210
+Well actually we don't need it.
+
+05:43.210 --> 05:45.310
+It's injecting everything right here.
+
+05:45.360 --> 05:49.600
+So you look sort of looks good everything it's just like it should.
+
+05:49.630 --> 05:55.210
+Now we need to do something else which is just to keep out the Starling's for the left side and then
+
+05:55.210 --> 05:56.080
+the right side.
+
+05:56.250 --> 05:56.530
+OK.
+
+05:56.530 --> 06:02.120
+So I'm going to say I'm going to call this car item we have right here and it just makes some space
+
+06:02.590 --> 06:10.030
+and then just call the left the left it's going to be wood of 100 pixels just something real simple.
+
+06:10.300 --> 06:12.710
+And then inside the left you can have an image.
+
+06:12.730 --> 06:17.030
+So I'm going to select this and make a reference to the image.
+
+06:17.140 --> 06:18.520
+Very good.
+
+06:19.370 --> 06:19.630
+OK.
+
+06:19.630 --> 06:23.660
+In the width of this it's going to be the size of the container.
+
+06:23.800 --> 06:27.290
+So it's going to be 100 pixels.
+
+06:27.390 --> 06:27.900
+OK.
+
+06:27.990 --> 06:29.090
+That looks nice.
+
+06:30.310 --> 06:33.010
+OK so what else what do we have.
+
+06:33.010 --> 06:35.250
+We have to style the right side.
+
+06:35.290 --> 06:38.330
+So we're going to go right here at the bottom and I'm going to call.
+
+06:38.440 --> 06:40.880
+I'm going to call this car item again.
+
+06:40.900 --> 06:45.970
+Make reference to that class and then daunts and then right.
+
+06:46.300 --> 06:51.150
+So this one is going to be a flex growth of one.
+
+06:51.250 --> 06:56.600
+And then we're going to begin at Simpang and the panning is going to be 10 pixels.
+
+06:57.080 --> 06:57.710
+Right.
+
+06:58.180 --> 07:01.810
+So what else do we have the 8:04 and the 8 6 decks.
+
+07:02.060 --> 07:09.340
+OK so we're going to make reference to that Skar item then ride and then 8:04 and we're going to share
+
+07:09.490 --> 07:10.450
+the tiles.
+
+07:10.480 --> 07:16.260
+So I'm going to call the 8:4 and then make reference to the age 6.
+
+07:18.210 --> 07:23.280
+Ok so what I want is to add a margin of zero pixels.
+
+07:23.420 --> 07:28.770
+Let's get OK let's reload the page and see what happens.
+
+07:29.060 --> 07:31.910
+If I type forward OK.
+
+07:32.030 --> 07:32.710
+That's nice.
+
+07:32.750 --> 07:35.500
+Looks nice not what I'm aiming for.
+
+07:35.510 --> 07:39.310
+Let's see why you're not getting styles.
+
+07:39.340 --> 07:40.410
+You have the Mustang.
+
+07:40.460 --> 07:42.030
+It's going to be an 84.
+
+07:42.100 --> 07:47.750
+You know you're not getting any of these titles for the 8:04.
+
+07:48.030 --> 07:48.620
+That's good.
+
+07:48.780 --> 07:49.660
+Now that's fine.
+
+07:49.740 --> 07:56.890
+You're you can live it like this now just to save time is just an for going out.
+
+07:57.180 --> 07:58.070
+There we go.
+
+07:58.470 --> 07:59.260
+So OK.
+
+07:59.310 --> 08:04.340
+So we have the list and if you click on the list we go someplace that's fine.
+
+08:04.380 --> 08:10.560
+So let's go to the next section and start creating the car detail and you know it's going to get interesting
+
+08:10.590 --> 08:18.200
+because we can and we did this already with the re-act redux just displaying a list from the redux state.
+
+08:18.300 --> 08:24.190
+But the thing is that we need to change the things a little bit whenever we go to the next section.
+
+08:24.250 --> 08:26.340
+So let's go to the next next video.
+
+08:26.340 --> 08:30.330
+The next lecture and start creating the detail of the car.

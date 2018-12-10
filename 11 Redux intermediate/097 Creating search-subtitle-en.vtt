@@ -1,0 +1,271 @@
+WEBVTT
+
+00:00.690 --> 00:05.270
+OK so we're going to make the search now we can to treat all the logic for the search.
+
+00:05.280 --> 00:10.770
+So what we want to do is that whenever the user enters some information right here we want to catch
+
+00:10.770 --> 00:15.060
+that event stored this data inside the component state.
+
+00:15.150 --> 00:20.700
+The re-act component state and then we're going to grab that new state of the component and begin to
+
+00:20.730 --> 00:24.800
+pass it to redux B will trigger an action creator.
+
+00:24.810 --> 00:29.290
+You're not going to do it on section but in need we need to do a lot of setup first.
+
+00:29.310 --> 00:29.620
+OK.
+
+00:29.650 --> 00:36.310
+So the first thing we need to do is we can use the state we need the constructor in this class.
+
+00:36.390 --> 00:43.350
+So I'm going to say constructor is open close and then just opening close again and we need to call
+
+00:43.350 --> 00:47.340
+the super right super right.
+
+00:47.340 --> 00:52.540
+This this one is going to just take an take an argument arguments it's going to be prompts and then
+
+00:52.640 --> 00:55.530
+on the Super we pass prompts.
+
+00:55.600 --> 00:56.070
+Right.
+
+00:56.410 --> 00:57.840
+So we can create a state.
+
+00:57.940 --> 01:03.430
+So I'm going to say this that state and then equals to an object.
+
+01:03.560 --> 01:07.750
+The the one would again begin to use right now is going to be keyboard.
+
+01:07.840 --> 01:09.640
+No because it makes sense.
+
+01:09.640 --> 01:10.380
+Keyboard.
+
+01:10.600 --> 01:11.140
+Right.
+
+01:11.410 --> 01:16.450
+And this is going to be equal and whenever the application starts it's going to be just an empty stage
+
+01:16.450 --> 01:18.910
+is the default state it's going to be empty.
+
+01:18.940 --> 01:19.630
+Let's get.
+
+01:19.630 --> 01:25.960
+So now we need to do the set up right here inside the forum so we can catch the event of the user entering
+
+01:25.960 --> 01:27.100
+new information.
+
+01:27.100 --> 01:33.640
+So I'm going to go right here ball the input on the input and we're going to create an on change listener
+
+01:34.000 --> 01:35.480
+with this you know.
+
+01:35.890 --> 01:37.070
+So this should be easy.
+
+01:37.070 --> 01:38.910
+Are you going to say this.
+
+01:38.910 --> 01:45.010
+I mean I'm going to call to a function that is going to be it's going to be called handle and then change.
+
+01:45.070 --> 01:46.140
+All right that's good.
+
+01:46.450 --> 01:52.680
+I'm going to go right here at the top just before the render and I'm going to create this function.
+
+01:52.870 --> 01:58.670
+Now this handle change is going to take an event and it's going to set in you state with the with a
+
+01:58.690 --> 02:00.440
+target value of that event.
+
+02:00.610 --> 02:02.820
+So OK I'm going to say handle change.
+
+02:02.930 --> 02:10.330
+This is going to be equal to a fad arrow function and we a pass and events.
+
+02:10.640 --> 02:15.040
+OK so since we want to grab this event we want to update the state.
+
+02:15.040 --> 02:20.320
+This is going to be this that set the state and then open and close.
+
+02:20.410 --> 02:26.240
+And inside here we pass an object the one we want to call we want to update it's going to be the keyword.
+
+02:26.290 --> 02:31.720
+So we say keyword the information we have available on the inside event.
+
+02:31.870 --> 02:38.560
+So I'm going to say event Dadds target dot value right.
+
+02:38.680 --> 02:42.920
+I'm going fast in this because we did it like two or three times already.
+
+02:43.270 --> 02:44.440
+OK that's fine.
+
+02:44.680 --> 02:50.770
+So I'm going to just do the component amount just to get the state right now.
+
+02:50.780 --> 02:55.360
+We can use it to do more set up right now but then this one is going to be useful.
+
+02:55.850 --> 02:56.350
+OK.
+
+02:56.620 --> 03:00.040
+So what do we need to do now.
+
+03:00.280 --> 03:07.960
+This right here since we can enter we are we are entering the information inside the input directly.
+
+03:08.020 --> 03:09.750
+It's not a control component.
+
+03:09.760 --> 03:11.450
+It's an uncontrolled component.
+
+03:11.590 --> 03:13.970
+So we're going to make it a control component you know.
+
+03:14.230 --> 03:24.100
+So I'm going to save value and this value is going to be equal to this dot state DOT and keyboard.
+
+03:24.610 --> 03:25.490
+Right.
+
+03:25.540 --> 03:27.580
+And it just do the word wrap.
+
+03:27.730 --> 03:28.220
+OK.
+
+03:28.510 --> 03:29.770
+So everything looks nice.
+
+03:29.950 --> 03:35.910
+So if I just died it's entering the information this is entered by re-act state.
+
+03:35.940 --> 03:36.700
+Good.
+
+03:36.730 --> 03:38.380
+Now what else do we need.
+
+03:38.680 --> 03:45.300
+Whenever the user just enters a brand for example let's say for it and they just submit the form and
+
+03:45.300 --> 03:46.790
+we need to grab this form.
+
+03:46.810 --> 03:53.080
+Stop the behavior of just refreshing the page and trigger an action creator.
+
+03:53.090 --> 03:58.700
+So OK so what we can do we can catch the unsafe event of this form.
+
+03:58.820 --> 04:06.010
+So I'm going to say on and then submit and this Ansermet is going to be equal to a function that is
+
+04:06.010 --> 04:06.960
+going to be this.
+
+04:07.150 --> 04:12.110
+And then just search cars whatever.
+
+04:12.410 --> 04:13.790
+So I'm going to copy this.
+
+04:13.870 --> 04:19.090
+This function is going to go right here on top of the handle change and we will create the logic for
+
+04:19.090 --> 04:20.920
+this search cars.
+
+04:21.100 --> 04:21.540
+Right.
+
+04:21.760 --> 04:28.300
+So I'm going to say this function is going to be equal and it's going to take an argument which is going
+
+04:28.300 --> 04:32.490
+to be the event and then just fat or a function.
+
+04:32.710 --> 04:34.380
+Ok that's fine.
+
+04:34.390 --> 04:41.380
+Now we can pass the event and what we need to do if you come from javascript from S-5 we need to do
+
+04:41.380 --> 04:42.600
+the preven default.
+
+04:42.610 --> 04:50.490
+So I'm just going to copy of this copy the event the access the event and then just prevent default
+
+04:53.950 --> 04:59.800
+OK that's fine since I want to get the state right here I'm just going to do a console log just to make
+
+04:59.800 --> 05:02.940
+sure that we are getting the right keywords.
+
+05:03.400 --> 05:08.850
+So I'm going to say this dot state OK.
+
+05:08.910 --> 05:14.100
+So I just really load the page I'm going to go to the console right now.
+
+05:14.100 --> 05:14.790
+There you go.
+
+05:14.820 --> 05:17.160
+When you make it bigger There you go.
+
+05:17.230 --> 05:24.780
+So I'm going to say for any if type answer we get keyboard that we get the state of D-Ward and forward.
+
+05:25.050 --> 05:31.350
+So now what we can do we can bring right here the top everything that it's related to read.
+
+05:31.530 --> 05:39.120
+And whenever we get this keyboard right here whenever we search the car with dispatch an action to read
+
+05:39.120 --> 05:46.020
+X and read X is going to go to the database find an entry with the Fort and just return the information.
+
+05:46.110 --> 05:46.600
+Let's get.
+
+05:46.690 --> 05:52.980
+OK let's go to the next section and just create a natural creator and first we're going to do all the
+
+05:52.980 --> 05:53.960
+set up for redux.
+
+05:53.970 --> 06:00.230
+We need to go to the app sorry the next domain index and bring all the settings for Weet-Bix.
+
+06:00.240 --> 06:01.400
+Let's go to the next section.

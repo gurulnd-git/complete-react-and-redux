@@ -1,0 +1,154 @@
+WEBVTT
+
+00:01.230 --> 00:05.940
+OK so let's add a car that's out of her to the car detail.
+
+00:05.980 --> 00:07.840
+You know it's pretty much the same idea.
+
+00:07.860 --> 00:11.040
+I'm going to delete this from the previous section.
+
+00:11.250 --> 00:17.430
+And you know the other version the other type using array you have to create a new file and everything
+
+00:17.430 --> 00:18.960
+else right here.
+
+00:18.960 --> 00:24.470
+We don't need to do that again it just copy all of this and just paste it at the bottom.
+
+00:24.540 --> 00:31.050
+Just real simple the action that we are calling right here is going to be called Car detail such as
+
+00:31.050 --> 00:37.170
+going to put car detail inside here and again which is what you want to keep the state and instead of
+
+00:37.560 --> 00:42.500
+storing everything inside a list we can stored inside instead of a different place.
+
+00:42.570 --> 00:48.030
+We can say detail for example.
+
+00:48.210 --> 00:48.660
+That's fine.
+
+00:48.660 --> 00:57.360
+So now if I go to 4 it is going to go right here if we go to a car or closet if I go to car and inside
+
+00:57.360 --> 01:00.320
+the maps that prompts we have to cancel look to state.
+
+01:00.390 --> 01:04.120
+So we should be able to see right here inside the object.
+
+01:04.290 --> 01:11.510
+So I'm going to go over to Fort and let me just bring the car producer right now.
+
+01:11.620 --> 01:12.180
+OK.
+
+01:12.420 --> 01:13.800
+So you can have it right here.
+
+01:14.140 --> 01:17.320
+So I'm going to search for Ford to get the list.
+
+01:17.380 --> 01:18.840
+I'm going to click in Mustang.
+
+01:19.060 --> 01:22.390
+It's going to take us to the to the details I mean.
+
+01:22.600 --> 01:26.610
+And I got to just open this and check if I have the information.
+
+01:26.820 --> 01:27.330
+We do.
+
+01:27.520 --> 01:34.870
+We have a list the list of four cars and inside detail we have the information of the car here.
+
+01:34.930 --> 01:36.090
+So it's good.
+
+01:36.130 --> 01:41.440
+We are using an object to store different different kind of different types of information.
+
+01:41.500 --> 01:47.740
+They're going to give you one freebie right now we are whenever we call a detail we return the state
+
+01:48.220 --> 01:50.800
+and we returned a detail.
+
+01:51.100 --> 01:54.340
+You can return more things we can add more things to the state.
+
+01:54.340 --> 02:03.640
+For example if I say right here and Rosek know whatever is a color and then set it to true.
+
+02:03.640 --> 02:09.660
+This one whenever we we run this reducer is going to add something that is true.
+
+02:09.700 --> 02:13.240
+So you can just put it to pass things.
+
+02:13.240 --> 02:20.500
+And for example if you go back and we fetch some information which is changed is to call false or whatever.
+
+02:20.530 --> 02:25.380
+So if I go right here inside the car let me just start the cycle again.
+
+02:25.540 --> 02:28.460
+Going to say Ford beget cars.
+
+02:29.180 --> 02:31.990
+Cars and the color is going to be false.
+
+02:32.030 --> 02:33.170
+And the list of four.
+
+02:33.260 --> 02:36.190
+So we can put more data right here if you wanted to.
+
+02:36.410 --> 02:39.730
+If I go to Mustang I get to go to cars.
+
+02:39.890 --> 02:45.680
+And now he's going to keep state added detail and change the color we had from before.
+
+02:45.690 --> 02:47.420
+True right.
+
+02:47.480 --> 02:48.880
+So color is true.
+
+02:48.950 --> 02:51.500
+We have a detail and then we have a list.
+
+02:51.680 --> 02:52.140
+Right.
+
+02:52.250 --> 02:53.900
+So that is working.
+
+02:53.930 --> 02:55.590
+It's working really nice.
+
+02:55.850 --> 03:03.470
+So now what we need to do we need to go back to cars and create create the loop for this to map over
+
+03:03.480 --> 03:07.570
+the cars so we can just render the information right here.
+
+03:07.570 --> 03:13.130
+We're going to do it on the next section because it's kind of the assassin just elements of S..
+
+03:13.250 --> 03:15.680
+Maybe it's boring and you don't want to do it.
+
+03:15.680 --> 03:16.890
+That's fine it's up to you.
+
+03:17.030 --> 03:18.140
+Let's go to the next section.

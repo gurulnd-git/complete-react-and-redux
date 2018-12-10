@@ -1,0 +1,142 @@
+WEBVTT
+
+00:00.650 --> 00:05.030
+OK so let's start creating the juicer which is the lead deleted everything inside the car.
+
+00:05.060 --> 00:08.100
+We are so we can add it add logic right here.
+
+00:08.250 --> 00:14.210
+Now whenever the application state whenever the application loads we can have this reducer and the state
+
+00:14.270 --> 00:15.230
+is going to be null.
+
+00:15.230 --> 00:18.830
+The thing is that if we said it's a no we're going to have a problem.
+
+00:18.920 --> 00:20.820
+What we can do we can use the state.
+
+00:20.870 --> 00:26.350
+And instead of just getting to know all we can set it to an empty array.
+
+00:26.390 --> 00:31.760
+So whenever the application starts and we call this reducers inside our application the state is going
+
+00:31.760 --> 00:32.440
+to be empty.
+
+00:32.450 --> 00:36.360
+And if we change that information we're not changing to know.
+
+00:36.380 --> 00:40.750
+With we are just appending the information inside there which is changing the state.
+
+00:40.760 --> 00:44.060
+That's why it doesn't matter begin to begin to do more about this.
+
+00:44.080 --> 00:46.900
+We're going to talk about this on the next sections.
+
+00:47.120 --> 00:47.650
+But don't worry.
+
+00:47.690 --> 00:50.240
+OK for now you just change it to this.
+
+00:50.240 --> 00:50.530
+OK.
+
+00:50.570 --> 00:58.270
+So now to create the reducer we need to use a switch so we can search different reducers.
+
+00:58.370 --> 00:58.660
+OK.
+
+00:58.760 --> 01:07.550
+So I'm going to say switch up switch and on the switch begin to match the action that we're getting
+
+01:07.910 --> 01:13.340
+and the type you know remember the action type is going to be the actual name.
+
+01:13.430 --> 01:18.070
+In this case we want to search for search cars going to go right here to there.
+
+01:18.080 --> 01:25.130
+We are going to open it close and we're going to say case and the case is going to be the actual keyboard
+
+01:25.250 --> 01:26.370
+the type.
+
+01:26.660 --> 01:32.660
+And if there is a match this one is going to return whatever we have on the action that payload
+
+01:36.070 --> 01:38.390
+pay to load it.
+
+01:38.680 --> 01:45.420
+So if there is a match it's going to update the state with whatever we have on that request.
+
+01:45.580 --> 01:46.130
+That's fine.
+
+01:46.240 --> 01:47.290
+That's very good.
+
+01:47.330 --> 01:52.660
+So I'm going to go right here and if there's no match we always need to set a default state.
+
+01:52.660 --> 01:57.660
+So I'm going to say default and this one is going to be return state.
+
+01:57.670 --> 02:01.660
+You know the same state we have right here at the previous state.
+
+02:01.660 --> 02:02.050
+Let's get.
+
+02:02.050 --> 02:05.470
+So if I just reload the page again.
+
+02:05.670 --> 02:06.930
+Well we get no errors.
+
+02:06.970 --> 02:08.230
+And that it's good.
+
+02:08.230 --> 02:11.860
+It means that if whenever we call it we are updating the state.
+
+02:11.860 --> 02:13.660
+So if I called forward.
+
+02:13.840 --> 02:15.280
+Let's get knowers.
+
+02:15.310 --> 02:22.160
+If I call something else I don't know Chevy and I better get get no errors.
+
+02:22.180 --> 02:24.970
+That means that everything should be working fine.
+
+02:25.030 --> 02:29.140
+And this is updated updating the redux state.
+
+02:29.500 --> 02:36.220
+Let's find Let's go to the next section if we can create the list of course that we should be getting
+
+02:36.220 --> 02:36.940
+right here.
+
+02:37.060 --> 02:39.490
+And this is kind of linked with this reducer.
+
+02:39.490 --> 02:40.050
+OK.
+
+02:40.240 --> 02:44.590
+That's why we're going to do all that logic right here with the stage and everything else on the next
+
+02:44.590 --> 02:45.500
+sections.
